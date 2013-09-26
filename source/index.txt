@@ -9,14 +9,10 @@ Welcome to Datavyu Manual's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   /guide
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+.. /faq
+   /api
+   /best-practices

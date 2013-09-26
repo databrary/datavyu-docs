@@ -1,0 +1,32 @@
+=======================
+Install Datavyu on OS X 
+=======================
+
+[Introductory words]
+
+System Requirements
+-------------------
+
+.. include:: /includes/fact-system-requirements.rst
+
+Install Datavyu
+---------------
+
+#. Download the latest Datavyu release for Mac OS X from the Datavyu
+   website's `Downloads Page <http://datavyu.org/download/>`_.
+
+#. If your computer has not already done so, unzip the archive file
+   (e.g. using Archive Utility). This will provide you with a folder
+   containing the Datavyu software and associated support documents. You
+   can drag this to your Applications folder, or some other
+   easily-remembered location.
+
+You're now ready to start using Datavyu! Out of the box, Datavyu
+supports the Quicktime plugin for video playback. You may alternately
+choose to use VLC for video playback, though this is not recommended. If
+you wish to use VLC, you must use `version 2.0.1
+<http://download.videolan.org/pub/videolan/vlc/2.0.1/macosx/vlc-2.0.1.dmg
+>`_ as Datavyu does not currently support later versions.
+
+Now that you've installed Datavyu, you can move on to Datavyu's
+:doc:`Getting Started Guide </guide/getting-started>`.

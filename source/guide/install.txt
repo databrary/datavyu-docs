@@ -1,0 +1,12 @@
+======================
+Installation Tutorials
+======================
+
+Datavyu is a Java-based application that works on Windows, Mac OS, and
+Linux platforms. [words]
+
+.. toctree::
+   :maxdepth: 1
+   
+   /guide/tutorials/install-datavyu-on-os-x
+   /guide/tutorials/install-datavyu-on-windows
