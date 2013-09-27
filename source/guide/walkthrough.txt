@@ -1,0 +1,32 @@
+=====================
+The Datavyu Interface
+=====================
+
+When you first open Datavyu, you will see two windows: the
+:guilabel:`Data Viewer Controller`, and a blank spreadsheet. If you add
+a video (for example, by selecting the :guilabel:`Add Data...` button in
+the :guilabel:`Data Viewer Controller`), a third window, a third window
+containing the video will appear.
+
+.. TODO: insert screenshots here
+
+The following sections describe each component of the Datavyu interface
+in detail.
+
+Data Viewer Controller
+----------------------
+
+The Data Viewer Controller allows users to control the playback of their
+data source and create observations in the spreadsheet.
+
+.. figure:: /img/data-viewer-controller.png
+   :alt: Image of the Data Viewer Controller
+   :align: center
+
+   [Data viewer controller image caption will go here!]
+
+On the left side is the keypad. This section maps
+directly to the number pad on your keyboard, or to an external number pad
+if you keyboard does not have one. These keys control playback, and also
+enable users to set :term:`cell onset` and :term:`cell offset`, create
+new cells, find, and go back.
