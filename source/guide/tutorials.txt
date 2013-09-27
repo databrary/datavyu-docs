@@ -1,0 +1,13 @@
+=================
+Datavyu Tutorials
+=================
+
+.. toc-tree::
+   :maxdepth: 1
+   
+   /guide/tutorial/add-observations
+   /guide/tutorial/add-a-new-column
+   /guide/tutorial/add-a-new-observation
+   /guide/tutorial/configure-variables
+   /guide/tutorial/export-data-from-a-project
+   /guide/tutorials/use-scripts-to-automate-tasks

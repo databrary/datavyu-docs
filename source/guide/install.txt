@@ -8,5 +8,5 @@ Linux platforms. [words]
 .. toctree::
    :maxdepth: 1
    
-   /guide/tutorials/install-datavyu-on-os-x
-   /guide/tutorials/install-datavyu-on-windows
+   /guide/tutorial/install-datavyu-on-os-x
+   /guide/tutorial/install-datavyu-on-windows

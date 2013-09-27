@@ -5,9 +5,10 @@ Datavyu Software Guide
 [words about Datavyu as software here]
 
 .. toctree:: 
-	:maxdepth: 1
+   :maxdepth: 1
 
-	/guide/install
-	/guide/getting-started
-	/guide/tutorials
-	/guide/reference
+   /guide/install
+   /guide/getting-started
+   /guide/tutorials
+
+.. /guide/reference

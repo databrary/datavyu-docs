@@ -18,9 +18,9 @@ Install Datavyu
 #. [windows installation instructions here once I figure out what they 
    are]
 
-#. At present, Datavyu for Windows does not include any video plugins.
-   To use Datavyu, you must download either Quicktime, which is
-   recommended, or VLC.
+#. Install a video plugin. At present, Datavyu for Windows does not
+   include any video plugins. To use Datavyu, you must download either
+   Quicktime, which is recommended, or VLC.
 
    To use Quicktime for playback, you must install Quicktime for Windows.
    If you already use Apple's iTunes, you likely already have Quicktime

@@ -1,0 +1,25 @@
+============================
+Getting Started with Datavyu
+============================
+
+Words about Datavyu just like, generally
+
+Use Datavyu
+-----------
+
+Open it up and then start using the software. What windows will open, etc.
+
+Software Walkthrough
+--------------------
+
+THE COMPONENTS
+#1
+#2
+#3
+
+Import / Open a Video
+---------------------
+
+talk about getting started
+talk about supported video types
+talk about how to convert file types
