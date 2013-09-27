@@ -12,10 +12,9 @@ Open it up and then start using the software. What windows will open, etc.
 Software Walkthrough
 --------------------
 
-THE COMPONENTS
-#1
-#2
-#3
+.. toctree::
+
+   /guide/walkthrough
 
 Import / Open a Video
 ---------------------
