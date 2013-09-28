@@ -17,7 +17,13 @@ Data Viewer Controller
 ----------------------
 
 The Data Viewer Controller allows users to control the playback of their
+<<<<<<< HEAD
 data source and create observations in the spreadsheet.
+=======
+data source and create observations in the spreadsheet. Quite literally, 
+it controls the :guilabel:`Data Viewer`, the window that contains the
+(video) data.
+>>>>>>> c3fee6700dd72ed73a19e05a256b06a71c450cb6
 
 .. figure:: /img/data-viewer-controller.png
    :alt: Image of the Data Viewer Controller
@@ -30,3 +36,52 @@ directly to the number pad on your keyboard, or to an external number pad
 if you keyboard does not have one. These keys control playback, and also
 enable users to set :term:`cell onset` and :term:`cell offset`, create
 new cells, find, and go back.
+<<<<<<< HEAD
+=======
+
+For more about the Data View Controller, and a detailed description of
+its functionality and features, see :doc:`/guide/controller`.
+
+Spreadsheet
+-----------
+
+The Datavyu spreadsheet is where users record comments, codes,
+and interpretations of their data. 
+
+.. figure:: /img/blank-spreadsheet.png
+   :alt: Image of a Datavyu blank spreadsheet with no observations recorded
+   :align: center
+   
+   A blank Datavyu spreadsheet. Note the :guilabel:`plus` icon in the
+   top left, which you can use to add new :term:`variables <variable>`.
+
+.. TODO: rewrite this dreadful paragraph
+
+The spreadsheet is the core of Datavyu. By :ref:`configuring variables
+<configure-variables>`, coders can record observations and link them
+directly to timestamps in the data source. Each user-defined variable is
+represented by a column in the spreadsheet, and observations stack on
+top of each other in sequence. Looking horizontally across the
+spreadsheet columns shows what was happening at a given point in time in
+the data source. Looking vertically down a column shows the sequence
+in which that variable type occurred.
+
+The :doc:`/guide/spreadsheet` document describes the
+:guilabel:`spreadsheet` in more detail. 
+
+.. seealso::
+
+   There are also a number of tutorials that can guide you through
+   common operations and that can help you to configure your
+   spreadsheet. See: :ref:`spreadsheet-tutorials` for a listing of
+   pertinent tutorials.
+
+Data Viewer
+-----------
+
+The :guilabel:`Data Viewer` is the window that contains/shows/presents
+the :term:`data` (i.e. the audio, video, eye-tracking etc.). 
+
+
+
+>>>>>>> c3fee6700dd72ed73a19e05a256b06a71c450cb6
