@@ -4,9 +4,9 @@ The Datavyu Interface
 
 When you first open Datavyu, you will see two windows: the
 :guilabel:`Data Viewer Controller`, and a blank spreadsheet. If you add
-a video (for example, by selecting the :guilabel:`Add Data...` button in
-the :guilabel:`Data Viewer Controller`), a third window, a third window
-containing the video will appear.
+a data source (e.g. an video or audio file or a motion capture file), a
+third window containing the data source will appear. This is generally a
+video that uses either Quicktime or VLC to play.
 
 .. TODO: insert screenshots here
 
