@@ -76,11 +76,11 @@ Data Viewer
 The :guilabel:`Data Viewer` is the window that contains/shows/presents
 the :term:`data` (i.e. the audio, video, eye-tracking, etc.). 
 
-.. class:: hidden
+.. .. class:: hidden
 
-   .. toctree::
-      :maxdepth: 1
-      
-      /guide/controller
-      /guide/spreadsheet
-      /guide/data-viewer
+.. toctree::
+   :maxdepth: 1
+   
+   /guide/controller
+   /guide/spreadsheet
+   /guide/data-viewer
