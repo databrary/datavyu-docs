@@ -1,0 +1,6 @@
+====================
+Spreadsheet Overview
+====================
+
+The Datavyu Spreadsheet is where :term:`coders <coder>` record
+observations.

@@ -1,6 +1,6 @@
-**********************
+======================
 Datavyu Software Guide
-**********************
+======================
 
 [words about Datavyu as software here]
 

@@ -1,6 +1,6 @@
-==========================
-The Data Viewer Controller
-==========================
+===============================
+Data Viewer Controller Overview
+===============================
 
 .. TODO: replace following paragraph with something better / not copied
    from intro page
