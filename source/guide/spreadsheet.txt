@@ -2,5 +2,87 @@
 Spreadsheet Overview
 ====================
 
+.. TODO: paragraph stolen from walkthrough.txt - you should make it not be.
+
 The Datavyu Spreadsheet is where :term:`coders <coder>` record
-observations.
+:term:`observations`. The spreadsheet is the core of Datavyu. By
+:ref:`configuring variables <configure-variables>`, coders can record
+observations and link them directly to timestamps in the data source.
+Each user-defined variable is represented by a column in the
+spreadsheet, and observations stack on top of each other in sequence.
+Looking horizontally across the spreadsheet columns shows what was
+happening at a given point in time in the data source. Looking
+vertically down a column shows the sequence in which that variable type
+occurred.
+
+.. figure:: /img/blank-spreadsheet.png
+   :alt: Image of a typical Datavyu spreadsheet with n study variables
+   :align: center
+   
+   A typical Datavyu spreadsheet. Note the :guilabel:`plus` icon in the
+   top left, which you can use to add new :term:`variables <variable>`.
+   [More words here].
+
+Variable Types
+--------------
+
+Datavyu supports three types of variables: *text*, *nominal*, and
+*matrix*. Using combinations of these variable types, you can (do stuff).
+Each variable that a user adds occupies its own column in the spreadsheet.
+
+Text Variables
+~~~~~~~~~~~~~~
+
+The text variable is the more straightforward variable type, being a
+simple text field. Text variables are ideal for storing (information),
+and (so on).
+
+Here's a sample observation for a text variable:
+
+.. TODO: example of a typical text variable observation
+
+Nominal Variables
+~~~~~~~~~~~~~~~~~
+
+.. next sentence stolen from wikipedia
+
+Nominal variables are with values which have no numerical value, such as
+gender or occupation. These are useful for recording facts about the
+study participant.
+
+A typical nominal variable column might resemble the following:
+
+.. TODO: example of a typical nominal variable column
+
+Matrix Variables
+~~~~~~~~~~~~~~~~
+
+Matrix variables are key - value observations, represented in the
+following form: ::
+
+   <variablename>(<arg01:N>, <arg02:N>, ... , <argn:N>)
+
+Using the :ref:`Vocab Editor <vocab-editor>`, you can configure matrix
+variables to represent any number of things.
+
+Matrix variables have :term:`arguments <argument>`, which represent the
+feature that is being studied. For instance, an argument could be "Left
+hand touch", or "Hesitation", or "Focus". When a coder codes the data
+source, he or she might record the presence or absence of these
+arguments. A matrix variable must have *at least* one argument, but may
+have as desired.
+
+.. TODO: is there a limit on the number of arguments?
+
+Sample matrix variable arrangement.
+
+Heading
+-------
+
+.. TODO: describe what the page looks like when coded.
+
+Next Steps
+----------
+
+Now that you are familiar with the basic components of Datavyu, you can
+:doc:`/guide/getting-started` or check out the :doc:`/guide/tutorials`.

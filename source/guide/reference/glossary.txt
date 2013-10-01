@@ -31,4 +31,13 @@ Glossary
       The human recording observations about the data source.
 
    playhead
-      [words]
+      The playhead indicates the current point of playback in the
+      :term:`timeslider` of the Data Viewer Controller.
+
+   observation   
+      An instance of the :term:`variable` that is being coded.
+      Observations have an :term:`onset` and an :term:`offset`, and
+      may be [types].
+
+   variable
+      [define variable as Datavyu uses it]
