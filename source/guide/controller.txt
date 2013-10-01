@@ -1,0 +1,97 @@
+==========================
+The Data Viewer Controller
+==========================
+
+.. TODO: replace following paragraph with something better / not copied
+   from intro page
+
+The Data Viewer Controller allows users to control the playback of their
+data source and create observations in the spreadsheet. Quite literally, 
+it controls the :guilabel:`Data Viewer`, the window that contains the
+(video) data.
+
+.. figure:: /img/data-viewer-controller.png
+   :alt: Image of the Data Viewer Controller
+   :align: center
+
+   [Data viewer controller image caption will go here!]
+
+.. TODO: detailed overview of its function / role then intro the piece-by-piece description
+
+Keypad
+------
+
+The Data Viewer Controller's keypad maps directly to the number pad
+on your keyboard or external keypad. 
+
+Playback Controls
+~~~~~~~~~~~~~~~~~
+
+- jog left (``1``): moves to previous cell onset (?).
+
+- play/pause (``2``): pauses playback. Pressing :guilabel:`play/pause` again resumes playback.
+
+- jog right (``3``): moves to next cell's onset.
+
+- shuttle left (``4``): rewinds incrementally (n frames). You can hold
+  down the :guilabel:`shuttle left` key to continually rewind. (?)
+
+- stop (``5``): stops playback.
+
+- shuttle right (``6``): fast forwards incrementally (n frames). You can
+  hold down the :guilabel:`shuttle right` key to continually advance (?).
+
+- rewind (``7``): rewinds. Repeatedly pressing :guilabel:`rewind` will increase the rewind speed.
+
+- play (``8``): plays.
+
+- forward (``9``): fast forwards. Repeatedly pressing forward will increase the fast forward speed.
+
+
+Coding Controls
+~~~~~~~~~~~~~~~
+
+- set cell onset (``clear``): sets the :term:`onset` for the current observation / cell.
+
+- point cell (``*``):
+
+- set cell offset (``/`` and ``.``):
+
+- find (``+``):
+
+- go back (``-``):
+
+- create new cell and set onset (``0``):
+
+- create new cell (``Enter``):
+
+Timeslider
+----------
+
+The :guilabel:`Timeslider` denotes data source playback stuff. You can
+control the scale of the :guilabel:`Timeslider` using the slider bar in
+the top right. Moving it to the right shows a smaller scale, [words].
+The red :term:`playhead` shows the current playback position, and the
+green bracketing barriers indicate the :term:`onset` and :term:`offset`
+positions for the current clip.
+
+The :guilabel:`Timeslider` component of the Data Viewer Controller also
+includes five buttons that control stuff:
+
+- Lock All: [words]
+
+- Add Bookmark: adds a bookmark at the playhead.
+
+- Snap Region: [words]
+
+- Clear Region: [words]
+
+- Search (the :guilabel:`magnifying glass` icon): [words]
+
+.. seealso::
+
+   :doc:`/guide/spreadsheet`
+   
+   :doc:`/guide/data-viewer`
+   
+   :doc:`/guide/tutorials`

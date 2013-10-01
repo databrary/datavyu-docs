@@ -10,5 +10,6 @@ Datavyu Software Guide
    /guide/install
    /guide/getting-started
    /guide/tutorials
+   /guide/reference/glossary
 
 .. /guide/reference

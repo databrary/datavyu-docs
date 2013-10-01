@@ -1,0 +1,34 @@
+Glossary
+========
+
+.. glossary::
+   :sorted:
+
+   Data Viewer Controller
+      [what is the dataviewer controller] see: :doc:`/guide/controller`
+
+   data
+      The audio or video files that are being studied.
+   
+   onset
+   cell onset
+      words
+   
+   offset
+   cell offset 
+      words
+
+   variable
+      [definition]
+   
+   spreadsheet
+      [definition]
+
+   code (verb)
+      To record observations about the data source.
+
+   coder (noun)
+      The human recording observations about the data source.
+
+   playhead
+      [words]
