@@ -1,0 +1,154 @@
+==============================
+Write Ruby Scripts for Datavyu
+==============================
+
+This detailed guide describes to write Ruby scripts to automate various
+tasks in Datavyu, and to ensure reliable :term:`coding <code (verb)>`,
+
+For a more in-depth discussion of each particular method and function,
+please see :doc:`the Davayu Ruby API Reference section </api/reference>`.
+
+Recommended Text Editors
+------------------------
+
+Ruby scripts are simply text files with a ``.rb`` file extension. You
+can write scripts in any text editor, such as Notepad or TextEdit.
+However, while those editors are adequate for scripting purposes, modern
+text editors make scripts much easier to read by providing syntax
+highlighting, which can make a world of difference when attempting to
+debug an issue.
+
+.. figure:: /img/syntax-highlighting-comparison.png
+   :alt: comparison of Ruby scripts viewed in TextEdit (Mac OS X) and TextMate 2
+   :align: center
+   
+   Comparison of a sample "Add Cells to a Variable" Ruby script.
+   
+   At left: TextEdit (Mac OS X). At right: TextMate 2 (Mac OS X) with
+   "Mac Classic" theme. Note that the same "add-cells-to-variable.rb" is
+   open in each editor.
+
+We recommend installing and using one of the following
+programs for editing Ruby scripts:
+
+- Windows:
+
+  - `Notepad++ <http://notepad-plus-plus.org/>`__ (free and open-source)
+  - `Notepad2 <http://www.flos-freeware.ch/notepad2.html>`__ (free and open-source)
+
+- Mac OSX:
+
+  - `TextMate 2 <https://api.textmate.org/downloads/beta>`__ (free and open-source)
+  - `gedit <http://projects.gnome.org/gedit/>`__ (free and open-source)
+  - `TextWrangler <http://www.barebones.com/products/TextWrangler/>`__ (free)
+
+- Linux:
+
+  - `gedit <http://projects.gnome.org/gedit/>`__ (free and open-source)
+  - `kate <http://kate-editor.org/>`__ (free and open-source)
+
+.. tip:: 
+   
+   Syntax highlighting generally depends on file extensions. The file
+   extension tells the text editor what kind of file it is. If the Ruby
+   script file does not have the ``.rb`` extension, you might not get
+   proper syntax highlighting, so ensure that your Ruby script files end
+   in ``.rb``.
+
+General Principles
+------------------
+
+- Each cell has three required fields: ``onset``, ``offset``, and
+  ``ordinal``. Each cell also takes at least one :term:`argument`,
+  [what's an argument?].
+
+- ``onset``, ``offset``, and ``ordinal`` are all :term:`integers` rather tha
+n :term:`strings`.
+
+- ``onset`` and ``offset`` are measured in **milliseconds from the
+  beginning of the video (or other data stream)**, starting from 0. For
+  instance, an ``onset`` time of 00:02:20 translates to 140000ms.
+
+- Cell arguments are :term:`strings`. As such, if you wish to do math
+  with a coded argument, you must first convert it to an integer. Since
+  ``onset``, ``offset``, and ``ordinal`` are already integers, you don't
+  need to retype them.
+  
+  The following example creates an integer variable from a string
+  variable:
+
+  .. example:: 
+
+     Create a variable, ``var1`` whose value is a number ``5`` stored as a string
+
+     .. code-block:: ruby
+
+        var1 = "5"
+        
+     Convert it to an integer using ``to_i`` and save it to a new variable
+
+     .. code-block:: ruby
+
+        var2 = var1.to_i
+        
+     Print some math result
+
+     .. code-block:: ruby
+
+        puts var2 * 2
+
+- To print something to the console, you have two options: the ``p``
+  command and the ``puts`` command. When in doubt, use ``p``, as it
+  prints arrays and lists in a more readable format, rather than mashing
+  them all together like ``puts`` does. Run the following example for
+  yourself to see the difference:
+   
+  .. code-block:: ruby
+
+     # Print 5 using p
+     p 5
+
+     # Also prints 5 using puts
+     puts 5
+
+     # Now to show the difference, print a list
+     p [5,6,7,8,9] 
+     puts [5,6,7,8,9]
+
+
+Basic Script Format
+-------------------
+
+In order to work, all scripts must include the following line at the top:
+
+.. code-block:: ruby
+
+   require 'Datavyu_API.rb'
+
+This ``require`` statement loads all of the helper functions that help
+Ruby talk to the Datavyu database.
+
+In general, the rest of the script code goes between ``begin`` and
+``end`` tags like so:
+
+.. code-block:: ruby
+
+   require 'Datavyu_API.rb'
+   begin
+     # Get the variables that we want to work with
+
+     # Do something to those variables
+
+     # Write any changes to those variables back to the database
+   end
+
+.. tip::
+
+   Anything that comes after a ``#`` character on a line in Ruby is a
+   "comment", which means it will not execute. Comments are useful for
+   explaining what the code is doing so that you remember when you look
+   at the script 6 months from now. The examples in this documentation
+   use comments extensively.
+
+Now that you've got a good grounding in the Datavyu Ruby API, consider
+the :doc:`/api/script-examples` or :doc:`/api/reference`.
