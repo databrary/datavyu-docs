@@ -13,6 +13,7 @@ Software Walkthrough
 --------------------
 
 .. toctree::
+   :maxdepth: 1
 
    /guide/walkthrough
    /guide/controller
@@ -21,6 +22,8 @@ Software Walkthrough
 Import / Open a Video
 ---------------------
 
-talk about getting started
-talk about supported video types
-talk about how to convert file types
+- talk about getting started
+
+- talk about supported video types
+
+- talk about how to convert file types

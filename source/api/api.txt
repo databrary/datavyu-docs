@@ -5,26 +5,27 @@ How To Write Scripts (with examples)
 This is a detailed guide on how to write scripts, and some of the
 different things that you can do with them. For a more in-depth
 discussion of each particular method and function, please see the rest
-of the [[Ruby Scripting Manual]].
+of the Ruby Scripting Manual.
 
-Editing scripts
-===============
+Recommended Text Editors
+------------------------
 
-Scripts are just plain text files with a .rb file extension. Any text
-editor will work (such as Notepad or Textedit), however, there are some
-very nice text editors that can help identify errors and make Ruby
-scripts much easier to read by providing syntax highlighting. We
-recommend installing and using one of the following programs for editing
-Ruby scripts (it'll be much easier on your eyes and brain):
+Scripts are just plain text files with a ``.rb`` file extension. You can
+write scripts in any text editor, like Notepad or TextEdit. However,
+while those editors are adequate for scripting purposes, modern text
+editors make scripts much easier to read by providing syntax
+highlighting, which can make a world of difference when attempting to
+debug an issue. We recommend installing and using one of the following
+programs for editing Ruby scripts:
 
--  Windows
+-  Windows:
 
    -  `Notepad++ <http://notepad-plus-plus.org/>`__ (free and
       open-source)
    -  `Notepad2 <http://www.flos-freeware.ch/notepad2.html>`__ (free and
       open-source)
 
--  Mac OSX
+-  Mac OSX:
 
    -  `TextMate 2 <https://api.textmate.org/downloads/beta>`__ (free and
       open-source)
@@ -33,26 +34,30 @@ Ruby scripts (it'll be much easier on your eyes and brain):
    -  `TextWrangler <http://www.barebones.com/products/TextWrangler/>`__
       (free)
 
--  Linux
+-  Linux:
 
    -  `gedit <http://projects.gnome.org/gedit/>`__ (free and
       open-source)
    -  `kate <http://kate-editor.org/>`__ (free and open-source)
 
-        **Scripting Tip**: Syntax highlighting generally depends on the
-        file extension so the software knows what kind of file it is. If
-        the Ruby Script file does not have the .rb extension, you might
-        not get proper syntax highlighting! Make sure the file ends in
-        .rb!
+.. tip:: 
+   
+   Syntax highlighting generally depends on file extensions. The file
+   extension tells the text editor what kind of file it is. If the Ruby
+   Script file does not have the ``.rb`` extension, you might not get
+   proper syntax highlighting, so ensure that your Ruby script files end
+   in ``.rb``.
 
 Things you should know before starting
-======================================
+--------------------------------------
 
 -  Each cell has three required fields: onset, offset, and ordinal. Each
    cell also has at least one argument.
+
 -  In Ruby, onset, offset, and ordinal are all integers, not strings,
    and onset and offset are given in **milliseconds** from the beginning
    of the video (or other data stream), starting at 0.
+
 -  A cell's arguments are all represented as strings, so if you want to
    do math with a coded argument, you need to convert it to a number
    first. You do not need to do this with onset, offset, or ordinal.
@@ -71,31 +76,31 @@ Things you should know before starting
    command and the ``puts`` command. When in doubt, use ``p``, as it
    will properly format arrays and lists in readable format, instead of
    mushing them all together like ``puts`` does. Use them like this:
-   \`\`\`ruby # Print 5 p 5
--  Argument names rules:
+   
+   .. code:: ruby
 
-Also prints 5
-=============
+      # Print 5 
+      p 5
 
-puts 5
+      # Also prints 5
+      puts 5
 
-Now to show the difference, print a list
-========================================
+      # Now to show the difference, print a list
+      p [5,6,7,8,9] 
+      puts [5,6,7,8,9]
 
-p [5,6,7,8,9] puts [5,6,7,8,9] \`\`\`
 
 Basic Script Format
-===================
+-------------------
 
-**All scripts must include one line at the top in order to work**:
+.. important:: In order to work, all scripts must include the following line at the top:
 
-.. code:: ruby
+   .. code:: ruby
 
-    require 'Datavyu_API.rb'
+       require 'Datavyu_API.rb'
 
-What this line does is load all of the helper functions that help Ruby
-talk to the Datavyu database. This line is necessary for all scripts
-that are run inside of Datavyu.
+   This ``require`` statement loads all of the helper functions that help Ruby
+   talk to the Datavyu database.
 
 The rest of the code generally goes between ``begin`` and ``end`` tags
 like so:
@@ -111,14 +116,16 @@ like so:
         # Write our changes to those variables back to the database
     end
 
-        **Scripting Tip**: Anything that comes after a ``#`` character
-        on a line in Ruby is a "comment", which means it won't be run.
-        Use this to explain what you are doing in the code so you
-        remember when you look at the script 6 months from now. This
-        will be used heavily in the examples.
+.. tip::
+
+   Anything that comes after a ``#`` character on a line in Ruby is a
+   "comment", which means it won't be run. Comments are useful for
+   explaining what the code is doing so that you remember when you look at
+   the script 6 months from now. All examples in this documentation
+   use comments extensively.
 
 Script Examples
-===============
+---------------
 
 -  `Example-Template.opf <Example-Template.opf>`__
 

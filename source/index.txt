@@ -12,7 +12,7 @@ Contents:
    :maxdepth: 1
 
    /guide
-
+   /api/api
 .. /faq
    /api
    /best-practices
