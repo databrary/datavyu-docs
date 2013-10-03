@@ -1,0 +1,76 @@
+.. _api-export-data:
+
+=======================================
+Use Scripts to Export Data from Datavyu
+=======================================
+
+Automatic Export Methods
+---------------------------
+
+.. TODO: include the instructions and/or explain that it will be
+   forthcoming. if not upcoming:
+   - remove heading
+   - add paragraph explaining that currently only manual export methods
+     but that automatic are under development
+
+Manual Export Methods
+---------------------
+
+Datavyu supports numerous data export methods. We will cover four common
+approaches here:
+
+#. A straight dump to CSV file where cells correspond to what was coded
+   in Datavyu.
+
+#. A straight *frame-by-frame* dump detailing all observations 
+   associated with each frame.
+
+#. A *nested* dump, which loops through each column and nests cells
+   appropriately, 
+
+#. A *nested* dump *with un-nested cells*, which is similar to a the
+nested dump, but which also works if your cells do not nest.
+
+These methods will be covered in the order they are listed above, which
+also happens to be in order of increasing complexity.
+
+Method 1: Direct Dump to CSV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This method is actually much easier to do (only 1 line!) with the new R
+scripting functions. Please see the R guide for instructions. However,
+we will still cover how to do this in Ruby here.
+
+.. TODO: actually include the instructions
+
+Method 2: Frame by Frame Dump
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We can also dump a file frame by frame if we know the framerate of the
+video that was coded. The idea here is to generate a new row in a
+spreadsheet for each frame of the video, with the value of each argument
+in each cell in its own column. For long videos, this type of exporting
+may take too long (a 2 hour video at 30fps is 216,000 rows!), but for
+short videos this is an easy and intuitive export method.
+
+To do this, we loop over all of the columns in the spreadsheet and grab
+the current cell at each time, moving one frame at a time (so there will
+be an entry for 00:00:033, 00:00:066, and so on, all the way until the
+end of a video for a 30fps video).
+
+.. TODO: actually include the instructions
+
+Method 3: Nested dump
+~~~~~~~~~~~~~~~~~~~~~
+
+.. TODO: fill 'er in
+
+Method 4: Nested dump with un-nested cells
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. TODO: fill 'er in
+
+Run a Script Across Multiple Files
+--------------------------------------
+
+use require

@@ -5,82 +5,106 @@ Script Examples
 -  `Example-Template.opf <Example-Template.opf>`__
 
 Lets walk through building a script. For the sake of this example, we'll
-be using the simple template in the link above. It contains an ID
-variable with some basic information such as subject number, testdate,
-birthdate, and condition. Then there is a trial variable that has two
-arguments: trialnum and outcome. Trial has no cells in it yet. We're
-going to be modifying this file, so download it and load it up into
-Datavyu!
+be using the simple template in the link above. 
 
-Loading Datavyu Variables into Ruby
------------------------------------
+It contains an ``ID`` variable with some basic information such as
+subject number, testdate, birthdate, and condition. Then there is a
+``trial`` variable that has two arguments: ``trialnum`` and ``outcome``.
+``trial`` has no cells in it yet. We're going to be modifying this file,
+so download it and load open it with Datavyu!
 
-Most scripts begin by first loading the variables we want to work with
-into Ruby. To do this, we use the function [[getVariable]], which takes
-a parameter that is simply the name of the variable in Datavyu. It
-returns the Ruby representation of the variable, which is what we work
-with. Eventually, we will save any changes to that variable back to the
-database.
+Load Datavyu Variables
+----------------------
 
-        **Scripting Tip**: In order to work with a variable in Ruby, it
-        must first be loaded with [[getVariable]]. In order for any
-        changes to that variable to be saved back to Datavyu, you have
-        to send it back from Ruby to Datavyu with [[setVariable]].
-        Otherwise, any changes done to the variable are not saved (which
-        can be a useful feature).
+Most scripts begin by loading the desired variables. To do this, use the
+function :function:`getVariable`. :function:`getVariable` takes one parameter: the name
+of the variable in Datavyu, and returns :function:`getVariable` returns the Ruby
+representation of the variable, which you work with. Finally, save any
+changes to that variable back to the database.
 
-Example of how to load a variable into Ruby:
+.. code-block:: ruby
 
-.. code:: ruby
+   require 'Datavyu_API.rb'
+   begin
+      # Assign the Datavyu variable "trial" data to a new Ruby variable called trial.
+     
+      trial = getVariable("trial")
+   end
 
-    require 'Datavyu_API.rb'
-    begin
-        # Load the Datavyu variable "trial" into Ruby variable called trial.
-        # The left hand side of this equation is the name of the Ruby variable.
-        trial = getVariable("trial")
-    end
+The left side of this equation is the name of the Ruby variable,
+the "trial" in the parentheses is the argument passed to
+:function:`gerVariable` (the name of the Datavyu variable).
 
-Adding arguments to a variable
-------------------------------
+.. image:: /img/variable-assignment-mapping.png
+
+.. _api-add-arguments:
+
+Add Arguments to a Variable
+---------------------------
+
+.. following paragraph makes no sense
 
 Now we probably want to do something with that variable that we just
 loaded. Lets start by doing something simple, like adding arguments to a
-variable. We use a method called "add\_arg" to do this. As hopefully you
+variable. We use a method called ``add_arg`` to do this. As hopefully you
 remember from your Ruby tutorial, methods are functions that are part of
-classes. In this case, [[add\_arg]] is a method of the [[RVariable]]
+classes. In this case, ``add_arg`` is a method of the ``RVariable``
 class. The basic idea is that a method "belongs" to an instance of a
-class, so using the above example, the RVariable trial "owns" a function
-called [[add\_arg]] that will add an argument to its cells.
+class, so using the above example, the ``RVariable`` ``trial`` "owns" a function
+called ``add_arg`` that will add an argument to its cells.
 
 This somewhat confusing thing is probably most easily seen in an
 example:
 
-.. code:: ruby
+#. Assign the Datavyu variable "trial" to a new Ruby variable called ``trial``
 
-    require 'Datavyu_API.rb'
-    begin
-        # Load the Datavyu variable "trial" into Ruby variable called trial.
-        trial = getVariable("trial")
+   .. code-block:: ruby
+   
+      trial = getVariable("trial")
 
-        # Now that trial is loaded, lets add an argument called "unit" to it, which would be used
-        # in the experiment to record which unit some equipment was at (or anything, this is Datavyu after all)
-        # Notice how this method is called differently than the getVariable function.
-        trial.add_arg("unit")
+#. Add an argument to ``trial`` using ``add_arg``. In this example,
+   we'll add a study variable argument called "unit" to the ``trial``
+   variable. The "unit" argument might represent the unit of measure used
+   during an experiment, for instance.
+   
+   .. code-block:: ruby
+   
+      trial.add_arg("unit")
 
-        # Now we have to write back our changes
-        setVariable(trial)
-    end
+#. Write the changes back to the Datavyu database:
 
-Adding cells to a variable
---------------------------
+   .. code-block:: ruby
+   
+      setVariable(trial)
 
-Lets do something a little more interesting than just adding an
+Put together, the script should resemble the following:
+
+.. code-block:: ruby
+
+   require 'Datavyu_API.rb'
+   begin
+      # Assign the Datavyu variable "trial" data to a new Ruby variable called trial.
+      trial = getVariable("trial")
+
+      # Add "unit" argument        
+      trial.add_arg("unit")
+
+      # Now we have to write back our changes
+      setVariable(trial)
+   end
+
+.. _api-add-cells:
+
+Add Cells to a Variable
+-----------------------
+
+Now that Lets do something a little more interesting than just adding an
 argument. Lets add some cells to a column. Say that we know that a new
 trial starts every minute from 0 to 4 minutes, yielding 5 trials. We
 want to make a new blank cell for each of these trials with the onset
 set to that time, so it is easy for the coder to code them.
 
-.. code:: ruby
+.. code-block:: ruby
 
     require 'Datavyu_API.rb'
     begin
@@ -105,6 +129,8 @@ set to that time, so it is easy for the coder to code them.
         setVariable(trial)
     end
 
+.. _api-add-new-variable:
+
 Adding a new variable
 ---------------------
 
@@ -116,7 +142,7 @@ called step with three arguments called foot (for the left or right
 foot), ht (for heel or toe), and direction (forward or backward step),
 we would do the following:
 
-.. code:: ruby
+.. code-block:: ruby
 
     require 'Datavyu_API.rb'
     begin
@@ -127,54 +153,62 @@ we would do the following:
         setVariable(step)
     end
 
-Checking for typos
-------------------
+.. _api-check-for-typos:
+
+Check for Typos
+---------------
 
 Another common use for scripts is to do a quick check for any typos that
-a coder made. This is mostly just in case a coder typed in an invalid
-code (entered an "h" when only "j" and "k" are considered valid codes)
-or maybe hit more than one key ("hj" instead of "j" or "k"). These kinds
-of scripts are best run immediately after each coding pass so that
-errors can be caught early and recoded. The function used for this is
-[[checkValidCodes]], which has a somewhat strange parameter setup.
+a coder made. This is primarily used to catch typographic errors where a coder entered an invalid code, such as 
+an "h" when only "j" and "k" are valid codes,
+or hit more than one key: "hj" instead of "j" or "k", for example. These kinds
+of scripts should be run immediately after each coding pass so that
+errors are caught early on and recoded. 
 
-The first parameter of the function is the name of the variable that you
-want to check, for example, if we wanted to check a variable named
-"trial", we'd enter "trial" as the first parameter. The rest of the
-parameters are, in programming lingo, called key/value pairs. The key is
-the name of an argument in that column, and the value is an array of
-valid codes for that argument. The function checks each argument against
-its list of valid codes. This is probably best shown by example,
-assuming we have the variable above called "step" and we want to check
-its codes:
+Datavyu API provides the :function:`checkValidCodes` function to check
+for coder errors. :function:`checkValidCodes` requires at least three
+parameters: the name of the variable to it will verify, and then at
+least one :term:`key-value pair`. Key-value pairs consist of the "key",
+the name of a Datavyu argument, and a "value", which is an array of
+valid codes for that argument.
 
-.. code:: ruby
+:function:`checkValidCodes` checks each argument (key) against its list of
+valid codes (the values). 
 
-    require 'Datavyu_API.rb'
-    begin
-        # Check for typos. Notice the square brackets. These denote arrays. So the basic format is:
-        # ... argumentname, [validarg1, validarg2, validarg3], ...
-        checkValidCodes("step", "foot", ["l", "r"], "ht", ["h", "t"], "direction", ["f","b"])
-    end
+The following example checks the variable ``step`` against its codes:
 
-We can also do this exact same thing in a bit clearer of a way by
-assigning the valid codes to Ruby variables first:
-
-.. code:: ruby
+.. code-block:: ruby
 
     require 'Datavyu_API.rb'
     begin
-        # Store each of the valid code arrays into a variable first so it is easier to read
-        footCodes = ["l", "r"]
-        htCodes = ["h", "t"]
-        directionCodes = ["f", "b"]
-
-        # Check for typos. Notice the square brackets. These denote arrays. So the basic format is:
-        # ... argumentname, [validarg1, validarg2, validarg3], ...
-        checkValidCodes("step", "foot", footCodes, "ht", htCodes, "direction", directionCodes)
+      # Check for typos. Notice the square brackets. These denote arrays. So the basic format is:
+      # "variable", argumentname, [validarg1, validarg2, validarg3], argument2, [ ... ], 
+    
+      checkValidCodes("step", "foot", ["l", "r"], "ht", ["h", "t"], "direction", ["f","b"])
     end
 
-Making a reliability variable
+The same verification can be done more clearly by first assigning the
+valid codes to variables, as in the next example:
+
+.. code-block:: ruby
+
+   require 'Datavyu_API.rb'
+   begin
+     # Store each of the valid code arrays into a variable first so it is easier to read
+    
+     footCodes = ["l", "r"]
+     htCodes = ["h", "t"]
+     directionCodes = ["f", "b"]
+
+     # Check for typos, replacing the code arrays with your new variables:
+    
+     checkValidCodes("step", "foot", footCodes, "ht", htCodes, "direction", directionCodes)
+   end
+
+.. _api-reliability:
+.. _api-make-reliability-variable:
+
+Make a Reliability Variable
 -----------------------------
 
 Creating a reliability column is another very common task. The idea is
@@ -200,7 +234,7 @@ Given our trial variable above, we want to make a new variable called
 trialnum should be carried over (we don't care about the reliability
 coder coding those). We do that like this:
 
-.. code:: ruby
+.. code-block:: ruby
 
     require 'Datavyu_API.rb'
     begin
@@ -212,6 +246,8 @@ coder coding those). We do that like this:
 Note that we do **not** have to write the variable back to the database.
 The [[makeReliability]] function will take care of that for us
 automatically. This is the only function that this is true for.
+
+.. _api-check-reliability:
 
 Checking reliability
 --------------------
@@ -242,7 +278,7 @@ The fourth argument is an optional file to print to. Pass the string
 representing the location of the file you'd like to write to. See how to
 do this in the example below:
 
-.. code:: ruby
+.. code-block:: ruby
 
     require 'Datavyu_API.rb'
     begin
@@ -253,61 +289,3 @@ do this in the example below:
         dump_file = File.expand_path("~/Desktop/relcheck.txt")
         checkReliability("trial", "rel.trial", "trialnum", dump_file)
     end
-
-Exporting your data
--------------------
-
-Automatic exporting methods
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Coming soon!
-
-Manual exporting methods
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-There are many ways to export your data. We will cover four common
-approaches here:
-
-1. a straight dump to CSV file where cells correspond to what was coded
-   in Datavyu
-2. a straight frame-by-frame dump of what was happening on each frame
-3. a fancier way of exporting the data that loops through each column
-   and nests cells appropriately
-4. a still fancier way of achieving nesting mentioned in the previous
-   method but if your cells do not necessarily nest.
-
-These methods will be covered in the order they are listed above, which
-also happens to be in order of increasing complexity.
-
-Method 1: Dumping to a CSV with no modifications at all
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This method is actually much easier to do (only 1 line!) with the new R
-scripting functions. Please see the R guide for instructions. However,
-we will still cover how to do this in Ruby here.
-
-Method 2: Frame by frame dump
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-We can also dump a file frame by frame if we know the framerate of the
-video that was coded. The idea here is to generate a new row in a
-spreadsheet for each frame of the video, with the value of each argument
-in each cell in its own column. For long videos, this type of exporting
-may take too long (a 2 hour video at 30fps is 216,000 rows!), but for
-short videos this is definitely a very easy way to export files.
-
-To do this, we loop over all of the columns in the spreadsheet and grab
-the current cell at each time, moving one frame at a time (so there will
-be an entry for 00:00:033, 00:00:066, and so on, all the way until the
-end of a video for a 30fps video).
-
-Method 3: Nested dump
-~~~~~~~~~~~~~~~~~~~~~
-
-Method 4: Nested dump with un-nested cells
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Running a script across multiple files
---------------------------------------
-
-use require

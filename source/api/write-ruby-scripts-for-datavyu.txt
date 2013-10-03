@@ -77,25 +77,23 @@ n :term:`strings`.
   The following example creates an integer variable from a string
   variable:
 
-  .. example:: 
+  Create a variable, ``var1`` whose value is a number ``5`` stored as a string
 
-     Create a variable, ``var1`` whose value is a number ``5`` stored as a string
+  .. code-block:: ruby
 
-     .. code-block:: ruby
+     var1 = "5"
+     
+  Convert it to an integer using ``to_i`` and save it to a new variable
 
-        var1 = "5"
-        
-     Convert it to an integer using ``to_i`` and save it to a new variable
+  .. code-block:: ruby
 
-     .. code-block:: ruby
+     var2 = var1.to_i
+     
+  Print some math result
 
-        var2 = var1.to_i
-        
-     Print some math result
+  .. code-block:: ruby
 
-     .. code-block:: ruby
-
-        puts var2 * 2
+     puts var2 * 2
 
 - To print something to the console, you have two options: the ``p``
   command and the ``puts`` command. When in doubt, use ``p``, as it
