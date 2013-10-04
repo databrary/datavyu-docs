@@ -33,7 +33,7 @@ changes to that variable back to the database.
 
 The left side of this equation is the name of the Ruby variable,
 the "trial" in the parentheses is the argument passed to
-:function:`gerVariable` (the name of the Datavyu variable).
+:function:`getVariable` (the name of the Datavyu variable).
 
 .. image:: /img/variable-assignment-mapping.png
 

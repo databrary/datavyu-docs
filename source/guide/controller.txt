@@ -90,8 +90,6 @@ includes five buttons that control stuff:
 
 .. seealso::
 
-   :doc:`/guide/spreadsheet`
+   - :doc:`/guide/spreadsheet`
    
-   :doc:`/guide/data-viewer`
-   
-   :doc:`/guide/tutorials`
+   - :doc:`/guide/tutorials`

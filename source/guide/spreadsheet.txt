@@ -23,6 +23,12 @@ occurred.
    top left, which you can use to add new :term:`variables <variable>`.
    [More words here].
 
+DataVyu automatically links the times coded in the spreadsheet to the
+current time in the video or audio source. This allows coders to insert
+the :term:`onsets <onset>` and :term:`offsets <offset>` of events into
+the spreadsheet and jump to the relevant time in the data source by
+selecting coded data in the spreadsheet.
+
 Variable Types
 --------------
 
@@ -46,9 +52,9 @@ Nominal Variables
 
 .. next sentence stolen from wikipedia
 
-Nominal variables are with values which have no numerical value, such as
-gender or occupation. These are useful for recording facts about the
-study participant.
+Nominal variables are variables with values which have no numerical
+value, such as gender or occupation. These are useful for recording
+facts about the study participant.
 
 A typical nominal variable column might resemble the following:
 
@@ -76,8 +82,8 @@ have as desired.
 
 Sample matrix variable arrangement.
 
-Heading
--------
+MEANINGFUL HEADING
+------------------
 
 .. TODO: describe what the page looks like when coded.
 
