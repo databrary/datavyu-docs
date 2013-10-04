@@ -62,14 +62,14 @@ General Principles
   ``ordinal``. Each cell also takes at least one :term:`argument`,
   [what's an argument?].
 
-- ``onset``, ``offset``, and ``ordinal`` are all :term:`integers` rather tha
-  n :term:`strings`.
+- ``onset``, ``offset``, and ``ordinal`` are all :term:`integers <integer>` rather tha
+  n :term:`strings <string>`.
 
 - ``onset`` and ``offset`` are measured in **milliseconds from the
   beginning of the video (or other data stream)**, starting from 0. For
   instance, an ``onset`` time of 00:02:20 translates to 140000ms.
 
-- Cell arguments are :term:`strings`. As such, if you wish to do math
+- Cell arguments are :term:`strings <string>`. As such, if you wish to do math
   with a coded argument, you must first convert it to an integer. Since
   ``onset``, ``offset``, and ``ordinal`` are already integers, you don't
   need to retype them.

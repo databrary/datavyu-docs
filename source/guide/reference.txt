@@ -5,7 +5,7 @@ Datavyu Reference
 .. toctree::
    :titlesonly:
    
-   /reference/glossary
+   /guide/reference/glossary
 
 .. /reference/limits
    /reference/file-formats
