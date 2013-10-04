@@ -1,0 +1,13 @@
+onset
+cell onset
+   words
+
+offset
+cell offset 
+   words
+
+code
+   To record observations about the data source.
+
+coder
+   The human recording observations about the data source.

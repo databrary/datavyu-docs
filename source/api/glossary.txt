@@ -1,0 +1,14 @@
+========
+Glossary
+========
+
+.. glossary::
+   :sorted:
+
+   integer
+      [define for Datavyu]
+   
+   string
+      [define for Datavyu]
+      
+   ,, include:: /includes/common-glossary-terms.rst

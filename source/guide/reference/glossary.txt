@@ -1,3 +1,4 @@
+========
 Glossary
 ========
 
@@ -24,20 +25,32 @@ Glossary
    spreadsheet
       [definition]
 
-   code (verb)
+   code
       To record observations about the data source.
 
-   coder (noun)
+   coder
       The human recording observations about the data source.
 
    playhead
       The playhead indicates the current point of playback in the
       :term:`timeslider` of the Data Viewer Controller.
 
-   observation   
+   observation
       An instance of the :term:`variable` that is being coded.
       Observations have an :term:`onset` and an :term:`offset`, and
       may be [types].
 
-   variable
-      [define variable as Datavyu uses it]
+   argument
+      [define for Datavyu]
+   
+   integer
+      [define for Datavyu]
+   
+   string
+      [define for Datavyu]
+   
+   timeslider
+      [define for Datavyu]
+
+   key-value pair
+      [definition]

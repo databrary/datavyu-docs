@@ -2,7 +2,7 @@
 Datavyu Tutorials
 =================
 
-.. toc-tree::
+.. toctree::
    :maxdepth: 1
    
    /guide/tutorial/add-observations

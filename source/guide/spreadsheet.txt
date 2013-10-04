@@ -5,7 +5,7 @@ Spreadsheet Overview
 .. TODO: paragraph stolen from walkthrough.txt - you should make it not be.
 
 The Datavyu Spreadsheet is where :term:`coders <coder>` record
-:term:`observations`. The spreadsheet is the core of Datavyu. By
+:term:`observations <observation>`. The spreadsheet is the core of Datavyu. By
 :ref:`configuring variables <configure-variables>`, coders can record
 observations and link them directly to timestamps in the data source.
 Each user-defined variable is represented by a column in the
