@@ -24,14 +24,16 @@ Keypad
 The Data Viewer Controller's keypad maps directly to the number pad
 on your keyboard or external keypad. 
 
+.. _playback-controls:
+
 Playback Controls
 ~~~~~~~~~~~~~~~~~
 
-- jog left (``1``): moves to previous cell onset (?).
+- jog left (``1``): moves the playhead back one frame.
 
 - play/pause (``2``): pauses playback. Pressing :guilabel:`play/pause` again resumes playback.
 
-- jog right (``3``): moves to next cell's onset.
+- jog right (``3``): moves the playhead forward one frame.
 
 - shuttle left (``4``): rewinds incrementally (n frames). You can hold
   down the :guilabel:`shuttle left` key to continually rewind. (?)
@@ -47,6 +49,7 @@ Playback Controls
 
 - forward (``9``): fast forwards. Repeatedly pressing forward will increase the fast forward speed.
 
+.. _coding-controls:
 
 Coding Controls
 ~~~~~~~~~~~~~~~

@@ -9,8 +9,8 @@ intuitive interface for working with data sources and recording
 observations, and includes `an API <https://github.com/databrary/datavyu/blob/master/src/main/resources/Datavyu_API.rb>`_
 for more advanced data manipulation.
 
-This Getting Started Guide describes Datavyu's components and how they
-work, and provides tutorials to help you start coding.
+This Getting Started Guide describes Datavyu's core components and how
+they work, and provides tutorials to help you start coding.
 
 The Datavyu Interface
 ---------------------
@@ -79,9 +79,9 @@ The :doc:`/guide/spreadsheet` document describes the
 .. seealso::
 
    There are also a number of tutorials that can guide you through
-   common operations and that can help you to configure your
-   spreadsheet. See: :ref:`spreadsheet-tutorials` for a listing of
-   pertinent tutorials.
+   common operations and help you to configure your spreadsheet. See:
+   :ref:`tutorial-configure-spreadsheet` for a listing of pertinent
+   tutorials.
 
 Data Viewer
 ~~~~~~~~~~~
@@ -98,11 +98,32 @@ the :term:`data` (i.e. the audio, video, eye-tracking, etc.).
       /guide/controller
       /guide/spreadsheet
 
-Import / Open a Video
----------------------
+Add a Data Source
+-----------------
 
-- talk about getting started
+Adding an audio, video, or other data source to Datavyu is as easy as
+clicking on the :guilabel:`Add Data…` button in the Data Viewer Controller,
+[or using a menu option if there is one].
 
-- talk about supported video types
+Datavyu supports most file formats that VLC or Quicktime can play,
+including hi-resolution videos. When you open a video file, Datavyu will
+attempt to determine the video's :term:`frame rate`. If it is unable to
+determine the frame rate from the video's metadata, it will prompt you to
+pick the frame rate. Datavyu uses frame rate
+to optimize playback, and to :ref:`jog <playback-controls>`, so it is
+important that you set the correct frame rate.
 
-- talk about how to convert file types
+If your data source is of a type that Datavyu cannot play (such as
+[list]), you may be able to convert it to a readable format using
+Datavyu's [conversion tool]. Alternately, [other free tools], such as
+[list] may be able to help you convert your data source. For help
+with data source conversion or other import issues, see: 
+`Datavyu's Support site <http://datavyu.org/support/>`_.
+
+Start Coding
+------------
+
+.. list some tutorials that are a logical first step & refer to the best 
+   practices guide
+
+Or, consult :doc:`the full list </guide/tutorials>` of Datavyu tutorials.  

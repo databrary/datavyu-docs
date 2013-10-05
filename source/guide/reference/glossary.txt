@@ -54,3 +54,10 @@ Glossary
 
    key-value pair
       [definition]
+   
+   frame rate
+      (from Wikipedia) "Frame rate (also known as frame frequency) is the
+      frequency (rate) at which an imaging device produces unique
+      consecutive images called frames". In other words, it is the
+      number of images shown per second. The three main frame rate
+      standards are: 24p, 25p, and 30p.
