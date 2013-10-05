@@ -1,0 +1,40 @@
+.. _api-add-new-variable:
+
+==================
+Add a New Variable
+==================
+
+Much like adding a new cell or a new argument, Datavyu API allows you
+to add a completely new variable using the :function:`createVariable()` function.
+
+:function:`createVariable` takes at least two parameters: the first is
+the name of the new variable, and any subsequent parameters are :term:`arguments`
+to be added to that variable.
+
+For example, suppose you wanted to make a variable called "step" with
+the three arguments called "foot", "ht", and "direction".
+
+#. Start the script, and create the new variable with its four arguments:
+
+   .. code-block:: ruby
+   
+      require 'Datavyu_API.rb'
+      begin
+         step = createVariable("step", "foot", "ht", "direction")
+
+#. Write the new variable back to the database as a new variable
+   without any cells:
+   
+   .. code-block:: ruby
+   
+      setVariable(step)
+
+Or, putting it all together:
+
+.. code-block:: ruby
+
+   require 'Datavyu_API.rb'
+   begin
+      step = createVariable("step", "foot", "ht", "direction")
+      setVariable(step)
+   end

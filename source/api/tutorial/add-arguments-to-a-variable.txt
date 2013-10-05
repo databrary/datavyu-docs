@@ -1,0 +1,58 @@
+.. _api-add-arguments:
+
+===========================
+Add Arguments to a Variable
+===========================
+
+.. following paragraph makes no sense
+
+Now we probably want to do something with that variable that we just
+loaded. Lets start by doing something simple, like adding arguments to a
+variable. We use a method called ``add_arg`` to do this. As hopefully
+you remember from your Ruby tutorial, methods are functions that are
+part of classes. In this case, ``add_arg`` is a method of the
+``RVariable`` class. The basic idea is that a method "belongs" to an
+instance of a class, so using the above example, the ``RVariable``
+``trial`` "owns" a function called ``add_arg`` that will add an argument
+to its cells.
+
+This somewhat confusing thing is probably most easily seen in an example:
+
+#. Assign the Datavyu variable "trial" to a new Ruby variable called
+   ``trial``
+
+   .. code-block:: ruby
+   
+      trial = getVariable("trial")
+
+#. Add an argument to ``trial`` using ``add_arg``. In this example,
+   we'll add a study variable argument called "unit" to the ``trial``
+   variable. The "unit" argument might represent the unit of measure used
+   during an experiment, for instance.
+   
+   .. code-block:: ruby
+   
+      trial.add_arg("unit")
+
+#. Write the changes back to the Datavyu database:
+
+   .. code-block:: ruby
+   
+      setVariable(trial)
+
+Put together, the script should resemble the following:
+
+.. code-block:: ruby
+
+   require 'Datavyu_API.rb'
+   begin
+      # Assign the Datavyu variable "trial" data to a new Ruby variable
+      # called trial.
+      trial = getVariable("trial")
+
+      # Add "unit" argument        
+      trial.add_arg("unit")
+
+      # Now we have to write back our changes
+      setVariable(trial)
+   end

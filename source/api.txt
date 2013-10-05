@@ -1,0 +1,27 @@
+======================
+Datavyu Ruby API v.1.0
+======================
+
+The Datavyu scripting API provides a scriptable interface to Datavyu's
+database, allowing you to manipulate your data, print in any format
+you'd like, or check your data for errors.
+
+If you're new to programming or new to Ruby, you might want to go
+through the `Basic Ruby Tutorial
+<https://www.ruby-lang.org/en/documentation/quickstart/>`_. Once you're
+ready to start working with Ruby Scripts, see:
+:doc:`write-ruby-scripts-for-datavyu` for a Datavyu-specific overview of
+the Ruby API and scripting for Datavyu.
+
+.. toctree::
+   :titlesonly:
+   
+   /api/write-ruby-scripts-for-datavyu
+   /api/tutorial/add-cells-to-a-variable
+   /api/tutorial/add-arguments-to-a-variable
+   /api/tutorial/add-a-new-variable
+   /api/tutorial/export-data-using-scripts
+
+.. /api/tutorial/check-for-coder-errors
+   /api/tutorial/create-a-reliability-variable
+   /api/tutorial/check-reliability-using-two-coder-passes
