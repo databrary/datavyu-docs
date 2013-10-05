@@ -61,3 +61,6 @@ Glossary
       consecutive images called frames". In other words, it is the
       number of images shown per second. The three main frame rate
       standards are: 24p, 25p, and 30p.
+      
+   region
+      [timeslider region explanation here]

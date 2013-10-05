@@ -2,94 +2,129 @@
 Data Viewer Controller Overview
 ===============================
 
-.. TODO: replace following paragraph with something better / not copied
-   from intro page
-
-The Data Viewer Controller allows users to control the playback of their
-data source and create observations in the spreadsheet. Quite literally, 
-it controls the :guilabel:`Data Viewer`, the window that contains the
-(video) data.
+The Data Viewer Controller enables users to manipulate the playback of 
+their data source, and create new cells as they record their observations.
 
 .. figure:: /img/data-viewer-controller.png
    :alt: Image of the Data Viewer Controller
    :align: center
 
-   [Data viewer controller image caption will go here!]
+   [caption]
 
-.. TODO: detailed overview of its function / role then intro the piece-by-piece description
+The Data Viewer Controller has two main areas: the keypad on the left,
+which maps directly to your keypad, and the :guilabel:`Timeslider` on
+the right, which represents the current playback position, and provides
+additional functionality to control and customize playback.
+
+The following sections describe the two areas in detail, and provide
+a useful reference for working with the Data Viewer Controller.
 
 Keypad
 ------
 
 The Data Viewer Controller's keypad maps directly to the number pad
-on your keyboard or external keypad. 
+on your keyboard or external keypad: the on-screen representation
+helps users remember what key performs what function. When a key on
+the keypad is depressed, a visual indicator onscreen mirrors the
+keystrokes.
+
+.. important:: 
+
+   You cannot use the keypad for inputting numbers into Datavyu: it will
+   only perform the behaviors as described in the :ref:`playback-controls`.
 
 .. _playback-controls:
 
 Playback Controls
 ~~~~~~~~~~~~~~~~~
 
-- jog left (``1``): moves the playhead back one frame.
+- jog left (``1``): moves the playhead back one frame. If the
+  :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
+  in one second increments.
 
-- play/pause (``2``): pauses playback. Pressing :guilabel:`play/pause` again resumes playback.
+- play/pause (``2``): pauses playback. Pressing :guilabel:`play/pause`
+  again resumes playback. 
+  
+  :guilabel:`play/pause` only works if :guilabel:`play` has first been
+  pushed.
 
-- jog right (``3``): moves the playhead forward one frame.
+- jog right (``3``): moves the playhead forward one frame. If the
+  :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
+  in one second increments.
 
-- shuttle left (``4``): rewinds incrementally (n frames). You can hold
-  down the :guilabel:`shuttle left` key to continually rewind. (?)
+- shuttle left (``4``): rewinds, initially at 1/32 of playback speed.
+  Repeatedly pressing the :guilabel:`shuttle left` key increases the rewind
+  speed to a maximum of 32 times playback speed.
 
 - stop (``5``): stops playback.
 
-- shuttle right (``6``): fast forwards incrementally (n frames). You can
-  hold down the :guilabel:`shuttle right` key to continually advance (?).
+- shuttle right (``6``): fast forwards initially at 1/32 of playback
+  speed. Repeatedly pressing the :guilabel:`shuttle right` key increases
+  the fast forward speed to a maximum of 32 times playback speed.
 
-- rewind (``7``): rewinds. Repeatedly pressing :guilabel:`rewind` will increase the rewind speed.
+- rewind (``7``): rewinds at 32x playback speed.
 
-- play (``8``): plays.
+- play (``8``): starts playback.
 
-- forward (``9``): fast forwards. Repeatedly pressing forward will increase the fast forward speed.
+- forward (``9``): fast forwards at 32x playback speed.
 
 .. _coding-controls:
 
 Coding Controls
 ~~~~~~~~~~~~~~~
 
-- set cell onset (``clear``): sets the :term:`onset` for the current observation / cell.
+- set cell onset (``clear``): sets the :term:`onset` for the current
+  observation / cell.
 
-- point cell (``*``):
+- point cell (``*``): creates a new cell whose :term:`onset` and
+  :term:`offset` values are the playhead's current position
 
-- set cell offset (``/`` and ``.``):
+- set cell offset (``/`` and ``.``): sets the :term:`offset` for the
+  current observation / cell
 
-- find (``+``):
+- find (``+``): moves the playhead to the :term:`onset` time of the the
+  time that is shown in the box to the right of the :guilabel:`find`
+  button. By default, this is the :term:`onset` time for the
+  currently-selected cell. You can change the time by selecting that box
+  and editing the value.
 
-- go back (``-``):
+- go back (``-``): moves the playhead to the time shown in the box
+  to the left of the :guilabel:`go back` button. You can change the 
+  time by selecting that box and editing the value.
 
-- create new cell and set onset (``0``):
+- create new cell and set onset (``0``): creates a new cell and sets its
+  :term:`onset` to the playhead's current position.
 
-- create new cell (``Enter``):
+- create new cell (``Enter``): creates a new cell (and sets its onset...)
 
 Timeslider
 ----------
 
+.. TODO: explain what regions are and how they work once you understand
+
 The :guilabel:`Timeslider` denotes data source playback stuff. You can
 control the scale of the :guilabel:`Timeslider` using the slider bar in
 the top right. Moving it to the right shows a smaller scale, [words].
-The red :term:`playhead` shows the current playback position, and the
-green bracketing barriers indicate the :term:`onset` and :term:`offset`
-positions for the current clip.
+The red :term:`playhead` shows the current playback position.
+
+You can choose to focus on a single region by moving the green bracketing
+dividers. Datavyu will start playback from the leftmost bracket's position,
+and stop at the rightmost bracket.
 
 The :guilabel:`Timeslider` component of the Data Viewer Controller also
-includes five buttons that control stuff:
+includes five buttons:
 
-- Lock All: [words]
+- Lock All: [use is currently unclear]
 
 - Add Bookmark: adds a bookmark at the playhead.
 
-- Snap Region: [words]
+- Snap Region: sets the :term:`region` to the length of the selected
+  cell: the left bracket is placed at the cell's :term:`onset`, and the
+  right bracket at the cell's :term:`offset`.
 
-- Clear Region: [words]
+- Clear Region: removes the region delineators.
 
-- Search (the :guilabel:`magnifying glass` icon): [words]
+- :guilabel:`magnifying glass` icon: [use currently unclear]
 
 .. seealso::
 

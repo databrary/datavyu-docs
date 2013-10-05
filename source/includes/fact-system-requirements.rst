@@ -1,16 +1,17 @@
 Hardware Requirements
 ~~~~~~~~~~~~~~~~~~~~~
 
-Datavyu does have some hardware requirements. These are the minimum
-requirements: more RAM or a faster processor will improve Datavyu's
-performance.
+These hardware requirements are the minimum needed for Datavyu: more RAM
+or a faster processor will improve Datavyu's performance, especially when
+working with higher-resolution data sources.
 
 - Java 1.6 or higher.
 - 1GB of RAM.
 - 1.2 GHz processor.
 
 You will also need enough disk space for the videos that you will be
-working with.
+working with, and a keypad, either as part of your keyboard, or as an
+external device.
 
 Software Requirements
 ~~~~~~~~~~~~~~~~~~~~~
