@@ -2,17 +2,15 @@
 Getting Started with Datavyu
 ============================
 
-The primary goal of DataVyu is to link behavioral researchers with their
-video, audio, or other data sources. Using a
-spreadsheet template that specifies which categories of events you’re
-interested in coding, such as participant-level information, independent
-variables, environment features, participant behaviors, etc., Datavyu
-enables researchers to record events for further analyses. 
+Datavyu is a powerful tool that enables behavioral researchers to record
+observations from their video, audio, or other data sources for future
+analysis. Designed by researchers for researchers, Datavyu provides an
+intuitive interface for working with data sources and recording
+observations, and includes `an API <https://github.com/databrary/datavyu/blob/master/src/main/resources/Datavyu_API.rb>`_
+for more advanced data manipulation.
 
-Datavyu does not enforce any constraints: you choose what events to
-code, and how to structure your spreadsheet. This Getting Started Guide
-(guides) you describes Datavyu's components and how they work, and
-provides tutorials to help you start coding.
+This Getting Started Guide describes Datavyu's components and how they
+work, and provides tutorials to help you start coding.
 
 The Datavyu Interface
 ---------------------

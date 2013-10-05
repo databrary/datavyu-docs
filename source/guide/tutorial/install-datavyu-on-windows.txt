@@ -2,7 +2,9 @@
 Install Datavyu on Windows
 ==========================
 
-[Introductory words]
+Datavyu is a Java-based application, which is easy to install on
+Windows. The following sections describe Datavyu's system requirements
+and then the installation process itself.
 
 System Requirements
 -------------------

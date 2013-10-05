@@ -2,10 +2,12 @@
 Install Datavyu on OS X 
 =======================
 
-[Introductory words]
+Datavyu is a Java-based application, which is easy to install on Mac OS
+X. The following sections describe Datavyu's system requirements and
+then the installation process itself.
 
-System Requirements
--------------------
+Requirements
+------------
 
 .. include:: /includes/fact-system-requirements.rst
 
