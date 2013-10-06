@@ -1,0 +1,61 @@
+=================
+makeReliability()
+=================
+
+Definition
+----------
+
+.. code-block:: ruby
+
+   makeReliability(relname, var_to_copy, multiple_to_keep, *args_to_keep)
+
+*or the alias*
+
+.. code-block:: ruby
+
+   make_rel(relname, var_to_copy, multiple_to_keep, *args_to_keep)
+
+Creates a "reliability variable" that is a copy of another Datavyu
+variable in the Database. :function:`makeReliability()` can copy the
+cells (or a subsection of the cells) and retain arguments from the
+origin variable if wanted.
+
+.. table-start
+
+.. list-table:: 
+   :widths: 20, 40, 50
+   :header-rows: 1
+   
+   * - Argument
+     - Type
+     - Description
+   * - ``rename``
+     - String **or** Ruby variable from :function:`getVariable`
+     - the name of the new reliability variable you will create. The convention is to name it ``rel.variableName``.
+   * - ``var_to_copy``
+     - String
+     - the name of the variable that we want to create a reliability variable *from* (i.e. the existing coded variable).
+   * - ``multiple_to_keep``
+     - Integer
+     - number of cells to skip: a value of ``2`` includes *every other cell* in the new variable; ``1`` includes every cell, and ``0`` creates a blank column with no cells
+   * - ``*args_to_keep``
+     - comma-separated strings
+     - Arguments you want to copy from the original to new variable. These are arguments that the reliability coder will not have to code
+
+.. table-end
+
+.. admonition:: Returns
+
+   A Ruby object representation of the reliability variable within
+   Datavyu.
+
+Examples
+--------
+
+The following example creates the reliability variable "rel.trial"
+from the primary variable "trial", copying every second cell, and retaining the
+"onset", "trialnum" and "unit" arguments.
+
+.. code-block:: ruby
+
+   rel_trial = make_rel ("rel.trial", "trial", 2, "onset", "trialnum", "unit")

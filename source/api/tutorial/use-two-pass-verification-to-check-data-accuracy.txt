@@ -25,20 +25,9 @@ The Datavyu Ruby API provides the :function:`makeReliability` function
 for creating reliability variables. :function:`makeReliability` takes
 at least 3 arguments:
 
-- ``relname`` (required): the name of the new reliability variable you
-  will create. The convention is to name it ``rel.variableName``.
-
-- ``var_to_copy`` (required): the name of the variable that we want to
-  create a reliability variable *from* (i.e. the existing coded variable).
-
-- ``multiple_to_keep``: number of cells to skip: a value of ``2``
-  includes *every other cell* in the new variable; ``1`` includes
-  every cell, and ``0`` creates a blank column with no cells.
-
-- ``args_to_keep``: comma separated strings for the arguments you want
-  to copy from the original to new variable. These are arguments that
-  the reliability coder will not have to code (for example,
-  ``:term:`onset``` or ``trialnum``)
+.. include:: /api/reference/makeReliability.txt
+   :start-after: table-start
+   :end-before: table-end
 
 .. tip:: 
 

@@ -1,0 +1,54 @@
+=============
+setVariable()
+=============
+
+.. TODO: this one really needs work for clarification
+
+Definition
+----------
+
+``setVariable(*args)``
+
+Replaces a variable in the database with a new variable with the
+same name as the method's arguments. If no variable with the same
+name exists in the database, it will instead create a new variable.
+
+.. table-start
+
+.. list-table:: 
+   :widths: 20, 40, 50
+   :header-rows: 1
+   
+   * - Argument
+     - Type
+     - Description
+   * - ``name`` (**optional**)
+     - String
+     - Name of the variable that is being created
+   * - ``var`` (**required**)
+     - Ruby variable
+     - Ruby container of the variable that is being put into the database (modified output of :function:`createNewVariable` or `getVariable`)
+
+.. important:: 
+
+   You must specify the ``var`` argument to :function:`setVariable()`.
+   If you are also passing the ``name`` argument, the order of arguments
+   must be ``name`` followed by ``var``.
+
+.. table-end
+
+.. admonition:: Returns
+
+   None
+
+Examples
+--------
+
+The following example retrieves the Datavyu variable "trial" and 
+assigns it to a Ruby variable called ``trial``.
+
+.. code-block:: ruby
+
+   trial = getVariable("trial")
+   <some modifications to trial>
+   setVariable("trial", trial)
