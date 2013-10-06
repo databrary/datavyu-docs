@@ -1,0 +1,112 @@
+.. _api-reliability:
+.. _api-make-reliability-variable:
+
+==================================================
+Use Two-Pass Verification to Improve Data Accuracy
+==================================================
+
+.. begin-content
+
+With two-pass verification, two coders will separately code the same
+data source. This enables you to check that the coders are observing
+the same events, thereby improving data accuracy.
+
+Make a Reliability Variable
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To facilitate two-pass verification, you can create a :term:`reliability
+variable`. In general, when creating reliability variables, you create
+blank cells that correspond to the cells created in the first coding
+pass. This ensures that the two coders will have observed the same
+events in the data stream, and allows you to compare the two coding
+passes.
+
+The Datavyu Ruby API provides the :function:`makeReliability` function
+for creating reliability variables. :function:`makeReliability` takes
+at least 3 arguments:
+
+- ``relname`` (required): the name of the new reliability variable you
+  will create. The convention is to name it ``rel.variableName``.
+
+- ``var_to_copy`` (required): the name of the variable that we want to
+  create a reliability variable *from* (i.e. the existing coded variable).
+
+- ``multiple_to_keep``: number of cells to skip: a value of ``2``
+  includes *every other cell* in the new variable; ``1`` includes
+  every cell, and ``0`` creates a blank column with no cells.
+
+- ``args_to_keep``: comma separated strings for the arguments you want
+  to copy from the original to new variable. These are arguments that
+  the reliability coder will not have to code (for example,
+  ``:term:`onset``` or ``trialnum``)
+
+.. tip:: 
+
+   Specifying :term:`onset` in ``args_to_keep`` makes it easy for the
+   reliability coder to navigate to the correct points in the data source
+   and code the same events as the original coder.
+
+The following example creates a new reliability variable called
+"rel.trial" from the "trial" variable, skipping every other cell, and
+copying over the "onset" and "trialnum" arguments so that the
+reliability coder will not have to recode :term:`onset` and trial
+numbers.
+
+.. code-block:: ruby
+
+   require 'Datavyu_API.rb'
+   begin
+      makeReliability("rel.trial", "trial", 2, "onset", "trialnum")
+   end
+
+.. note::
+
+   You do **not** have to write the variable back to the database.
+   :function:`makeReliability` automatically writes its results to 
+   the database. This is the only function in the Datavyu Ruby API that
+   automatically writes back to the database.
+
+.. _api-check-reliability:
+
+Check Reliability
+~~~~~~~~~~~~~~~~~
+
+Once you have coded the reliability variable, you can use
+:function:`checkReliability` to compare the primary and reliability
+variables' cells. :function:`checkReliability` returns the number of
+errors, and the percent agreement.
+
+:function:`checkReliability()` has four required arguments, and one
+optional one:
+
+.. include:: /api/reference/checkReliability().txt
+   :start-after: table-start
+   :end-before: table-end
+
+.. note:: 
+
+   ``match_arg`` is particularly important: for
+   :function:`checkReliability` to know which cells to compare, it needs
+   to have some parameter that is unique to each pair of corresponding
+   primary and reliability cells. For example, a trial number coded
+   into each cell would match corresponding cells, even if only
+   a subset of cells were included in the reliability variable.
+
+   In order to avoid errors,you should endeavor to import the argument
+   you will use as ``match_arg`` when you initially create your
+   reliability variable with :function:`makeReliability`. 
+
+.. code-block:: ruby
+
+    require 'Datavyu_API.rb'
+    begin
+        # We have two variables that we want to compare, trial and rel.trial. They match on an argument called trialnumber.
+        # We want to dump the results to a file on the desktop.
+
+        # As before, File.expand_path with unfold the ~ in the filename to be our users' home directory
+        dump_file = File.expand_path("~/Desktop/relcheck.txt")
+        checkReliability("trial", "rel.trial", "trialnum", dump_file)
+    end
+
+.. end-content
+

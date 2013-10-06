@@ -1,0 +1,73 @@
+.. _api-check-for-typos:
+
+=======================
+Check for Coding Errors
+=======================
+
+.. begin-content
+
+One of the most powerful uses for the Datavyu Ruby API is checking for
+coding errors. Since Datavyu does not enforce any rules during coding,
+it is possible for coders to input an invalid code, such as an "h", when
+only "j" or "k" are valid values for that variable. Using scripts,
+coders can double-check their work for errors and note them early on.
+
+Datavyu API provides the :function:`checkValidCodes` function to check
+for coder errors. :function:`checkValidCodes` requires at least three
+parameters: the name of the variable it will verify, and then at least
+one :term:`key-value pair`. Key-value pairs consist of the "key", the
+name of a Datavyu argument, and a "value", which is an array of valid
+codes for that argument.
+
+.. mention the best practices guide (once it exists) and recommendations
+   for determining these things well in advance
+
+:function:`checkValidCodes` then checks each coded argument (key)
+against its list of valid codes (the values).
+
+The following example checks the variable ``step`` against its codes:
+
+.. .. example:: (once I figure out how to make those exist)
+
+.. code-block:: ruby
+
+   require 'Datavyu_API.rb'
+   begin
+      # Check for typos. Notice the square brackets. These denote arrays. So the basic format is:
+      # "variable", argumentname, [validarg1, validarg2, validarg3], argument2, [ ... ], 
+    
+      checkValidCodes("step", "foot", ["l", "r"], "ht", ["h", "t"], "direction", ["f","b"])
+   end
+
+Let's break down the function call. Recall that
+:function:`checkValidCodes` takes (at least) three arguments: the name
+of the Datavyu variable it will be checking, followed by key-value pairs.
+
+In the example, we have:
+
+.. code-block:: ruby
+
+   checkValidCodes("step", "foot", ["l", "r"], ...)
+
+``"step"`` is the name of the variable to check, and 
+``"foot", ["l", "r"]`` is the first key-value pair, which specifies
+that the "foot" Datavyu argument should only have the code "l" or "r".
+
+You could perform the same verification by first assigning the
+valid codes to variables. This is preferable, as it is easier to for
+human readers to parse:
+
+.. code-block:: ruby
+
+   require 'Datavyu_API.rb'
+   begin
+      # Store each of the valid code arrays into a variable first so it is easier to read
+      footCodes = ["l", "r"]
+      htCodes = ["h", "t"]
+      directionCodes = ["f", "b"]
+
+      # Check for typos, replacing the code arrays with your new variables:
+      checkValidCodes("step", "foot", footCodes, "ht", htCodes, "direction", directionCodes)
+   end
+
+.. end-content

@@ -1,11 +1,16 @@
 .. _api-export-data:
 
+.. Allison: headings are not the usual level because of include
+   for master tutorial - they should remain coded in this fashion
+
 =======================================
 Use Scripts to Export Data from Datavyu
 =======================================
 
+.. begin-content
+
 Automatic Export Methods
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. TODO: include the instructions and/or explain that it will be
    forthcoming. if not upcoming:
@@ -14,7 +19,7 @@ Automatic Export Methods
      but that automatic are under development
 
 Manual Export Methods
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 Datavyu supports numerous data export methods. We will cover four common
 approaches here:
@@ -35,7 +40,7 @@ These methods will be covered in the order they are listed above, which
 also happens to be in order of increasing complexity.
 
 Method 1: Direct Dump to CSV
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+````````````````````````````
 
 This method is actually much easier to do (only 1 line!) with the new R
 scripting functions. Please see the R guide for instructions. However,
@@ -44,7 +49,7 @@ we will still cover how to do this in Ruby here.
 .. TODO: actually include the instructions
 
 Method 2: Frame by Frame Dump
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`````````````````````````````
 
 We can also dump a file frame by frame if we know the framerate of the
 video that was coded. The idea here is to generate a new row in a
@@ -61,16 +66,20 @@ end of a video for a 30fps video).
 .. TODO: actually include the instructions
 
 Method 3: Nested dump
-~~~~~~~~~~~~~~~~~~~~~
+`````````````````````
 
 .. TODO: fill 'er in
 
 Method 4: Nested dump with un-nested cells
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````
+
+.. end-content
 
 .. TODO: fill 'er in
 
-Run a Script Across Multiple Files
---------------------------------------
+.. following section should be uncommented once it had content
 
-use require
+.. Run a Script Across Multiple Files
+   --------------------------------------
+
+.. use require

@@ -1,8 +1,8 @@
-===============
-Script Examples
-===============
+=====================
+Datavyu API Tutorials
+=====================
 
--  `Example-Template.opf <Example-Template.opf>`__
+`Example-Template.opf </api/resources/Example-Template.opf>`_
 
 Lets walk through building a script. For the sake of this example, we'll
 be using the simple template in the link above. 
@@ -13,12 +13,14 @@ subject number, testdate, birthdate, and condition. Then there is a
 ``trial`` has no cells in it yet. We're going to be modifying this file,
 so download it and load open it with Datavyu!
 
+.. begin-content
+
 Load Datavyu Variables
 ----------------------
 
 Most scripts begin by loading the desired variables. To do this, use the
-function :function:`getVariable`. :function:`getVariable` takes one parameter: the name
-of the variable in Datavyu, and returns :function:`getVariable` returns the Ruby
+function :function:`getVariable()`. :function:`getVariable()` takes one parameter: the name
+of the variable in Datavyu, and returns :function:`getVariable()` returns the Ruby
 representation of the variable, which you work with. Finally, save any
 changes to that variable back to the database.
 
@@ -36,3 +38,20 @@ the "trial" in the parentheses is the argument passed to
 :function:`getVariable` (the name of the Datavyu variable).
 
 .. image:: /img/variable-assignment-mapping.png
+
+.. end-content
+
+Now that you're familiar with the sample data and know how to acquire
+data from Datavyu, you're ready to start scripting. The following
+tutorials will guide you through common tasks. If you would prefer, you
+can go through the full tutorial in :doc:`/api/tutorial`.
+
+.. toctree::
+   :titlesonly:
+   
+   /api/tutorial/add-cells-to-a-variable
+   /api/tutorial/add-arguments-to-a-variable
+   /api/tutorial/add-a-new-variable
+   /api/tutorial/check-for-coder-errors
+   /api/tutorial/use-two-pass-verification-to-check-data-accuracy
+   /api/tutorial/export-data-using-scripts

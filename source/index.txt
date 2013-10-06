@@ -12,8 +12,7 @@ Contents:
    :maxdepth: 1
 
    /guide
-   /api/write-ruby-scripts-for-datavyu
-   /api/api
+   /api
 .. /faq
    /api
    /best-practices

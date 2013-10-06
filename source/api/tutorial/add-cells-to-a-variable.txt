@@ -4,6 +4,8 @@
 Add Cells to a Variable
 =======================
 
+.. begin-content
+
 Now that Lets do something a little more interesting than just adding an
 argument. Lets add some cells to a column. 
 
@@ -94,3 +96,5 @@ Let's look at it all put together:
    
       setVariable(trial)
    end
+
+.. end-content

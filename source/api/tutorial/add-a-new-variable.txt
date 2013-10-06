@@ -4,6 +4,8 @@
 Add a New Variable
 ==================
 
+.. begin-content
+
 Much like adding a new cell or a new argument, Datavyu API allows you
 to add a completely new variable using the :function:`createVariable()` function.
 
@@ -38,3 +40,5 @@ Or, putting it all together:
       step = createVariable("step", "foot", "ht", "direction")
       setVariable(step)
    end
+
+.. end-content

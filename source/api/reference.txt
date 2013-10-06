@@ -1,0 +1,8 @@
+==========================
+Datavyu Ruby API Reference
+==========================
+
+.. toctree::
+
+   /api/reference/glossary
+   /api/reference/checkReliability()

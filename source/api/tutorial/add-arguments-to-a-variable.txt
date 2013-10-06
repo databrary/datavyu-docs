@@ -4,6 +4,8 @@
 Add Arguments to a Variable
 ===========================
 
+.. begin-content
+
 .. following paragraph makes no sense
 
 Now we probably want to do something with that variable that we just
@@ -56,3 +58,5 @@ Put together, the script should resemble the following:
       # Now we have to write back our changes
       setVariable(trial)
    end
+
+.. end-content
