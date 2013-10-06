@@ -126,4 +126,4 @@ Start Coding
 .. list some tutorials that are a logical first step & refer to the best 
    practices guide
 
-Or, consult :doc:`the full list </guide/tutorials>` of Datavyu tutorials.  
+Or, consult :doc:`the full list </guide/tutorials>` of Datavyu tutorials.
