@@ -62,3 +62,7 @@ difference tolerated, and writes the output to the
 .. code-block:: ruby
 
    checkReliability("trial", "rel.trial", "trialnum", 100, "/Users/motoruser/Desktop/Relcheck.txt")
+
+.. see:: 
+
+   :doc:`/api/tutorial/use-two-pass-verification-to-check-data-accuracy`

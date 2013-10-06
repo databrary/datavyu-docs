@@ -11,4 +11,5 @@ Datavyu Ruby API Reference
    /api/reference/make_new_cell
    /api/reference/checkReliability
    /api/reference/getVariable
-   
+   /api/reference/setVariable
+   /api/reference/makeReliability

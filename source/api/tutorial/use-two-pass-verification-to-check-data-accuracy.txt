@@ -1,5 +1,4 @@
 .. _api-reliability:
-.. _api-make-reliability-variable:
 
 ==================================================
 Use Two-Pass Verification to Improve Data Accuracy
@@ -54,8 +53,6 @@ numbers.
    :function:`makeReliability` automatically writes its results to 
    the database. This is the only function in the Datavyu Ruby API that
    automatically writes back to the database.
-
-.. _api-check-reliability:
 
 Check Reliability
 ~~~~~~~~~~~~~~~~~
