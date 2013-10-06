@@ -106,7 +106,7 @@ General Principles
      # Print 5 using p
      p 5
 
-     # Also prints 5 using puts
+     # Print 5 using puts
      puts 5
 
      # Now to show the difference, print a list
@@ -149,4 +149,4 @@ In general, the rest of the script code goes between ``begin`` and
    use comments extensively.
 
 Now that you've got a good grounding in the Datavyu Ruby API, consider
-the :doc:`/api/script-examples` or :doc:`/api/reference`.
+the :doc:`/api/tutorials` or :doc:`/api/reference`.

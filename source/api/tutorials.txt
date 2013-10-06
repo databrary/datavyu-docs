@@ -11,18 +11,18 @@ It contains an ``ID`` variable with some basic information such as
 subject number, testdate, birthdate, and condition. Then there is a
 ``trial`` variable that has two arguments: ``trialnum`` and ``outcome``.
 ``trial`` has no cells in it yet. We're going to be modifying this file,
-so download it and load open it with Datavyu!
+so download it, and then open it with Datavyu (using File > Open and
+selecting the file from your hard drive).
 
 .. begin-content
 
 Load Datavyu Variables
 ----------------------
 
-Most scripts begin by loading the desired variables. To do this, use the
-function :function:`getVariable()`. :function:`getVariable()` takes one parameter: the name
-of the variable in Datavyu, and returns :function:`getVariable()` returns the Ruby
-representation of the variable, which you work with. Finally, save any
-changes to that variable back to the database.
+Most scripts begin by loading the desired variables using the function
+:function:`getVariable()`. :function:`getVariable()` takes one
+parameter: the name of the variable in Datavyu, and returns the Ruby
+representation of the variable, which you work with.
 
 .. code-block:: ruby
 
@@ -38,6 +38,9 @@ the "trial" in the parentheses is the argument passed to
 :function:`getVariable` (the name of the Datavyu variable).
 
 .. image:: /img/variable-assignment-mapping.png
+   :alt: mapping of trial = getVariable("trial") to its components
+   :align: center
+   :width: 500px
 
 .. end-content
 

@@ -3,6 +3,12 @@ Datavyu Ruby API Reference
 ==========================
 
 .. toctree::
+   :titlesonly:
 
    /api/reference/glossary
-   /api/reference/checkReliability()
+   /api/reference/add_arg
+   /api/reference/change_arg
+   /api/reference/make_new_cell
+   /api/reference/checkReliability
+   /api/reference/getVariable
+   

@@ -1,0 +1,29 @@
+=========
+add_arg()
+=========
+
+Definition
+----------
+
+``add_arg(name)``
+
+Adds an argument to a variable.
+
+.. table-start
+
+.. list-table:: 
+   :widths: 20, 40, 50
+   :header-rows: 1
+   
+   * - Argument
+     - Type
+     - Description
+   * - ``name``
+     - String
+     - The name of the argument you are adding to a variable
+
+.. table-end
+
+.. admonition:: Returns
+
+   Nothing (?)

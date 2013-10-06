@@ -1,0 +1,46 @@
+===============
+make_new_cell()
+===============
+
+Definition
+----------
+
+``make_new_cell()``
+
+Creates a new blank cell at the end of the variable's cell array.
+
+.. table-start
+
+.. list-table:: 
+   :widths: 20, 40, 50
+   :header-rows: 1
+   
+   * - Argument
+     - Type
+     - Description
+   * - None
+     - 
+     -
+
+.. table-end
+
+.. admonition:: Returns
+
+   Reference to the cell that was just created. Modify the cell using 
+   this reference.
+
+Examples
+--------
+
+The following example creates a new cell at the end of the "trial"
+variable's cell array, and assigns its reference to the variable
+``newcell``. It then changes ``newcell``'s :term:`onset` to 1000ms using
+:function:`change_arg()`, and writes the change back to the database
+using :function:`setVariable`.
+
+.. code-block:: ruby
+
+   trial = getVariable("trial")
+   newcell = trial.make_new_cell()
+   newcell.change_arg("onset", 1000)
+   setVariable("trial", trial)
