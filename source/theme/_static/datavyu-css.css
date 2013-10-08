@@ -1,3 +1,6 @@
+@import url("basic.css");
+@import url("nature.css");
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -5,7 +8,7 @@ html, body {
 
 /*body - background: url(images/bg_main.jpg) repeat-x #3c1d54; */
 
-body {	
+div.body {	
 	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
 	font-size: 62.5%;
 	line-height: 1.5;
