@@ -15,7 +15,7 @@ coders can double-check their work for errors and note them early on.
 Datavyu API provides the :function:`checkValidCodes` function to check
 for coder errors. :function:`checkValidCodes` requires at least three
 parameters: the name of the variable it will verify, and then at least
-one :term:`key-value pair`. Key-value pairs consist of the "key", the
+one :term:`key-value pair`. Key-value pairs consist of a "key", the
 name of a Datavyu argument, and a "value", which is an array of valid
 codes for that argument.
 

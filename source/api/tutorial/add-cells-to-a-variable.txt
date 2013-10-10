@@ -15,7 +15,7 @@ minute 2, minute 3, and minute 4. In order to make it easier for the
 coder to code the trials, you can programmatically create a blank cell
 for each trial, with the onset set to its start time.
 
-#. Set up our script, and load the Datavyu variable you will be working
+#. Set up the script, and load the Datavyu variable you will be working
    with:
 
    .. code-block:: ruby
@@ -25,60 +25,95 @@ for each trial, with the onset set to its start time.
          # Load the Datavyu variable "trial" into Ruby variable called trial.
          trial = getVariable("trial")
 
-#. Create the five cells using a loop. Loops are fancy bits of code
-   that tells Ruby to do stuff multiple times.
+#. Create the five cells using a loop. 
    
-   Let's break down the ``for`` loop from the following example for those
-   who are less experienced programmers:
+   .. admonition:: Programming 101
    
-   .. code-block:: ruby
-
-      for i in 0..4
-         <do stuff>
-      end
+      Loops are types of code that tell Ruby to do stuff multiple
+      times. Let's break down the ``for`` loop from the following
+      example for those who aren't familiar with loops:
    
-   This, essentially, says, "for i = 0, <do stuff>, Then, for i = 1, <do
-   stuff>. Then for i = 2, for i = 3, and for i = 4. Once you've done i
-   = 4, stop doing stuff." The ``0..4`` is a representation of "from 0
-   to 4, inclusive". If you wanted to do something ten times, you could
-   do ``for i in 0..9`` or ``for i in 1..10``. In our case, we're going
-   to use ``i`` to set the :term:`onset` time of the cell, so having
-   it start from 0 and go to 4 makes sense.
-   
-   #. So, we need to loop 5 times from 0 to 4, and then we need to
-      calculate the onset time that we're going to set. Since Datavyu
-      API uses times in milliseconds, we need to convert i (our minute
-      marker) to milliseconds
-
       .. code-block:: ruby
 
          for i in 0..4
-            # Calculate the onset time that we want to set
-            # Remember that all times in Datavyu are milliseconds
+            <do stuff>
+         end
+   
+      This, essentially, says, "for i = 0, <do stuff>, Then, for i = 1, <do
+      stuff>. Then for i = 2, for i = 3, and for i = 4. Once you've done i
+      = 4, stop doing stuff." The ``0..4`` represents "from 0
+      to 4, inclusive". 
+      
+      If you wanted to do something ten times, your loop might read
+      ``for i in 0..9`` or ``for i in 1..10``, or ``for i in 99..108``.
+      In our case, we're going to use ``i`` to set the :term:`onset`
+      time of the cell, so having it start at 0 and go to 4 makes
+      sense.
+   
+   We need to loop 5 times from 0 to 4, calculating the onset time to
+   set for each new cell. Since Datavyu API uses times in milliseconds,
+   we need to convert i (our minute marker) to milliseconds
+
+   .. code-block:: ruby
+   
+      require 'Datavyu_API.rb'
+      begin
+         trial = getVariable("trial")
+
+         for i in 0..4
+            # Calculate the onset time that we want to set in milliseconds
             time = i * 1000 * 60
 
-   #. Then, create the new cell using :function:`make_new_cell()`.
-      We'll call it: ``cell``:
+#. Then, create the new cell using :function:`make_new_cell()`.
+   We'll call it: ``cell``:
+
+   .. code-block:: ruby
    
-      .. code-block:: ruby
+      require 'Datavyu_API.rb'
+      begin
+         trial = getVariable("trial")
 
-         cell = trial.make_new_cell()
+         for i in 0..4
+            time = i * 1000 * 60
+         
+            # Create a new cell, called ``cell``
+            cell = trial.make_new_cell()
 
-   #. As the final step in our loop, we'll the onset of ``cell`` to our ``time`` variable, using
-      :function:`change_arg()`, and ``end`` the loop:
+#. Finally, set the onset of ``cell`` to the value of the ``time``
+   variable, using :function:`change_arg()`, and ``end`` the loop:
 
-      .. code-block:: ruby
+   .. code-block:: ruby
+   
+      require 'Datavyu_API.rb'
+      begin
+         trial = getVariable("trial")
 
-         cell.change_arg("onset", time)
+         for i in 0..4
+            time = i * 1000 * 60
+            cell = trial.make_new_cell()
+            
+            # Set "onset" to the value of the ``time`` variable
+            cell.change_arg("onset", time)
          end
 
-   #. Finally, we'll write our changes back to the database and end the
-      script:
+#. Finally, write the changes back to the Datavyu database and ``end``
+   the script:
+
+   .. code-block:: ruby
    
-      .. code-block:: ruby
-      
+      require 'Datavyu_API.rb'
+      begin
+         trial = getVariable("trial")
+
+         for i in 0..4
+            time = i * 1000 * 60
+            cell = trial.make_new_cell()
+            cell.change_arg("onset", time)
+         end
+         
+         # Write change back to the Datavyu database
          setVariable(trial)
-         end
+      end
 
 Let's look at it all put together:
 
