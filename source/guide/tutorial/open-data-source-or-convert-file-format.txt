@@ -1,0 +1,44 @@
+====================================================
+Add a Data Source or Convert File Formats in Datavyu
+====================================================
+
+Datavyu is designed to work with video, audio, physiology, motion, or
+eye tracking data. Datavyu supports most file formats that VLC or
+Quicktime can play. To convert video file types, see: :ref:`convert-data-source-type`.
+
+Providing you have adequate processing power and a
+sufficiently strong graphics card, you should be able to work with
+high-resolution video files without challenge.
+
+Add a Data Source
+-----------------
+
+#, Click the :guilabel:`Add Data…`button in the top left corner of the
+   Data Viewer Controller.
+
+#. A file selection window will open. Select the data file you will be
+   coding.
+
+#. If the data source is a video file, Datavyu will attempt to determine
+   its :term:`frame rate`. If it is unable to determine the frame rate,
+   it will ask you what the video's frame rate is. 
+   
+   Datavyu uses frame rate to optimize playback and to :ref:`job
+   <playback-controls>`, so it is important that you set the correct
+   frame rate.
+
+.. _convert-data-source-format:
+
+Convert an Unsupported File Format
+----------------------------------
+
+If your data source is of a type that Datavyu cannot play (such as
+[list]), you may be able to convert it to a readable format using
+Datavyu's [conversion tool]. 
+
+[instructions for the conversion tool]
+
+Alternately, [other free tools], such as
+[list] may be able to help you convert your data source. For help with
+data source conversion or other import issues, see: `Datavyu's Support
+site <http://datavyu.org/support/>`_.

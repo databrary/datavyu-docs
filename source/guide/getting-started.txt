@@ -89,7 +89,6 @@ Data Viewer
 The :guilabel:`Data Viewer` is the window that contains/shows/presents
 the :term:`data` (i.e. the audio, video, eye-tracking, etc.). 
 
-
 .. class:: hidden
 
    .. toctree::
@@ -103,22 +102,9 @@ Add a Data Source
 
 Adding an audio, video, or other data source to Datavyu is as easy as
 clicking on the :guilabel:`Add Data…` button in the Data Viewer Controller,
-[or using a menu option if there is one].
-
-Datavyu supports most file formats that VLC or Quicktime can play,
-including hi-resolution videos. When you open a video file, Datavyu will
-attempt to determine the video's :term:`frame rate`. If it is unable to
-determine the frame rate from the video's metadata, it will prompt you to
-pick the frame rate. Datavyu uses frame rate
-to optimize playback, and to :ref:`jog <playback-controls>`, so it is
-important that you set the correct frame rate.
-
-If your data source is of a type that Datavyu cannot play (such as
-[list]), you may be able to convert it to a readable format using
-Datavyu's [conversion tool]. Alternately, [other free tools], such as
-[list] may be able to help you convert your data source. For help
-with data source conversion or other import issues, see: 
-`Datavyu's Support site <http://datavyu.org/support/>`_.
+[or using a menu option if there is one]. For a more detailed overview
+of adding data sources, and advice on converting file formats, see:
+:doc:`/guide/tutorial/open-data-source-or-convert-file-format`.
 
 Start Coding
 ------------
