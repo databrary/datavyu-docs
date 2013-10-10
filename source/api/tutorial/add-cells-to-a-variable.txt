@@ -6,30 +6,29 @@ Add Cells to a Variable
 
 .. begin-content
 
-Now that Lets do something a little more interesting than just adding an
-argument. Lets add some cells to a column. 
-
-Suppose that you are setting up a spreadsheet, and you know that there
-are five trials in your data source, that occur at minute 0, minute 1,
-minute 2, minute 3, and minute 4. In order to make it easier for the
-coder to code the trials, you can programmatically create a blank cell
-for each trial, with the onset set to its start time.
+Pre-populating a Datavyu variable with cells is another common task that
+you can use scripts to automate. Suppose that you are setting up a
+spreadsheet, and you know that there are five trials in your data
+source, that occur at minute 0, minute 1, minute 2, minute 3, and minute
+4. In order to make it easier for the coder to code the trials, you can
+create a blank cell for each trial, with the :term:`onset` set to the
+correct trial start time.
 
 #. Set up the script, and load the Datavyu variable you will be working
-   with:
+   with into a Ruby variable called ``trial``:
 
    .. code-block:: ruby
 
       require 'Datavyu_API.rb'
       begin
-         # Load the Datavyu variable "trial" into Ruby variable called trial.
+         # Load the Datavyu variable
          trial = getVariable("trial")
 
 #. Create the five cells using a loop. 
    
    .. admonition:: Programming 101
    
-      Loops are types of code that tell Ruby to do stuff multiple
+      **Loops** are types of code that tell Ruby to do something multiple
       times. Let's break down the ``for`` loop from the following
       example for those who aren't familiar with loops:
    
@@ -39,8 +38,8 @@ for each trial, with the onset set to its start time.
             <do stuff>
          end
    
-      This, essentially, says, "for i = 0, <do stuff>, Then, for i = 1, <do
-      stuff>. Then for i = 2, for i = 3, and for i = 4. Once you've done i
+      Essentially, this says, "for ``i`` = 0, <do stuff>, Then, for ``i`` = 1, <do
+      stuff>. Then for ``i`` = 2, for ``i`` = 3, and for ``i`` = 4. Once you've done i
       = 4, stop doing stuff." The ``0..4`` represents "from 0
       to 4, inclusive". 
       
@@ -65,7 +64,7 @@ for each trial, with the onset set to its start time.
             time = i * 1000 * 60
 
 #. Then, create the new cell using :function:`make_new_cell()`.
-   We'll call it: ``cell``:
+   We'll store the cell as a Ruby variable called ``cell``:
 
    .. code-block:: ruby
    
@@ -79,8 +78,8 @@ for each trial, with the onset set to its start time.
             # Create a new cell, called ``cell``
             cell = trial.make_new_cell()
 
-#. Finally, set the onset of ``cell`` to the value of the ``time``
-   variable, using :function:`change_arg()`, and ``end`` the loop:
+#. Set the onset of ``cell`` to the value of the ``time``
+   variable, using :function:`change_arg()`, and ``end`` the ``for`` loop:
 
    .. code-block:: ruby
    
@@ -115,21 +114,19 @@ for each trial, with the onset set to its start time.
          setVariable(trial)
       end
 
-Let's look at it all put together:
+.. Let's look at it all put together:
 
-.. code-block:: ruby
+.. .. code-block:: ruby
 
-   require 'Datavyu_API.rb'
-   begin
-      trial = getVariable("trial")
-      
-      for i in 0..4
-         time = i * 1000 * 60
-         cell = trial.make_new_cell()
-         cell.change_arg("onset", time)
+..    require 'Datavyu_API.rb'
+      begin
+         trial = getVariable("trial")
+         for i in 0..4
+            time = i * 1000 * 60
+            cell = trial.make_new_cell()
+            cell.change_arg("onset", time)
+         end
+         setVariable(trial)
       end
-   
-      setVariable(trial)
-   end
 
 .. end-content
