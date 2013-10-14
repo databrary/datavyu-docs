@@ -28,15 +28,26 @@ helps users remember what key performs what function. When a key on
 the keypad is depressed, a visual indicator onscreen mirrors the
 keystrokes.
 
-.. important:: 
+.. note:: 
 
-   You cannot use the keypad for inputting numbers into Datavyu: it will
-   only perform the behaviors as described in the :ref:`playback-controls`.
+   The Data Viewer Controller maps playback controls to the keys of your
+   keypad. The names of the keys shown on the Data Viewer Controller
+   (e.g. ``clear``, ``*``, ``/`` as the top row) may not map directly to
+   the name or ordering of keys on your keypad. Some keypads may
+   have a ``Num Lock`` key rather than ``clear``, for instance; others
+   transpose the ``*`` and ``/`` keys. Play around with your keypad
+   and the Data Viewer Controller to verify the key bindings for your
+   keypad.
 
 .. _playback-controls:
 
 Playback Controls
 ~~~~~~~~~~~~~~~~~
+
+.. important:: 
+
+   You cannot use the keypad for inputting numbers into Datavyu: it will
+   only perform the actions described here.
 
 - jog left (``1``): moves the playhead back one frame. If the
   :term:`frame rate` is not set, :guilabel:`jog` will move the playhead

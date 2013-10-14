@@ -1,0 +1,75 @@
+.. alternately, "Records Observations"
+
+================
+Add Observations
+================
+
+Datavyu represents observations as :term:`cells <cell>` in the Datavyu
+spreadsheet. Cells relate to :term:`variables <variable>`: the events,
+phenomena, behaviors, or facts that are being studied. Cells always
+include :term:`onset` and :term:`offset` metadata, but it is up to the
+researcher to determine what other data to record for each study
+variable.
+
+This tutorial assumes that you have already configured your spreadsheet
+to include a variable. If you have not already created a variable in
+your spreadsheet, start with the :ref:`add-a-variable` tutorial.
+
+There are two ways to add cells to a Datavyu spreadsheet: using the
+spreadsheet itself, or using keypad shortcuts. Keypad shortcuts are
+ideal for creating observations as you watch or listen to a data source,
+while adding observations directly in the spreadsheet might be ideal for
+overarching variables such as trial or participant identification.
+
+.. TODO: this is not a great heading
+
+Add Observations Directly in the Spreadsheet
+--------------------------------------------
+
+Adding observations (cells) to an existing variable (column) is simple:
+
+#. Click in the :guilabel:`Click to create new observation` grey area.
+   A new cell appears with the current playhead time as its :term:`onset`,
+   and placeholders for any attributes configured for the variable.
+
+#. Record appropriate values for your variable's attributes. For the
+   "trial" variable in the example spreadsheet, that means filling
+   out the ``<trialnum>`` and ``<outcome>`` attributes.
+
+   .. image:: /img/tutorial-sample-spreadsheet.png
+      :alt: sample spreadsheet with two variables, "ID" and "trial"
+      :align: right
+      :width: 300px
+
+#. Set the cell :term:`offset` using the Data Viewer Controller or 
+   your keypad.
+
+Add Observations from Keypad
+----------------------------
+
+Adding observations using the keypad is even easier than doing so from
+the spreadsheet:
+
+#. Navigate to the point in the data source that you want to be the
+   cell's :term:`onset`. Use the ``0`` key on the keypad to create a new
+   cell and set the onset.
+   
+   **or**
+
+   Create a new cell using the :guilabel:`create new cell` (``Enter``)
+   key on the keypad, and then navigate to the :term:`onset` point in
+   the data source, and set the cell onset using the :guilabel:`set cell
+   onset` (``clear``) key.
+
+#. Record appropriate values for your variable's attributes. For the
+   "trial" variable in the example spreadsheet, that means filling
+   out the ``<trialnum>`` and ``<outcome>`` attributes.
+
+   .. image:: /img/tutorial-sample-spreadsheet.png
+      :alt: sample spreadsheet with two variables, "ID" and "trial"
+      :align: right
+      :width: 300px
+
+#. Navigate to the offset point in the data source and set the cell
+   :term:`offset` using the :guilabel:`set cell offset` key (``/`` or
+   ``.``).
