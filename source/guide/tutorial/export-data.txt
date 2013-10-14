@@ -1,0 +1,11 @@
+========================
+Export Data from Datavyu
+========================
+
+Datavyu provides an integrated export tool for exporting Datavyu data.
+To export your data, select the :guilabel:`File` menu, and then
+select :guilabel:`Export File…`. This outputs data in a CSV file
+that mirrors the formatting of the Datavyu spreadsheet.
+
+
+

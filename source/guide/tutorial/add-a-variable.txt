@@ -1,6 +1,22 @@
-=====================
-Create a New Variable
-=====================
+==============
+Add a Variable
+==============
 
-.. talks about adding a variable to datavyu, cross-reference with :ref:`variable-types` and :doc:`/guide/tutorial/configure-datavyu-variables`
+.. talks about adding a variable to datavyu, cross-reference with
+   :ref:`variable-types` and
+   :doc:`/guide/tutorial/configure-datavyu-variables`
 
+#. Open the Datavyu spreadsheet.
+
+#. Click on the plus sign in the top left of the spreadsheet. The New
+   Variable window will open.
+
+#. Select the variable type, either text, nominal, or matrix, and input
+   a name for it. For a full description of Datavyu variables, see:
+   :ref:`variable-types`.
+
+#. Select :guilabel:`OK`. The variable will be added to the spreadsheet.
+
+Text and nominal variables are now good to go. To configure the
+the arguments for a matrix variable, see:
+:doc:`/guide/tutorial/configure-datavyu-variables`.
