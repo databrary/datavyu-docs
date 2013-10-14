@@ -1,0 +1,44 @@
+.. _vocab-editor:
+
+=============================================
+Configure Variables in Using the Vocab Editor
+=============================================
+
+.. HEADINGS: 
+.. text
+   ----
+   Text variables are freeform text areas, and do not require  
+   configuration. As with any variable, you must set the :term:`onset`
+   and :term:`offset`, but the remaining argument is a freeform text 
+   field.
+   
+.. nominal
+   -------
+   It looks like they'll be configurable at some point since there's 
+   the greyed-out option in the vocab editor... but not at present?
+   
+.. Matrix variables are the most configurable Datavyu variables, and the
+   most useful for multivariate analyses. Each cell of a matrix variable 
+   is a collection of key-value pairs called :term:`arguments`. Each    
+   argument (the key) has a value that the coder inputs while coding a 
+   data source.
+
+.. The following sample spreadsheet shows two matrix variables, "ID" and
+   "trial". "ID" has four attributes: subject, test date,
+   birth date, and condition. "trial" has two attributes: trialnum and
+   outcome.
+
+.. .. include:: /includes/guide-tutorial-sample-spreadsheet.rst
+
+Datavyu provides the :ref:`Vocab Editor <vocab-editor>`, for configuring
+matrix variables.
+
+#. Open the Vocab Editor. From the Data Viewer Controller, click on the
+   :guilabel:`Spreadsheet` menu, and then select 
+   :guilabel:`Vocab Editor`.
+
+   The Vocab Editor window will open, and list all existing matrix
+   variables.
+
+
+

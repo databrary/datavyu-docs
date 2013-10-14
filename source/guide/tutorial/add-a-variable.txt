@@ -2,3 +2,5 @@
 Create a New Variable
 =====================
 
+.. talks about adding a variable to datavyu, cross-reference with :ref:`variable-types` and :doc:`/guide/tutorial/configure-datavyu-variables`
+

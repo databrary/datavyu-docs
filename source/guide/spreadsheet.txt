@@ -28,6 +28,8 @@ the :term:`onsets <onset>` and :term:`offsets <offset>` of events into
 the spreadsheet and jump to the relevant time in the data source by
 selecting coded data in the spreadsheet.
 
+.. _variable-types:
+
 Variable Types
 --------------
 
@@ -62,7 +64,7 @@ A typical nominal variable column might resemble the following:
 Matrix Variables
 ~~~~~~~~~~~~~~~~
 
-Matrix variables are key - value observations, represented in the
+Matrix variables are key - value pairs, represented in the
 following form: ::
 
    <variablename>(<arg01:N>, <arg02:N>, ... , <argn:N>)

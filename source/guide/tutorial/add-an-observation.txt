@@ -36,10 +36,7 @@ Adding observations (cells) to an existing variable (column) is simple:
    "trial" variable in the example spreadsheet, that means filling
    out the ``<trialnum>`` and ``<outcome>`` attributes.
 
-   .. image:: /img/tutorial-sample-spreadsheet.png
-      :alt: sample spreadsheet with two variables, "ID" and "trial"
-      :align: right
-      :width: 300px
+   .. include:: /includes/guide-tutorial-sample-spreadsheet.rst
 
 #. Set the cell :term:`offset` using the Data Viewer Controller or 
    your keypad.
@@ -64,11 +61,6 @@ the spreadsheet:
 #. Record appropriate values for your variable's attributes. For the
    "trial" variable in the example spreadsheet, that means filling
    out the ``<trialnum>`` and ``<outcome>`` attributes.
-
-   .. image:: /img/tutorial-sample-spreadsheet.png
-      :alt: sample spreadsheet with two variables, "ID" and "trial"
-      :align: right
-      :width: 300px
 
 #. Navigate to the offset point in the data source and set the cell
    :term:`offset` using the :guilabel:`set cell offset` key (``/`` or
