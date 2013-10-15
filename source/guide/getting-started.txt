@@ -21,8 +21,6 @@ a data source (e.g. an video or audio file or a motion capture file), a
 third window containing the data source will appear. This is generally a
 video that uses either Quicktime or VLC to play.
 
-.. TODO: insert screenshots here
-
 The following sections describe each component of the Datavyu interface
 in detail.
 
