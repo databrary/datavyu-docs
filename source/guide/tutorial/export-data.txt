@@ -7,5 +7,14 @@ To export your data, select the :guilabel:`File` menu, and then
 select :guilabel:`Export File…`. This outputs data in a CSV file
 that mirrors the formatting of the Datavyu spreadsheet.
 
+The CSV export, while useful for [stuff] is not ideally organized for
+data analysis. For a more analyzable data export, Datavyu supports Ruby
+and R scripting, which can produce far better data sets for statistical
+analyses.
 
+For a detailed guide to export dating using Ruby scripts, see:
+:doc:`/api/tutorial/export-data-using-scripts` in the Datavyu Ruby API
+documentation.
 
+.. seealso:: :doc:`/guide/tutorial/use-scripts-to-automate-tasks` for 
+   instructions on running scripts within Datavyu.

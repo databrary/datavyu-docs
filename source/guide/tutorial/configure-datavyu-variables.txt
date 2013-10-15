@@ -2,7 +2,7 @@
 
 ===============================================
 Configure Variables with Datavyu's Vocab Editor
-====================================--=========
+===============================================
 
 .. HEADINGS: 
 .. text
@@ -30,6 +30,11 @@ Open the Vocab Editor
 
 From the Data Viewer Controller, click on the :guilabel:`Spreadsheet`
 menu, and then select :guilabel:`Vocab Editor`.
+
+.. image:: /img/vocab-editor.png
+   :alt: Screenshot of the vocab editor with two variables listed
+   :align: center
+   :width: 573px
 
 The Vocab Editor window will open, and list all existing matrix
 variables. From here, you can add a new matrix variable, or edit
