@@ -13,7 +13,7 @@ variable.
 
 This tutorial assumes that you have already configured your spreadsheet
 to include a variable. If you have not already created a variable in
-your spreadsheet, start with the :ref:`add-a-variable` tutorial.
+your spreadsheet, start with the :ref:`guide-add-a-variable` tutorial.
 
 There are two ways to add cells to a Datavyu spreadsheet: using the
 spreadsheet itself, or using keypad shortcuts. Keypad shortcuts are

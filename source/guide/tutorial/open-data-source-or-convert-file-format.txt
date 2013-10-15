@@ -4,7 +4,9 @@ Add a Data Source or Convert File Formats in Datavyu
 
 Datavyu is designed to work with video, audio, physiology, motion, or
 eye tracking data. Datavyu supports most file formats that VLC or
-Quicktime can play. To convert video file types, see: :ref:`convert-data-source-type`.
+Quicktime can play. 
+
+.. To convert video file types, see: :ref:`convert-data-source-type`.
 
 Providing you have adequate processing power and a
 sufficiently strong graphics card, you should be able to work with

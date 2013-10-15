@@ -1,3 +1,5 @@
+.. _guide-add-a-variable:
+
 ==============
 Add a Variable
 ==============
@@ -27,5 +29,5 @@ will guide you through the process.
 
 If you have added a :term:`matrix variable`, you should now configure
 its arguments. See: :doc:`/guide/tutorial/configure-datavyu-variables`
-for more information. :term:`Text <text-variable>` and :term:`nominal
-<nominal-variable>` variables do not require additional configuration.
+for more information. :term:`Text <text variable>` and :term:`nominal
+<nominal variable>` variables do not require additional configuration.

@@ -1,4 +1,5 @@
 .. _vocab-editor:
+.. _configure-variables:
 
 ===============================================
 Configure Variables with Datavyu's Vocab Editor
@@ -19,7 +20,7 @@ Configure Variables with Datavyu's Vocab Editor
    
 Matrix variables are the most configurable Datavyu variables, and the
 most useful for multivariate analyses. Each cell of a matrix variable is
-a collection of key-value pairs called :term:`arguments`. Each argument
+a collection of key-value pairs called :term:`arguments <argument>`. Each argument
 (the key) has a value that the coder inputs while coding a data source.
 
 Datavyu provides a :ref:`Vocab Editor <vocab-editor>` for configuring

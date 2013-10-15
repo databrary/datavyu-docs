@@ -6,12 +6,12 @@ Add a New Variable
 
 .. begin-content
 
-Much like :ref:`adding a new cell <api-add-new-cell>` or :ref:`a new
+Much like :ref:`adding a new cell <api-add-cells>` or :ref:`a new
 argument <api-add-arguments>`, Datavyu API allows you to add a
 completely new variable using the :function:`createVariable()` method.
 :function:`createVariable` takes at least two parameters: the first is
 the name of the new variable; any subsequent parameters will become the
-new variable's :term:`arguments`.
+new variable's :term:`arguments <argument>`.
 
 For example, suppose you wanted to make a variable called "step" with
 the three arguments called "foot", "ht", and "direction".

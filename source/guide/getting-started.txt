@@ -76,9 +76,9 @@ in which that variable type occurred.
 The :doc:`/guide/spreadsheet` document describes the
 :guilabel:`spreadsheet` in more detail. 
 
-.. seealso::
+.. .. seealso::
 
-   There are also a number of tutorials that can guide you through
+.. There are also a number of tutorials that can guide you through
    common operations and help you to configure your spreadsheet. See:
    :ref:`tutorial-configure-spreadsheet` for a listing of pertinent
    tutorials.

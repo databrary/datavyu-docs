@@ -2,28 +2,31 @@
 Glossary
 ========
 
+.. items in the glossary are automatically alphabetized when the docs 
+   build
+
 .. glossary::
    :sorted:
 
    Data Viewer Controller
-      [what is the dataviewer controller] see: :doc:`/guide/controller`
+      [definition] see: :doc:`/guide/controller`
 
    data
       The audio or video files that are being studied.
    
    onset
    cell onset
-      words
+      [definition]
    
    offset
-   cell offset 
-      words
+   cell offset
+      [definition]
 
    variable
       [definition]
    
    spreadsheet
-      [definition]
+      [definition] see: :doc:`/guide/spreadsheet`
 
    code
       To record observations about the data source.
@@ -43,42 +46,33 @@ Glossary
    argument
       [define for Datavyu]
    
-   integer
-      [define for Datavyu]
+   Integer
+      A whole number. Integers are numbers that are not fractions,
+      and thus, which have no numbers after a decimal point.
    
-   string
-      [define for Datavyu]
+   String
+      In computing, a string is a linear sequence of characters. Strings
+      can be random characters, words, or sentences.
    
    timeslider
       [define for Datavyu]
 
    key-value pair
-      [definition]
+      A data representation that pairs "keys" (some thing you have data
+      about) with "values" (the data itself). A key-value pair could be
+      "telephone" and "555-123-4567", for instance. Sometimes, values
+      are represented as a list of values, or as an array.
    
    frame rate
       (from Wikipedia) "Frame rate (also known as frame frequency) is the
       frequency (rate) at which an imaging device produces unique
-      consecutive images called frames". In other words, it is the
+      consecutive images called frames". In other words, frame rate is the
       number of images shown per second. The three main frame rate
       standards are: 24p, 25p, and 30p.
       
    region
-      [timeslider region explanation here]
+      [timeslider *region* explanation here]
    
-   onset
-   cell onset
-      words
-
-   offset
-   cell offset 
-      words
-
-   code
-      To record observations about the data source.
-
-   coder
-      The human recording observations about the data source.
-
    API 
       An API (Application Programming Interface) enables disparate software
       components to interact with each other by specifying functions or
@@ -86,14 +80,27 @@ Glossary
       `Ruby <https://www.ruby-lang.org/en/>`_ programming language.
 
    reliability variable
-      A Datavyu variable that is largely a copy of an original variable
+      A Datavyu variable that is a copy of an original variable
       used to ensure that the coded observations are accurate.
 
    matrix variable
-      [words]
+      Matrix variables are :term:`key-value pairs <key-value pair>` that
+      associate a variable name with a variety of :term:`arguments
+      <argument>`. The attributes are themselves key-value pairs too.
+      Matrix variables allow researchers to record components of events
+      or phenomena together.
 
    text variable
-      [words]
+      Text variables are a Datavyu variable type that supports free-form
+      text entries, including paragraphs.
    
    nominal variable
-      [words]
+      Nominal variables are variables whose values have no numerical
+      value, such as gender or occupation. Nominal variables differ
+      from :term:`text variables <text variable>` in that they do
+      not allow multi-line entries.
+   
+   cell
+      [definition]
+   
+   

@@ -16,7 +16,7 @@ Run Scripts
 -----------
 
 Before you can run a script, you must write one. Refer to the
-:doc:`Ruby API documentation` for scripting help. 
+:doc:`Ruby API documentation </api>` for scripting help. 
 
 #. Save your script as a ``.rb`` file, and put it somewhere you will be
    able to find again, such as a Scripts folder on your desktop, or
