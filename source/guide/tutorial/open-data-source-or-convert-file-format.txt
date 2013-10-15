@@ -13,7 +13,7 @@ high-resolution video files without challenge.
 Add a Data Source
 -----------------
 
-#, Click the :guilabel:`Add Data…`button in the top left corner of the
+#. Click the :guilabel:`Add Data…` button in the top left corner of the
    Data Viewer Controller.
 
 #. A file selection window will open. Select the data file you will be

@@ -47,6 +47,6 @@ Datavyu variable:
 
    check_valid_codes("trial", "", "hand", ["l","r","b","n"], "turn", ["l","r"], "unit", [1,2,3])
 
-.. see::
+.. seealso::
 
    :doc:`/api/tutorial/check-for-coder-errors`

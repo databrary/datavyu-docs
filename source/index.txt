@@ -13,6 +13,3 @@ Contents:
 
    /guide
    /api
-.. /faq
-   /api
-   /best-practices

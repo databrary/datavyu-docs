@@ -16,15 +16,6 @@ variable argument called "unit" to the "trial" Datavyu variable. The
 "unit" argument might represent the unit of measure used during an
 experiment, for instance.
 
-.. As you remember from your Ruby tutorial, methods are functions that are
-part of classes. In this case, ``add_arg`` is a method of the
-``RVariable`` class. The basic idea is that a method "belongs" to an
-instance of a class, so using the above example, the ``RVariable``
-``trial`` "owns" a function called ``add_arg`` that will add an argument
-to its cells.
-
-.. This somewhat confusing thing is probably most easily seen in an example:
-
 #. Start by setting up the script, and assigning the Datavyu variable
    "trial" to a new Ruby variable called ``trial`` using 
    :function:`getVariable`:

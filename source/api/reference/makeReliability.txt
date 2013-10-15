@@ -61,6 +61,6 @@ from the primary variable "trial", copying every second cell, and retaining the
 
    rel_trial = makeReliability("rel.trial", "trial", 2, "onset", "trialnum", "unit")
 
-.. see::
+.. seealso::
 
    - :doc:`/api/tutorial/use-two-pass-verification-to-check-data-accuracy`

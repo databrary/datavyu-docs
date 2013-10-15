@@ -65,7 +65,7 @@ errors, and the percent agreement.
 :function:`checkReliability()` has four required arguments, and one
 optional one:
 
-.. include:: /api/reference/checkReliability().txt
+.. include:: /api/reference/checkReliability.txt
    :start-after: table-start
    :end-before: table-end
 

@@ -1,14 +1,13 @@
-======================
-Datavyu Ruby API v.1.0
-======================
+================
+Datavyu Ruby API
+================
 
 The Datavyu scripting API provides a scriptable interface to Datavyu's
 database, allowing you to manipulate your data, print in any format
 you'd like, or check your data for errors.
 
 If you're new to programming or new to Ruby, you might want to go
-through the `Basic Ruby Tutorial
-<https://www.ruby-lang.org/en/documentation/quickstart/>`_. Once you're
+through the `Basic Ruby Tutorial <https://www.ruby-lang.org/en/documentation/quickstart/>`_. Once you're
 ready to start working with Ruby Scripts, see:
 :doc:`/api/write-ruby-scripts-for-datavyu` for a Datavyu-specific overview of
 the Ruby API and scripting for Datavyu.

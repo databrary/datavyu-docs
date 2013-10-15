@@ -63,6 +63,6 @@ difference tolerated, and writes the output to the
 
    checkReliability("trial", "rel.trial", "trialnum", 100, "/Users/motoruser/Desktop/Relcheck.txt")
 
-.. see:: 
+.. seealso:: 
 
    :doc:`/api/tutorial/use-two-pass-verification-to-check-data-accuracy`
