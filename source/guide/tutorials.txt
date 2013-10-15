@@ -5,8 +5,8 @@ Datavyu Tutorials
 .. toctree::
    :maxdepth: 1
    
-   /guide/tutorial/add-observations
-   /guide/tutorial/add-a-new-variable
-   /guide/tutorial/configure-variables
-   /guide/tutorial/export-data-from-a-project
+   /guide/tutorial/add-an-observation
+   /guide/tutorial/add-a-variable
+   /guide/tutorial/configure-datavyu-variables
+   /guide/tutorial/export-data
    /guide/tutorials/use-scripts-to-automate-tasks

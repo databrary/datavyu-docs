@@ -1,8 +1,8 @@
 .. _vocab-editor:
 
-=============================================
-Configure Variables in Using the Vocab Editor
-=============================================
+===============================================
+Configure Variables with Datavyu's Vocab Editor
+====================================--=========
 
 .. HEADINGS: 
 .. text
@@ -17,28 +17,48 @@ Configure Variables in Using the Vocab Editor
    It looks like they'll be configurable at some point since there's 
    the greyed-out option in the vocab editor... but not at present?
    
-.. Matrix variables are the most configurable Datavyu variables, and the
-   most useful for multivariate analyses. Each cell of a matrix variable 
-   is a collection of key-value pairs called :term:`arguments`. Each    
-   argument (the key) has a value that the coder inputs while coding a 
-   data source.
+Matrix variables are the most configurable Datavyu variables, and the
+most useful for multivariate analyses. Each cell of a matrix variable is
+a collection of key-value pairs called :term:`arguments`. Each argument
+(the key) has a value that the coder inputs while coding a data source.
 
-.. The following sample spreadsheet shows two matrix variables, "ID" and
-   "trial". "ID" has four attributes: subject, test date,
-   birth date, and condition. "trial" has two attributes: trialnum and
-   outcome.
-
-.. .. include:: /includes/guide-tutorial-sample-spreadsheet.rst
-
-Datavyu provides the :ref:`Vocab Editor <vocab-editor>`, for configuring
+Datavyu provides a :ref:`Vocab Editor <vocab-editor>` for configuring
 matrix variables.
 
-#. Open the Vocab Editor. From the Data Viewer Controller, click on the
-   :guilabel:`Spreadsheet` menu, and then select 
-   :guilabel:`Vocab Editor`.
+Open the Vocab Editor
+---------------------
 
-   The Vocab Editor window will open, and list all existing matrix
-   variables.
+From the Data Viewer Controller, click on the :guilabel:`Spreadsheet`
+menu, and then select :guilabel:`Vocab Editor`.
 
+The Vocab Editor window will open, and list all existing matrix
+variables. From here, you can add a new matrix variable, or edit
+existing variables.
 
+Add a Matrix Variable
+---------------------
 
+Click on the :guilabel:`Add matrix()` button. A new matrix variable
+called "matrix1" will appear in the list of variables. By default,
+"matrix1" has one argument, "arg1".
+
+You can change the name of the variable or argument by double-clicking
+on its name and typing a new name.
+
+Add Arguments
+-------------
+
+To add an argument to a matrix variable, select the variable. You'll know
+you have selected it when its background is light blue. Then, click
+on the :guilabel:`Add <arg>` button.
+
+You can change the name of the argument by double-clicking on its name
+and typing a new name, and can reorder a variable's arguments by
+selecting an argument by clicking within its text, and using the
+:guilabel:`Move <arg>` buttons.
+
+Remove Arguments
+----------------
+
+To delete an argument, select it by clicking within its text, and then
+click on the :guilabel:`Delete` button in the top right.
