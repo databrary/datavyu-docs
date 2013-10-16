@@ -22,11 +22,11 @@ Glossary
    cell offset
       [definition]
 
-   variable
-      Datavyu variables are phenomena or events that observations are
-      collected about. Variables can be extremely general, such as
+   column
+      Datavyu columns are phenomena or events that observations are
+      collected about. Columns can be general, such as
       "trial" or "ID", or can be specific, such as "step" or "hand".
-      Datavyu represents variables as a column in the
+      Datavyu represents columns as a column in the
       :guilabel:`Spreadsheet`.
    
    spreadsheet
@@ -43,15 +43,15 @@ Glossary
       :term:`timeslider` of the Data Viewer Controller.
 
    observation
-      An instance of the :term:`variable` that is being coded.
+      An instance of the :term:`column` that is being coded.
       Observations have an :term:`onset` and an :term:`offset`, and
       may be [types].
 
    argument
-      Datavyu arguments are variable components that coders are observing.
-      Each Datavyu :term:`variable` may have multiple arguments
+      Datavyu arguments are column components that coders are observing.
+      Each Datavyu :term:`column` may have multiple arguments
       for which a coder will record observations. For instance, a
-      variable called "step", which refers to walking, might have
+      column called "step", which refers to walking, might have
       a "foot" argument that would differentiate between left or right
       feet, and a "direction" argument that indicated if the person
       was stepping forward or backward.
@@ -91,30 +91,30 @@ Glossary
       routines to perform tasks. Datavyu's API uses the 
       `Ruby <https://www.ruby-lang.org/en/>`_ programming language.
 
-   reliability variable
-      A Datavyu variable that is a copy of an original variable
+   reliability column
+      A Datavyu column that is a copy of an original column
       used to ensure that the coded observations are accurate.
 
-   matrix variable
-      Matrix variables are :term:`key-value pairs <key-value pair>` that
-      associate a variable name with a variety of :term:`arguments
-      <argument>`. The attributes are themselves key-value pairs too.
-      Matrix variables allow researchers to record components of events
-      or phenomena together.
+   matrix column
+      Matrix columns are :term:`key-value pairs <key-value pair>` that
+      associate a column name with a variety of :term:`arguments
+      <argument>`. The argubments are themselves key-value pairs.
+      Matrix columns allow researchers to record components of events
+      or phenomena in one place.
 
-   text variable
-      Text variables are a Datavyu variable type that supports free-form
+   text column
+      Text columns are a Datavyu column type that supports free-form
       text entries, including paragraphs.
    
-   nominal variable
-      (from Wikipedia) "Nominal variables are variables whose values
-      have no numerical value, such as gender or occupation."" Nominal
-      variables differ from :term:`text variables <text variable>` in
+   nominal column
+      (from Wikipedia) "Nominal variables [columns] are columns whose values
+      have no numerical value, such as gender or occupation." Nominal
+      columns differ from :term:`text columns <text column>` in
       that they do not allow multi-line entries.
    
    cell
       A cell is a graphical representation of an observation. Cells
-      are rectangles that stack in the variable columns of Datavyu's 
+      are rectangles that stack in the columns of Datavyu's 
       spreadsheet and contain the observation data that a coder 
       inputs when coding a data source.
    

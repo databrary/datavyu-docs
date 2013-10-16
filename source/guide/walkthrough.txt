@@ -44,18 +44,18 @@ The :guilabel:`Datavyu spreadsheet` is where users record
    :align: center
    
    A blank Datavyu spreadsheet. Note the :guilabel:`plus` icon in the
-   top left, which you can use to add new :term:`variables <variable>`.
+   top left, which you can use to add new :term:`columns <column>`.
 
 .. TODO: rewrite this dreadful paragraph
 
-The spreadsheet is the core of Datavyu. By :ref:`configuring variables
-<configure-variables>`, coders can record observations and link them
-directly to timestamps in the data source. Each user-defined variable is
+The spreadsheet is the core of Datavyu. By :ref:`configuring columns
+<configure-columns>`, coders can record observations and link them
+directly to timestamps in the data source. Each user-defined column is
 represented by a column in the spreadsheet, and observations stack on
 top of each other in sequence. Looking horizontally across the
 spreadsheet columns shows what was happening at a given point in time in
 the data source. Looking vertically down a column shows the sequence in
-which that variable type occurred.
+which that column type occurred.
 
 The :doc:`/guide/spreadsheet` document describes the
 :guilabel:`spreadsheet` in more detail. 
@@ -83,6 +83,6 @@ detailed overview of adding data sources, and advice on converting file
 formats, see:
 :doc:`/guide/tutorial/open-data-source-or-convert-file-format`.
 
-Once you've added a data source, it's time to add variables, create
+Once you've added a data source, it's time to add columns, create
 observations, or write scripts. The :ref:`Core Operations Tutorials
 <guide-core-tutorials>` are there to guide you.
