@@ -16,7 +16,6 @@ external device.
 Software Requirements
 ~~~~~~~~~~~~~~~~~~~~~
 
-Datavyu is a Java-based application, and requires that you install
-Java if you have not yet done so. Many operating systems include
+Datavyu is a Java-based application. Many operating systems include
 Java by default, but if you have *not* installed Java, you should do
 so prior to installing Datavyu.

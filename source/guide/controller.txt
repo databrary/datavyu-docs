@@ -49,64 +49,62 @@ Playback Controls
    You cannot use the keypad for inputting numbers into Datavyu: it will
    only perform the actions described here.
 
-- jog left (``1``): moves the playhead back one frame. If the
+- :guilabel:`jog left` (``1``): moves the playhead back one frame. If the
   :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
   in one second increments.
 
-- play/pause (``2``): pauses playback. Pressing :guilabel:`play/pause`
-  again resumes playback. 
-  
-  :guilabel:`play/pause` only works if :guilabel:`play` has first been
-  pushed.
+- :guilabel:`play/pause` (``2``): pauses playback. Pressing
+  :guilabel:`play/pause` again resumes playback. :guilabel:`play/pause`
+  only works if :guilabel:`play` has first been pushed.
 
-- jog right (``3``): moves the playhead forward one frame. If the
+- :guilabel:`jog right` (``3``): moves the playhead forward one frame. If the
   :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
   in one second increments.
 
-- shuttle left (``4``): rewinds, initially at 1/32 of playback speed.
+- :guilabel:`shuttle left` (``4``): rewinds, initially at 1/32 of playback speed.
   Repeatedly pressing the :guilabel:`shuttle left` key increases the rewind
   speed to a maximum of 32 times playback speed.
 
-- stop (``5``): stops playback.
+- :guilabel:`stop` (``5``): stops playback.
 
-- shuttle right (``6``): fast forwards initially at 1/32 of playback
+- :guilabel:`shuttle right` (``6``): fast forwards initially at 1/32 of playback
   speed. Repeatedly pressing the :guilabel:`shuttle right` key increases
   the fast forward speed to a maximum of 32 times playback speed.
 
-- rewind (``7``): rewinds at 32x playback speed.
+- :guilabel:`rewind` (``7``): rewinds at 32x playback speed.
 
-- play (``8``): starts playback.
+- :guilabel:`play` (``8``): starts playback.
 
-- forward (``9``): fast forwards at 32x playback speed.
+- :guilabel:`forward` (``9``): fast forwards at 32x playback speed.
 
 .. _coding-controls:
 
 Coding Controls
 ~~~~~~~~~~~~~~~
 
-- set cell onset (``clear``): sets the :term:`onset` for the current
+- :guilabel:`set cell onset` (``clear``): sets the :term:`onset` for the current
   observation / cell.
 
-- point cell (``*``): creates a new cell whose :term:`onset` and
+- :guilabel:`point cell` (``*``): creates a new cell whose :term:`onset` and
   :term:`offset` values are the playhead's current position
 
-- set cell offset (``/`` and ``.``): sets the :term:`offset` for the
+- :guilabel:`set cell offset` (``/`` and ``.``): sets the :term:`offset` for the
   current observation / cell
 
-- find (``+``): moves the playhead to the :term:`onset` time of the the
+- :guilabel:`find `(``+``): moves the playhead to the :term:`onset` time of the the
   time that is shown in the box to the right of the :guilabel:`find`
   button. By default, this is the :term:`onset` time for the
   currently-selected cell. You can change the time by selecting that box
   and editing the value.
 
-- go back (``-``): moves the playhead to the time shown in the box
+- :guilabel:`go back` (``-``): moves the playhead to the time shown in the box
   to the left of the :guilabel:`go back` button. You can change the 
   time by selecting that box and editing the value.
 
-- create new cell and set onset (``0``): creates a new cell and sets its
+- :guilabel:`create new cell and set onset` (``0``): creates a new cell and sets its
   :term:`onset` to the playhead's current position.
 
-- create new cell (``Enter``): creates a new cell (and sets its onset...)
+- :guilabel:`create new cell` (``Enter``): creates a new cell (and sets its onset...)
 
 Timeslider
 ----------
@@ -125,15 +123,15 @@ and stop at the rightmost bracket.
 The :guilabel:`Timeslider` component of the Data Viewer Controller also
 includes five buttons:
 
-- Lock All: [use is currently unclear]
+- :guilabel:`Lock All`: [use is currently unclear]
 
-- Add Bookmark: adds a bookmark at the playhead.
+- :guilabel:`Add Bookmark`: adds a bookmark at the playhead.
 
-- Snap Region: sets the :term:`region` to the length of the selected
+- :guilabel:`Snap Region`: sets the :term:`region` to the length of the selected
   cell: the left bracket is placed at the cell's :term:`onset`, and the
   right bracket at the cell's :term:`offset`.
 
-- Clear Region: removes the region delineators.
+- :guilabel:`Clear Region`: removes the region delineators.
 
 - :guilabel:`magnifying glass` icon: [use currently unclear]
 

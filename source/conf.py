@@ -40,7 +40,7 @@ source_suffix = '.txt'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Datavyu Manual'
+project = u'Datavyu'
 copyright = u'2013, Allison Moore'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -167,7 +167,7 @@ html_show_sphinx = False
 #html_use_opensearch = ''
 
 # This is the file name suffix for HTML files (e.g. ".xhtml").
-#html_file_suffix = None
+html_file_suffix = None
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'DatavyuManualdoc'
@@ -189,7 +189,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'DatavyuManual.tex', u'Datavyu Manual Documentation',
+  ('index', 'DatavyuManual.tex', u'Datavyu Documentation',
    u'Allison Moore', 'manual'),
 ]
 
@@ -219,7 +219,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'datavyumanual', u'Datavyu Manual Documentation',
+    ('index', 'datavyumanual', u'Datavyu Documentation',
      [u'Allison Moore'], 1)
 ]
 
@@ -233,7 +233,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'DatavyuManual', u'Datavyu Manual Documentation',
+  ('index', 'DatavyuManual', u'Datavyu Documentation',
    u'Allison Moore', 'DatavyuManual', 'One line description of project.',
    'Miscellaneous'),
 ]

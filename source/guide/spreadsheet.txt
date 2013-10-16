@@ -8,12 +8,14 @@ The Datavyu Spreadsheet is where :term:`coders <coder>` record
 :term:`observations <observation>`. The spreadsheet is the core of Datavyu. By
 :ref:`configuring variables <configure-variables>`, coders can record
 observations and link them directly to timestamps in the data source.
+
 Each user-defined variable is represented by a column in the
-spreadsheet, and observations stack on top of each other in sequence.
-Looking horizontally across the spreadsheet columns shows what was
-happening at a given point in time in the data source. Looking
-vertically down a column shows the sequence in which that variable type
-occurred.
+spreadsheet. Observations are presented by :term:`cells`, rectangles in
+within a column that contain the observation's data. Cells stack on top
+of each other in sequence. Looking horizontally across the spreadsheet
+columns shows what was happening at a given point in time in the data
+source. Looking vertically down a column shows the sequence in which
+that variable type occurred.
 
 .. figure:: /img/blank-spreadsheet.png
    :alt: Image of a typical Datavyu spreadsheet with n study variables
@@ -22,16 +24,16 @@ occurred.
    A typical Datavyu spreadsheet. Note the :guilabel:`plus` icon in the
    top left, which you use to add new :term:`variables <variable>`.
 
-DataVyu automatically links the times coded in the spreadsheet to the
-current time in the data source. This allows coders to insert
-the :term:`onsets <onset>` and :term:`offsets <offset>` of events into
-the spreadsheet and jump to the relevant time in the data source by
-selecting coded data in the spreadsheet.
+Datavyu automatically links the times coded in the spreadsheet to the
+current time in the data source. This allows coders to record
+the :term:`onset` and :term:`offset` times of events into
+the spreadsheet. Coders can also jump to the relevant time in the data source by
+selecting a cell in the spreadsheet.
 
 .. _variable-types:
 
-Variable Types
---------------
+Variables
+---------
 
 Datavyu supports three types of variables: *text*, *nominal*, and
 *matrix*. Using combinations of these variable types, you can [do stuff].
@@ -77,19 +79,19 @@ feature that is being studied. For instance, an argument could be "Left
 hand touch", or "Hesitation", or "Focus". When a coder codes the data
 source, he or she might record the presence or absence of these
 arguments. A matrix variable must have *at least* one argument, but may
-have as many as desired.
+have as many as desired. See: the :doc:`variable configuration
+</guide/tutorial/configure-datavyu-variables>` tutorial provides
+instructions for configuring matrix variables.
 
 .. TODO: is there a limit on the number of arguments?
 
 .. TODO: Sample matrix variable arrangement.
 
-Spreadsheet Interpretation
---------------------------
+.. Spreadsheet Interpretation
+   --------------------------
 
 .. TODO: describe what the page looks like when coded & so on.
 
-Next Steps
-----------
+.. seealso::
 
-Now that you are familiar with the basic components of Datavyu, you can
-:doc:`/guide/getting-started` or check out the :doc:`/guide/tutorials`.
+   - :doc:`/guide/tutorials`

@@ -6,8 +6,8 @@ Datavyu is a Java-based application, which is easy to install on
 Windows. The following sections describe Datavyu's system requirements
 and then the installation process itself.
 
-System Requirements
--------------------
+Requirements
+------------
 
 .. include:: /includes/fact-system-requirements.rst
 
@@ -17,8 +17,8 @@ Install Datavyu
 #. Download the latest Datavyu release for Windows from the Datavyu
    website's `Downloads Page <http://datavyu.org/download/>`_.
 
-#. [windows installation instructions here once I figure out what they 
-   are]
+#. [windows-specific installation instructions here once I figure out
+   what they are]
 
 #. Install a video plugin. At present, Datavyu for Windows does not
    include any video plugins. To use Datavyu, you must download either
