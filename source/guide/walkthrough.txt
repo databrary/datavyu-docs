@@ -37,7 +37,7 @@ Spreadsheet
 ~~~~~~~~~~~
 
 The :guilabel:`Datavyu spreadsheet` is where users record
-:term:`observations` from the data source.
+:term:`observations <observation>` from the data source.
 
 .. figure:: /img/blank-spreadsheet.png
    :alt: Image of a Datavyu blank spreadsheet with no observations recorded
@@ -70,8 +70,8 @@ The :doc:`/guide/spreadsheet` document describes the
 Data Viewer
 ~~~~~~~~~~~
 
-The :guilabel:`Data Viewer` is the window that presents the :term:`data
-source`, the audio or video file that is being coded.
+The :guilabel:`Data Viewer` is the window that presents the data
+source, the audio or video file that the user is working with.
 
 Add a Data Source
 -----------------

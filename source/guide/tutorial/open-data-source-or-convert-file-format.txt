@@ -34,11 +34,22 @@ Add a Data Source
 Convert an Unsupported File Format
 ----------------------------------
 
+.. TODO: I'm not sure that this is actually what the convert video
+   tool does.
+
 If your data source is of a type that Datavyu cannot play (such as
 [list]), you may be able to convert it to a readable format using
-Datavyu's [conversion tool]. 
+Datavyu's Convert Videos tool. 
 
-[instructions for the conversion tool]
+#. From the Spreadsheet, select the :guilabel:`Controller` menu,
+   and then choose :guilabel:`Convert Videos`.
+
+#. Select a source video. This will be the video you are converting,
+
+#. Select a target video. This is the video that Datavyu will combine
+   the source video with (?).
+   
+#. Select :guilabel:`Convert Video`, and your video will be converted.
 
 Alternately, [other free tools], such as
 [list] may be able to help you convert your data source. For help with

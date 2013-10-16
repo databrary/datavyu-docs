@@ -4,10 +4,11 @@
 Add a Variable
 ==============
 
-Datavyu represents variables as columns in the spreadsheet. Variables 
-are [stuff that is being studied]. Datavyu supports three variable types:
-text, nominal, and matrix. For detailed descriptions of each variable
-type, see: :ref:`variable-types`. 
+Datavyu represents variables as columns in the spreadsheet. Variables
+are [stuff that is being studied]. Datavyu supports three variable
+types: :term:`text <text variable>`, :term:`nominal <nominal variable>`,
+and :term:`matrix <matrix variable>`. For detailed descriptions of each
+variable type, see: :ref:`variable-types`.
 
 Adding a variable to your Datavyu project is simple: the following steps
 will guide you through the process.

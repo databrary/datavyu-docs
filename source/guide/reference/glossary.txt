@@ -23,7 +23,11 @@ Glossary
       [definition]
 
    variable
-      [definition]
+      Datavyu variables are phenomena or events that observations are
+      collected about. Variables can be extremely general, such as
+      "trial" or "ID", or can be specific, such as "step" or "hand".
+      Datavyu represents variables as a column in the
+      :guilabel:`Spreadsheet`.
    
    spreadsheet
       [definition] see: :doc:`/guide/spreadsheet`
@@ -44,7 +48,13 @@ Glossary
       may be [types].
 
    argument
-      [define for Datavyu]
+      Datavyu arguments are variable components that coders are observing.
+      Each Datavyu :term:`variable` may have multiple arguments
+      for which a coder will record observations. For instance, a
+      variable called "step", which refers to walking, might have
+      a "foot" argument that would differentiate between left or right
+      feet, and a "direction" argument that indicated if the person
+      was stepping forward or backward.
    
    Integer
       A whole number. Integers are numbers that are not fractions,
@@ -55,7 +65,9 @@ Glossary
       can be random characters, words, or sentences.
    
    timeslider
-      [define for Datavyu]
+      The timeslider represents the length of the data source, and
+      enables users to visualize where the :term:`playhead` is with
+      respect to the entirety of the data source.
 
    key-value pair
       A data representation that pairs "keys" (some thing you have data
@@ -95,12 +107,15 @@ Glossary
       text entries, including paragraphs.
    
    nominal variable
-      Nominal variables are variables whose values have no numerical
-      value, such as gender or occupation. Nominal variables differ
-      from :term:`text variables <text variable>` in that they do
-      not allow multi-line entries.
+      (from Wikipedia) "Nominal variables are variables whose values
+      have no numerical value, such as gender or occupation."" Nominal
+      variables differ from :term:`text variables <text variable>` in
+      that they do not allow multi-line entries.
    
    cell
-      [definition]
+      A cell is a graphical representation of an observation. Cells
+      are rectangles that stack in the variable columns of Datavyu's 
+      spreadsheet and contain the observation data that a coder 
+      inputs when coding a data source.
    
    

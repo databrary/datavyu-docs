@@ -10,7 +10,7 @@ The Datavyu Spreadsheet is where :term:`coders <coder>` record
 observations and link them directly to timestamps in the data source.
 
 Each user-defined variable is represented by a column in the
-spreadsheet. Observations are presented by :term:`cells`, rectangles in
+spreadsheet. Observations are presented by :term:`cells <cell>`, rectangles in
 within a column that contain the observation's data. Cells stack on top
 of each other in sequence. Looking horizontally across the spreadsheet
 columns shows what was happening at a given point in time in the data
@@ -55,8 +55,8 @@ Nominal Variables
 
 .. next sentence stolen from wikipedia
 
-*Nominal variables* are variables with values which have no numerical
-value, such as gender or occupation. These are useful for recording
+*Nominal variables* are "variables with values which have no numerical
+value, such as gender or occupation". These are useful for recording
 facts about the study participant.
 
 A typical nominal variable column might resemble the following:
