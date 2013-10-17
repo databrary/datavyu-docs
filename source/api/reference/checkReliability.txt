@@ -5,7 +5,9 @@ checkReliability()
 Definition
 ----------
 
-``checkReliability(main_col, rel_col, match_arg, time_tolerance, dump_file)``
+.. code-block:: ruby
+
+   checkReliability(main_col, rel_col, match_arg, time_tolerance, dump_file)
 
 Compares two Datavyu variables to check for reliability errors and
 percent accuracy.
@@ -16,14 +18,14 @@ percent accuracy.
    :widths: 20, 40, 50
    :header-rows: 1
    
-   * - Argument
+   * - Parameter
      - Type
      - Description
    * - ``main_col``
-     - String **or** Ruby variable from :function:`getVariable`
+     - String **or** Ruby variable from :method:`getVariable()`
      - The primary column that ``rel_col`` will be compared against
    * - ``rel_col``
-     - String **or** Ruby variable from :function:`getVariable`
+     - String **or** Ruby variable from :method:`getVariable()`
      - The reliability column to compare to ``main_col``
    * - ``match_arg``
      - String
@@ -31,7 +33,7 @@ percent accuracy.
    * - ``time_tolerance``
      - Integer
      - Amount of slack you permited, in milliseconds, between the two onset and offsets before it will be considered an error. Set to 0 to tolerate no difference.   
-   * - ``dump_file`` (optional)
+   * - ``dump_file`` (**optional**)
      - String path or Ruby File object
      - The full string path to dump the relability output to. This can be used for multi-file dumps or just to keep a log. You can also give it a Ruby File object if a file is already started.
 

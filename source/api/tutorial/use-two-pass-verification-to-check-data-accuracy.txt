@@ -6,23 +6,28 @@ Use Two-Pass Verification to Improve Data Accuracy
 
 .. begin-content
 
-With two-pass verification, two coders will separately code the same
-data source. This enables you to check that the coders are observing
-the same events, thereby improving data accuracy.
+With two-pass verification, two coders separately code the same data
+source. This enables coders and researchers to verify that coders 
+interpret eents in the same way, and to ensure the accuracy of the
+recorded observations. 
+
+To facilitate two-pass verification, you can create a :term:`reliability
+column`, which the second coder will use to record their observations,
+and then compare the reliability column against the original coder's
+observations.
 
 Make a Reliability Variable
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To facilitate two-pass verification, you can create a :term:`reliability
-variable`. In general, when creating reliability variables, you create
-blank cells that correspond to the cells created in the first coding
+In general, when creating reliability variables, you create
+blank cells that correspond to the cells created during the first coding
 pass. This ensures that the two coders will have observed the same
 events in the data stream, and allows you to compare the two coding
 passes.
 
-The Datavyu Ruby API provides the :function:`makeReliability` function
-for creating reliability variables. :function:`makeReliability` takes
-at least 3 arguments:
+The Datavyu Ruby API provides the :method:`makeReliability` method
+for creating reliability variables. :method:`makeReliability` has four
+parameters:
 
 .. include:: /api/reference/makeReliability.txt
    :start-after: table-start
@@ -30,15 +35,30 @@ at least 3 arguments:
 
 .. tip:: 
 
-   Specifying :term:`onset` in ``args_to_keep`` makes it easy for the
-   reliability coder to navigate to the correct points in the data source
-   and code the same events as the original coder.
+   Copying the :term:`onset` of the
+   original column to the new reliability column in the ``args_to_keep`` 
+   parameter makes it easier for the second coder to navigate to
+   the correct locations in the data source, and to code the same
+   events as the original coder. 
+   
+   When making a reliability column, you should also think about how you
+   are going to compare the columns. :method:`checkReliability`, which
+   you use to check reliability, requires that each pair of cells have a
+   unique identifier that it can use to link them together. For example,
+   a trial number coded into each cell would match corresponding cells,
+   even if only a subset of cells was included in the reliability
+   variable.
 
-The following example creates a new reliability variable called
-"rel.trial" from the "trial" variable, skipping every other cell, and
-copying over the "onset" and "trialnum" arguments so that the
-reliability coder will not have to recode :term:`onset` and trial
-numbers.
+   In order to avoid issues, you should endeavor to import an
+   appropriate [code] when you create your reliability column with
+   :function:`makeReliability`.
+
+The following example uses the :download:`example data
+</resources/Example-Template.opf` sample data to create a new
+reliability column called "rel.trial" from its "trial" column, skipping
+every other cell, and copying over the "onset" and "trialnum" [codes]
+so that the reliability coder will not have to recode :term:`onset` and
+trial numbers.
 
 .. code-block:: ruby
 
@@ -46,6 +66,10 @@ numbers.
    begin
       makeReliability("rel.trial", "trial", 2, "onset", "trialnum")
    end
+
+.. .. figure:: /img/makeReliability-definition-vs-use.png
+      
+.. .. [Caption describing mapping of function definition to its use]
 
 .. note::
 
@@ -57,12 +81,12 @@ numbers.
 Check Reliability
 ~~~~~~~~~~~~~~~~~
 
-Once you have coded the reliability variable, you can use
-:function:`checkReliability` to compare the primary and reliability
-variables' cells. :function:`checkReliability` returns the number of
-errors, and the percent agreement.
+Once the second coder has recorded their observations in the reliability
+column, you can use :function:`checkReliability` to compare the primary
+and reliability columns cells. :function:`checkReliability`
+returns the number of errors, and the percent agreement.
 
-:function:`checkReliability()` has four required arguments, and one
+:function:`checkReliability()` has four required parameters, and one
 optional one:
 
 .. include:: /api/reference/checkReliability.txt
@@ -74,22 +98,15 @@ optional one:
    ``match_arg`` is particularly important: for
    :function:`checkReliability` to know which cells to compare, it needs
    to have some parameter that is unique to each pair of corresponding
-   primary and reliability cells. For example, a trial number coded
-   into each cell would match corresponding cells, even if only
-   a subset of cells were included in the reliability variable.
-
-   In order to avoid errors,you should endeavor to import the argument
-   you will use as ``match_arg`` when you initially create your
-   reliability variable with :function:`makeReliability`. 
+   primary and reliability cells. 
 
 .. code-block:: ruby
 
     require 'Datavyu_API.rb'
     begin
-        # We have two variables that we want to compare, trial and rel.trial. They match on an argument called trialnumber.
-        # We want to dump the results to a file on the desktop.
+        # Compare the "trial" and "rel.trial" columns, using trialnumber as their matching code
+        # and dump the results to a file on the desktop.
 
-        # As before, File.expand_path with unfold the ~ in the filename to be our users' home directory
         dump_file = File.expand_path("~/Desktop/relcheck.txt")
         checkReliability("trial", "rel.trial", "trialnum", dump_file)
     end

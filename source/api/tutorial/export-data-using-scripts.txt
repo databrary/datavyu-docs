@@ -34,7 +34,7 @@ approaches here:
    appropriately, 
 
 #. A *nested* dump *with un-nested cells*, which is similar to a the
-nested dump, but which also works if your cells do not nest.
+   nested dump, but which also works if your cells do not nest.
 
 These methods will be covered in the order they are listed above, which
 also happens to be in order of increasing complexity.

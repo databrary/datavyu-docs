@@ -21,7 +21,7 @@ origin variable if wanted.
    :widths: 20, 40, 50
    :header-rows: 1
    
-   * - Argument
+   * - Parameter
      - Type
      - Description
    * - ``rename``
@@ -32,12 +32,12 @@ origin variable if wanted.
      - String
      - the name of the variable that we want to create a reliability
        variable *from* (i.e. the existing coded variable).
-   * - ``multiple_to_keep``
+   * - ``multiple_to_keep`` (**optional**)
      - Integer
-     - number of cells to skip: a value of ``2`` includes *every other
+     - Number of cells to skip: a value of ``2`` includes *every other
        cell* in the new variable; ``1`` includes every cell, and ``0``
        creates a blank column with no cells
-   * - ``*args_to_keep``
+   * - ``*args_to_keep`` (**optional**)
      - comma-separated strings
      - Arguments you want to copy from the original to new variable.
        These are arguments that the reliability coder will not have to
