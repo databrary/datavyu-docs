@@ -1,32 +1,33 @@
 .. _api-add-arguments:
 
-===========================
-Add Arguments to a Variable
-===========================
+=========================
+Add Arguments to a Column
+=========================
 
 .. begin-content
 
-Adding arguments to a variable is one of the most straightforward 
+Adding arguments to a column is one of the most straightforward 
 scriptable tasks. The Datavyu API provides the :function:`add_arg()` method
 for adding arguments. 
 
-:function:`add_arg()` takes the names of the Datavyu arguments to be
-added as Strings passed as arguments. In this example, we'll add a study
-variable argument called "unit" to the "trial" Datavyu variable. The
-"unit" argument might represent the unit of measure used during an
-experiment, for instance.
+:function:`add_arg()` takes the names of the Datavyu [codes] to be added
+as its parameters. In this example, we'll add a [code]
+called *unit* to the "trial" Datavyu variable from :download:`the sample
+data </resources/Example-Template.opf>`. The *unit* argument might
+represent the unit of measure used during an experiment, for instance.
 
-#. Start by setting up the script, and assigning the Datavyu variable
-   "trial" to a new Ruby variable called ``trial`` using 
-   :function:`getVariable`:
+#. Start by setting up the script, and assigning the Datavyu column
+   "trial" to a variable called ``trial`` using :function:`getVariable`:
 
    .. code-block:: ruby
 
       require 'Datavyu_API.rb'
       begin
+         # Retrieve "trial" data from Datavyu database and assign it
+         # to a new variable
          trial = getVariable("trial")
 
-#. Add an argument to ``trial`` using :function:`add_arg`.
+#. Add a [code] to ``trial`` using :function:`add_arg`.
    
    .. code-block:: ruby
       
@@ -34,7 +35,7 @@ experiment, for instance.
       begin
          trial = getVariable("trial")
          
-         # Add the "unit" argument to the trial Ruby variable
+         # Add the "unit" code to the trial variable
          trial.add_arg("unit")
 
 #. Write the changes back to the Datavyu database using

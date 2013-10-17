@@ -4,6 +4,8 @@
 Datavyu API Tutorial
 ====================
 
+.. contents:: :depth: 2
+
 .. include:: /api/tutorials.txt
    :start-after: begin-content
    :end-before: end-content

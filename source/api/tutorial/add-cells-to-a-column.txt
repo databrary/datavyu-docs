@@ -1,18 +1,19 @@
 .. _api-add-cells:
 
-=======================
-Add Cells to a Variable
-=======================
+=====================
+Add Cells to a Column
+=====================
 
 .. begin-content
 
-Pre-populating a Datavyu variable with cells is another common task that
-you can use scripts to automate. Suppose that you are setting up a
-spreadsheet, and you know that there are five trials in your data
-source, that occur at minute 0, minute 1, minute 2, minute 3, and minute
-4. In order to make it easier for the coder to code the trials, you can
-create a blank cell for each trial, with the :term:`onset` set to the
-correct trial start time.
+Pre-populating a Datavyu column with :term:`cells <cell>` is another
+common task that you can use scripts to automate.
+
+Suppose that you are setting up a spreadsheet, and you know that there
+are five trials in your data source, that occur at minute 0, minute 1,
+minute 2, minute 3, and minute 4. In order to make it easier for the
+coder to code the trials, you can create a blank cell for each trial,
+with the :term:`onset` set to the correct trial start time.
 
 #. Set up the script, and load the Datavyu variable you will be working
    with into a Ruby variable called ``trial``:
@@ -38,20 +39,21 @@ correct trial start time.
             <do stuff>
          end
    
-      Essentially, this says, "for ``i`` = 0, <do stuff>, Then, for ``i`` = 1, <do
-      stuff>. Then for ``i`` = 2, for ``i`` = 3, and for ``i`` = 4. Once you've done i
-      = 4, stop doing stuff." The ``0..4`` represents "from 0
-      to 4, inclusive". 
+      Essentially, this says, "for ``i`` = 0, <do stuff>, Then, for
+      ``i`` = 1, <do stuff>. Then for ``i`` = 2, for ``i`` = 3, and for
+      ``i`` = 4. Once you've done i = 4, stop doing stuff." The ``0..4``
+      represents "from 0 to 4, inclusive".
       
-      If you wanted to do something ten times, your loop might read
+      If you wanted to do something ten times, your loop could read
       ``for i in 0..9`` or ``for i in 1..10``, or ``for i in 99..108``.
-      In our case, we're going to use ``i`` to set the :term:`onset`
-      time of the cell, so having it start at 0 and go to 4 makes
-      sense.
+
+      In our case, we're going to using the value of ``i`` to set the
+      :term:`onset` time of each cell, so having it start at 0 and go to
+      4 makes sense.
    
-   We need to loop 5 times from 0 to 4, calculating the onset time to
+   We need to loop 5 times from 0 to 4, calculating the :term:`onset` time to
    set for each new cell. Since Datavyu API uses times in milliseconds,
-   we need to convert i (our minute marker) to milliseconds
+   we need to convert ``i`` (our minute marker) to milliseconds:
 
    .. code-block:: ruby
    
@@ -78,8 +80,8 @@ correct trial start time.
             # Create a new cell, called ``cell``
             cell = trial.make_new_cell()
 
-#. Set the onset of ``cell`` to the value of the ``time``
-   variable, using :function:`change_arg()`, and ``end`` the ``for`` loop:
+#. Set the onset of ``cell`` to the value of the ``time`` variable,
+   using :function:`change_arg()`, and ``end`` the ``for`` loop:
 
    .. code-block:: ruby
    

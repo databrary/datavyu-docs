@@ -1,0 +1,53 @@
+.. _api-add-new-variable:
+
+================
+Add a New Column
+================
+
+.. begin-content
+
+Much like adding :ref:`a cell <api-add-cells>` or :ref:`an
+argument <api-add-arguments>`, the Datavyu API allows you to create a
+completely new column using the :method:`createVariable()` method.
+:method:`createVariable` takes at least two parameters: the name of the
+new column must come first, while any subsequent parameters become the
+new column's :term:`arguments <argument>`.
+
+For example, suppose you wanted to add a column called "step" to your
+spreadsheet. "step" needs three arguments: "foot", "ht", and
+"direction".
+
+#. Set up the script, and create a new column with its four [codes].
+   We'll create a Ruby variable called ``step`` that will hold the
+   data until we're ready to write it back to the Database:
+
+   .. code-block:: ruby
+   
+      require 'Datavyu_API.rb'
+      begin
+         # Create new variable
+         step = createVariable("step", "foot", "ht", "direction")
+
+#. Write the new column back to the database and ``end`` the script:
+   
+   .. code-block:: ruby
+   
+      require 'Datavyu_API.rb'
+      begin
+         step = createVariable("step", "foot", "ht", "direction")
+
+         # Write the new variable to Datavyu's database.
+         setVariable(step)
+      end
+
+Or, putting it all together:
+
+.. code-block:: ruby
+
+   require 'Datavyu_API.rb'
+   begin
+      step = createVariable("step", "foot", "ht", "direction")
+      setVariable(step)
+   end
+
+.. end-content

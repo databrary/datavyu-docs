@@ -2,11 +2,12 @@
 Write Ruby Scripts for Datavyu
 ==============================
 
-This detailed guide describes to write Ruby scripts to automate various
+This detailed guide describes how to write Ruby scripts to automate
 tasks in Datavyu, and to ensure reliable :term:`coding <code>`,
 
 For a more in-depth discussion of each particular method and function,
-please see :doc:`the Davayu Ruby API Reference section </api/reference>`.
+please see :doc:`the Davayu Ruby API Reference </api/reference>`
+documentation.
 
 Recommended Text Editors
 ------------------------
@@ -58,44 +59,47 @@ programs for editing Ruby scripts:
 General Principles
 ------------------
 
+.. TODO: rewrite as paragraphs rather than bullets
+
 - Each cell has three required fields: ``onset``, ``offset``, and
-  ``ordinal``. Each cell also takes at least one :term:`argument`,
-  [what's an argument?].
+  ``ordinal``. Each cell also takes at least one :term:`argument`.
 
-- ``onset``, ``offset``, and ``ordinal`` are all :term:`integers <integer>` rather tha
-  n :term:`strings <string>`.
+- ``onset``, ``offset``, and ``ordinal`` are all :term:`integers
+  <integer>` rather than :term:`strings <string>`.
 
-- ``onset`` and ``offset`` are measured in **milliseconds from the
+- Datavyu measures ``onset`` and ``offset`` in **milliseconds from the
   beginning of the video (or other data stream)**, starting from 0. For
   instance, an ``onset`` time of 00:02:20 translates to 140000ms.
 
-- Cell arguments are :term:`strings <string>`. As such, if you wish to do math
-  with a coded argument, you must first convert it to an integer. Since
-  ``onset``, ``offset``, and ``ordinal`` are already integers, you don't
-  need to retype them.
+- Cell :term:`arguments` are :term:`strings <string>`. If you wish to
+  perform calculation on a coded argument, you must first convert it to
+  an integer. Since ``onset``, ``offset``, and ``ordinal`` are already
+  integers, you don't need to convert them.
   
   The following example creates an integer variable from a string
   variable:
 
-  Create a variable, ``var1`` whose value is a number ``5`` stored as a string
+  Create a variable, ``var1`` whose value is a number ``5`` stored as a
+  string. Note the quotation marks around the 5. This indicates that it
+  is a string.
 
   .. code-block:: ruby
 
      var1 = "5"
      
-  Convert it to an integer using ``to_i`` and save it to a new variable
+  Convert ``var1`` to an integer using ``to_i`` and save it to a new variable, ``var2``
 
   .. code-block:: ruby
 
      var2 = var1.to_i
      
-  Print some math result
+  Print the result
 
   .. code-block:: ruby
 
-     puts var2 * 2
+     puts var2
 
-- To print something to the console, you have two options: the ``p``
+- Ruby provides two options for printing to the console: the ``p``
   command and the ``puts`` command. When in doubt, use ``p``, as it
   prints arrays and lists in a more readable format, rather than mashing
   them all together like ``puts`` does. Run the following example for
@@ -123,8 +127,8 @@ In order to work, all scripts must include the following line at the top:
 
    require 'Datavyu_API.rb'
 
-This ``require`` statement loads all of the helper functions that help
-Ruby talk to the Datavyu database.
+This ``require`` statement loads all of the helper functions that enable
+your scripts to interact with the Datavyu database.
 
 In general, the rest of the script code goes between ``begin`` and
 ``end`` tags like so:
@@ -148,5 +152,5 @@ In general, the rest of the script code goes between ``begin`` and
    at the script 6 months from now. The examples in this documentation
    use comments extensively.
 
-Now that you've got a good grounding in the Datavyu Ruby API, consider
-the :doc:`/api/tutorials` or :doc:`/api/reference`.
+Now that you are well grounded in the Datavyu Ruby API mechanics,
+consider the :doc:`/api/tutorials` or :doc:`/api/reference`.

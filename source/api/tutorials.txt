@@ -2,27 +2,44 @@
 Datavyu API Tutorials
 =====================
 
-`Example-Template.opf </api/resources/Example-Template.opf>`_
+Before You Start
+################
 
-Lets walk through building a script. For the sake of this example, we'll
-be using the simple template in the link above. 
+Sample Data
+-----------
 
-It contains an ``ID`` variable with some basic information such as
-subject number, testdate, birthdate, and condition. Then there is a
-``trial`` variable that has two arguments: ``trialnum`` and ``outcome``.
-``trial`` has no cells in it yet. We're going to be modifying this file,
-so download it, and then open it with Datavyu (using File > Open and
-selecting the file from your hard drive).
+:download:`Example-Template.opf </api/resources/Example-Template.opf>`
+
+Most of the following tutorials all use :download:`Example-Template.opf
+</api/resources/Example-Template.opf>` as their basic data file. 
+
+The example template contains to :term:`columns`: "id", whose arguments
+describe basic information such as subject number, test date, birth
+date, and condition, and "trial", which has two arguments: trialnum and
+outcome. 
+
+The example has one :term:`cell` in the "id" column, and no cells
+in the "trial" column. Most of the Datavyu tutorials use the example
+template as their basis, so if you want to follow along directly,
+you can download it, and then open it with Datavyu (using File >
+Open and selecting the file from your hard drive).
+
+Most Datavyu scripts begin by loading a column from Datavyu using the
+:method:`getVariable()` method. Before moving on to the whole tutorial
+list, you should familiarize yourself with loading Datavyu columns.
 
 .. begin-content
 
-Load Datavyu Variables
-----------------------
+Load Datavyu Columns
+--------------------
 
-Most scripts begin by loading the desired variables using the function
-:function:`getVariable()`. :function:`getVariable()` takes one
-parameter: the name of the variable in Datavyu, and returns the Ruby
-representation of the variable, which you work with.
+Most scripts begin by loading the desired Datavyu columns using the
+:method:`getVariable()` method. :method:`getVariable()` takes one
+argument: the name of the column in Datavyu, and returns the Ruby
+representation of the column, which you can work with.
+
+The following script retrieves the "trial" column from the Datavyu
+database and assigns it to a Ruby variable called ``trial``.
 
 .. code-block:: ruby
 
@@ -47,14 +64,18 @@ the "trial" in the parentheses is the argument passed to
 Now that you're familiar with the sample data and know how to acquire
 data from Datavyu, you're ready to start scripting. The following
 tutorials will guide you through common tasks. If you would prefer, you
-can go through the full tutorial in :doc:`/api/tutorial`.
+can go through the full tutorial from start to finish in
+:doc:`/api/tutorial`.
+
+Tutorials
+#########
 
 .. toctree::
    :titlesonly:
-   
-   /api/tutorial/add-cells-to-a-variable
-   /api/tutorial/add-arguments-to-a-variable
-   /api/tutorial/add-a-new-variable
+
+   /api/tutorial/add-a-new-column   
+   /api/tutorial/add-arguments-to-a-column
+   /api/tutorial/add-cells-to-a-column
    /api/tutorial/check-for-coder-errors
    /api/tutorial/use-two-pass-verification-to-check-data-accuracy
    /api/tutorial/export-data-using-scripts
