@@ -21,10 +21,10 @@ Automatic Export Methods
 Manual Export Methods
 ~~~~~~~~~~~~~~~~~~~~~
 
-Datavyu supports numerous data export methods. We will cover four common
-approaches here:
+Datavyu supports numerous data export methods. This section covers four
+common approaches, in order of increasing complexity:
 
-#. A straight dump to CSV file where cells correspond to what was coded
+#. A straight dump to CSV file where cells correspond to the coded cells
    in Datavyu.
 
 #. A straight *frame-by-frame* dump detailing all observations 
@@ -33,30 +33,36 @@ approaches here:
 #. A *nested* dump, which loops through each column and nests cells
    appropriately, 
 
-#. A *nested* dump *with un-nested cells*, which is similar to a the
+#. A *nested dump with un-nested cells*, which is similar to the
    nested dump, but which also works if your cells do not nest.
-
-These methods will be covered in the order they are listed above, which
-also happens to be in order of increasing complexity.
 
 Method 1: Direct Dump to CSV
 ````````````````````````````
 
-This method is actually much easier to do (only 1 line!) with the new R
-scripting functions. Please see the R guide for instructions. However,
-we will still cover how to do this in Ruby here.
+This method is actually much easier to do (only 1 line!) with Datavyu's
+R scripting functions. 
+
+To create a direct dump to CSV using R, 
+
+.. code-block:: R
+
+   [codes here]
+
+The following steps will create the same outcome using Ruby:
+
+[instructions]
 
 .. TODO: actually include the instructions
 
 Method 2: Frame by Frame Dump
 `````````````````````````````
 
-We can also dump a file frame by frame if we know the framerate of the
-video that was coded. The idea here is to generate a new row in a
-spreadsheet for each frame of the video, with the value of each argument
-in each cell in its own column. For long videos, this type of exporting
-may take too long (a 2 hour video at 30fps is 216,000 rows!), but for
-short videos this is an easy and intuitive export method.
+We can also dump a file frame by frame if we know the :term:`frame rate`
+of the coded video. This creates a new spreadsheet row for each frame of
+the data source, with the value of [code] in its own column. For long
+videos, this type of export may be too lengthy to be feasible: a 2 hour
+video at 30fps is 216,000 rows. However, for short videos this is an
+easy and intuitive export method.
 
 To do this, we loop over all of the columns in the spreadsheet and grab
 the current cell at each time, moving one frame at a time (so there will

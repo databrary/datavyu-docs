@@ -15,14 +15,14 @@ minute 2, minute 3, and minute 4. In order to make it easier for the
 coder to code the trials, you can create a blank cell for each trial,
 with the :term:`onset` set to the correct trial start time.
 
-#. Set up the script, and load the Datavyu variable you will be working
+#. Set up the script, and load the Datavyu column you will be working
    with into a Ruby variable called ``trial``:
 
    .. code-block:: ruby
 
       require 'Datavyu_API.rb'
       begin
-         # Load the Datavyu variable
+         # Load the Datavyu column
          trial = getVariable("trial")
 
 #. Create the five cells using a loop. 
