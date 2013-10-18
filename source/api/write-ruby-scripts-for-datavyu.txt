@@ -13,8 +13,8 @@ Recommended Text Editors
 ------------------------
 
 Ruby scripts are simply text files with a ``.rb`` file extension. You
-can write scripts in any text editor, such as Notepad or TextEdit.
-However, while those editors are adequate for scripting purposes, modern
+can write scripts in any text editor, including built-in ones like Notepad or TextEdit.
+However, while those programs are adequate for scripting purposes, modern
 text editors make scripts much easier to read by providing syntax
 highlighting, which can make a world of difference when attempting to
 debug an issue.
@@ -22,15 +22,14 @@ debug an issue.
 .. figure:: /img/syntax-highlighting-comparison.png
    :alt: comparison of Ruby scripts viewed in TextEdit (Mac OS X) and TextMate 2
    :align: center
+   :width: 1100px
    
-   Comparison of a sample "Add Cells to a Variable" Ruby script.
-   
-   At left: TextEdit (Mac OS X). At right: TextMate 2 (Mac OS X) with
-   "Mac Classic" theme. Note that the same "add-cells-to-variable.rb" is
-   open in each editor.
+   At left: TextEdit (Mac OS X). At right: TextMate 2 (Mac OS X) with "Mac
+   Classic" theme. Note that the same "add-cells-to-variable.rb" is open in
+   each editor.
 
-We recommend installing and using one of the following
-programs for editing Ruby scripts:
+We recommend installing and using one of the following programs for
+editing Ruby scripts:
 
 - Windows:
 
@@ -59,10 +58,8 @@ programs for editing Ruby scripts:
 General Principles
 ------------------
 
-.. TODO: rewrite as paragraphs rather than bullets
-
-- Each cell has three required fields: ``onset``, ``offset``, and
-  ``ordinal``. Each cell also takes at least one :term:`argument`.
+- Each cell created has three required fields: ``onset``, ``offset``,
+  and ``ordinal``. Each cell also takes at least one :term:`argument`.
 
 - ``onset``, ``offset``, and ``ordinal`` are all :term:`integers
   <integer>` rather than :term:`strings <string>`.
