@@ -1,13 +1,14 @@
-==============================
-Write Ruby Scripts for Datavyu
-==============================
+=========================
+Introduction to Scripting
+=========================
 
 This detailed guide describes how to write Ruby scripts to automate
 tasks in Datavyu, and to ensure reliable :term:`coding <code>`,
 
-For a more in-depth discussion of each particular method and function,
-please see :doc:`the Davayu Ruby API Reference </api/reference>`
-documentation.
+:doc:`/api/overview` provides an overview of the :term:`methods
+<method>` and :term:`classes <class>` of the Datavyu API. For a more
+in-depth discussion of each particular method and function, refer to the
+:doc:`Reference </api/reference>` documentation.
 
 Recommended Text Editors
 ------------------------
@@ -28,8 +29,9 @@ debug an issue.
    Classic" theme. Note that the same "add-cells-to-variable.rb" is open in
    each editor.
 
-We recommend installing and using one of the following programs for
-editing Ruby scripts:
+To take advantage of syntax highlighting and coding support, we
+recommend installing and using one of the following programs for editing
+Ruby scripts:
 
 - Windows:
 
@@ -55,70 +57,67 @@ editing Ruby scripts:
    proper syntax highlighting, so ensure that your Ruby script files end
    in ``.rb``.
 
-General Principles
 ------------------
 
-- Each cell created has three required fields: ``onset``, ``offset``,
-  and ``ordinal``. Each cell also takes at least one :term:`argument`.
+Each cell that you create with the Datavyu API has three required
+fields: ``onset``, ``offset``, and ``ordinal``. Each cell also takes at
+least one :term:`argument`.
 
-- ``onset``, ``offset``, and ``ordinal`` are all :term:`integers
-  <integer>` rather than :term:`strings <string>`.
+``onset``, ``offset``, and ``ordinal`` are all :term:`Integers
+<integer>`, while :term:`[codes]` are :term:`Strings <string>`.
 
-- Datavyu measures ``onset`` and ``offset`` in **milliseconds from the
-  beginning of the video (or other data stream)**, starting from 0. For
-  instance, an ``onset`` time of 00:02:20 translates to 140000ms.
+``onset`` and ``offset`` are measured in **milliseconds from
+the beginning of the video (or other data stream)**, starting from 0.
+For instance, an ``onset`` time of 00:02:20 translates to 140000ms.
 
-- Cell :term:`arguments` are :term:`strings <string>`. If you wish to
-  perform calculation on a coded argument, you must first convert it to
-  an integer. Since ``onset``, ``offset``, and ``ordinal`` are already
-  integers, you don't need to convert them.
+Since [codes] are strings, you must convert any [codes] that you wish to
+perform calculations on to integers. This is easily done with Ruby using
+the `to_i <http://ruby-doc.org/core-2.0.0/String.html#method-i-to_i>`_
+method.
+
+.. example:: 
+
+   Create a variable, ``var1`` whose value is "5". Since the number 5 has
+   quotation marks around it, it is a string.
+
+   .. code-block:: ruby
+
+      var1 = "5"
   
-  The following example creates an integer variable from a string
-  variable:
+   If you print ``var``, you'd see that it is "5". Now,create a new
+   variable, ``var2`` from ``var1`` using ``to_i`` to convert the "5" to
+   a ``5``.
+  
+   .. code-block:: ruby
 
-  Create a variable, ``var1`` whose value is a number ``5`` stored as a
-  string. Note the quotation marks around the 5. This indicates that it
-  is a string.
+      var2 = var1.to_i
 
-  .. code-block:: ruby
-
-     var1 = "5"
-     
-  Convert ``var1`` to an integer using ``to_i`` and save it to a new variable, ``var2``
-
-  .. code-block:: ruby
-
-     var2 = var1.to_i
-     
-  Print the result
-
-  .. code-block:: ruby
-
-     puts var2
-
-- Ruby provides two options for printing to the console: the ``p``
-  command and the ``puts`` command. When in doubt, use ``p``, as it
-  prints arrays and lists in a more readable format, rather than mashing
-  them all together like ``puts`` does. Run the following example for
-  yourself to see the difference:
+   Print ``var2`` and see that it is a ``5`` without quotation marks:
    
-  .. code-block:: ruby
+   .. code-block:: ruby
+   
+      print var2
+  
+.. tip::
 
-     # Print 5 using p
-     p 5
+   Ruby provides two options for printing to the console: the ``p``
+   command and the ``puts`` command. When in doubt, use ``p``, as it
+   prints arrays and lists in a more readable format, rather than
+   mashing them all together like ``puts`` does. Try printing a list
+   such as ``[5, 6, 7, 8, 9]`` using both ``p`` and ``puts`` to
+   see the difference.
+   
+   .. code-block:: ruby
 
-     # Print 5 using puts
-     puts 5
-
-     # Now to show the difference, print a list
-     p [5,6,7,8,9] 
-     puts [5,6,7,8,9]
+      p [5,6,7,8,9] 
+      puts [5,6,7,8,9]
 
 
 Basic Script Format
 -------------------
 
-In order to work, all scripts must include the following line at the top:
+In order to work, all Datavyu API scripts must include the following
+line at the top:
 
 .. code-block:: ruby
 
@@ -128,7 +127,7 @@ This ``require`` statement loads all of the helper functions that enable
 your scripts to interact with the Datavyu database.
 
 In general, the rest of the script code goes between ``begin`` and
-``end`` tags like so:
+``end`` tags, making the general format as follows:
 
 .. code-block:: ruby
 

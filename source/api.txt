@@ -9,12 +9,25 @@ you'd like, or check your data for errors.
 If you're new to programming or new to Ruby, you might want to go
 through the `Basic Ruby Tutorial <https://www.ruby-lang.org/en/documentation/quickstart/>`_. Once you're
 ready to start working with Ruby Scripts, see:
-:doc:`/api/write-ruby-scripts-for-datavyu` for a Datavyu-specific overview of
+:doc:`/api/introduction-to-scripting` for a Datavyu-specific overview of
 the Ruby API and scripting for Datavyu.
+
+Getting Started with APIs and Scripting
+---------------------------------------
 
 .. toctree::
    :titlesonly:
    
-   /api/write-ruby-scripts-for-datavyu
+   /api/introduction-to-apis
+   /api/classes-and-methods
+   /api/introduction-to-scripting
+   /api/overview
+
+API Documentation
+-----------------
+
+.. toctree::
+   :titlesonly:
+
    /api/tutorials
    /api/reference
