@@ -28,8 +28,11 @@ can download the sample data used in this tutorial from :download:`here
 
 .. _checkValidCodes-basic-format:
 
+Check Code Validity and Output to the Console
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Basic Format
-~~~~~~~~~~~~
+````````````
 
 .. .. example:: (once I figure out how to make those exist)
 
@@ -37,7 +40,7 @@ Basic Format
 
    require 'Datavyu_API.rb'
    begin
-      # Check for errors. Notice the square brackets. These denote arrays. So the basic format is:
+      # Check for errors. Notice the square brackets. These denote lists. So the basic format is:
       # "columnName", "dumpFile", argumentname, [validarg1, validarg2, etc], argument2, [ validarg1, validarg2, etc], ...
 
       checkValidCodes("step", "", "foot", ["l", "r"], "ht", ["h", "t"], "direction", ["f","b"])
@@ -74,7 +77,7 @@ In the example, we have:
 .. _checkValidCodes-advanced-format:
 
 Advanced Format
-~~~~~~~~~~~~~~~
+```````````````
 
 You can perform the same verification by first assigning the valid codes
 to variables. This makes it is easier for human readers to parse the
@@ -112,5 +115,52 @@ script, and makes it easy to modify or update the valid code lists.
          # Check for typos, replacing the code arrays with your new variables:
          checkValidCodes("step", "", "foot", footCodes, "ht", htCodes, "direction", directionCodes)
       end
+
+Check Code Validity and Output to a File
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:method:`checkValidCodes` can write the results of its verification to a
+"dump file". Datavyu will create an output file if you specify a path
+in the ``dumpFile`` parameter.
+
+#. Create a variable that holds the path that it should output to using
+   Ruby's ``File.expand_path`` method, which converts a relative path,
+   like ``~/Desktop/file.txt`` to an absolute pathname, which contains
+   the root directory, and all subdirectories, like
+   ``/Users/alice/Desktop/file.txt``
+
+   The following commands create a variable called ``output`` that
+   [holds] the absolute path to a file on the Desktop called
+   ``output.txt``.
+
+   .. code-block:: ruby
+
+      require 'Datavyu_API.rb'
+      begin
+      
+         output = File.expand_path("~/Desktop/output.txt")
+
+#. Call :method:`checkValidCodes` on the "step" column, passing ``output``
+   as the argument for the ``dumpFile`` parameter:
+
+   .. code-block:: ruby
+
+      require 'Datavyu_API.rb'
+      begin
+
+         output = File.expand_path("~/Desktop/output.txt")
+
+         # Check for errors, specifying the output variable as the dumpFile parameter 
+         checkValidCodes("step", output, "foot", footCodes, "ht", htCodes, "direction", directionCodes)
+      end
+
+When the script returns, the output.txt file will be created on the
+Desktop, containing the results of the code checking. For the
+:download:`sample data </resources/SampleData-checkValidCodes.opf>`, 
+it should find one error, and the output should resemble:
+
+   .. code-block:: sh
+   
+      Code ERROR: Var: step	Ordinal: 2	Arg: foot	Val: rj
 
 .. end-content
