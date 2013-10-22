@@ -52,53 +52,55 @@ with the :term:`onset` set to the correct trial start time.
       4 makes sense.
    
    We need to loop 5 times from 0 to 4, calculating the :term:`onset` time to
-   set for each new cell. Since Datavyu API uses times in milliseconds,
-   we need to convert ``i`` (our minute marker) to milliseconds:
-
-   .. code-block:: ruby
+   set for each new cell. 
    
-      require 'Datavyu_API.rb'
-      begin
-         trial = getVariable("trial")
+   a. Since Datavyu API uses times in milliseconds,
+      we need to convert ``i`` (our minute marker) to milliseconds:
 
-         for i in 0..4
-            # Calculate the onset time that we want to set in milliseconds
-            time = i * 1000 * 60
-
-#. Then, create the new cell using :function:`make_new_cell()`.
-   We'll store the cell as a Ruby variable called ``cell``:
-
-   .. code-block:: ruby
+      .. code-block:: ruby
    
-      require 'Datavyu_API.rb'
-      begin
-         trial = getVariable("trial")
+         require 'Datavyu_API.rb'
+         begin
+            trial = getVariable("trial")
 
-         for i in 0..4
-            time = i * 1000 * 60
+            for i in 0..4
+               # Calculate the onset time that we want to set in milliseconds
+               time = i * 1000 * 60
+
+   #. Then, create the new cell using :function:`make_new_cell()`
+      and store the cell as a Ruby variable called ``cell``:
+
+      .. code-block:: ruby
+   
+         require 'Datavyu_API.rb'
+         begin
+            trial = getVariable("trial")
+
+            for i in 0..4
+               time = i * 1000 * 60
          
-            # Create a new cell, called ``cell``
-            cell = trial.make_new_cell()
+               # Create a new cell, called ``cell``
+               cell = trial.make_new_cell()
 
-#. Set the onset of ``cell`` to the value of the ``time`` variable,
-   using :function:`change_arg()`, and ``end`` the ``for`` loop:
+   #. Set the onset of ``cell`` to the value of the ``time`` variable
+      using :function:`change_arg()`, and ``end`` the ``for`` loop:
 
-   .. code-block:: ruby
+      .. code-block:: ruby
    
-      require 'Datavyu_API.rb'
-      begin
-         trial = getVariable("trial")
+         require 'Datavyu_API.rb'
+         begin
+            trial = getVariable("trial")
 
-         for i in 0..4
-            time = i * 1000 * 60
-            cell = trial.make_new_cell()
+            for i in 0..4
+               time = i * 1000 * 60
+               cell = trial.make_new_cell()
             
-            # Set "onset" to the value of the ``time`` variable
-            cell.change_arg("onset", time)
-         end
+               # Set "onset" to the value of the ``time`` variable
+               cell.change_arg("onset", time)
+            end
 
-#. Finally, write the changes back to the Datavyu database and ``end``
-   the script:
+#. Now that the loop is complete, write the changes back to the Datavyu
+   database and ``end`` the script:
 
    .. code-block:: ruby
    
@@ -113,21 +115,6 @@ with the :term:`onset` set to the correct trial start time.
          end
          
          # Write change back to the Datavyu database
-         setVariable(trial)
-      end
-
-.. Let's look at it all put together:
-
-.. .. code-block:: ruby
-
-..    require 'Datavyu_API.rb'
-      begin
-         trial = getVariable("trial")
-         for i in 0..4
-            time = i * 1000 * 60
-            cell = trial.make_new_cell()
-            cell.change_arg("onset", time)
-         end
          setVariable(trial)
       end
 

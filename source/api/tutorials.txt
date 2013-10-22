@@ -54,7 +54,7 @@ The left side of this equation is the name of the Ruby variable,
 the "trial" in the parentheses is the argument passed to
 :function:`getVariable` (the name of the Datavyu variable).
 
-.. image:: /img/variable-assignment-mapping.png
+.. image:: /img/method-call-explanation.png
    :alt: mapping of trial = getVariable("trial") to its components
    :align: center
    :width: 500px
@@ -76,6 +76,6 @@ Tutorials
    /api/tutorial/add-a-new-column   
    /api/tutorial/add-arguments-to-a-column
    /api/tutorial/add-cells-to-a-column
-   /api/tutorial/check-for-coder-errors
+   /api/tutorial/check-for-coding-errors
    /api/tutorial/use-two-pass-verification-to-check-data-accuracy
    /api/tutorial/export-data-using-scripts

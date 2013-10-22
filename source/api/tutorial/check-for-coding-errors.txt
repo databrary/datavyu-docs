@@ -13,27 +13,23 @@ inputting an "h", when only "j" or "k" are acceptable values. Using
 scripts, coders can double-check their work for errors and note them
 early on.
 
-Datavyu API provides the :method:`checkValidCodes` method to check
-for coder errors. :method:`checkValidCodes` requires at least three
-parameters: the name of the column it will verify, the location that
-it will output the results to, and at least
-one :term:`key-value pair`. Key-value pairs consist of a "key", the
-name of a Datavyu [code], and a "value", which is an array of valid
-values for that [code].
+Datavyu API provides the :method:`checkValidCodes` method to check for
+coder errors. :method:`checkValidCodes` requires at least three
+parameters: the name of the column it will verify, the location that it
+will output the results to, and at least one :term:`key-value pair`.
+Key-value pairs consist of a "key", the name of a Datavyu [code], and a
+"value", which is an array of valid values for that [code].
+:method:`checkValidCodes` then checks each [code] (key) against its list
+of valid values (the values).
 
-.. mention the best practices guide (once it exists) and recommendations
-   for determining these things well in advance
-
-:method:`checkValidCodes` then checks each [code] (key)
-against its list of valid values (the values).
-
-The following example checks the ``step`` column against its codes.
-Putting ``""`` as the second parameter tells the script to write its
-results to the Scripting Console, rather than to a file. You could
-specify a filename instead of the ``""``, and the results would be
-written to that log file instead. You can download the sample data used
-in the tutorial from :download:`here
+The following examples check the ``step`` column against its codes. You
+can download the sample data used in this tutorial from :download:`here
 </resources/SampleData-checkValidCodes.opf>`.
+
+.. _checkValidCodes-basic-format:
+
+Basic Format
+~~~~~~~~~~~~
 
 .. .. example:: (once I figure out how to make those exist)
 
@@ -47,41 +43,74 @@ in the tutorial from :download:`here
       checkValidCodes("step", "", "foot", ["l", "r"], "ht", ["h", "t"], "direction", ["f","b"])
    end
 
-Let's break down the function call. Recall that
-:method:`checkValidCodes` takes (at least) three parameters: the name of
-the Datavyu variable it will be checking, followed by key-value pairs
-separated by commas.
+Breaking down the function call makes it easier to follow what is
+happening. ecall that :method:`checkValidCodes` takes (at least) three
+parameters: the name of the Datavyu variable it will be checking, the
+location that it should direct the output to, and at least one key-value
+pair.
 
 In the example, we have:
 
 .. code-block:: ruby
 
-   checkValidCodes("step", "", "foot", ["l", "r"], ...)
+   checkValidCodes("step", "", "foot", ["l", "r"], "ht", ["h", "t"], "direction", ["f","b"])
 
 - ``"step"`` is the name of the variable to check, and 
 
-- ``""`` is the location that we want to dump the out put to. Using
+- ``""`` is the location that we want to dump the output to. Using
   ``""`` indicates that we do not want to write the results to a file,
   and that it should instead display in the console.
 
 - ``"foot", ["l", "r"]`` is the first key-value pair, which specifies
-   that the "foot" Datavyu [code] should only have the values "l" or "r".
+  that the "foot" Datavyu [code] should only have the values "l" or "r".
+   
+- ``"ht" , ["h", "t"]`` is the second key-value pair, which specifies
+  that the "ht" Datavyu [code] should only have the values "h" or "t".
 
-You could perform the same verification by first assigning the valid
-codes to variables. This is ideal, as it makes it is easier for human
-readers to parse:
+- ``"direction", ["f", "b"]`` is the third (and final) key-value pair,
+  which specifies that the "direction" Datavyu [code] should only have
+  the values "f" or "b".
 
-.. code-block:: ruby
+.. _checkValidCodes-advanced-format:
 
-   require 'Datavyu_API.rb'
-   begin
-      # Store each of the valid code arrays into a variable first so it is easier to read
-      footCodes = ["l", "r"]
-      htCodes = ["h", "t"]
-      directionCodes = ["f", "b"]
+Advanced Format
+~~~~~~~~~~~~~~~
 
-      # Check for typos, replacing the code arrays with your new variables:
-      checkValidCodes("step", "", "foot", footCodes, "ht", htCodes, "direction", directionCodes)
-   end
+You can perform the same verification by first assigning the valid codes
+to variables. This makes it is easier for human readers to parse the
+script, and makes it easy to modify or update the valid code lists.
+
+#. Set up the script
+
+   .. code-block:: ruby
+
+      require 'Datavyu_API.rb'
+      begin
+
+#. Assign each list of valid codes to a variable:
+
+   .. code-block:: ruby
+
+      require 'Datavyu_API.rb'
+      begin
+         # Store each of the valid code arrays into a variable first so it is easier to read
+         footCodes = ["l", "r"]
+         htCodes = ["h", "t"]
+         directionCodes = ["f", "b"]
+
+#. Check for coding errors using :method:`checkValidCodes`, replacing
+   the lists with your newly-created variables, and end the script:
+   
+   .. code-block:: ruby
+
+      require 'Datavyu_API.rb'
+      begin
+         footCodes = ["l", "r"]
+         htCodes = ["h", "t"]
+         directionCodes = ["f", "b"]
+
+         # Check for typos, replacing the code arrays with your new variables:
+         checkValidCodes("step", "", "foot", footCodes, "ht", htCodes, "direction", directionCodes)
+      end
 
 .. end-content
