@@ -2,7 +2,7 @@
 Introduction to Scripting
 =========================
 
-.. default-domain:: rubydomain
+.. default-domain:: rb
 
 This detailed guide describes how to write Ruby scripts to automate
 tasks in Datavyu, and to ensure reliable :term:`coding <code>`,
@@ -59,7 +59,8 @@ Ruby scripts:
    proper syntax highlighting, so ensure that your Ruby script files end
    in ``.rb``.
 
-------------------
+General Factoids
+----------------
 
 Each cell that you create with the Datavyu API has three required
 fields: ``onset``, ``offset``, and ``ordinal``. Each cell also takes at

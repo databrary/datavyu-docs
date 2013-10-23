@@ -2,12 +2,12 @@
 createVariable()
 ================
 
-.. default-domain:: rubydomain
+.. default-domain:: rb
 
 Definition
 ----------
 
-.. rb:method:: createVariable(name, *args)
+.. method:: createVariable(name, *args)
                createNewVariable(name, *args)
 
 Creates a new blank variable with the specified name and arguments.
@@ -30,7 +30,7 @@ Creates a new blank variable with the specified name and arguments.
 
 .. note:: 
 
-   :function:`createVariable` creates the onset, offset, and ordinal
+   :meth:`createVariable` creates the onset, offset, and ordinal
    arguments by default. You do not need to specify them in the ``args``.
 
 .. table-end
@@ -45,8 +45,8 @@ Examples
 The following example creates a new Datavyu variable called "trial" with
 the parameters "trialnum" and "unit", and assigns them to a Ruby
 variable called ``trial``. It then adds a new cell to ``trial`` using
-:function:`make_new_cell` and writes the changes back to the Datavyu
-database using :function:`setVariable`.
+:meth:`make_new_cell` and writes the changes back to the Datavyu
+database using :meth:`setVariable`.
 
 .. code-block:: ruby
 

@@ -7,6 +7,8 @@
 Use Scripts to Export Data from Datavyu
 =======================================
 
+.. default-domain:: rb
+
 .. begin-content
 
 Automatic Export Methods

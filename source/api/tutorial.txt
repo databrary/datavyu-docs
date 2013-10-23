@@ -4,7 +4,7 @@
 Datavyu API Tutorial
 ====================
 
-.. default-domain:: rubydomain
+.. default-domain:: rb
 
 .. contents:: :depth: 2
 

@@ -2,12 +2,12 @@
 make_new_cell()
 ===============
 
-.. default-domain:: rubydomain
+.. default-domain:: rb
 
 Definition
 ----------
 
-.. rb:method:: make_new_cell()
+.. method:: make_new_cell()
 
 Creates a new blank cell at the end of the column's cell array.
 
@@ -37,8 +37,8 @@ Examples
 The following example creates a new cell at the end of the "trial"
 column's cell array, and assigns its reference to the variable
 ``newcell``. It then changes ``newcell``'s :term:`onset` to 1000ms using
-:function:`change_arg()`, and writes the change back to the database
-using :function:`setVariable`.
+:meth:`change_arg()`, and writes the change back to the database
+using :meth:`setVariable`.
 
 .. code-block:: ruby
 

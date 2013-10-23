@@ -4,12 +4,14 @@
 Add a New Column
 ================
 
+.. default-domain:: rb
+
 .. begin-content
 
 Much like adding :ref:`a cell <api-add-cells>` or :ref:`an
 argument <api-add-arguments>`, the Datavyu API allows you to create a
-completely new column using the :method:`createVariable()` method.
-:method:`createVariable` takes at least two parameters: the name of the
+completely new column using the :meth:`createVariable` method.
+:meth:`createVariable` takes at least two parameters: the name of the
 new column must come first, while any subsequent parameters become the
 new column's :term:`arguments <argument>`.
 

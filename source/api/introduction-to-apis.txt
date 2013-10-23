@@ -2,7 +2,7 @@
 Introduction to APIs
 ====================
 
-.. default-domain:: rubydomain
+.. default-domain:: rb
 
 APIs, Application Program Interfaces, are collections of code that
 specify how software components communicate with each other. APIs are

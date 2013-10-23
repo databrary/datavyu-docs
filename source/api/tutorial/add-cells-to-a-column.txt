@@ -4,6 +4,8 @@
 Add Cells to a Column
 =====================
 
+.. default-domain:: rb
+
 .. begin-content
 
 Pre-populating a Datavyu column with :term:`cells <cell>` is another
@@ -67,7 +69,7 @@ with the :term:`onset` set to the correct trial start time.
                # Calculate the onset time that we want to set in milliseconds
                time = i * 1000 * 60
 
-   #. Then, create the new cell using :function:`make_new_cell()`
+   #. Then, create the new cell using :meth:`make_new_cell()`
       and store the cell as a Ruby variable called ``cell``:
 
       .. code-block:: ruby
@@ -83,7 +85,7 @@ with the :term:`onset` set to the correct trial start time.
                cell = trial.make_new_cell()
 
    #. Set the onset of ``cell`` to the value of the ``time`` variable
-      using :function:`change_arg()`, and ``end`` the ``for`` loop:
+      using :meth:`change_arg()`, and ``end`` the ``for`` loop:
 
       .. code-block:: ruby
    

@@ -2,12 +2,12 @@
 makeReliability()
 =================
 
-.. default-domain:: rubydomain
+.. default-domain:: rb
 
 Definition
 ----------
 
-.. rb:method:: makeReliability(relname, var_to_copy, multiple_to_keep, *args_to_keep)
+.. method:: makeReliability(relname, var_to_copy, multiple_to_keep, *args_to_keep)
 
 .. TODO: mention that it has an alias in make_rel as well? 
    make_rel(relname, var_to_copy, multiple_to_keep, *args_to_keep)
@@ -27,7 +27,7 @@ origin variable if wanted.
      - Type
      - Description
    * - ``rename``
-     - String **or** Ruby variable from :function:`getVariable`
+     - String **or** Ruby variable from :meth:`getVariable`
      - the name of the new reliability variable you will create. 
        The convention is to name it ``rel.variableName``.
    * - ``var_to_copy``

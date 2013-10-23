@@ -10,7 +10,7 @@ Definition
 .. method:: getVariable(name)
 
 Retrieves a variable from the Datavyu database and assigns it to a Ruby
-object using :rb.function:`print_debug` 
+object using :meth:`print_debug` 
 
 .. table-start
 

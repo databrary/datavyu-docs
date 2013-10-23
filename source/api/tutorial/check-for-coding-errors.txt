@@ -4,6 +4,8 @@
 Check for Coding Errors
 =======================
 
+.. default-domain:: rb
+
 .. begin-content
 
 One of the most powerful uses for Datavyu scripts is checking for coding
@@ -13,13 +15,13 @@ inputting an "h", when only "j" or "k" are acceptable values. Using
 scripts, coders can double-check their work for errors and note them
 early on.
 
-Datavyu API provides the :method:`checkValidCodes` method to check for
-coder errors. :method:`checkValidCodes` requires at least three
+Datavyu API provides the :meth:`checkValidCodes` method to check for
+coder errors. :meth:`checkValidCodes` requires at least three
 parameters: the name of the column it will verify, the location that it
 will output the results to, and at least one :term:`key-value pair`.
 Key-value pairs consist of a "key", the name of a Datavyu [code], and a
 "value", which is an array of valid values for that [code].
-:method:`checkValidCodes` then checks each [code] (key) against its list
+:meth:`checkValidCodes` then checks each [code] (key) against its list
 of valid values (the values).
 
 The following examples check the ``step`` column against its codes. You
@@ -47,7 +49,7 @@ Basic Format
    end
 
 Breaking down the function call makes it easier to follow what is
-happening. ecall that :method:`checkValidCodes` takes (at least) three
+happening. ecall that :meth:`checkValidCodes` takes (at least) three
 parameters: the name of the Datavyu variable it will be checking, the
 location that it should direct the output to, and at least one key-value
 pair.
@@ -101,7 +103,7 @@ script, and makes it easy to modify or update the valid code lists.
          htCodes = ["h", "t"]
          directionCodes = ["f", "b"]
 
-#. Check for coding errors using :method:`checkValidCodes`, replacing
+#. Check for coding errors using :meth:`checkValidCodes`, replacing
    the lists with your newly-created variables, and end the script:
    
    .. code-block:: ruby
@@ -119,7 +121,7 @@ script, and makes it easy to modify or update the valid code lists.
 Check Code Validity and Output to a File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:method:`checkValidCodes` can write the results of its verification to a
+:meth:`checkValidCodes` can write the results of its verification to a
 "dump file". Datavyu will create an output file if you specify a path
 in the ``dumpFile`` parameter.
 
@@ -141,7 +143,7 @@ in the ``dumpFile`` parameter.
       
          output = File.expand_path("~/Desktop/output.txt")
 
-#. Call :method:`checkValidCodes` on the "step" column, passing ``output``
+#. Call :meth:`checkValidCodes` on the "step" column, passing ``output``
    as the argument for the ``dumpFile`` parameter:
 
    .. code-block:: ruby

@@ -4,20 +4,22 @@
 Add Arguments to a Column
 =========================
 
+.. default-domain:: rb
+
 .. begin-content
 
 Adding arguments to a column is one of the most straightforward 
-scriptable tasks. The Datavyu API provides the :function:`add_arg()` method
+scriptable tasks. The Datavyu API provides the :meth:`add_arg()` method
 for adding arguments. 
 
-:function:`add_arg()` takes the names of the Datavyu [codes] to be added
+:meth:`add_arg()` takes the names of the Datavyu [codes] to be added
 as its parameters. In this example, we'll add a [code]
 called *unit* to the "trial" Datavyu variable from :download:`the sample
 data </resources/Example-Template.opf>`. The *unit* argument might
 represent the unit of measure used during an experiment, for instance.
 
 #. Start by setting up the script, and assigning the Datavyu column
-   "trial" to a variable called ``trial`` using :function:`getVariable`:
+   "trial" to a variable called ``trial`` using :meth:`getVariable`:
 
    .. code-block:: ruby
 
@@ -27,7 +29,7 @@ represent the unit of measure used during an experiment, for instance.
          # to a new variable
          trial = getVariable("trial")
 
-#. Add a [code] to ``trial`` using :function:`add_arg`.
+#. Add a [code] to ``trial`` using :meth:`add_arg`.
    
    .. code-block:: ruby
       
@@ -39,7 +41,7 @@ represent the unit of measure used during an experiment, for instance.
          trial.add_arg("unit")
 
 #. Write the changes back to the Datavyu database using
-   :function:`setVariable` and ``end`` the script:
+   :meth:`setVariable` and ``end`` the script:
 
    .. code-block:: ruby
 
