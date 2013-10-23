@@ -1,0 +1,38 @@
+=======
+save_db
+=======
+
+.. default-domain:: rb
+
+Definition
+----------
+
+.. method:: save_db(filename)
+
+   Saves the current ``$db`` and ``$pj`` variables to a file. If the
+   filename ends with ``.csv``, :meth:`save_db` saves the data as a
+   ``.csv`` file. Otherwise, it saves it as ``.opf``.
+   
+   .. table-start
+   
+   .. list-table::
+      :widths: 20, 40, 50
+      :header-rows: 1
+      
+      * - Parameter
+        - Type
+        - Description
+      * - ``filename``
+        - [path]
+        - The full path to save the Datavyu file to
+   
+   .. table-end
+   
+   .. admonition:: Returns
+   
+      Nothing.
+
+   .. admonition:: Example
+   
+      [example here]
+   

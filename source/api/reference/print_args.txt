@@ -1,0 +1,38 @@
+============
+print_args()
+============
+
+.. default-domain:: rb
+
+Definition
+----------
+
+.. method:: print_args(cell, file, args)
+
+   
+   .. table-start
+   
+   .. list-table::
+      :widths: 20, 40, 50
+      :header-rows: 1
+      
+      * - Parameter
+        - Type
+        - Description
+      * - ``cell``
+        - 
+        - 
+      * - ``file``
+        - Integer
+        - 
+      * - ``args``
+        - List of strings
+        - [Codes] whose coded values you wish to print.
+
+   .. table-end
+   
+   .. admonition:: Returns
+   
+
+   .. admonition:: Example
+   

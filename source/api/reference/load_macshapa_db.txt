@@ -1,0 +1,49 @@
+================
+load_macshapa_db
+================
+
+.. default-domain:: rb
+
+Definition
+----------
+
+.. method:: load_macshapa_db(filename, write_to_gui, *ignore_vars)
+
+   Opens an old, closed database format MacSHAPA file and loads it into
+   the current open database.
+   
+   .. warning:: 
+   
+      :meth:`load_macshapa_db` only reads in matrix and string columns.
+      It does not yet support predicates, and queries are not imported.
+      In order to be compatible with Datavyu, all times will be
+      converted to milliseconds.
+   
+   .. table-start
+   
+   .. list-table::
+      :widths: 20, 40, 50
+      :header-rows: 1
+      
+      * - Parameter
+        - Type
+        - Description
+      * - ``filename``
+        - [path]
+        - The full path to save the saved MacSHAPA file.
+      * - write_to_gui
+        - Boolean
+        - If true, the MacSHAPA file is read into the database that
+          is currently open in Datavyu's GUI. If false, the MacSHAPA
+          file is read into the Ruby interface.
+   
+   .. table-end
+   
+   .. admonition:: Returns
+   
+      [returns is mysterious]
+
+   .. admonition:: Example
+   
+      [example here]
+   

@@ -1,0 +1,46 @@
+===============
+printCellArgs()
+===============
+
+.. default-domain:: rb
+
+Definition
+----------
+
+.. method:: printCellArgs(cell)
+
+   Prints out the values for every [code] in a specified cell.
+   
+   .. table-start
+   
+   .. list-table::
+      :widths: 20, 40, 50
+      :header-rows: 1
+      
+      * - Parameter
+        - Type
+        - Description
+      * - ``cell``
+        - 
+        - The cell whose [codes] you are printing out.
+
+   .. table-end
+   
+   .. admonition:: Returns
+   
+      An object listing all of the [codes] in a given cell. 
+      
+   .. admonition:: Example
+   
+      The following example prints out the first cell in the "trial"
+      column's [codes].
+      
+      .. code-block:: ruby
+      
+         require 'Datavyu_API.rb'
+         begin
+            trial = getVariable("trial")
+            cell = trial.cell[0]
+            
+            puts printCellArgs(cell)
+         end

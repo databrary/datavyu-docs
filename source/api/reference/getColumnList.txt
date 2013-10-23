@@ -1,0 +1,44 @@
+===============
+getColumnList()
+===============
+
+.. default-domain:: rb
+
+Definition
+----------
+
+.. method:: getColumnList()
+
+   Outputs a list of all the columns in the current database.
+   
+   .. table-start
+   
+   .. list-table::
+      :widths: 20, 40, 50
+      :header-rows: 1
+      
+      * - Parameter
+        - Type
+        - Description
+      * - None
+        - 
+        - 
+
+   .. table-end
+   
+   .. admonition:: Returns
+   
+      List of columns.
+
+   .. admonition:: Example
+   
+      The following example assigns the list of columns to a Ruby
+      object called, ``columnList`` and prints it out using ``puts``.
+      
+      .. code-block:: ruby
+      
+         require 'Datavyu_API.rb'
+         begin
+            columnList = getColumnList()
+            puts columnList
+         end

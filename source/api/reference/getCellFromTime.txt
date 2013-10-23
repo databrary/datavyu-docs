@@ -1,0 +1,43 @@
+=================
+getCellFromTime()
+=================
+
+.. default-domain:: rb
+
+Definition
+----------
+
+.. method:: getCellFromTime(col, time)
+
+   Identifies the cell that occurs at a given point in time, and returns
+   it.
+   
+   .. table-start
+   
+   .. list-table::
+      :widths: 20, 40, 50
+      :header-rows: 1
+      
+      * - Parameter
+        - Type
+        - Description
+      * - ``col``
+        - String or RVariable object
+        - Name or Ruby representation of the column that you are
+          looking for a cell within.
+      * - ``time``
+        - Integer
+        - Time (in milliseconds) that you want to identify the cell
+          that happens then.
+
+   .. table-end
+   
+   .. admonition:: Returns
+   
+      Returns the Ruby representation of the cell at the specified
+      point in time, or, if there is no cell at that point in time,
+      Nil.
+
+   .. admonition:: Example
+   
+      [example]

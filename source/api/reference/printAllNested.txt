@@ -1,0 +1,35 @@
+================
+printAllNested()
+================
+
+.. default-domain:: rb
+
+Definition
+----------
+
+.. method:: printAllNested()
+
+   [description]
+   
+   .. table-start
+   
+   .. list-table::
+      :widths: 20, 40, 50
+      :header-rows: 1
+      
+      * - Parameter
+        - Type
+        - Description
+      * - 
+        - 
+        - 
+
+   .. table-end
+   
+   .. admonition:: Returns
+   
+      [stuff it returns]
+
+   .. admonition:: Example
+   
+      [example]
