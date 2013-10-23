@@ -2,12 +2,12 @@
 add_arg()
 =========
 
-.. default-domain:: rubydomain
+.. default-domain:: rb
 
 Definition
 ----------
 
-.. rb:method:: add_arg(name)
+.. method:: add_arg(name)
 
    Adds an argument to a variable.
 
