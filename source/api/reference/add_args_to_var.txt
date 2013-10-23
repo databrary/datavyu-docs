@@ -1,0 +1,47 @@
+===============
+add_args_to_var
+===============
+
+.. default-domain:: rb
+
+Definition
+----------
+
+.. method:: add_args_to_var(var, *args)
+
+   Add new arguments to a variable.
+
+   .. table-start
+
+   .. list-table:: 
+      :widths: 20, 40, 50
+      :header-rows: 1
+   
+      * - Parameter
+        - Type
+        - Description
+      * - ``var``
+        - String or :class:`RVariable` object
+        - Name of the variable that you are adding arguments to.
+      * - ``*args``
+        - List
+        - List of arguments to add to ``var``
+
+   .. table-end
+
+   .. admonition:: Returns
+
+      Ruby representation of the column.
+
+   .. admonition:: Example
+
+      The following example adds "arg1", "arg2", and "arg3" to the "test"
+      column, and writes it back to the database using :meth:`setVariable`.
+
+      .. code-block:: ruby
+      
+         require 'Datavyu_API.rb'
+         begin
+            test = add_args_to_var("test", "arg1", "arg2", "arg3")
+            setVariable("test", test)
+         end

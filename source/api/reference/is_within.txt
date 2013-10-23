@@ -1,0 +1,51 @@
+===========
+is_within()
+===========
+
+.. default-domain:: rb
+
+Definition
+----------
+
+.. method:: is_within(outer_cell)
+
+   Determines if a cell is temporally encased by the ``outer_cell``.
+
+   .. table-start
+
+   .. list-table:: 
+      :widths: 20, 40, 50
+      :header-rows: 1
+   
+      * - Argument
+        - Type
+        - Description
+      * - ``outer_cell``
+        - 
+        - The cell that may or may not temporally encase your study cell.
+
+   .. table-end
+
+   .. admonition:: Returns
+
+      Boolean
+
+   .. example::
+   
+      Compare the first cell of the "trial" and "id" columns to see if
+      the first cell of "trial" is temporally enclosed by the first cell
+      of "id". If it is, print out "Yes, it is temporally enclosed",
+      otherwise, print "No, it is not temporally enclosed."
+      
+      .. code-block:: ruby
+   
+         require 'Datavyu_API.rb'
+         begin
+            trial = getVariable("trial")
+            id = getVariable("id")
+            if trial.cells[0].is_within(id.cells[0])
+               puts "Yes, it is temporally enclosed."
+            else
+               puts "No, it is not temporally enclosed."
+            end
+         end

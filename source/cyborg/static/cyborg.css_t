@@ -202,7 +202,25 @@ div.admonition {
     margin: 1em 2.25em
 }
 
-div.admonition tt.xref, div.admonition a tt {
+/* Added by Allison - example admonition flags*/
+
+div.admonition-example.admonition{
+    margin: 1em 0 1em 0;
+    background: #b3bfc7;
+}
+
+div.admonition-returns.admonition{
+    margin: 1em 0 1em 0;
+}
+
+div.admonition-example.admonition div.highlight{
+    background-color: #b3bfc7;
+}
+
+/* end of Allison additions */
+
+
+dd div.admonition tt.xref, div.admonition a tt {
     border-bottom: 1px solid #fafafa;
 }
 

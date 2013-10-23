@@ -17,7 +17,7 @@ Changes the value of an argument in a cell.
    :widths: 20, 40, 50
    :header-rows: 1
    
-   * - Argument
+   * - Parameter
      - Type
      - Description
    * - ``arg``
@@ -36,7 +36,7 @@ Changes the value of an argument in a cell.
 Examples
 --------
 
-The following example sets the "trial" variable's cell at position 0's
+The following example sets the "trial" columns's cell at position 0's
 :term:`onset` to 1000ms, and then writes the change back to the database
 using :meth:`setVariable`.
 

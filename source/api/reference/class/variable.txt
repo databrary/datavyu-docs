@@ -1,0 +1,139 @@
+===============
+RVariable Class
+===============
+
+.. default-domain:: rb
+
+Definition
+----------
+
+.. class:: RVariable
+
+   The Ruby container for Datavyu columns.
+
+   .. classmethod:: make_new_cell()
+   
+      Creates a new blank cell at the end of the column's cell array.
+
+      .. table-start
+
+      .. list-table:: 
+         :widths: 20, 40, 50
+         :header-rows: 1
+   
+         * - Argument
+           - Type
+           - Description
+         * - None
+           - 
+           -
+
+      .. table-end
+
+      .. admonition:: Returns
+
+         Reference to the cell that was just created. Modify the cell using 
+         this reference.
+
+      .. example::
+
+         The following example creates a new cell at the end of the "trial"
+         column's cell array, and assigns its reference to the variable
+         ``newcell``. It then changes ``newcell``'s :term:`onset` to 1000ms using
+         :meth:`change_arg()`, and writes the change back to the database
+         using :meth:`setVariable`.
+
+         .. code-block:: ruby
+
+            trial = getVariable("trial")
+            newcell = trial.make_new_cell()
+            newcell.change_arg("onset", 1000)
+            setVariable("trial", trial)
+
+   .. classmethod:: change_arg_name(old_name, new_name)
+   
+      [description]
+   
+      .. table-start
+      
+      .. list-table::
+         :widths: 20, 40, 50
+         :header-rows: 1
+         
+         * - Argument
+           - Type
+           - Descripton
+         * - ``old_name``
+           - String
+           - Current name of the [code]
+         * - ``new_name``
+           - String
+           - New name for the [code], which will replace ``old_name``
+      
+      .. admonition:: Returns
+      
+         [Nothing ?]
+      
+      .. example:: 
+      
+         The following example renames the "trial" column's
+         *badCodeName* [code] to *awesomeCodeName*, and then writes the
+         changes back to the Datavyu database:
+         
+         .. code-block:: ruby
+            
+            require 'Datavyu_API.rb'
+            begin
+               trial = getVariable("trial")
+               trial.change_arg_name("badCodeName", "awesomeCodeName")
+               setVariable("trial")
+            end
+   .. classmethod:: add_arg(name)
+
+      Adds an argument to a column.
+
+      .. table-start
+
+      .. list-table:: 
+         :widths: 20, 40, 50
+         :header-rows: 1
+   
+         * - Argument
+           - Type
+           - Description
+         * - ``name``
+           - String
+           - The name of the argument you are adding to the column
+
+      .. table-end
+
+      .. admonition:: Returns
+
+         [unclear]
+      
+      .. example:: 
+
+   .. classmethod:: remove_arg(name)
+   
+      Deletes an argument from a column.
+      
+      .. table-start
+
+      .. list-table:: 
+         :widths: 20, 40, 50
+         :header-rows: 1
+   
+         * - Argument
+           - Type
+           - Description
+         * - ``name``
+           - String
+           - The name of the argument you are deleting from the column
+
+      .. table-end
+
+      .. admonition:: Returns
+      
+         [unclear]
+
+         

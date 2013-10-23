@@ -1,0 +1,54 @@
+====================
+makeDurationBlockRel
+====================
+
+.. default-domain:: rb
+
+Definition
+----------
+
+.. method:: makeDurationBlockRel(relname, var_to_copy, binding, block_dur, skip_blocks)
+
+   Makes a duration-based reliability column. This creates two columns,
+   one containing a cell with a number for that block, and another
+   blank column for the free coding within the block.
+
+   .. table-start
+
+   .. list-table:: 
+      :widths: 20, 40, 50
+      :header-rows: 1
+   
+      * - Argument
+        - Type
+        - Description
+      * - ``relname``
+        - String
+        - The name of the reliability column you are creating
+      * - ``var_to_copy``
+        - RVariable object
+        - Name of the column which you are copying. The existing column
+          that you are creating a reliability column from.
+      * - ``binding``
+        - String
+        - Column to bind the copy to.
+      * - ``block_dur``
+        - Integer
+        - Length the blocks should be (in milliseconds)
+      * - ``skip_blocks``
+        - Integer
+        - Determines the amount of space that should be left between
+          each coding block. ``skip_blocks`` is an Integer. Each skipped
+          block is the length specified by ``block_dur``.
+
+
+   .. table-end
+
+   .. admonition:: Returns
+
+      Nothing. Variables are automatically written to the database.
+
+   .. example:: 
+
+      The following example creates a duration-based reliability column
+      from the "step" column.

@@ -1,0 +1,52 @@
+========
+contains
+========
+
+.. default-domain:: rb
+
+Definition
+----------
+
+.. method:: contains(inner_cell)
+
+   Determines if a cell temporally encases the ``innter_cell``.
+
+   .. table-start
+
+   .. list-table:: 
+      :widths: 20, 40, 50
+      :header-rows: 1
+
+      * - Argument
+        - Type
+        - Description
+      * - ``inner_cell``
+        - 
+        - The cell that you want to determine whether it is temporally
+          encased by your study cell.
+
+   .. table-end
+
+   .. admonition:: Returns
+
+      Boolean
+
+   .. example::
+
+      Compare the first cell of the "trial" and "id" columns to see if
+      the first cell of "trial" is temporally enclosed by the first cell
+      of "id". If it is, print out "Yes, it is temporally encloses the cell",
+      otherwise, print "No, it is does not temporally enclose the cell."
+   
+      .. code-block:: ruby
+
+         require 'Datavyu_API.rb'
+         begin
+            trial = getVariable("trial")
+            id = getVariable("id")
+            if id.cells[0].is_within(trial.cells[0])
+               puts "Yes, it is temporally encloses the cell."
+            else
+               puts "No, it is does not temporally enclose the cell."
+            end
+         end

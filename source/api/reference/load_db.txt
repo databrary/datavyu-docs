@@ -1,0 +1,45 @@
+=======
+load_db
+=======
+
+.. default-domain:: rb
+
+Definition
+----------
+
+.. method:: load_db(filename)
+
+   Loads a new database from a file.
+   
+   .. table-start
+   
+   .. list-table::
+      :widths: 20, 40, 50
+      :header-rows: 1
+      
+      * - Parameter
+        - Type
+        - Description
+      * - ``filename``
+        - [path]
+        - The full path to the saved Datavyu file.
+   
+   .. table-end
+   
+   .. admonition:: Returns
+   
+      - ``$db``: the database of the opened project
+   
+      - ``$pj``: project data of the opened project
+
+   .. admonition:: Example
+   
+      The following example creates a variable called "test" from two
+      existing variables, "var1" and "var2", and then writes the 
+      changes back to the database using :meth:`setVariable`.
+   
+      require 'Datavyu_API.rb'
+      begin
+         $db,$pj = load_db("/Users/alice/Desktop/test.opf")
+      end
+   

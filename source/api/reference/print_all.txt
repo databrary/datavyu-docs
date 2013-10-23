@@ -1,0 +1,41 @@
+=============
+print_all(*p)
+=============
+
+.. default-domain:: rb
+
+Definition
+----------
+
+.. method:: print_all(*p)
+
+   Dumps all of the [codes] in a :term:`cell` to a :term:`string`.
+
+   .. table-start
+
+   .. list-table:: 
+      :widths: 20, 40, 50
+      :header-rows: 1
+   
+      * - Argument
+        - Type
+        - Description
+      * - ``p`` **optional**
+        - String
+        - The separator between [codes]. Defaults to tab (\t)
+
+   .. table-end
+
+   .. admonition:: Returns
+
+      String of the arguments, starting with ordinal, onset,
+      and offset, followed by the [codes]
+
+   .. example::
+   
+      [words]
+      
+      .. code-block:: ruby
+   
+         trial = getVariable("trial")
+         print trial.cells[0].print_all()
