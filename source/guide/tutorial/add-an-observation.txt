@@ -5,7 +5,7 @@ Add Observations
 ================
 
 Datavyu represents observations as :term:`cells <cell>` in the Datavyu
-spreadsheet. Cells relate to :term:`variables <variable>`: the events,
+spreadsheet. Cells relate to :term:`columns <column>`: the events,
 phenomena, behaviors, or facts that you are studying. Cells always
 include :term:`onset` and :term:`offset` metadata, but it is up to the
 researcher to determine what other data to record for each study
@@ -13,7 +13,7 @@ variable.
 
 This tutorial assumes that you have already configured your spreadsheet
 to include a variable. If you have not already created a variable in
-your spreadsheet, start with the :ref:`guide-add-a-variable` tutorial.
+your spreadsheet, start with the :ref:`guide-add-a-column` tutorial.
 
 There are two ways to add observations to a Datavyu spreadsheet: using the
 spreadsheet itself, or using keypad shortcuts. Keypad shortcuts are
@@ -55,8 +55,8 @@ the spreadsheet:
 
    Create a new cell using the :guilabel:`create new cell` (``Enter``)
    key on the keypad, and then navigate to the :term:`onset` point in
-   the data source, and set the cell onset using the :guilabel:`set cell
-   onset` (``clear``) key.
+   the data source, and set the cell onset using the 
+   :guilabel:`set cell onset` (``clear``) key.
 
 #. Record appropriate values for your variable's attributes. For the
    "trial" variable in the example spreadsheet, that means filling

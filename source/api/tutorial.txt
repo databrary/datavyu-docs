@@ -4,6 +4,8 @@
 Datavyu API Tutorial
 ====================
 
+.. default-domain:: rubydomain
+
 .. contents:: :depth: 2
 
 .. include:: /api/tutorials.txt
@@ -13,28 +15,28 @@ Datavyu API Tutorial
 Add Cells to a Variable
 -----------------------
 
-.. include:: /api/tutorial/add-cells-to-a-variable.txt
+.. include:: /api/tutorial/add-cells-to-a-column.txt
    :start-after: begin-content
    :end-before: end-content
 
 Add Arguments to a Variable
 ---------------------------
 
-.. include:: /api/tutorial/add-arguments-to-a-variable.txt
+.. include:: /api/tutorial/add-arguments-to-a-column.txt
    :start-after: begin-content
    :end-before: end-content
 
 Add a New Variable
 ------------------
 
-.. include:: /api/tutorial/add-a-new-variable.txt
+.. include:: /api/tutorial/add-a-new-column.txt
    :start-after: begin-content
    :end-before: end-content
 
 Check for Coder Errors
 ----------------------
 
-.. include:: /api/tutorial/check-for-coder-errors.txt
+.. include:: /api/tutorial/check-for-coding-errors.txt
    :start-after: begin-content
    :end-before: end-content
 

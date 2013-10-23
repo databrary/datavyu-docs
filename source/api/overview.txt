@@ -2,6 +2,8 @@
 Datavyu Ruby API Classes & Methods Overview
 ===========================================
 
+.. default-domain:: rubydomain
+
 The Datavyu API's :term:`methods <method>` of the fall into three
 general categories: methods that modify :term:`columns`, methods that
 modify :term:`cells`, and methods used for verification or to provide
@@ -19,27 +21,27 @@ Columns
 
 :term:`Columns` are the highest level grouping in Datavyu, and the
 majority of scripts will involve retrieving columns from the Datavyu
-database (using :method:`getVariable`) and then updating columns
-using :method:`setVariable`. 
+database (using :rb:meth:`getVariable`) and then updating columns
+using :rb:meth:`setVariable`. 
 
-You can also create a brand new column using :method:`createVariable`.
+You can also create a brand new column using :rb:meth:`createVariable`.
 
-Primarily used as a step in a larger task, :method:`make_new_cell`
+Primarily used as a step in a larger task, :rb:meth:`make_new_cell`
 creates a new blank cell at the end of the current column's cell array.
-Unlike :method:`getVariable` or :method:`setVariable`, which are
-:term:`standalone methods`, :method:`make_new_cell` is a method of the
+Unlike :rb:meth:`getVariable` or :rb:meth:`setVariable`, which are
+:term:`standalone methods`, :rb:meth:`make_new_cell` is a method of the
 :class:`RVariable` class, and as such must be invoked on a
 :class:`RVariable` variable.
 
-The :method:`add_arg` method enables users to add a [code] to a
-variable. Like :method:`make_new_cell` :method:`add_arg` and
+The :rb:meth:`add_arg` method enables users to add a [code] to a
+variable. Like :rb:meth:`make_new_cell` :rb:meth:`add_arg` and
 must be invoked on a :class:`RVariable` variable.
 
 Cells
 ~~~~~
 
-:method:`change_arg` operates directly at the cell level, and enables
-you to change the value of a cell's [code]. :method:`change_arg` is a
+:rb:meth:`change_arg` operates directly at the cell level, and enables
+you to change the value of a cell's [code]. :rb:meth:`change_arg` is a
 method of the :class:`RCell` class and must be invoked on a
 :class:`RClass` variable.
 
@@ -50,14 +52,14 @@ Verification methods are a special category. These methods may touch
 more than one Datavyu component as they perform tasks that support
 verifying coders' work or facilitating two~pass verification.
 
-:method:`checkValidCodes` tests each coded value within a column
+:rb:meth:`checkValidCodes` tests each coded value within a column
 against a list of valid possibilities. You could use this to check
 for typographic errors, such as a 'j' when only a 'k' is a valid entry.
 
-Similarly, :method:`makeReliability` and :method:`checkReliability`
+Similarly, :rb:meth:`makeReliability` and :rb:meth:`checkReliability`
 support using two~pass verification to ensure that coders are recording
-accurate observations. :method:`makeReliability` creates a new column
+accurate observations. :rb:meth:`makeReliability` creates a new column
 from an existing coded column so that a second coder can code the same
-data source. Using :method:`checkReliability`, you can then compare the
+data source. Using :rb:meth:`checkReliability`, you can then compare the
 original and "reliability" columns to see that the two coders recorded
 the same phenomena.

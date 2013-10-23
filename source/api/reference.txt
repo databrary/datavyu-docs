@@ -10,7 +10,7 @@ Datavyu Ruby API Reference
    /api/reference/change_arg
    /api/reference/make_new_cell
    /api/reference/checkValidCodes
-   /api/reference/createVariable
+   /api/reference/createVariablew
    /api/reference/checkReliability
    /api/reference/getVariable
    /api/reference/setVariable

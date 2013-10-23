@@ -2,10 +2,12 @@
 make_new_cell()
 ===============
 
+.. default-domain:: rubydomain
+
 Definition
 ----------
 
-``make_new_cell()``
+.. rb:method:: make_new_cell()
 
 Creates a new blank cell at the end of the column's cell array.
 

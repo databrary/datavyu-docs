@@ -2,12 +2,12 @@
 checkReliability()
 ==================
 
+.. default-domain:: rubydomain
+
 Definition
 ----------
 
-.. code-block:: ruby
-
-   checkReliability(main_col, rel_col, match_arg, time_tolerance, dump_file)
+.. rb:meth:: checkReliability(main_col, rel_col, match_arg, time_tolerance, dump_file)
 
 Compares two Datavyu variables to check for reliability errors and
 percent accuracy.
@@ -22,10 +22,10 @@ percent accuracy.
      - Type
      - Description
    * - ``main_col``
-     - String **or** Ruby variable from :method:`getVariable()`
+     - String **or** Ruby variable from :rb:meth:`getVariable()`
      - The primary column that ``rel_col`` will be compared against
    * - ``rel_col``
-     - String **or** Ruby variable from :method:`getVariable()`
+     - String **or** Ruby variable from :rb:meth:`getVariable()`
      - The reliability column to compare to ``main_col``
    * - ``match_arg``
      - String

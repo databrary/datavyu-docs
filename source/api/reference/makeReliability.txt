@@ -2,16 +2,18 @@
 makeReliability()
 =================
 
+.. default-domain:: rubydomain
+
 Definition
 ----------
 
-``makeReliability(relname, var_to_copy, multiple_to_keep, *args_to_keep)``
+.. rb:method:: makeReliability(relname, var_to_copy, multiple_to_keep, *args_to_keep)
 
 .. TODO: mention that it has an alias in make_rel as well? 
    make_rel(relname, var_to_copy, multiple_to_keep, *args_to_keep)
 
 Creates a :term:`reliability variable` that is a copy of another Datavyu
-variable in the Database. :function:`makeReliability()` can copy the
+variable in the Database. :rb:meth:`makeReliability()` can copy the
 cells (or a subsection of the cells) and retain arguments from the
 origin variable if wanted.
 

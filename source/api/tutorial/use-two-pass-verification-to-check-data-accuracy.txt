@@ -4,6 +4,8 @@
 Use Two-Pass Verification to Improve Data Accuracy
 ==================================================
 
+.. default-domain:: rubydomain
+
 .. begin-content
 
 With two-pass verification, two coders separately code the same data
@@ -25,8 +27,8 @@ pass. This ensures that the two coders will have observed the same
 events in the data stream, and allows you to compare the two coding
 passes.
 
-The Datavyu Ruby API provides the :method:`makeReliability` method
-for creating reliability variables. :method:`makeReliability` has four
+The Datavyu Ruby API provides the :rb:meth:`makeReliability` method
+for creating reliability variables. :rb:meth:`makeReliability` has four
 parameters:
 
 .. include:: /api/reference/makeReliability.txt
@@ -42,7 +44,7 @@ parameters:
    events as the original coder. 
    
    When making a reliability column, you should also think about how you
-   are going to compare the columns. :method:`checkReliability`, which
+   are going to compare the columns. :rb:meth:`checkReliability`, which
    you use to check reliability, requires that each pair of cells have a
    unique identifier that it can use to link them together. For example,
    a trial number coded into each cell would match corresponding cells,
@@ -51,10 +53,10 @@ parameters:
 
    In order to avoid issues, you should endeavor to import an
    appropriate [code] when you create your reliability column with
-   :function:`makeReliability`.
+   :rb:meth:`makeReliability`.
 
 The following example uses the :download:`example data
-</resources/Example-Template.opf` sample data to create a new
+</resources/Example-Template.opf>` sample data to create a new
 reliability column called "rel.trial" from its "trial" column, skipping
 every other cell, and copying over the "onset" and "trialnum" [codes]
 so that the reliability coder will not have to recode :term:`onset` and
@@ -74,19 +76,19 @@ trial numbers.
 .. note::
 
    You do **not** have to write the variable back to the database.
-   :function:`makeReliability` automatically writes its results to 
-   the database. This is the only function in the Datavyu Ruby API that
+   :rb:meth:`makeReliability` automatically writes its results to 
+   the database. This is the only method in the Datavyu Ruby API that
    automatically writes back to the database.
 
 Check Reliability
 ~~~~~~~~~~~~~~~~~
 
 Once the second coder has recorded their observations in the reliability
-column, you can use :function:`checkReliability` to compare the primary
-and reliability columns cells. :function:`checkReliability`
+column, you can use :rb:meth:`checkReliability` to compare the primary
+and reliability columns cells. :rb:meth:`checkReliability`
 returns the number of errors, and the percent agreement.
 
-:function:`checkReliability()` has four required parameters, and one
+:rb:meth:`checkReliability()` has four required parameters, and one
 optional one:
 
 .. include:: /api/reference/checkReliability.txt
@@ -96,7 +98,7 @@ optional one:
 .. note:: 
 
    ``match_arg`` is particularly important: for
-   :function:`checkReliability` to know which cells to compare, it needs
+   :rb:meth:`checkReliability` to know which cells to compare, it needs
    to have some parameter that is unique to each pair of corresponding
    primary and reliability cells. 
 

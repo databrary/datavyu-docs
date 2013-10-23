@@ -2,10 +2,12 @@
 change_arg()
 ============
 
+.. default-domain:: rubydomain
+
 Definition
 ----------
 
-``change_arg(arg, val)``
+.. rb:method:: change_arg(arg, val)
 
 Changes the value of an argument in a cell.
 

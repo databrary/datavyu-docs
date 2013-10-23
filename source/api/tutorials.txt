@@ -2,6 +2,8 @@
 Datavyu API Tutorials
 =====================
 
+.. default-domain:: rubydomain
+
 Before You Start
 ################
 
@@ -25,7 +27,7 @@ you can download it, and then open it with Datavyu (using File >
 Open and selecting the file from your hard drive).
 
 Most Datavyu scripts begin by loading a column from Datavyu using the
-:method:`getVariable()` method. Before moving on to the whole tutorial
+:rb:meth:`getVariable()` method. Before moving on to the whole tutorial
 list, you should familiarize yourself with loading Datavyu columns.
 
 .. begin-content
@@ -34,7 +36,7 @@ Load Datavyu Columns
 --------------------
 
 Most scripts begin by loading the desired Datavyu columns using the
-:method:`getVariable()` method. :method:`getVariable()` takes one
+:rb:meth:`getVariable()` method. :rb:meth:`getVariable()` takes one
 argument: the name of the column in Datavyu, and returns the Ruby
 representation of the column, which you can work with.
 
@@ -52,7 +54,7 @@ database and assigns it to a Ruby variable called ``trial``.
 
 The left side of this equation is the name of the Ruby variable,
 the "trial" in the parentheses is the argument passed to
-:function:`getVariable` (the name of the Datavyu variable).
+:rb:meth:`getVariable` (the name of the Datavyu variable).
 
 .. image:: /img/method-call-explanation.png
    :alt: mapping of trial = getVariable("trial") to its components

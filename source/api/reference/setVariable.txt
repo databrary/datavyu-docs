@@ -4,10 +4,12 @@ setVariable()
 
 .. TODO: this one really needs work for clarification
 
+.. default-domain:: rubydomain
+
 Definition
 ----------
 
-``setVariable(*args)``
+.. rb:method:: setVariable(*args)
 
 Replaces a variable in the database with a new variable with the
 same name as the method's arguments. If no variable with the same

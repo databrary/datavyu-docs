@@ -2,6 +2,8 @@
 Introduction to Scripting
 =========================
 
+.. default-domain:: rubydomain
+
 This detailed guide describes how to write Ruby scripts to automate
 tasks in Datavyu, and to ensure reliable :term:`coding <code>`,
 

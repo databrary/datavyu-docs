@@ -2,12 +2,13 @@
 createVariable()
 ================
 
+.. default-domain:: rubydomain
+
 Definition
 ----------
 
-``createVariable(name, *args)``
-**or**
-``createNewVariable(name, *args)``
+.. rb:method:: createVariable(name, *args)
+               createNewVariable(name, *args)
 
 Creates a new blank variable with the specified name and arguments.
 

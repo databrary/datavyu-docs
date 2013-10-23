@@ -2,10 +2,12 @@
 checkValidCodes()
 =================
 
+.. default-domain:: rubydomain
+
 Definition
 ----------
 
-``checkValidCodes(var, dump_file, *arg_code_pairs)``
+.. rb:method:: checkValidCodes(var, dump_file, *arg_code_pairs)
 
 Checks that all codes in Datavyu are valid, based on specified valid values.
 
@@ -49,4 +51,4 @@ Datavyu variable:
 
 .. seealso::
 
-   :doc:`/api/tutorial/check-for-coder-errors`
+   :doc:`/api/tutorial/check-for-coding-errors`
