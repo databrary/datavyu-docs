@@ -48,6 +48,7 @@ Glossary
       may be [types].
 
    argument
+   [codes]
       Datavyu arguments are column components that coders are observing.
       Each Datavyu :term:`column` may have multiple arguments
       for which a coder will record observations. For instance, a
@@ -118,4 +119,11 @@ Glossary
       spreadsheet and contain the observation data that a coder 
       inputs when coding a data source.
    
+   class
+      [words]
+
+   method
+      [words]
    
+   standalone method
+      A :term:`method` that does not belong to a specific :term:`class`.

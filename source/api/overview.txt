@@ -5,13 +5,14 @@ Datavyu Ruby API Classes & Methods Overview
 .. default-domain:: rb
 
 The Datavyu API's :term:`methods <method>` of the fall into three
-general categories: methods that modify :term:`columns`, methods that
-modify :term:`cells`, and methods used for verification or to provide
+general categories: methods that modify :term:`columns <column>`, methods that
+modify :term:`cells <cell>`, and methods used for verification or to provide
 consistency.
 
 Classes
 -------
 
+[words about classes here]
 
 Methods
 -------
@@ -19,19 +20,19 @@ Methods
 Columns
 ~~~~~~~
 
-:term:`Columns` are the highest level grouping in Datavyu, and the
+:term:`Columns <column>` are the highest level grouping in Datavyu, and the
 majority of scripts will involve retrieving columns from the Datavyu
 database (using :meth:`getVariable`) and then updating columns
 using :meth:`setVariable`. 
 
 You can also create a brand new column using :meth:`createVariable`.
 
-Primarily used as a step in a larger task, :meth:`make_new_cell`
-creates a new blank cell at the end of the current column's cell array.
-Unlike :meth:`getVariable` or :meth:`setVariable`, which are
-:term:`standalone methods`, :meth:`make_new_cell` is a method of the
-:class:`RVariable` class, and as such must be invoked on a
-:class:`RVariable` variable.
+Primarily used as a step in a larger task, :meth:`make_new_cell` creates
+a new blank cell at the end of the current column's cell array. Unlike
+:meth:`getVariable` or :meth:`setVariable`, which are :term:`standalone
+methods <standalone method>`, :meth:`make_new_cell` is a method of the
+:class:`RVariable` class, and as such you must invoke it on a
+:class:`RVariable` objects.
 
 The :meth:`add_arg` method enables users to add a [code] to a
 variable. Like :meth:`make_new_cell` :meth:`add_arg` and

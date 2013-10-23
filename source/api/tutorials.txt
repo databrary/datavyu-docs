@@ -15,7 +15,7 @@ Sample Data
 Most of the following tutorials all use :download:`Example-Template.opf
 </api/resources/Example-Template.opf>` as their basic data file. 
 
-The example template contains to :term:`columns`: "id", whose arguments
+The example template contains to :term:`columns <column>`: "id", whose arguments
 describe basic information such as subject number, test date, birth
 date, and condition, and "trial", which has two arguments: trialnum and
 outcome. 

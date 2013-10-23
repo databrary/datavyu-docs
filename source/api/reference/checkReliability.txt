@@ -38,7 +38,7 @@ percent accuracy.
        to tolerate no difference.
    * - ``dump_file`` (**optional**)
      - String path or Ruby File object
-          - The full string path to dump the relability output to. This can
+     - The full string path to dump the relability output to. This can
        be used for multi-file dumps or just to keep a log. You can also
        give it a Ruby File object if a file is already started.
 
