@@ -1,6 +1,6 @@
-=============
-print_all(*p)
-=============
+===========
+print_all()
+===========
 
 .. default-domain:: rb
 
@@ -17,7 +17,7 @@ Definition
       :widths: 20, 40, 50
       :header-rows: 1
    
-      * - Argument
+      * - Parameter
         - Type
         - Description
       * - ``p`` **optional**
@@ -31,7 +31,7 @@ Definition
       String of the arguments, starting with ordinal, onset,
       and offset, followed by the [codes]
 
-   .. example::
+   .. admonition:: Example
    
       [words]
       

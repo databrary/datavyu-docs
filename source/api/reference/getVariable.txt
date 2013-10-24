@@ -9,34 +9,36 @@ Definition
 
 .. method:: getVariable(name)
 
-Retrieves a variable from the Datavyu database and assigns it to a Ruby
-object using :meth:`print_debug` 
+   Retrieves a variable from the Datavyu database and assigns it to a Ruby
+   object using :meth:`print_debug` 
 
-.. table-start
+   .. table-start
 
-.. list-table:: 
-   :widths: 20, 40, 50
-   :header-rows: 1
+   .. list-table:: 
+      :widths: 20, 40, 50
+      :header-rows: 1
    
-   * - Argument
-     - Type
-     - Description
-   * - ``name``
-     - String
-     - The name of the Datavyu variable you wish to retrieve
+      * - Parameter
+        - Type
+        - Description
+      * - ``name``
+        - String
+        - The name of the Datavyu variable you wish to retrieve
 
-.. table-end
+   .. table-end
 
-.. admonition:: Returns
+   .. admonition:: Returns
 
-   A Ruby object representation of the Datavyu variable
+      A Ruby object representation of the Datavyu variable
 
-Examples
---------
+   .. admonition:: Example
 
-The following example retrieves the Datavyu variable "trial" and 
-assigns it to a Ruby variable called ``trial``.
+      The following example retrieves the Datavyu variable "trial" and 
+      assigns it to a Ruby variable called ``trial``.
 
-.. code-block:: ruby
+      .. code-block:: ruby
 
-   trial = getVariable("trial")
+         require 'Datavyu_API.rb'
+         begin
+            trial = getVariable("trial")
+         end

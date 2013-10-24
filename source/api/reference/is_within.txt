@@ -17,7 +17,7 @@ Definition
       :widths: 20, 40, 50
       :header-rows: 1
    
-      * - Argument
+      * - Parameter
         - Type
         - Description
       * - ``outer_cell``
@@ -30,7 +30,7 @@ Definition
 
       Boolean
 
-   .. example::
+   .. admonition:: Example
    
       Compare the first cell of the "trial" and "id" columns to see if
       the first cell of "trial" is temporally enclosed by the first cell

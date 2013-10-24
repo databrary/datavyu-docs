@@ -12,56 +12,55 @@ Definition
 .. TODO: mention that it has an alias in make_rel as well? 
    make_rel(relname, var_to_copy, multiple_to_keep, *args_to_keep)
 
-Creates a :term:`reliability variable` that is a copy of another Datavyu
-variable in the Database. :rb:meth:`makeReliability()` can copy the
-cells (or a subsection of the cells) and retain arguments from the
-origin variable if wanted.
+   Creates a :term:`reliability variable` that is a copy of another
+   Datavyu variable in the Database. :rb:meth:`makeReliability()` can
+   copy the cells (or a subsection of the cells) and retain arguments
+   from the origin variable if wanted.
 
-.. table-start
+   .. table-start
 
-.. list-table:: 
-   :widths: 20, 40, 50
-   :header-rows: 1
+   .. list-table:: 
+      :widths: 20, 40, 50
+      :header-rows: 1
    
-   * - Parameter
-     - Type
-     - Description
-   * - ``rename``
-     - String **or** Ruby variable from :meth:`getVariable`
-     - the name of the new reliability variable you will create. 
-       The convention is to name it ``rel.variableName``.
-   * - ``var_to_copy``
-     - String
-     - the name of the variable that we want to create a reliability
-       variable *from* (i.e. the existing coded variable).
-   * - ``multiple_to_keep`` (**optional**)
-     - Integer
-     - Number of cells to skip: a value of ``2`` includes *every other
-       cell* in the new variable; ``1`` includes every cell, and ``0``
-       creates a blank column with no cells
-   * - ``*args_to_keep`` (**optional**)
-     - comma-separated strings
-     - Arguments you want to copy from the original to new variable.
-       These are arguments that the reliability coder will not have to
-       code
+      * - Parameter
+        - Type
+        - Description
+      * - ``rename``
+        - String **or** Ruby variable from :meth:`getVariable`
+        - the name of the new reliability variable you will create. 
+          The convention is to name it ``rel.variableName``.
+      * - ``var_to_copy``
+        - String
+        - the name of the variable that we want to create a reliability
+          variable *from* (i.e. the existing coded variable).
+      * - ``multiple_to_keep`` (**optional**)
+        - Integer
+        - Number of cells to skip: a value of ``2`` includes *every other
+          cell* in the new variable; ``1`` includes every cell, and ``0``
+          creates a blank column with no cells
+      * - ``*args_to_keep`` (**optional**)
+        - comma-separated strings
+        - Arguments you want to copy from the original to new variable.
+          These are arguments that the reliability coder will not have to
+          code
 
-.. table-end
+   .. table-end
 
-.. admonition:: Returns
+   .. admonition:: Returns
 
-   A Ruby object representation of the reliability variable within
-   Datavyu.
+      A Ruby object representation of the reliability variable within
+      Datavyu.
 
-Examples
---------
+   .. admonition:: Example
 
-The following example creates the reliability variable "rel.trial"
-from the primary variable "trial", copying every second cell, and retaining the
-"onset", "trialnum" and "unit" arguments.
+      The following example creates the reliability variable "rel.trial"
+      from the primary variable "trial", copying every second cell, and retaining the
+      "onset", "trialnum" and "unit" arguments.
 
-.. code-block:: ruby
+      .. code-block:: ruby
 
-   rel_trial = makeReliability("rel.trial", "trial", 2, "onset", "trialnum", "unit")
+         rel_trial = makeReliability("rel.trial", "trial", 2, "onset", "trialnum", "unit")
 
 .. seealso::
 

@@ -2,6 +2,17 @@
 Datavyu Ruby API Reference
 ==========================
 
+Classes and Class Methods
+-------------------------
+
+.. toctree::
+   :titlesonly:
+
+   /api/reference/class/variable
+
+Freestanding Methods
+--------------------
+
 .. toctree::
    :titlesonly:
 
@@ -14,4 +25,22 @@ Datavyu Ruby API Reference
    /api/reference/checkReliability
    /api/reference/getVariable
    /api/reference/setVariable
-   /api/reference/makeReliability
+   /api/reference/makeReliability 
+   /api/reference/combine_columns
+   /api/reference/contains       
+   /api/reference/createVariable 
+   /api/reference/create_mutually_exclusive
+   /api/reference/getCellFromTime 
+   /api/reference/getColumnList   
+   /api/reference/is_within       
+   /api/reference/load_db         
+   /api/reference/load_macshapa_db
+   /api/reference/makeDurationBlockRel
+   /api/reference/printAllNested  
+   /api/reference/printCellArgs   
+   /api/reference/print_all       
+   /api/reference/print_args      
+   /api/reference/save_db         
+   /api/reference/smoothColumn    
+   /api/reference/transfer_columns
+   

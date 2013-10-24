@@ -1,6 +1,6 @@
-================
-load_macshapa_db
-================
+==================
+load_macshapa_db()
+==================
 
 .. default-domain:: rb
 

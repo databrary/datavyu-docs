@@ -32,7 +32,9 @@ Definition
    .. table-end
    
    .. admonition:: Returns
-   
+      
+      [stuff]
 
    .. admonition:: Example
    
+      [example]

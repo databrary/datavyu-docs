@@ -1,6 +1,6 @@
-=======
-load_db
-=======
+=========
+load_db()
+=========
 
 .. default-domain:: rb
 
@@ -38,8 +38,10 @@ Definition
       existing variables, "var1" and "var2", and then writes the 
       changes back to the database using :meth:`setVariable`.
    
-      require 'Datavyu_API.rb'
-      begin
-         $db,$pj = load_db("/Users/alice/Desktop/test.opf")
-      end
+      .. code-block:: ruby
+   
+         require 'Datavyu_API.rb'
+         begin
+            $db,$pj = load_db("/Users/alice/Desktop/test.opf")
+         end
    

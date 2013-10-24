@@ -10,46 +10,48 @@ Definition
 .. method:: createVariable(name, *args)
                createNewVariable(name, *args)
 
-Creates a new blank variable with the specified name and arguments.
+   Creates a new blank variable with the specified name and arguments.
 
-.. table-start
+   .. table-start
 
-.. list-table:: 
-   :widths: 20, 40, 50
-   :header-rows: 1
+   .. list-table:: 
+      :widths: 20, 40, 50
+      :header-rows: 1
    
-   * - Argument
-     - Type
-     - Description
-   * - ``name``
-     - String
-     - The name of the new variable
-   * - ``args``
-     - comma separated Strings
-     - Arguments that the new variable will contain. 
+      * - Parameter
+        - Type
+        - Description
+      * - ``name``
+        - String
+        - The name of the new variable
+      * - ``args``
+        - comma separated Strings
+        - Arguments that the new variable will contain. 
 
-.. note:: 
+   .. note:: 
 
-   :meth:`createVariable` creates the onset, offset, and ordinal
-   arguments by default. You do not need to specify them in the ``args``.
+      :meth:`createVariable` creates the onset, offset, and ordinal
+      arguments by default. You do not need to specify them in the ``args``.
 
-.. table-end
+   .. table-end
 
-.. admonition:: Returns
+   .. admonition:: Returns
 
-   Ruby object representation of the new variable in Datavyu.
+      Ruby object representation of the new variable in Datavyu.
 
-Examples
---------
+   .. admonition:: Example
 
-The following example creates a new Datavyu variable called "trial" with
-the parameters "trialnum" and "unit", and assigns them to a Ruby
-variable called ``trial``. It then adds a new cell to ``trial`` using
-:meth:`make_new_cell` and writes the changes back to the Datavyu
-database using :meth:`setVariable`.
+      The following example creates a new Datavyu variable called "trial" with
+      the parameters "trialnum" and "unit", and assigns them to a Ruby
+      variable called ``trial``. It then adds a new cell to ``trial`` using
+      :meth:`make_new_cell` and writes the changes back to the Datavyu
+      database using :meth:`setVariable`.
 
-.. code-block:: ruby
+      .. code-block:: ruby
 
-   trial = createNewVariable("trial", "trialnum", "unit")
-   blank_cell = trial.make_new_cell()
-   setVariable(trial)
+         require 'Datavyu_API.rb'
+         begin
+            trial = createNewVariable("trial", "trialnum", "unit")
+            blank_cell = trial.make_new_cell()
+            setVariable(trial)
+         end

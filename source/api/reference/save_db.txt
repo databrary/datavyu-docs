@@ -1,6 +1,6 @@
-=======
-save_db
-=======
+=========
+save_db()
+=========
 
 .. default-domain:: rb
 

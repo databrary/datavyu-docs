@@ -1,6 +1,6 @@
-====================
-makeDurationBlockRel
-====================
+======================
+makeDurationBlockRel()
+======================
 
 .. default-domain:: rb
 
@@ -19,7 +19,7 @@ Definition
       :widths: 20, 40, 50
       :header-rows: 1
    
-      * - Argument
+      * - Parameter
         - Type
         - Description
       * - ``relname``
@@ -40,7 +40,6 @@ Definition
         - Determines the amount of space that should be left between
           each coding block. ``skip_blocks`` is an Integer. Each skipped
           block is the length specified by ``block_dur``.
-
 
    .. table-end
 

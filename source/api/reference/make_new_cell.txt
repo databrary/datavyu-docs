@@ -17,7 +17,7 @@ Definition
       :widths: 20, 40, 50
       :header-rows: 1
    
-      * - Argument
+      * - Parameter
         - Type
         - Description
       * - None
@@ -31,18 +31,20 @@ Definition
       Reference to the cell that was just created. Modify the cell using 
       this reference.
 
-   Examples
-   --------
+   .. admonition:: Example
 
-   The following example creates a new cell at the end of the "trial"
-   column's cell array, and assigns its reference to the variable
-   ``newcell``. It then changes ``newcell``'s :term:`onset` to 1000ms using
-   :meth:`change_arg()`, and writes the change back to the database
-   using :meth:`setVariable`.
+      The following example creates a new cell at the end of the "trial"
+      column's cell array, and assigns its reference to the variable
+      ``newcell``. It then changes ``newcell``'s :term:`onset` to 1000ms using
+      :meth:`change_arg()`, and writes the change back to the database
+      using :meth:`setVariable`.
 
-   .. code-block:: ruby
+      .. code-block:: ruby
 
-      trial = getVariable("trial")
-      newcell = trial.make_new_cell()
-      newcell.change_arg("onset", 1000)
-      setVariable("trial", trial)
+         require 'Datavyu_API.rb'
+         begin
+            trial = getVariable("trial")
+            newcell = trial.make_new_cell()
+            newcell.change_arg("onset", 1000)
+            setVariable("trial", trial)
+         end

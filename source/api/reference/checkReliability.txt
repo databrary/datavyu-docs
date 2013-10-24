@@ -9,66 +9,65 @@ Definition
 
 .. method:: checkReliability(main_col, rel_col, match_arg, time_tolerance, dump_file)
 
-Compares two Datavyu variables to check for reliability errors and
-percent accuracy.
+   Compares two Datavyu variables to check for reliability errors and
+   percent accuracy.
 
-.. table-start
+   .. table-start
 
-.. list-table:: 
-   :widths: 20, 40, 50
-   :header-rows: 1
+   .. list-table:: 
+      :widths: 20, 40, 50
+      :header-rows: 1
    
-   * - Parameter
-     - Type
-     - Description
-   * - ``main_col``
-     - String **or** Ruby variable from :meth:`getVariable()`
-     - The primary column that ``rel_col`` will be compared against
-   * - ``rel_col``
-     - String **or** Ruby variable from :meth:`getVariable()`
-     - The reliability column to compare to ``main_col``
-   * - ``match_arg``
-     - String     
-     - The argument to use to match the reliability cells to the primary
-       cells. Must be a unique identifier between the cells.
-   * - ``time_tolerance``
-     - Integer
-     - Amount of slack permitted, in milliseconds, between the two
-       onset and offsets before it will be considered an error. Set to 0
-       to tolerate no difference.
-   * - ``dump_file`` (**optional**)
-     - String path or Ruby File object
-     - The full string path to dump the relability output to. This can
-       be used for multi-file dumps or just to keep a log. You can also
-       give it a Ruby File object if a file is already started.
+      * - Parameter
+        - Type
+        - Description
+      * - ``main_col``
+        - String **or** Ruby variable from :meth:`getVariable()`
+        - The primary column that ``rel_col`` will be compared against
+      * - ``rel_col``
+        - String **or** Ruby variable from :meth:`getVariable()`
+        - The reliability column to compare to ``main_col``
+      * - ``match_arg``
+        - String     
+        - The argument to use to match the reliability cells to the primary
+          cells. Must be a unique identifier between the cells.
+      * - ``time_tolerance``
+        - Integer
+        - Amount of slack permitted, in milliseconds, between the two
+          onset and offsets before it will be considered an error. Set to 0
+          to tolerate no difference.
+      * - ``dump_file`` (**optional**)
+        - String path or Ruby File object
+        - The full string path to dump the relability output to. This can
+          be used for multi-file dumps or just to keep a log. You can also
+          give it a Ruby File object if a file is already started.
 
-.. table-end
+   .. table-end
 
-.. admonition:: Returns
+   .. admonition:: Returns
 
-   Console and file output.
+      Console and file output.
 
-Examples
---------
+   .. admonition:: Examples
 
-The following example checks the reliability variable "rel.trial"
-against the primary variable "trial", linking the two on their
-"trialnum" argument, with a 100ms :term:`onset` and :term:`offset`
-difference tolerated.
+      The following example checks the reliability variable "rel.trial"
+      against the primary variable "trial", linking the two on their
+      "trialnum" argument, with a 100ms :term:`onset` and :term:`offset`
+      difference tolerated.
 
-.. code-block:: ruby
+      .. code-block:: ruby
 
-   checkReliability("trial", "rel.trial", "trialnum", 100)
+         checkReliability("trial", "rel.trial", "trialnum", 100)
 
-The following example checks the reliability variable "rel.trial"
-against the primary variable "trial", linking the two on their
-"trialnum" argument, with a 100ms :term:`onset` and :term:`offset`
-difference tolerated, and writes the output to the
-``/Users/motoruser/Desktop/Relcheck.txt``, a text file.
+      The following example checks the reliability variable "rel.trial"
+      against the primary variable "trial", linking the two on their
+      "trialnum" argument, with a 100ms :term:`onset` and :term:`offset`
+      difference tolerated, and writes the output to the
+      ``/Users/motoruser/Desktop/Relcheck.txt``, a text file.
    
-.. code-block:: ruby
+      .. code-block:: ruby
 
-   checkReliability("trial", "rel.trial", "trialnum", 100, "/Users/motoruser/Desktop/Relcheck.txt")
+         checkReliability("trial", "rel.trial", "trialnum", 100, "/Users/motoruser/Desktop/Relcheck.txt")
 
 .. seealso:: 
 
