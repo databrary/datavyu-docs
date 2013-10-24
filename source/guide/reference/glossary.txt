@@ -127,3 +127,10 @@ Glossary
    
    standalone method
       A :term:`method` that does not belong to a specific :term:`class`.
+   
+   script
+      [words]
+   
+   mutex
+   mutexed
+      [words]

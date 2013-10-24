@@ -20,6 +20,6 @@ Core Operations
    
    /guide/tutorial/add-an-observation
    /guide/tutorial/add-a-column
-   /guide/tutorial/configure-datavyu-column
+   /guide/tutorial/configure-datavyu-columns
    /guide/tutorial/export-data
    /guide/tutorial/use-scripts-to-automate-tasks
