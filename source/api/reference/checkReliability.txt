@@ -48,7 +48,7 @@ Definition
 
       Console and file output.
 
-   .. admonition:: Examples
+   .. admonition:: Example
 
       The following example checks the reliability variable "rel.trial"
       against the primary variable "trial", linking the two on their
