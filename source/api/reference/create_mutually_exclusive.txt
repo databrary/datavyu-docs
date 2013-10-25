@@ -4,9 +4,6 @@ create_mutually_exclusive()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: create_mutually_exclusive(name, var1name, var2name)
 
    Mixes two column together, creating a new column.

@@ -6,9 +6,6 @@ setVariable()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: setVariable(*args)
 
    Replaces a column in the database with a new column of the

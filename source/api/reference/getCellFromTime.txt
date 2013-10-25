@@ -4,9 +4,6 @@ getCellFromTime()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: getCellFromTime(col, time)
 
    Identifies the cell that occurs at a given point in time, and returns

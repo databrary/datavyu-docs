@@ -4,9 +4,6 @@ printAllNested()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: printAllNested()
 
    [description]

@@ -4,9 +4,6 @@ getColumnList()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: getColumnList()
 
    Outputs a list of all the columns in the current database.

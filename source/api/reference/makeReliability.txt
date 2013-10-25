@@ -4,9 +4,6 @@ makeReliability()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: makeReliability(relname, var_to_copy, multiple_to_keep, *args_to_keep)
 
 .. TODO: mention that it has an alias in make_rel as well? 

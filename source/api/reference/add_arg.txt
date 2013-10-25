@@ -4,9 +4,6 @@ add_arg()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: add_arg(name)
 
    Adds an argument to a variable.

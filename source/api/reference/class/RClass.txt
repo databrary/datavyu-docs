@@ -1,0 +1,172 @@
+===========
+RCell Class
+===========
+
+.. default-domain:: rb
+
+.. class:: RCell
+
+   The Ruby container for Datavyu columns.
+
+   .. classmethod:: change_arg(arg, val)
+
+      Changes the value of an argument in a cell.
+
+      .. table-start
+
+      .. list-table:: 
+         :widths: 20, 40, 50
+         :header-rows: 1
+   
+         * - Parameter
+           - Type
+           - Description
+         * - ``arg``
+           - String **or** Ruby variable from :meth:`getVariable`
+           - Name of the argument that you are updating.
+         * - ``val``
+           - String, Integer, etc.
+           - Value to change the argument to.
+
+      .. table-end
+
+      .. admonition:: Returns
+
+         None.
+
+      .. admonition:: Example
+
+         The following example sets the "trial" columns's cell at
+         position 0's :term:`onset` to 1000ms, and then writes the
+         change back to the database using :meth:`setVariable`.
+
+         .. code-block:: ruby
+
+            require 'Datavyu_API.rb'
+            begin
+               trial = getVariable("trial")
+               trial.cells(0).change_arg("onset", 1000)
+               setVariable("trial", trial)
+            end
+      
+   .. classmethod:: is_within(outer_cell)
+
+      Determines if a cell is temporally encased by the ``outer_cell``.
+
+      .. table-start
+
+      .. list-table:: 
+         :widths: 20, 40, 50
+         :header-rows: 1
+   
+         * - Parameter
+           - Type
+           - Description
+         * - ``outer_cell``
+           - 
+           - The cell that may or may not temporally encase your study cell.
+
+      .. table-end
+
+      .. admonition:: Returns
+
+         Boolean
+
+      .. admonition:: Example
+   
+         Compare the first cell of the "trial" and "id" columns to see
+         if the first cell of "trial" is temporally enclosed by the
+         first cell of "id". If it is, print out "Yes, it is temporally
+         enclosed", otherwise, print "No, it is not temporally enclosed."
+      
+         .. code-block:: ruby
+   
+            require 'Datavyu_API.rb'
+            begin
+               trial = getVariable("trial")
+               id = getVariable("id")
+               if trial.cells[0].is_within(id.cells[0])
+                  puts "Yes, it is temporally enclosed."
+               else
+                  puts "No, it is not temporally enclosed."
+               end
+            end
+   
+   .. classmethod:: contains(inner_cell)
+
+      Determines if a cell temporally encases the ``innter_cell``.
+
+      .. table-start
+
+      .. list-table:: 
+         :widths: 20, 40, 50
+         :header-rows: 1
+
+         * - Parameter
+           - Type
+           - Description
+         * - ``inner_cell``
+           - 
+           - The cell that you want to determine whether it is temporally
+             encased by your study cell.
+
+      .. table-end
+
+      .. admonition:: Returns
+
+         Boolean
+
+      .. admonition:: Example
+
+         Compare the first cell of the "trial" and "id" columns to see if
+         the first cell of "trial" is temporally enclosed by the first cell
+         of "id". If it is, print out "Yes, it is temporally encloses the cell",
+         otherwise, print "No, it is does not temporally enclose the cell."
+   
+         .. code-block:: ruby
+
+            require 'Datavyu_API.rb'
+            begin
+               trial = getVariable("trial")
+               id = getVariable("id")
+               if id.cells[0].is_within(trial.cells[0])
+                  puts "Yes, it is temporally encloses the cell."
+               else
+                  puts "No, it is does not temporally enclose the cell."
+               end
+            end
+
+   .. classmethod:: print_all(*p)
+
+      Dumps all of the [codes] in a :term:`cell` to a :term:`string`.
+
+      .. table-start
+
+      .. list-table:: 
+         :widths: 20, 40, 50
+         :header-rows: 1
+   
+         * - Parameter
+           - Type
+           - Description
+         * - ``p`` **optional**
+           - String
+           - The separator between [codes]. Defaults to tab (\t)
+
+      .. table-end
+
+      .. admonition:: Returns
+
+         String of the arguments, starting with ordinal, onset,
+         and offset, followed by the [codes]
+
+      .. admonition:: Example
+   
+         [words]
+      
+         .. code-block:: ruby
+   
+            trial = getVariable("trial")
+            print trial.cells[0].print_all()
+
+         

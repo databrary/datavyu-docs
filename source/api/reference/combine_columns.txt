@@ -4,9 +4,6 @@ combine_columns()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: combine_columns(name, varnames)
 
    Mixes two column together, creating a new column.

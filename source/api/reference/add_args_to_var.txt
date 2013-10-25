@@ -4,9 +4,6 @@ add_args_to_var()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: add_args_to_var(var, *args)
 
    Add new arguments to a variable.

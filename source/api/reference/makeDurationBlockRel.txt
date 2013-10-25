@@ -4,9 +4,6 @@ makeDurationBlockRel()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: makeDurationBlockRel(relname, var_to_copy, binding, block_dur, skip_blocks)
 
    Makes a duration-based reliability column. This creates two columns,

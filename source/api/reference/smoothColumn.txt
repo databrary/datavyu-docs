@@ -4,9 +4,6 @@ smoothColumn()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: smoothColumn(colname, tol=33)
 
    Tweaks a variable's cells' onsets so that there is a maximum of

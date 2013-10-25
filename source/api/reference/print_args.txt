@@ -4,9 +4,6 @@ print_args()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: print_args(cell, file, args)
 
    

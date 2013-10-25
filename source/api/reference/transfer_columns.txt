@@ -4,9 +4,6 @@ transfer_columns
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: transfer_columns(db1, db2, remove, *varnames)
 
    Transfers columns between databases. If db1 or db2 are set to the

@@ -4,9 +4,6 @@ createVariable()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: createVariable(name, *args)
                createNewVariable(name, *args)
 

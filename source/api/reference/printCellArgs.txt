@@ -4,9 +4,6 @@ printCellArgs()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: printCellArgs(cell)
 
    Prints out the values for every [code] in a specified cell.

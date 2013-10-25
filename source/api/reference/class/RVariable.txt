@@ -4,9 +4,6 @@ RVariable Class
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. class:: RVariable
 
    The Ruby container for Datavyu columns.

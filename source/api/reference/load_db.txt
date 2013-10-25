@@ -4,9 +4,6 @@ load_db()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: load_db(filename)
 
    Loads a new database from a file.

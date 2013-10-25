@@ -4,9 +4,6 @@ getVariable()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: getVariable(name)
 
    Retrieves a variable from the Datavyu database and assigns it to a Ruby

@@ -4,9 +4,6 @@ checkValidCodes()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: checkValidCodes(var, dump_file, *arg_code_pairs)
 
    Checks that all codes in Datavyu are valid, based on specified valid values.

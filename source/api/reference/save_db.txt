@@ -4,9 +4,6 @@ save_db()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: save_db(filename)
 
    Saves the current ``$db`` and ``$pj`` variables to a file. If the
