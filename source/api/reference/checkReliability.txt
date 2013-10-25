@@ -4,9 +4,6 @@ checkReliability()
 
 .. default-domain:: rb
 
-Definition
-----------
-
 .. method:: checkReliability(main_col, rel_col, match_arg, time_tolerance, dump_file)
 
    Compares two Datavyu variables to check for reliability errors and
