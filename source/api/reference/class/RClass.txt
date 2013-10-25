@@ -64,7 +64,8 @@ RCell Class
            - Description
          * - ``outer_cell``
            - 
-           - The cell that may or may not temporally encase your study cell.
+           - The cell that is going to be checked to see if it temporally
+             encases the study cell.
 
       .. table-end
 
@@ -107,8 +108,8 @@ RCell Class
            - Description
          * - ``inner_cell``
            - 
-           - The cell that you want to determine whether it is temporally
-             encased by your study cell.
+           - The cell that is going to be checked to see if it is
+             temporally encased by the study cell.
 
       .. table-end
 

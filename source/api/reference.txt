@@ -8,7 +8,8 @@ Classes and Class Methods
 .. toctree::
    :titlesonly:
 
-   /api/reference/class/variable
+   /api/reference/class/RVariable
+   /api/reference/class/RCell
 
 Freestanding Methods
 --------------------
@@ -16,31 +17,23 @@ Freestanding Methods
 .. toctree::
    :titlesonly:
 
-   /api/reference/glossary
-   /api/reference/add_arg
-   /api/reference/change_arg
-   /api/reference/make_new_cell
-   /api/reference/checkValidCodes
-   /api/reference/createVariablew
    /api/reference/checkReliability
-   /api/reference/getVariable
-   /api/reference/setVariable
-   /api/reference/makeReliability 
+   /api/reference/checkValidCodes
    /api/reference/combine_columns
-   /api/reference/contains       
-   /api/reference/createVariable 
    /api/reference/create_mutually_exclusive
+   /api/reference/createVariable 
+   /api/reference/createVariablew
    /api/reference/getCellFromTime 
    /api/reference/getColumnList   
-   /api/reference/is_within       
+   /api/reference/getVariable
    /api/reference/load_db         
    /api/reference/load_macshapa_db
    /api/reference/makeDurationBlockRel
+   /api/reference/makeReliability 
+   /api/reference/print_args      
    /api/reference/printAllNested  
    /api/reference/printCellArgs   
-   /api/reference/print_all       
-   /api/reference/print_args      
    /api/reference/save_db         
+   /api/reference/setVariable
    /api/reference/smoothColumn    
    /api/reference/transfer_columns
-   

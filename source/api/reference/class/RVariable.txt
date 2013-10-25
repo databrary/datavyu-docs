@@ -109,6 +109,19 @@ RVariable Class
          [unclear]
       
       .. example:: 
+      
+         The following example adds the *unit* argument to the "trial"
+         column, and then writes the changes back to the database
+         using :meth:`setVariable`.
+
+         .. code-block:: ruby
+      
+            require 'Datavyu_API.rb'
+            begin
+               trial = getVariable("trial")
+               trial.add_arg("unit")
+               setVariable(trial)
+            end
 
    .. classmethod:: remove_arg(name)
    

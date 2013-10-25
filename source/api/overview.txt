@@ -51,8 +51,8 @@ database, and assigned it to an :class:`RVariable` object:
 
    trial.add_arg("newArgument")
 
-Unlike :meth:`getVariable`, :meth:`add_arg` is invoked against an
-:class:`RVariable` object, in the format ``variableName.methodName()``.
+As the example shows, :term:`class methods` are invoked against an
+object of their class, in the format ``variableName.methodName()``.
 
 Understanding the difference between freestanding and class methods
 will make it easier for you to easily use the methods included in the
