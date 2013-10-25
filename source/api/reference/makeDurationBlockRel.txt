@@ -44,7 +44,7 @@ makeDurationBlockRel()
 
       Nothing. Variables are automatically written to the database.
 
-   .. example:: 
+   .. admonition:: Example
 
       The following example creates a duration-based reliability column
       from the "step" column.

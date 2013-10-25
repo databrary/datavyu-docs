@@ -134,3 +134,6 @@ Glossary
    mutex
    mutexed
       [words]
+
+   class method
+      [words]

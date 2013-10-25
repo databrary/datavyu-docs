@@ -11,14 +11,14 @@ transfer_columns
    (usually the GUI's database). So if you want to transfer a column
    into the GUI, set db2 to "". If you want to tranfer a column from the
    GUI into a file, set db1 to "". 
-   
+
    .. warning:: 
    
       Setting remove to true will DELETE THE COLUMNS YOU ARE
       TRANSFERRING FROM DB1.
-   
+
    .. table-start
-   
+
    .. list-table::
       :widths: 20, 40, 50
       :header-rows: 1
@@ -38,11 +38,11 @@ transfer_columns
         - Boolean
         - If true, Datavyu will delete the columns from ``db1`` as they
           are copied to ``db2``. False leaves the columns intact.
-       * - ``varnames``
-         - list of strings
-         - List of the names of the columns that you wish to copy from
-           ``db1`` to ``db1``. You must specify at least one column
-           name. 
+      * - ``varnames``
+        - list of strings
+        - List of the names of the columns that you wish to copy from
+          ``db1`` to ``db1``. You must specify at least one column
+          name. 
 
    .. table-end
    

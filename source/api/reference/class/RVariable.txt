@@ -32,7 +32,7 @@ RVariable Class
          Reference to the cell that was just created. Modify the cell using 
          this reference.
 
-      .. example::
+      .. admonition:: Example
 
          The following example creates a new cell at the end of the "trial"
          column's cell array, and assigns its reference to the variable
@@ -71,7 +71,7 @@ RVariable Class
       
          [Nothing ?]
       
-      .. example:: 
+      .. admonition:: Example 
       
          The following example renames the "trial" column's
          *badCodeName* [code] to *awesomeCodeName*, and then writes the
@@ -108,7 +108,7 @@ RVariable Class
 
          [unclear]
       
-      .. example:: 
+      .. admonition:: Example 
       
          The following example adds the *unit* argument to the "trial"
          column, and then writes the changes back to the database

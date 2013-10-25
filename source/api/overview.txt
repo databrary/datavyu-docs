@@ -51,64 +51,60 @@ database, and assigned it to an :class:`RVariable` object:
 
    trial.add_arg("newArgument")
 
-As the example shows, :term:`class methods` are invoked against an
+As the example shows, :term:`class methods <class method>` are invoked against an
 object of their class, in the format ``variableName.methodName()``.
 
 Understanding the difference between freestanding and class methods
 will make it easier for you to easily use the methods included in the
 Datavyu API.
 
-
-
-
-
-Methods
--------
-
-Columns
-~~~~~~~
-
-:term:`Columns <column>` are the highest level grouping in Datavyu, and the
-majority of scripts will involve retrieving columns from the Datavyu
-database (using :meth:`getVariable`) and then updating columns
-using :meth:`setVariable`. 
-
-You can also create a brand new column using :meth:`createVariable`.
-
-Primarily used as a step in a larger task, :meth:`make_new_cell` creates
-a new blank cell at the end of the current column's cell array. Unlike
-:meth:`getVariable` or :meth:`setVariable`, which are :term:`standalone
-methods <standalone method>`, :meth:`make_new_cell` is a method of the
-:class:`RVariable` class, and as such you must invoke it on a
-:class:`RVariable` objects.
-
-The :meth:`add_arg` method enables users to add a [code] to a
-variable. Like :meth:`make_new_cell` :meth:`add_arg` and
-must be invoked on a :class:`RVariable` variable.
-
-Cells
-~~~~~
-
-:meth:`change_arg` operates directly at the cell level, and enables
-you to change the value of a cell's [code]. :meth:`change_arg` is a
-method of the :class:`RCell` class and must be invoked on a
-:class:`RClass` variable.
-
-Verification
-~~~~~~~~~~~~
-
-Verification methods are a special category. These methods may touch
-more than one Datavyu component as they perform tasks that support
-verifying coders' work or facilitating two~pass verification.
-
-:meth:`checkValidCodes` tests each coded value within a column
-against a list of valid possibilities. You could use this to check
-for typographic errors, such as a 'j' when only a 'k' is a valid entry.
-
-Similarly, :meth:`makeReliability` and :meth:`checkReliability`
-support using two~pass verification to ensure that coders are recording
-accurate observations. :meth:`makeReliability` creates a new column
-from an existing coded column so that a second coder can code the same
-data source. Using :meth:`checkReliability`, you can then compare the
-original and "reliability" columns to see that the two coders recorded
-the same phenomena.
+.. Methods
+.. -------
+.. 
+.. Columns
+.. ~~~~~~~
+.. 
+.. :term:`Columns <column>` are the highest level grouping in Datavyu, and the
+.. majority of scripts will involve retrieving columns from the Datavyu
+.. database (using :meth:`getVariable`) and then updating columns
+.. using :meth:`setVariable`. 
+.. 
+.. You can also create a brand new column using :meth:`createVariable`.
+.. 
+.. Primarily used as a step in a larger task, :meth:`make_new_cell` creates
+.. a new blank cell at the end of the current column's cell array. Unlike
+.. :meth:`getVariable` or :meth:`setVariable`, which are :term:`standalone
+.. methods <standalone method>`, :meth:`make_new_cell` is a method of the
+.. :class:`RVariable` class, and as such you must invoke it on a
+.. :class:`RVariable` objects.
+.. 
+.. The :meth:`add_arg` method enables users to add a [code] to a
+.. variable. Like :meth:`make_new_cell` :meth:`add_arg` and
+.. must be invoked on a :class:`RVariable` variable.
+.. 
+.. Cells
+.. ~~~~~
+.. 
+.. :meth:`change_arg` operates directly at the cell level, and enables
+.. you to change the value of a cell's [code]. :meth:`change_arg` is a
+.. method of the :class:`RCell` class and must be invoked on a
+.. :class:`RClass` variable.
+.. 
+.. Verification
+.. ~~~~~~~~~~~~
+.. 
+.. Verification methods are a special category. These methods may touch
+.. more than one Datavyu component as they perform tasks that support
+.. verifying coders' work or facilitating two~pass verification.
+.. 
+.. :meth:`checkValidCodes` tests each coded value within a column
+.. against a list of valid possibilities. You could use this to check
+.. for typographic errors, such as a 'j' when only a 'k' is a valid entry.
+.. 
+.. Similarly, :meth:`makeReliability` and :meth:`checkReliability`
+.. support using two~pass verification to ensure that coders are recording
+.. accurate observations. :meth:`makeReliability` creates a new column
+.. from an existing coded column so that a second coder can code the same
+.. data source. Using :meth:`checkReliability`, you can then compare the
+.. original and "reliability" columns to see that the two coders recorded
+.. the same phenomena.

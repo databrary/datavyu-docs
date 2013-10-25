@@ -19,9 +19,9 @@ Getting Started with APIs and Scripting
    :titlesonly:
    
    /api/introduction-to-apis
-   /api/classes-and-methods
-   /api/introduction-to-scripting
    /api/overview
+   /api/introduction-to-scripting
+
 
 API Documentation
 -----------------

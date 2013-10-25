@@ -28,7 +28,11 @@ The following examples check the ``step`` column against its codes. You
 can download the sample data used in this tutorial from :download:`here
 </resources/SampleData-checkValidCodes.opf>`.
 
+.. end-intro
+
 .. _checkValidCodes-basic-format:
+
+.. begin-basic
 
 Check Code Validity and Output to the Console
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -36,23 +40,23 @@ Check Code Validity and Output to the Console
 Basic Format
 ````````````
 
-.. .. example:: (once I figure out how to make those exist)
+.. admonition:: Example (once I figure out how to make those exist)
 
-.. code-block:: ruby
+   .. code-block:: ruby
 
-   require 'Datavyu_API.rb'
-   begin
-      # Check for errors. Notice the square brackets. These denote lists. So the basic format is:
-      # "columnName", "dumpFile", argumentname, [validarg1, validarg2, etc], argument2, [ validarg1, validarg2, etc], ...
+      require 'Datavyu_API.rb'
+      begin
+         # Check for errors. Notice the square brackets. These denote lists. So the basic format is:
+         # "columnName", "dumpFile", argumentname, [validarg1, validarg2, etc], argument2, [ validarg1, validarg2, etc], ...
 
-      checkValidCodes("step", "", "foot", ["l", "r"], "ht", ["h", "t"], "direction", ["f","b"])
-   end
+         checkValidCodes("step", "", "foot", ["l", "r"], "ht", ["h", "t"], "direction", ["f","b"])
+      end
 
-Breaking down the function call makes it easier to follow what is
-happening. ecall that :meth:`checkValidCodes` takes (at least) three
-parameters: the name of the Datavyu variable it will be checking, the
-location that it should direct the output to, and at least one key-value
-pair.
+   Breaking down the function call makes it easier to follow what is
+   happening. ecall that :meth:`checkValidCodes` takes (at least) three
+   parameters: the name of the Datavyu variable it will be checking, the
+   location that it should direct the output to, and at least one key-value
+   pair.
 
 In the example, we have:
 
@@ -76,7 +80,11 @@ In the example, we have:
   which specifies that the "direction" Datavyu [code] should only have
   the values "f" or "b".
 
+.. end-basic
+
 .. _checkValidCodes-advanced-format:
+
+.. begin-advanced
 
 Advanced Format
 ```````````````

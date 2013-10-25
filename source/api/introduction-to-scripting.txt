@@ -78,7 +78,7 @@ perform calculations on to integers. This is easily done with Ruby using
 the `to_i <http://ruby-doc.org/core-2.0.0/String.html#method-i-to_i>`_
 method.
 
-.. example:: 
+.. admonition:: Example 
 
    Create a variable, ``var1`` whose value is "5". Since the number 5 has
    quotation marks around it, it is a string.

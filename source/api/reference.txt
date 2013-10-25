@@ -17,12 +17,12 @@ Freestanding Methods
 .. toctree::
    :titlesonly:
 
+   /api/reference/add_args_to_var
    /api/reference/checkReliability
    /api/reference/checkValidCodes
    /api/reference/combine_columns
    /api/reference/create_mutually_exclusive
    /api/reference/createVariable 
-   /api/reference/createVariablew
    /api/reference/getCellFromTime 
    /api/reference/getColumnList   
    /api/reference/getVariable
