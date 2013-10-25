@@ -6,7 +6,7 @@ RCell Class
 
 .. class:: RCell
 
-   The Ruby container for Datavyu columns.
+   The Ruby container for Datavyu cells.
 
    .. classmethod:: change_arg(arg, val)
 
