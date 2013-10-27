@@ -10,20 +10,43 @@
 
 {% set body_width = '80%' %}
 {% set sidebar_width = '20%' %}
-{% set font_family = 'georgia, serif' %}
-{% set header_font_family = 'crimson text, ' ~ font_family %}
+{% set font_family = 'Helvetica, Verdana, sans-serif' %}
+{% set header_font_family = 'Helvetica' ~ font_family %}
 
 @import url("basic.css");
+
+/* -- fonts -- 
+
+@font-face {
+    font-family: 'SofiaProLight';
+    src: url('/fonts/SofiaProLight.eot');
+    src: url('/fonts/SofiaProLight.eot?#iefix') format('embedded-opentype'), url('/fonts/SofiaProLight.woff') format('woff'), url('/fonts/SofiaProLight.ttf') format('truetype'), url('/fonts/SofiaProLight.svg#SofiaProLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SofiaProMedium';
+    src: url('/fonts/SofiaProMedium.eot');
+    src: url('/fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'), url('/fonts/SofiaProMedium.woff') format('woff'), url('/fonts/SofiaProMedium.ttf') format('truetype'), url('/fonts/SofiaProMedium.svg#SofiaProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ -- -- */
+
+
 
 /* -- page layout ----------------------------------------------------------- */
 
 body {
     font-family: {{ font_family }};
-    font-size: 14px;
-    background-color: white;
-    color: #000;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.333;
     margin: 0;
     padding: 0;
+    /* font-size:  */
 }
 
 div.document {
@@ -47,7 +70,9 @@ div.sphinxsidebar {
 }
 
 hr {
-    border: 1px solid #b1b4b6;
+    border: 0;
+    border-bottom: 1px solid #a39c96;
+    margin: 1em 0;
 }
 
 div.body {
@@ -103,17 +128,16 @@ div.sphinxsidebarwrapper p.logo {
 
 div.sphinxsidebar h3,
 div.sphinxsidebar h4 {
-    font-family: {{ font_family }};
-    color: #444;
-    font-size: 19px;
+    margin: 28px 0;
+    border-top: 1px solid #d1cac4;
+    border-bottom: 1px solid #d1cac4;
+    padding: 7px 0;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ee6f07;
     font-weight: normal;
-    margin: 0px;
-}
-
-div.sphinxsidebar h4 { font-size; 1.25em; }
-
-div.sphinxsidebar h3 a {
-    color: #444;
+    text-align: left;
 }
 
 div.sphinxsidebar p.logo a,
@@ -147,13 +171,17 @@ div.sphinxsidebar form.search input[name="q"] {
 /* -- body styles ----------------------------------------------------------- */
 
 a {
-    color: #aa0000;
-    text-decoration: underline;
+   color: #7e2c5c;
+   margin 0 0 .5em; padding-bottom: 0.2em; border-bottom: 1px solid #a39c96;
+   -webkit-transition: all 0.1s linear;
+   -moz-transition: all 0.1s linear;
+   transition: all 0.1s linear;
 }
-
+   
 a:hover {
-    color: #dd0000;
-    text-decoration: underline;
+   -webkit-transition: all 0.1s linear;
+   -moz-transition: all 0.1s linear;
+   transition: all 0.1s linear;
 }
 
 div.body h1,
@@ -166,17 +194,32 @@ div.body h6 {
     font-weight: normal;
     /* margin: 10px 0px 10px 0px; */
     margin: 0;
-    line-height: .9em;
     /* padding: 0 0 0 5px; */
     color: black;
 }
 
-div.body h1 { font-size: 3em; text-align: center;}
-div.body h2 { font-size: 2.5em; }
-div.body h3 { font-size: 2em; }
-div.body h4 { font-size: 1.5em; }
-div.body h5 { font-size: 1.25em; }
-div.body h6 { font-size: 1em; font-weight: bold; }
+div.body h1 { 
+   font-size: 3em; 
+   color: #3ea938;
+   margin 0 0 .5em; 
+   padding-bottom: 0.2em; 
+   border-bottom: 1px solid #a39c96; 
+   line-height: 40px;
+   text-align: center;
+}
+
+div.body h2 { 
+   margin: 28px 0;
+   border-top: 1px solid #d1cac4;
+   border-bottom: 1px solid #d1cac4;
+   padding: 7px 0;
+   font-size: 1em;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #ee6f07;
+   font-weight: normal;
+   text-align: left;
+}
 
 a.headerlink {
     color: #ddd;
