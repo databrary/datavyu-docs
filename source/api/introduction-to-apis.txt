@@ -13,7 +13,7 @@ you use a piece of Windows software, its programmers likely use the
 Windows API to communicate with Windows itself, accessing drivers,
 printers, and even the user interface.
 
-.. TODO: graphic representation of an API here
+.. image:: /img/api-explanatory-diagram.png
 
 The Datavyu API works somewhat differently: instead of helping two
 applications communicate, it helps users to perform tasks

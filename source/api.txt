@@ -6,17 +6,24 @@ The Datavyu scripting API provides a scriptable interface to Datavyu's
 database, allowing you to manipulate your data, print in any format
 you'd like, or check your data for errors.
 
+.. figure:: /img/script-and-datavyu-api-landing.png
+   :align: center
+
+   [Temporary caption] We'll replace this imgae with one that uses the
+   sample data source and codes once I receive it.
+
 If you're new to programming or new to Ruby, you might want to go
-through the `Basic Ruby Tutorial <https://www.ruby-lang.org/en/documentation/quickstart/>`_. Once you're
-ready to start working with Ruby Scripts, see:
-:doc:`/api/introduction-to-scripting` for a Datavyu-specific overview of
-the Ruby API and scripting for Datavyu.
+through the `Basic Ruby Tutorial
+<https://www.ruby-lang.org/en/documentation/quickstart/>`_.  Once
+you're ready to start working with Ruby Scripts, see:
+:doc:`/api/introduction-to-scripting` for a Datavyu-specific overview
+of the Ruby API and scripting for Datavyu.
 
 Getting Started with APIs and Scripting
 ---------------------------------------
 
 .. toctree::
-   :titlesonly:
+   :maxdepth: 1
    
    /api/introduction-to-apis
    /api/overview
@@ -27,7 +34,7 @@ API Documentation
 -----------------
 
 .. toctree::
-   :titlesonly:
+   :maxdepth: 1
 
    /api/tutorials
    /api/reference
