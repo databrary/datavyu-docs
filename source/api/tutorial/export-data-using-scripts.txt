@@ -46,7 +46,7 @@ R scripting functions.
 
 To create a direct dump to CSV using R, 
 
-.. code-block:: R
+.. code-block:: rout
 
    [codes here]
 

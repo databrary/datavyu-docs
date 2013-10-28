@@ -2,11 +2,6 @@
 Datavyu Ruby API Reference
 ==========================
 
-.. toctree::
-   :titlesonly:
-   
-   /api/reference/glossary
-
 Classes and Class Methods
 -------------------------
 
@@ -23,8 +18,6 @@ Freestanding Methods
    :titlesonly:
 
    /api/reference/add_args_to_var
-   /api/reference/change_arg
-   /api/reference/make_new_cell
    /api/reference/checkValidCodes
    /api/reference/createVariable
    /api/reference/checkReliability
@@ -46,3 +39,7 @@ Freestanding Methods
    /api/reference/setVariable
    /api/reference/smoothColumn    
    /api/reference/transfer_columns
+
+.. seealso:: 
+
+   :doc:`The Glossary </guide/reference/glossary>`

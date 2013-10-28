@@ -5,19 +5,27 @@ Classes & Methods
 .. default-domain:: rb
 
 Ruby, the programming language that the Datavyu API uses, is an object-
-oriented language. Object-oriented languages represent concepts, like
-Datavyu's columns or cells, for instance, as "objects". Objects have
-attributes – values or data that pertains to the object. A cell object's
-attributes would be its [codes]; a column object's attributes might be
-its cells, its name, etc. Objects are generally "instances of classes".
-To put it differently, classes are types of objects, and the objects
-that you work with directly in your code are one thing of its class's
-type.
+oriented language. 
 
-Thinking about Datavyu specifically, then, columns would be a class,
-while the "trial" column is an instance of that class. This is, in
-fact, how the Datavyu API works: the Datavyu API includes two classes to
-represent datavyu concepts: :class:`RVariable` describes Datavyu's
+Classes
+-------
+
+Object-oriented languages represent concepts, like
+Datavyu's columns or cells, for instance, as "objects". Types of
+objects are called "classes". 
+
+Objects have attributes: data that pertains to the
+object. In Datavyu, a cell object's attributes would be its [codes]; a column
+object's attributes might be its cells, its name, etc. Objects are
+generally "instances of classes".  To put it differently, classes are
+types of objects, and the objects that you work with directly in your
+code are one occurrence of its class's type.
+
+Thinking about Datavyu specifically, then, you would likely have a
+column class that describes the Datavyu columns.  The "trial" column
+would then be an instance of the "column" class. This is, in fact, how the
+Datavyu API works: the Datavyu API includes two classes to represent
+datavyu concepts: :class:`RVariable` describes Datavyu's
 :term:`columns <column>`, and :class:`RCell` describes Datavyu's
 :term:`cells <cell>`.
 
@@ -25,7 +33,7 @@ Standalone Methods and Class Methods
 --------------------------------------
 
 While classes describe objects, :term:`methods <method>` define actions
-that you can do. Some methods belong to classes: these :term:`"class
+that you can perform. Some methods belong to classes: these :term:`"class
 methods" <class method>` act directly upon an instance of a specific
 class. Other methods, "standalone methods", perform actions on their
 own.
@@ -39,12 +47,12 @@ would run:
 
    getVariable("trial")
 
-In contrast, :meth:`add_arg`, is a class method of the
-:class:`RVariable` class. :meth:`add_arg` *is* invoked on an
-:class:`RVariable` instance.  Assuming that you have already retrieved a
+In contrast, :meth:`add_arg` is a class method of the
+:class:`RVariable` class, and *is invoked* on an
+:class:`RVariable` instance. Assuming that you have already retrieved a
 column called "trial" from the database, and assigned it to an
-:class:`RVariable` instance, the following code adds the *newArgument*
-[code] to the "trial" object:
+:class:`RVariable` instance, the following code would add the *newArgument*
+[code] to the "trial" :class:`RVariable` object:
 
 .. code-block:: ruby
 
@@ -55,7 +63,7 @@ Comparing them side-by-side can help highlight the difference:
 .. image:: /img/standalone-versus-class-methods.png
    :align: center
 
-Understanding the difference between freestanding and class methods
+Understanding the difference between standalone and class methods
 will make it easier for you to easily use the methods included in the
 Datavyu API.
 

@@ -10,10 +10,8 @@ Before You Start
 Sample Data
 -----------
 
-:download:`Example-Template.opf </api/resources/Example-Template.opf>`
-
-Most of the following tutorials all use :download:`Example-Template.opf
-</api/resources/Example-Template.opf>` as their basic data file. 
+Most of the following tutorials use :download:`Example-Template.opf
+</resources/Example-Template.opf>` as their basic data file. 
 
 The example template contains to :term:`columns <column>`: "id", whose arguments
 describe basic information such as subject number, test date, birth
@@ -80,4 +78,4 @@ Tutorials
    /api/tutorial/add-cells-to-a-column
    /api/tutorial/check-for-coding-errors
    /api/tutorial/use-two-pass-verification-to-check-data-accuracy
-   /api/tutorial/export-data-using-scripts
+   /api/tutorial/export-data-using-scripts 

@@ -7,14 +7,16 @@ Introduction to APIs
 APIs, Application Program Interfaces, are collections of code that
 specify how software components communicate with each other. APIs are
 incredibly prevalent tools: when you log into a website using your
-Facebook or Google credentials, for instance, a web API helps that
-website communicate with Facebook or Google's software. Similarly, when
-you use a piece of Windows software, its programmers likely used the
-Windows API to communicate with Windows itself, accessing drivers,
-printers, and even the user interface.
+Facebook or Google credentials, a web API helps that website
+communicate with Facebook or Google's servers. Similarly, when you
+use a piece of Windows software, its programmers likely used the
+Windows API to communicate with Windows itself and access drivers,
+printers, and the user interface.
 
-.. image:: /img/api-explanatory-diagram.png
+.. figure:: /img/api-explanatory-diagram.png
    :align: center
+
+   This image needs to be replaced with something betterer.
 
 The Datavyu API works somewhat differently: instead of helping two
 applications communicate, it helps users to perform tasks
@@ -27,7 +29,7 @@ trial, then, would start at 00:00:00, the second at 00:01:00, and so on,
 up to the 60th trial at 00:59:00. You might want to create a "trial"
 column, where you would code each trial's metadata, with its
 :term:`onset` at the minute mark, and its offset just prior. Manually
-creating sixty cells (largely blank) cells would be time-consuming,
+creating sixty (largely blank) cells would be time-consuming,
 and not a particularly good use of a researcher's time. 
 
 Computers are ideally suited for doing repetitive tasks quickly. The
@@ -39,7 +41,7 @@ script.
 The Datavyu API provides ways to check a coder's work, create columns,
 export data, and update columns, cells, and [codes], to name a few.
 Writing scripts with the API is straightforward and accessible to even
-a novice programmer. The abilityt o use scripts to automate tasks greatly
+a novice programmer. The ability to use scripts to automate tasks greatly
 increases the ways that Datavyu can facilitate data collection and
 analysis, and is well worth traversing the initial learning curve.
 
@@ -59,11 +61,9 @@ a good way to become familiar with scripting for Datavyu. With some
 practice, and you will likely be able to customize the sample scripts
 for your own purposes. However, gaining a grounding in some programming
 concepts will make it easier to create your own scripts for your unique
-use cases and needs.
+use cases and needs. 
 
-The following documents describe the Datavyu API mechanics in more
-detail, and provide a high-level overview of the API components that you
-will be working with:
-
-- :doc:`/api/overview` 
-- :doc:`/api/introduction-to-scripting`
+Consider :doc:`/api/overview` for an introduction to object oriented
+programming, :term:`classes <class>`, and :term:`methods <method>`.
+Also, :doc:`/api/introduction-to-scripting` discusses the
+requirements you should keep in mind when you start writing scripts.
