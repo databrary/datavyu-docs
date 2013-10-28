@@ -12,15 +12,24 @@ you'd like, or check your data for errors.
    [Temporary caption] We'll replace this imgae with one that uses the
    sample data source and codes once I receive it.
 
-If you're new to programming or new to Ruby, you might want to go
-through the `Basic Ruby Tutorial
-<https://www.ruby-lang.org/en/documentation/quickstart/>`_.  Once
-you're ready to start working with Ruby Scripts, see:
-:doc:`/api/introduction-to-scripting` for a Datavyu-specific overview
-of the Ruby API and scripting for Datavyu.
-
 Getting Started with APIs and Scripting
 ---------------------------------------
+
+.. image:: /img/check-valid-codes.png
+   :align: right
+
+APIs, Application Program Interfaces, are collections of code that
+specify how software components communicate with each other. Datavyu's
+API is in the Ruby programming language, an object-oriented language
+that has become incredibly popular over the last decade. Ruby is
+reasonably easy to learn, and novice programmers can start writing
+scripts with minimal programming knowledge.
+
+Before you dive into the :doc:`/api/tutorials`, though, you should
+familiarize yourself with :doc:`what an API is
+</api/introduction-to-apis>`, learn about Ruby's :term:`classes
+<class>` and :term:`methods <method>` and how they differ, and
+follow the :doc:`/api/introduction-to-scripting`.
 
 .. toctree::
    :maxdepth: 1
@@ -30,8 +39,16 @@ Getting Started with APIs and Scripting
    /api/introduction-to-scripting
 
 
-API Documentation
------------------
+Core Documentation
+------------------
+
+The Datavyu Ruby API's core documentation is organized into tutorials
+and reference pages. Tutorials provide step-by-step instructions for
+accomplishing common tasks with Ruby scripts. The Reference
+documentation provides a detailed reference for every :term:`class`
+and :term:`method` included in the API. This can be useful if you are
+uncertain about how to use a specific method, or want an example of
+its use.
 
 .. toctree::
    :maxdepth: 1

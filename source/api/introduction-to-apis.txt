@@ -14,6 +14,7 @@ Windows API to communicate with Windows itself, accessing drivers,
 printers, and even the user interface.
 
 .. image:: /img/api-explanatory-diagram.png
+   :align: center
 
 The Datavyu API works somewhat differently: instead of helping two
 applications communicate, it helps users to perform tasks
