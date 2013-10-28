@@ -9,7 +9,7 @@ specify how software components communicate with each other. APIs are
 incredibly prevalent tools: when you log into a website using your
 Facebook or Google credentials, for instance, a web API helps that
 website communicate with Facebook or Google's software. Similarly, when
-you use a piece of Windows software, its programmers likely use the
+you use a piece of Windows software, its programmers likely used the
 Windows API to communicate with Windows itself, accessing drivers,
 printers, and even the user interface.
 

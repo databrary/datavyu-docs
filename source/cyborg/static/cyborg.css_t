@@ -8,8 +8,8 @@
 
 /* @import url(http://fonts.googleapis.com/css?family=crimson+text); */
 
-{% set body_width = '68%' %}
-{% set sidebar_width = '26%' %}
+{% set body_width = '80%' %}
+{% set sidebar_width = '20%' %}
 {% set font_family = 'georgia, serif' %}
 {% set header_font_family = 'crimson text, ' ~ font_family %}
 
@@ -223,6 +223,23 @@ div.admonition p.admonition-title {
 div.admonition p.last {
     margin-bottom: 0;
 }
+
+/* added by allison */
+
+div.admonition-example.admonition{
+    margin: 1em 0 1em 0;
+    background: #b3bfc7;
+}
+
+div.admonition-returns.admonition{
+    margin: 1em 0 1em 0;
+}
+
+div.admonition-example.admonition div.highlight{
+    background-color: #b3bfc7;
+}
+
+/* fin */
 
 div.highlight {
     background-color: white;
