@@ -1,9 +1,9 @@
-=================
-Datavyu Tutorials
-=================
+===============
+Datavyu Lessons
+===============
 
-Getting Started
----------------
+First Steps
+-----------
 
 .. toctree::
    :maxdepth: 1
