@@ -228,7 +228,7 @@ div.admonition p.last {
 
 div.admonition-example.admonition{
     margin: 1em 0 1em 0;
-    background: #b3bfc7;
+    background: #d8e6f0;
 }
 
 div.admonition-returns.admonition{
@@ -236,7 +236,16 @@ div.admonition-returns.admonition{
 }
 
 div.admonition-example.admonition div.highlight{
-    background-color: #b3bfc7;
+    background-color: #d8e6f0;
+}
+
+div.admonition-programming-101.admonition{
+    margin: 2em 0 2em 0;
+    background: #fbfae2;
+}
+
+div.admonition-programming-101.admonition div.highlight{
+    background: #fbfae2;
 }
 
 /* fin */

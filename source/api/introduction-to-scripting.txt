@@ -28,7 +28,7 @@ debug an issue.
    :width: 1100px
    
    At left: TextEdit (Mac OS X). At right: TextMate 2 (Mac OS X) with "Mac
-   Classic" theme. Note that the same "add-cells-to-variable.rb" is open in
+   Classic" theme. Note that ``add-cells-to-variable.rb`` is open in
    each editor.
 
 To take advantage of syntax highlighting and coding support, we
@@ -53,18 +53,17 @@ Ruby scripts:
 
 .. tip:: 
    
-   Syntax highlighting generally depends on file extensions. The file
-   extension tells the text editor what kind of file it is. If the Ruby
-   script file does not have the ``.rb`` extension, you might not get
-   proper syntax highlighting, so ensure that your Ruby script files end
-   in ``.rb``.
+   Most text editors determine what kind of syntax highlighting to use
+   based on the file extension. If the Ruby script file does not have
+   the ``.rb`` extension, you might not see proper syntax
+   highlighting, so ensure that your Ruby script files end in ``.rb``.
 
-General Factoids
-----------------
+General Principles
+------------------
 
 Each cell that you create with the Datavyu API has three required
 fields: ``onset``, ``offset``, and ``ordinal``. Each cell also takes at
-least one :term:`argument`.
+least one :term:`argument`. 
 
 ``onset``, ``offset``, and ``ordinal`` are all :term:`Integers
 <integer>`, while :term:`[codes]` are :term:`Strings <string>`.

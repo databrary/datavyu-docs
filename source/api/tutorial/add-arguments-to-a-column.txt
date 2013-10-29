@@ -1,22 +1,22 @@
 .. _api-add-arguments:
 
-=========================
-Add Arguments to a Column
-=========================
+=====================
+Add Codes to a Column
+=====================
 
 .. default-domain:: rb
 
 .. begin-content
 
-Adding arguments to a column is one of the most straightforward 
+Adding codes to a column is one of the most straightforward 
 scriptable tasks. The Datavyu API provides the :meth:`add_arg()` method
-for adding arguments. 
+for adding codes. 
 
-:meth:`add_arg()` takes the names of the Datavyu [codes] to be added
-as its parameters. In this example, we'll add a [code]
-called *unit* to the "trial" Datavyu variable from :download:`the sample
+:meth:`add_arg()` takes the names of the Datavyu codes you are adding
+as its parameters. This example adds a code
+called *unit* to the "trial" Datavyu column in :download:`the sample
 data </resources/Example-Template.opf>`. The *unit* argument might
-represent the unit of measure used during an experiment, for instance.
+represent the unit of measure used during an experiment.
 
 #. Start by setting up the script, and assigning the Datavyu column
    "trial" to a variable called ``trial`` using :meth:`getVariable`:
@@ -29,7 +29,7 @@ represent the unit of measure used during an experiment, for instance.
          # to a new variable
          trial = getVariable("trial")
 
-#. Add a [code] to ``trial`` using :meth:`add_arg`.
+#. Add the *unit* code to ``trial`` using :meth:`add_arg`.
    
    .. code-block:: ruby
       
@@ -53,20 +53,5 @@ represent the unit of measure used during an experiment, for instance.
          # Write the changes back to the Datavyu database
          setVariable(trial)
       end
-
-.. Put together, the script should resemble the following:
-
-.. .. code-block:: ruby
-
-..   require 'Datavyu_API.rb'
-     begin
-      # Assign the Datavyu variable "trial" data to a new Ruby variable
-      # called trial.
-      trial = getVariable("trial")
-      # Add "unit" argument        
-      trial.add_arg("unit")
-      # Now we have to write back our changes
-      setVariable(trial)
-     end
 
 .. end-content

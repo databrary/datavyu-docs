@@ -18,10 +18,10 @@ column`, which the second coder will use to record their observations,
 and then compare the reliability column against the original coder's
 observations.
 
-Make a Reliability Variable
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Make a Reliability Column
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In general, when creating reliability variables, you create
+In general, when creating reliability columns, you create
 blank cells that correspond to the cells created during the first coding
 pass. This ensures that the two coders will have observed the same
 events in the data stream, and allows you to compare the two coding
@@ -48,17 +48,17 @@ parameters:
    you use to check reliability, requires that each pair of cells have a
    unique identifier that it can use to link them together. For example,
    a trial number coded into each cell would match corresponding cells,
-   even if only a subset of cells was included in the reliability
+   even if only a subset of cells were included in the reliability
    variable.
 
    In order to avoid issues, you should endeavor to import an
-   appropriate [code] when you create your reliability column with
+   appropriate code when you create your reliability column with
    :meth:`makeReliability`.
 
-The following example uses the :download:`example data
-</resources/Example-Template.opf>` sample data to create a new
+The following example uses the :download:`sample data
+</resources/Example-Template.opf>` to create a new
 reliability column called "rel.trial" from its "trial" column, skipping
-every other cell, and copying over the "onset" and "trialnum" [codes]
+every other cell, and copying over the *onset* and *trialnum* codes
 so that the reliability coder will not have to recode :term:`onset` and
 trial numbers.
 
@@ -102,16 +102,39 @@ optional one:
    to have some parameter that is unique to each pair of corresponding
    primary and reliability cells. 
 
-.. code-block:: ruby
 
-    require 'Datavyu_API.rb'
-    begin
-        # Compare the "trial" and "rel.trial" columns, using trialnumber as their matching code
-        # and dump the results to a file on the desktop.
+#. Create an object that holds the path that it should output to using
+   Ruby's `File.expand_path 
+   <http://www.ruby-doc.org/core-1.9.3/File.html#method-c-expand_path>`_ 
+   method, which converts a relative path,
+   like ``~/Desktop/file.txt`` to an absolute pathname, which contains
+   the root directory, and all subdirectories, like
+   ``/Users/alice/Desktop/file.txt``
 
-        dump_file = File.expand_path("~/Desktop/relcheck.txt")
-        checkReliability("trial", "rel.trial", "trialnum", dump_file)
-    end
+   The following commands create a variable called ``dump_file`` that
+   holds the absolute path to a file on the Desktop called
+   ``relcheck.txt``.
+
+   .. code-block:: ruby
+
+      require 'Datavyu_API.rb'
+      begin
+      
+         dump_file = File.expand_path("~/Desktop/relCheck.txt")
+
+#. Compare "trial" and "rel.trial" using :meth:`checkReliability` and
+   output the results to the ``dump_file``:
+
+   .. code-block:: ruby
+
+      require 'Datavyu_API.rb'
+      begin
+         dump_file = File.expand_path("~/Desktop/relcheck.txt")
+
+         # Compare the "trial" and "rel.trial" columns, using trialnumber as
+         #  their matching code and dump the results to a file on the desktop.
+         checkReliability("trial", "rel.trial", "trialnum", dump_file)
+      end
 
 .. end-content
 

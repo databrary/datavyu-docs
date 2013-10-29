@@ -49,15 +49,15 @@ with the :term:`onset` set to the correct trial start time.
       If you wanted to do something ten times, your loop could read
       ``for i in 0..9`` or ``for i in 1..10``, or ``for i in 99..108``.
 
-      In our case, we're going to using the value of ``i`` to set the
+      In this case, you will use the value of ``i`` to set the
       :term:`onset` time of each cell, so having it start at 0 and go to
       4 makes sense.
    
-   We need to loop 5 times from 0 to 4, calculating the :term:`onset` time to
+   Loop 5 times from 0 to 4, calculating the :term:`onset` time to
    set for each new cell. 
    
    a. Since Datavyu API uses times in milliseconds,
-      we need to convert ``i`` (our minute marker) to milliseconds:
+      convert ``i`` (the minute marker) to milliseconds:
 
       .. code-block:: ruby
    
@@ -66,11 +66,11 @@ with the :term:`onset` set to the correct trial start time.
             trial = getVariable("trial")
 
             for i in 0..4
-               # Calculate the onset time that we want to set in milliseconds
+               # Calculate the onset time in milliseconds
                time = i * 1000 * 60
 
-   #. Then, create the new cell using :meth:`make_new_cell()`
-      and store the cell as a Ruby variable called ``cell``:
+   #. Then, create the new cell using :meth:`make_new_cell()` and
+      store the cell as a Ruby object called ``cell``:
 
       .. code-block:: ruby
    
