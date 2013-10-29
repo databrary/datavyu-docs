@@ -11,7 +11,7 @@
 {% set body_width = '80%' %}
 {% set sidebar_width = '20%' %}
 {% set font_family = 'georgia, serif' %}
-{% set header_font_family = 'crimson text, ' ~ font_family %}
+{% set header_font_family = 'Helvetica, Verdana, sans-serif' %}
 
 @import url("basic.css");
 
@@ -147,13 +147,13 @@ div.sphinxsidebar form.search input[name="q"] {
 /* -- body styles ----------------------------------------------------------- */
 
 a {
-    color: #aa0000;
-    text-decoration: underline;
+    color: #C8619D;
+    /* text-decoration: underline; */
 }
 
 a:hover {
-    color: #dd0000;
-    text-decoration: underline;
+    color: #7E2C5C;
+    /* text-decoration: underline; */
 }
 
 div.body h1,
@@ -166,13 +166,13 @@ div.body h6 {
     font-weight: normal;
     /* margin: 10px 0px 10px 0px; */
     margin: 0;
-    line-height: .9em;
-    /* padding: 0 0 0 5px; */
+    line-height: 1.2em;
+    padding: 0 0 0 5px;
     color: black;
 }
 
-div.body h1 { font-size: 3em; text-align: center;}
-div.body h2 { font-size: 2.5em; }
+div.body h1 { font-size: 3em; text-align: center; border-bottom: 1px solid #A39C96;}
+div.body h2 { font-size: 2.5em; color: #38A938; }
 div.body h3 { font-size: 2em; }
 div.body h4 { font-size: 1.5em; }
 div.body h5 { font-size: 1.25em; }
@@ -396,11 +396,12 @@ tt.xref, a tt {
 
 a.reference {
     text-decoration: none;
-    border-bottom: 1px dotted #bb0000;
+    /* border-bottom: 1px dotted #bb0000; */
 }
 
 a.reference:hover {
-    border-bottom: 1px solid #dd0000;
+    /* border-bottom: 1px solid #dd0000; */
+    text-decoration: underline;
 }
 
 a.footnote-reference {
@@ -411,7 +412,7 @@ a.footnote-reference {
 }
 
 a.footnote-reference:hover {
-    border-bottom: 1px solid #dd0000;
+    /* border-bottom: 1px solid #dd0000; */
 }
 
 a:hover tt {
