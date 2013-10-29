@@ -18,8 +18,8 @@ Core Operations
 .. toctree::
    :maxdepth: 1
    
-   /guide/tutorial/add-an-observation
    /guide/tutorial/add-a-column
+   /guide/tutorial/add-an-observation
    /guide/tutorial/configure-datavyu-columns
    /guide/tutorial/export-data
    /guide/tutorial/use-scripts-to-automate-tasks
