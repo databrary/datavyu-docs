@@ -30,17 +30,24 @@ the :term:`onset` and :term:`offset` times of events into
 the spreadsheet. Coders can also jump to the relevant time in the data source by
 selecting a cell in the spreadsheet.
 
-.. _column-types:
+.. _columns:
 
-columns
----------
+Columns
+-------
 
 Datavyu supports three types of columns: *text*, *nominal*, and
 *matrix*. Using combinations of these column types, you can [do stuff].
-Each column that a user adds occupies its own column in the spreadsheet.
+Each column that a user adds occupies its own column in the
+spreadsheet.
 
-Text Columns
+.. _column-types:
+.. _variable-types:
+
+Column Types
 ~~~~~~~~~~~~
+
+Text Column
+```````````
 
 The *text column* is the more straightforward column type, being a
 simple text field. Text columns are ideal for storing (information),
@@ -51,7 +58,7 @@ Here's a sample observation for a text column:
 .. TODO: example of a typical text column observation
 
 Nominal Columns
-~~~~~~~~~~~~~~~
+```````````````
 
 .. next sentence stolen from wikipedia
 
@@ -64,7 +71,7 @@ A typical nominal column might resemble the following:
 .. TODO: example of a typical nominal column
 
 Matrix Columns
-~~~~~~~~~~~~~~
+``````````````
 
 Matrix columns are key - value pairs, represented in the
 following form: ::
@@ -83,9 +90,40 @@ have as many as desired. See: the :doc:`column configuration
 </guide/tutorial/configure-datavyu-columns>` tutorial provides
 instructions for configuring matrix columns.
 
+.. _hide-show-columns:
+
+Hide and Show Columns
+~~~~~~~~~~~~~~~~~~~~~
+
+To hide a column, select the column by clicking on its name. Selected
+column will have a blue background. You can select multiple columns by
+Cmd-clicking (on Mac) or Ctrl-clicking (on Windows). Then, in the
+:guilabel:`Spreadsheet` menu, select :guilabel:`Hide Selected
+Columns`.
+
+To show a column, select :guilabel:`Spreadsheet`, and then choose
+:guilabel:`Show All Columns`.
+
+You can also control a column's visibility form the :guilabel:`Column
+List`, which you access from the :guilabel:`Spreadsheet` menu. The
+:guilabel:`Column List` lists all the columns in a spreadsheet, and
+includes a check box which you can use to toggle its visiblity.
+
+.. _rearrange-columns:
+
+Rearrange Columns
+~~~~~~~~~~~~~~~~~
+
+To rearrange columns within the Spreadsheet, simply click the column's
+name and drag it to the desired location.
+
+
 .. TODO: is there a limit on the number of arguments?
 
 .. TODO: Sample matrix column arrangement.
+
+
+
 
 .. Spreadsheet Interpretation
    --------------------------
