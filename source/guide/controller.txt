@@ -51,7 +51,8 @@ Playback Controls
 
 - :guilabel:`jog left` (``1``): moves the playhead back one frame. If the
   :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
-  in one second increments.
+  in one second increments. Holding down :guilabel:`jog left` plays
+  backward slowly.
 
 - :guilabel:`play/pause` (``2``): pauses playback. Pressing
   :guilabel:`play/pause` again resumes playback. :guilabel:`play/pause`
@@ -59,7 +60,8 @@ Playback Controls
 
 - :guilabel:`jog right` (``3``): moves the playhead forward one frame. If the
   :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
-  in one second increments.
+  in one second increments. Holding down :guilabel:`jog right` plays
+  forward slowly.
 
 - :guilabel:`shuttle left` (``4``): rewinds, initially at 1/32 of playback speed.
   Repeatedly pressing the :guilabel:`shuttle left` key increases the rewind
@@ -86,41 +88,46 @@ Coding Controls
   observation / cell.
 
 - :guilabel:`point cell` (``*``): creates a new cell whose :term:`onset` and
-  :term:`offset` values are the playhead's current position
+  :term:`offset` values are the playhead's current position.
 
 - :guilabel:`set cell offset` (``/`` and ``.``): sets the :term:`offset` for the
-  current observation / cell
+  current observation / cell.
 
-- :guilabel:`find `(``+``): moves the playhead to the :term:`onset` time of the the
+- :guilabel:`find` (``+``): moves the playhead to the :term:`onset` time of the the
   time that is shown in the box to the right of the :guilabel:`find`
   button. By default, this is the :term:`onset` time for the
   currently-selected cell. You can change the time by selecting that box
   and editing the value.
 
-- :guilabel:`go back` (``-``): moves the playhead to the time shown in the box
-  to the left of the :guilabel:`go back` button. You can change the 
-  time by selecting that box and editing the value.
+- :guilabel:`go back` (``-``): moves the playhead back by the amount
+  of time set in the box to the right of the :guilabel:`go back`
+  button. You can change the increment by selecting that box and editing
+  the value.
 
-- :guilabel:`create new cell and set onset` (``0``): creates a new cell and sets its
-  :term:`onset` to the playhead's current position.
+- :guilabel:`create new cell and set previous onset` (``0``): creates a new
+  cell and sets its :term:`onset` to the playhead's current
+  time. If the previous cell does not have a :term:`offset`,
+  adding a new cell with this key sets the previous cell's
+  :term:`offset` to the current playhead time, minus 1ms.
 
-- :guilabel:`create new cell` (``Enter``): creates a new cell (and sets its onset...)
+- :guilabel:`create new cell` (``Enter``): creates a new cell and sets
+  its :term:`onset` to the playhead's current time.
 
-Timeslider
-----------
-
+Tracks
+------
 .. TODO: explain what regions are and how they work once you understand
 
-The :guilabel:`Timeslider` denotes data source playback stuff. You can
-control the scale of the :guilabel:`Timeslider` using the slider bar in
-the top right. Moving it to the right shows a smaller scale, [words].
-The red :term:`playhead` shows the current playback position.
+The :guilabel:`Tracks` area of the Data Viewer controller denotes data
+source playback stuff. You can control the scale
+using the slider bar in the top right. Moving
+it to the right shows a smaller scale, [words].  The red
+:term:`playhead` shows the current playback position.
 
 You can choose to focus on a single region by moving the green bracketing
 dividers. Datavyu will start playback from the leftmost bracket's position,
 and stop at the rightmost bracket.
 
-The :guilabel:`Timeslider` component of the Data Viewer Controller also
+The :guilabel:`Tracks` area of the Data Viewer Controller also
 includes five buttons:
 
 - :guilabel:`Lock All`: [use is currently unclear]
@@ -129,11 +136,25 @@ includes five buttons:
 
 - :guilabel:`Snap Region`: sets the :term:`region` to the length of the selected
   cell: the left bracket is placed at the cell's :term:`onset`, and the
-  right bracket at the cell's :term:`offset`.
+  right bracket at the cell's :term:`offset`. You can also use the
+  ``ctrl +`` keyboard shortcut to snap the region.
 
-- :guilabel:`Clear Region`: removes the region delineators.
+- :guilabel:`Clear Region`: removes the region delineators. You can
+  also use the ``ctrl -`` keyboard shortcut to clear the region.
 
 - :guilabel:`magnifying glass` icon: [use currently unclear]
+
+Extra Keyboard Shortcuts
+------------------------
+
+Datavyu includes a number of additional keyboard shortcuts to help you
+quickly and efficiently code your data sources:
+
+- ``shift`` :guilabel:`find` (``+``): jumps to the cell
+  :term:`offset`. 
+
+- ``cmd T`` toggles temporal ordering.
+
 
 .. seealso::
 
