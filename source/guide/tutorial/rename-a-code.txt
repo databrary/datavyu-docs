@@ -1,11 +1,11 @@
-.. _rename-a-column:
+.. _rename-a-code:
 
-===============
-Rename a Column
-===============
+=============
+Rename a Code
+=============
 
-Datavyu provides four different ways to rename a column using the
-Datvyu user interface.
+Datavyu provides the :guilabel:`Vocab Editor` to manage columns'
+codes. 
 
 Rename Directly from the Spreadsheet
 ------------------------------------
@@ -39,9 +39,8 @@ menu.
 Rename From the Column List
 ---------------------------
 
-Using the :guilabel:`Column List` is another way you can change a
-column's name. The :guilabel:`Column List` also has the advantage of
-enabling you to change multiple column names in one place.
+Finally, you can change a column's name directly in the
+:guilabel:`Column List`.
 
 #. Open the Datavyu spreadsheet.
 
@@ -50,24 +49,6 @@ enabling you to change multiple column names in one place.
 
 #. Double click on the name of the column whose name you want to
    change, type in a new column name, and press Enter.
-
-Rename Matrix Columns Using Vocab Editor
-----------------------------------------
-
-Datavyu's :guilabel:`Vocab Editor` is primarily used for configuring
-:term:`matrix columns' <matrix column>` :term:`codes`, but you
-can also edit your columns' names. You cannot use the :guilabel:`Vocab
-Editor` to edit :term:`text column` or :term:`nominal column` names
-because they are not listed in the :guilabel:`Vocab Editor`.
-
-#. Open the Datavyu spreadsheet.
-
-#. Open the :guilabel:`Spreadsheet` menu, and then select
-   :guilabel:`Vocab Editor`.
-
-#. Double click on the name of the column whose name you want to
-   change, and type a new column name. The spreadsheet will update
-   automatically.
 
 .. seealso:: 
 
