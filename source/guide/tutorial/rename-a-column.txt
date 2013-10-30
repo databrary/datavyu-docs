@@ -1,0 +1,59 @@
+.. _rename-a-column:
+
+===============
+Rename a Column
+===============
+
+Datavyu provides two different ways to rename a column using the
+Datvyu user interface.
+
+Rename Directly from the Spreadsheet
+------------------------------------
+
+#. Open the Datavyu spreadsheet.
+
+#. Double click on the column name. The :guilabel:`New variable name`
+   window will open.
+
+#. Input the new name for the column, and press Enter or click on
+   :guilabel:`OK`.
+
+Rename Using the Spreadsheet Menu
+---------------------------------
+
+You can also change a column's name from the :guilabel:`Spreadsheet`
+menu.
+
+#. Open the Datavyu spreadsheet.
+
+#. Select the variable whose name you wish to change. Selected
+   variables have a blue background.
+
+#. Select the :guilabel:`Spreadsheet` menu, and then :guilabel:`Change
+   Variable Name`.The :guilabel:`New variable name`
+   window will open.
+
+#. Input the new name for the column, and press Enter or click on
+   :guilabel:`OK`.
+
+Rename From the Column List
+---------------------------
+
+Finally, you can change a column's name directly in the
+:guilabel:`Column List`.
+
+#. Open the Datavyu spreadsheet.
+
+#. Open the :guilabel:`Spreadsheet` menu, and then select
+   :guilabel:`Column List`.
+
+#. Double click on the name of the column whose name you want to
+   change, type in a new column name, and press Enter.
+
+.. seealso:: 
+
+   - :ref:`columns`
+
+   - :doc:`/guide/tutorial/add-a-column`
+
+   - :doc:`/guide/tutorial/delete-a-column`
