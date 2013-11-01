@@ -99,9 +99,9 @@
         <h1><a href="http://databrary.org/about/#project" title="About the Databrary Project"><span>THE </span>DATABRARY<span> PROJECT</span></a></h1>
 
         <nav>
-            <a href="http://databrary.org" title="Databrary"><img src="/_static/databrary-nav.png" alt="Databrary"><span>Databrary</span></a>
-            <a href="http://datavyu.org" title="Datavyu"><img src="/_static/datavyu-nav.png" alt="Datavyu"><span>Datavyu</span></a>
-            <a href="http://labnanny.org" title="Labnanny"><img src="/_static/labnanny-nav.png" alt="Labnanny"><span>Labnanny</span></a>
+            <a href="http://databrary.org" title="Databrary"><img src="{{ pathto('_static/databrary-nav.png', 1) }}" alt="Databrary"><span>Databrary</span></a>
+            <a href="http://datavyu.org" title="Datavyu"><img src="{{ pathto('_static/datavyu-nav.png', 1) }}" alt="Datavyu"><span>Datavyu</span></a>
+            <a href="http://labnanny.org" title="Labnanny"><img src="{{ pathto('_static/labnanny-nav.png', 1) }}" alt="Labnanny"><span>Labnanny</span></a>
         </nav>
     </div>
 </section>
@@ -114,19 +114,19 @@
             <!--#set var="$title" value="current" -->
             <ul>
                 <li class='<!--#echo var="Software Guide" -->'>
-                    <a href="guide.html" title="Features">SOFTWARE GUIDE</a>
+                    <a href="{{ pathto('guide') }}" title="Features">SOFTWARE GUIDE</a>
                 </li>
 
                 <li class='<!--#echo var="API Documentation" -->'>
-                    <a href="api.html" title="Download">API DOCUMENTATION</a>
+                    <a href="{{ pathto('api') }}" title="Download">API DOCUMENTATION</a>
                 </li>
 
                 <li class='<!--#echo var="Best Practices" -->'>
-                    <a href="best-practices.html" title="Support">BEST PRACTICES</a>
+                    <a href="{{ pathto('best-practices') }}" title="Support">BEST PRACTICES</a>
                 </li>
 
                 <li class='<!--#echo var="FAQ" -->'>
-                    <a href="FAQ.html" title="Development on Github.com">FAQ</a>
+                    <a href="{{ pathto('FAQ') }}" title="Development on Github.com">FAQ</a>
                 </li>
 
                 <li class='<!--#echo var="Datavyu.org" -->'>
