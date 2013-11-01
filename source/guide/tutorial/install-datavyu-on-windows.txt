@@ -32,5 +32,10 @@ Install Datavyu
    <http://download.videolan.org/pub/videolan/vlc/2.0.1/win32/vlc-2.0.1-win32.exe>`_,
    as Datavyu does not currently support later versions.
 
+Keep Datavyu Up-to-Date
+-----------------------
+
+.. include:: /includes/update-datavyu.rst
+
 Now that you have installed Datavyu and a video plugin, you can move on
 to Datavyu's :doc:`Getting Started Guide </guide/getting-started>`.
