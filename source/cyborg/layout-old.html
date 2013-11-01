@@ -91,60 +91,13 @@
 {%- block extrahead %} {% endblock %}
   </head>
   <body>
-
-{%- block header %}
-
-<section id="bar">
-    <div class="wrapper">
-        <h1><a href="http://databrary.org/about/#project" title="About the Databrary Project"><span>THE </span>DATABRARY<span> PROJECT</span></a></h1>
-
-        <nav>
-            <a href="http://databrary.org" title="Databrary"><img src="/_static/databrary-nav.png" alt="Databrary"><span>Databrary</span></a>
-            <a href="http://datavyu.org" title="Datavyu"><img src="/_static/datavyu-nav.png" alt="Datavyu"><span>Datavyu</span></a>
-            <a href="http://labnanny.org" title="Labnanny"><img src="/_static/labnanny-nav.png" alt="Labnanny"><span>Labnanny</span></a>
-        </nav>
-    </div>
-</section>
-
-<header id="header">
-    <div class="wrapper">
-        <h1><a href="/" title="Datavyu: A Video Coding Tool"><img id="logo" src="/img/logo/datavyu.png" alt="Datavyu"></a></h1>
-
-        <nav>
-            <!--#set var="$title" value="current" -->
-            <ul>
-                <li class='<!--#echo var="Software Guide" -->'>
-                    <a href="guide.html" title="Features">SOFTWARE GUIDE</a>
-                </li>
-
-                <li class='<!--#echo var="API Documentation" -->'>
-                    <a href="api.html" title="Download">API DOCUMENTATION</a>
-                </li>
-
-                <li class='<!--#echo var="Best Practices" -->'>
-                    <a href="best-practices.html" title="Support">BEST PRACTICES</a>
-                </li>
-
-                <li class='<!--#echo var="FAQ" -->'>
-                    <a href="FAQ.html" title="Development on Github.com">FAQ</a>
-                </li>
-
-                <li class='<!--#echo var="Datavyu.org" -->'>
-                    <a href="http://datavyu.org/" title="The Datavyu Website">DATAVYU.ORG</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-{% endblock %}
+{%- block header %}{% endblock %}
 
 {%- block content %}
   {%- block sidebar1 %}{% endblock %}
     <div class="document">
       {%- block document %}
-        <main id="main">   
-        <div class="documentwrapper">
+         <div class="documentwrapper">
           {%- if render_sidebar %}<div class="bodywrapper">{%- endif %}
           <div class="body">
             {% block body %} {% endblock %}
