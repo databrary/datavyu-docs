@@ -1,0 +1,15 @@
+.. _delete-cell:
+
+=============
+Delete a Cell
+=============
+
+To delete a cell,
+
+#. Open the Datavyu spreadsheet.
+
+#. Select the cell you wish to delete. The cell will be outlined in
+   blue when selected.
+
+#. Open the :guilabel:`Spreadsheet` menu, and select :guilabel:`Delete
+   Column`.

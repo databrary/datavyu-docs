@@ -1,0 +1,15 @@
+.. _delete-column:
+
+===============
+Delete a Column
+===============
+
+To delete a column,
+
+#. Open the Datavyu spreadsheet.
+
+#. Select the column you wish to delete. The background will turn blue
+   when selected.
+
+#. Open the :guilabel:`Spreadsheet` menu, and select :guilabel:`Delete
+   Column`.

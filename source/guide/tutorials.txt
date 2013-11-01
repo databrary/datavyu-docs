@@ -20,10 +20,10 @@ Core Operations
    
    /guide/tutorial/add-a-column
    /guide/tutorial/rename-a-column
-   /guide/tutorial/delete-a-column
+   /guide/tutorial/delete-column
    /guide/tutorial/add-an-observation
    /guide/tutorial/rename-a-code
-   /guide/tutorial/delete-a-cell
+   /guide/tutorial/delete-cell
    /guide/tutorial/configure-datavyu-columns
    /guide/tutorial/export-data
    /guide/tutorial/use-scripts-to-automate-tasks
