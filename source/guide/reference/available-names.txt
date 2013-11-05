@@ -1,0 +1,10 @@
+=============
+Naming Limits
+=============
+
+Datavyu restricts certain names, making them unavailable for use as
+column or code names. The following names cannot be used as a column
+or code name:
+
+- [words]
+

@@ -6,6 +6,7 @@ Datavyu Reference
    :titlesonly:
    
    /guide/reference/glossary
+   /guide/reference/available-names
 
 .. /reference/limits
    /reference/file-formats

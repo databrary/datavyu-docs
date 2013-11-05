@@ -2,22 +2,15 @@
 Datavyu Lessons
 ===============
 
-First Steps
------------
-
-.. toctree::
-   :maxdepth: 1
-
-   /guide/tutorial/open-data-source-or-convert-file-format   
+Datavyu Lessons provide comprehensive guidance for common tasks you
+might wish to perform, but be unsure of how to accomplish.
 
 .. _guide-core-tutorials:
-   
-Core Operations
----------------
 
 .. toctree::
    :maxdepth: 1
-   
+
+   /guide/tutorial/open-data-source-or-convert-file-format      
    /guide/tutorial/add-a-column
    /guide/tutorial/rename-a-column
    /guide/tutorial/delete-column
