@@ -2,11 +2,99 @@
 Installation Tutorials
 ======================
 
-Datavyu is a Java-based application that works on Windows, Mac OS, and
-Linux platforms. [words]
+.. contents::
+   :depth: 3
 
-.. toctree::
-   :maxdepth: 1
+Datavyu is a Java-based application, which is easy to install on Mac OS
+X. The following sections describe Datavyu's system requirements and
+then the installation process itself.
+
+Requirements
+------------
+
+Hardware Requirements
+~~~~~~~~~~~~~~~~~~~~~
+
+These hardware requirements are the minimum needed for Datavyu: more RAM
+or a faster processor will improve Datavyu's performance, especially when
+working with higher-resolution data sources.
+
+- 1GB of RAM.
+- 1.2 GHz processor.
+
+You will also need enough disk space for the videos that you will be
+working with, and a keypad, either as part of your keyboard, or as an
+external device.
+
+Software Requirements
+~~~~~~~~~~~~~~~~~~~~~
+
+Datavyu is a Java-based application, and requires Java 1.6 or
+higher. Many operating systems include Java by default, but if you
+have *not* installed Java, you will need to do so.
+
+If you are using a Mac that does not
+yet have Java installed, OS X will prompt you to install a Java IDE
+when you first try to open Datavyu.
+
+On a Windows-based computer, [words].
+
+Install Datavyu
+---------------
+
+Mac OS X
+~~~~~~~~
+
+#. Download the latest Datavyu release for Mac OS X from the Datavyu
+   website's `Downloads Page <http://datavyu.org/download/>`_.
+
+#. If your computer has not already done so, unzip the archive file
+   (e.g. using Archive Utility). This will provide you with a folder
+   containing the Datavyu software and associated support documents. You
+   can drag this to your Applications folder, or some other
+   easily-remembered location.
+
+You're now ready to start using Datavyu! Out of the box, Datavyu
+supports the Quicktime plugin for video playback. You may alternately
+choose to use VLC for video playback, though this is not recommended. If
+you wish to use VLC, you *must* use `version 2.0.1
+<http://download.videolan.org/pub/videolan/vlc/2.0.1/macosx/vlc-2.0.1.dmg>`_,
+as Datavyu does not currently support later versions.
+
+Windows 
+~~~~~~~
+
+#. Download the latest Datavyu release for Windows from the Datavyu
+   website's `Downloads Page <http://datavyu.org/download/>`_.
+
+#. [windows-specific installation instructions here once I figure out
+   what they are]
+
+#. Install a video plugin. At present, Datavyu for Windows does not
+   include any video plugins. To use Datavyu, you **must** download
+   Quicktime for Windows. If you already use Apple's iTunes, you
+   likely already have Quicktime for Windows. Otherwise, you may
+   download Quicktime for Windows from `Apple's website
+   <http://www.apple.com/quicktime/download/>`_.
    
-   /guide/tutorial/install-datavyu-on-os-x
-   /guide/tutorial/install-datavyu-on-windows
+   You can also use VLC for video playback. If you wish to use
+   VLC, you must use `version 2.0.1
+   <http://download.videolan.org/pub/videolan/vlc/2.0.1/win32/vlc-2.0.1-win32.exe>`_,
+   as Datavyu does not currently support later versions.
+
+Keep Datavyu Up-to-Date
+-----------------------
+
+Every time you start Datavyu while connected to the Internet, it
+checks to see if your version is the latest available. When a new
+version is released, Datavyu will prompt you to download the latest
+version.
+
+You can also check if your Datavyu version is up to date by opening
+the :guilabel:`Help` menu, and then selecting :guilabel`Check for
+updates...`.  If a new version is available, it will direct you to the
+download page to download the latest release.
+
+
+Now that you have installed Datavyu, you can move on to Datavyu's
+:doc:`Getting Started Guide </guide/getting-started>`.

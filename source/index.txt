@@ -7,7 +7,28 @@
 Welcome to Datavyu's documentation!
 ===================================
 
-Contents:
+.. image:: /img/datavyu-screenshot-900px.png
+   :align: center
+
+Datavyu is a complete software package for visualizing and collecting
+behavioral observations from audio and video data sources. Designed
+by - and for - behavioral scientists, Datavyu facilitates data
+collection and sharing through the ongoing `Databrary <databrary.org>`
+data library project.
+
+To see some of what Datayu can do, check out :doc:`Datavyu in a
+Nutshell <>` which illustrates the many possibilities Datavyu offers
+to researchers working with audio and video data sources.
+
+In addition to the powerful software package, Datavyu provides a
+Ruby-based API to help you automate common tasks and ensure accuracy
+during data collection by writing scripts. The API greatly enhances
+the Datavyu experience, and is well worth the effort of learning some
+programming fundamentals.
+
+When you are ready to start using Datavyu, the following chapters
+outline everything you need to know to become an expert Datavyu user,
+from first principles to advanced strategies.
 
 .. toctree::
    :maxdepth: 1

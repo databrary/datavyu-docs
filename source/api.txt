@@ -1,6 +1,6 @@
-================
-Datavyu Ruby API
-================
+========
+Ruby API
+========
 
 The Datavyu scripting API provides a scriptable interface to Datavyu's
 database, allowing you to manipulate your data, print in any format

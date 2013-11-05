@@ -1,6 +1,6 @@
-======================
-Datavyu Software Guide
-======================
+==============
+Software Guide
+==============
 
 Datavyu is a Java-based application that runs on Windows, Mac, and Linux
 operating systems. Its primary goal is to link behavioral researchers

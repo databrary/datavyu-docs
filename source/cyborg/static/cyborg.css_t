@@ -250,6 +250,13 @@ div.admonition-programming-101.admonition div.highlight{
     background: #fbfae2;
 }
 
+#contents {
+    max-width: 30%; 
+    float: right; 
+    padding: 0 0.5em 0.5em; 
+    margin-left: 1em; }
+}
+
 /* fin */
 
 div.highlight {
