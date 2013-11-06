@@ -51,14 +51,13 @@ Spreadsheet
 The :guilabel:`Datavyu spreadsheet` is where users record
 :term:`observations <observation>` from the data source.
 
-.. figure:: /img/blank-spreadsheet.png
-   :alt: Image of a Datavyu blank spreadsheet with no observations recorded
+.. figure:: /img/spreadsheet.png
+   :alt: Image of a filled-out Datavyu spreadsheet
    :align: center
    
-   A blank Datavyu spreadsheet. Note the :guilabel:`plus` icon in the
-   top left, which you can use to add new :term:`columns <column>`.
-
-.. TODO: rewrite this dreadful paragraph
+   This spredsheet has six columns: "MomSpeech", "InfantSpeech",
+   "MomObject", "BabyObject", "Notes", and "BabyLocation". Each column
+   has numerous coded cells.
 
 The spreadsheet is the core of Datavyu. By :ref:`configuring columns
 <configure-columns>`, coders can record observations and link them

@@ -17,12 +17,14 @@ columns shows what was happening at a given point in time in the data
 source. Looking vertically down a column shows the sequence in which
 that column type occurred.
 
-.. figure:: /img/blank-spreadsheet.png
+.. figure:: /img/spreadsheet.png
    :alt: Image of a typical Datavyu spreadsheet with n study columns
    :align: center
    
-   A typical Datavyu spreadsheet. Note the :guilabel:`plus` icon in the
-   top left, which you use to add new :term:`columns <column>`.
+   A typical Datavyu spreadsheet. The "BabyLocation" column is
+   currently selected, as indicated by the blue background in the
+   header row. Note the :guilabel:`plus` icon in the
+   top right, which you use to add new :term:`columns <column>`.
 
 Datavyu automatically links the times coded in the spreadsheet to the
 current time in the data source. This allows coders to record
@@ -116,6 +118,16 @@ Rearrange Columns
 
 To rearrange columns within the Spreadsheet, simply click the column's
 name and drag it to the desired location.
+
+Cells
+-----
+
+Cells are at the core of Datavyu: each cell represents an observation
+recorded by the coder. 
+
+.. image:: /img/cell-zoomin.svg
+   :align: center
+   :alt: Zoomed-in view of a Datavyu cell, labeling its codes, onset, and offset.
 
 
 .. TODO: is there a limit on the number of arguments?
