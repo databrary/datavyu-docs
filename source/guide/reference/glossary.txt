@@ -32,12 +32,6 @@ Glossary
    spreadsheet
       [definition] see: :doc:`/guide/spreadsheet`
 
-   code
-      To record observations about the data source.
-
-   coder
-      The human recording observations about the data source.
-
    playhead
       The playhead indicates the current point of playback in the
       :term:`timeslider` of the Data Viewer Controller.
@@ -47,14 +41,13 @@ Glossary
       Observations have an :term:`onset` and an :term:`offset`, and
       may be [types].
 
-   argument
-   [codes]
-      Datavyu arguments are column components that coders are observing.
-      Each Datavyu :term:`column` may have multiple arguments
+   code
+      Datavyu codes are column components that researchers are observing.
+      Each Datavyu :term:`column` may have multiple codes
       for which a coder will record observations. For instance, a
       column called "step", which refers to walking, might have
-      a "foot" argument that would differentiate between left or right
-      feet, and a "direction" argument that indicated if the person
+      a "foot" code that would differentiate between left or right
+      feet, and a "direction" code that indicated if the person
       was stepping forward or backward.
    
    Integer
@@ -98,8 +91,8 @@ Glossary
 
    matrix column
       Matrix columns are :term:`key-value pairs <key-value pair>` that
-      associate a column name with a variety of :term:`arguments
-      <argument>`. The argubments are themselves key-value pairs.
+      associate a column name with a variety of :term:`codes
+      <code>`. The argubments are themselves key-value pairs.
       Matrix columns allow researchers to record components of events
       or phenomena in one place.
 

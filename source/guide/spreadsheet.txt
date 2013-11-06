@@ -4,7 +4,7 @@ Spreadsheet Overview
 
 .. TODO: paragraph stolen from walkthrough.txt - you should make it not be.
 
-The Datavyu Spreadsheet is where :term:`coders <coder>` record
+The Datavyu Spreadsheet is where coders record
 :term:`observations <observation>`. The spreadsheet is the core of Datavyu. By
 :ref:`configuring columns <configure-columns>`, coders can record
 observations and link them directly to timestamps in the data source.
@@ -81,7 +81,7 @@ following form: ::
 Using the :ref:`Vocab Editor <vocab-editor>`, you can configure matrix
 columns to represent any number of observations.
 
-Matrix columns have :term:`arguments <argument>`, which represent the
+Matrix columns have :term:`codes <code>`, which represent the
 feature that is being studied. For instance, an argument could be "Left
 hand touch", or "Hesitation", or "Focus". When a coder codes the data
 source, he or she might record the presence or absence of these

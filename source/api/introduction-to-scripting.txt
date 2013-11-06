@@ -63,10 +63,10 @@ General Principles
 
 Each cell that you create with the Datavyu API has three required
 fields: ``onset``, ``offset``, and ``ordinal``. Each cell also takes at
-least one :term:`argument`. 
+least one :term:`code`. 
 
 ``onset``, ``offset``, and ``ordinal`` are all :term:`Integers
-<integer>`, while :term:`[codes]` are :term:`Strings <string>`.
+<integer>`, while :term:`codes <code>` are :term:`Strings <string>`.
 
 ``onset`` and ``offset`` are measured in **milliseconds from
 the beginning of the video (or other data stream)**, starting from 0.

@@ -55,7 +55,7 @@ Rename Matrix Columns Using Vocab Editor
 ----------------------------------------
 
 Datavyu's :guilabel:`Vocab Editor` is primarily used for configuring
-:term:`matrix columns' <matrix column>` :term:`codes`, but you
+:term:`matrix columns' <matrix column>` :term:`codes <code>`, but you
 can also edit your columns' names. You cannot use the :guilabel:`Vocab
 Editor` to edit :term:`text column` or :term:`nominal column` names
 because they are not listed in the :guilabel:`Vocab Editor`.
@@ -75,4 +75,4 @@ because they are not listed in the :guilabel:`Vocab Editor`.
 
    - :doc:`/guide/tutorial/add-a-column`
 
-   - :doc:`/guide/tutorial/delete-a-column`
+   - :doc:`/guide/tutorial/delete-column`

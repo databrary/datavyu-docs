@@ -20,7 +20,7 @@ Configure Columns with Datavyu's Vocab Editor
    
 Matrix columns are the most configurable Datavyu columns, and the most
 useful for multivariate analyses. Each cell of a matrix column is a
-collection of key-value pairs called :term:`arguments <argument>`. Each
+collection of key-value pairs called :term:`codes <code>`. Each
 argument (the key) has a value that the coder inputs while coding a data
 source.
 
