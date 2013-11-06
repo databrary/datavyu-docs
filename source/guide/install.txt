@@ -45,6 +45,10 @@ Install Datavyu
 Mac OS X
 ~~~~~~~~
 
+.. figure:: /img/install-mac.png
+   :align: right
+   :alt: Mac OS X unzip installation window
+
 #. Download the latest Datavyu release for Mac OS X from the Datavyu
    website's `Downloads Page <http://datavyu.org/download/>`_.
 
@@ -77,10 +81,10 @@ Windows
    download Quicktime for Windows from `Apple's website
    <http://www.apple.com/quicktime/download/>`_.
    
-   You can also use VLC for video playback. If you wish to use
-   VLC, you must use `version 2.0.1
-   <http://download.videolan.org/pub/videolan/vlc/2.0.1/win32/vlc-2.0.1-win32.exe>`_,
-   as Datavyu does not currently support later versions.
+You can also use VLC for video playback. If you wish to use VLC, you
+must use `version 2.0.1
+<http://download.videolan.org/pub/videolan/vlc/2.0.1/win32/vlc-2.0.1-win32.exe>`_,
+as Datavyu does not currently support later versions.
 
 Keep Datavyu Up-to-Date
 -----------------------

@@ -3,7 +3,7 @@ Datavyu Lessons
 ===============
 
 Datavyu Lessons provide comprehensive guidance for common tasks you
-might wish to perform, but be unsure of how to accomplish.
+might wish to perform.
 
 .. _guide-core-tutorials:
 
