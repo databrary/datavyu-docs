@@ -58,12 +58,14 @@ Mac OS X
    can drag this to your Applications folder, or some other
    easily-remembered location.
 
-You're now ready to start using Datavyu! Out of the box, Datavyu
+Out of the box, Datavyu
 supports the Quicktime plugin for video playback. You may alternately
 choose to use VLC for video playback, though this is not recommended. If
-you wish to use VLC, you *must* use `version 2.0.1
-<http://download.videolan.org/pub/videolan/vlc/2.0.1/macosx/vlc-2.0.1.dmg>`_,
+you wish to use VLC, you *must* use `version 2.0.1`_,
 as Datavyu does not currently support later versions.
+
+.. _version 2.0.1: http://download.videolan.org/pub/videolan/vlc/2.0.1/macosx/vlc-2.0.1.dmg
+
 
 Windows 
 ~~~~~~~
@@ -82,8 +84,7 @@ Windows
    <http://www.apple.com/quicktime/download/>`_.
    
 You can also use VLC for video playback. If you wish to use VLC, you
-must use `version 2.0.1
-<http://download.videolan.org/pub/videolan/vlc/2.0.1/win32/vlc-2.0.1-win32.exe>`_,
+must use `version 2.0.1`_,
 as Datavyu does not currently support later versions.
 
 Keep Datavyu Up-to-Date
@@ -95,7 +96,7 @@ version is released, Datavyu will prompt you to download the latest
 version.
 
 You can also check if your Datavyu version is up to date by opening
-the :guilabel:`Help` menu, and then selecting :guilabel`Check for
+the :guilabel:`Help` menu, and then selecting :guilabel:`Check for
 updates...`.  If a new version is available, it will direct you to the
 download page to download the latest release.
 
