@@ -9,13 +9,16 @@ The Datavyu Spreadsheet is where coders record
 :ref:`configuring columns <configure-columns>`, coders can record
 observations and link them directly to timestamps in the data source.
 
-Each user-defined column is represented by a column in the
-spreadsheet. Observations are presented by :term:`cells <cell>`, rectangles in
-within a column that contain the observation's data. Cells stack on top
-of each other in sequence. Looking horizontally across thecolumn
-columns shows what was happening at a given point in time in the data
-source. Looking vertically down a column shows the sequence in which
-that column type occurred.
+Each user-defined column has its own column in the
+spreadsheet. :term:`Cells <cell>` are column entries, boxes in the
+column, where coders record their observation data as :term:`codes
+<code>`. Cells stack on top of each other in sequence: looking
+vertically down a column shows the sequence of observations for that
+column. If you have enabled :ref:`temporal ordering
+<temporal-ordering>`, Datavyu displays cells based on their
+:term:`onset` and :term:`offset` times, allowing you to look
+horizontally across the columns to see what occured at that point in
+the data source.
 
 .. figure:: /img/spreadsheet.png
    :alt: Image of a typical Datavyu spreadsheet with n study columns
