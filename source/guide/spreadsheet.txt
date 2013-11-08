@@ -84,7 +84,8 @@ following form: ::
    <columnname>(<arg01:N>, <arg02:N>, ... , <argn:N>)
 
 Using the :ref:`Vocab Editor <vocab-editor>`, you can configure matrix
-columns to represent any number of observations.
+columns to represent any number of observations. They are the most
+commonly-used column type.
 
 Matrix columns have :term:`codes <code>`, which represent the
 feature that is being studied. For instance, an argument could be "Left
@@ -128,14 +129,27 @@ Cells
 Cells are at the core of Datavyu: each cell represents an observation
 recorded by the coder. 
 
+Datavyu requires that each cell have three codes, in addition to any
+user-specified codes:
+
+- :term:`onset`: the onset is the time in the video that the
+  observation begins. Since cells represent observations during a
+  period of time, they must have a starting point.
+
+- :term:`offset`: the offset is the time in the video that the
+  observation ends. Since cells represnt observations during a period
+  of time, they must have an end point.
+
+- :term:`ordinal`: the cell ordinal indicates the position of the cell
+  within the column. The first cell (the one with the earliest onset)
+  would be number 1, the second number 2, and so on.
+
+The following image indicates where each component is located within a
+Datavyu cell.
+
 .. image:: /img/cell-zoomin.svg
    :align: center
-   :alt: Zoomed-in view of a Datavyu cell, labeling its codes, onset, and offset.
-
-
-.. TODO: is there a limit on the number of arguments?
-
-.. TODO: Sample matrix column arrangement.
+   :alt: Zoomed-in view of a Datavyu cell, labeling its codes, onset, offset, and ordinal.
 
 
 

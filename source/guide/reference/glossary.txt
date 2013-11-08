@@ -130,3 +130,8 @@ Glossary
 
    class method
       [words]
+
+   ordinal
+      The position of a :term:`cell` within its :term:`column`. The
+      ordinal is indicated in the top left corner of each cell in
+      Datavyu.
