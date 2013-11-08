@@ -20,14 +20,13 @@ column. If you have enabled :ref:`temporal ordering
 horizontally across the columns to see what occured at that point in
 the data source.
 
-.. figure:: /img/spreadsheet.png
-   :alt: Image of a typical Datavyu spreadsheet with n study columns
+.. figure:: /img/spreadsheet-annotated.svg
+   :alt: Image of a Datavyu spreadsheet with 6 columns, and annotations labeling a column, cell, and codes within a cell
    :align: center
    
-   A typical Datavyu spreadsheet. The "BabyLocation" column is
-   currently selected, as indicated by the blue background in the
-   header row. Note the :guilabel:`plus` icon in the
-   top right, which you use to add new :term:`columns <column>`.
+   A typical Datavyu spreadsheet with six columns. Note the
+   :guilabel:`plus` icon in the top right, which you use to add new
+   :term:`columns <column>`.
 
 Datavyu automatically links the times coded in the spreadsheet to the
 current time in the data source. This allows coders to record
