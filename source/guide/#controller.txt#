@@ -164,7 +164,7 @@ quickly and efficiently code your data sources:
 - ``shift`` :guilabel:`find` (``+``): jumps to the cell
   :term:`offset`. 
 
-- ``cmd T`` toggles temporal ordering.
+- ``cmd T`` toggles :ref:`temporal-ordering`.
 
 
 .. seealso::
