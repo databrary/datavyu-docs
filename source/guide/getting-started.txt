@@ -12,7 +12,11 @@ manipulation.
 The Datavyu Interface
 ---------------------
 
-When you first open Datavyu, you will see two windows: the
+When you first open Datavyu, Datavyu will check if you have the latest
+version. If there has been a new release, Datavyu will prompt you to
+:ref:`update-datavyu` your version.
+
+When you are ready to start using Datavyu, you will see two windows: the
 :guilabel:`Data Viewer Controller`, and a blank spreadsheet. If you add
 a data source (e.g. an audio or video file, or a motion capture file), a
 third window containing the data source will appear.
