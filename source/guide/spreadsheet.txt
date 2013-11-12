@@ -122,6 +122,9 @@ Rearrange Columns
 To rearrange columns within the Spreadsheet, simply click the column's
 name and drag it to the desired location.
 
+.. _cells:
+.. _cell-explanation:
+
 Cells
 -----
 
@@ -143,21 +146,46 @@ user-specified codes:
   within the column. The first cell (the one with the earliest onset)
   would be number 1, the second number 2, and so on.
 
-The following image indicates where each component is located within a
-Datavyu cell.
+The following image labels each component within a Datavyu cell.
 
 .. image:: /img/cell-zoomin.svg
    :align: center
    :alt: Zoomed-in view of a Datavyu cell, labeling its codes, onset, offset, and ordinal.
 
+.. _temporal-ordering:
 
+Temporal Ordering
+-----------------
 
+Temporal ordering is an important concept in Datavyu. By default,
+temporal ordering is active: Datavyu groups cells based on their
+onsets and offsets, visually representing the period of time each cell
+occupies.
 
-.. Spreadsheet Interpretation
-   --------------------------
+Temporal ordering allows you to visualize what occurred at what time,
+and to compare event sequence between columns. When coding, you should
+ensure that temporal ordering is active.
 
-.. TODO: describe what the page looks like when coded & so on.
+.. figure:: /img/temporal-ordering-comparison.svg
+   :alt: comparison of two identical spreadsheets, one of which has temporal ordering active, and the other with temporal ordering disabled
+   :align: center
 
-.. seealso::
+   At left: a spreadsheet with temporal ordering enabled; at right:
+   the same spreadsheet with temporal ordering disabled. Note that the
+   cells contain the same information, it is just their presentation
+   that changes. Note also that enabling temporal ordering makes it
+   easier to understand the sequence of events between different columns.
 
-   - :doc:`/guide/tutorials`
+Weak and Strong Temporal Ordering
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Datavyu supports two types of temporal ordering: "weak" and
+"strong". [Explain the difference once you know it].
+
+Toggle Temporal Ordering
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can toggle temporal ordering using the ``cmd T`` keyboard
+shortcut, or by selecting :guilabel:`Weak Temporal Ordering` or
+:guilabel:`Strong Temporal Ordering` from the :guilabel:`Spreadsheet`
+menu.
