@@ -33,24 +33,25 @@ keystrokes.
 
 .. note:: 
 
-   The Data Viewer Controller maps playback controls to the keys of your
-   keypad. The names of the keys shown on the Data Viewer Controller
-   (e.g. ``clear``, ``*``, ``/`` as the top row) may not map directly to
-   the name or ordering of keys on your keypad. Some keypads may
-   have a ``Num Lock`` key rather than ``clear``, for instance; others
-   transpose the ``*`` and ``/`` keys. Play around with your keypad
-   and the Data Viewer Controller to verify the key bindings for your
-   keypad.
+   The Data Viewer Controller maps playback controls to the keys of
+   your keypad. Some keypads may change the ordering of certain keys:
+   the top row might be ``clear``, ``/``, ``*``, ``-``, rather than
+   ``clear``, ``*``, ``/``, for instance. Some keypads may have a
+   ``Num Lock`` key rather than ``clear``. Familiarize yourself with
+   both the Datavyu controls and your keypad to maximize coding
+   efficiency.
 
 .. _playback-controls:
 
 Playback Controls
 ~~~~~~~~~~~~~~~~~
 
-.. figure:: /img/keypad-playback-controls.svg
+.. figure:: /img/keypad-annotated.svg
    :align: right
+   :figwidth: 300px
 
-   The keys highlighted in brown are playback controls.
+   The keys highlighted in pink are :ref:`playback-controls`. The keys
+   highlighted in brown are :ref:`coding-controls`.
 
 - :guilabel:`jog left` (``1``): moves the playhead back one frame. If the
   :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
@@ -87,8 +88,8 @@ Playback Controls
 Coding Controls
 ~~~~~~~~~~~~~~~
 
-.. figure:: /img/keypad-coding-controls.svg
-   :align: right
+.. .. figure:: /img/keypad-coding-controls.svg
+..    :align: right
 
    The keys highlighted in brown are coding controls.
 
@@ -123,17 +124,22 @@ Coding Controls
 
 Tracks
 ------
-.. TODO: explain what regions are and how they work once you understand
 
-The :guilabel:`Tracks` area of the Data Viewer controller denotes data
-source playback stuff. You can control the scale using the slider bar
-in the top right: moving it to the right zooms in, allowing you to
-manipulate smaller time periods that would otherwise be feasible. You
-can also change the zoom level by clicking on the
-:guilabel:`magnifying glass` icon next to the slider bar. The red
-:term:`playhead` shows the current playback position.
+The :guilabel:`Tracks` area of the Data Viewer controller helps you
+visualize where you are within a data source's playback. You can
+control the scale using the slider bar in the top right: moving it to
+the right zooms in, allowing you to manipulate smaller time periods
+that would otherwise be feasible. You can also zoom in on a selected
+region by clicking on the :guilabel:`magnifying glass` icon next to
+the slider bar. The red :term:`playhead` shows the current playback
+position.
 
-You can choose to focus on a single region by moving the green bracketing
+.. figure:: /img/tracks-region-annotated.svg
+   :alt: annotated image of the data viewer controller's tracks region
+   :align: center
+
+
+You can choose to focus on a single region by moving the green region
 dividers. Datavyu will start playback from the leftmost bracket's position,
 and stop at the rightmost bracket.
 
@@ -158,13 +164,13 @@ includes five buttons:
 Extra Keyboard Shortcuts
 ------------------------
 
-Datavyu includes a number of additional keyboard shortcuts to help you
+Datavyu includes some additional keyboard shortcuts to help you
 quickly and efficiently code your data sources:
 
 - ``shift`` :guilabel:`find` (``+``): jumps to the cell
   :term:`offset`. 
 
-- ``cmd T`` toggles temporal ordering.
+- ``cmd T`` toggles :ref:`temporal-ordering`.
 
 
 .. seealso::
