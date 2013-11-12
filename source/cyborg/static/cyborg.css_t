@@ -382,7 +382,7 @@ ul, ol {
 }
 
 pre {
-    background: #efefef;
+    background: #eeffcc;
     padding: .5em 1em;
     margin: 1em 2em;
     line-height: 1.3em;
