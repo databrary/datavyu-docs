@@ -18,6 +18,17 @@ column`, which the second coder will use to record their observations,
 and then compare the reliability column against the original coder's
 observations.
 
+.. note:: 
+
+   While it may be tempting to have the reliability coder code the
+   data source in a new spreadsheet, you should endeavor to keep all
+   codes for a given data source in a single spreadsheet. This
+   facilitates analysis, and ensures that like data is keep
+   together. To prevent the reliability coder from seeing the original
+   coding pass, you can :ref:`hide the original coded column
+   <hide-show-columns>`. See [reference to best practices guide when
+   it exists] for more informatoin.
+
 Make a Reliability Column
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
