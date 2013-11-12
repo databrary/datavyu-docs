@@ -152,10 +152,30 @@ The following image labels each component within a Datavyu cell.
    :align: center
    :alt: Zoomed-in view of a Datavyu cell, labeling its codes, onset, offset, and ordinal.
 
+Spreadsheet Customization
+-------------------------
+
+Datavyu allows you to modify the spreadsheet to better suit your needs
+by including options that you can activate or deactivate, depending on
+your interests.
+
+Zoom
+~~~~
+
+By default, the Datavyu spreadsheet uses one font size for the
+user-input codes in cells. You can increase this font size by choosing
+:guilabel:`Zoom` from the :guilabel:`Spreadsheet` menu.
+
+You can also modify zoom using keyboard shortcuts:
+
+- ``cmd +`` zooms in
+- ``cmd -`` zooms out
+- ``cmd 0`` resets the zoom to the default level
+
 .. _temporal-ordering:
 
 Temporal Ordering
------------------
+~~~~~~~~~~~~~~~~~
 
 Temporal ordering is an important concept in Datavyu. By default,
 temporal ordering is active: Datavyu groups cells based on their
@@ -177,13 +197,13 @@ ensure that temporal ordering is active.
    easier to understand the sequence of events between different columns.
 
 Weak and Strong Temporal Ordering
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`````````````````````````````````
 
 Datavyu supports two types of temporal ordering: "weak" and
 "strong". [Explain the difference once you know it].
 
 Toggle Temporal Ordering
-~~~~~~~~~~~~~~~~~~~~~~~~
+````````````````````````
 
 You can toggle temporal ordering using the ``cmd T`` keyboard
 shortcut, or by selecting :guilabel:`Weak Temporal Ordering` or
