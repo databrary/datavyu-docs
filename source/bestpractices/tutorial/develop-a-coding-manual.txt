@@ -1,0 +1,7 @@
+.. _develop-coding-manual:
+.. _develop-a-coding-manual:
+.. _coding-manual:
+
+==================
+Coding Manuals 101
+==================

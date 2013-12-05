@@ -1,6 +1,6 @@
-==============
-Best Practices
-==============
+====================================
+Best Practices for Behavioral Coding
+====================================
 
 Welcome to Datavyu's Best Practices guide. [words about coding
 behavioral data from video here].

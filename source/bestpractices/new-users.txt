@@ -1,0 +1,73 @@
+.. _new-users:
+
+Introduction for New Users
+==========================
+
+You need to think about a bunch of things before you start collecting
+behavioral data from video. If you plow forth and start coding without
+developing a plan, thinking about the ways you will be analyzing the
+data (and thus, what sorts of data you will need), you may find yourself
+hours later with data you cannot use, and hours wasted. Worse yet, you
+might contentedly collect your data, and go back to analyze it weeks
+or months later, and realize that you have no idea what your codes mean.
+
+Thankfully, it's not difficult to start with one's best foot forward.
+
+Develop a Coding Scheme and Manual
+----------------------------------
+
+This is perhaps the most important [thing] you should do. A coding
+scheme describes what data you are going to collect and how to collect
+it. This helps you ensure that you collect data that will enable you to
+perform the analyses you wish to perform. A coding manual documents the
+scheme in detail, so that future coders will be able to reproduce your
+work, using the same codes for the same phenomena, following the same
+timing conventions, etc.
+
+The manual is also helpful during analysis, as it defines what each
+code describes, and how those observations were determined. This can be
+invaluable for researchers who might be analyzing their data months or years
+after its collection, and supports reuse and sharing of data for novel
+purposes.
+
+You download an example of a coding manual from:
+:download:`resources/example-coding-manual.pdf`. To learn about
+developing a coding manual, see: :ref:`develop-coding-manual`.
+
+Start Simple
+------------
+
+When faced with a complex data source, it might be tempting to start
+trying to code everything. This can result in [stuff].
+
+Instead, start simple. You can code in passes, going :term:`column` by
+column until you have collected all the data from a trial or
+participant. While minimizing the need to repeatedly watch a video
+source is also a consideration, if you're first starting out, coding
+column-by-column helps ensure that you don't miss things, and gives you
+more time to become comfortable working with the Datavyu interface.
+
+Consider Analysis
+-----------------
+
+While this is something you should think about while developing your
+coding scheme, it bears reminding to ensure that the data you collect
+supports your analyses. You should think about how you want your data
+to look when you analyze it, and how you're going to export the
+data from Datavyu. If your coding scheme is not going to provide you
+with the data you want in a format you can work with, you need to rethink
+the scheme.
+
+Many Datavyu users :doc:`write scripts </api>` to help them export their
+data in an ideal format that analyze using statistics packages like
+SPSS. Your own use case should determine how you prepare with your data.
+
+Next Steps
+----------
+
+With a basic grounding in working with behavioral data, you're ready
+to follow through the :ref:`first-steps` tutorial. You can also refer
+to :doc:`the Datavyu Software Guide </guide>` for a refresher on the
+Datavyu software package itself.
+
+

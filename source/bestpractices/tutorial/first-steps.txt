@@ -1,0 +1,135 @@
+.. _first-steps:
+
+===========================
+THIS TUTORIAL NEEDS A TITLE
+===========================
+
+[introductory words - link to the worksheet as well, if that's something
+you end up actually doing]
+
+.. warning:: 
+
+   The following sections describe an ideal way to start coding
+   your behavioral data from video. Regardless of the process you follow,
+   **do not** code hours of video before checking your coding scheme
+   is reliable, and **do not** score hours of video before ensuring
+   that you can export the data in a format that works for your
+   statistical analysis.
+
+Set the Scene
+-------------
+
+Start by watching the video in real time. Take detailed notes about what
+you are seeing, so that you can refer to your observations when you
+start planning your coding scheme.
+
+Then, watch representative portions of video (perhaps 2-3 minutes) from
+several participants and, again, take notes, recording commonalities and
+differences. 
+
+Watching videos from a variety of study participants 
+prevents you from basing your coding scheme on one individual, and 
+discovering that their trial was unrepresentative of the study
+participants in general. 
+
+.. image:: /img/awesome-image-holder.*
+   :align: right
+   :width: 350px
+
+Create Your Coding Manual
+-------------------------
+
+1. Determine what your :ref:`columns` will be.
+
+2. Tentatively create :term:`codes <code>` for each column. 
+
+   See: :ref:`develop-a-coding-manual` for advice on choosing and
+   defining codes, and for creating a coding manual in general. For help
+   setting up your spreadsheet see:
+   :doc:`/guide/tutorial/configure-datavyu-columns` and
+   :doc:`/guide/spreadsheet`.
+
+Test Your Plan
+--------------
+
+Test your coding scheme by coding representative portions of video
+for several participants. As you code, keep the following questions
+in mind:
+
+- Is this (relatively) *easy* to do? 
+
+- Is this *reliable*? Do I have the codes I need to record
+  my observations for all participants? Do I have the columns I need?
+
+If you answered 'no' to either question, you need to revise your scheme.
+Developing a coding scheme can take practice and iterations, but the
+work spent developing the scheme and manual is more than made up for
+during the coding process.
+
+If things went well for you, ask a colleague to score the same data
+sources using your coding scheme. This helps ensure that your manual is
+clear to other people, and that your work is reproducible. See:
+:ref:`api-reliability` for a guide to creating reliability columns
+and testing for consistency between coders.
+
+If your colleague had difficulties working with your scheme, again,
+you need to revise it, and start testing again.
+
+Plan for Analysis
+-----------------
+
+Collecting data is great, but it won't be useful if you can't analyze it.
+At this point, you need to ensure that your data is in a format that
+you can use, and that you have a way to export that data. This endeavor
+involves two components:
+
+- Ensure that the codes that you are using will be useful when it comes
+  to analyzing your data. Do you have the codes you need for the study
+  you're performing? Are they in a useful format (e.g. single
+  characters, numeric, etc.)?
+  
+- Ensure that you can *export* your data in a format that is useful. If
+  Datavyu's direct CSV export results in a file format that you cannot
+  use, you will need to :ref:`write a script to export the data
+  <api-export-data>`.
+ 
+You should know how you are going to analyze your data, and how you are
+going to export it before you progress any further. Export your test
+coding passes and see if they work with your stats software. If the
+formatting isn't suitable, or you can't work with the codes you've
+developed, once again, you'll need to revise your plan.
+
+When you're satisfied that you can export and analyze your data,
+you're ready to move on to the next stage.
+
+Implement Your Plan
+-------------------
+
+Now that you have a [usable] coding scheme and manual, and have a plan
+for exporting and analyzing your data, you can start coding.
+
+1. Start by creating a blank template file containing your study
+   columns, configured with the codes you have chosen. Use this template
+   for every ["pass"], opening it and choosing Save As for each
+   subsequent pass. This ensures that data collection is consistent
+   within an experiment.
+
+2. Code a participant's trial using your new template.
+
+3. :doc:`Write a script </api/tutorial/check-for-coding-errors>` to
+   check your first coding pass for typos, impossible relations, and out
+   of range values. For consistency, use these scripts to check all
+   passes in this experiment.
+
+Next Steps
+----------
+
+You're now all set to collect the data from your sources. Remember
+to check for typos and coding errors after each pass, and consider
+using :ref:`two pass verification <api-reliability>` to double check
+your data quality.
+
+The Best Practices :ref:`In Depth Guides <in-depth>` are a great next
+step: they provide detailed guidance and insight into best practices
+for particular types of data, as well as recommendations for how to
+organize your files.
