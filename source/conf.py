@@ -99,10 +99,13 @@ pygments_style = 'sphinx'
 html_theme = 'cyborg'
 html_theme_path = '.'
 
+
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+html_theme_options = {
+    'pdfpath': 'DatavyuManual.pdf',
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
@@ -138,7 +141,7 @@ html_static_path = ['_static']
 
 # Custom sidebar templates, maps document names to template names.
 html_sidebars = {
-    '**': ['localtoc.html', 'relations.html', 'sourcelink.html'],
+    '**': ['localtoc.html', 'relations.html', 'sourcelink.html', 'formats.html'],
 }
 
 # Additional templates that should be rendered to pages, maps page names to
