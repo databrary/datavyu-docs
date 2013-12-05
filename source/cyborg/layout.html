@@ -108,8 +108,7 @@
 
 <header id="header">
     <div class="wrapper">
-        <h1><a href="/" title="Datavyu: A Video Coding Tool"><img id="logo" src="/img/logo/datavyu.png" alt="Datavyu"></a></h1>
-
+        
         <nav>
             <!--#set var="$title" value="current" -->
             <ul>
@@ -180,7 +179,7 @@
         {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
       {%- else %}
         {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.<br />
-        See the <a href="https://github.com/databrary/docs-datavyu/blob/master/LICENSE">licensing page</a> for more information.
+        See the <a href="https://github.com/databrary/docs-datavyu/blob/master/LICENSE">licensing page</a> for more information.{% endtrans %}
       {%- endif %}
     {%- endif %}
     {%- if last_updated %}

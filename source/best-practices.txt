@@ -1,0 +1,13 @@
+==============
+Best Practices
+==============
+
+Welcome to Datavyu's Best Practices guide. [words about coding
+behavioral data from video here].
+
+If you're brand new to
+coding behavioral data from video, check out our :ref:`new-users`
+page. The :ref:`new-users` pages guide you through the steps you
+should take to start collecting data and help you ensure that the data
+you collect will support your analytic goals.
+

@@ -87,6 +87,8 @@ You can also use VLC for video playback. If you wish to use VLC, you
 must use `version 2.0.1`_,
 as Datavyu does not currently support later versions.
 
+.. _update-datavyu:
+
 Keep Datavyu Up-to-Date
 -----------------------
 

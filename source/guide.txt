@@ -2,6 +2,11 @@
 Software Guide
 ==============
 
+.. image:: /img/awesome-video-here.png
+   :align: right
+   :width: 400px
+   :alt: awesome video showing what Datavyu can do!
+
 Datavyu is a Java-based application that runs on Windows, Mac, and Linux
 operating systems. Its primary goal is to link behavioral researchers
 with their video, audio, or other data sources, and to provide a way for
@@ -24,15 +29,8 @@ limitations.
    /guide/getting-started
    /guide/tutorials
    /guide/reference
-   
-.. Once you're comfortable with Datavyu's basic functionalities,
-   consider the :doc:`Best Practices Guide` for expert-level instruction
-   on how best to harness Datavyu's capabilities, and tips for designing
-   your own study.
-   
-.. The `Datavyu Ruby API <link>_` provides a scriptable interface to
-   Datavyu's database, allowing you to manipulate your data, print in
-   any format you'd like, or check your data for errors. The API
-   provides additional functionalities, and is easy to work with for
-   novice and experienced developers alike. See: :doc:`/api` for
-   more information.
+
+If you're new to coding, or want to bone up on advice from the experts,
+consider the :doc:`Best Practices Guide </best-practices>` for
+instruction on how best to harness Datavyu's capabilities,
+and tips for starting to code behavioral videos.

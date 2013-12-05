@@ -79,3 +79,4 @@ Tutorials
    /api/tutorial/check-for-coding-errors
    /api/tutorial/use-two-pass-verification-to-check-data-accuracy
    /api/tutorial/export-data-using-scripts 
+   /api/tutorial/convert-openshapa-script-to-datavyu
