@@ -8,9 +8,7 @@ time on coding, and less time performing routine tasks.
 The :doc:`Ruby API documentation </api>` guides you though writing
 scripts for Datavyu and provides context to help you become an adept
 Ruby script-writer regardless of your programming experience (or lack
-thereof). Before you can use scripts in Datavyu, you need to write some,
-so refer to that documentation first, and then follow this tutorial
-to start running your scripts.
+thereof).
 
 Run Scripts
 -----------
@@ -39,3 +37,7 @@ Before you can run a script, you must write one. Refer to the
 
 #. When your script has completed, you can close the Scripting Console
    and start working with your data source.
+
+Scripts that you have run will be listed in the :guilabel:`Run recent
+script` submenu in the :guilabel:`Script` menu. This makes it easy
+to repeatedly run the same scripts.
