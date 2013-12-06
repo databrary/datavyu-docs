@@ -85,18 +85,18 @@ The :guilabel:`Datavyu spreadsheet` is where users record
    :alt: Image of a filled-out Datavyu spreadsheet
    :align: center
    
-   This spredsheet has six columns: "MomSpeech", "InfantSpeech",
+   This spreadsheet has six columns: "MomSpeech", "InfantSpeech",
    "MomObject", "BabyObject", "Notes", and "BabyLocation". Each column
    has numerous coded cells.
 
 The spreadsheet is the core of Datavyu. By :ref:`configuring columns
 <configure-columns>`, coders can record observations and link them
 directly to timestamps in the data source. Each user-defined column is
-represented by a column in the spreadsheet, and observations stack on
-top of each other in sequence. Looking horizontally across the
-spreadsheet columns shows what was happening at a given point in time in
-the data source. Looking vertically down a column shows the sequence in
-which the codes occurred.
+represented by a column in the spreadsheet, and observations follow
+each other in sequence. Looking horizontally across the spreadsheet
+columns shows what was happening at a given point in time in the data
+source. Looking vertically down a column shows the sequence in which
+the codes occurred.
 
 The :doc:`/guide/spreadsheet` document describes the
 :guilabel:`spreadsheet` in more detail. 
