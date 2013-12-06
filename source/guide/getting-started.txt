@@ -1,6 +1,6 @@
-============================
-Getting Started with Datavyu
-============================
+===============
+Getting Started
+===============
 
 Datavyu is a powerful tool that enables behavioral researchers to record
 observations from their video, audio, or other data sources for future
@@ -104,6 +104,6 @@ formats, see:
 :doc:`/guide/tutorial/open-data-source-or-convert-file-format`.
 
 Once you've added a data source, it's time to add columns, create
-observations, or write scripts. The :ref:`Core Operations Tutorials
+observations, or write scripts. The :ref:`tutorials
 <guide-core-tutorials>` are there to guide you.
 

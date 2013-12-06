@@ -1,6 +1,6 @@
-=================
-Datavyu Reference
-=================
+=========
+Reference
+=========
 
 .. toctree::
    :titlesonly:

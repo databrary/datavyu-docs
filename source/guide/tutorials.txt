@@ -1,8 +1,8 @@
-===============
-Datavyu Lessons
-===============
+=========
+Tutorials
+=========
 
-Datavyu Lessons provide comprehensive guidance for common tasks you
+Datavyu Tutorials provide comprehensive guidance for common tasks you
 might wish to perform.
 
 .. _guide-core-tutorials:

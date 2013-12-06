@@ -1,6 +1,6 @@
-======================
-Installation Tutorials
-======================
+============
+Installation
+============
 
 .. contents::
    :depth: 3
