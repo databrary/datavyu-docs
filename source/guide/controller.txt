@@ -27,19 +27,18 @@ Keypad
 
 The Data Viewer Controller's keypad maps directly to the number pad
 on your keyboard or external keypad: the on-screen representation
-helps users remember what key performs what function. When a key on
-the keypad is depressed, a visual indicator onscreen mirrors the
+helps users remember what key performs what function. When you press 
+a key on the keypad, a visual indicator onscreen mirrors the
 keystrokes.
 
 .. note:: 
 
    The Data Viewer Controller maps playback controls to the keys of
    your keypad. Some keypads may change the ordering of certain keys:
-   the top row might be ``clear``, ``/``, ``*``, ``-``, rather than
-   ``clear``, ``*``, ``/``, for instance. Some keypads may have a
-   ``Num Lock`` key rather than ``clear``. Familiarize yourself with
-   both the Datavyu controls and your keypad to maximize coding
-   efficiency.
+   for instance, the top row might be ``clear``, ``/``, ``*``, ``-``,
+   rather than ``clear``, ``*``, ``/``. Some keypads may have a ``Num
+   Lock`` key rather than ``clear``. Familiarize yourself with both
+   the Datavyu controls and your keypad to maximize coding efficiency.
 
 .. _playback-controls:
 
@@ -83,6 +82,9 @@ Playback Controls
 
 - :guilabel:`forward` (``9``): fast forwards at 32x playback speed.
 
+In addition, ``shift`` :guilabel:`find` (``+``): jumps to the cell
+:term:`offset`. 
+
 .. _coding-controls:
 
 Coding Controls
@@ -102,11 +104,11 @@ Coding Controls
 - :guilabel:`set cell offset` (``/`` and ``.``): sets the :term:`offset` for the
   current observation / cell.
 
-- :guilabel:`find` (``+``): moves the playhead to the :term:`onset` time of the the
-  time that is shown in the box to the right of the :guilabel:`find`
-  button. By default, this is the :term:`onset` time for the
-  currently-selected cell. You can change the time by selecting that box
-  and editing the value.
+- :guilabel:`find` (``+``): moves the playhead to the onset time of
+  the current cell, which is shown in the box to the right of the
+  :guilabel:`find` button. Selecting a different cell will update this
+  time.
+
 
 - :guilabel:`go back` (``-``): moves the playhead back by the amount
   of time set in the box to the right of the :guilabel:`go back`
@@ -117,7 +119,7 @@ Coding Controls
   cell and sets its :term:`onset` to the playhead's current
   time. If the previous cell does not have a :term:`offset`,
   adding a new cell with this key sets the previous cell's
-  :term:`offset` to the current playhead time, minus 1ms.
+  :term:`offset` to the current playhead time, minus one millisecond.
 
 - :guilabel:`create new cell` (``Enter``): creates a new cell and sets
   its :term:`onset` to the playhead's current time.
@@ -129,7 +131,7 @@ The :guilabel:`Tracks` area of the Data Viewer controller helps you
 visualize where you are within a data source's playback. You can
 control the scale using the slider bar in the top right: moving it to
 the right zooms in, allowing you to manipulate smaller time periods
-that would otherwise be feasible. You can also zoom in on a selected
+than would otherwise be feasible. You can also zoom in on a selected
 region by clicking on the :guilabel:`magnifying glass` icon next to
 the slider bar. The red :term:`playhead` shows the current playback
 position.
@@ -146,7 +148,8 @@ and stop at the rightmost bracket.
 The :guilabel:`Tracks` area of the Data Viewer Controller also
 includes five buttons:
 
-- :guilabel:`Lock All`: [use unclear]
+- :guilabel:`Lock All`: locks the tracks to prevent the user from
+  changing the synchronization between multiple tracks.
 
 - :guilabel:`Add Bookmark`: adds a bookmark at the playhead.
 
@@ -155,10 +158,10 @@ includes five buttons:
   right bracket at the cell's :term:`offset`. You can also use the
   ``ctrl +`` keyboard shortcut to snap the region.
 
-- :guilabel:`Clear Region`: removes the region delineators. You can
+- :guilabel:`Clear Region`: removes the region boundaries. You can
   also use the ``ctrl -`` keyboard shortcut to clear the region.
 
-- :guilabel:`magnifying glass` icon: zooms in on the
+- :guilabel:`Magnifying Glass` icon: zooms in on the
   timeslider to focus exclusively on the snapped region.
 
 Extra Keyboard Shortcuts
@@ -166,9 +169,6 @@ Extra Keyboard Shortcuts
 
 Datavyu includes some additional keyboard shortcuts to help you
 quickly and efficiently code your data sources:
-
-- ``shift`` :guilabel:`find` (``+``): jumps to the cell
-  :term:`offset`. 
 
 - ``cmd T`` toggles :ref:`temporal-ordering`.
 
