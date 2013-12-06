@@ -4,30 +4,25 @@
 Add a Column
 ============
 
-Datavyu represents columns as columns in the spreadsheet. Columns
-are [stuff that is being studied]. Datavyu supports three column
-types: :term:`text <text column>`, :term:`nominal <nominal column>`,
-and :term:`matrix <matrix column>`. For detailed descriptions of each
-type, see: :ref:`column-types`.
+Datavyu represents sequences of events as columns in the
+spreadsheet. Columns represent phenomena or events that you are
+studying.
 
 Adding a column to your Datavyu project is simple: the following steps
 will guide you through the process.
-
-.. talks about adding a column to
-   datavyu, cross-reference with :ref:`column-types` and
-   :doc:`/guide/tutorial/configure-datavyu-columns`
 
 #. Open the Datavyu spreadsheet.
 
 #. Click on the plus sign in the top left of the spreadsheet. The New
    Column window will open.
 
-#. Select the column type and input a name for it. For a full
-   description of the Datavyu column types, see: :ref:`column-types`.
+   .. TODO: add an image of the New Column window, and spreadsheet
+      with plus sign.
+
+#. Select the column type and input a name for it.
 
 #. Select :guilabel:`OK`. The column will be added to the spreadsheet.
 
-If you have added a :term:`matrix column`, you should now configure
-its arguments. See: :doc:`/guide/tutorial/configure-datavyu-columns`
-for more information. :term:`Text <text column>` and :term:`nominal
-<nominal column>` columns do not require additional configuration.
+You should now configure your column's codes. See:
+:doc:`/guide/tutorial/configure-datavyu-columns` for more
+information.
