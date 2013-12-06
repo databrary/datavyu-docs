@@ -13,8 +13,17 @@ Welcome to Datavyu's documentation!
 Datavyu is a complete software package for visualizing and collecting
 behavioral observations from audio and video data sources. Designed
 by - and for - behavioral scientists, Datavyu facilitates data
-collection and sharing through the ongoing `Databrary <databrary.org>`
+collection and sharing through the ongoing `Databrary <databrary.org>`_
 data library project.
+
+.. note:: 
+
+   Datavyu is an open source software package that is under continuous
+   development. You should familiarize yourself with each new
+   version's `release notes <http://datavyu.org/download/>`_, to be
+   aware of potental issues. If you encounter a bug, you can report
+   and discuss it and get help by posting to the `support forum
+   <http://datavyu.org/support>`_.
 
 To see some of what Datayu can do, check out :doc:`Datavyu in a
 Nutshell <>` which illustrates the many possibilities Datavyu offers
