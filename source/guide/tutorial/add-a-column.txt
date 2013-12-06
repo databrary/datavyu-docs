@@ -1,8 +1,8 @@
 .. _guide-add-a-column:
 
-==============
-Add a column
-==============
+============
+Add a Column
+============
 
 Datavyu represents columns as columns in the spreadsheet. Columns
 are [stuff that is being studied]. Datavyu supports three column
