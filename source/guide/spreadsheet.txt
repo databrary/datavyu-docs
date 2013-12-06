@@ -14,8 +14,7 @@ spreadsheet. :term:`Cells <cell>` are column entries, boxes in the
 column, where coders record their observation data as :term:`codes
 <code>`. Cells stack on top of each other in sequence: looking
 vertically down a column shows the sequence of observations for that
-column. If you have enabled :ref:`temporal ordering
-<temporal-ordering>`, Datavyu displays cells based on their
+column. If you have enabled :ref:`temporal-ordering`, Datavyu displays cells based on their
 :term:`onset` and :term:`offset` times, allowing you to look
 horizontally across the columns to see what occured at that point in
 the data source.
@@ -173,39 +172,40 @@ You can also modify zoom using keyboard shortcuts:
 - ``cmd 0`` resets the zoom to the default level
 
 .. _temporal-ordering:
+.. _temporal-alignment:
 
-Temporal Ordering
-~~~~~~~~~~~~~~~~~
+Temporal Alignment
+~~~~~~~~~~~~~~~~~~
 
-Temporal ordering is an important concept in Datavyu. By default,
-temporal ordering is active: Datavyu groups cells based on their
+Temporal alignment is an important concept in Datavyu. By default,
+temporal alignment is active: Datavyu groups cells based on their
 onsets and offsets, visually representing the period of time each cell
 occupies.
 
-Temporal ordering allows you to visualize what occurred at what time,
+Temporal alignment allows you to visualize what occurred at what time,
 and to compare event sequence between columns. When coding, you should
-ensure that temporal ordering is active.
+ensure that temporal alignment is active.
 
-.. figure:: /img/temporal-ordering-comparison.svg
-   :alt: comparison of two identical spreadsheets, one of which has temporal ordering active, and the other with temporal ordering disabled
+.. figure:: /img/temporal-alignment-comparison.*
+   :alt: comparison of two identical spreadsheets, one of which has temporal alignment active, and the other with temporal alignment disabled
    :align: center
 
-   At left: a spreadsheet with temporal ordering enabled; at right:
-   the same spreadsheet with temporal ordering disabled. Note that the
+   At left: a spreadsheet with temporal alignment enabled; at right:
+   the same spreadsheet with temporal alignment disabled. Note that the
    cells contain the same information, it is just their presentation
-   that changes. Note also that enabling temporal ordering makes it
+   that changes. Note also that enabling temporal alignment makes it
    easier to understand the sequence of events between different columns.
 
-Weak and Strong Temporal Ordering
+Weak and Strong Temporal Alignment
 `````````````````````````````````
 
-Datavyu supports two types of temporal ordering: "weak" and
+Datavyu supports two types of temporal alignment: "weak" and
 "strong". [Explain the difference once you know it].
 
-Toggle Temporal Ordering
+Toggle Temporal Alignment
 ````````````````````````
 
-You can toggle temporal ordering using the ``cmd T`` keyboard
-shortcut, or by selecting :guilabel:`Weak Temporal Ordering` or
-:guilabel:`Strong Temporal Ordering` from the :guilabel:`Spreadsheet`
+You can toggle temporal alignment using the ``cmd T`` keyboard
+shortcut, or by selecting :guilabel:`Weak Temporal Alignment` or
+:guilabel:`Strong Temporal Alignment` from the :guilabel:`Spreadsheet`
 menu.
