@@ -200,13 +200,13 @@ ensure that temporal alignment is active.
    easier to understand the sequence of events between different columns.
 
 Weak and Strong Temporal Alignment
-`````````````````````````````````
+``````````````````````````````````
 
 Datavyu supports two types of temporal alignment: "weak" and
 "strong". [Explain the difference once you know it].
 
 Toggle Temporal Alignment
-````````````````````````
+`````````````````````````
 
 You can toggle temporal alignment using the ``cmd T`` keyboard
 shortcut, or by selecting :guilabel:`Weak Temporal Alignment` or
