@@ -1,71 +1,57 @@
 .. _vocab-editor:
 .. _configure-columns:
 
-===============================================
-Configure Columns with Datavyu's Vocab Editor
-===============================================
-
-.. HEADINGS: 
-.. text
-   ----
-   Text columns are freeform text areas, and do not require  
-   configuration. As with any column, you must set the :term:`onset`
-   and :term:`offset`, but the remaining argument is a freeform text 
-   field.
-   
-.. nominal
-   -------
-   It looks like they'll be configurable at some point since there's 
-   the greyed-out option in the vocab editor... but not at present?
-   
-Matrix columns are the most configurable Datavyu columns, and the most
-useful for multivariate analyses. Each cell of a matrix column is a
-collection of key-value pairs called :term:`codes <code>`. Each
-argument (the key) has a value that the coder inputs while coding a data
+===========================
+Configure Columns and Codes
+===========================
+  
+Each column is a
+collection of one or more :term:`codes <code>`. Each
+code has a value that the coder inputs while coding a data
 source.
 
-Datavyu provides a :ref:`Vocab Editor <vocab-editor>` for configuring
+Datavyu provides a Code Editor for configuring
 matrix columns.
 
-Open the Vocab Editor
----------------------
+Open the Code Editor
+--------------------
 
 From the Data Viewer Controller, click on the :guilabel:`Spreadsheet`
-menu, and then select :guilabel:`Vocab Editor`.
+menu, and then select :guilabel:`Code Editor`.
 
-.. image:: /img/vocab-editor.png
-   :alt: Screenshot of the vocab editor with two columns listed
+.. image:: /img/code-editor.*
+   :alt: Screenshot of the code editor with two columns listed
    :align: center
    :width: 573px
 
-The Vocab Editor window will open, and list all existing matrix
-columns. From here, you can add a new matrix column, or edit
+The Code Editor window will open, and list all existing
+columns. From here, you can add a new column, or edit
 existing columns.
 
-Add a Matrix Column
--------------------
+Add a Column
+------------
 
 Click on the :guilabel:`Add matrix()` button. A new matrix column
 called "matrix1" will appear in the list of columns. By default,
-"matrix1" has one argument, "arg1".
+"matrix1" has one code, "code1".
 
-You can change the name of the column or argument by double-clicking
+You can change the name of the column or code by double-clicking
 on its name and typing a new name.
 
-Add Arguments
--------------
+Add Codes
+---------
 
-To add an argument to a matrix column, select the column. You'll know
+To add an code to a matrix column, select the column. You'll know
 you have selected it when its background is light blue. Then, click
-on the :guilabel:`Add <arg>` button.
+on the :guilabel:`Add <code>` button.
 
-You can change the name of the argument by double-clicking on its name
-and typing a new name, and can reorder a column's arguments by
-selecting an argument by clicking within its text, and using the
-:guilabel:`Move <arg>` buttons.
+You can change the name of the code by double-clicking on its name and
+typing a new name. To reorder a column's codes, select the code by
+clicking on it, and use the :guilabel:`Move <arg>`
+buttons to move it.
 
-Remove Arguments
-----------------
+Remove Codes
+------------
 
-To delete an argument, select it by clicking within its text, and then
+To delete a code, select it by clicking on it, and then
 click on the :guilabel:`Delete` button in the top right.
