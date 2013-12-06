@@ -14,14 +14,38 @@ The Datavyu Interface
 
 When you first open Datavyu, Datavyu will check if you have the latest
 version. If there has been a new release, Datavyu will prompt you to
-:ref:`update-datavyu` your version.
+:ref:`update your version <update-datavyu>`.
 
-When you are ready to start using Datavyu, you will see two windows: the
+When you launch Datavyu, you will see two windows: the
 :guilabel:`Data Viewer Controller`, and a blank spreadsheet. If you add
 a data source (e.g. an audio or video file, or a motion capture file), a
 third window containing the data source will appear.
 
 The following sections describe each component of the Datavyu interface.
+
+Data Viewer
+~~~~~~~~~~~
+
+.. TODO: add image of data viewer with a video in it.
+
+The :guilabel:`Data Viewer` is the window that presents the data
+source, the audio or video file that the user is working with.
+
+.. _add-data:
+
+Add a Data Source
+-----------------
+
+Adding an audio, video, or other data source to Datavyu is as easy as
+clicking on the :guilabel:`Add Data…` button in the Data Viewer
+Controller, [or using a menu option if there is one]. For a more
+detailed overview of adding data sources, and advice on converting file
+formats, see:
+:doc:`/guide/tutorial/open-data-source-or-convert-file-format`.
+
+Once you've added a data source, it's time to add columns, create
+observations, or write scripts. The :ref:`tutorials
+<guide-core-tutorials>` are there to guide you. 
 
 Data Viewer Controller
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -35,11 +59,13 @@ the window that contains the (audio or video) data.
    :alt: Image of the Data Viewer Controller
    :align: center
 
-On the left side is the keypad. This section maps directly to the number
-pad on your keyboard, or to an external number pad if you keyboard does
-not have one. These keys control playback, and also enable users to set
-the :term:`cell onset` and :term:`cell offset`, create new cells and
-navigate within the data source.
+On the left side is the keypad. This section maps directly to the
+number pad on your keyboard, or to an external number pad if you
+keyboard does not have one. These keys control playback, and also
+enable users to set the :term:`cell onset` and :term:`cell offset`,
+create new cells and navigate within the data source. The
+:guilabel:`Add Data...` button enables you to :ref:`add a data source
+<add-data>`. 
 
 For more about the Data View Controller, and a detailed description of
 its functionality and features, see :doc:`/guide/controller`.
@@ -70,7 +96,7 @@ represented by a column in the spreadsheet, and observations stack on
 top of each other in sequence. Looking horizontally across the
 spreadsheet columns shows what was happening at a given point in time in
 the data source. Looking vertically down a column shows the sequence in
-which that column type occurred.
+which the codes occurred.
 
 The :doc:`/guide/spreadsheet` document describes the
 :guilabel:`spreadsheet` in more detail. 
@@ -86,24 +112,4 @@ The :doc:`/guide/spreadsheet` document describes the
    :titlesonly:
 
    /guide/spreadsheet
-
-Data Viewer
-~~~~~~~~~~~
-
-The :guilabel:`Data Viewer` is the window that presents the data
-source, the audio or video file that the user is working with.
-
-Add a Data Source
------------------
-
-Adding an audio, video, or other data source to Datavyu is as easy as
-clicking on the :guilabel:`Add Data…` button in the Data Viewer
-Controller, [or using a menu option if there is one]. For a more
-detailed overview of adding data sources, and advice on converting file
-formats, see:
-:doc:`/guide/tutorial/open-data-source-or-convert-file-format`.
-
-Once you've added a data source, it's time to add columns, create
-observations, or write scripts. The :ref:`tutorials
-<guide-core-tutorials>` are there to guide you.
 
