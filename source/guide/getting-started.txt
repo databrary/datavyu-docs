@@ -31,17 +31,11 @@ Data Viewer
 The :guilabel:`Data Viewer` is the window that presents the data
 source, the audio or video file that the user is working with.
 
-.. _add-data:
-
-Add a Data Source
------------------
-
 Adding an audio, video, or other data source to Datavyu is as easy as
 clicking on the :guilabel:`Add Data…` button in the Data Viewer
 Controller, [or using a menu option if there is one]. For a more
-detailed overview of adding data sources, and advice on converting file
-formats, see:
-:doc:`/guide/tutorial/open-data-source-or-convert-file-format`.
+detailed overview of adding data sources see:
+:ref:`add-data`.
 
 Once you've added a data source, it's time to add columns, create
 observations, or write scripts. The :ref:`tutorials

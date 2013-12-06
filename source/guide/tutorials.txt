@@ -10,7 +10,6 @@ might wish to perform.
 .. toctree::
    :maxdepth: 1
 
-   /guide/tutorial/open-data-source-or-convert-file-format      
    /guide/tutorial/add-a-column
    /guide/tutorial/rename-a-column
    /guide/tutorial/delete-column
@@ -20,3 +19,4 @@ might wish to perform.
    /guide/tutorial/configure-datavyu-columns
    /guide/tutorial/export-data
    /guide/tutorial/use-scripts-to-automate-tasks
+   /guide/tutorial/convert-file-format
