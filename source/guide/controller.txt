@@ -45,12 +45,12 @@ keystrokes.
 Playback Controls
 ~~~~~~~~~~~~~~~~~
 
-.. figure:: /img/keypad-annotated.svg
+.. figure:: /img/keypad-annotated.*
    :align: right
    :figwidth: 300px
 
-   The keys highlighted in pink are :ref:`playback-controls`. The keys
-   highlighted in brown are :ref:`coding-controls`.
+   The keys highlighted in pink are *playback controls*. The keys
+   highlighted in brown are *coding-controls*.
 
 - :guilabel:`jog left` (``1``): moves the playhead back one frame. If the
   :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
@@ -90,11 +90,6 @@ In addition, ``shift`` :guilabel:`find` (``+``): jumps to the cell
 Coding Controls
 ~~~~~~~~~~~~~~~
 
-.. .. figure:: /img/keypad-coding-controls.svg
-..    :align: right
-
-   The keys highlighted in brown are coding controls.
-
 - :guilabel:`set cell onset` (``clear``): sets the :term:`onset` for the current
   observation / cell.
 
@@ -123,44 +118,6 @@ Coding Controls
 
 - :guilabel:`create new cell` (``Enter``): creates a new cell and sets
   its :term:`onset` to the playhead's current time.
-
-.. _add-data-source:
-.. _add-data:
-
-Add Data
---------
-
-Datavyu is designed to work with video, audio, physiology, motion, or
-eye tracking data. Datavyu currently supports video through QT
-and VLC. There are plans to develop plugins to support other
-data sources, such as [atuheuat].
-
-.. To convert video file types, see: :ref:`convert-data-source-type`.
-
-Providing you have adequate processing power and a
-sufficiently strong graphics card, you should be able to work with
-high-resolution video files without challenge.
-
-To add a data source:
-
-#. Click the :guilabel:`Add Data…` button in the top left corner of the
-   Data Viewer Controller.
-
-#. A file selection window will open. Select the data file you will be
-   coding.
-
-#. If the data source is a video file, Datavyu will attempt to
-   determine its :term:`frame rate`. If it is unable to determine the
-   frame rate, it will ask you what the video's frame rate is. You can
-   determine the frame rate by opening the video in QuickTime Player,
-   and selectin :guilabel:`Show Movie Inspector` from the
-   :guilabel:`Window` menu. The Inspector presents information about
-   the video. The frame rate is labeled :guilabel:`FPS`, or
-   frames-per-second.
-   
-   Datavyu uses frame rate to optimize playback and to :ref:`jog
-   <playback-controls>`, so it is important that you set the correct
-   frame rate.
 
 Tracks
 ------
@@ -201,6 +158,48 @@ includes five buttons:
 
 - :guilabel:`Magnifying Glass` icon: zooms in on the
   timeslider to focus exclusively on the snapped region.
+
+.. _add-data-source:
+.. _add-data:
+
+Add Data
+--------
+
+.. image:: /img/keypad-add-data-button.*
+   :alt: image of keypad with arrow indicating the "add data" button
+   :align: right
+   :width: 300px
+
+Datavyu is designed to work with video, audio, physiology, motion, or
+eye tracking data. Datavyu currently supports video through QT and VLC.
+There are plans to develop plugins to support other data sources, such
+as [atuheuat]. To convert video file types, see:
+:ref:`convert-data-source-type`.
+
+Providing you have adequate processing power and a
+sufficiently strong graphics card, you should be able to work with
+high-resolution video files without challenge.
+
+To add a data source:
+
+#. Click the :guilabel:`Add Data…` button in the top left corner of the
+   Data Viewer Controller.
+   
+#. A file selection window will open. Select the data file you will be
+   coding.
+
+#. If the data source is a video file, Datavyu will attempt to
+   determine its :term:`frame rate`. If it is unable to determine the
+   frame rate, it will ask you what the video's frame rate is. You can
+   determine the frame rate by opening the video in QuickTime Player,
+   and selectin :guilabel:`Show Movie Inspector` from the
+   :guilabel:`Window` menu. The Inspector presents information about
+   the video. The frame rate is labeled :guilabel:`FPS`, or
+   frames-per-second.
+   
+   Datavyu uses frame rate to optimize playback and to :ref:`jog
+   <playback-controls>`, so it is important that you set the correct
+   frame rate.
 
 .. seealso::
 
