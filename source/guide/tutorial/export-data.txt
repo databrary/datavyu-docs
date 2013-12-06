@@ -8,12 +8,12 @@ select :guilabel:`Export File…`. This outputs data to a CSV file that
 has one column for every code in the spreadsheet: :term:`ordinal`,
 :term:`onset`, and :term:`offset`, as well as user-configured codes.
 
+.. TODO: put an image of the sample output, alongside its download
 
-
-While useful for viewing the Datavyu spreadsheet in a spreadsheet
-program such as Microsoft Excel, the CSV export is not ideally
-organized for data analysis. Datavyu supports Ruby and R scripting,
-which can produce far better data sets for statistical analyses.
+If this format does not work for the analyses you need to perform, you
+can use a script to export the data in your desired format. Datavyu
+supports Ruby and R scripting, which enable you to create a customized
+data export to suit your needs.
 
 For a detailed guide to export dating using Ruby scripts, see:
 :doc:`/api/tutorial/export-data-using-scripts` in the Datavyu Ruby API
