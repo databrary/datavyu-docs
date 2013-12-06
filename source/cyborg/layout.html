@@ -62,7 +62,7 @@
 {%- macro render_nextprev() %}
    <div>
       {%- if prev %}
-      <div class="leftie">
+      <div class="leftie" style="max-width=20%; float=left;">
       <span class="btn-arrow-left">&larr; &nbsp;</span>
       <a href="{{ prev.link|e }}" title="Previous Section: {{ prev.title|striptags|e }}"><span>{{ prev.title|striptags|e }}</span></a>
       </div>
