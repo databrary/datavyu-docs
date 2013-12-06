@@ -257,6 +257,18 @@ div.admonition-programming-101.admonition div.highlight{
     margin-left: 1em; }
 }
 
+div.leftie {
+   width: 20%;
+   float: left;
+}
+
+div.rightie_bottom {
+    text-align: right;
+    position: relative;
+    width: 20%;
+    float: right;
+}
+
 /* fin */
 
 div.highlight {

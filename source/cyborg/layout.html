@@ -59,6 +59,23 @@
     {%- endfor %}
 {%- endmacro %}
 
+{%- macro render_nextprev() %}
+   <div>
+      {%- if prev %}
+      <div class="leftie">
+      <span class="btn-arrow-left">&larr; &nbsp;</span>
+      <a href="{{ prev.link|e }}" title="Previous Section: {{ prev.title|striptags|e }}"><span>{{ prev.title|striptags|e }}</span></a>
+      </div>
+      {%- endif %}
+      {%- if next %}
+      <div class="rightie_bottom">
+      <a href="{{ next.link|e }}" title="Next Section: {{ next.title|striptags|e }}"><span>{{ next.title|striptags|e }}</span></a>
+      <span class="btn-arrow-right">&nbsp;&rarr;</span>
+      </div>
+      {%- endif %}
+   </div>
+{%- endmacro -%}
+
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset={{ encoding }}" />
@@ -143,7 +160,9 @@
         <div class="documentwrapper">
           {%- if render_sidebar %}<div class="bodywrapper">{%- endif %}
           <div class="body">
-            {% block body %} {% endblock %}
+            {% block body %} 
+            {% endblock %}
+            {{- render_nextprev() -}}
           </div>
           {%- if render_sidebar %}</div>{%- endif %}
          </div>
@@ -155,6 +174,8 @@
 
 <div class="clearer"></div>
    </div>
+   
+  
 {%- endblock %}
 
 {%- block footer %}
