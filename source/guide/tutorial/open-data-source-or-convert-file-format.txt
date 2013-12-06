@@ -1,49 +1,19 @@
-====================================================
-Add a Data Source or Convert File Formats in Datavyu
-====================================================
-
-Datavyu is designed to work with video, audio, physiology, motion, or
-eye tracking data. Datavyu supports most file formats that VLC or
-Quicktime can play. 
-
-.. To convert video file types, see: :ref:`convert-data-source-type`.
-
-Providing you have adequate processing power and a
-sufficiently strong graphics card, you should be able to work with
-high-resolution video files without challenge.
-
-Add a Data Source
------------------
-
-#. Click the :guilabel:`Add Data…` button in the top left corner of the
-   Data Viewer Controller.
-
-#. A file selection window will open. Select the data file you will be
-   coding.
-
-#. If the data source is a video file, Datavyu will attempt to
-   determine its :term:`frame rate`. If it is unable to determine the
-   frame rate, it will ask you what the video's frame rate is. You can
-   determine the frame rate by opening the video in QuickTime Player,
-   and selectin :guilabel:`Show Movie Inspector` from the
-   :guilabel:`Window` menu. The Inspector presents information about
-   the video. The frame rate is labeled :guilabel:`FPS`, or
-   frames-per-second.
-   
-   Datavyu uses frame rate to optimize playback and to :ref:`job
-   <playback-controls>`, so it is important that you set the correct
-   frame rate.
-
 .. _convert-data-source-format:
 
-Convert an Unsupported File Format
-----------------------------------
+====================
+Convert File Formats
+====================
+
+Datavyu is designed to work with video, audio, physiology, motion, or
+eye tracking data. Datavyu currently supports video through QT
+and VLC. There are plans to develop plugins to support other
+data sources, such as [atuheuat].
 
 .. TODO: I'm not sure that this is actually what the convert video
    tool does.
 
-If your data source is of a type that Datavyu cannot play (such as
-[list]), you may be able to convert it to a readable format using
+If your data source is of a type that Datavyu cannot play directly,
+(such as [list]), you may be able to convert it to a readable format using
 Datavyu's Convert Videos tool. 
 
 #. From the Spreadsheet, select the :guilabel:`Controller` menu,
@@ -51,8 +21,8 @@ Datavyu's Convert Videos tool.
 
 #. Select a source video. This will be the video you are converting,
 
-#. Select a target video. This is the video that Datavyu will combine
-   the source video with (?).
+#. Select a target video. This is the video that Datavyu will output
+   or convert your source video into.
    
 #. Select :guilabel:`Convert Video`, and your video will be converted.
 
