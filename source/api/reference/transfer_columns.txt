@@ -6,9 +6,9 @@ transfer_columns
 
 .. method:: transfer_columns(db1, db2, remove, *varnames)
 
-   Transfers columns between databases. If db1 or db2 are set to the
-   empty string "", then that database is the current database in $db
-   (usually the GUI's database). So if you want to transfer a column
+   Transfers columns between spreadsheets. If db1 or db2 are set to the
+   empty string "", then that spreadsheet is the current spreadsheet in $db
+   (usually the GUI's spreadsheet). So if you want to transfer a column
    into the GUI, set db2 to "". If you want to tranfer a column from the
    GUI into a file, set db1 to "". 
 
@@ -29,11 +29,11 @@ transfer_columns
       * - ``db1``
         - [path]   
         - The full path to save the first Datavyu file. Set to "" to use
-          the database that's currently open.
+          the spreadsheet that's currently open.
       * - ``db2``
         - [path]
         - The full path to save the second Datavyu file. Set to "" to
-          use the database that's currently open.
+          use the spreadsheet that's currently open.
       * - ``remove``
         - Boolean
         - If true, Datavyu will delete the columns from ``db1`` as they

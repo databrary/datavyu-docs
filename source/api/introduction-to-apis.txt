@@ -20,7 +20,7 @@ printers, and the user interface.
 
 The Datavyu API works somewhat differently: instead of helping two
 applications communicate, it helps users to perform tasks
-programmatically, altering their Datavyu spreadsheets and databases
+programmatically, altering their Datavyu spreadsheets
 using :term:`scripts <script>`.
 
 Suppose you had an hour-long video data source. Perhaps it showed

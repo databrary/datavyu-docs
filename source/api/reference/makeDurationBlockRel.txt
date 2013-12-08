@@ -42,7 +42,7 @@ makeDurationBlockRel()
 
    .. admonition:: Returns
 
-      Nothing. Variables are automatically written to the database.
+      Nothing. Variables are automatically written to the spreadsheet.
 
    .. admonition:: Example
 

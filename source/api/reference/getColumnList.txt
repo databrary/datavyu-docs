@@ -6,7 +6,7 @@ getColumnList()
 
 .. method:: getColumnList()
 
-   Outputs a list of all the columns in the current database.
+   Outputs a list of all the columns in the current spreadsheet.
    
    .. table-start
    

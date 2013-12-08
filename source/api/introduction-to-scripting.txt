@@ -126,7 +126,7 @@ line at the top:
    require 'Datavyu_API.rb'
 
 This ``require`` statement loads all of the helper functions that enable
-your scripts to interact with the Datavyu database.
+your scripts to interact with the Datavyu spreadsheet.
 
 In general, the rest of the script code goes between ``begin`` and
 ``end`` tags, making the general format as follows:
@@ -139,7 +139,7 @@ In general, the rest of the script code goes between ``begin`` and
 
      # Do something to those variables
 
-     # Write any changes to those variables back to the database
+     # Write any changes to those variables back to the spreadsheet
    end
 
 .. tip::

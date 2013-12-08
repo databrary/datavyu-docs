@@ -35,7 +35,7 @@ smoothColumn()
    .. admonition:: Returns
    
       Nothing. :meth:`smoothColumn` automatically writes its changes
-      back to the database.
+      back to the spreadsheet.
 
    .. admonition:: Example
    

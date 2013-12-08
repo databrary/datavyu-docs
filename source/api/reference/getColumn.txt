@@ -6,7 +6,7 @@ getColumn()
 
 .. method:: getColumn(name)
 
-   Retrieves a variable from the Datavyu database and assigns it to a Ruby
+   Retrieves a variable from the Datavyu spreadsheet and assigns it to a Ruby
    object using :meth:`print_debug` 
 
    .. table-start

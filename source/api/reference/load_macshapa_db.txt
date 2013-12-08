@@ -6,8 +6,8 @@ load_macshapa_db()
 
 .. method:: load_macshapa_db(filename, write_to_gui, *ignore_vars)
 
-   Opens an old, closed database format MacSHAPA file and loads it into
-   the current open database.
+   Opens an old, closed spreadsheet format MacSHAPA file and loads it into
+   the current open spreadsheet.
    
    .. warning:: 
    
@@ -30,7 +30,7 @@ load_macshapa_db()
         - The full path to save the saved MacSHAPA file.
       * - write_to_gui
         - Boolean
-        - If true, the MacSHAPA file is read into the database that
+        - If true, the MacSHAPA file is read into the spreadsheet that
           is currently open in Datavyu's GUI. If false, the MacSHAPA
           file is read into the Ruby interface.
    

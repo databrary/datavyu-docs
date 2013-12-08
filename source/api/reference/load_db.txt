@@ -6,7 +6,7 @@ load_db()
 
 .. method:: load_db(filename)
 
-   Loads a new database from a file.
+   Loads a new spreadsheet from a file.
    
    .. table-start
    
@@ -25,7 +25,7 @@ load_db()
    
    .. admonition:: Returns
    
-      - ``$db``: the database of the opened project
+      - ``$db``: the spreadsheet of the opened project
    
       - ``$pj``: project data of the opened project
 
@@ -33,7 +33,7 @@ load_db()
    
       The following example creates a variable called "test" from two
       existing variables, "var1" and "var2", and then writes the 
-      changes back to the database using :meth:`setColumn`.
+      changes back to the spreadsheet using :meth:`setColumn`.
    
       .. code-block:: ruby
    

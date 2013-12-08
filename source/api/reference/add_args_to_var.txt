@@ -33,7 +33,7 @@ add_args_to_var()
    .. admonition:: Example
 
       The following example adds "arg1", "arg2", and "arg3" to the "test"
-      column, and writes it back to the database using :meth:`setColumn`.
+      column, and writes it back to the spreadsheet using :meth:`setColumn`.
 
       .. code-block:: ruby
       

@@ -8,9 +8,9 @@ setColumn()
 
 .. method:: setColumn(name, var)
 
-   Replaces a column in the database with a new column of the
+   Replaces a column in the spreadsheet with a new column of the
    same name as the method's parameters. If no column with the same
-   name exists in the database, it will instead create a new column.
+   name exists in the spreadsheet, it will instead create a new column.
 
    .. table-start
 

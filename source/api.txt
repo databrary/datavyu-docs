@@ -3,7 +3,7 @@ Ruby API
 ========
 
 The Datavyu scripting API provides a scriptable interface to Datavyu's
-database, allowing you to manipulate your data, print in any format
+spreadsheet, allowing you to manipulate your data, print in any format
 you'd like, or check your data for errors.
 
 .. figure:: /img/script-and-datavyu-api-landing.png

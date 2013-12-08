@@ -38,7 +38,7 @@ RCell Class
 
          The following example sets the "trial" columns's cell at
          position 0's :term:`onset` to 1000ms, and then writes the
-         change back to the database using :meth:`setColumn()`.
+         change back to the spreadsheet using :meth:`setColumn()`.
 
          .. code-block:: ruby
 
