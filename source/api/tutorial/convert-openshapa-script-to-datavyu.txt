@@ -6,9 +6,8 @@ Convert an OpenShapa Script to the Datavyu Format
 
 .. default-domain:: rb
 
-If you have previously written scripts for use with OpenShapa or
-MacShapa, you can easily reuse them with Datavyu by adding a short
-line of code.
+If you have previously written scripts for use with OpenShapa, you
+can easily reuse them with Datavyu.
 
 Datavyu's Ruby API was designed to interoperate with the earlier
 formats, so you need simply add the following line of code to the
@@ -17,6 +16,9 @@ beginning of your script:
 .. code-block:: ruby
 
    require 'Datavyu_API.rb'
+
+You will also need to delete the OpenSHAPA API code at the beginning
+of the file.
 
 And with that, you should be good to run your existing OpenSHAPA
 scripts through Datavyu.
