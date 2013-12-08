@@ -6,10 +6,10 @@ setVariable()
 
 .. default-domain:: rb
 
-.. method:: setVariable(*args)
+.. method:: setVariable(name, var)
 
    Replaces a column in the database with a new column of the
-   same name as the method's arguments. If no column with the same
+   same name as the method's parameters. If no column with the same
    name exists in the database, it will instead create a new column.
 
    .. table-start
@@ -23,18 +23,18 @@ setVariable()
         - Description
       * - ``name`` (**optional**)
         - String
-        - Name of the column that is being created
+        - Name of the column that you are inserting
       * - ``var`` (**required**)
         - Ruby variable
-        - Ruby container of the column that is being put into the
-          database (modified output of :meth:`createNewVariable` or
-          :meth:`getVariable`)
+        - Ruby container of the column that you are inserting into the
+          spreadsheet (modified output of :meth:`createNewVariable()` or
+          :meth:`getVariable()`)
 
    .. important:: 
 
       You must specify the ``var`` argument to :meth:`setVariable()`.
-      If you are also passing the ``name`` argument, the order of arguments
-      must be ``name`` followed by ``var``.
+      If you are also passing the ``name`` argument, the order of parameters
+      **must** be ``name`` followed by ``var``.
 
    .. table-end
 

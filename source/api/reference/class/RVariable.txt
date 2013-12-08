@@ -85,9 +85,10 @@ RVariable Class
                trial.change_arg_name("badCodeName", "awesomeCodeName")
                setVariable("trial")
             end
-   .. classmethod:: add_arg(name)
+   
+   .. classmethod:: add_code(name)
 
-      Adds an argument to a column.
+      Adds a code to a column.
 
       .. table-start
 
@@ -100,7 +101,7 @@ RVariable Class
            - Description
          * - ``name``
            - String
-           - The name of the argument you are adding to the column
+           - The name of the code you are adding to the column
 
       .. table-end
 

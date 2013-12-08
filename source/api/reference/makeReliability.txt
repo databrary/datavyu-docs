@@ -29,7 +29,7 @@ makeReliability()
           The convention is to name it ``rel.variableName``.
       * - ``var_to_copy``
         - String
-        - the name of the variable that we want to create a reliability
+        - The name of the variable that we want to create a reliability
           variable *from* (i.e. the existing coded variable).
       * - ``multiple_to_keep`` (**optional**)
         - Integer

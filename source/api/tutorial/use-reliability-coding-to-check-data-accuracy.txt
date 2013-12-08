@@ -1,19 +1,19 @@
 .. _api-reliability:
 
-==================================================
-Use Two-Pass Verification to Improve Data Accuracy
-==================================================
+===============================================
+Use Reliability Coding to Improve Data Accuracy
+===============================================
 
 .. default-domain:: rb
 
 .. begin-content
 
-With two-pass verification, two coders separately code the same data
+With reliability coding, two coders separately code the same data
 source. This enables coders and researchers to verify that coders 
-interpret eents in the same way, and to ensure the accuracy of the
+interpret events in the same way, and to ensure the accuracy of the
 recorded observations. 
 
-To facilitate two-pass verification, you can create a :term:`reliability
+To facilitate reliability coding, you can create a :term:`reliability
 column`, which the second coder will use to record their observations,
 and then compare the reliability column against the original coder's
 observations.
@@ -23,11 +23,13 @@ observations.
    While it may be tempting to have the reliability coder code the
    data source in a new spreadsheet, you should endeavor to keep all
    codes for a given data source in a single spreadsheet. This
-   facilitates analysis, and ensures that like data is keep
+   facilitates analysis, and ensures that like data is kept
    together. To prevent the reliability coder from seeing the original
    coding pass, you can :ref:`hide the original coded column
-   <hide-show-columns>`. See [reference to best practices guide when
-   it exists] for more informatoin.
+   <hide-show-columns>`. 
+
+   .. See [reference to best practices guide when it exists] for more
+      information.
 
 Make a Reliability Column
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,10 +64,6 @@ parameters:
    even if only a subset of cells were included in the reliability
    variable.
 
-   In order to avoid issues, you should endeavor to import an
-   appropriate code when you create your reliability column with
-   :meth:`makeReliability`.
-
 The following example uses the :download:`sample data
 </resources/Example-Template.opf>` to create a new
 reliability column called "rel.trial" from its "trial" column, skipping
@@ -86,10 +84,10 @@ trial numbers.
 
 .. note::
 
-   You do **not** have to write the variable back to the database.
+   You do **not** have to write the variable back to the spreadsheet.
    :meth:`makeReliability` automatically writes its results to 
-   the database. This is the only method in the Datavyu Ruby API that
-   automatically writes back to the database.
+   the spreadsheet. This is the only method in the Datavyu Ruby API that
+   automatically writes back to the spreadsheet.
 
 Check Reliability
 ~~~~~~~~~~~~~~~~~
@@ -133,8 +131,9 @@ optional one:
       
          dump_file = File.expand_path("~/Desktop/relCheck.txt")
 
-#. Compare "trial" and "rel.trial" using :meth:`checkReliability` and
-   output the results to the ``dump_file``:
+#. Compare "trial" and "rel.trial" using :meth:`checkReliability`,
+   with a 5ms time tolerance, and output the results to the
+   ``dump_file``:
 
    .. code-block:: ruby
 
@@ -144,7 +143,7 @@ optional one:
 
          # Compare the "trial" and "rel.trial" columns, using trialnumber as
          #  their matching code and dump the results to a file on the desktop.
-         checkReliability("trial", "rel.trial", "trialnum", dump_file)
+         checkReliability("trial", "rel.trial", "trialnum", 5, dump_file)
       end
 
 .. end-content

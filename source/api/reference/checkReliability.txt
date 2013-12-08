@@ -26,7 +26,7 @@ checkReliability()
         - The reliability column to compare to ``main_col``
       * - ``match_arg``
         - String     
-        - The argument to use to match the reliability cells to the primary
+        - The argument used to match the reliability cells to the primary
           cells. Must be a unique identifier between the cells.
       * - ``time_tolerance``
         - Integer

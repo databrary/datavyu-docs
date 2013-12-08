@@ -173,7 +173,7 @@ in the ``dumpFile`` parameter.
          checkValidCodes("step", output, "foot", footCodes, "ht", htCodes, "direction", directionCodes)
       end
 
-When the script returns, the output.txt file will be created on the
+When the script ends, the output.txt file will be created on the
 Desktop, containing the results of the code checking. For the
 :download:`sample data </resources/SampleData-checkValidCodes.opf>`, 
 it should find one error, and the output should resemble:
