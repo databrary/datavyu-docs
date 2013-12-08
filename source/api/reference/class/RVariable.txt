@@ -37,15 +37,15 @@ RVariable Class
          The following example creates a new cell at the end of the "trial"
          column's cell array, and assigns its reference to the variable
          ``newcell``. It then changes ``newcell``'s :term:`onset` to 1000ms using
-         :meth:`change_arg()`, and writes the change back to the database
-         using :meth:`setVariable`.
+         :meth:`change_code()`, and writes the change back to the database
+         using :meth:`setColumn`.
 
          .. code-block:: ruby
 
-            trial = getVariable("trial")
+            trial = getColumn("trial")
             newcell = trial.make_new_cell()
-            newcell.change_arg("onset", 1000)
-            setVariable("trial", trial)
+            newcell.change_code("onset", 1000)
+            setColumn("trial", trial)
 
    .. classmethod:: change_arg_name(old_name, new_name)
    
@@ -81,9 +81,9 @@ RVariable Class
             
             require 'Datavyu_API.rb'
             begin
-               trial = getVariable("trial")
+               trial = getColumn("trial")
                trial.change_arg_name("badCodeName", "awesomeCodeName")
-               setVariable("trial")
+               setColumn("trial")
             end
    
    .. classmethod:: add_code(name)
@@ -111,17 +111,17 @@ RVariable Class
       
       .. admonition:: Example 
       
-         The following example adds the *unit* argument to the "trial"
+         The following example adds the *unit* code to the "trial"
          column, and then writes the changes back to the database
-         using :meth:`setVariable`.
+         using :meth:`setColumn()`.
 
          .. code-block:: ruby
       
             require 'Datavyu_API.rb'
             begin
-               trial = getVariable("trial")
-               trial.add_arg("unit")
-               setVariable(trial)
+               trial = getColumn("trial")
+               trial.add_code("unit")
+               setColumn(trial)
             end
 
    .. classmethod:: remove_arg(name)

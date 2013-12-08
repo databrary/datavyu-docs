@@ -22,7 +22,7 @@ Add Cells to a Variable
 Add Arguments to a Variable
 ---------------------------
 
-.. include:: /api/tutorial/add-arguments-to-a-column.txt
+.. include:: /api/tutorial/add-codes-to-a-column.txt
    :start-after: begin-content
    :end-before: end-content
 
@@ -51,7 +51,7 @@ Check for Coder Errors
 Use Two-Pass Verification to Check Data Accuracy
 ------------------------------------------------
 
-.. include:: /api/tutorial/use-two-pass-verification-to-check-data-accuracy.txt
+.. include:: /api/tutorial/use-reliability-coding-to-check-data-accuracy.txt
    :start-after: begin-content
    :end-before: end-content
 

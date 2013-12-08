@@ -9,7 +9,7 @@ makeReliability()
 .. TODO: mention that it has an alias in make_rel as well? 
    make_rel(relname, var_to_copy, multiple_to_keep, *args_to_keep)
 
-   Creates a :term:`reliability variable` that is a copy of another
+   Creates a :term:`reliability column` that is a copy of another
    Datavyu variable in the Database. :rb:meth:`makeReliability()` can
    copy the cells (or a subsection of the cells) and retain arguments
    from the origin variable if wanted.
@@ -24,7 +24,7 @@ makeReliability()
         - Type
         - Description
       * - ``rename``
-        - String **or** Ruby variable from :meth:`getVariable`
+        - String **or** Ruby variable from :meth:`getColumn()`
         - the name of the new reliability variable you will create. 
           The convention is to name it ``rel.variableName``.
       * - ``var_to_copy``
@@ -61,4 +61,4 @@ makeReliability()
 
 .. seealso::
 
-   - :doc:`/api/tutorial/use-two-pass-verification-to-check-data-accuracy`
+   - :doc:`/api/tutorial/use-reliability-coding-to-check-data-accuracy`

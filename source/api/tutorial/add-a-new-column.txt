@@ -10,8 +10,8 @@ Add a New Column
 
 Much like adding :ref:`a cell <api-add-cells>` or :ref:`a code
 <api-add-codes>`, the Datavyu API allows you to create a completely
-new column using the :meth:`createVariable` method.
-:meth:`createVariable` takes at least two parameters: the name of the
+new column using the :meth:`createColumn()` method.
+:meth:`createColumn()` takes at least two parameters: the name of the
 new column must come first, while any subsequent parameters become the
 new column's :term:`codes <code>`.
 
@@ -19,17 +19,17 @@ For example, suppose you wanted to add a column called "step" to your
 spreadsheet. "step" needs three codes: *foot*, *ht*, and
 *direction*.
 
-#. Set up the script, and create a new column with its four [codes].
-   You will need to create a Ruby object to  will hold the
-   data until you are ready to write it back to the Database. In
+#. Set up the script, and create a new column with its four codes.
+   You will need to create a Ruby object to hold the
+   data until you are ready to write it back to the spreadsheet. In
    this example, the Ruby object is called ``step``:
 
    .. code-block:: ruby
    
       require 'Datavyu_API.rb'
       begin
-         # Create new variable
-         step = createVariable("step", "foot", "ht", "direction")
+         # Create new column
+         step = createColumn("step", "foot", "ht", "direction")
 
 #. Write the new column back to the spreadsheet and ``end`` the script:
    
@@ -37,10 +37,10 @@ spreadsheet. "step" needs three codes: *foot*, *ht*, and
    
       require 'Datavyu_API.rb'
       begin
-         step = createVariable("step", "foot", "ht", "direction")
+         step = createColumn("step", "foot", "ht", "direction")
 
-         # Write the new variable to Datavyu's spreadsheet.
-         setVariable(step)
+         # Write the new column to Datavyu's spreadsheet.
+         setColumn(step)
       end
 
 .. end-content

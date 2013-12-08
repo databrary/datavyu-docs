@@ -36,7 +36,7 @@ printCellArgs()
       
          require 'Datavyu_API.rb'
          begin
-            trial = getVariable("trial")
+            trial = getColumn("trial")
             cell = trial.cell[0]
             
             puts printCellArgs(cell)

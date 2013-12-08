@@ -25,7 +25,7 @@ you can download it, and then open it with Datavyu (using File >
 Open and selecting the file from your hard drive).
 
 Most Datavyu scripts begin by loading a column from Datavyu using the
-:meth:`getVariable()` method. Before moving on to the larger tutorial
+:meth:`getColumn()` method. Before moving on to the larger tutorial
 list, you should familiarize yourself with loading Datavyu columns.
 
 .. begin-content
@@ -34,7 +34,7 @@ Load Datavyu Columns
 --------------------
 
 Most scripts begin by loading the desired Datavyu columns using the
-:meth:`getVariable()` method. :meth:`getVariable()` takes one
+:meth:`getColumn()` method. :meth:`getColumn()` takes one
 argument: the name of the column in Datavyu, and returns the Ruby
 representation of the column, which you can work with.
 
@@ -47,15 +47,15 @@ database and assigns it to an :class:`RVariable` object called ``trial``.
    begin
       # Assign the Datavyu variable "trial" data to a new Ruby variable called trial.
      
-      trial = getVariable("trial")
+      trial = getColumn("trial")
    end
 
 The left side of the method call is the name of the Ruby object;
 the "trial" in the parentheses is the argument passed to
-:meth:`getVariable` (the name of the Datavyu variable).
+:meth:`getColumn` (the name of the Datavyu variable).
 
 .. image:: /img/method-call-explanation.png
-   :alt: mapping of trial = getVariable("trial") to its components
+   :alt: mapping of trial = getColumn("trial") to its components
    :align: center
    :width: 500px
 
@@ -74,9 +74,9 @@ Tutorials
    :titlesonly:
 
    /api/tutorial/add-a-new-column   
-   /api/tutorial/add-arguments-to-a-column
+   /api/tutorial/add-codes-to-a-column
    /api/tutorial/add-cells-to-a-column
    /api/tutorial/check-for-coding-errors
-   /api/tutorial/use-two-pass-verification-to-check-data-accuracy
+   /api/tutorial/use-reliability-coding-to-check-data-accuracy
    /api/tutorial/export-data-using-scripts 
    /api/tutorial/convert-openshapa-script-to-datavyu

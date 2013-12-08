@@ -26,7 +26,7 @@ with the :term:`onset` set to the correct trial start time.
       require 'Datavyu_API.rb'
       begin
          # Load the Datavyu column
-         trial = getVariable("trial")
+         trial = getColumn("trial")
 
 #. Create the five cells using a loop. 
    
@@ -64,7 +64,7 @@ with the :term:`onset` set to the correct trial start time.
    
          require 'Datavyu_API.rb'
          begin
-            trial = getVariable("trial")
+            trial = getColumn("trial")
 
             for i in 0..4
                # Calculate the onset time in milliseconds
@@ -78,7 +78,7 @@ with the :term:`onset` set to the correct trial start time.
    
          require 'Datavyu_API.rb'
          begin
-            trial = getVariable("trial")
+            trial = getColumn("trial")
 
             for i in 0..4
                time = i * 1000 * 60
@@ -93,7 +93,7 @@ with the :term:`onset` set to the correct trial start time.
    
          require 'Datavyu_API.rb'
          begin
-            trial = getVariable("trial")
+            trial = getColumn("trial")
 
             for i in 0..4
                time = i * 1000 * 60
@@ -112,7 +112,7 @@ with the :term:`onset` set to the correct trial start time.
    
       require 'Datavyu_API.rb'
       begin
-         trial = getVariable("trial")
+         trial = getColumn("trial")
 
          for i in 0..4
             time = i * 1000 * 60
@@ -121,7 +121,7 @@ with the :term:`onset` set to the correct trial start time.
          end
          
          # Write change back to the Datavyu spreadsheet
-         setVariable(trial)
+         setColumn(trial)
       end
 
 .. end-content

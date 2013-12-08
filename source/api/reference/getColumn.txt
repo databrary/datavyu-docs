@@ -1,10 +1,10 @@
-=============
-getVariable()
-=============
+===========
+getColumn()
+===========
 
 .. default-domain:: rb
 
-.. method:: getVariable(name)
+.. method:: getColumn(name)
 
    Retrieves a variable from the Datavyu database and assigns it to a Ruby
    object using :meth:`print_debug` 
@@ -37,5 +37,5 @@ getVariable()
 
          require 'Datavyu_API.rb'
          begin
-            trial = getVariable("trial")
+            trial = getColumn("trial")
          end

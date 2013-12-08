@@ -1,12 +1,12 @@
-=============
-setVariable()
-=============
+===========
+setColumn()
+===========
 
 .. TODO: this one really needs work for clarification
 
 .. default-domain:: rb
 
-.. method:: setVariable(name, var)
+.. method:: setColumn(name, var)
 
    Replaces a column in the database with a new column of the
    same name as the method's parameters. If no column with the same
@@ -28,11 +28,11 @@ setVariable()
         - Ruby variable
         - Ruby container of the column that you are inserting into the
           spreadsheet (modified output of :meth:`createNewVariable()` or
-          :meth:`getVariable()`)
+          :meth:`getColumn()`)
 
    .. important:: 
 
-      You must specify the ``var`` argument to :meth:`setVariable()`.
+      You must specify the ``var`` argument to :meth:`setColumn()`.
       If you are also passing the ``name`` argument, the order of parameters
       **must** be ``name`` followed by ``var``.
 
@@ -51,7 +51,7 @@ setVariable()
 
          require 'Datavyu_API.rb'
          begin
-            trial = getVariable("trial")
+            trial = getColumn("trial")
             <some modifications to trial>
-            setVariable("trial", trial)
+            setColumn("trial", trial)
          end

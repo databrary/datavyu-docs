@@ -38,25 +38,25 @@ methods" <class method>` act directly upon an instance of a specific
 class. Other methods, "standalone methods", perform actions on their
 own.
 
-:meth:`getVariable` is a standalone method that you use to retrieve
+:meth:`getColumn()` is a standalone method that you use to retrieve
 a column from the Datavyu database so that you can modify it with your
 script. To retrieve a column called "trial" from the database, you
 would run:
 
 .. code-block:: ruby
 
-   getVariable("trial")
+   getColumn("trial")
 
-In contrast, :meth:`add_arg` is a class method of the
+In contrast, :meth:`add_code` is a class method of the
 :class:`RVariable` class, and *is invoked* on an
 :class:`RVariable` instance. Assuming that you have already retrieved a
 column called "trial" from the database, and assigned it to an
-:class:`RVariable` instance, the following code would add the *newArgument*
-[code] to the "trial" :class:`RVariable` object:
+:class:`RVariable` instance, the following code would add the *newCode*
+code to the "trial" :class:`RVariable` object:
 
 .. code-block:: ruby
 
-   trial.add_arg("newArgument")
+   trial.add_code("newCode")
 
 Comparing them side-by-side can help highlight the difference:
 

@@ -21,7 +21,7 @@ data </resources/Example-Template.opf>`. The *unit* code might
 represent the unit of measure used during an experiment.
 
 #. Start by setting up the script, and assigning the Datavyu column
-   "trial" to a variable using :meth:`getVariable()`. You can call your
+   "trial" to a variable using :meth:`getColumn()`. You can call your
    variable whatever you want to: we're calling it ``trial`` in this
    example:
 
@@ -31,7 +31,7 @@ represent the unit of measure used during an experiment.
       begin
          # Retrieve "trial" data from Datavyu spreadsheet and assign it
          # to a new Ruby variable
-         trial = getVariable("trial")
+         trial = getColumn("trial")
 
 #. Add the *unit* code to ``trial`` using :meth:`add_code()`.
    
@@ -39,23 +39,23 @@ represent the unit of measure used during an experiment.
       
       require 'Datavyu_API.rb'
       begin
-         trial = getVariable("trial")
+         trial = getColumn("trial")
          
          # Add the "unit" code to the trial variable
          trial.add_code("unit")
 
 #. Write the changes back to the Datavyu spreadsheet using
-   :meth:`setVariable()` and ``end`` the script:
+   :meth:`setColumn()` and ``end`` the script:
 
    .. code-block:: ruby
 
       require 'Datavyu_API.rb'
       begin
-         trial = getVariable("trial")
+         trial = getColumn("trial")
          trial.add_code("unit")
          
          # Write the changes back to the Datavyu spreadsheet
-         setVariable(trial)
+         setColumn(trial)
       end
 
 .. end-content

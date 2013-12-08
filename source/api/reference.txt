@@ -19,15 +19,14 @@ Freestanding Methods
 
    /api/reference/add_args_to_var
    /api/reference/checkValidCodes
-   /api/reference/createVariable
+   /api/reference/createColumn
    /api/reference/checkReliability
    /api/reference/checkValidCodes
    /api/reference/combine_columns
    /api/reference/create_mutually_exclusive
-   /api/reference/createVariable 
    /api/reference/getCellFromTime 
    /api/reference/getColumnList   
-   /api/reference/getVariable
+   /api/reference/getColumn
    /api/reference/load_db         
    /api/reference/load_macshapa_db
    /api/reference/makeDurationBlockRel
@@ -36,7 +35,7 @@ Freestanding Methods
    /api/reference/printAllNested  
    /api/reference/printCellArgs   
    /api/reference/save_db         
-   /api/reference/setVariable
+   /api/reference/setColumn
    /api/reference/smoothColumn    
    /api/reference/transfer_columns
 

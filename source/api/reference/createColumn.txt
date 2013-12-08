@@ -42,7 +42,7 @@ createVariable()
       the parameters "trialnum" and "unit", and assigns them to a Ruby
       variable called ``trial``. It then adds a new cell to ``trial`` using
       :meth:`make_new_cell` and writes the changes back to the Datavyu
-      database using :meth:`setVariable`.
+      database using :meth:`setColumn`.
 
       .. code-block:: ruby
 
@@ -50,5 +50,5 @@ createVariable()
          begin
             trial = createNewVariable("trial", "trialnum", "unit")
             blank_cell = trial.make_new_cell()
-            setVariable(trial)
+            setColumn(trial)
          end
