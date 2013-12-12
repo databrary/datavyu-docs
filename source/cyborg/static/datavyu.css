@@ -60,6 +60,18 @@ a:active {
     outline: 0;
 }
 
+#main a:visited {
+    color: #7e2c5c;
+}
+
+#footer a:visited {
+    color: #7e2c5c;
+}
+
+#bar a:visited {
+    color: #7e2c5c;
+}
+
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
@@ -786,7 +798,11 @@ MAIN
     color: #EE6F07;
 }
 
-#main a:hover em.atd-term {
+#main a:hover em.std-term {
+    color: #733503;
+}
+
+#main a:visited em.std-term {
     color: #733503;
 }
 
