@@ -40,11 +40,16 @@ div.bodywrapper {
     float: right;
 }
 
-div.sphinxsidebar {
+#main div.sphinxsidebar {
     width: {{ sidebar_width }};
     margin-left: 0;
     margin-top: 0em;
     float: none;
+}
+
+#main div.sphinxsidebar ul.current a.current {
+    font-weight: bold;
+    color: #333333;
 }
 
 hr {
