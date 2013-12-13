@@ -1,13 +1,13 @@
-================
-createVariable()
-================
+=================
+createNewColumn()
+=================
 
 .. default-domain:: rb
 
-.. method:: createVariable(name, *args)
-               createNewVariable(name, *args)
+.. method:: createNewColumn(name, *codes)
 
-   Creates a new blank variable with the specified name and arguments.
+
+   Creates a new blank column with the specified name and codes.
 
    .. table-start
 
@@ -20,27 +20,27 @@ createVariable()
         - Description
       * - ``name``
         - String
-        - The name of the new variable
-      * - ``args``
+        - The name of the new column
+      * - ``codes``
         - comma separated Strings
-        - Arguments that the new variable will contain. 
+        - Codes that the new column will contain. 
 
    .. note:: 
 
-      :meth:`createVariable` creates the onset, offset, and ordinal
-      arguments by default. You do not need to specify them in the ``args``.
+      :meth:`createNewColumn()` creates the onset, offset, and ordinal
+      codes by default. You do not need to specify them in the ``codes``.
 
    .. table-end
 
    .. admonition:: Returns
 
-      Ruby object representation of the new variable in Datavyu.
+      Ruby object representation of the new column in Datavyu.
 
    .. admonition:: Example
 
-      The following example creates a new Datavyu variable called "trial" with
-      the parameters "trialnum" and "unit", and assigns them to a Ruby
-      variable called ``trial``. It then adds a new cell to ``trial`` using
+      The following example creates a new Datavyu column called "trial" with
+      the codes "trialnum" and "unit", and assigns them to an
+      :class:`RVariable` object called ``trial``. It then adds a new cell to ``trial`` using
       :meth:`make_new_cell` and writes the changes back to the Datavyu
       spreadsheet using :meth:`setColumn`.
 
@@ -48,7 +48,7 @@ createVariable()
 
          require 'Datavyu_API.rb'
          begin
-            trial = createNewVariable("trial", "trialnum", "unit")
-            blank_cell = trial.make_new_cell()
+            trial = createNewColumn("trial", "trialnum", "unit")
+            trial.make_new_cell()
             setColumn(trial)
          end

@@ -1,10 +1,10 @@
-============
-print_args()
-============
+=============
+print_codes()
+=============
 
 .. default-domain:: rb
 
-.. method:: print_args(cell, file, args)
+.. method:: print_codes(cell, file, codes)
 
    
    .. table-start
@@ -22,9 +22,9 @@ print_args()
       * - ``file``
         - Integer
         - 
-      * - ``args``
+      * - ``codes``
         - List of strings
-        - [Codes] whose coded values you wish to print.
+        - Codes whose coded values you wish to print.
 
    .. table-end
    

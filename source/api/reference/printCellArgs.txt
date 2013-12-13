@@ -1,12 +1,12 @@
-===============
-printCellArgs()
-===============
+================
+printCellCodes()
+================
 
 .. default-domain:: rb
 
-.. method:: printCellArgs(cell)
+.. method:: printCellCodes(cell)
 
-   Prints out the values for every [code] in a specified cell.
+   Prints out the values for every code in a specified cell.
    
    .. table-start
    
@@ -19,18 +19,18 @@ printCellArgs()
         - Description
       * - ``cell``
         - 
-        - The cell whose [codes] you are printing out.
+        - The cell whose codes you are printing out.
 
    .. table-end
    
    .. admonition:: Returns
    
-      An object listing all of the [codes] in a given cell. 
+      An object listing all of the codes in a given cell. 
       
    .. admonition:: Example
    
-      The following example prints out the first cell in the "trial"
-      column's [codes].
+      The following example prints out the codes for the first cell in the "trial"
+      column.
       
       .. code-block:: ruby
       
@@ -39,5 +39,5 @@ printCellArgs()
             trial = getColumn("trial")
             cell = trial.cell[0]
             
-            puts printCellArgs(cell)
+            puts printCellCodes(cell)
          end

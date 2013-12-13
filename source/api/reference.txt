@@ -17,26 +17,25 @@ Freestanding Methods
 .. toctree::
    :titlesonly:
 
-   /api/reference/add_args_to_var
-   /api/reference/checkValidCodes
-   /api/reference/createColumn
+   /api/reference/add_codes_to_column
    /api/reference/checkReliability
    /api/reference/checkValidCodes
    /api/reference/combine_columns
+   /api/reference/createColumn
    /api/reference/create_mutually_exclusive
-   /api/reference/getCellFromTime 
-   /api/reference/getColumnList   
+   /api/reference/getCellFromTime
    /api/reference/getColumn
-   /api/reference/load_db         
+   /api/reference/getColumnList
+   /api/reference/load_db
    /api/reference/load_macshapa_db
    /api/reference/makeDurationBlockRel
-   /api/reference/makeReliability 
-   /api/reference/print_args      
-   /api/reference/printAllNested  
-   /api/reference/printCellArgs   
-   /api/reference/save_db         
+   /api/reference/makeReliability
+   /api/reference/printAllNested
+   /api/reference/printCellCodes
+   /api/reference/print_codes
+   /api/reference/save_db    
    /api/reference/setColumn
-   /api/reference/smoothColumn    
+   /api/reference/smoothColumn
    /api/reference/transfer_columns
 
 .. seealso:: 

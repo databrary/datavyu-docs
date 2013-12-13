@@ -754,7 +754,7 @@ HEADER
     background: #A9E6A6;
 }
 
-#header li.current a {
+#header li.current a.current {
     background: #68CB63;
 }
 

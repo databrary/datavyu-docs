@@ -4,15 +4,12 @@ makeReliability()
 
 .. default-domain:: rb
 
-.. method:: makeReliability(relname, var_to_copy, multiple_to_keep, *args_to_keep)
-
-.. TODO: mention that it has an alias in make_rel as well? 
-   make_rel(relname, var_to_copy, multiple_to_keep, *args_to_keep)
+.. method:: makeReliability(relname, var_to_copy, multiple_to_keep, *codes_to_keep)
 
    Creates a :term:`reliability column` that is a copy of another
-   Datavyu variable in the Database. :rb:meth:`makeReliability()` can
-   copy the cells (or a subsection of the cells) and retain arguments
-   from the origin variable if wanted.
+   Datavyu column in the Database. :rb:meth:`makeReliability()` can
+   copy the cells (or a subsection of the cells) and retain codes
+   from the origin column if desired.
 
    .. table-start
 
@@ -23,41 +20,42 @@ makeReliability()
       * - Parameter
         - Type
         - Description
-      * - ``rename``
-        - String **or** Ruby variable from :meth:`getColumn()`
-        - the name of the new reliability variable you will create. 
-          The convention is to name it ``rel.variableName``.
+      * - ``relname``
+        - String **or** Ruby column from :meth:`getColumn()`
+        - the name of the new reliability column you will create. 
+          The convention is to name it ``rel_columnName``, but you
+          can name it whatever you want to.
       * - ``var_to_copy``
         - String
-        - The name of the variable that we want to create a reliability
-          variable *from* (i.e. the existing coded variable).
+        - The name of the column that we want to create a reliability
+          column *from* (i.e. the existing coded column).
       * - ``multiple_to_keep`` (**optional**)
         - Integer
         - Number of cells to skip: a value of ``2`` includes *every other
           cell* in the new variable; ``1`` includes every cell, and ``0``
           creates a blank column with no cells
-      * - ``*args_to_keep`` (**optional**)
+      * - ``*codes_to_keep`` (**optional**)
         - comma-separated strings
-        - Arguments you want to copy from the original to new variable.
-          These are arguments that the reliability coder will not have to
-          code
+        - Codes you want to copy from the original to new column.
+          These are codes that the reliability coder will not have to
+          code.
 
    .. table-end
 
    .. admonition:: Returns
 
-      A Ruby object representation of the reliability variable within
+      A Ruby object representation of the reliability column within
       Datavyu.
 
    .. admonition:: Example
 
-      The following example creates the reliability variable "rel.trial"
-      from the primary variable "trial", copying every second cell, and retaining the
-      "onset", "trialnum" and "unit" arguments.
+      The following example creates the reliability column "rel_trial"
+      from the primary column "trial", copying every second cell, and retaining the
+      "onset", "trialnum" and "unit" codes.
 
       .. code-block:: ruby
 
-         rel_trial = makeReliability("rel.trial", "trial", 2, "onset", "trialnum", "unit")
+         rel_trial = makeReliability("rel_trial", "trial", 2, "onset", "trialnum", "unit")
 
 .. seealso::
 

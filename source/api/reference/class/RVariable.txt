@@ -47,9 +47,9 @@ RVariable Class
             newcell.change_code("onset", 1000)
             setColumn("trial", trial)
 
-   .. classmethod:: change_arg_name(old_name, new_name)
+   .. classmethod:: change_code_name(old_name, new_name)
    
-      [description]
+      Renames a code.
    
       .. table-start
       
@@ -62,10 +62,10 @@ RVariable Class
            - Descripton
          * - ``old_name``
            - String
-           - Current name of the [code]
+           - Current name of the code
          * - ``new_name``
            - String
-           - New name for the [code], which will replace ``old_name``
+           - New name for the code, which will replace ``old_name``
       
       .. admonition:: Returns
       
@@ -74,7 +74,7 @@ RVariable Class
       .. admonition:: Example 
       
          The following example renames the "trial" column's
-         *badCodeName* [code] to *awesomeCodeName*, and then writes the
+         *badCodeName* code to *awesomeCodeName*, and then writes the
          changes back to the Datavyu spreadsheet:
          
          .. code-block:: ruby
@@ -82,7 +82,7 @@ RVariable Class
             require 'Datavyu_API.rb'
             begin
                trial = getColumn("trial")
-               trial.change_arg_name("badCodeName", "awesomeCodeName")
+               trial.change_code_name("badCodeName", "awesomeCodeName")
                setColumn("trial")
             end
    
@@ -124,9 +124,9 @@ RVariable Class
                setColumn(trial)
             end
 
-   .. classmethod:: remove_arg(name)
+   .. classmethod:: remove_code(name)
    
-      Deletes an argument from a column.
+      Deletes a code from a column.
       
       .. table-start
 
@@ -139,7 +139,7 @@ RVariable Class
            - Description
          * - ``name``
            - String
-           - The name of the argument you are deleting from the column
+           - The name of the code you wish to delete from the column
 
       .. table-end
 

@@ -9,7 +9,7 @@ setColumn()
 .. method:: setColumn(name, var)
 
    Replaces a column in the spreadsheet with a new column of the
-   same name as the method's parameters. If no column with the same
+   same name as the method's argumnets. If no column with the same
    name exists in the spreadsheet, it will instead create a new column.
 
    .. table-start
@@ -27,14 +27,14 @@ setColumn()
       * - ``var`` (**required**)
         - Ruby variable
         - Ruby container of the column that you are inserting into the
-          spreadsheet (modified output of :meth:`createNewVariable()` or
+          spreadsheet (modified output of :meth:`createNewColumn()` or
           :meth:`getColumn()`)
 
    .. important:: 
 
-      You must specify the ``var`` argument to :meth:`setColumn()`.
-      If you are also passing the ``name`` argument, the order of parameters
-      **must** be ``name`` followed by ``var``.
+      You must specify a value for the ``var`` parameter.  If you are
+      also passing a value for the ``name`` parameter, the order of
+      arguments **must** be ``name`` followed by ``var``.
 
    .. table-end
 

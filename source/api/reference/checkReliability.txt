@@ -47,24 +47,24 @@ checkReliability()
 
    .. admonition:: Example
 
-      The following example checks the reliability variable "rel.trial"
+      The following example checks the reliability variable "rel_trial"
       against the primary variable "trial", linking the two on their
       "trialnum" argument, with a 100ms :term:`onset` and :term:`offset`
       difference tolerated.
 
       .. code-block:: ruby
 
-         checkReliability("trial", "rel.trial", "trialnum", 100)
+         checkReliability("trial", "rel_trial", "trialnum", 100)
 
       The following example checks the reliability variable "rel.trial"
       against the primary variable "trial", linking the two on their
       "trialnum" argument, with a 100ms :term:`onset` and :term:`offset`
-      difference tolerated, and writes the output to the
+      difference tolerated, and writes the output to
       ``/Users/motoruser/Desktop/Relcheck.txt``, a text file.
    
       .. code-block:: ruby
 
-         checkReliability("trial", "rel.trial", "trialnum", 100, "/Users/motoruser/Desktop/Relcheck.txt")
+         checkReliability("trial", "rel_trial", "trialnum", 100, "/Users/motoruser/Desktop/Relcheck.txt")
 
 .. seealso:: 
 
