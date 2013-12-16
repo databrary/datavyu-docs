@@ -33,7 +33,7 @@ list, you should familiarize yourself with loading Datavyu columns.
 Load Datavyu Columns
 --------------------
 
-Most scripts begin by loading the desired Datavyu columns using the
+To load scripts, Datavyu provides the
 :meth:`getColumn()` method. :meth:`getColumn()` takes one
 argument: the name of the column in Datavyu, and returns the Ruby
 representation of the column, which you can work with.
