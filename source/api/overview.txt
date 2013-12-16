@@ -1,6 +1,6 @@
-=================
-Classes & Methods
-=================
+================================
+Classes, Methods, and Parameters
+================================
 
 .. default-domain:: rb
 
@@ -15,25 +15,63 @@ Datavyu's columns or cells, for instance, as "objects". Types of
 objects are called "classes". 
 
 Objects have attributes: data that pertains to the
-object. In Datavyu, a cell object's attributes would be its [codes]; a column
+object. In Datavyu, a cell object's attributes would be its codes; a column
 object's attributes might be its cells, its name, etc. Objects are
 generally "instances of classes".  To put it differently, classes are
 types of objects, and the objects that you work with directly in your
 code are one occurrence of its class's type.
 
 Thinking about Datavyu specifically, then, you would likely have a
-column class that describes the Datavyu columns.  The "trial" column
+"column" class that describes the Datavyu columns.  The "trial" column
 would then be an instance of the "column" class. This is, in fact, how the
 Datavyu API works: the Datavyu API includes two classes to represent
 datavyu concepts: :class:`RVariable` describes Datavyu's
 :term:`columns <column>`, and :class:`RCell` describes Datavyu's
 :term:`cells <cell>`.
 
+Methods and their Parameters
+----------------------------
+
+While classes describe objects, :term:`methods <method>` define actions
+that you can perform. The Datavyu API defines numerous methods to help
+you manipulate, modify, add, and delete data in the Datavyu
+spreadsheets.
+
+In order to work, many methods need additional information: for
+instance, :meth:`getColumn`, which retrieves a column from a Datavyu
+spreadsheet so that you can modify or update it using your script,
+needs you to tell it what column it should retreive.
+Each method defines what information it can receive: these are called
+:term:`parameters`. :meth:`getColumn` has one parameter: ``name``,
+which is the name of the column that you wish to retreive.
+
+So, parameters are the types of information that you can specify to a
+method, and are specified in the method's definition (you can view all
+of Datavyu's methods' definitions on the :doc:`api reference page
+</api/reference>`). 
+
+The information you actually provide when you use the method is called an
+"argument". Arguments are user-specified: for :meth:`getVariable`, you
+might want to retreive a column called "trial", so "trial" is your
+argument for the ``name`` parameter. Again, parameters are part of the
+method's definition, while arguments are the information you provide
+to the method.
+
+.. admonition:: Example
+
+   :meth:`checkReliability` is an important method for Datavyu: it
+   enables you to compare two coding passes of the same data, to see
+   if the coders are recording consistent
+   information. :meth:`checkReliability` has five parameters: four are
+   required (``main_col``, ``rel_col``, ``match_arg``, and
+   ``time-tolerance``), and one is optional (``dump_file``).
+
+   [image that explains this more clearly]
+
 Standalone Methods and Class Methods
 --------------------------------------
 
-While classes describe objects, :term:`methods <method>` define actions
-that you can perform. Some methods belong to classes: these :term:`"class
+ Some methods belong to classes: these :term:`"class
 methods" <class method>` act directly upon an instance of a specific
 class. Other methods, "standalone methods", perform actions on their
 own.
@@ -66,6 +104,7 @@ Comparing them side-by-side can help highlight the difference:
 Understanding the difference between standalone and class methods
 will make it easier for you to easily use the methods included in the
 Datavyu API.
+
 
 Next Steps
 ----------
