@@ -13,22 +13,15 @@ Glossary
 
    data
       The audio or video files that are being studied.
-   
+
    onset
    cell onset
       [definition]
-   
+
    offset
    cell offset
       [definition]
-
-   column
-      Datavyu columns are phenomena or events that observations are
-      collected about. Columns can be general, such as
-      "trial" or "ID", or can be specific, such as "step" or "hand".
-      Datavyu represents columns as a column in the
-      :guilabel:`Spreadsheet`.
-   
+ 
    spreadsheet
       [definition] see: :doc:`/guide/spreadsheet`
 
@@ -49,15 +42,15 @@ Glossary
       a "foot" code that would differentiate between left or right
       feet, and a "direction" code that indicated if the person
       was stepping forward or backward.
-   
+
    Integer
       A whole number. Integers are numbers that are not fractions,
       and thus, which have no numbers after a decimal point.
-   
+
    String
       In computing, a string is a linear sequence of characters. Strings
       can be random characters, words, or sentences.
-   
+
    timeslider
       The timeslider represents the length of the data source, and
       enables users to visualize where the :term:`playhead` is with
@@ -68,7 +61,7 @@ Glossary
       about) with "values" (the data itself). A key-value pair could be
       "telephone" and "555-123-4567", for instance. Sometimes, values
       are represented as a list of values, or as an array.
-   
+
    frame rate
       (from Wikipedia) "Frame rate (also known as frame frequency) is the
       frequency (rate) at which an imaging device produces unique
@@ -78,7 +71,7 @@ Glossary
       
    region
       [timeslider *region* explanation here]
-   
+
    API 
       An API (Application Programming Interface) enables disparate software
       components to interact with each other by specifying functions or
@@ -89,19 +82,20 @@ Glossary
       A Datavyu column that is a copy of an original column
       used to ensure that the coded observations are accurate.
 
-  column
-      Columns are :term:`key-value pairs <key-value pair>` that
-      associate a column name with a variety of :term:`codes
-      <code>`. The argubments are themselves key-value pairs.
-      Matrix columns allow researchers to record components of events
-      or phenomena in one place.
-
-  cell
+   column 
+      Datavyu columns are phenomena or events that observations are
+      collected about. Columns are :term:`key-value pairs <key-value
+      pair>` that associate a column name with a variety of
+      :term:`codes <code>`. Columns can be general, such as "trial" or
+      "ID", or can be specific, such as "step" or "hand".  Datavyu
+      represents columns as a column in the :guilabel:`Spreadsheet`.
+   
+   cell
       A cell is a graphical representation of an observation. Cells
       are rectangles that stack in the columns of Datavyu's 
       spreadsheet and contain the observation data that a coder 
       inputs when coding a data source.
-   
+    
    class
       [words]
 
