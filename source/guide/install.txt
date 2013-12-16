@@ -102,6 +102,21 @@ the :guilabel:`Help` menu, and then selecting :guilabel:`Check for
 updates...`.  If a new version is available, it will direct you to the
 download page to download the latest release.
 
+During the course of development, the Datavyu team releases several
+*pre-release* versions of the software prior to releasing the official
+stable releases. Pre-releases may contain new features not yet
+incorporated into the main software, but are also more likely to contain
+bugs and to behave in unexpected ways. 
+
+To be notified of pre-release updates, simply check the "pre-release"
+checkbox in the updates window. Due to the increased potential for data
+loss and bug-related issues, you should only choose to use pre-releases
+if you need an as-yet unreleased feature, or are grappling with a bug in
+the existing stable release that is fixed in the stable release.
+
+Ultimately, all new features in the pre-releases are brought together
+and released as a new stable release.
+
 
 Now that you have installed Datavyu, you can move on to Datavyu's
 :doc:`Getting Started Guide </guide/getting-started>`.
