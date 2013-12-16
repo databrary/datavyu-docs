@@ -12,4 +12,70 @@ take some effort. The following sections guide you through the process.
 Add Multiple Data Sources
 -------------------------
 
+To add multiple data sources, simply add a data source using the Data
+Viewer Controller's ':guilabel:`Add Data` button. You can add as many
+data sources as you want to.
+
+.. figure:: /img/dvc-annotated-multiple-sources.png
+   :align: center
+   :alt: Screenshot of the data viewer controller, with annotations
+         indicating the tracks, and add data buttons.
+   
+   [Caption here]
+
+Each data source will have its own line in the :guilabel:`tracks` area
+of the Data Viewer Controller. You can select an individual data
+source by clicking on its blue bar: when selected, the bar will turn
+green.
+
+Align Tracks
+------------
+
+In order to be able to code your multiple data sources, you need to
+align them so that the times recorded in the spreadsheet are accurate
+for all data sources.
+
+You will need to locate an event in the experiment that you can use as
+the basis to synchronize your sources. For example, if the lights
+flashed during the experiment, you could align the tracks at that
+point.
+
+Align Tracks Manually
+~~~~~~~~~~~~~~~~~~~~~
+
+To align your data sources, select one and drag it to align with the
+other source. Increasing the zoom using the :guilabel:`slider bar` in
+the Data Viewer Controller can give you more granular control, and
+facilitate precise alignment.
+
+When you have successfully aligned your tracks, select :guilabel:`Lock
+All`. This prvents you from accidentally desynchronizing the
+tracks. You can also lock a single track by clicking on its
+:guilabel:`lock` icon. This can be helpful while syncrhonizing the tracks.
+
+Align Tracks Using Bookmarks
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can also use bookmarks to help synchronize tracks. If you identify
+a distinct synchronization point, navigate to that point in the first
+track, and click the :guilabel:`Add Bookmark` button. This will create
+a bookmark in that track.
+
+Then, locate the same event in the other data source and bookmark
+it. When you drag the tracks to align them, they will "snap" to align
+the bookmarks, aligning the tracks based on the bookmarked event.
+
+You can repeat this process with all the tracks that you need to
+synchronize, and then select the :guilabel:`Lock All` button to lock
+them in that arrangement.
+
+Persistence
+-----------
+
+When working with multiple data sources, Datavyu saves the data source
+synchronization and bookmarks when you save the spreadsheet. This way,
+when you reopen the spreadsheet to do more coding, or to work with the
+data, you will not need to resynchronize the data sources. This also
+helps ensure consistency between coding passes, by making sure that
+all time recordings are consistent.
 
