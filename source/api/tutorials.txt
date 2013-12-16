@@ -33,7 +33,7 @@ list, you should familiarize yourself with loading Datavyu columns.
 Load Datavyu Columns
 --------------------
 
-To load scripts, Datavyu provides the
+To load columns, Datavyu provides the
 :meth:`getColumn()` method. :meth:`getColumn()` takes one
 argument: the name of the column in Datavyu, and returns the Ruby
 representation of the column, which you can work with.
@@ -45,14 +45,14 @@ spreadsheet and assigns it to an :class:`RVariable` object called ``trial``.
 
    require 'Datavyu_API.rb'
    begin
-      # Assign the Datavyu variable "trial" data to a new Ruby variable called trial.
+      # Assign the Datavyu column "trial" data to a new Ruby object called trial.
      
       trial = getColumn("trial")
    end
 
 The left side of the method call is the name of the Ruby object;
 the "trial" in the parentheses is the argument passed to
-:meth:`getColumn` (the name of the Datavyu variable).
+:meth:`getColumn` (the name of the Datavyu column).
 
 .. image:: /img/method-call-explanation.png
    :alt: mapping of trial = getColumn("trial") to its components
