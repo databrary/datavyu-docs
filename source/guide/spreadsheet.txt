@@ -33,62 +33,27 @@ the spreadsheet. Coders can also jump to the relevant time in the data source by
 selecting a cell in the spreadsheet.
 
 .. _columns:
+.. _column-types:
+.. _variable-types:
 
 Columns
 -------
 
-Datavyu supports three types of columns: *text*, *nominal*, and
-*matrix*. Using combinations of these column types, you can [do stuff].
+Datavyu uses columns to group together related observations. In
+general, coders will code the data source column-by-column 
 Each column that a user adds occupies its own column in the
 spreadsheet.
 
-.. _column-types:
-.. _variable-types:
+Using the :ref:`Code Editor <vocab-editor>`, you can configure
+columns to represent any number of observations.
 
-Column Types
-~~~~~~~~~~~~
+.. TODO: image with new columns showing multiple codes per cell
 
-Text Column
-```````````
-
-The *text column* is the more straightforward column type, being a
-simple text field. Text columns are ideal for storing (information),
-and (so on).
-
-Here's a sample observation for a text column:
-
-.. TODO: example of a typical text column observation
-
-Nominal Columns
-```````````````
-
-.. next sentence stolen from wikipedia
-
-*Nominal columns* are "columns with values which have no numerical
-value, such as gender or occupation". These are useful for recording
-facts about the study participant.
-
-A typical nominal column might resemble the following:
-
-.. TODO: example of a typical nominal column
-
-Matrix Columns
-``````````````
-
-Matrix columns are key - value pairs, represented in the
-following form: ::
-
-   <columnname>(<arg01:N>, <arg02:N>, ... , <argn:N>)
-
-Using the :ref:`Vocab Editor <vocab-editor>`, you can configure matrix
-columns to represent any number of observations. They are the most
-commonly-used column type.
-
-Matrix columns have :term:`codes <code>`, which represent the
-feature that is being studied. For instance, an argument could be "Left
+Columns have :term:`codes <code>`, which represent the
+feature that you are studying. For instance, a code could be "Left
 hand touch", or "Hesitation", or "Focus". When a coder codes the data
 source, he or she might record the presence or absence of these
-arguments. A matrix column must have *at least* one argument, but may
+codes. A column must have *at least* one code, but may
 have as many as desired. See: the :doc:`column configuration
 </guide/tutorial/configure-datavyu-columns>` tutorial provides
 instructions for configuring matrix columns.

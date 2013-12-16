@@ -89,24 +89,14 @@ Glossary
       A Datavyu column that is a copy of an original column
       used to ensure that the coded observations are accurate.
 
-   matrix column
-      Matrix columns are :term:`key-value pairs <key-value pair>` that
+  column
+      Columns are :term:`key-value pairs <key-value pair>` that
       associate a column name with a variety of :term:`codes
       <code>`. The argubments are themselves key-value pairs.
       Matrix columns allow researchers to record components of events
       or phenomena in one place.
 
-   text column
-      Text columns are a Datavyu column type that supports free-form
-      text entries, including paragraphs.
-   
-   nominal column
-      (from Wikipedia) "Nominal variables [columns] are columns whose values
-      have no numerical value, such as gender or occupation." Nominal
-      columns differ from :term:`text columns <text column>` in
-      that they do not allow multi-line entries.
-   
-   cell
+  cell
       A cell is a graphical representation of an observation. Cells
       are rectangles that stack in the columns of Datavyu's 
       spreadsheet and contain the observation data that a coder 

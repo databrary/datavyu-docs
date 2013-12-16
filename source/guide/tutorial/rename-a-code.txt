@@ -4,15 +4,15 @@
 Rename a Code
 =============
 
-Datavyu provides the :guilabel:`Vocab Editor` to manage columns'
+Datavyu provides the :guilabel:`Code Editor` to manage columns'
 codes. 
 
 #. Open the Datavyu spreadsheet.
 
 #. Open the :guilabel:`Spreadsheet` menu, and then select
-   :guilabel:`Vocab Editor`.
+   :guilabel:`Code Editor`.
 
-#. Double click on the name of the argument you want to
+#. Double click on the name of the code you want to
    change, and type the new name. The spreadsheet will update
    automatically.
 
