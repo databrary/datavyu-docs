@@ -1,0 +1,15 @@
+==================================
+Code Multiple Data Sources at Once
+==================================
+
+With Datavyu, you can code multiple data sources in one spreadsheet. For
+instance, if you have three different camera views of an experiment, you
+can bring them together into Datavyu, and code them as one.
+
+Adding multiple data sources is easy, but aligning them perfectly can
+take some effort. The following sections guide you through the process.
+
+Add Multiple Data Sources
+-------------------------
+
+
