@@ -135,9 +135,9 @@ user-input codes in cells. You can increase this font size by choosing
 
 You can also modify zoom using keyboard shortcuts:
 
-- ``cmd +`` zooms in
-- ``cmd -`` zooms out
-- ``cmd 0`` resets the zoom to the default level
+- ``cmd +`` / ``alt +`` zooms in
+- ``cmd -`` / ``alt -`` zooms out
+- ``cmd 0`` / ``alt 0`` resets the zoom to the default level
 
 .. _temporal-ordering:
 .. _temporal-alignment:
@@ -173,7 +173,7 @@ Datavyu supports two types of temporal alignment: "weak" and
 Toggle Temporal Alignment
 `````````````````````````
 
-You can toggle temporal alignment using the ``cmd T`` keyboard
+You can toggle temporal alignment using the ``cmd T`` / ``alt T`` keyboard
 shortcut, or by selecting :guilabel:`Weak Temporal Alignment` or
 :guilabel:`Strong Temporal Alignment` from the :guilabel:`Spreadsheet`
 menu.
