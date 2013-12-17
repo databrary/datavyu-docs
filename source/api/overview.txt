@@ -29,7 +29,7 @@ datavyu concepts: :class:`RVariable` describes Datavyu's
 :term:`columns <column>`, and :class:`RCell` describes Datavyu's
 :term:`cells <cell>`.
 
-Methods and their Parameters
+Methods and Their Parameters
 ----------------------------
 
 While classes describe objects, :term:`methods <method>` define actions
@@ -38,11 +38,11 @@ you manipulate, modify, add, and delete data in the Datavyu
 spreadsheets.
 
 In order to work, many methods need additional information: for
-instance, :meth:`getColumn`, which retrieves a column from a Datavyu
+instance, :meth:`getColumn()`, which retrieves a column from a Datavyu
 spreadsheet so that you can modify or update it using your script,
 needs you to tell it what column it should retreive.
 Each method defines what information it can receive: these are called
-:term:`parameters`. :meth:`getColumn` has one parameter: ``name``,
+:term:`parameters`. :meth:`getColumn()` has one parameter: ``name``,
 which is the name of the column that you wish to retreive.
 
 So, parameters are the types of information that you can specify to a
@@ -51,8 +51,8 @@ of Datavyu's methods' definitions on the :doc:`api reference page
 </api/reference>`). 
 
 The information you actually provide when you use the method is called an
-"argument". Arguments are user-specified: for :meth:`getVariable`, you
-might want to retreive a column called "trial", so "trial" is your
+"argument". Arguments are user-specified: for :meth:`getColumn()`, you
+might want to retreive a column called "trial", so "trial" would be your
 argument for the ``name`` parameter. Again, parameters are part of the
 method's definition, while arguments are the information you provide
 to the method.
@@ -69,12 +69,12 @@ to the method.
    [image that explains this more clearly]
 
 Standalone Methods and Class Methods
---------------------------------------
+------------------------------------
 
- Some methods belong to classes: these :term:`"class
-methods" <class method>` act directly upon an instance of a specific
-class. Other methods, "standalone methods", perform actions on their
-own.
+There are two different types of methods: standalone methods, and
+:term:`class methods <class method>`>. Class methods act directly upon
+an instance of a specific class. Standalone methods,
+perform actions on their own.
 
 :meth:`getColumn()` is a standalone method that you use to retrieve
 a column from the Datavyu spreadsheet so that you can modify it with your
@@ -109,7 +109,8 @@ Datavyu API.
 Next Steps
 ----------
 
-Now that you have a sound grounding in the difference betwene
-classes and methods, and know how to invoke both standalone
-and class methods, consider our :doc:`/api/introduction-to-scripting`
-for tips before diving into the :doc:`/api/tutorials`.
+Now that you have a sound grounding in the difference betwene classes
+and methods, understand parameters are arguments, and know how to
+invoke both standalone and class methods, consider our
+:doc:`/api/introduction-to-scripting` for tips before diving into the
+:doc:`/api/tutorials`.

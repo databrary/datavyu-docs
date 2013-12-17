@@ -62,17 +62,17 @@ General Principles
 ------------------
 
 Each cell that you create with the Datavyu API has three required
-fields: ``onset``, ``offset``, and ``ordinal``. Each cell also takes at
-least one :term:`code`. 
+:term:`codes <code>`>: ``onset``, ``offset``, and ``ordinal``. Each cell also takes at
+least one user-specified code. 
 
 ``onset``, ``offset``, and ``ordinal`` are all :term:`Integers
-<integer>`, while :term:`codes <code>` are :term:`Strings <string>`.
+<integer>`, while the user-specified codes are :term:`Strings <string>`.
 
 ``onset`` and ``offset`` are measured in **milliseconds from
 the beginning of the video (or other data stream)**, starting from 0.
 For instance, an ``onset`` time of 00:02:20 translates to 140000ms.
 
-Since [codes] are strings, you must convert any [codes] that you wish to
+Since codes are strings, you must convert any codes that you wish to
 perform calculations on to integers. This is easily done with Ruby using
 the `to_i <http://ruby-doc.org/core-2.0.0/String.html#method-i-to_i>`_
 method.
@@ -118,6 +118,15 @@ method.
 Basic Script Format
 -------------------
 
+.. tip::
+
+   Scripts are very sensitive! When programming, every quotation mark,
+   underscore, period, and slash serve a purpose - you must
+   use the correct syntax, or the script will not work. 
+   
+   Code and column-names are also case sensitive: if you have a column
+   in a spreadsheet called "trial", requesting "Trial" will not work.
+
 In order to work, all Datavyu API scripts must include the following
 line at the top:
 
@@ -135,11 +144,11 @@ In general, the rest of the script code goes between ``begin`` and
 
    require 'Datavyu_API.rb'
    begin
-     # Get the variables that we want to work with
+     # Get the columns that we want to work with
 
-     # Do something to those variables
+     # Do something to those columns
 
-     # Write any changes to those variables back to the spreadsheet
+     # Write any changes to those columns back to the spreadsheet
    end
 
 .. tip::
