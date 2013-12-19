@@ -61,7 +61,7 @@ Method 2: Frame by Frame Dump
 
 We can also dump a file frame by frame if we know the :term:`frame rate`
 of the coded video. This creates a new spreadsheet row for each frame of
-the data source, with the value of [code] in its own column. For long
+the data source, with the value of each code in its own column. For long
 videos, this type of export may be too lengthy to be feasible: a 2 hour
 video at 30fps is 216,000 rows. However, for short videos this is an
 easy and intuitive export method.
@@ -75,11 +75,177 @@ end of a video for a 30fps video).
 
 Method 3: Nested dump
 `````````````````````
+.. image:: /img/sample-nested-data.png
+   :align: right
 
-.. TODO: fill 'er in
+A *nested dump* exports data based on the nesting of :term:`cells
+<cell>`. This is most useful for spreadsheets whose cells group together.
+For instance, the following spreadsheet example has three columns:
+"id", "trial", and "foot". "id" is a participant ID, which might include
+codes that describe the participant's individual id code, their gender,
+age, etc. "trial" is a column that delineates each trial the participant
+participated in, and "foot" is a column representing observations
+recorded during each trial.
 
-Method 4: Nested dump with un-nested cells
-``````````````````````````````````````````
+The cells, then, group together with an "id" cell covering the length of
+all trials. There are two trials in the example, and there are several
+"foot" cells that align within the time limits of each trial.
+
+To export data from this style of spreadsheet, we will use a series of
+:ref:`loops`, exporting a row of tab-separated values for each cell in
+the foot column. Each row will include the "id" and "trial" data that
+the foot cell nests beside. This spreadsheet follows [reference to best
+practices guide that talks about one file / participant], so there is
+only one "id" cell, since all of the data in that spreadsheet is for a
+single participant.
+
+#. Set up the script, and then define where you are going to output the
+   file to. You need to define the location of the file (in this case,
+   the Desktop, defined by ``out_file``), and create a Ruby object to
+   hold the new file's data as it outputs it, which we'll call ``out``:
+   
+   .. code-block:: ruby
+   
+      require 'Datavyu_API.rb'
+
+      begin
+      
+         # Defines the location of the file that we're going to be outputting 
+      	# the spreadsheet data to - the file name is DataOutput.txt
+      	# and is located on the Desktop.
+         out_file = File.expand_path("~/Desktop/DataOutput.txt")
+         
+         # Creates the file, and assigns write permissions so that the system
+         # can write to it ('w')
+         out = File.new(out_file,'w')
+
+#. Retrieve the columns you want to output from the spreadsheet, and
+   assign them to :class:`RColumn` objects:
+   
+   .. code-block:: ruby
+   
+      require 'Datavyu_API.rb'
+
+      begin
+      
+         out_file = File.expand_path("~/Desktop/DataOutput.txt")
+         out = File.new(out_file,'w')
+         
+         # Retrieve the "id", "trial" and "foot" columns from the spreadsheet   
+         # and assign them to RColumn objects
+         
+         id = getColumn("id")
+         trial = getColumn("trial")
+         foot = getColumn("foot")
+
+#. Set up a series of ``for`` loops that we will use to iterate over
+   each cell in the columns we're interested in.
+
+   
+   .. code-block:: ruby
+   
+      require 'Datavyu_API.rb'
+
+      begin
+      
+         out_file = File.expand_path("~/Desktop/DataOutput.txt")
+         out = File.new(out_file,'w')
+         
+         id = getColumn("id")
+         trial = getColumn("trial")
+         foot = getColumn("foot")
+         
+         # Set up a series of nested for loops, following the nesting
+         # of the cells: "id", then "trial", then "foot".
+         # 
+         # This will iterate through every "cell"
+         # in id, every cell in "trial", and every cell in "foot".
+         # 
+         # idcell, tcell, and fcell are temporary Ruby variables
+         # that hold the data for a cell as the cell is iterated over.
+         
+         
+         for idcell in id.cells
+            for tcell in trial.cells
+               for fcell in foot.cells
+
+#. Write an ``if`` clause that checks if cells are nested. In plain
+   English, this ``if`` statement checks if the :term:`onset` of the 
+   ``foot`` cell (``fcell``) occurs after the onset of the ``trial`` 
+   cell (``tcell``) and that the :term:`offset` of the ``fcell`` occurs
+   *before* the offset of the ``tcell``. Or, in even plainer English,
+   that the ``fcell`` occurs during the length of the ``tcell``.
+   
+   If the clauses are met, write the cells' codes to the ``out`` file, 
+   separated by tabs.
+   
+   .. code-block:: ruby
+   
+      require 'Datavyu_API.rb'
+
+      begin
+      
+         out_file = File.expand_path("~/Desktop/DataOutput.txt")
+         out = File.new(out_file,'w')
+         
+         id = getColumn("id")
+         trial = getColumn("trial")
+         foot = getColumn("foot")
+            
+         for idcell in id.cells
+            for tcell in trial.cells
+               for fcell in foot.cells
+
+                  # Set up if statement that checks for cell encapsulation
+                  
+                  if lcell.onset >= tcell.onset && lcell.offset <= tcell.offset
+
+#. If the ``if`` clause is met, write the cells' codes to the ``out`` file,
+   separated by tabs. 
+   
+   As a refresher, cells have a series of codes: onset, offset, and
+   ordinal by default, as well as any user-specified codes. To access
+   the codes in one of our temporary Ruby variables (``icell``, ``tcell``, and ``fcell``),
+   we use the format ``cellName.codeName``. To access the "idnum" code
+   in the "id" column, then, we'd request ``icell.idnum``.
+      
+   Since the script is outputting :term:`strings <string>`, we also need
+   to convert the onset, offset, and ordinals from the :term:`integer`
+   format to the string format, using ``to_s``.
+
+   .. code-block:: ruby
+   
+      require 'Datavyu_API.rb'
+
+      begin
+      
+         out_file = File.expand_path("~/Desktop/DataOutput.txt")
+         out = File.new(out_file,'w')
+         
+         id = getColumn("id")
+         trial = getColumn("trial")
+         foot = getColumn("foot")
+            
+         for idcell in id.cells
+            for tcell in trial.cells
+               for fcell in foot.cells                  
+                  if fcell.onset >= tcell.onset && fcell.offset <= tcell.offset
+
+                     # Write the cells' codes to the output file, separated by tabs - the "\t"
+                     # You must include a newline indicated, "\n" so that the next cells' codes
+                     # will be output on a new line, giving them their own row.
+                     out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" + tcell.offset.to_s + "\t" + tcell.trial + "\t" + fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + fcell.offset.to_s + "\t" + fcell.side + "\n")
+
+                     # End the if clause, and the for loops, as well as the script
+                  end
+               end
+            end
+         end
+      
+      end
+
+.. Method 4: Nested dump with un-nested cells
+.. ``````````````````````````````````````````
 
 .. end-content
 
@@ -87,7 +253,6 @@ Method 4: Nested dump with un-nested cells
 
 .. following section should be uncommented once it had content
 
-.. Run a Script Across Multiple Files
-   --------------------------------------
+Run a Script Across Multiple Files
+----------------------------------
 
-.. use require

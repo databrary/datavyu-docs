@@ -30,6 +30,8 @@ with the :term:`onset` set to the correct trial start time.
 
 #. Create the five cells using a loop. 
    
+   .. _loops:
+   
    .. admonition:: Programming 101
    
       **Loops** are types of code that tell Ruby to do something multiple
