@@ -92,7 +92,7 @@ all trials. There are two trials in the example, and there are several
 "foot" cells that align within the time limits of each trial.
 
 To export data from this style of spreadsheet, we will use a series of
-:ref:`loops`, exporting a row of tab-separated values for each cell in
+:ref:`loops <loops>`, exporting a row of tab-separated values for each cell in
 the foot column. Each row will include the "id" and "trial" data that
 the foot cell nests beside. This spreadsheet follows [reference to best
 practices guide that talks about one file / participant], so there is
