@@ -13,10 +13,10 @@ might wish to perform.
    /guide/tutorial/add-a-column
    /guide/tutorial/rename-a-column
    /guide/tutorial/delete-column
+   /guide/tutorial/configure-datavyu-codes
    /guide/tutorial/rename-a-code
    /guide/tutorial/add-cells
    /guide/tutorial/delete-a-cell
-   /guide/tutorial/configure-datavyu-columns
    /guide/tutorial/export-data
    /guide/tutorial/use-scripts-to-automate-tasks
    /guide/tutorial/code-multiple-data-sources

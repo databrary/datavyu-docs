@@ -11,7 +11,7 @@ code has a value that the coder inputs while coding a data
 source.
 
 Datavyu provides a Code Editor for configuring
-matrix columns.
+columns.
 
 Open the Code Editor
 --------------------
@@ -31,7 +31,7 @@ existing columns.
 Add a Column
 ------------
 
-Click on the :guilabel:`Add matrix()` button. A new matrix column
+Click on the :guilabel:`Add matrix()` button. A new column
 called "matrix1" will appear in the list of columns. By default,
 "matrix1" has one code, "code1".
 
@@ -41,14 +41,23 @@ on its name and typing a new name.
 Add Codes
 ---------
 
-To add an code to a matrix column, select the column. You'll know
+To add a code to a column, select the column. You'll know
 you have selected it when its background is light blue. Then, click
 on the :guilabel:`Add <code>` button.
 
 You can change the name of the code by double-clicking on its name and
 typing a new name. To reorder a column's codes, select the code by
-clicking on it, and use the :guilabel:`Move <arg>`
+clicking on it, and use the :guilabel:`Move <code>`
 buttons to move it.
+
+.. _rename-a-code:
+
+Rename Codes
+------------
+
+To rename a code, open the Code Editor, and double click on the name
+of the code you want to change, and type the new name. The spreadsheet
+will update automatically.
 
 Remove Codes
 ------------
