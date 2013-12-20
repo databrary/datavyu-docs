@@ -14,7 +14,6 @@ might wish to perform.
    /guide/tutorial/rename-a-column
    /guide/tutorial/delete-column
    /guide/tutorial/configure-datavyu-codes
-   /guide/tutorial/rename-a-code
    /guide/tutorial/add-cells
    /guide/tutorial/delete-a-cell
    /guide/tutorial/export-data
