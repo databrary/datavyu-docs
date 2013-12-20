@@ -7,7 +7,7 @@ create_mutually_exclusive()
 .. method:: create_mutually_exclusive(name, var1name, var2name)
 
    Mixes two column together, creating a new column.
-   :meth:`create_musually_exclusive` mixes the two source columns cells
+   :meth:`create_mutually_exclusive` mixes the two source columns cells
    together so that the new column includes all of the arguments from
    both source columns, as well as a new cell for each overlap and
    mixture of the two columns' cells.
@@ -26,10 +26,10 @@ create_mutually_exclusive()
         - The name of the new column you wish to create
       * - ``var1name``
         - String
-        - The name of the first source column that will be :term:`mutexed`
+        - The name of the first source column that will be combined
       * - ``var2name``
         - String
-        - The name of the second source column that will be :term:`mutexed`
+        - The name of the second source column that will be combined
    
    .. table-end
    

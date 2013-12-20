@@ -42,7 +42,7 @@ instance, :meth:`getColumn()`, which retrieves a column from a Datavyu
 spreadsheet so that you can modify or update it using your script,
 needs you to tell it what column it should retreive.
 Each method defines what information it can receive: these are called
-:term:`parameters`. :meth:`getColumn()` has one parameter: ``name``,
+:term:`parameters <parameter>`. :meth:`getColumn()` has one parameter: ``name``,
 which is the name of the column that you wish to retreive.
 
 So, parameters are the types of information that you can specify to a

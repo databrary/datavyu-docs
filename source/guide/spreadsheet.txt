@@ -55,7 +55,7 @@ hand touch", or "Hesitation", or "Focus". When a coder codes the data
 source, he or she might record the presence or absence of these
 codes. A column must have *at least* one code, but may
 have as many as desired. See: the :doc:`column configuration
-</guide/tutorial/configure-datavyu-columns>` tutorial provides
+</guide/tutorial/configure-datavyu-codes>` tutorial provides
 instructions for configuring matrix columns.
 
 .. _hide-show-columns:
