@@ -9,21 +9,26 @@ Glossary
    :sorted:
 
    Data Viewer Controller
-      [definition] see: :doc:`/guide/controller`
+      The Data Viewer Controller is a core Datavyu window that enables
+      you to control playback of data sources, and to record
+      observations. See: :doc:`/guide/controller`
 
    data
       The audio or video files that are being studied.
 
    onset
    cell onset
-      [definition]
+      The start time of a cell. Each experiment should define how to
+      define onsets in its :ref:`coding-manual`.
 
    offset
    cell offset
-      [definition]
+      The end time of a cell. Each experiment should define how to
+      define onsets in its :ref:`coding-manual`.
  
    spreadsheet
-      [definition] see: :doc:`/guide/spreadsheet`
+      The core Datavyu window where coders record observations. See:
+      :doc:`/guide/spreadsheet`
 
    playhead
       The playhead indicates the current point of playback in the
@@ -31,8 +36,6 @@ Glossary
 
    observation
       An instance of the :term:`column` that is being coded.
-      Observations have an :term:`onset` and an :term:`offset`, and
-      may be [types].
 
    code
       Datavyu codes are column components that researchers are observing.
@@ -70,7 +73,8 @@ Glossary
       standards are: 24p, 25p, and 30p.
       
    region
-      [timeslider *region* explanation here]
+      The area of the :term:`timeslider` that has been brought into
+      focus using the timeslider's brackets.
 
    API 
       An API (Application Programming Interface) enables disparate software
@@ -97,25 +101,37 @@ Glossary
       inputs when coding a data source.
     
    class
-      [words]
+      A pre-defined object type, that has associated attributes and
+      methods. See: :doc:`/api/overview`.
 
    method
-      [words]
+      A defined action that you can perform. Methods may accept
+      arguments in order to perform their specified tasks. 
+      See: :doc:`/api/overview`.
    
    standalone method
-      A :term:`method` that does not belong to a specific :term:`class`.
+      A :term:`method` that does not belong to a specific
+      :term:`class`. See: :doc:`/api/overview`.
    
    script
-      [words]
-   
-   mutex
-   mutexed
-      [words]
+      A program that performs a specific task.
 
    class method
-      [words]
+      A :term:`method` that belongs to a :term:`class` and must be
+      invoked on an instance of that :term:`class`. See:
+      :doc:`/api/overview`.
 
    ordinal
       The position of a :term:`cell` within its :term:`column`. The
       ordinal is indicated in the top left corner of each cell in
       Datavyu.
+
+   parameter
+      The information that is methods use to perform their
+      tasks. Paramateres can be required or optional.  See:
+      :doc:`/api/overview`.
+
+   argument
+      The information the user specifies to a method for a given
+      parameter. For instance, "charlie" might be the argument
+      specified for the ``name`` parameter. See: :doc:`/api/overview`.

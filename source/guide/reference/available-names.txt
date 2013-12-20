@@ -2,9 +2,12 @@
 Naming Restrictions
 ===================
 
-Datavyu restricts certain names, making them unavailable for use as
-column or code names. The following names cannot be used as a column
-or code name:
+Datavyu places certain restrictions on code and column names:
 
-- [words]
+- Column names **should not include periods**. 
+
+Datavyu also restricts certain names, making them unavailable for
+use. The following names cannot be used as a column or code name:
+
+- 
 
