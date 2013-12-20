@@ -64,10 +64,12 @@ create new cells and navigate within the data source. The
 For more about the Data View Controller, and a detailed description of
 its functionality and features, see :doc:`/guide/controller`.
 
-.. toctree::
-   :titlesonly:
+.. admonition:: hidden
 
-   /guide/controller
+   .. toctree::
+      :titlesonly:
+
+      /guide/controller
 
 Spreadsheet
 ~~~~~~~~~~~
@@ -102,8 +104,9 @@ The :doc:`/guide/spreadsheet` document describes the
    :ref:`tutorial-configure-spreadsheet` for a listing of pertinent
    tutorials.
 
-.. toctree::
-   :titlesonly:
+.. admonition:: hidden
 
-   /guide/spreadsheet
+   .. toctree::
+      :titlesonly:
 
+      /guide/spreadsheet

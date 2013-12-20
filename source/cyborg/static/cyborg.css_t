@@ -255,6 +255,11 @@ div.admonition-programming-101.admonition div.highlight{
     background: #fbfae2;
 }
 
+div.admonition-hidden.admonition {
+    display: none;
+}
+
+
 div.leftie{
     width: 35%;
     float: left;
@@ -437,3 +442,4 @@ a.footnote-reference:hover {
 a:hover tt {
     background: #efefef;
 }
+
