@@ -12,7 +12,7 @@ Classes
 
 Object-oriented languages represent concepts, like
 Datavyu's columns or cells, for instance, as "objects". Types of
-objects are called "classes". 
+objects are called :term:`"classes" <class>`>. 
 
 Objects have attributes: data that pertains to the
 object. In Datavyu, a cell object's attributes would be its codes; a column
@@ -57,16 +57,22 @@ argument for the ``name`` parameter. Again, parameters are part of the
 method's definition, while arguments are the information you provide
 to the method.
 
-.. admonition:: Example
+For example, the :meth:`add_codes_to_column` method enables users to
+programmatically add one or more codes to a
+column. :meth:`add_codes_to_column` has two parameters: ``column``,
+the name of the column you want to update, and ``*codes``. The ``*``
+indicates that the parameter is a list: so you can specify one (or
+more) codes as a list of :term:`Strings <string>`.
 
-   :meth:`checkReliability` is an important method for Datavyu: it
-   enables you to compare two coding passes of the same data, to see
-   if the coders are recording consistent
-   information. :meth:`checkReliability` has five parameters: four are
-   required (``main_col``, ``rel_col``, ``match_arg``, and
-   ``time-tolerance``), and one is optional (``dump_file``).
+Suppose you wanted to add two codes, "leftHand" and "rightHand" to the
+"arm" column. "arm" would be your argument for the ``column``
+parameter, and ``"leftHand", "rightHand"`` your argument for the
+``*codes`` parameter. ``column`` and ``code`` are specified in the
+:meth:`add_codes_to_column` method definition, and "arm", "leftHand",
+and "rightHand" are your user-specified arguments.
 
-   [image that explains this more clearly]
+.. image:: /img/parameters-arguments-add-args-to-column.png
+   :align: center
 
 Standalone Methods and Class Methods
 ------------------------------------

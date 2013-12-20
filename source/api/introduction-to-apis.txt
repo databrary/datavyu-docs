@@ -23,14 +23,16 @@ applications communicate, it helps users to perform tasks
 programmatically, altering their Datavyu spreadsheets
 using :term:`scripts <script>`.
 
-Suppose you had an hour-long video data source. Perhaps it showed
-[representative example], with each trial lasting one minute. The first
-trial, then, would start at 00:00:00, the second at 00:01:00, and so on,
-up to the 60th trial at 00:59:00. You might want to create a "trial"
-column, where you would code each trial's metadata, with its
-:term:`onset` at the minute mark, and its offset just prior. Manually
-creating sixty (largely blank) cells would be time-consuming,
-and not a particularly good use of a researcher's time. 
+Suppose you had a ten minute video data source. Perhaps it showed a
+series of one-minute  repeated trials with a single participant.
+The first trial, then, would start at 00:00:00, the second
+at 00:01:00, and so on, up to the 10th trial at 00:09:00. You might
+want to create a "trial" column, where you would code each trial's
+metadata, with its :term:`onset` at the minute mark, and its offset
+just prior. Manually creating ten (largely blank) cells would be
+time-consuming, and not a particularly good use of a researcher's
+time. If you had fifty participants, and therefore fifty similar
+videos, it would be an even worse use of the researcher's time.
 
 Computers are ideally suited for doing repetitive tasks quickly. The
 Datavyu API can enable a researcher to perform these kinds of tasks
@@ -39,7 +41,7 @@ onsets becomes a matter of writing a few lines of code and running the
 script.
 
 The Datavyu API provides ways to check a coder's work, create columns,
-export data, and update columns, cells, and [codes], to name a few.
+export data, and update columns, cells, and codes, to name a few.
 Writing scripts with the API is straightforward and accessible to even
 a novice programmer. The ability to use scripts to automate tasks greatly
 increases the ways that Datavyu can facilitate data collection and
@@ -49,19 +51,19 @@ Ruby and You
 ------------
 
 Ruby is a programming language that has become particularly popular over
-the last decade. Designed to be easy to work with, Ruby [words]. For a
+the last decade. For a
 good introduction to Ruby, consider going through the 
 `Ruby in Twenty Minutes <https://www.ruby-lang.org/en/documentation/quickstart/>`_
 tutorial, which provides a quick overview to working in Ruby.
 
 You do not need to be an experienced programmer – or even to really
 understand the ins and outs of Ruby – to be able to write scripts with
-the Datavyu API. Following the :doc:`API tutorials </api/tutorials>` is
-a good way to become familiar with scripting for Datavyu. With some
+the Datavyu API. Following the :doc:`API tutorials </api/tutorials>`
+is a good way to become familiar with scripting for Datavyu. With some
 practice, and you will likely be able to customize the sample scripts
-for your own purposes. However, gaining a grounding in some programming
-concepts will make it easier to create your own scripts for your unique
-use cases and needs. 
+for your own purposes. However, gaining a grounding in some
+programming concepts will make it easier to create your own scripts
+for your unique use cases and needs.
 
 Consider :doc:`/api/overview` for an introduction to object oriented
 programming, :term:`classes <class>`, and :term:`methods <method>`.
