@@ -31,33 +31,17 @@ helps users remember what key performs what function. When you press
 a key on the keypad, a visual indicator onscreen mirrors the
 keystrokes.
 
-.. note:: 
-
-   The Data Viewer Controller maps playback controls to the keys of
-   your keypad. Some keypads may change the ordering of certain keys:
-   for instance, the top row might be ``clear``, ``/``, ``*``, ``-``,
-   rather than ``clear``, ``*``, ``/``. Some keypads may have a ``Num
-   Lock`` key rather than ``clear``. Familiarize yourself with both
-   the Datavyu controls and your keypad to maximize coding efficiency.
+The Data Viewer Controller maps playback controls to the keys of your
+keypad. Some keypads may change the ordering of certain keys: for
+instance, the top row might be ``clear``, ``/``, ``*``, ``-``, rather
+than ``clear``, ``*``, ``/``. Some keypads may have a ``Num Lock`` key
+rather than ``clear``. Familiarize yourself with both the Datavyu
+controls and your keypad to maximize coding efficiency.
 
 .. _playback-controls:
 
 Playback Controls
 ~~~~~~~~~~~~~~~~~
-
-.. note:: 
-
-   For users of Mac OS X: recent versions of OS X do not allow you to
-   hold down a key as a default, instead it brings up a
-   mini-menu to help you select common accents for that letter. If you
-   want to be able to :guilabel:`jog` by holding down the ``1`` or
-   ``3`` keys, you will need to open your Terminal and run the
-   following command::
-
-      defaults write -g ApplePressAndHoldEnabled -bool false
-
-   To undo the change, run the same command but with ``-bool true``
-   rather than ``-bool false``.
 
 .. figure:: /img/keypad-annotated.*
    :align: right
@@ -98,6 +82,20 @@ Playback Controls
 
 In addition, ``shift`` :guilabel:`find` (``+``): jumps to the cell
 :term:`offset`. 
+
+.. note:: 
+
+   For users of Mac OS X: recent versions of OS X do not allow you to
+   hold down a key as a default, instead it brings up a
+   mini-menu to help you select common accents for that letter. If you
+   want to be able to :guilabel:`jog` by holding down the ``1`` or
+   ``3`` keys, you will need to open your Terminal and run the
+   following command::
+
+      defaults write -g ApplePressAndHoldEnabled -bool false
+
+   To undo the change, run the same command but with ``-bool true``
+   rather than ``-bool false``.
 
 .. _coding-controls:
 
