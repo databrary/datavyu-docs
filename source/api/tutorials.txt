@@ -1,6 +1,6 @@
-=====================
-Datavyu API Tutorials
-=====================
+=============
+API Tutorials
+=============
 
 .. default-domain:: rb
 
@@ -14,9 +14,9 @@ Most of the following tutorials use :download:`Example-Template.opf
 </resources/Example-Template.opf>` as their basic data file. 
 
 The example template contains two :term:`columns <column>`: "id",
-whose [codes] describe basic information such as subject number,
+whose codes describe basic information such as subject number,
 test date, birth date, and condition, and "trial", which has two
-[codes]: *trialnum* and *outcome*.
+codes: *trialnum* and *outcome*.
 
 The example has one :term:`cell` in the "id" column, and no cells
 in the "trial" column. Most of the Datavyu tutorials use the example

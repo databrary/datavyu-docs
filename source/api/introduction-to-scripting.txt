@@ -62,7 +62,7 @@ General Principles
 ------------------
 
 Each cell that you create with the Datavyu API has three required
-:term:`codes <code>`>: ``onset``, ``offset``, and ``ordinal``. Each
+:term:`codes <code>`: ``onset``, ``offset``, and ``ordinal``. Each
 cell also takes at least one user-specified code.
 
 ``onset``, ``offset``, and ``ordinal`` are all :term:`Integers
@@ -70,7 +70,7 @@ cell also takes at least one user-specified code.
 <string>`.
 
 ``onset`` and ``offset`` are measured in **milliseconds from the
-beginning of the video (or other data stream)**, starting from 0.  For
+beginning of the video**, starting from 0.  For
 instance, an ``onset`` time of 00:02:20 translates to 140000ms.
 
 Since codes are strings, you must convert any codes that you wish to
