@@ -25,10 +25,6 @@ data library project.
    and discuss it and get help by posting to the `support forum
    <http://datavyu.org/support>`_.
 
-To see some of what Datayu can do, check out :doc:`Datavyu in a
-Nutshell <>` which illustrates the many possibilities Datavyu offers
-to researchers working with audio and video data sources.
-
 In addition to the powerful software package, Datavyu provides a
 Ruby-based API to help you automate common tasks and ensure accuracy
 during data collection by writing scripts. The API greatly enhances
