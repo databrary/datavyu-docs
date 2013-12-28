@@ -6,7 +6,7 @@ printAllNested()
 
 .. method:: printAllNested()
 
-   [description]
+   
    
    .. table-start
    
@@ -17,9 +17,9 @@ printAllNested()
       * - Parameter
         - Type
         - Description
-      * - 
-        - 
-        - 
+      * - ``file``
+        - String
+        - Path to the Datavyu spreadsheet file whose data you want to print
 
    .. table-end
    

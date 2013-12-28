@@ -4,7 +4,7 @@ create_mutually_exclusive()
 
 .. default-domain:: rb
 
-.. method:: create_mutually_exclusive(name, var1name, var2name)
+.. method:: create_mutually_exclusive(name, col1name, col2name)
 
    Mixes two column together, creating a new column.
    :meth:`create_mutually_exclusive` mixes the two source columns cells
@@ -23,13 +23,13 @@ create_mutually_exclusive()
         - Description
       * - ``name``
         - String
-        - The name of the new column you wish to create
-      * - ``var1name``
+        - The name of the new column you wish to create.
+      * - ``col1name``
         - String
-        - The name of the first source column that will be combined
-      * - ``var2name``
+        - The name of the first source column to combine.
+      * - ``col2name``
         - String
-        - The name of the second source column that will be combined
+        - The name of the second source column to combine.
    
    .. table-end
    
@@ -40,14 +40,14 @@ create_mutually_exclusive()
    
    .. admonition:: Example
    
-      The following example creates a variable called "test" from two
-      existing variables, "var1" and "var2", and then writes the 
+      The following example creates a column called "test" from two
+      existing columns, "col1" and "col2", and then writes the 
       changes back to the spreadsheet using :meth:`setColumn`.
    
       .. code-block:: ruby
       
          require 'Datavyu_API.rb'
          begin
-            test = create_mutually_exclusive("test", "var1", "var2")
+            test = create_mutually_exclusive("test", "col1", "col2")
             setColumn("test", test)
          end

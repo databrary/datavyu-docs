@@ -6,7 +6,7 @@ load_db()
 
 .. method:: load_db(filename)
 
-   Loads a new spreadsheet from a file.
+   Loads a spreadsheet's data directly from the file.
    
    .. table-start
    
@@ -18,7 +18,7 @@ load_db()
         - Type
         - Description
       * - ``filename``
-        - [path]
+        - String
         - The full path to the saved Datavyu file.
    
    .. table-end
@@ -31,14 +31,13 @@ load_db()
 
    .. admonition:: Example
    
-      The following example creates a variable called "test" from two
-      existing variables, "var1" and "var2", and then writes the 
-      changes back to the spreadsheet using :meth:`setColumn`.
+      The following example loads the ``test.opf`` spreadsheet
+      located on the Desktop.
    
       .. code-block:: ruby
    
          require 'Datavyu_API.rb'
          begin
-            $db,$pj = load_db("/Users/alice/Desktop/test.opf")
+            $db,$pj = load_db("~/Desktop/test.opf")
          end
    

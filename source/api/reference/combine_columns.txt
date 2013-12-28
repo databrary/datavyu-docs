@@ -4,7 +4,7 @@ combine_columns()
 
 .. default-domain:: rb
 
-.. method:: combine_columns(name, varnames)
+.. method:: combine_columns(name, *columnNames)
 
    Mixes two column together, creating a new column.
    :meth:`create_mutually_exclusive` mixes the two source columns cells
@@ -24,12 +24,9 @@ combine_columns()
       * - ``name``
         - String
         - The name of the new column you wish to create
-      * - ``var1name``
-        - String
-        - The name of the first source column that will be combined
-      * - ``var2name``
-        - String
-        - The name of the second source column that will be combined
+      * - ``columnNames``
+        - List of strings
+        - The names  of the source column that will be combined
 
    .. table-end
 
@@ -40,14 +37,14 @@ combine_columns()
    
    .. admonition:: Example
    
-      The following example creates a variable called "test" from two
-      existing variables, "var1" and "var2", and then writes the 
+      The following example creates a column called "test" from two
+      existing columns, "col1" and "col2", and then writes the 
       changes back to the spreadsheet using :meth:`setColumn`.
    
       .. code-block:: ruby
 
          require 'Datavyu_API.rb'
          begin
-            test = create_mutually_exclusive("test", "var1", "var2")
+            test = combine_columns("test", "col1", "col2")
             setColumn("test", test)
          end

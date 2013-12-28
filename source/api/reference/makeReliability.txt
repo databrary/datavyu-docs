@@ -4,7 +4,7 @@ makeReliability()
 
 .. default-domain:: rb
 
-.. method:: makeReliability(relname, var_to_copy, multiple_to_keep, *codes_to_keep)
+.. method:: makeReliability(relname, column_to_copy, multiple_to_keep, *codes_to_keep)
 
    Creates a :term:`reliability column` that is a copy of another
    Datavyu column in the Database. :rb:meth:`makeReliability()` can
@@ -25,7 +25,7 @@ makeReliability()
         - the name of the new reliability column you will create. 
           The convention is to name it ``rel_columnName``, but you
           can name it whatever you want to.
-      * - ``var_to_copy``
+      * - ``column_to_copy``
         - String
         - The name of the column that we want to create a reliability
           column *from* (i.e. the existing coded column).
@@ -51,11 +51,16 @@ makeReliability()
 
       The following example creates the reliability column "rel_trial"
       from the primary column "trial", copying every second cell, and retaining the
-      "onset", "trialnum" and "unit" codes.
+      "onset", "trialnum" and "unit" codes, and then writes the new
+      "rel_trial" column back to the spreadsheet.
 
       .. code-block:: ruby
-
-         rel_trial = makeReliability("rel_trial", "trial", 2, "onset", "trialnum", "unit")
+         
+         require 'Datavyu_API.rb'
+         begin
+            rel_trial = makeReliability("rel_trial", "trial", 2, "onset", "trialnum", "unit")
+            setVariable("rel_trial", rel_trial)
+         end
 
 .. seealso::
 

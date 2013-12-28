@@ -4,7 +4,7 @@ smoothColumn()
 
 .. default-domain:: rb
 
-.. method:: smoothColumn(colname, tol=33)
+.. method:: smoothColumn(colname, tol = 33)
 
    Tweaks a variable's cells' onsets so that there is a maximum of
    ``tol`` milliseconds between each cell. If two cells are less than
@@ -34,8 +34,9 @@ smoothColumn()
    
    .. admonition:: Returns
    
-      Nothing. :meth:`smoothColumn` automatically writes its changes
-      back to the spreadsheet.
+      Nothing. In addition, :meth:`smoothColumn` automatically writes its changes
+      back to the spreadsheet, so you do not need to write the changes
+      using :meth:`setColumn`.
 
    .. admonition:: Example
    

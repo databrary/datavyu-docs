@@ -6,6 +6,7 @@ print_codes()
 
 .. method:: print_codes(cell, file, codes)
 
+   Writes a cell's codes to a file, separated by tab (``\t``).
    
    .. table-start
    
@@ -17,21 +18,56 @@ print_codes()
         - Type
         - Description
       * - ``cell``
-        - 
-        - 
+        - :class:`RCell` object
+        - Cell whose codes you want to write to a file.
       * - ``file``
-        - Integer
-        - 
+        - String
+        - Path to the file that you wish to write the cell's codes to.
       * - ``codes``
-        - List of strings
+        - Array of Strings
         - Codes whose coded values you wish to print.
 
    .. table-end
    
    .. admonition:: Returns
       
-      [stuff]
+      Nothing. Writes results to the specified file.
 
    .. admonition:: Example
    
-      [example]
+      The following example uses :meth:`print_codes()` to write the
+      coded values for the cells in the "trial" variable to a file
+      called "trial_codes.txt", located on the Desktop.
+
+      .. code-block:: ruby
+
+         require 'Datavyu_API.rb'
+
+         begin
+            # Defines the location of the file that we're going to be outputting 
+            # the column data to - the file name is baby_codes.txt
+            # and is located on the Desktop.
+            out_file = File.expand_path("~/Desktop/baby_codes.txt")
+
+            # Creates the file, and assigns write permissions 'w'
+            out = File.new(out_file,'w')
+
+            # Retrieves the "BabyLocation" column from the spreadsheet
+            baby = getColumn("BabyLocation")
+
+            # Define which codes we want to print out
+            codes_to_print = ["ordinal", "onset", "offset", "arg01"]
+
+            # Iterate through every cell in the BabyLocation column to
+            # print its coded values.
+            for cell in baby.cells
+               # Write the ordinal, onset, offset, and code01 codes to the baby_codes.txt file,
+               # which is accessed by the variable called out
+               print_codes(cell, out, codes_to_print)
+         
+               # Write a newline to the file so that the values for each cell
+               # will be in their own row
+               out.write("\n")
+            end
+         end    
+

@@ -2,15 +2,21 @@
 setColumn()
 ===========
 
-.. TODO: this one really needs work for clarification
-
 .. default-domain:: rb
 
 .. method:: setColumn(name, var)
 
-   Replaces a column in the spreadsheet with a new column of the
-   same name as the method's argumnets. If no column with the same
-   name exists in the spreadsheet, it will instead create a new column.
+   :meth:`setColumn` writes columns to the spreadsheet: for columns
+   that already exist, :meth:`setColumn` replaces the data in the
+   spreadsheet with the version updated using the script. For
+   instance, if you were to retreive the "trial" column from a
+   spreadsheet and then make some changes, you would use
+   :meth:`setColumn` to write those changes to the spreadsheet,
+   replacing the old data with your new data.
+
+   If the column does not already exist in the spreadsheet (for
+   instance, if you create a new column using :meth:`makeNewColumn`),
+   :meth:`setColumn` will instead create a new column in the spreadsheet.
 
    .. table-start
 
@@ -23,18 +29,18 @@ setColumn()
         - Description
       * - ``name`` (**optional**)
         - String
-        - Name of the column that you are inserting
-      * - ``var`` (**required**)
-        - Ruby variable
+        - Name of the *column* that you are inserting
+      * - ``column`` (**required**)
+        - :class:`RColumn` object
         - Ruby container of the column that you are inserting into the
           spreadsheet (modified output of :meth:`createNewColumn()` or
           :meth:`getColumn()`)
 
    .. important:: 
 
-      You must specify a value for the ``var`` parameter.  If you are
+      You must specify a value for the ``column`` parameter.  If you are
       also passing a value for the ``name`` parameter, the order of
-      arguments **must** be ``name`` followed by ``var``.
+      arguments **must** be ``name`` followed by ``column``.
 
    .. table-end
 
@@ -45,7 +51,9 @@ setColumn()
    .. admonition:: Example
 
       The following example retrieves the Datavyu column "trial" and 
-      assigns it to a Ruby variable called ``trial``.
+      assigns it to a Ruby variable called ``trial``. After some
+      modifications to the trial object, it writes those changes
+      back to the spreadsheet using :meth:`setColumn`.
 
       .. code-block:: ruby
 

@@ -20,17 +20,17 @@ getColumn()
         - Description
       * - ``name``
         - String
-        - The name of the Datavyu variable you wish to retrieve
+        - The name of the Datavyu column you wish to retrieve
 
    .. table-end
 
    .. admonition:: Returns
 
-      A Ruby object representation of the Datavyu variable
+      A Ruby object representation of the Datavyu column
 
    .. admonition:: Example
 
-      The following example retrieves the Datavyu variable "trial" and 
+      The following example retrieves the Datavyu column "trial" and 
       assigns it to a Ruby variable called ``trial``.
 
       .. code-block:: ruby

@@ -18,7 +18,7 @@ printCellCodes()
         - Type
         - Description
       * - ``cell``
-        - 
+        - :class:`RCell` object
         - The cell whose codes you are printing out.
 
    .. table-end
@@ -29,8 +29,9 @@ printCellCodes()
       
    .. admonition:: Example
    
-      The following example prints out the codes for the first cell in the "trial"
-      column.
+      The following example uses ``puts`` to print out the codes for
+      the first cell in the "trial" column, accessed using 
+      :meth:`printCellCodes`.
       
       .. code-block:: ruby
       

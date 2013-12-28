@@ -31,5 +31,12 @@ save_db()
 
    .. admonition:: Example
    
-      [example here]
-   
+      The following example saves the current spreadsheet open in the
+      GUI to a file called ``test.opf`` that is located on the Desktop.
+      
+      .. code-block:: ruby
+
+         require 'Datavyu_API.rb'
+         begin
+            save_db("~/Desktop/test.opf")
+         end

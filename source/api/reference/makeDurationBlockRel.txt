@@ -23,28 +23,35 @@ makeDurationBlockRel()
         - String
         - The name of the reliability column you are creating
       * - ``var_to_copy``
-        - RVariable object
-        - Name of the column which you are copying. The existing column
+        - RColumn object
+        - Name of the column which you are copying, i.e.the existing column
           that you are creating a reliability column from.
       * - ``binding``
         - String
         - Column to bind the copy to.
       * - ``block_dur``
         - Integer
-        - Length the blocks should be (in milliseconds)
+        - Length the blocks should be (in seconds)
       * - ``skip_blocks``
         - Integer
         - Determines the amount of space that should be left between
           each coding block. ``skip_blocks`` is an Integer. Each skipped
-          block is the length specified by ``block_dur``.
+          block is the length specified by ``block_dur``. If
+          ``block_dur`` is 10 seconds, and ``skip_blocks`` is 5,
+          then 50 seconds will be left between each coding block.
 
    .. table-end
 
    .. admonition:: Returns
 
-      Nothing. Variables are automatically written to the spreadsheet.
+      Nothing. Columns are automatically written to the spreadsheet.
 
    .. admonition:: Example
 
       The following example creates a duration-based reliability column
       from the "step" column.
+
+      .. code-block:: ruby
+
+         require 'Datavyu_API.rb'
+         

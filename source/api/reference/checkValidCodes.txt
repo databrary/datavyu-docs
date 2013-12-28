@@ -4,9 +4,10 @@ checkValidCodes()
 
 .. default-domain:: rb
 
-.. method:: checkValidCodes(var, dump_file, *arg_code_pairs)
+.. method:: checkValidCodes(column, dump_file, *arg_code_pairs)
 
-   Checks that all codes in Datavyu are valid, based on specified valid values.
+   Checks that all coded values in Datavyu conform to a the list of
+   valid codes for that column.
 
    .. table-start
 
@@ -17,18 +18,18 @@ checkValidCodes()
       * - Argument
         - Type
         - Description
-      * - ``var``
+      * - ``column``
         - String
-        - The Datavyu variable that to check
+        - The Datavyu column that to check
       * - ``dump_file``
         - String, or Ruby File object
         - Full path of the file to dump output to. Use "" to write to the
           console. You can also specify a Ruby File object.
       * - ``*arg_code_pairs``
         - Key-value pairs
-        - List of argument names and valid codes, in the format
-          "argument_name", ["valid_code1", "valid_code2"],
-          "argument_name2", ["valid_code3", "valid_code4"], etc.
+        - List of code names and valid values, in the format
+          "code_name", ["valid1", "valid2"],
+          "code_name2", ["valid3", "valid4"], etc.
 
    .. table-end
 
@@ -39,11 +40,11 @@ checkValidCodes()
    .. admonition:: Example
 
       The following example checks the validity of the codes for the "trial"
-      Datavyu variable:
+      Datavyu column:
 
       .. code-block:: ruby
 
-         check_valid_codes("trial", "", "hand", ["l","r","b","n"], "turn", ["l","r"], "unit", [1,2,3])
+         check_valid_codes("trial", "", "hand", ["l","r","b","n"], "turn", ["l","r"], "unit", ["1","2","3"])
 
 .. seealso::
 

@@ -6,8 +6,8 @@ getCellFromTime()
 
 .. method:: getCellFromTime(col, time)
 
-   Identifies the cell that occurs at a given point in time, and returns
-   it.
+   Identifies the cell that occurs at a given point in time for the
+   specified column, and returns it.
    
    .. table-start
    
@@ -19,7 +19,7 @@ getCellFromTime()
         - Type
         - Description
       * - ``col``
-        - String or RVariable object
+        - String or RColumn object
         - Name or Ruby representation of the column that you are
           looking for a cell within.
       * - ``time``
@@ -37,4 +37,30 @@ getCellFromTime()
 
    .. admonition:: Example
    
-      [example]
+      The following example identifies the cell that occurs at 100ms
+      in the "trial" column, and assigns it to a :class:`RCell` object.
+      It then prints out the cell's ordinal, onset, and offset codes
+      for easy location.
+
+      .. code-block:: ruby
+         
+         require 'Datavyu_API.rb'
+         begin
+            trial = getColumn("trial")
+            cell = getCellFromTime(trial, 100)
+
+            # Get the ordinal, onset, offset
+            # values from the cell, and assign them to
+            # string variables, so we can print them out
+            ordinal = cell.ordinal.to_s
+            onset = cell.onset.to_s
+            offset = cell.offset.to_s
+
+            # Print out ordinal, onset, and offset, and their values
+            puts "ordinal: #{ordinal}"
+            puts "onset: #{onset}ms"
+            puts "offset: #{offset}ms"
+
+         end
+
+           

@@ -6,16 +6,19 @@ transfer_columns
 
 .. method:: transfer_columns(db1, db2, remove, *varnames)
 
-   Transfers columns between spreadsheets. If db1 or db2 are set to the
-   empty string "", then that spreadsheet is the current spreadsheet in $db
-   (usually the GUI's spreadsheet). So if you want to transfer a column
-   into the GUI, set db2 to "". If you want to tranfer a column from the
-   GUI into a file, set db1 to "". 
+   Transfers columns between spreadsheets. If ``db1`` or ``db2`` is set to the
+   empty string "", then that spreadsheet is spreadsheet open in the
+   GUI.
+
+   Thus, if you want to transfer a column into the GUI, set ``db2`` to "",
+   and specify the origin spreadsheet file as ``db1``. If you want to
+   tranfer a column from the GUI into a file, set ``db1`` to "", and set
+   ``db2`` to that file's path.
 
    .. warning:: 
    
-      Setting remove to true will DELETE THE COLUMNS YOU ARE
-      TRANSFERRING FROM DB1.
+      Setting ``remove`` to ``TRUE`` will **DELETE THE COLUMNS YOU ARE
+      TRANSFERRING FROM DB1**.
 
    .. table-start
 
@@ -27,17 +30,17 @@ transfer_columns
         - Type
         - Description
       * - ``db1``
-        - [path]   
+        - String 
         - The full path to save the first Datavyu file. Set to "" to use
           the spreadsheet that's currently open.
       * - ``db2``
-        - [path]
+        - String
         - The full path to save the second Datavyu file. Set to "" to
           use the spreadsheet that's currently open.
       * - ``remove``
         - Boolean
-        - If true, Datavyu will delete the columns from ``db1`` as they
-          are copied to ``db2``. False leaves the columns intact.
+        - If ``TRUE``, Datavyu will delete the columns from ``db1`` as they
+          are copied to ``db2``. ``FALSE`` leaves the columns intact.
       * - ``varnames``
         - list of strings
         - List of the names of the columns that you wish to copy from
@@ -59,5 +62,5 @@ transfer_columns
             
          require 'Datavyu_API.rb'
          begin
-            transfer_columns("/Users/username/Desktop/test.opf","",false,"idchange")
+            transfer_columns("~/Desktop/test.opf", "",FALSE, "idchange")
          end

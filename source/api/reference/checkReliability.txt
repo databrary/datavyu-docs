@@ -6,8 +6,8 @@ checkReliability()
 
 .. method:: checkReliability(main_col, rel_col, match_arg, time_tolerance, dump_file)
 
-   Compares two Datavyu variables to check for reliability errors and
-   percent accuracy.
+   Compares two Datavyu columns to check for reliability errors and
+   accuracy.
 
    .. table-start
 
@@ -47,24 +47,25 @@ checkReliability()
 
    .. admonition:: Example
 
-      The following example checks the reliability variable "rel_trial"
-      against the primary variable "trial", linking the two on their
-      "trialnum" argument, with a 100ms :term:`onset` and :term:`offset`
+      The following example checks the reliability column "rel_trial"
+      against the primary column "trial", linking the two on their
+      "trialnum" code, with a 100ms :term:`onset` and :term:`offset`
       difference tolerated.
 
       .. code-block:: ruby
 
          checkReliability("trial", "rel_trial", "trialnum", 100)
 
-      The following example checks the reliability variable "rel.trial"
-      against the primary variable "trial", linking the two on their
-      "trialnum" argument, with a 100ms :term:`onset` and :term:`offset`
-      difference tolerated, and writes the output to
-      ``/Users/motoruser/Desktop/Relcheck.txt``, a text file.
+   .. admonition:: Example 
+
+      The following example performs the same operation as the
+      previous example, but also
+      writes the output to ``~/Desktop/Relcheck.txt``,
+      a text file.
    
       .. code-block:: ruby
 
-         checkReliability("trial", "rel_trial", "trialnum", 100, "/Users/motoruser/Desktop/Relcheck.txt")
+         checkReliability("trial", "rel_trial", "trialnum", 100, "~/Desktop/Relcheck.txt")
 
 .. seealso:: 
 
