@@ -25,14 +25,18 @@ Keypad
    You cannot use the keypad for inputting numbers into Datavyu: it will
    only perform the actions described here.
 
+.. figure:: /img/keypad-annotated.png
+   :align: right
+   :figwidth: 300px
+
+   The keys highlighted in pink are *playback controls*. The keys
+   highlighted in brown are *coding-controls*.
+
 The Data Viewer Controller's keypad maps directly to the number pad
 on your keyboard or external keypad: the on-screen representation
 helps users remember what key performs what function. When you press 
 a key on the keypad, a visual indicator onscreen mirrors the
-keystrokes.
-
-The Data Viewer Controller maps playback controls to the keys of your
-keypad. Some keypads may change the ordering of certain keys: for
+keystrokes. Some keypads may change the ordering of certain keys: for
 instance, the top row might be ``clear``, ``/``, ``*``, ``-``, rather
 than ``clear``, ``*``, ``/``. Some keypads may have a ``Num Lock`` key
 rather than ``clear``. Familiarize yourself with both the Datavyu
@@ -42,13 +46,6 @@ controls and your keypad to maximize coding efficiency.
 
 Playback Controls
 ~~~~~~~~~~~~~~~~~
-
-.. figure:: /img/keypad-annotated.*
-   :align: right
-   :figwidth: 300px
-
-   The keys highlighted in pink are *playback controls*. The keys
-   highlighted in brown are *coding-controls*.
 
 - :guilabel:`jog left` (``1``): moves the playhead back one frame. If the
   :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
@@ -177,7 +174,7 @@ includes five buttons:
 Add Data
 --------
 
-.. image:: /img/keypad-add-data-button.*
+.. image:: /img/keypad-add-data-button.png
    :alt: image of keypad with arrow indicating the "add data" button
    :align: right
    :width: 300px

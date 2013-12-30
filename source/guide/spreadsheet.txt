@@ -2,23 +2,22 @@
 Spreadsheet Overview
 ====================
 
-.. TODO: paragraph stolen from walkthrough.txt - you should make it not be.
 
-The Datavyu Spreadsheet is where coders record
-:term:`observations <observation>`. The spreadsheet is the core of Datavyu. By
+The Datavyu Spreadsheet is where coders record :term:`observations
+<observation>`. The spreadsheet is the core of Datavyu. By
 :ref:`configuring columns <configure-columns>`, coders can record
 observations and link them directly to timestamps in the data source.
 
-Each user-defined column has its own column in the
-spreadsheet. :term:`Cells <cell>` are column entries, boxes in the
-column, where coders record their observation data as :term:`codes
-<code>`. Cells follow each other in sequence: looking
-vertically down a column shows the sequence of observations for that
-column. If you have enabled :ref:`temporal-ordering`, Datavyu displays
-cells based on their :term:`onset` and :term:`offset` times, to show
-what occurred at that point in time in the data source.
+Each user-defined column has its own column in the spreadsheet.
+:term:`Cells <cell>` are column entries, boxes in the column, where
+coders record their observation data as :term:`codes <code>`. Cells
+follow each other in sequence: looking vertically down a column shows
+the sequence of observations for that column. If you have enabled
+:ref:`temporal-ordering`, Datavyu displays cells based on their
+:term:`onset` and :term:`offset` times, to show what occurred at that
+point in time in the data source.
 
-.. figure:: /img/spreadsheet-annotated.svg
+.. figure:: /img/spreadsheet-annotated.png
    :alt: Image of a Datavyu spreadsheet with 6 columns, and annotations labeling a column, cell, and codes within a cell
    :align: center
    
@@ -115,7 +114,7 @@ user-specified codes:
 
 The following image labels each component within a Datavyu cell.
 
-.. image:: /img/cell-zoomin.svg
+.. image:: /img/cell-zoomin.png
    :align: center
    :alt: Zoomed-in view of a Datavyu cell, labeling its codes, onset, offset, and ordinal.
 
@@ -154,7 +153,7 @@ Temporal alignment allows you to visualize what occurred at what time,
 and to compare event sequence between columns. When coding, you should
 ensure that temporal alignment is active.
 
-.. figure:: /img/temporal-alignment-comparison.*
+.. figure:: /img/temporal-alignment-comparison.png
    :alt: comparison of two identical spreadsheets, one of which has temporal alignment active, and the other with temporal alignment disabled
    :align: center
 
@@ -168,7 +167,7 @@ Weak and Strong Temporal Alignment
 ``````````````````````````````````
 
 Datavyu supports two types of temporal alignment: "weak" and
-"strong". [Explain the difference once you know it].
+"strong". 
 
 Toggle Temporal Alignment
 `````````````````````````

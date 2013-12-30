@@ -71,7 +71,7 @@ parameter, and ``"leftHand", "rightHand"`` your argument for the
 :meth:`add_codes_to_column` method definition, and "arm", "leftHand",
 and "rightHand" are your user-specified arguments.
 
-.. image:: /img/parameters-arguments-add-args-to-column.png
+.. image:: /img/parameters-arguments.png
    :align: center
 
 Standalone Methods and Class Methods

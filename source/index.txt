@@ -7,7 +7,7 @@
 Welcome to Datavyu's documentation!
 ===================================
 
-.. image:: /img/annotated-datavyu-desktop.svg
+.. image:: /img/annotated-datavyu-desktop.png
    :align: center
 
 Datavyu is a complete software package for visualizing and collecting
