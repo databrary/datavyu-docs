@@ -1,10 +1,10 @@
-===============
-RVariable Class
-===============
+=============
+RColumn Class
+=============
 
 .. default-domain:: rb
 
-.. class:: RVariable
+.. class:: RColumn
 
    The Ruby container for Datavyu columns.
 
@@ -69,7 +69,7 @@ RVariable Class
       
       .. admonition:: Returns
       
-         [Nothing ?]
+         Nothing.
       
       .. admonition:: Example 
       
@@ -107,7 +107,7 @@ RVariable Class
 
       .. admonition:: Returns
 
-         [unclear]
+         Nothing.
       
       .. admonition:: Example 
       
@@ -145,6 +145,6 @@ RVariable Class
 
       .. admonition:: Returns
       
-         [unclear]
+         Nothing.
 
          

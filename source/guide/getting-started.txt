@@ -26,14 +26,15 @@ The following sections describe each component of the Datavyu interface.
 Data Viewer
 ~~~~~~~~~~~
 
-.. image:: /img/movie-viewer.png
+.. figure:: /img/movie-viewer.png
+   :align: center
 
 The :guilabel:`Data Viewer` is the window that presents the data
 source, the audio or video file that the user is working with.
 
 Adding an audio, video, or other data source to Datavyu is as easy as
 clicking on the :guilabel:`Add Data…` button in the Data Viewer
-Controller, [or using a menu option if there is one]. For a more
+Controller. For a more
 detailed overview of adding data sources see:
 :ref:`add-data`.
 

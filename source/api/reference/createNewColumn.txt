@@ -40,7 +40,7 @@ createNewColumn()
 
       The following example creates a new Datavyu column called "trial" with
       the codes "trialnum" and "unit", and assigns them to an
-      :class:`RVariable` object called ``trial``. It then adds a new cell to ``trial`` using
+      :class:`RColumn` object called ``trial``. It then adds a new cell to ``trial`` using
       :meth:`make_new_cell` and writes the changes back to the Datavyu
       spreadsheet using :meth:`setColumn`.
 

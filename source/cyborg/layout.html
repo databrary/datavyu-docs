@@ -20,8 +20,6 @@
 {%- macro sidebar() %}
       {%- if render_sidebar %}
     <sidebar>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
           {%- block sidebarlogo %}
           {%- if logo %}
           {%- endif %}
@@ -31,8 +29,7 @@
             {%- include sidebartemplate %}
             {%- endfor %}
           {%- endif %}
-        </div>
-      </div>
+
     </sidebar>
       {%- endif %}
 {%- endmacro %}
@@ -62,6 +59,7 @@
 {%- endmacro %}
 
 {%- macro render_nextprev() %}
+<trail>
    <div>
       {%- if prev %}
       <div class="leftie" style="max-width=20%; float=left;">
@@ -76,11 +74,14 @@
       </div>
       {%- endif %}
    </div>
+</trail>
 {%- endmacro -%}
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset={{ encoding }}" />
+    <meta name="display" content="sphinx" />
+    <meta name="slug" content="absolute/path/to/page/without/extension" />
     {{ metatags }}
     {%- block htmltitle %}
     <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
@@ -109,52 +110,20 @@
   <body>
 
 {%- block header %}
-
-<header id="header">
-    <div class="wrapper">
-
-        <nav>
-            <!--#set var="$title" value="current" -->
-            <ul>
-                <li class='<!--#echo var="Software Guide" -->'>
-                    <a href="{{ pathto('guide', 1) }}" title="Features">SOFTWARE GUIDE</a>
-                </li>
-
-                <li class='<!--#echo var="API Documentation" -->'>
-                    <a href="{{ pathto('api', 1) }}" title="Download">API DOCUMENTATION</a>
-                </li>
-
-                <li class='<!--#echo var="Best Practices" -->'>
-                    <a href="{{ pathto('best-practices', 1) }}" title="Support">BEST PRACTICES</a>
-                </li>
-
-                <li class='<!--#echo var="FAQ" -->'>
-                    <a href="{{ pathto('FAQ', 1) }}" title="Development on Github.com">FAQ</a>
-                </li>
-
-                <li class='<!--#echo var="Datavyu.org" -->'>
-                    <a href="http://datavyu.org/" title="The Datavyu Website">DATAVYU.ORG</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
 {% endblock %}
 
 {%- block content %}
 <content>
     {%- block sidebar1 %}{% endblock %}
-    <div class="document">
+    
       {%- block document %}
-        <main id="main">   
-        <div class="documentwrapper">
+          
           {%- if render_sidebar %}<div class="bodywrapper">{%- endif %}
-          <div class="body">
+
             {% block body %} 
             {% endblock %}
             {{- render_nextprev() -}}
-          </div>
+    
           {%- if render_sidebar %}</div>{%- endif %}
          </div>
       </content>
@@ -164,38 +133,8 @@
      {{ sidebar() }}
 {% endblock %}
 
-<div class="clearer"></div>
-   </div>
-   
   
 {%- endblock %}
 
-{%- block footer %}
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', '{{ theme_ga_code }}']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
-    <div class="footer">
-    {%- if show_copyright %}
-      {%- if hasdoc('copyright') %}
-        {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
-      {%- else %}
-        {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.<br />
-        See the <a href="https://github.com/databrary/docs-datavyu/blob/master/LICENSE">licensing page</a> for more information.{% endtrans %}
-      {%- endif %}
-    {%- endif %}
-    {%- if last_updated %}
-      {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
-    {%- endif %}
-    </div>
-{%- endblock %}
   </body>
 </html>

@@ -8,14 +8,14 @@ Convert File Formats
 Datavyu is designed to work with video, audio, physiology, motion, or
 eye tracking data. Datavyu currently supports video through QT
 and VLC. There are plans to develop plugins to support other
-data sources, such as [atuheuat].
+data sources.
 
 .. TODO: I'm not sure that this is actually what the convert video
    tool does.
 
-If your data source is of a type that Datavyu cannot play directly,
-(such as [list]), you may be able to convert it to a readable format using
-Datavyu's Convert Videos tool. 
+If your data source is of a type that Datavyu cannot play directly, you
+may be able to convert it to a readable format using Datavyu's Convert
+Videos tool.
 
 #. From the Spreadsheet, select the :guilabel:`Controller` menu,
    and then choose :guilabel:`Convert Videos`.
@@ -27,7 +27,6 @@ Datavyu's Convert Videos tool.
    
 #. Select :guilabel:`Convert Video`, and your video will be converted.
 
-Alternately, [other free tools], such as
-[list] may be able to help you convert your data source. For help with
+For help with
 data source conversion or other import issues, see: `Datavyu's Support
 site <http://datavyu.org/support/>`_.

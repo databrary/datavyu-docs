@@ -18,7 +18,7 @@ add_codes_to_column()
         - Type
         - Description
       * - ``column``
-        - String or :class:`RVariable` object
+        - String or :class:`RColumn` object
         - Name of the variable that you are adding arguments to.
       * - ``*codes``
         - List

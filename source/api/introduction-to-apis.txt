@@ -13,11 +13,6 @@ use a piece of Windows software, its programmers likely used the
 Windows API to communicate with Windows itself and access drivers,
 printers, and the user interface.
 
-.. figure:: /img/api-explanatory-diagram.png
-   :align: center
-
-   This image needs to be replaced with something betterer.
-
 The Datavyu API works somewhat differently: instead of helping two
 applications communicate, it helps users to perform tasks
 programmatically, altering their Datavyu spreadsheets

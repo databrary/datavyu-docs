@@ -25,7 +25,7 @@ Thinking about Datavyu specifically, then, you would likely have a
 "column" class that describes the Datavyu columns.  The "trial" column
 would then be an instance of the "column" class. This is, in fact, how the
 Datavyu API works: the Datavyu API includes two classes to represent
-datavyu concepts: :class:`RVariable` describes Datavyu's
+datavyu concepts: :class:`RColumn` describes Datavyu's
 :term:`columns <column>`, and :class:`RCell` describes Datavyu's
 :term:`cells <cell>`.
 
@@ -92,11 +92,11 @@ would run:
    getColumn("trial")
 
 In contrast, :meth:`add_code` is a class method of the
-:class:`RVariable` class, and *is invoked* on an
-:class:`RVariable` instance. Assuming that you have already retrieved a
+:class:`RColumn` class, and *is invoked* on an
+:class:`RColumn` instance. Assuming that you have already retrieved a
 column called "trial" from the spreadsheet, and assigned it to an
-:class:`RVariable` instance, the following code would add the *newCode*
-code to the "trial" :class:`RVariable` object:
+:class:`RColumn` instance, the following code would add the *newCode*
+code to the "trial" :class:`RColumn` object:
 
 .. code-block:: ruby
 

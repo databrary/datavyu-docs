@@ -39,7 +39,7 @@ argument: the name of the column in Datavyu, and returns the Ruby
 representation of the column, which you can work with.
 
 The following script retrieves the "trial" column from the Datavyu
-spreadsheet and assigns it to an :class:`RVariable` object called ``trial``.
+spreadsheet and assigns it to an :class:`RColumn` object called ``trial``.
 
 .. code-block:: ruby
 

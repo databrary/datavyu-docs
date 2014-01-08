@@ -28,8 +28,7 @@ observations.
    coding pass, you can :ref:`hide the original coded column
    <hide-show-columns>`. 
 
-   .. See [reference to best practices guide when it exists] for more
-      information.
+   .. Link to best practices organization section when it exists.
 
 Make a Reliability Column
 ~~~~~~~~~~~~~~~~~~~~~~~~~

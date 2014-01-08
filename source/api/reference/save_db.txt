@@ -20,7 +20,7 @@ save_db()
         - Type
         - Description
       * - ``filename``
-        - [path]
+        - String or Ruby object
         - The full path to save the Datavyu file to
    
    .. table-end

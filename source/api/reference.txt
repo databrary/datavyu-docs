@@ -8,7 +8,7 @@ Classes and Class Methods
 .. toctree::
    :titlesonly:
 
-   /api/reference/class/RVariable
+   /api/reference/class/RColumn
    /api/reference/class/RCell
 
 Freestanding Methods

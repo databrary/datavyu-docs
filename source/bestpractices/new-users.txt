@@ -16,7 +16,7 @@ Thankfully, it's not difficult to start with one's best foot forward.
 Develop a Coding Scheme and Manual
 ----------------------------------
 
-This is perhaps the most important [thing] you should do. A coding
+This is perhaps the most important step you should take. A coding
 scheme describes what data you are going to collect and how to collect
 it. This helps you ensure that you collect data that will enable you to
 perform the analyses you wish to perform. A coding manual documents the
@@ -40,7 +40,8 @@ Start Simple
 ------------
 
 When faced with a complex data source, it might be tempting to start
-trying to code everything. This can result in [stuff].
+trying to code everything. This is probably not a great idea, as you
+can easily set off down the wrong path and not realize until much later.
 
 Instead, start simple. You can code in passes, going :term:`column` by
 column until you have collected all the data from a trial or

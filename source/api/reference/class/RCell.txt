@@ -158,16 +158,19 @@ RCell Class
 
       .. admonition:: Returns
 
-         String of the arguments, starting with ordinal, onset,
+         String of the codes, starting with ordinal, onset,
          and offset, followed by the codes.
 
       .. admonition:: Example
-   
-         [words]
-      
-         .. code-block:: ruby
-   
-            trial = getColumn("trial")
-            print trial.cells[0].print_all()
 
+         The following example prints all of the "trial" column's
+         first cell's codes using ``print``.
+
+         .. code-block:: ruby
+
+            require 'Datavyu_API.rb'
+            begin
+               trial = getColumn("trial")
+               print trial.cells[0].print_all()
+            end
          

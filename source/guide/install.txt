@@ -37,7 +37,9 @@ If you are using a Mac that does not
 yet have Java installed, OS X will prompt you to install a Java IDE
 when you first try to open Datavyu.
 
-On a Windows-based computer, [words].
+On a Windows-based computer, you must all download Java. Go to
+`java.com <http://java.com/en/download/index.jsp>`_ to download the latest
+version for your operating system.
 
 Install Datavyu
 ---------------
@@ -46,7 +48,7 @@ Mac OS X
 ~~~~~~~~
 
 .. figure:: /img/install-mac.png
-   :align: right
+   :align: center
    :alt: Mac OS X unzip installation window
 
 #. Download the latest Datavyu release for Mac OS X from the Datavyu
@@ -70,13 +72,35 @@ as Datavyu does not currently support later versions.
 Windows 
 ~~~~~~~
 
-#. Download the latest Datavyu release for Windows from the Datavyu
-   website's `Downloads Page <http://datavyu.org/download/>`_.
+.. figure:: /img/windows-download.png
+   :align: center
 
-#. [windows-specific installation instructions here once I figure out
-   what they are]
+1. Download the latest Datavyu release for Windows from the Datavyu
+   website's `Downloads Page <http://datavyu.org/download/>`_. Unless
+   you've told Windows what to do with these types of files, a
+   :guilabel:`File Download` window will pop up, prompting you to either
+   Open the ``Datavyu-Windows-latest.zip`` file, or Save it. Either
+   option is fine - you'll merely need to navigate to the folder after
+   downloading if you choose to :guilabel:`Save` rather than choosing
+   :guilabel:`Open`.
 
-#. Install a video plugin. At present, Datavyu for Windows does not
+.. figure:: /img/windows-unzip.png
+   :align: center
+
+2. Unzip the program by opening the ``datavyu-1.0`` folder and
+   double-clicking on ``datavyu-1.0``. A "Compressed (zipped) Folders
+   Warning" will appear. Select :guilabel:`Extract all` to decompress
+   the files.
+
+.. figure:: /img/windows-copying-items-to-desktop.png
+   :align: center
+
+3. Windows will run the Extraction Wizard. Follow the prompts and 
+   extract the files. The Datavyu program is now available, but you
+   need to install a video plugin before you can start using video
+   with Datavyu.
+
+4. Install a video plugin. At present, Datavyu for Windows does not
    include any video plugins. To use Datavyu, you **must** download
    Quicktime for Windows. If you already use Apple's iTunes, you
    likely already have Quicktime for Windows. Otherwise, you may

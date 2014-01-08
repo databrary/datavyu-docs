@@ -38,43 +38,41 @@ common approaches, in order of increasing complexity:
 - A *nested dump with un-nested cells*, which is similar to the
   nested dump, but which also works if your cells do not nest.
 
-Method 1: Direct Dump to CSV
-````````````````````````````
+.. Method 1: Direct Dump to CSV
+.. ````````````````````````````
 
-This method is actually much easier to do (only 1 line!) with Datavyu's
-R scripting functions. 
+.. This method is actually much easier to do (only 1 line!) with Datavyu's
+   R scripting functions. 
 
-To create a direct dump to CSV using R, 
+.. To create a direct dump to CSV using R, 
 
-.. code-block:: rout
+.. .. code-block:: rout
 
-   [codes here]
+      [codes here]
 
-The following steps will create the same outcome using Ruby:
-
-[instructions]
+.. The following steps will create the same outcome using Ruby:
 
 .. TODO: actually include the instructions
 
-Method 2: Frame by Frame Dump
-`````````````````````````````
+.. Method 2: Frame by Frame Dump
+   `````````````````````````````
 
-We can also dump a file frame by frame if we know the :term:`frame rate`
-of the coded video. This creates a new spreadsheet row for each frame of
-the data source, with the value of each code in its own column. For long
-videos, this type of export may be too lengthy to be feasible: a 2 hour
-video at 30fps is 216,000 rows. However, for short videos this is an
-easy and intuitive export method.
+   We can also dump a file frame by frame if we know the :term:`frame
+   rate` of the coded video. This creates a new spreadsheet row for
+   each frame of the data source, with the value of each code in its
+   own column. For long videos, this type of export may be too lengthy
+   to be feasible: a 2 hour video at 30fps is 216,000 rows. However,
+   for short videos this is an easy and intuitive export method.
 
-To do this, we loop over all of the columns in the spreadsheet and grab
-the current cell at each time, moving one frame at a time (so there will
-be an entry for 00:00:033, 00:00:066, and so on, all the way until the
-end of a video for a 30fps video).
+   To do this, we loop over all of the columns in the spreadsheet and
+   grab the current cell at each time, moving one frame at a time (so
+   there will be an entry for 00:00:033, 00:00:066, and so on, all the
+   way until the end of a video for a 30fps video).
 
 .. TODO: actually include the instructions
 
-Method 3: Nested dump
-`````````````````````
+Method : Nested dump
+````````````````````
 .. image:: /img/sample-nested-data.png
    :align: right
 
@@ -253,6 +251,6 @@ single participant.
 
 .. following section should be uncommented once it had content
 
-Run a Script Across Multiple Files
-----------------------------------
+.. Run a Script Across Multiple Files
+   ----------------------------------
 

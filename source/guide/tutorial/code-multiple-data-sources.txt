@@ -21,11 +21,9 @@ data sources as you want to.
 .. figure:: /img/dvc-annotated-multiple-sources.png
    :align: center
    :alt: Screenshot of the data viewer controller, with annotations
-         indicating the tracks, and add data buttons.
-   
-   [Caption here]
+         indicating the tracks, and add data 
 
-Each data source will have its own line in the :guilabel:`tracks` area
+Each data source has its own line in the :guilabel:`tracks` area
 of the Data Viewer Controller. You can select an individual data
 source by clicking on its blue bar: when selected, the bar will turn
 green.

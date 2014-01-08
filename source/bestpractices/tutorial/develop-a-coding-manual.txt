@@ -48,7 +48,7 @@ the recorded events.
 .. image:: /img/coding-manual-nested-columns-example.png
    :alt: Screenshot of a very structured spreadsheet showing three columns (id, trial, and step)
 
-For less structured data, as in [the example video / spreadsheet],
+For less structured data, as in,
 this structure might not be as necessary, but choosing columns that
 represent phenomena you care about remains the key priority. For
 instance, in the following spreadsheet example, there are columns for
@@ -83,7 +83,7 @@ several goals to bear in mind:
 In the end, it is up to you to determine the best approach for your
 specific use case. If you are coding frame-by-frame, as in an
 eye tracking study, you might favor a different approach than coding
-the mother and baby's interaction in [the sample video], where
+the mother and baby's interaction in the sample speadsheet, where
 creating cells for movement, speech, and objects as you go through
 the video would be tricky (and inefficient). The way you configure
 your columns and codes will vary depending on your use case. Regardless,
@@ -152,5 +152,7 @@ Each researcher will have their own preferred coding manual format,
 and determining what works best for you is part of getting started.
 This manual was developed by the creators of Datavyu for one of
 their experiments, and is a good starting point for creating your
-own coding manual. [Link to coding manual.]
+own coding manual.
+
+.. Link to the coding manual.
 
