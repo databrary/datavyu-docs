@@ -107,21 +107,8 @@
 {%- block extrahead %} {% endblock %}
   </head>
   <body>
-  <content>
 
 {%- block header %}
-
-<section id="bar">
-    <div class="wrapper">
-        <h1><a href="http://databrary.org/about/#project" title="About the Databrary Project"><span>THE </span>DATABRARY<span> PROJECT</span></a></h1>
-
-        <nav>
-            <a href="http://databrary.org" title="Databrary"><img src="{{ pathto('_static/databrary-nav.png', 1) }}" alt="Databrary"><span>Databrary</span></a>
-            <a href="http://datavyu.org" title="Datavyu"><img src="{{ pathto('_static/datavyu-nav.png', 1) }}" alt="Datavyu"><span>Datavyu</span></a>
-            <a href="http://labnanny.org" title="Labnanny"><img src="{{ pathto('_static/labnanny-nav.png', 1) }}" alt="Labnanny"><span>Labnanny</span></a>
-        </nav>
-    </div>
-</section>
 
 <header id="header">
     <div class="wrapper">
@@ -156,7 +143,8 @@
 {% endblock %}
 
 {%- block content %}
-  {%- block sidebar1 %}{% endblock %}
+<content>
+    {%- block sidebar1 %}{% endblock %}
     <div class="document">
       {%- block document %}
         <main id="main">   
@@ -169,6 +157,7 @@
           </div>
           {%- if render_sidebar %}</div>{%- endif %}
          </div>
+      </content>
 {%- endblock %}
 
 {%- block sidebar2 %}
@@ -208,6 +197,5 @@
     {%- endif %}
     </div>
 {%- endblock %}
-  </content>
   </body>
 </html>
