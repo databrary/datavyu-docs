@@ -5,7 +5,7 @@ Data Viewer Controller Overview
 The Data Viewer Controller enables users to manipulate the playback of 
 their data source, and create new cells as they record their observations.
 
-.. image:: /img/controller-annotated.*
+.. image:: /img/controller-annotated.png
    :alt: Image of the Data Viewer Controller indicating the track and keypad area
    :align: center
 
