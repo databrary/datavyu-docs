@@ -2,11 +2,12 @@
 #
 
 # You can set these variables from the command line.
-SPHINXOPTS    =
-SPHINXBUILD   = sphinx-build
-PAPER         =
-BUILDDIR      = build
-SOURCEDIR     = source
+SPHINXOPTS      =
+SPHINXBUILD     = sphinx-build
+PAPER           =
+BUILDDIR        = build
+PELICANBUILDDIR = ../www/datavyu/input/pages/user-guide
+SOURCEDIR       = source
 
 #IMAGEDIRS can be a list of directories that contain SVG files, and are relative to the SOURCEDIR
 IMAGEDIRS     = img
@@ -71,6 +72,11 @@ html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+
+html-pelican:
+	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(PELICANBUILDDIR)
+	@echo
+	@echo "Pelican build finished. The HTML pages are in $(PELICANBUILDDIR)."
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
