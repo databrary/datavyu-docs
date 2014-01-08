@@ -26,7 +26,7 @@ The following sections describe each component of the Datavyu interface.
 Data Viewer
 ~~~~~~~~~~~
 
-.. TODO: add image of data viewer with a video in it.
+.. image:: /img/movie-viewer.png
 
 The :guilabel:`Data Viewer` is the window that presents the data
 source, the audio or video file that the user is working with.
