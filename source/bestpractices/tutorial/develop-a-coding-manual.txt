@@ -1,3 +1,6 @@
+.. _develop-coding-manual:
+.. _coding-manual:
+
 =======================
 Develop a Coding Manual
 =======================
@@ -11,8 +14,8 @@ how it will be collected.
 At its core, a coding manual simply formalizes the practices you've
 decided to use to collect data, and answers a variety of questions:
 
-- What :term:`columns` are you going to have?  
-- What :term:`codes` will each column include?  
+- What :term:`columns <column>` are you going to have?  
+- What :term:`codes <code>` will each column include?  
 - How are these codes going to be defined?  
 - What are valid values, and what do these values mean?  
 - How will :term:`onsets <onset>` and :term:`offsets <offset>` be determined?

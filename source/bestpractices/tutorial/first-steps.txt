@@ -56,7 +56,7 @@ Create Your Coding Manual
    See: :ref:`develop-a-coding-manual` for advice on choosing and
    defining codes, and for creating a coding manual in general. For help
    setting up your spreadsheet see:
-   :doc:`/guide/tutorial/configure-datavyu-columns` and
+   :doc:`/guide/tutorial/configure-datavyu-codes` and
    :doc:`/guide/spreadsheet`.
 
 Test Your Plan
