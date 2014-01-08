@@ -30,8 +30,10 @@ invaluable for researchers who might be analyzing their data months or years
 after its collection, and supports reuse and sharing of data for novel
 purposes.
 
-You download an example of a coding manual from:
-:download:`resources/example-coding-manual.pdf`. To learn about
+.. Commented until I get a sample coding manual. You download an example of a coding manual from:
+   :download:`resources/example-coding-manual.pdf`. 
+
+To learn about
 developing a coding manual, see: :ref:`develop-coding-manual`.
 
 Start Simple
