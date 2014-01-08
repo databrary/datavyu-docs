@@ -1,7 +1,153 @@
-.. _develop-coding-manual:
-.. _develop-a-coding-manual:
-.. _coding-manual:
+=======================
+Develop a Coding Manual
+=======================
 
-==================
-Coding Manuals 101
-==================
+Developing a coding manual is an essential step when starting to
+collect data from an experiment. In any study, it is important that
+you determine how you data is going to be collected, and the coding
+manual is the document that defines what data you will collect, and
+how it will be collected.
+
+At its core, a coding manual simply formalizes the practices you've
+decided to use to collect data, and answers a variety of questions:
+
+- What :term:`columns` are you going to have?  
+- What :term:`codes` will each column include?  
+- How are these codes going to be defined?  
+- What are valid values, and what do these values mean?  
+- How will :term:`onsets <onset>` and :term:`offsets <offset>` be determined?
+
+Defining each code, value, and column makes it easy to return to a
+study weeks, months, or years later, and understand what the codes
+refer to. It also gives coders a resource from which to work, ensuring
+that each coder collects data in the same way. While this takes work,
+and often requires numerous iterations to "get right", the initial
+effort is well worth it in the long run.
+
+Choose Columns 
+--------------
+
+Datavyu's :term:`columns <column>` are the highest level grouping for
+data. It makes sense, therefore, to start by determining what your
+columns should be, based on your data source and experiment.
+
+One common column structure is to create columns that contain metadata
+for the experiment: participant information and trial information, for
+instance. The following spreadsheet example shows an "*id*" column
+that has participant information, a "*trial*" column that has
+information for each trial, and columns for specific observations. The
+*id* column's :term:`cell` is the full length of the spreadsheet,
+since all the trials are associated with that participant. The *trial*
+column's cells are the length of each trial, and the other observation
+columns' cells are of various lengths, according to the durations of
+the recorded events.
+
+.. image:: /img/coding-manual-nested-columns-example.png
+   :alt: Screenshot of a very structured spreadsheet showing three columns (id, trial, and step)
+
+For less structured data, as in [the example video / spreadsheet],
+this structure might not be as necessary, but choosing columns that
+represent phenomena you care about remains the key priority. For
+instance, in the following spreadsheet example, there are columns for
+the mother and baby's speech, what object they are holding, location,
+notes, etc.
+
+.. image:: /img/base-screenshot-MomBaby.png
+   :alt: Screenshot of a less structured spreadsheet showing seven columns with various coded cells
+
+Choose Codes and Possible Values
+--------------------------------
+
+:term:`Codes <code>` represent the phenomena that you are observing. 
+Descriptions of each column's codes and their possible values are the
+bulk of the coding manual. When determining your codes, there are
+several goals to bear in mind:
+
+- Frame-by-frame coding is extremely time-consuming. If it is
+  necessary, coders will be happier and more efficient if they can
+  proceed through the data source without having to backtrack.
+
+- Coding column-by-column is often efficient, and allows coders to
+  focus on specific phenomena, and move through the video quickly.
+  To code multiple columns in this way, however, the coder will need
+  to go through the data source multiple times.
+
+- Categorical codes are easy to code: if a coder sees a behavior in
+  the course of coding another event, there is little cost to them
+  coding that behavior. Coding too many phenemna at once time, however,
+  can slow the coder down.
+
+In the end, it is up to you to determine the best approach for your
+specific use case. If you are coding frame-by-frame, as in an
+eye tracking study, you might favor a different approach than coding
+the mother and baby's interaction in [the sample video], where
+creating cells for movement, speech, and objects as you go through
+the video would be tricky (and inefficient). The way you configure
+your columns and codes will vary depending on your use case. Regardless,
+there are several practices that will help you as you develop your
+coding scheme and manual.
+
+Use Consistent Naming
+~~~~~~~~~~~~~~~~~~~~~
+
+When naming columns and codes, use consistent naming across subjects
+and files within the same study. For instance, if you have fifteen
+participants in a given study, the columns and codes you use when
+coding each participant's trial should have the same names and valid
+values. This is perhaps obvious: the concept of a Coding Manual is
+designed to support this goal. However, if you have multiple similar
+(but distinct) studies, using consistent nomenclature can make it
+easier for coders to code those phenomena efficiently.
+
+Avoid Repetitive Values
+~~~~~~~~~~~~~~~~~~~~~~~
+
+If your coding scheme requires you to input the same value for large
+blocks of cells, you should consider an alternate way to represent
+that code. For instance, if you had a *trial* column that had the
+trial ID, trial date, and participant information (participant ID,
+gender, and birthdate) as codes, it would be onerous to have to
+repeatedly code the same participant information repeatedly throughout
+a data source. Extracting that data into its own column and creating
+one cell to represent a participant would  be more efficient and
+reduce the likelihood of coder errors as they repeatedly input the
+same information.
+
+.. figure:: /img/coding-manual-nested-columns-example-with-no-id-col.png
+   :alt: Screenshot of spreadsheet with two columns: trial (which includes participant information in its codes) and step
+
+   In this spreadsheet, the participant information (``1080, f, 
+   1/2/10``) is repeated in every *trial* cell. This creates extra
+   work for the coder, and increases the potential for an input error
+   that could cause problems during analysis.
+
+Choose "Quick" Values
+~~~~~~~~~~~~~~~~~~~~~
+
+Coding is a time-intensive task, but choosing code values that are 
+quick to code can expedite the process. For instance, if you are
+coding a video that observed someone walking, you might have a *step*
+column, with codes like "foot", referring to the left or right foot,
+and "direction", referring to the direction of motion. If the coder
+has to type "left", "right", "forward", and "backward" repeatedly,
+coding is going to take a long time. They're also more likely to
+make a typo, rendering the data difficult to analyze programmatically.
+
+Instead, choose values that are short: one character is often a good
+choice. So instead of typing "left", the coder would input "l", "r"
+for "right", "f" for "forward" and "b" for "backward. This way, the
+coder can speed through quickly, typing one or two keystrokes rather
+than five or ten. It is also easier to see potential input errors
+with fewer characters. Part of the role of the coding manual is to
+record what these values mean, so that researchers can come back to
+the data in the future and understand the input values.
+
+Sample Coding Manual
+--------------------
+
+Each researcher will have their own preferred coding manual format,
+and determining what works best for you is part of getting started.
+This manual was developed by the creators of Datavyu for one of
+their experiments, and is a good starting point for creating your
+own coding manual. [Link to coding manual.]
+

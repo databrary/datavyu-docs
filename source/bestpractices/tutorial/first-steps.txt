@@ -1,15 +1,25 @@
 .. _first-steps:
 
-===========================
-THIS TUTORIAL NEEDS A TITLE
-===========================
+================================
+First Steps in Behavioral Coding
+================================
 
-[introductory words - link to the worksheet as well, if that's something
-you end up actually doing]
+For a beginner setting out to code behavioral data for the first time,
+or a more experienced coder that's new to Datavyu, figuring out where
+to start can be daunting. This tutorial presents a process that helps
+you to set yourself up for success, and guides you through the steps
+necessary to start coding behavioral data with Datavyu.
 
-.. warning:: 
+The general process involves familiarizing yourself with your data
+source, creating a coding scheme that coders will use to code data
+from those experiments and testing it, determining how you will
+analyse the data collected and ensuring that your coding scheme
+supports that, and then starting to code. The following sections go
+through each step in detail. 
 
-   The following sections describe an ideal way to start coding
+.. important:: 
+
+   This tutorial describes an ideal way to start coding
    your behavioral data from video. Regardless of the process you follow,
    **do not** code hours of video before checking your coding scheme
    is reliable, and **do not** score hours of video before ensuring
@@ -24,7 +34,7 @@ you are seeing, so that you can refer to your observations when you
 start planning your coding scheme.
 
 Then, watch representative portions of video (perhaps 2-3 minutes) from
-several participants and, again, take notes, recording commonalities and
+several participants and, again, take notes, recording similarities and
 differences. 
 
 Watching videos from a variety of study participants 
@@ -80,7 +90,7 @@ Plan for Analysis
 
 Collecting data is great, but it won't be useful if you can't analyze it.
 At this point, you need to ensure that your data is in a format that
-you can use, and that you have a way to export that data. This endeavor
+you can use, and that you have a way to export that data. This task
 involves two components:
 
 - Ensure that the codes that you are using will be useful when it comes
@@ -105,13 +115,13 @@ you're ready to move on to the next stage.
 Implement Your Plan
 -------------------
 
-Now that you have a [usable] coding scheme and manual, and have a plan
+Now that you have a functioning coding scheme and manual, and have a plan
 for exporting and analyzing your data, you can start coding.
 
 1. Start by creating a blank template file containing your study
    columns, configured with the codes you have chosen. Use this template
-   for every ["pass"], opening it and choosing Save As for each
-   subsequent pass. This ensures that data collection is consistent
+   for every participant and pass: open it then create a new file for each pass
+   using Save As. This ensures that data collection is consistent
    within an experiment.
 
 2. Code a participant's trial using your new template.
@@ -126,7 +136,7 @@ Next Steps
 
 You're now all set to collect the data from your sources. Remember
 to check for typos and coding errors after each pass, and consider
-using :ref:`two pass verification <api-reliability>` to double check
+using :ref:`reliablity coding <api-reliability>` to double check
 your data quality.
 
 The Best Practices :ref:`In Depth Guides <in-depth>` are a great next

@@ -19,6 +19,7 @@
 
 {%- macro sidebar() %}
       {%- if render_sidebar %}
+    <sidebar>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
           {%- block sidebarlogo %}
@@ -32,6 +33,7 @@
           {%- endif %}
         </div>
       </div>
+    </sidebar>
       {%- endif %}
 {%- endmacro %}
 
@@ -105,6 +107,7 @@
 {%- block extrahead %} {% endblock %}
   </head>
   <body>
+  <content>
 
 {%- block header %}
 
@@ -205,5 +208,6 @@
     {%- endif %}
     </div>
 {%- endblock %}
+  </content>
   </body>
 </html>
