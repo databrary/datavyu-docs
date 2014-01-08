@@ -41,7 +41,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Datavyu'
-copyright = u'2013, Allison Moore'
+copyright = u'2013, Databrary.org'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -129,7 +129,7 @@ html_title = "Datavyu documentation"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+# html_static_path = ['_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -261,8 +261,8 @@ texinfo_documents = [
 # Bibliographic Dublin Core info.
 epub_title = u'Datavyu Manual'
 epub_author = u'Allison Moore'
-epub_publisher = u'Allison Moore'
-epub_copyright = u'2013, Allison Moore'
+epub_publisher = u'Databrary.org'
+epub_copyright = u'2013, Databrary.org'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.
