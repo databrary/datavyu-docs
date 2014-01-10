@@ -105,8 +105,6 @@ with the :term:`onset` set to the correct trial start time.
                cell.change_code("onset", time)
             end
 
-      T
-
 #. Now that the loop is complete, write the changes back to the Datavyu
    spreadsheet and ``end`` the script:
 

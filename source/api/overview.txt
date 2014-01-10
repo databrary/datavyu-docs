@@ -12,7 +12,7 @@ Classes
 
 Object-oriented languages represent concepts, like
 Datavyu's columns or cells, for instance, as "objects". Types of
-objects are called :term:`"classes" <class>`>. 
+objects are called :term:`"classes" <class>`.
 
 Objects have attributes: data that pertains to the
 object. In Datavyu, a cell object's attributes would be its codes; a column
