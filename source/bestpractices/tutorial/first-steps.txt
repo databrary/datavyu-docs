@@ -112,6 +112,8 @@ developed, once again, you'll need to revise your plan.
 When you're satisfied that you can export and analyze your data,
 you're ready to move on to the next stage.
 
+.. _use-a-template:
+
 Implement Your Plan
 -------------------
 

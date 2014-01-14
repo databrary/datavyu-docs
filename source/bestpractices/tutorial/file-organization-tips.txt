@@ -1,0 +1,30 @@
+=========================
+Datavyu File Organization
+=========================
+
+Coding data from video can be a time-consuming pursuit: it is
+important, therefore, to ensure that you are able to locate and access
+the spreadsheets and data files you collect. Using consistent naming,
+:ref:`creating spreadsheets from experiment-specific templates
+<use-a-template>`, and [something else] are good first steps, but you
+should also think about how you are going to organize your files on disk.
+
+Whether you are an experienced user, have yet to settle on an
+organizational system, or who are just starting out, consider the
+following tips when determining an effective file system.
+
+.. _one-spreadsheet-per-video:
+
+One Spreadsheet Per Data Source
+-------------------------------
+
+
+
+
+Store Video Files in One Location
+---------------------------------
+
+Link Data Sources to Corresponding Spreadsheets
+-----------------------------------------------
+
+
