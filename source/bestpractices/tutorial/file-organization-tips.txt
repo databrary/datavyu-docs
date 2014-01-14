@@ -18,13 +18,44 @@ following tips when determining an effective file system.
 One Spreadsheet Per Data Source
 -------------------------------
 
+Creating a single spreadsheet for each data source is extremely
+important and has numerous benefits: 
 
+- keeping all related data together avoids losing or
+  misplacing data for a given data source,
 
+- keeping all data for a data source facilitates analysis of that
+  data, such as :ref:`reliability-coding` and
+  :ref:`api-check-for-typos`,
+
+- ensuring that each spreadsheet contains data from a single data
+  source helps researchers and coders refer to the data source quickly
+  and easily.
 
 Store Video Files in One Location
 ---------------------------------
 
+Endeavor to store all your data sources in one location: a remote
+drive, perhaps, or a specified folder. Keeping all video files
+together makes it easier for coders to locate video files, and avoids
+having data sources in a variety of disparate locations that
+researchers will then have to search for or potentially lose.
+
+Using some form of backup to back up data files and spreadsheets is,
+as always when working with computers, also a good idea.
+
 Link Data Sources to Corresponding Spreadsheets
 -----------------------------------------------
 
+When you add a data source to a spreadsheet using the :guilabel:`Add
+Data...` button in the Data Viewer Controller, Datavyu links the data
+source to that spreadsheet. When you reopen the spreadsheet days or
+weeks later, Datavyu knows where to look for the data source, and will
+open it for you. This makes it easier to return to your data and
+understand the context and situation, and also saves time for coders
+who would otherwise have to keep adding and re-syncing video sources.
 
+If you move a data source file into a new folder or onto a different
+hard drive, Datavyu will not be able to automatically locate and open
+the file. You will need to re-add the data source using the Data
+Viewer Controller's :guilabel:`Add Data...` button.
