@@ -1,0 +1,177 @@
+.. _api-batch:
+
+==================================
+Batch Operations on Multiple Files
+==================================
+
+.. default-domain:: rb
+
+Writing scripts that act on multiple files is largely the same as
+writing scripts that act on a single file: the interactions with
+columns, codes, and cells is the same; the script simply has to manage
+working with multiple Datavyu Spreadsheet files.
+
+This tutorial loads the spreadsheet files in a folder called
+``datafiles`` that is located on the Desktop, accesses the "id",
+"trial" and "foot" columns, and then sets up a loop to export the
+data, following the process in :ref:`the API export tutorial
+<api-export-data>`.
+
+#. Create the output data file that you will be exporting the
+   spreadsheet data to (see :ref:`api-export-data` for an in-depth
+   explanation):
+
+   .. code-block:: ruby
+
+      out_file = File.expand_path("~/Desktop/DataOutput.txt")
+      out = File.new(out_file,'w')
+
+#. Identify the folder that contains the spreadsheets whose data you
+   want to export, and create a list object called ``filenames`` that
+   lists the files in that folder:
+
+   .. code-block:: ruby
+
+      out_file = File.expand_path("~/Desktop/DataOutput.txt")
+      out = File.new(out_file,'w')
+      
+      # Locate the files in the datafiles folder on the Desktop
+      # and assign the list of file names to the filenames Ruby
+      # object.
+      filedir = File.expand_path("~/Desktop/datafiles/")
+      filenames = Dir.new(filedir).entries
+
+#. Iterate through each file in ``filenames`` to see if it
+   contains data and is a ``.opf`` Datavyu spreadsheet file. If so,
+   load the spreadsheet data into Datavyu, and print "SUCCESSFULLY
+   LOADED" when complete:
+
+   .. code-block:: ruby
+
+      out_file = File.expand_path("~/Desktop/DataOutput.txt")
+      out = File.new(out_file,'w')
+      filedir = File.expand_path("~/Desktop/datafiles/")
+      filenames = Dir.new(filedir).entries
+      
+      # Iterate through each filename in the "filenames" list
+      for file in filenames
+         if file.include?(".opf") and file[0].chr != '.'
+    
+         puts "LOADING DATABASE: " + filedir+file
+         $db,proj = load_db(filedir+file)
+         puts "SUCCESSFULLY LOADED"    
+
+#. Get the columns you are going to export using :meth:`getColumn`:
+
+   .. code-block:: ruby
+
+      out_file = File.expand_path("~/Desktop/DataOutput.txt")
+      out = File.new(out_file,'w')
+      filedir = File.expand_path("~/Desktop/datafiles/")
+      filenames = Dir.new(filedir).entries
+      
+      for file in filenames
+         if file.include?(".opf") and file[0].chr != '.'
+    
+         puts "LOADING DATABASE: " + filedir+file
+         $db,proj = load_db(filedir+file)
+         puts "SUCCESSFULLY LOADED" 
+
+         # Retrieve "id", "trial", and "foot" columns
+
+         id = getColumn("id")
+         trial = getColumn("trial")
+         foot = getColumn("foot")
+
+#. Set up a series of ``for`` loops  to iterate over
+   each cell in the relevant columns, and then use an ``if`` to export
+   nested cells, following the steps in :ref:`api-export-data`:
+
+   .. code-block:: ruby
+
+      out_file = File.expand_path("~/Desktop/DataOutput.txt")
+      out = File.new(out_file,'w')
+      filedir = File.expand_path("~/Desktop/datafiles/")
+      filenames = Dir.new(filedir).entries
+      
+      for file in filenames
+         if file.include?(".opf") and file[0].chr != '.'
+    
+         puts "LOADING DATABASE: " + filedir+file
+         $db,proj = load_db(filedir+file)
+         puts "SUCCESSFULLY LOADED" 
+
+         id = getColumn("id")
+         trial = getColumn("trial")
+         foot = getColumn("foot")
+
+         # Export Data
+
+         for idcell in id.cells
+            for tcell in trial.cells
+               for fcell in foot.cells                  
+                  if fcell.onset >= tcell.onset && fcell.offset <= tcell.offset
+
+                     # Write the cells' codes to the output file, separated by tabs - the "\t"
+                     # You must include a newline indicated, "\n" so that the next cells' codes
+                     # will be output on a new line, giving them their own row.
+                     out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" + tcell.offset.to_s + "\t" + tcell.trial + "\t" + fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + fcell.offset.to_s + "\t" + fcell.side + "\n")
+
+                     # End the if clause, and the for loops, as well as the script
+                  end
+               end
+            end
+         end
+
+#. Close the filename ``for`` loop  and ``if`` statement and print
+   "FINISHED" when the script has finished exporting all the
+   spreadsheet files' data to the output file.
+
+   .. code-block:: ruby
+
+      require 'Datavyu_API.rb'
+       begin
+
+         out_file = File.expand_path("~/Desktop/DataOutput.txt")
+         out = File.new(out_file,'w')
+         filedir = File.expand_path("~/Desktop/datafiles/")
+         filenames = Dir.new(filedir).entries
+         
+         for file in filenames
+            if file.include?(".opf") and file[0].chr != '.'
+       
+            puts "LOADING DATABASE: " + filedir+file
+            $db,proj = load_db(filedir+file)
+            puts "SUCCESSFULLY LOADED" 
+
+            id = getColumn("id")
+            trial = getColumn("trial")
+            foot = getColumn("foot")
+
+            # Export Data
+
+            for idcell in id.cells
+               for tcell in trial.cells
+                  for fcell in foot.cells                  
+                     if fcell.onset >= tcell.onset && fcell.offset <= tcell.offset
+
+                        # Write the cells' codes to the output file, separated by tabs - the "\t"
+                        # You must include a newline indicated, "\n" so that the next cells' codes
+                        # will be output on a new line, giving them their own row.
+                        out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" + tcell.offset.to_s + "\t" + tcell.trial + "\t" + fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + fcell.offset.to_s + "\t" + fcell.side + "\n")
+
+                           # End the if clause, and the for loops, as well as the script
+                        end
+                     end
+                  end
+               end
+
+            end
+         end
+
+         puts "FINISHED!"
+
+         end
+         
+      # End the script
+      end

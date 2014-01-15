@@ -1,7 +1,8 @@
-.. _api-export-data:
 
 .. Allison: headings are not the usual level because of include
    for master tutorial - they should remain coded in this fashion
+
+.. _api-export-data:
 
 =======================================
 Use Scripts to Export Data from Datavyu
@@ -27,7 +28,7 @@ Datavyu supports numerous data export methods. This section covers four
 common approaches, in order of increasing complexity:
 
 - A straight dump to CSV file where cells correspond to the coded cells
-  in Datavyu.
+  in Datavyu. See :doc:`/guide/tutorial/export-data`.
 
 - A straight *frame-by-frame* dump detailing all observations 
   associated with each frame.
@@ -37,6 +38,10 @@ common approaches, in order of increasing complexity:
 
 - A *nested dump with un-nested cells*, which is similar to the
   nested dump, but which also works if your cells do not nest.
+
+If you wish to export data from multiple files, refer to the 
+:ref:`api-batch` tutorial for guidance on operations 
+that involve multiple files.
 
 .. Method 1: Direct Dump to CSV
 .. ````````````````````````````

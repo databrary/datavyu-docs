@@ -80,3 +80,4 @@ Tutorials
    /api/tutorial/use-reliability-coding-to-check-data-accuracy
    /api/tutorial/export-data-using-scripts 
    /api/tutorial/convert-openshapa-script-to-datavyu
+   /api/tutorial/perform-operations-on-multiple-files
