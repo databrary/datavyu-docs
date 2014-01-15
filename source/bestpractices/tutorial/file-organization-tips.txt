@@ -25,7 +25,7 @@ important and has numerous benefits:
   misplacing data for a given data source,
 
 - keeping all data for a data source facilitates analysis of that
-  data, such as :ref:`reliability-coding` and
+  data, such as :ref:`api-reliability` and
   :ref:`api-check-for-typos`,
 
 - ensuring that each spreadsheet contains data from a single data

@@ -1,0 +1,32 @@
+.. _tips-for-types:
+
+==========================
+Coding Tips for Data Types
+==========================
+
+Coding behavioral data with Datavyu follows a consistent pattern:
+create cells that delineate the behavior or event your are observing,
+and record those observations. Nevertheless, here are some suggestions
+for ways to approach coding specific types of data.
+
+Eye Tracking
+------------
+
+Coding eye tracking data requires its own approach that varies
+slightly from other coding. Since coders need to record each eye
+movement, you should code eye tracking data *frame-by-frame* using the
+:guilabel:`jog` key to slowly advance the video one frame at a
+time. Frame-by-frame coding gives the coder the opportunity to code
+all relevant data for a frame as they travel through the source. This
+prevents the coder from having to watch the video multiple times,
+which can be particularly lengthy when watching frame by frame.
+
+Categorical
+-----------
+
+Unlike eye tracking data, categorical data, such as [examples] is easy
+to code. If a coder sees a behavior in the course of coding another
+event, there is little extra cost to scoring it. When designing your
+coding manual, and choosing how to code your data sources, consider
+ways to expedite the process by having the coder record categorical
+data while recording something more time consuming.
