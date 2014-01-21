@@ -11,17 +11,17 @@ you to set yourself up for success, and guides you through the steps
 necessary to start coding behavioral data with Datavyu.
 
 The general process involves familiarizing yourself with your data
-source, creating a coding scheme that coders will use to code data
-from those experiments and testing it, determining how you will
-analyse the data collected and ensuring that your coding scheme
-supports that, and then starting to code. The following sections go
-through each step in detail. 
+source and creating a coding scheme that coders will use to code data
+from those experiments. Next, you should test your coding scheme,
+determine how you will analyze the data you collect and ensure that your
+coding scheme supports your export needs. Finally, you can start coding.
+The following sections go through each step in detail.
 
 .. important:: 
 
    This tutorial describes an ideal way to start coding
    your behavioral data from video. Regardless of the process you follow,
-   **do not** code hours of video before checking your coding scheme
+   **do not** code hours of video before verifying that your coding scheme
    is reliable, and **do not** score hours of video before ensuring
    that you can export the data in a format that works for your
    statistical analysis.
@@ -41,10 +41,6 @@ Watching videos from a variety of study participants
 prevents you from basing your coding scheme on one individual, and 
 discovering that their trial was unrepresentative of the study
 participants in general. 
-
-.. image:: /img/awesome-image-holder.*
-   :align: right
-   :width: 350px
 
 Create Your Coding Manual
 -------------------------
@@ -120,15 +116,15 @@ Implement Your Plan
 Now that you have a functioning coding scheme and manual, and have a plan
 for exporting and analyzing your data, you can start coding.
 
-1. Start by creating a blank template file containing your study
+#. Start by creating a blank template file containing your study
    columns, configured with the codes you have chosen. Use this template
-   for every participant and pass: open it then create a new file for each pass
-   using Save As. This ensures that data collection is consistent
-   within an experiment.
+   for every participant and pass: open it and create a new file for
+   each pass using Save As. This ensures that data collection is
+   consistent within an experiment.
 
-2. Code a participant's trial using your new template.
+#. Code a participant's trial using your new template.
 
-3. :doc:`Write a script </api/tutorial/check-for-coding-errors>` to
+#. :doc:`Write a script </api/tutorial/check-for-coding-errors>` to
    check your first coding pass for typos, impossible relations, and out
    of range values. For consistency, use these scripts to check all
    passes in this experiment.

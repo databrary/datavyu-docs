@@ -6,19 +6,18 @@ Develop a Coding Manual
 =======================
 
 Developing a coding manual is an essential step when starting to
-collect data from an experiment. In any study, it is important that
-you determine how you data is going to be collected, and the coding
-manual is the document that defines what data you will collect, and
-how it will be collected.
+collect data for an experiment. In any study, it is important that
+you determine how you are going to collect your data. The coding manual
+formalizes your strategy, detailing what data you will collect, and how.
 
 At its core, a coding manual simply formalizes the practices you've
 decided to use to collect data, and answers a variety of questions:
 
 - What :term:`columns <column>` are you going to have?  
 - What :term:`codes <code>` will each column include?  
-- How are these codes going to be defined?  
+- How will you define each code?  
 - What are valid values, and what do these values mean?  
-- How will :term:`onsets <onset>` and :term:`offsets <offset>` be determined?
+- How will you determine :term:`onsets <onset>` and :term:`offsets <offset>`?
 
 Defining each code, value, and column makes it easy to return to a
 study weeks, months, or years later, and understand what the codes
@@ -36,27 +35,26 @@ columns should be, based on your data source and experiment.
 
 One common column structure is to create columns that contain metadata
 for the experiment: participant information and trial information, for
-instance. The following spreadsheet example shows an "*id*" column
+example. The following spreadsheet shows an "*id*" column
 that has participant information, a "*trial*" column that has
 information for each trial, and columns for specific observations. The
 *id* column's :term:`cell` is the full length of the spreadsheet,
 since all the trials are associated with that participant. The *trial*
 column's cells are the length of each trial, and the other observation
-columns' cells are of various lengths, according to the durations of
+columns' cells reflect the durations of
 the recorded events.
 
 .. image:: /img/coding-manual-nested-columns-example.png
-   :alt: Screenshot of a very structured spreadsheet showing three columns (id, trial, and step)
+   :alt: Screenshot of a structured spreadsheet showing three columns (id, trial, and step)
 
-For less structured data, as in,
-this structure might not be as necessary, but choosing columns that
-represent phenomena you care about remains the key priority. For
-instance, in the following spreadsheet example, there are columns for
+For less structured data, as in :download:`the example video </resources/DatavyuSampleVideo.mov>`
+this structure isn't necessary, but choosing columns that
+represent phenomena you care about remains a key priority. In the following spreadsheet example, there are columns for
 the mother and baby's speech, what object they are holding, location,
 notes, etc.
 
 .. image:: /img/base-screenshot-MomBaby.png
-   :alt: Screenshot of a less structured spreadsheet showing seven columns with various coded cells
+   :alt: Screenshot of a less structured spreadsheet showing seven columns with coded cells
 
 Choose Codes and Possible Values
 --------------------------------
@@ -108,7 +106,7 @@ Avoid Repetitive Values
 If your coding scheme requires you to input the same value for large
 blocks of cells, you should consider an alternate way to represent
 that code. For instance, if you had a *trial* column that had the
-trial ID, trial date, and participant information (participant ID,
+trial number, trial date, and participant information (participant ID,
 gender, and birthdate) as codes, it would be onerous to have to
 repeatedly code the same participant information repeatedly throughout
 a data source. Extracting that data into its own column and creating

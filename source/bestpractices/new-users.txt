@@ -3,8 +3,9 @@
 Introduction for New Users
 ==========================
 
-You need to think about a bunch of things before you start collecting
-behavioral data from video. If you plow forth and start coding without
+Before you start collecting
+behavioral data from video with Datavyu, you need to consider your
+goals. If you plow forth and start coding without
 developing a plan, thinking about the ways you will be analyzing the
 data (and thus, what sorts of data you will need), you may find yourself
 hours later with data you cannot use, and hours wasted. Worse yet, you
@@ -21,8 +22,8 @@ scheme describes what data you are going to collect and how to collect
 it. This helps you ensure that you collect data that will enable you to
 perform the analyses you wish to perform. A coding manual documents the
 scheme in detail, so that future coders will be able to reproduce your
-work, using the same codes for the same phenomena, following the same
-timing conventions, etc.
+work, use the same codes for the same phenomena, and follow the same
+timing conventions.
 
 The manual is also helpful during analysis, as it defines what each
 code describes, and how those observations were determined. This can be
@@ -43,12 +44,13 @@ When faced with a complex data source, it might be tempting to start
 trying to code everything. This is probably not a great idea, as you
 can easily set off down the wrong path and not realize until much later.
 
-Instead, start simple. You can code in passes, going :term:`column` by
-column until you have collected all the data from a trial or
-participant. While minimizing the need to repeatedly watch a video
-source is also a consideration, if you're first starting out, coding
-column-by-column helps ensure that you don't miss things, and gives you
-more time to become comfortable working with the Datavyu interface.
+Instead, start simple. You can code in passes, completely coding one
+:term:`column` at a time column before proceeding to the next until you
+have collected all the data from a trial or participant. While
+minimizing the need to repeatedly watch a video source is also a
+consideration, if you're first starting out, coding column-by-column
+helps ensure that you don't miss things, and gives you more time to
+become comfortable working with the Datavyu interface.
 
 Consider Analysis
 -----------------
@@ -63,7 +65,7 @@ the scheme.
 
 Many Datavyu users :doc:`write scripts </api>` to help them export their
 data in an ideal format that analyze using statistics packages like
-SPSS. Your own use case should determine how you prepare with your data.
+SPSS. Your experimental needs should determine how you work with your data.
 
 Next Steps
 ----------
