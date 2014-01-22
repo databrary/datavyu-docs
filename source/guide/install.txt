@@ -1,4 +1,4 @@
-r============
+============
 Installation
 ============
 
@@ -35,7 +35,7 @@ yet have Java installed, OS X will prompt you to install a Java IDE
 when you first try to open Datavyu, or you can `download it directly from
 apple <http://support.apple.com/kb/dl1572>`_.
 
-On a Windows-based computer, you must all download Java. Go to
+On a Windows-based computer, you must also download Java. Go to
 `java.com <http://java.com/en/download/index.jsp>`_ to download the latest
 version for your operating system.
 
