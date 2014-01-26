@@ -163,16 +163,9 @@ ensure that temporal alignment is active.
    that changes. Note also that enabling temporal alignment makes it
    easier to understand the sequence of events between different columns.
 
-Weak and Strong Temporal Alignment
-``````````````````````````````````
-
-Datavyu supports two types of temporal alignment: "weak" and
-"strong". 
-
 Toggle Temporal Alignment
 `````````````````````````
 
-You can toggle temporal alignment using the ``cmd T`` / ``alt T`` keyboard
-shortcut, or by selecting :guilabel:`Weak Temporal Alignment` or
-:guilabel:`Strong Temporal Alignment` from the :guilabel:`Spreadsheet`
-menu.
+You can toggle temporal alignment using the ``cmd T`` / ``alt T``
+keyboard shortcut, or by selecting :guilabel:`Weak Temporal Alignment`
+from the :guilabel:`Spreadsheet` menu.
