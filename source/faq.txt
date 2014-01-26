@@ -8,6 +8,9 @@ General
 What is Datavyu used for?
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Datavyu is a video coding and data visualization tool for collecting
+behavioral data from video. 
+
 Can I use Datavyu to analyze data?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -163,14 +166,14 @@ scripts to accomplish.
 MacSHAPA and OpenSHAPA
 ----------------------
 
-I use MacSHAPA - can I convert my files to Datavyu?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. I have existing MacSHAPA files - can I convert my them to Datavyu?
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Yes! You can import a MacSHAPA file into Datavyu through a simple script
-using the :meth:`load_macshapa_db()` method. For more information, see:
+   Yes! You can import a MacSHAPA file into Datavyu through a simple
+   script using the :meth:`load_macshapa_db()`.
 
-I have OpenSHAPA files - can I convert them to Datavyu?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I have existing OpenSHAPA files - can I convert them to Datavyu?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yes! You can open your OpenSHAPA files in Datavyu like you would any
 other Datavyu file.
