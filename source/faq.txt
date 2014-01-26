@@ -124,8 +124,8 @@ I have found a bug in Datavyu! How can I report it?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you find a bug, you can post to `the Datavyu support forum
-<http://datavyu.org/support/>`_ or email Datavyu's QA Manager at
-`vjf210@nyu.edu`_.
+<http://datavyu.org/support/>`_ or email Datavyu's QA Manager,
+`Vicky Foo <vjf210@nyu.edu>`_.
 
 API Scripts
 -----------

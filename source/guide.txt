@@ -2,11 +2,6 @@
 Software Guide
 ==============
 
-.. image:: /img/awesome-video-here.png
-   :align: right
-   :width: 400px
-   :alt: awesome video showing what Datavyu can do!
-
 Datavyu is a Java-based application that runs on Windows, Mac, and Linux
 operating systems. Its primary goal is to link behavioral researchers
 with their video, audio, or other data sources, and to provide a way for
