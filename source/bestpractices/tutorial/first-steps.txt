@@ -62,7 +62,7 @@ Test your coding scheme by coding representative portions of video
 for several participants. As you code, keep the following questions
 in mind:
 
-- Is this (relatively) *easy* to do? 
+- Is this *easy* to do? 
 
 - Is this *reliable*? Do I have the codes I need to record
   my observations for all participants? Do I have the columns I need?
