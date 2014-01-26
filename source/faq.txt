@@ -1,0 +1,190 @@
+==========================
+Frequently Asked Questions
+==========================
+
+General
+-------
+
+What is Datavyu used for?
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Can I use Datavyu to analyze data?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Datavyu is a data collection tool, not a statistical analysis tool. You
+can export data from Datavyu in a variety of forms depending on your
+analysis needs. See the :ref:`basic export <guide-export-data>` and
+:ref:`scripting export <api-export-data>` tutorials for more information.
+
+In the future, Datavyu will include support for scripting using R.
+
+What video formats does Datavyu support?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Datavyu supports all video formats that Quicktime or VLC can play,
+including .asf, .wmv, .avi, .flv, .mov, .mpf, .ogg, .mpg, .nsc, .wav,
+and .dts.
+
+Can I code sources that are not videos?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+No, Datavyu does not currently support non-video data sources. Support
+for other data sources is planned for a future release.
+
+Is there somewhere I can share or store my spreadsheets and videos?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Yes indeed! `Databrary <databrary.org>`_ is a web-based repository for
+open sharing and preservation of video data and associated metadata. The
+project website has more information about the initiative and a guide
+to help you get started.
+
+Do I have to pay for Datavyu?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+No! Datavyu is completely free and open source. If you would like to
+contribute to the development of Datavyu, see: `the source on GitHub
+<https://github.com/databrary/datavyu>`_.
+
+Technical Requirements
+----------------------
+
+Which operating system is Datavyu available for?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Datavyu builds are available for both Windows and Mac OS X. You can
+download either version from `the Datavyu Downloads page <http://datavyu.org/download/>`_.
+
+In the future, Datavyu will also provide a Linux version.
+
+Do I need any additional software to run Datavyu?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Datavyu requires Java, and either Quicktime or VLC. See:
+:ref:`datavyu-requirements` for more details.
+
+What hardware do I need to code data sources in Datavyu?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Datavyu makes extensive use of a the keypad for controlling video
+playback. If your keyboard does not have a keypad (for example, if
+you're working on a laptop), you will need to acquire an external keypad.
+
+Beyond that, there are no specific hardware requirements.
+
+Do I need to be connected to the internet when using Datavyu?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+No! Datavyu runs entirely on your computer. If you are connected to the
+internet, however, Datavyu will check to see if there is a new version
+of Datavyu that you can download. See: :ref:`update-datavyu` for more
+information.
+
+Support
+-------
+
+I've never coded video data before. How should I start?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The :doc:`best practices guide </best-practices>` is an excellent
+resource to help you start coding behavioral data from video.
+
+Where can I learn to use Datavyu?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The :doc:`Datavyu user guide </guide>` provides comprehensive
+documentation of Datavyu's interfaces and capabilities, as well as
+tutorials to guide you through common tasks.
+
+I'm not sure how to best code my data? Are there guidelines for coding?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The :doc:`best practices guide </best-practices>` provides
+in-depth instructions and suggestions for coding your behavioral data.
+In particular, check out :ref:`coding-manual` and :ref:`first-steps`.
+
+How do I update Datavyu?
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+When you first start up Datavyu while connected to the internet, Datavyu
+automatically checks for new versions and prompts you to update if there
+is a new version. See: :ref:`update-datavyu` for more information.
+
+Where can I ask questions about issues I'm having with Datavyu?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Post your questions to `the Datavyu support forum
+<http://datavyu.org/support/>`_ and Datavyu maintainers and users will
+help you find the answers you're looking for.
+
+I have found a bug in Datavyu! How can I report it?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you find a bug, you can post to `the Datavyu support forum
+<http://datavyu.org/support/>`_ or email Datavyu's QA Manager at
+`vjf210@nyu.edu`_.
+
+API Scripts
+-----------
+
+What is a script?
+~~~~~~~~~~~~~~~~~
+
+A script is a collection of code that performs actions on a file or
+spreadsheet. You could write a script to add a column, add codes to a
+column, duplicate and move data around, or export data to a convenient
+file format for analysis with SPSS, for example. See the :doc:`Ruby API
+guide </api>` for more information.
+
+
+I'm not a programmer - where can I learn to write scripts?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The :doc:`Ruby API guide </api>` provides an in-depth
+introduction to scripting with Datavyu's Ruby API, tutorials that guide
+you through common scripting tasks and detailed method reference for
+each API component, to help you learn how these components work
+together. 
+
+If you're completely unfamiliar with programming, going through the Ruby
+language's `Learn Ruby in Twenty Minutes
+<https://www.ruby-lang.org/en/documentation/quickstart/>`_ tutorial may
+be helpful. Ruby is an easy-to-read programming language which was
+designed to be intuitive and easy to learn, so gaining the basics should
+be very feasible.
+
+What can I use scripts for?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can write scripts to import, manipulate, and export data. The
+:ref:`API tutorials <api-tutorials>` describe common tasks you can write
+scripts to accomplish.
+
+MacSHAPA and OpenSHAPA
+----------------------
+
+I use MacSHAPA - can I convert my files to Datavyu?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Yes! You can import a MacSHAPA file into Datavyu through a simple script
+using the :meth:`load_macshapa_db()` method. For more information, see:
+
+I have OpenSHAPA files - can I convert them to Datavyu?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Yes! You can open your OpenSHAPA files in Datavyu like you would any
+other Datavyu file.
+
+Will my MacSHAPA queries work in Datayvyu?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Unfortunately, MacSHAPA queries do not work on the new Datavyu format.
+You will need to write new scripts for your Datavyu spreadsheets.
+
+Will my OpenSHAPA scripts run in Databyu?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Yes…ish. You can easily convert an OpenSHAPA script to work in Datavyu
+by adding ``require 'Datavyu_API.rb`` to the top of your OpenSHAPA
+script file. For more information see the
+:ref:`api-convert-openshapa-to-datavyu` tutorial.

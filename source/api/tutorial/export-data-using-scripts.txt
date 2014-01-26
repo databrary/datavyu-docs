@@ -1,4 +1,3 @@
-
 .. Allison: headings are not the usual level because of include
    for master tutorial - they should remain coded in this fashion
 

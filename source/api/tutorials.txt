@@ -67,6 +67,8 @@ tutorials will guide you through common tasks. If you would prefer, you
 can go through the full tutorial from start to finish in
 :doc:`/api/tutorial`.
 
+.. _api-tutorials:
+
 Tutorials
 #########
 

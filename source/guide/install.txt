@@ -6,6 +6,8 @@ Datavyu is a Java-based application, which is easy to install on Mac OS
 X and Windows. The following sections describe Datavyu's system requirements and
 then the installation process itself.
 
+.. _datavyu-requirements:
+
 Requirements
 ------------
 
