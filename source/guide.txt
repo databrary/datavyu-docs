@@ -10,6 +10,7 @@ analysis, and share their work. Using a spreadsheet template that
 specifies which categories of events you’re interested in coding,
 Datavyu enables researchers to record events or build on prior analyses.
 
+`Watch an expert coder working with Datavyu <_static/video/coding-example.mp4>`_
 
 This guide provides all the information you need to start using Datavyu,
 starting with installation instructions, through an in-depth description

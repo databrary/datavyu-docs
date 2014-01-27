@@ -131,7 +131,13 @@ Coding Controls
 Tracks
 ------
 
-The :guilabel:`Tracks` area of the Data Viewer controller helps you
+.. note:: 
+
+   The `tracks walkthrough video </_static/video/dvc-tracks-area.mp4>`_
+   is a good way to familiarize yourself with this area of the
+   Data Viewer Controller.
+
+The :guilabel:`Tracks` area of the Data Viewer Controller helps you
 visualize where you are within a data source's playback. You can
 control the scale using the slider bar in the top right: moving it to
 the right zooms in, allowing you to manipulate smaller time periods

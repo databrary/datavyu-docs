@@ -10,8 +10,9 @@ collection of one or more :term:`codes <code>`. Each
 code has a value that the coder inputs while coding a data
 source.
 
-Datavyu provides a Code Editor for configuring
-columns.
+Datavyu provides a Code Editor for configuring columns. Check out our
+`video walkthrough </_static/video/code-editor.mp4>`_ of the Code
+Editor's features.
 
 Open the Code Editor
 --------------------

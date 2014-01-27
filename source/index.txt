@@ -42,3 +42,4 @@ from first principles to advanced strategies.
    /api
    /best-practices
    /faq
+   /walkthrough-videos

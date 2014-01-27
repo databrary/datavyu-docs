@@ -8,6 +8,10 @@ The Datavyu Spreadsheet is where coders record :term:`observations
 :ref:`configuring columns <configure-columns>`, coders can record
 observations and link them directly to timestamps in the data source.
 
+For a brief introduction to some of the spreadsheet's components and
+capabilities, consider the `spreadsheet walkthrough video
+</_static/video/edit-spreadsheet.mp4>`_
+
 Each user-defined column has its own column in the spreadsheet.
 :term:`Cells <cell>` are column entries, boxes in the column, where
 coders record their observation data as :term:`codes <code>`. Cells
@@ -145,9 +149,10 @@ Temporal Alignment
 ~~~~~~~~~~~~~~~~~~
 
 Temporal alignment is an important concept in Datavyu. When temporal
-alignment is active, Datavyu groups cells based on their
-onsets and offsets, visually representing the period of time each cell
-occupies.
+alignment is active, Datavyu groups cells based on their onsets and
+offsets, visually representing the period of time each cell occupies.
+The `Temporal Alignment video </_static/video/temporal-alignment.mp4>`_
+highlights the differences active and inactive temporal alignment.
 
 Temporal alignment allows you to visualize what occurred at what time,
 and to compare event sequence between columns. When coding, you should

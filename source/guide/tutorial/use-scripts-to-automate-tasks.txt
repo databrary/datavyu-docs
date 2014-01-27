@@ -8,7 +8,8 @@ time on coding, and less time performing routine tasks.
 The :doc:`Ruby API documentation </api>` guides you though writing
 scripts for Datavyu and provides context to help you become an adept
 Ruby script-writer regardless of your programming experience (or lack
-thereof).
+thereof). There is also `a video version of this tutorial
+</_static/video/run-a-script>`_!
 
 Run Scripts
 -----------
