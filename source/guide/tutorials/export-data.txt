@@ -21,5 +21,5 @@ For a detailed guide to export dating using Ruby scripts, see:
 :doc:`/api/tutorial/export-data-using-scripts` in the Datavyu Ruby API
 documentation.
 
-.. seealso:: :doc:`/guide/tutorial/use-scripts-to-automate-tasks` for 
+.. seealso:: :doc:`/guide/tutorials/use-scripts-to-automate-tasks` for 
    instructions on running scripts within Datavyu.

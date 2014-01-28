@@ -71,6 +71,6 @@ can also edit your columns' names.
 
    - :ref:`columns`
 
-   - :doc:`/guide/tutorial/add-a-column`
+   - :doc:`/guide/tutorials/add-a-column`
 
-   - :doc:`/guide/tutorial/delete-column`
+   - :doc:`/guide/tutorials/delete-column`
