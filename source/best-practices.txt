@@ -22,5 +22,5 @@ specific recommendations for coding different types of data.
 .. toctree:: 
    :maxdepth: 1
 
-   /bestpractices/new-users
-   /bestpractices/in-depth-guides
+   /best-practices/new-users
+   /best-practices/in-depth-guides
