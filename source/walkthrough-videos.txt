@@ -5,14 +5,62 @@ Walkthrough Videos
 We have produced several videos that help illustrate Datavyu's strengths
 and guide users through common tasks:
 
-- `Introduction to the Code Editor <_static/video/code-editor.mp4>`_
+-------------------------------
+Introduction to the Code Editor
+-------------------------------
 
-- `Watch an Expert User Code <_static/video/coding-example.mp4>`_
+.. raw:: html
 
-- `Introduction to the Data Viewer Controller's Tracks Area <_static/video/dvc-tracks-area.mp4>`_
+   <video controls width="100%" height="auto">
+   <source src="_static/video/code-editor.mp4" type="video/mp4">
+   </video>
 
-- `Edit the Spreadsheet <_static/video/edit-spreadsheet.mp4>`_
+-------------------------
+Watch an Expert User Code
+-------------------------
 
-- `Temporal Alignment 101 <_static/video/temporal-alignment.mp4>`_
+.. raw:: html
 
-- `Run a Script <_static/video/run-a-script.mp4>`_
+   <video controls width="100%" height="auto">
+   <source src="_static/video/coding-example.mp4" type="video/mp4">
+   </video>
+
+--------------------------------------------------------
+Introduction to the Data Viewer Controller's Tracks Area
+--------------------------------------------------------
+
+.. raw:: html
+
+   <video controls width="100%" height="auto">
+   <source src="_static/video/dvc-tracks-area.mp4" type="video/mp4">
+   </video>
+
+--------------------
+Edit the Spreadsheet
+--------------------
+
+.. raw:: html
+
+   <video controls width="100%" height="auto">
+   <source src="_static/video/edit-spreadsheet.mp4" type="video/mp4">
+   </video>
+
+----------------------
+Temporal Alignment 101
+----------------------
+
+.. raw:: html
+
+   <video controls width="100%" height="auto">
+   <source src="_static/video/temporal-alignment.mp4" type="video/mp4">
+   </video>
+
+------------
+Run a Script
+------------
+
+.. raw:: html
+
+   <video controls width="100%" height="auto">
+   <source src="_static/video/run-a-script.mp4" type="video/mp4">
+   </video>
