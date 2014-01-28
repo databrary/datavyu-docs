@@ -18,7 +18,7 @@ supports Ruby and R scripting, which enable you to create a customized
 data export to suit your needs.
 
 For a detailed guide to export dating using Ruby scripts, see:
-:doc:`/api/tutorial/export-data-using-scripts` in the Datavyu Ruby API
+:doc:`/api/tutorials/export-data-using-scripts` in the Datavyu Ruby API
 documentation.
 
 .. seealso:: :doc:`/guide/tutorials/use-scripts-to-automate-tasks` for 

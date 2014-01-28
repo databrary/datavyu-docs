@@ -48,4 +48,4 @@ checkValidCodes()
 
 .. seealso::
 
-   :doc:`/api/tutorial/check-for-coding-errors`
+   :doc:`/api/tutorials/check-for-coding-errors`

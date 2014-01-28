@@ -124,7 +124,7 @@ for exporting and analyzing your data, you can start coding.
 
 #. Code a participant's trial using your new template.
 
-#. :doc:`Write a script </api/tutorial/check-for-coding-errors>` to
+#. :doc:`Write a script </api/tutorials/check-for-coding-errors>` to
    check your first coding pass for typos, impossible relations, and out
    of range values. For consistency, use these scripts to check all
    passes in this experiment.

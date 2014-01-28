@@ -69,4 +69,4 @@ checkReliability()
 
 .. seealso:: 
 
-   :doc:`/api/tutorial/use-reliability-coding-to-check-data-accuracy`
+   :doc:`/api/tutorials/use-reliability-coding-to-check-data-accuracy`

@@ -15,50 +15,50 @@ Datavyu API Tutorial
 Add Cells to a Variable
 -----------------------
 
-.. include:: /api/tutorial/add-cells-to-a-column.txt
+.. include:: /api/tutorials/add-cells-to-a-column.txt
    :start-after: begin-content
    :end-before: end-content
 
 Add Arguments to a Variable
 ---------------------------
 
-.. include:: /api/tutorial/add-codes-to-a-column.txt
+.. include:: /api/tutorials/add-codes-to-a-column.txt
    :start-after: begin-content
    :end-before: end-content
 
 Add a New Variable
 ------------------
 
-.. include:: /api/tutorial/add-a-new-column.txt
+.. include:: /api/tutorials/add-a-new-column.txt
    :start-after: begin-content
    :end-before: end-content
 
 Check for Coder Errors
 ----------------------
 
-.. include:: /api/tutorial/check-for-coding-errors.txt
+.. include:: /api/tutorials/check-for-coding-errors.txt
    :start-after: begin-content
    :end-before: end-intro
 
-.. include:: /api/tutorial/check-for-coding-errors.txt
+.. include:: /api/tutorials/check-for-coding-errors.txt
    :start-after: begin-basic
    :end-before: end-basic
 
-.. include:: /api/tutorial/check-for-coding-errors.txt
+.. include:: /api/tutorials/check-for-coding-errors.txt
    :start-after: begin-advanced
    :end-before: end-content
 
 Use Two-Pass Verification to Check Data Accuracy
 ------------------------------------------------
 
-.. include:: /api/tutorial/use-reliability-coding-to-check-data-accuracy.txt
+.. include:: /api/tutorials/use-reliability-coding-to-check-data-accuracy.txt
    :start-after: begin-content
    :end-before: end-content
 
 Export Data
 -----------
 
-.. include:: /api/tutorial/export-data-using-scripts.txt
+.. include:: /api/tutorials/export-data-using-scripts.txt
    :start-after: begin-content
    :end-before: end-content
 
