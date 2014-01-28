@@ -23,4 +23,4 @@ specific recommendations for coding different types of data.
    :maxdepth: 1
 
    /best-practices/new-users
-   /best-practices/in-depth-guides
+   /best-practices/tutorials
