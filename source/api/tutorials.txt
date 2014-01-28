@@ -83,3 +83,4 @@ Tutorials
    /api/tutorial/export-data-using-scripts 
    /api/tutorial/convert-openshapa-script-to-datavyu
    /api/tutorial/perform-operations-on-multiple-files
+   /api/tutorial/convert-openshapa-script-to-datavyu

@@ -1,0 +1,38 @@
+.. _macshapa-to-datavyu:
+
+=========================================
+Convert MacSHAPA Files to Work in Datavyu
+=========================================
+
+MacSHAPA users can convert their files to the new Datavyu format using a
+script. The following script converts a folder of MacSHAPA files to
+Datavyu: be sure to edit the folders name and location to reflect the
+location of your MacSHAPA files and where you want the script to place
+the Datavyu files.
+
+.. code-block:: rb
+
+   require 'Datavyu_API.rb'
+   begin
+
+      # Edit this to match the directory containing your files.
+      macshapa_folder = File.expand_path("~/Desktop/MacSHAPA/")
+      macshapa_files = Dir.new(macshapa_folder)
+
+      # Edit this to match where you want to save the openshapa folders.
+      openshapa_folder = File.expand_path("~/Desktop/OpenSHAPA/")
+      if (!File::directory?(openshapa_folder))
+          Dir.mkdir(openshapa_folder) # Make this dir if it doesn't exist
+      end
+
+      for f in macshapa_files.each()
+       # Filter out files we don't want
+           if (f[0].chr != '.') # Filter out the hidden files like . and .. and .DSSTORE
+               puts "Converting " + f
+               # Load the file and don't draw it to the screen
+               $db, proj = load_macshapa_db(macshapa_folder + '/' + f, false)
+               puts "Saving file " + f + " as OpenSHAPA file."
+               save_db(openshapa_folder + '/' + f + ".opf")
+           end
+      end
+   end

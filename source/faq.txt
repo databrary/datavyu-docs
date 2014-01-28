@@ -166,11 +166,11 @@ scripts to accomplish.
 MacSHAPA and OpenSHAPA
 ----------------------
 
-.. I have existing MacSHAPA files - can I convert my them to Datavyu?
-   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I have existing MacSHAPA files - can I convert my them to Datavyu?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   Yes! You can import a MacSHAPA file into Datavyu through a simple
-   script using the :meth:`load_macshapa_db()`.
+Yes! You can import a MacSHAPA file into Datavyu through a simple
+script. See: :ref:`macshapa-to-datavyu` for details.
 
 I have existing OpenSHAPA files - can I convert them to Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -187,7 +187,8 @@ You will need to write new scripts for your Datavyu spreadsheets.
 Will my OpenSHAPA scripts run in Databyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Yes…ish. You can easily convert an OpenSHAPA script to work in Datavyu
-by adding ``require 'Datavyu_API.rb`` to the top of your OpenSHAPA
-script file. For more information see the
+Sort of! You can easily convert an OpenSHAPA script to work in Datavyu
+by adding ``require 'Datavyu_API.rb'`` to the top of your OpenSHAPA
+script file and removing the OpenSHAPA API code that precedes the
+script. For more information see the
 :ref:`api-convert-openshapa-to-datavyu` tutorial.
