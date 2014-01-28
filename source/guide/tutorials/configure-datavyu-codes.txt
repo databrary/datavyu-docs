@@ -18,6 +18,7 @@ Editor's features:
 
    <video controls width="100%" height="auto">
    <source src="../../_static/video/code-editor.mp4" type="video/mp4">
+   <source src="../../_static/video/code-editor.webm" type="video/webm">
    </video>
 
 Open the Code Editor

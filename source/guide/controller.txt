@@ -141,6 +141,7 @@ Tracks
 
    <video controls width="100%" height="auto">
    <source src="../_static/video/dvc-tracks-area.mp4" type="video/mp4">
+   <source src="../_static/video/dvc-tracks-area.webm" type="video/webm">
    </video>
 
 The :guilabel:`Tracks` area of the Data Viewer Controller helps you

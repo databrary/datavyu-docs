@@ -13,6 +13,7 @@ Introduction to the Code Editor
 
    <video controls width="100%" height="auto">
    <source src="_static/video/code-editor.mp4" type="video/mp4">
+   <source src="_static/video/code-editor.webm" type="video/webm">
    </video>
 
 -------------------------
@@ -23,6 +24,7 @@ Watch an Expert User Code
 
    <video controls width="100%" height="auto">
    <source src="_static/video/coding-example.mp4" type="video/mp4">
+   <source src="_static/video/coding-example.webm" type="video/webm">
    </video>
 
 --------------------------------------------------------
@@ -33,6 +35,7 @@ Introduction to the Data Viewer Controller's Tracks Area
 
    <video controls width="100%" height="auto">
    <source src="_static/video/dvc-tracks-area.mp4" type="video/mp4">
+   <source src="_static/video/dvc-tracks-area.webm" type="video/webm">
    </video>
 
 --------------------
@@ -43,6 +46,7 @@ Edit the Spreadsheet
 
    <video controls width="100%" height="auto">
    <source src="_static/video/edit-spreadsheet.mp4" type="video/mp4">
+   <source src="_static/video/edit-spreadsheet.webm" type="video/webm">
    </video>
 
 ----------------------
@@ -53,6 +57,7 @@ Temporal Alignment 101
 
    <video controls width="100%" height="auto">
    <source src="_static/video/temporal-alignment.mp4" type="video/mp4">
+   <source src="_static/video/temporal-alignment.webm" type="video/webm">
    </video>
 
 ------------
@@ -63,4 +68,5 @@ Run a Script
 
    <video controls width="100%" height="auto">
    <source src="_static/video/run-a-script.mp4" type="video/mp4">
+   <source src="_static/video/run-a-script.webm" type="video/webm">
    </video>
