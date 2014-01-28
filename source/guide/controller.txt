@@ -133,9 +133,15 @@ Tracks
 
 .. note:: 
 
-   The `tracks walkthrough video </_static/video/dvc-tracks-area.mp4>`_
+   The tracks walkthrough video
    is a good way to familiarize yourself with this area of the
-   Data Viewer Controller.
+   Data Viewer Controller:
+
+.. raw:: html
+
+   <video controls width="100%" height="auto">
+   <source src="../_static/video/dvc-tracks-area.mp4" type="video/mp4">
+   </video>
 
 The :guilabel:`Tracks` area of the Data Viewer Controller helps you
 visualize where you are within a data source's playback. You can
