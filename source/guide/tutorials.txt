@@ -10,13 +10,13 @@ might wish to perform.
 .. toctree::
    :maxdepth: 1
 
-   /guide/tutorial/add-a-column
-   /guide/tutorial/rename-a-column
-   /guide/tutorial/delete-column
-   /guide/tutorial/configure-datavyu-codes
-   /guide/tutorial/add-cells
-   /guide/tutorial/delete-a-cell
-   /guide/tutorial/export-data
-   /guide/tutorial/use-scripts-to-automate-tasks
-   /guide/tutorial/code-multiple-data-sources
-   /guide/tutorial/convert-file-format
+   /guide/tutorials/add-a-column
+   /guide/tutorials/rename-a-column
+   /guide/tutorials/delete-column
+   /guide/tutorials/configure-datavyu-codes
+   /guide/tutorials/add-cells
+   /guide/tutorials/delete-a-cell
+   /guide/tutorials/export-data
+   /guide/tutorials/use-scripts-to-automate-tasks
+   /guide/tutorials/code-multiple-data-sources
+   /guide/tutorials/convert-file-format
