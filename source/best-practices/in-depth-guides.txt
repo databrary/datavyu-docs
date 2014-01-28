@@ -11,7 +11,7 @@ data with Datavyu, organizing your data, and creating a coding manual.
 .. toctree::
    :titlesonly:
    
-   /best-practices/tutorial/develop-a-coding-manual
-   /best-practices/tutorial/first-steps
-   /best-practices/tutorial/file-organization-tips
-   /best-practices/tutorial/tips-for-specific-data-sources
+   /best-practices/tutorials/develop-a-coding-manual
+   /best-practices/tutorials/first-steps
+   /best-practices/tutorials/file-organization-tips
+   /best-practices/tutorials/tips-for-specific-data-sources
