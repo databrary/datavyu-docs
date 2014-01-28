@@ -27,7 +27,7 @@ Datavyu supports numerous data export methods. This section covers four
 common approaches, in order of increasing complexity:
 
 - A straight dump to CSV file where cells correspond to the coded cells
-  in Datavyu. See :doc:`/guide/tutorial/export-data`.
+  in Datavyu. See :doc:`/guide/tutorials/export-data`.
 
 - A straight *frame-by-frame* dump detailing all observations 
   associated with each frame.
