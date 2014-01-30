@@ -37,7 +37,7 @@ for other data sources is planned for a future release.
 Is there somewhere I can share or store my spreadsheets and videos?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Yes indeed! `Databrary <databrary.org>`_ is a web-based repository for
+Yes indeed! `Databrary <http://databrary.org/>`_ is a web-based repository for
 open sharing and preservation of video data and associated metadata. The
 project website has more information about the initiative and a guide
 to help you get started.
