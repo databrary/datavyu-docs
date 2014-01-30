@@ -62,7 +62,7 @@ create new cells and navigate within the data source. The
 :guilabel:`Add Data...` button enables you to :ref:`add a data source
 <add-data>`. 
 
-For more about the Data View Controller, and a detailed description of
+For more about the Data Viewer Controller, and a detailed description of
 its functionality and features, see :doc:`/guide/controller`.
 
 .. admonition:: hidden
