@@ -2,7 +2,7 @@
 Data Viewer Controller Overview
 ===============================
 
-The Data Viewer Controller enables users to manipulate the playback of 
+The Data Viewer Controller enables users to manipulate the playback of
 their data source, and create new cells as they record their observations.
 
 .. image:: /img/controller-annotated.png
@@ -20,7 +20,7 @@ a useful reference for working with the Data Viewer Controller.
 Keypad
 ------
 
-.. important:: 
+.. important::
 
    You cannot use the keypad for inputting numbers into Datavyu: it will
    only perform the actions described here.
@@ -34,7 +34,7 @@ Keypad
 
 The Data Viewer Controller's keypad maps directly to the number pad
 on your keyboard or external keypad: the on-screen representation
-helps users remember what key performs what function. When you press 
+helps users remember what key performs what function. When you press
 a key on the keypad, a visual indicator onscreen mirrors the
 keystrokes. Some keypads may change the ordering of certain keys: for
 instance, the top row might be ``clear``, ``/``, ``*``, ``-``, rather
@@ -78,9 +78,9 @@ Playback Controls
 - :guilabel:`forward` (``9``): fast forwards at 32x playback speed.
 
 In addition, ``shift`` :guilabel:`find` (``+``): jumps to the cell
-:term:`offset`. 
+:term:`offset`.
 
-.. note:: 
+.. note::
 
    For users of Mac OS X: recent versions of OS X do not allow you to
    hold down a key as a default, instead it brings up a
@@ -131,7 +131,7 @@ Coding Controls
 Tracks
 ------
 
-.. note:: 
+.. note::
 
    The tracks walkthrough video
    is a good way to familiarize yourself with this area of the
@@ -153,7 +153,7 @@ region by clicking on the :guilabel:`magnifying glass` icon next to
 the slider bar. The red :term:`playhead` shows the current playback
 position.
 
-.. figure:: /img/tracks-region-annotated.svg
+.. figure:: /img/tracks-region-annotated.png
    :alt: annotated image of the data viewer controller's tracks region
    :align: center
 
@@ -206,7 +206,7 @@ To add a data source:
 
 #. Click the :guilabel:`Add Data…` button in the top left corner of the
    Data Viewer Controller.
-   
+
 #. A file selection window will open. Select the data file you will be
    coding.
 
@@ -218,7 +218,7 @@ To add a data source:
    :guilabel:`Window` menu. The Inspector presents information about
    the video. The frame rate is labeled :guilabel:`FPS`, or
    frames-per-second.
-   
+
    Datavyu uses frame rate to optimize playback and to :ref:`jog
    <playback-controls>`, so it is important that you set the correct
    frame rate.
@@ -226,5 +226,5 @@ To add a data source:
 .. seealso::
 
    - :doc:`/guide/spreadsheet`
-   
+
    - :doc:`/guide/tutorials`
