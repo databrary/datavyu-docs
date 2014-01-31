@@ -78,7 +78,7 @@ Standalone Methods and Class Methods
 ------------------------------------
 
 There are two different types of methods: standalone methods, and
-:term:`class methods <class method>`>. Class methods act directly upon
+:term:`class methods <class method>`. Class methods act directly upon
 an instance of a specific class. Standalone methods,
 perform actions on their own.
 

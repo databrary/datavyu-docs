@@ -66,10 +66,9 @@ Glossary
       are represented as a list of values, or as an array.
 
    frame rate
-      (from Wikipedia) "Frame rate (also known as frame frequency) is the
+      Frame rate (also known as frame frequency) is the
       frequency (rate) at which an imaging device produces unique
-      consecutive images called frames". In other words, frame rate is the
-      number of images shown per second. The three main frame rate
+      consecutive images called frames. The three main frame rate
       standards are: 24p, 25p, and 30p.
       
    region
