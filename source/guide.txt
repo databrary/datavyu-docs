@@ -32,7 +32,3 @@ limitations.
    /guide/tutorials
    /guide/reference
 
-If you're new to coding, or want to bone up on advice from the experts,
-consider the :doc:`Best Practices Guide </best-practices>` for
-instruction on how best to harness Datavyu's capabilities,
-and tips for starting to code behavioral videos.
