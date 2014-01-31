@@ -23,7 +23,7 @@ observations.
    While it may be tempting to have the reliability coder code the
    data source in a new spreadsheet, you should endeavor to keep all
    codes for a given data source in a single spreadsheet. This
-   facilitates analysis, and ensures that like data is kept
+   facilitates analysis, and ensures that like data are kept
    together. To prevent the reliability coder from seeing the original
    coding pass, you can :ref:`hide the original coded column
    <hide-show-columns>`. 
