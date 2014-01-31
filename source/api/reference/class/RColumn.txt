@@ -59,7 +59,7 @@ RColumn Class
          
          * - Argument
            - Type
-           - Descripton
+           - Description
          * - ``old_name``
            - String
            - Current name of the code

@@ -32,7 +32,7 @@ Add Observations Directly in the Spreadsheet
 
 Adding observations (cells) to an existing variable (column) is simple:
 
-#. Click in the grey :guilabel:`Click to create new observation` area.
+#. Click in the gray :guilabel:`Click to create new observation` area.
    A new cell appears with the current playhead time as its :term:`onset`,
    and placeholders for any codes configured for the column.
 

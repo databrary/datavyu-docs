@@ -115,7 +115,7 @@ Datavyu API.
 Next Steps
 ----------
 
-Now that you have a sound grounding in the difference betwene classes
+Now that you have a sound grounding in the difference between classes
 and methods, understand parameters are arguments, and know how to
 invoke both standalone and class methods, consider our
 :doc:`/api/introduction-to-scripting` for tips before diving into the

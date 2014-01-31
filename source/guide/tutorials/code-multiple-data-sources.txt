@@ -75,7 +75,7 @@ Persistence
 When working with multiple data sources, Datavyu saves the data source
 synchronization and bookmarks when you save the spreadsheet. This way,
 when you reopen the spreadsheet to do more coding, or to work with the
-data, you will not need to resynchronize the data sources. This also
+data, you will not need to re-synchronize the data sources. This also
 helps ensure consistency between coding passes, by making sure that
 all time recordings are consistent.
 

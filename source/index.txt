@@ -21,7 +21,7 @@ data library project.
    Datavyu is an open source software package that is under continuous
    development. You should familiarize yourself with each new
    version's `release notes <http://datavyu.org/download/>`_, to be
-   aware of potental issues. If you encounter a bug, you can report
+   aware of potential issues. If you encounter a bug, you can report
    and discuss it and get help by posting to the `support forum
    <http://datavyu.org/support>`_.
 

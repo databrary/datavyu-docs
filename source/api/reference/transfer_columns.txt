@@ -12,7 +12,7 @@ transfer_columns
 
    Thus, if you want to transfer a column into the GUI, set ``db2`` to "",
    and specify the origin spreadsheet file as ``db1``. If you want to
-   tranfer a column from the GUI into a file, set ``db1`` to "", and set
+   transfer a column from the GUI into a file, set ``db1`` to "", and set
    ``db2`` to that file's path.
 
    .. warning:: 

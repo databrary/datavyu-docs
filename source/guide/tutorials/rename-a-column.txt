@@ -5,7 +5,7 @@ Rename a Column
 ===============
 
 Datavyu provides four different ways to rename a column using the
-Datvyu user interface.
+Datavyu user interface.
 
 Rename Directly from the Spreadsheet
 ------------------------------------

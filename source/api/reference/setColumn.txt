@@ -9,7 +9,7 @@ setColumn()
    :meth:`setColumn` writes columns to the spreadsheet: for columns
    that already exist, :meth:`setColumn` replaces the data in the
    spreadsheet with the version updated using the script. For
-   instance, if you were to retreive the "trial" column from a
+   instance, if you were to retrieve the "trial" column from a
    spreadsheet and then make some changes, you would use
    :meth:`setColumn` to write those changes to the spreadsheet,
    replacing the old data with your new data.

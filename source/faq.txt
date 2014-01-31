@@ -154,7 +154,7 @@ language's `Learn Ruby in Twenty Minutes
 <https://www.ruby-lang.org/en/documentation/quickstart/>`_ tutorial may
 be helpful. Ruby is an easy-to-read programming language which was
 designed to be intuitive and easy to learn, so gaining the basics should
-be very feasible.
+be feasible.
 
 What can I use scripts for?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -184,7 +184,7 @@ Will my MacSHAPA queries work in Datayvyu?
 Unfortunately, MacSHAPA queries do not work on the new Datavyu format.
 You will need to write new scripts for your Datavyu spreadsheets.
 
-Will my OpenSHAPA scripts run in Databyu?
+Will my OpenSHAPA scripts run in Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sort of! You can easily convert an OpenSHAPA script to work in Datavyu

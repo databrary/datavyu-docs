@@ -82,7 +82,7 @@ You can also control each column's visibility from the
 :guilabel:`Column List`, which you access from the
 :guilabel:`Spreadsheet` menu. The :guilabel:`Column List` lists all
 the columns in a spreadsheet, and includes a check box which you can
-use to toggle its visiblity.
+use to toggle its visibility.
 
 If you wish to show all columns you can do so with the :guilabel:`Show
 All Columns` menu option from the :guilabel:`Spreadsheet` menu.

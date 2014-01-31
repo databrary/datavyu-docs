@@ -41,7 +41,7 @@ information for each trial, and columns for specific observations. The
 *id* column's :term:`cell` is the full length of the spreadsheet,
 since all the trials are associated with that participant. The *trial*
 column's cells are the length of each trial, and the other observation
-columns' cells reflect the durations of
+columns' cells reflect the duration of
 the recorded events.
 
 .. image:: /img/coding-manual-nested-columns-example.png
@@ -106,7 +106,7 @@ that code.
 
 For instance, if you had a *trial* column that had the trial number,
 trial date, and participant information (participant ID, gender, and
-birthdate) as codes, it would be onerous to have to repeatedly code the
+birth date) as codes, it would be onerous to have to repeatedly code the
 same participant information. In this case, moving participant data into
 its own column, with a single cell containing that information,
 will reduce the likelihood of coder errors and save coder time.
