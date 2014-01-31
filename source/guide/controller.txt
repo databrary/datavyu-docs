@@ -214,7 +214,7 @@ To add a data source:
    determine its :term:`frame rate`. If it is unable to determine the
    frame rate, it will ask you what the video's frame rate is. You can
    determine the frame rate by opening the video in QuickTime Player,
-   and selectin :guilabel:`Show Movie Inspector` from the
+   and selection :guilabel:`Show Movie Inspector` from the
    :guilabel:`Window` menu. The Inspector presents information about
    the video. The frame rate is labeled :guilabel:`FPS`, or
    frames-per-second.

@@ -134,7 +134,7 @@ Next Steps
 
 You're now all set to collect the data from your sources. Remember
 to check for typos and coding errors after each pass, and consider
-using :ref:`reliablity coding <api-reliability>` to double check
+using :ref:`reliability coding <api-reliability>` to double check
 your data quality.
 
 The Best Practices :ref:`In Depth Guides <in-depth>` are a great next

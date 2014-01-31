@@ -49,9 +49,9 @@ the Data Viewer Controller can give you more granular control, and
 facilitate precise alignment.
 
 When you have successfully aligned your tracks, select :guilabel:`Lock
-All`. This prvents you from accidentally desynchronizing the
+All`. This prevents you from accidentally desynchronizing the
 tracks. You can also lock a single track by clicking on its
-:guilabel:`lock` icon. This can be helpful while syncrhonizing the tracks.
+:guilabel:`lock` icon. This can be helpful while synchronizing the tracks.
 
 Align Tracks Using Bookmarks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

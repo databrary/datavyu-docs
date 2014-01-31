@@ -128,7 +128,7 @@ Glossary
 
    parameter
       The information that is methods use to perform their
-      tasks. Paramateres can be required or optional.  See:
+      tasks. Parameters can be required or optional.  See:
       :doc:`/api/overview`.
 
    argument

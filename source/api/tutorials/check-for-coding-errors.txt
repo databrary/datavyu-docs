@@ -48,8 +48,8 @@ Basic Format
       begin
          # Check for errors. Notice the square brackets. These denote
          # lists. The basic format is: "columnName", "dumpFile",
-         # "argumentname", ["validarg1", "validarg2", etc], 
-         # "argument2", [ "validarg1", "validarg2", etc], ...
+         # "codename", ["validcode1", "validcode2", etc], 
+         # "code2", [ "validcode1", "validcode2", etc], ...
 
          checkValidCodes("step", "", "foot", ["l", "r"], "ht", ["h", "t"], "direction", ["f","b"])
       end

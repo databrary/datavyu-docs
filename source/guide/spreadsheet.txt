@@ -112,7 +112,7 @@ user-specified codes:
   period of time, they must have a starting point.
 
 - :term:`offset`: the offset is the time in the video that the
-  observation ends. Since cells represnt observations during a period
+  observation ends. Since cells represent observations during a period
   of time, they must have an end point.
 
 - :term:`ordinal`: the cell ordinal indicates the position of the cell

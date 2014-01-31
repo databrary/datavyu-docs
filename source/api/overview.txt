@@ -25,7 +25,7 @@ Thinking about Datavyu specifically, then, you would likely have a
 "column" class that describes the Datavyu columns.  The "trial" column
 would then be an instance of the "column" class. This is, in fact, how the
 Datavyu API works: the Datavyu API includes two classes to represent
-datavyu concepts: :class:`RColumn` describes Datavyu's
+Datavyu concepts: :class:`RColumn` describes Datavyu's
 :term:`columns <column>`, and :class:`RCell` describes Datavyu's
 :term:`cells <cell>`.
 
@@ -40,10 +40,10 @@ spreadsheets.
 In order to work, many methods need additional information: for
 instance, :meth:`getColumn()`, which retrieves a column from a Datavyu
 spreadsheet so that you can modify or update it using your script,
-needs you to tell it what column it should retreive.
+needs you to tell it what column it should retrieve.
 Each method defines what information it can receive: these are called
 :term:`parameters <parameter>`. :meth:`getColumn()` has one parameter: ``name``,
-which is the name of the column that you wish to retreive.
+which is the name of the column that you wish to retrieve.
 
 So, parameters are the types of information that you can specify to a
 method, and are specified in the method's definition (you can view all
@@ -52,7 +52,7 @@ of Datavyu's methods' definitions on the :doc:`api reference page
 
 The information you actually provide when you use the method is called an
 "argument". Arguments are user-specified: for :meth:`getColumn()`, you
-might want to retreive a column called "trial", so "trial" would be your
+might want to retrieve a column called "trial", so "trial" would be your
 argument for the ``name`` parameter. Again, parameters are part of the
 method's definition, while arguments are the information you provide
 to the method.
