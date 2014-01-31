@@ -85,7 +85,7 @@ Plan for Analysis
 -----------------
 
 Collecting data is great, but it won't be useful if you can't analyze it.
-At this point, you need to ensure that your data is in a format that
+At this point, you need to ensure that your data are in a format that
 you can use, and that you have a way to export that data. This task
 involves two components:
 
@@ -132,7 +132,7 @@ for exporting and analyzing your data, you can start coding.
 Next Steps
 ----------
 
-You're now all set to collect the data from your sources. Remember
+You're now all set to code your sources. Remember
 to check for typos and coding errors after each pass, and consider
 using :ref:`reliability coding <api-reliability>` to double check
 your data quality.
