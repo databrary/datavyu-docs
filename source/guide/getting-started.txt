@@ -65,11 +65,20 @@ create new cells and navigate within the data source. The
 For more about the Data Viewer Controller, and a detailed description of
 its functionality and features, see :doc:`/guide/controller`.
 
-.. admonition:: hidden
+.. only:: html
+
+   .. admonition:: hidden
+
+      .. toctree::
+         :titlesonly:
+
+         /guide/controller
+
+.. only:: pdf
 
    .. toctree::
       :titlesonly:
-
+      
       /guide/controller
 
 Spreadsheet
@@ -98,7 +107,16 @@ the codes occurred.
 The :doc:`/guide/spreadsheet` document describes the
 :guilabel:`spreadsheet` in more detail. 
 
-.. admonition:: hidden
+.. only:: html
+
+   .. admonition:: hidden
+
+      .. toctree::
+         :titlesonly:
+
+         /guide/spreadsheet
+
+.. only:: pdf
 
    .. toctree::
       :titlesonly:
