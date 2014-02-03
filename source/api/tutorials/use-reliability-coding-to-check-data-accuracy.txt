@@ -115,8 +115,8 @@ optional one:
    Ruby's `File.expand_path 
    <http://www.ruby-doc.org/core-1.9.3/File.html#method-c-expand_path>`_ 
    method, which converts a relative path,
-   like ``~/Desktop/file.txt`` to an absolute pathname, which contains
-   the root directory, and all subdirectories, like
+   like ``~/Desktop/file.txt`` to an absolute path name, which contains
+   the root directory, and all sub-directories, like
    ``/Users/alice/Desktop/file.txt``
 
    The following commands create a variable called ``dump_file`` that
