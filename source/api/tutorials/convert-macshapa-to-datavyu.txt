@@ -19,10 +19,10 @@ the Datavyu files.
       macshapa_folder = File.expand_path("~/Desktop/MacSHAPA/")
       macshapa_files = Dir.new(macshapa_folder)
 
-      # Edit this to match where you want to save the openshapa folders.
-      openshapa_folder = File.expand_path("~/Desktop/OpenSHAPA/")
-      if (!File::directory?(openshapa_folder))
-          Dir.mkdir(openshapa_folder) # Make this dir if it doesn't exist
+      # Edit this to match where you want to save the datavyu files.
+      datavyu_folder = File.expand_path("~/Desktop/Datavyu/")
+      if (!File::directory?(datavyu_folder))
+          Dir.mkdir(datavyu_folder) # Make this dir if it doesn't exist
       end
 
       for f in macshapa_files.each()
@@ -31,8 +31,8 @@ the Datavyu files.
                puts "Converting " + f
                # Load the file and don't draw it to the screen
                $db, proj = load_macshapa_db(macshapa_folder + '/' + f, false)
-               puts "Saving file " + f + " as OpenSHAPA file."
-               save_db(openshapa_folder + '/' + f + ".opf")
+               puts "Saving file " + f + " as Datavyu file."
+               save_db(datavyu_folder + '/' + f + ".opf")
            end
       end
    end

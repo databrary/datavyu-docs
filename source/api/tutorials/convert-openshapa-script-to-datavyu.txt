@@ -1,12 +1,12 @@
 .. _api-convert-openshapa-to-datavyu:
 
 =================================================
-Convert an OpenShapa Script to the Datavyu Format
+Convert an OpenSHAPA Script to the Datavyu Format
 =================================================
 
 .. default-domain:: rb
 
-If you have previously written scripts for use with OpenShapa, you
+If you have previously written scripts for use with OpenSHAPA, you
 can easily reuse them with Datavyu.
 
 Datavyu's Ruby API was designed to interoperate with the earlier
