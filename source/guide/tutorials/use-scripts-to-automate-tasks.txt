@@ -5,7 +5,7 @@ Use Scripts to Automate Tasks
 Datavyu provides a full suite Ruby scripting API to help you focus more
 time on coding, and less time performing routine tasks.
 
-The :doc:`Ruby API documentation </api>` guides you though writing
+The :doc:`Ruby API documentation </api>` guides you through writing
 scripts for Datavyu and provides context to help you become an adept
 Ruby script-writer regardless of your programming experience (or lack
 thereof). You can also watch a video version of this tutorial:
