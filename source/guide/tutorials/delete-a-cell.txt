@@ -12,4 +12,4 @@ To delete a cell,
    blue when selected.
 
 #. Open the :guilabel:`Spreadsheet` menu, and select :guilabel:`Delete
-   Column`.
+   Cell`.
