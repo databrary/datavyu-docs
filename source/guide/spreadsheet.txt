@@ -184,6 +184,6 @@ ensure that temporal alignment is active.
 Toggle Temporal Alignment
 `````````````````````````
 
-You can toggle temporal alignment using the ``cmd T`` / ``alt T``
+You can toggle temporal alignment using the ``cmd T``
 keyboard shortcut, or by selecting :guilabel:`Weak Temporal Alignment`
 from the :guilabel:`Spreadsheet` menu.
