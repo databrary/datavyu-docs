@@ -19,7 +19,7 @@ will guide you through the process.
    .. TODO: add an image of the New Column window, and spreadsheet
       with plus sign.
 
-#. Select the column type and input a name for it.
+#. Input a name for it.
 
 #. Select :guilabel:`OK`. The column will be added to the spreadsheet.
 
