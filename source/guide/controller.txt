@@ -119,7 +119,7 @@ Coding Controls
   button. You can change the increment by selecting that box and editing
   the value.
 
-- :guilabel:`create new cell and set previous onset` (``0``): creates a new
+- :guilabel:`create new cell and set previous offset` (``0``): creates a new
   cell and sets its :term:`onset` to the playhead's current
   time. If the previous cell does not have a :term:`offset`,
   adding a new cell with this key sets the previous cell's
