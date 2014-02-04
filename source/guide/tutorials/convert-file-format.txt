@@ -20,7 +20,7 @@ Videos tool.
 #. From the Spreadsheet, select the :guilabel:`Controller` menu,
    and then choose :guilabel:`Convert Videos`.
 
-#. Select a source video. This will be the video you are converting,
+#. Select a source video. This will be the video you are converting.
 
 #. Select a target video. This is the video that Datavyu will output
    or convert your source video into.
