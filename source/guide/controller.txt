@@ -10,7 +10,7 @@ their data source, and create new cells as they record their observations.
    :align: center
 
 The Data Viewer Controller has two main areas: the keypad on the left,
-which maps directly to your keypad, and the :guilabel:`Timeslider` on
+which maps directly to your keyboard, and the :guilabel:`Timeslider` on
 the right, which represents the current playback position, and provides
 additional functionality to control and customize playback.
 
@@ -33,14 +33,16 @@ Keypad
    highlighted in brown are *coding-controls*.
 
 The Data Viewer Controller's keypad maps directly to the number pad
-on your keyboard or external keypad: the on-screen representation
+on your keyboard or external keypad and the on-screen representation
 helps users remember what key performs what function. When you press
 a key on the keypad, a visual indicator onscreen mirrors the
 keystrokes. Some keypads may change the ordering of certain keys: for
 instance, the top row might be ``clear``, ``/``, ``*``, ``-``, rather
 than ``clear``, ``*``, ``/``. Some keypads may have a ``Num Lock`` key
-rather than ``clear``. Familiarize yourself with both the Datavyu
-controls and your keypad to maximize coding efficiency.
+rather than a clear button but the Data Viewer Controller takes different 
+keyboards into account and simplifies the keys as much as possible. 
+Familiarize yourself with both the Datavyu controls and your 
+keypad to maximize coding efficiency.
 
 .. _playback-controls:
 
@@ -54,12 +56,12 @@ Playback Controls
 
 - :guilabel:`play/pause` (``2``): pauses playback. Pressing
   :guilabel:`play/pause` again resumes playback. :guilabel:`play/pause`
-  only works if :guilabel:`play` has first been pushed.
+  only works if :guilabel:`play` has first been pressed.
 
 - :guilabel:`jog right` (``3``): moves the playhead forward one frame. If the
   :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
   in one second increments. Holding down :guilabel:`jog right` plays
-  forward slowly.
+  the source forward slowly.
 
 - :guilabel:`shuttle left` (``4``): rewinds, initially at 1/32 of playback speed.
   Repeatedly pressing the :guilabel:`shuttle left` key increases the rewind
@@ -71,13 +73,9 @@ Playback Controls
   speed. Repeatedly pressing the :guilabel:`shuttle right` key increases
   the fast forward speed to a maximum of 32 times playback speed.
 
-- :guilabel:`rewind` (``7``): rewinds at 32x playback speed.
-
 - :guilabel:`play` (``8``): starts playback.
 
-- :guilabel:`forward` (``9``): fast forwards at 32x playback speed.
-
-In addition, ``shift`` :guilabel:`find` (``+``): jumps to the cell
+In addition, ``shift`` :guilabel:`find` (``+``): jumps to the time of cell
 :term:`offset`.
 
 .. note::
@@ -99,19 +97,19 @@ In addition, ``shift`` :guilabel:`find` (``+``): jumps to the cell
 Coding Controls
 ~~~~~~~~~~~~~~~
 
-- :guilabel:`set cell onset` (``clear``): sets the :term:`onset` for the current
-  observation / cell.
+- :guilabel:`set cell onset` (7): sets the :term:`onset` for the current
+  cell.
 
-- :guilabel:`point cell` (``*``): creates a new cell whose :term:`onset` and
+- :guilabel:`point cell` (=): creates a new cell whose :term:`onset` and
   :term:`offset` values are the playhead's current position.
 
-- :guilabel:`set cell offset` (``/`` and ``.``): sets the :term:`offset` for the
-  current observation / cell.
+- :guilabel:`set cell offset` (9 and ``.``): sets the :term:`offset` for the
+  cell.
 
 - :guilabel:`find` (``+``): moves the playhead to the onset time of
   the current cell, which is shown in the box to the right of the
   :guilabel:`find` button. Selecting a different cell will update this
-  time.
+   time.
 
 
 - :guilabel:`go back` (``-``): moves the playhead back by the amount
@@ -119,13 +117,13 @@ Coding Controls
   button. You can change the increment by selecting that box and editing
   the value.
 
-- :guilabel:`create new cell and set previous offset` (``0``): creates a new
+- :guilabel:`new cell and set previous offset` (``0``): creates a new
   cell and sets its :term:`onset` to the playhead's current
   time. If the previous cell does not have a :term:`offset`,
   adding a new cell with this key sets the previous cell's
   :term:`offset` to the current playhead time, minus one millisecond.
 
-- :guilabel:`create new cell` (``Enter``): creates a new cell and sets
+- :guilabel:`new cell and set current onset` (``Enter``): creates a new cell and sets
   its :term:`onset` to the playhead's current time.
 
 Tracks
@@ -210,17 +208,16 @@ To add a data source:
 #. A file selection window will open. Select the data file you will be
    coding.
 
-#. If the data source is a video file, Datavyu will attempt to
-   determine its :term:`frame rate`. If it is unable to determine the
-   frame rate, it will ask you what the video's frame rate is. You can
+#. If the data source is a video file and Datavyu is unable to determine its 
+   :term:`frame rate`. It will ask you what the video's frame rate is. You can
    determine the frame rate by opening the video in QuickTime Player,
    and selection :guilabel:`Show Movie Inspector` from the
    :guilabel:`Window` menu. The Inspector presents information about
    the video. The frame rate is labeled :guilabel:`FPS`, or
    frames-per-second.
 
-   Datavyu uses frame rate to optimize playback and to :ref:`jog
-   <playback-controls>`, so it is important that you set the correct
+   Datavyu uses frame rate to accurately play and :ref:`jog
+   <playback-controls>` through videos, so it is important that you set the correct
    frame rate.
 
 .. seealso::
