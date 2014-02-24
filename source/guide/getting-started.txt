@@ -2,12 +2,11 @@
 Getting Started
 ===============
 
-Datavyu is a powerful tool that enables behavioral researchers to record
-observations from their video, audio, or other data sources for future
-analysis. Designed by researchers for researchers, Datavyu provides an
-intuitive interface for working with data sources and recording
-observations, and includes :doc:`an API </api>` for more advanced data
-manipulation.
+Datavyu is a powerful tool that enables behavioral researchers to code
+observations from their video for analysis. Designed by researchers for 
+researchers, Datavyu provides an intuitive interface for working with data
+sources and recording observations, and includes :doc:`an API </api>` 
+for more advanced data manipulation.
 
 The Datavyu Interface
 ---------------------
@@ -18,8 +17,7 @@ version. If there has been a new release, Datavyu will prompt you to
 
 When you launch Datavyu, you will see two windows: the
 :guilabel:`Data Viewer Controller`, and a blank spreadsheet. If you add
-a data source (e.g. an audio or video file, or a motion capture file), a
-third window containing the data source will appear.
+a data source, a third window containing the data source will appear.
 
 The following sections describe each component of the Datavyu interface.
 
@@ -30,16 +28,16 @@ Data Viewer
    :align: center
 
 The :guilabel:`Data Viewer` is the window that presents the data
-source, the audio or video file that the user is working with.
+source that the user is working with.
 
-Adding an audio, video, or other data source to Datavyu is as easy as
+Adding a video or other data source to Datavyu is as easy as
 clicking on the :guilabel:`Add Data…` button in the Data Viewer
 Controller. For a more
 detailed overview of adding data sources see:
 :ref:`add-data`.
 
 Once you've added a data source, it's time to add columns, create
-observations, or write scripts. The :ref:`tutorials
+observations, and write scripts. The :ref:`tutorials
 <guide-core-tutorials>` are there to guide you. 
 
 Data Viewer Controller
@@ -48,16 +46,16 @@ Data Viewer Controller
 The :guilabel:`Data Viewer Controller` allows users to control the
 playback of their data source and create observations in the
 spreadsheet. Quite literally, it controls the :guilabel:`Data Viewer`,
-the window that contains the (audio or video) data.
+the window that contains the video data.
 
 .. figure:: /img/data-viewer-controller.png
    :alt: Image of the Data Viewer Controller
    :align: center
 
-On the left side is the keypad. This section maps directly to the
+The keypad can be found on the left side of the controller. This section maps directly to the
 number pad on your keyboard, or to an external number pad if you
-keyboard does not have one. These keys control playback, and also
-enable users to set the :term:`cell onset` and :term:`cell offset`,
+keyboard does not have one and you've connected one to your computer. 
+These keys control playback, and also enable users to set the :term:`cell onset` and :term:`cell offset`,
 create new cells and navigate within the data source. The
 :guilabel:`Add Data...` button enables you to :ref:`add a data source
 <add-data>`. 
@@ -84,11 +82,11 @@ The :guilabel:`Datavyu spreadsheet` is where users record
    "MomObject", "BabyObject", "Notes", "BabyLocation", and
    "BabyObjectCount". Each column has numerous coded cells.
 
-The spreadsheet is the core of Datavyu. By :ref:`configuring columns
+By :ref:`configuring columns
 <configure-columns>`, coders can record observations and link them
 directly to timestamps in the data source. Each user-defined column is
-represented by a column in the spreadsheet, and observations follow
-each other in sequence. Looking horizontally across the spreadsheet
+represented by a column in the spreadsheet, and observations within a column
+are sorted in chronological sequence. Looking horizontally across the spreadsheet
 columns shows what was happening at a given point in time in the data
 source. Looking vertically down a column shows the sequence in which
 the codes occurred.
