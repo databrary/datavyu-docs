@@ -11,20 +11,19 @@ Classes
 -------
 
 Object-oriented languages represent concepts, like
-Datavyu's columns or cells, for instance, as "objects". Types of
-objects are called :term:`"classes" <class>`.
+Datavyu's columns or cells, for instance, as "objects". Objects come in
+different types, or "classes". For example, objects that represent numbers,
+strings (writen text), or Datavyu columns have different classes. 
 
-Objects have attributes: data that pertains to the
+An object can have a variety of attributes depending on the data that pertains to the
 object. In Datavyu, a cell object's attributes would be its codes; a column
-object's attributes might be its cells, its name, etc. Objects are
-generally "instances of classes".  To put it differently, classes are
-types of objects, and the objects that you work with directly in your
-code are one occurrence of its class's type.
+object's attributes might be its cells, its name, and its onset and offset times. 
+The class of an object defines what types of attributes a specific type of object will have. 
 
-Thinking about Datavyu specifically, then, you would likely have a
-"column" class that describes the Datavyu columns.  The "trial" column
-would then be an instance of the "column" class. This is, in fact, how the
-Datavyu API works: the Datavyu API includes two classes to represent
+Thinking about Datavyu specifically, the
+"column" class describes the Datavyu columns.  The "trial" object in the example spreadsheet
+would then be an instance of the "column" class. This is in fact how the
+Datavyu API works. The Datavyu API includes two classes to represent
 Datavyu concepts: :class:`RColumn` describes Datavyu's
 :term:`columns <column>`, and :class:`RCell` describes Datavyu's
 :term:`cells <cell>`.
@@ -32,33 +31,33 @@ Datavyu concepts: :class:`RColumn` describes Datavyu's
 Methods and Their Parameters
 ----------------------------
 
-While classes describe objects, :term:`methods <method>` define actions
-that you can perform. The Datavyu API defines numerous methods to help
+While classes describe objects and their attributes, :term:`methods <method>` define actions
+that you can perform on an object. The Datavyu API defines numerous methods to help
 you manipulate, modify, add, and delete data in the Datavyu
 spreadsheets.
 
-In order to work, many methods need additional information: for
+In order to work, many methods need additional information. For
 instance, :meth:`getColumn()`, which retrieves a column from a Datavyu
 spreadsheet so that you can modify or update it using your script,
 needs you to tell it what column it should retrieve.
-Each method defines what information it can receive: these are called
+Each method defines what information it can receive. These are called
 :term:`parameters <parameter>`. :meth:`getColumn()` has one parameter: ``name``,
 which is the name of the column that you wish to retrieve.
 
-So, parameters are the types of information that you can specify to a
+So, parameters are the types of information that you can specify for a
 method, and are specified in the method's definition (you can view all
-of Datavyu's methods' definitions on the :doc:`api reference page
+of Datavyu's method definitions on the :doc:`API reference page
 </api/reference>`). 
 
 The information you actually provide when you use the method is called an
-"argument". Arguments are user-specified: for :meth:`getColumn()`, you
+"argument". Arguments are user-specified. For :meth:`getColumn()`, you
 might want to retrieve a column called "trial", so "trial" would be your
 argument for the ``name`` parameter. Again, parameters are part of the
 method's definition, while arguments are the information you provide
 to the method.
 
 For example, the :meth:`add_codes_to_column` method enables users to
-programmatically add one or more codes to a
+add one or more codes to a
 column. :meth:`add_codes_to_column` has two parameters: ``column``,
 the name of the column you want to update, and ``*codes``. The ``*``
 indicates that the parameter is a list: so you can specify one (or
@@ -77,7 +76,7 @@ and "rightHand" are your user-specified arguments.
 Standalone Methods and Class Methods
 ------------------------------------
 
-There are two different types of methods: standalone methods, and
+There are two different types of methods: standalone methods and
 :term:`class methods <class method>`. Class methods act directly upon
 an instance of a specific class. Standalone methods,
 perform actions on their own.
@@ -93,9 +92,9 @@ would run:
 
 In contrast, :meth:`add_code` is a class method of the
 :class:`RColumn` class, and *is invoked* on an
-:class:`RColumn` instance. Assuming that you have already retrieved a
+:class:`RColumn` object. Assuming that you have already retrieved a
 column called "trial" from the spreadsheet, and assigned it to an
-:class:`RColumn` instance, the following code would add the *newCode*
+:class:`RColumn` object, the following code would add the *newCode*
 code to the "trial" :class:`RColumn` object:
 
 .. code-block:: ruby
@@ -115,8 +114,8 @@ Datavyu API.
 Next Steps
 ----------
 
-Now that you have a sound grounding in the difference between classes
-and methods, understand parameters are arguments, and know how to
+Now that you have a grounding in the difference between classes
+and methods, parameters and arguments, and know how to
 invoke both standalone and class methods, consider our
 :doc:`/api/introduction-to-scripting` for tips before diving into the
 :doc:`/api/tutorials`.
