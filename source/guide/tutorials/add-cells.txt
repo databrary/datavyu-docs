@@ -1,33 +1,29 @@
 ================
-Add Observations
+Add Cells
 ================
 
-Datavyu represents observations as :term:`cells <cell>` in the Datavyu
-spreadsheet. Cells relate to :term:`columns <column>`: the events,
-phenomena, behaviors, or facts that you are studying. Cells always
-include :term:`onset`, :term:`offset`, and :term:`ordinal` metadata,
-but it is up to the researcher to determine what other data to record
-for each study variable.
+Datavyu represents events as :term:`cells <cell>` in the Datavyu
+spreadsheet. Cells relate to :term:`columns <column>` because they capture the events, 
+that you are coding in that pass. 
 
 This tutorial assumes that you have already configured your spreadsheet
 to include a column. If you have not already created a column in
 your spreadsheet, start with the :ref:`guide-add-a-column` tutorial.
 
-There are two ways to add observations to a Datavyu spreadsheet: using the
-spreadsheet itself, or using keypad shortcuts. Keypad shortcuts are
-ideal for creating observations as you watch or listen to a data source,
-while adding observations directly in the spreadsheet might be ideal for
-overarching columns such as trial or participant identification.
+There are three ways to add cells to a Datavyu spreadsheet: using the
+spreadsheet menu, using :guilabel:`Click to Create New Cell` in the body 
+of the spreadsheet, or using keypad shortcuts. Keypad shortcuts are
+ideal for creating cells while you code a video. Note that keypad shortcuts 
+give you more options for how to insert cells and onset/offsettimes.
 
 .. admonition:: Tip 
 
-   Use the ``tab`` and ``shift-tab`` keyboard shortcuts to easily
-   navigate between codes within a cell. Use the arrow keys to
-   navigate through cells.
+   Use the ``tab`` and ``shift-tab`` keyboard shortcuts or the arrow keys to easily
+   navigate among codes within a cell. 
 
 .. TODO: this is not a great heading
 
-Add Observations Directly in the Spreadsheet
+Add Cells Directly in the Body of the Spreadsheet
 --------------------------------------------
 
 Adding observations (cells) to an existing variable (column) is simple:
