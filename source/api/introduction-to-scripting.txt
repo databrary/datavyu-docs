@@ -120,13 +120,13 @@ Basic Script Format
 .. tip::
 
    Scripts are very sensitive! When programming, every quotation mark,
-   underscore, period, and slash serve a purpose - you must
+   underscore, period, and slash serve a purpose. You must
    use the correct syntax, or the script will not work. 
    
-   Code and column-names are also case sensitive: if you have a column
+   Code and column names are also case sensitive If you have a column
    in a spreadsheet called "trial", requesting "Trial" will not work.
 
-In order to work, all Datavyu API scripts must include the following
+All Datavyu API scripts must include the following
 line at the top:
 
 .. code-block:: ruby
@@ -153,10 +153,10 @@ In general, the rest of the script code goes between ``begin`` and
 .. tip::
 
    Anything that comes after a ``#`` character on a line in Ruby is a
-   "comment", which means it will not execute. Comments are useful for
-   explaining what the code is doing so that you remember when you look
-   at the script 6 months from now. The examples in this documentation
+   "comment", which means it will not execute any specific task. Comments are useful for
+   leaving notes that explain what the code is doing so that when you return to an old script,
+   you remember what you're looking at. The examples in this documentation
    use comments extensively.
 
-Now that you are well grounded in the Datavyu Ruby API mechanics,
+Now that you are grounded in the Datavyu Ruby API mechanics,
 consider the :doc:`/api/tutorials` or :doc:`/api/reference`.
