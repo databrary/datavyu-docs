@@ -14,15 +14,15 @@ Requirements
 Hardware Requirements
 ~~~~~~~~~~~~~~~~~~~~~
 
-These hardware requirements are the minimum needed for Datavyu: more RAM
+The hardware requirements listed below are the minimum needed for Datavyu. More RAM
 or a faster processor will improve Datavyu's performance, especially when
 working with higher-resolution data sources.
 
 - 1GB of RAM.
 - 1.2 GHz processor.
 
-You will also need enough disk space for the videos that you will be
-working with, and a keypad, either as part of your keyboard, or as an
+You will also need enough disk space for your videos
+and a keypad, either as part of your keyboard, or as an
 external device.
 
 Software Requirements
@@ -58,7 +58,7 @@ Mac OS X
    (e.g. using Archive Utility). This will provide you with a folder
    containing the Datavyu software and associated support documents. You
    can drag this to your Applications folder, or some other
-   easily-remembered location.
+   preferred location on your computer.
 
 Out of the box, Datavyu
 supports the Quicktime plugin for video playback. You may alternately
@@ -120,12 +120,14 @@ version is released, Datavyu will prompt you to download the latest
 version.
 
 You can also check if your Datavyu version is up to date by opening
-the :guilabel:`Help` menu, and then selecting :guilabel:`Check for
+the :guilabel:`Help` menu from the menu bar when the spreadsheet window is selected, 
+and then selecting :guilabel:`Check for
 updates...`.  If a new version is available, it will direct you to the
-download page to download the latest release.
+download page where you can download the latest release. Remember to replace your current
+application witht he latest version of Datavyu that you have just downloaded!
 
 During the course of development, the Datavyu team releases several
-*pre-release* versions of the software prior to releasing the official
+*pre-release* versions of the software prior to releasing official
 stable releases. Pre-releases may contain new features not yet
 incorporated into the main software, but are also more likely to contain
 bugs and to behave in unexpected ways. 
@@ -133,8 +135,8 @@ bugs and to behave in unexpected ways.
 To be notified of pre-release updates, simply check the "pre-release"
 checkbox in the updates window. Due to the increased potential for data
 loss or bug-related issues, you should only choose to use pre-releases
-if you need an as-yet unreleased feature, or are grappling with a bug in
-the existing stable release that is fixed in the stable release.
+if you need an unreleased feature, or are grappling with a bug in
+the existing stable release that is fixed in the unstable release.
 
 Ultimately, all new features in the pre-releases are brought together
 and released as a new stable release.
