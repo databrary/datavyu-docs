@@ -3,12 +3,12 @@ Use Scripts to Automate Tasks
 =============================
 
 Datavyu provides a full suite Ruby scripting API to help you focus more
-time on coding, and less time performing routine tasks.
+time on coding, and spend less time performing routine tasks.
 
 The :doc:`Ruby API documentation </api>` guides you through writing
-scripts for Datavyu and provides context to help you become an adept
-Ruby script-writer regardless of your programming experience (or lack
-thereof). You can also watch a video version of this tutorial:
+scripts and provides context to help you become an adept
+Ruby script-writer regardless of your programming experience.
+You can also watch a video version of this tutorial:
 
 .. raw:: html
 
@@ -24,7 +24,7 @@ Before you can run a script, you must write one. Refer to the
 :doc:`Ruby API documentation </api>` for scripting help. 
 
 #. Save your script as a ``.rb`` file, and put it somewhere you will be
-   able to find again, such as a Scripts folder on your desktop, or
+   able to find again, such as a Scripts folder on your desktop, or the location
    where you store your Datavyu files.
 
 #. In Datavyu, select the :guilabel:`Script` menu. The
@@ -38,13 +38,12 @@ Before you can run a script, you must write one. Refer to the
    choose the script you wish to run. 
    
 #. The Datavyu **Scripting Console** will open and show you the progress
-   of the script, and display any errors that might arise. If you have
-   an error in a script, this is a good place to start looking for 
-   bugs.
+   of the script, or display any errors that arise. If Datavyu reports a script error,
+   use the provided information to find it. 
 
-#. When your script has completed, you can close the Scripting Console
-   and start working with your data source.
+#. You can close the Scripting Console when a notification that the script
+   has been successfully run shows up. 
 
-Scripts that you have run will be listed in the :guilabel:`Run recent
-script` submenu in the :guilabel:`Script` menu. This makes it easy
+Scripts that you have recently run will be listed in the :guilabel:`Run Recent
+Scripts` menu in the :guilabel:`Script` menu. This makes it easy
 to repeatedly run the same scripts.
