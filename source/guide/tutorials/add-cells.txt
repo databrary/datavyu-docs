@@ -26,13 +26,13 @@ give you more options for how to insert cells and onset/offsettimes.
 Add Cells Directly in the Body of the Spreadsheet
 --------------------------------------------
 
-Adding observations (cells) to an existing variable (column) is simple:
+Adding cells to an existing variable (column) is simple:
 
-#. Click in the gray :guilabel:`Click to create new observation` area.
+#. Click in the gray :guilabel:`Click To Create New Cell` area.
    A new cell appears with the current playhead time as its :term:`onset`,
    and placeholders for any codes configured for the column.
 
-#. Record appropriate values for your column's codes. For the
+#. Record appropriate values for the codes. For the
    "trial" column in the example spreadsheet, that means filling
    out the ``<trialnum>`` and ``<outcome>`` codes.
 
@@ -41,31 +41,21 @@ Adding observations (cells) to an existing variable (column) is simple:
       :align: center
 
 
-#. Set the cell :term:`offset` using the Data Viewer Controller or 
-   your keypad.
+#. Set the cell :term:`offset` using the keypad on the Data Viewer Controller.
 
-Add Observations from Keypad
+Add Cells from the Keypad
 ----------------------------
 
-Adding observations using the keypad is even easier than doing so from
+Adding cells using the keypad is even easier than doing so from
 the spreadsheet:
 
 #. Navigate to the point in the data source that you want to be the
-   cell's :term:`onset`. Use the :guilabel:`create new cell and set
-   onset` (``0``) key on the keypad to create a new cell and set its
+   cell's :term:`onset`. Use the :guilabel:`new cell and set previous offset (``0``) k 
+   key on the keypad to create a new cell, set its onset based on your location in the data
+   source, and set the previous cell's onffset to 1 ms prior all in one go. 
    onset.
    
    **or**
 
-   Create a new cell using the :guilabel:`create new cell` (``Enter``)
-   key on the keypad, and then navigate to the :term:`onset` point in
-   the data source, and set the cell onset using the 
-   :guilabel:`set cell onset` (``clear``) key.
-
-#. Record appropriate values for your column's codes. For the
-   "trial" column in the example spreadsheet, that means filling
-   out the ``<trialnum>`` and ``<outcome>`` codes.
-
-#. Navigate to the offset point in the data source and set the cell
-   :term:`offset` using the :guilabel:`set cell offset` key (``/`` or
-   ``.``).
+   Create a new cell using the :guilabel:`new cell` (``Enter``)
+   key on the keypad. The onset will reflect your location in the data source. 
