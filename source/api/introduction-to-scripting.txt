@@ -54,9 +54,8 @@ editing Ruby scripts:
 .. tip:: 
    
    Most text editors determine what kind of syntax highlighting to use
-   based on the file extension. If the Ruby script file does not have
-   the ``.rb`` extension, you might not see proper syntax
-   highlighting, so ensure that your Ruby script files end in ``.rb``.
+   based on the file extension. Please ensure that your Ruby script files
+   end with the ".rb" extension so you see syntax highlighting.
 
 General Principles
 ------------------
