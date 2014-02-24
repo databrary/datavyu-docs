@@ -5,10 +5,9 @@ Add a Column
 ============
 
 Datavyu represents sequences of events as columns in the
-spreadsheet. Columns represent phenomena or events that you are
-studying.
+spreadsheet. 
 
-Adding a column to your Datavyu project is simple: the following steps
+Adding a column to your Datavyu project is simple. The following steps
 will guide you through the process.
 
 #. Open the Datavyu spreadsheet.
