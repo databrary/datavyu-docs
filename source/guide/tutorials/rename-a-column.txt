@@ -41,7 +41,7 @@ Rename From the Column List
 
 Using the :guilabel:`Column List` is another way you can change a
 column's name. The :guilabel:`Column List` also has the advantage of
-enabling you to change multiple column names in one place.
+allowing you to change multiple column names in one place.
 
 #. Open the Datavyu spreadsheet.
 
@@ -56,7 +56,7 @@ Rename Columns Using the Code Editor
 
 Datavyu's :guilabel:`Code Editor` enables you to configure
 :term:`columns' <column>` :term:`codes <code>`, but you
-can also edit your columns' names. 
+can also edit the names of your columns' and codes'. 
 
 #. Open the Datavyu spreadsheet.
 
