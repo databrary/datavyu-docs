@@ -5,7 +5,7 @@
 Configure Columns and Codes
 ===========================
   
-Each column is a
+Each column may have a
 collection of one or more :term:`codes <code>`. Each
 code has a value that the coder inputs while coding a data
 source.
@@ -39,9 +39,9 @@ existing columns.
 Add a Column
 ------------
 
-Click on the :guilabel:`Add matrix()` button. A new column
-called "matrix1" will appear in the list of columns. By default,
-"matrix1" has one code, "code1".
+Click on the :guilabel:`Add Column` button. A new column
+called "column1" will appear in the list of columns. By default,
+"column1" has one code, "<code01>".
 
 You can change the name of the column or code by double-clicking
 on its name and typing a new name.
