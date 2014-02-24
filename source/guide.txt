@@ -2,13 +2,13 @@
 Software Guide
 ==============
 
-Datavyu is a Java-based application that runs on Windows, Mac, and Linux
+Datavyu is a Java-based application that runs on Windows, Mac, and soon onLinux
 operating systems. Its primary goal is to link behavioral researchers
-with their video, audio, or other data sources, and to provide a way for
-researchers to record their observations, extract their data for
+with their video and to provide a way for researchers 
+to record their observations, extract their data for
 analysis, and share their work. Using a spreadsheet template that
 specifies which categories of events you’re interested in coding,
-Datavyu enables researchers to record events or build on prior analyses.
+Datavyu enables researchers to record events and build on prior analyses.
 
 .. raw:: html
 
@@ -18,9 +18,9 @@ Datavyu enables researchers to record events or build on prior analyses.
    </video>
 
 This guide provides all the information you need to start using Datavyu,
-starting with installation instructions, through an in-depth description
-of the software components, to a series of tutorials that target common
-operations with Datavyu. The reference section lists terms and
+with installation instructions, an in-depth description
+of the software components, and a series of tutorials that target common
+operations. The reference section lists terms and
 definitions, as well as detailing any file format requirements and
 limitations.
 
