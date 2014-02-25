@@ -23,6 +23,22 @@ give you more options for how to insert cells and onset/offsettimes.
 
 .. TODO: this is not a great heading
 
+
+Add cells Using the Spreadsheet Menu
+--------------------------------------------
+
+Using the spreadsheet menu to add cells to an existing variable (column) is simple:
+
+#. Click on the :guidelabel:`Spreadsheet` tab and select :guidelabel:`New Cell`. A new cell
+   appears with the current play head time as its osnet, and placeholders for any codes configured
+   for the column. 
+   
+#. Set the cell offset using the Data Viewer Controller. 
+
+You can also add cells to neighboaring columns by selecting :guidelabel:`New Cell to Left` 
+or :guidelabel:`New Cell to Right`.
+
+
 Add Cells Directly in the Body of the Spreadsheet
 --------------------------------------------
 
