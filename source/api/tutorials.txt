@@ -96,8 +96,20 @@ to determine whether more than one coder would score the data the same way.
 
 :ref:`use_scripts_to_export_data_from_datayu`
 -------------------
-Use scripts to export data from datavyu into a text file or a spreadsheet
+Use scripts to export data from Datavyu into a text file or a spreadsheet.
 for statistical analyses. 
+
+:ref:`convert_an_openshapa_script_to_the_datavui_format`
+-------------------
+Convert an OpenSHAPA script to the Datavyu format to update an old file.
+
+:ref:`batch_operations_on_multiple_files`
+-------------------
+Batch operations on multiple files to do the same operation on more than one file.
+
+:ref:`conver_macshapa_files_to_work_in_datavyu`
+-------------------
+Convert MacSHAPA files to work in Datavyu so that you can use the new, supported software. 
 
 .. toctree::
    :titlesonly:
