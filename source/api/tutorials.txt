@@ -72,6 +72,33 @@ can go through the full tutorial from start to finish in
 Tutorials
 #########
 
+:ref:`add_a_new_column`
+-------------------
+Add a column to create a new coding pass or a new set of codes.
+
+
+:ref:`add_codes_to_a_column`
+-------------------
+Add codes to a column to prompt coders which behaviors to score.
+
+:ref:`add_cells_to_a_column`
+-------------------
+Add cells to a column while coding or annotating a video file.
+
+:ref:`check_for_coding_errors`
+-------------------
+Check for coding errors such as typos, impossible vlaues, unlikely values, etc.
+
+:ref:`check_inter-rater_reliability_to_improve_data_accuracy`
+-------------------
+Check Inter-rater Reliability to Improve Data Accuracy 
+to determine whether more than one coder would score the data the same way.
+
+:ref:`use_scripts_to_export_data_from_datayu`
+-------------------
+Use scripts to export data from datavyu into a text file or a spreadsheet
+for statistical analyses. 
+
 .. toctree::
    :titlesonly:
 
