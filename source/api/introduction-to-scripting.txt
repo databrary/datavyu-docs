@@ -60,9 +60,9 @@ editing Ruby scripts:
 General Principles
 ------------------
 
-Each cell that you create with the Datavyu API has three required
+Each cell that you create with the Datavyu API has three inherent
 :term:`codes <code>`: ``onset``, ``offset``, and ``ordinal``. Each
-cell also takes at least one user-specified code.
+cell also has at least one user-specified code.
 
 ``onset``, ``offset``, and ``ordinal`` are all :term:`Integers
 <integer>`, while the user-specified codes are :term:`Strings
@@ -72,9 +72,10 @@ cell also takes at least one user-specified code.
 beginning of the video**, starting from 0.  For
 instance, an ``onset`` time of 00:02:20 translates to 140000ms.
 
-Since codes are strings, you must convert any codes that you wish to
-perform calculations on to integers. This is easily done with Ruby
-using the `to_i <http://ruby-doc.org/core-2.0.0/String.html#method-i-to_i>`_ method.
+Since user-specified codes are strings, you must convert any codes that you wish to
+perform calculations on to a numeric type. This is easily done with Ruby
+using the `to_i <http://ruby-doc.org/core-2.0.0/String.html#method-i-to_i>`_ method for integers, 
+or the `to_f <http://ruby-doc.org/core-2.0.0/String.html#method-i-to_f>`_ method for floating point numbers.
 
 .. admonition:: Example 
 
