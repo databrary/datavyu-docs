@@ -9,14 +9,43 @@ might wish to perform.
 
 .. toctree::
    :maxdepth: 1
+   
+/guide/tutorials/add-a-column
+--------
+Add a column to create a new coding pass or a new set of codes.
 
-   /guide/tutorials/add-a-column
-   /guide/tutorials/rename-a-column
-   /guide/tutorials/delete-column
-   /guide/tutorials/configure-datavyu-codes
-   /guide/tutorials/add-cells
-   /guide/tutorials/delete-a-cell
-   /guide/tutorials/export-data
-   /guide/tutorials/use-scripts-to-automate-tasks
-   /guide/tutorials/code-multiple-data-sources
-   /guide/tutorials/convert-file-format
+ /guide/tutorials/rename-a-column 
+--------
+Rename a column to better reflect your coding pass, to increase transparency, etc. 
+   
+/guide/tutorials/delete-column
+--------
+Delete a column if the information is no longer needed.
+  
+/guide/tutorials/configure-datavyu-codes
+--------
+Configure columns and codes to set up a spreadsheet for coding   
+   
+/guide/tutorials/add-cells
+--------
+Add cells while coding or annotating a video file.  
+  
+/guide/tutorials/delete-a-cell
+--------
+Delete a cell if the information is not needed.   
+   
+/guide/tutorials/export-data
+--------
+Export Data from Datavyu into a statistical package, into a text file, etc.   
+   
+/guide/tutorials/use-scripts-to-automate-tasks
+--------
+ Use scripts to automate tasks such as inserting, deleting, and modifying cells. 
+   
+/guide/tutorials/code-multiple-data-sources
+--------
+Code multiple data sources at once e.g., two or more videos recorded at the same time.   
+   
+/guide/tutorials/convert-file-format
+--------
+Convert file formats into an appropriate format for Datavyu.
