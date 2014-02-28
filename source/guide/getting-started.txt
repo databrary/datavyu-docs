@@ -16,22 +16,22 @@ version. If there has been a new release, Datavyu will prompt you to
 :ref:`update your version <update-datavyu>`.
 
 When you launch Datavyu, you will see two windows: the
-:guilabel:`Data Viewer Controller`, and a blank spreadsheet. If you add
+:guilabel:`Controller`, and a blank spreadsheet. If you add
 a data source, a third window containing the data source will appear.
 
 The following sections describe each component of the Datavyu interface.
 
-Data Viewer
+Media Player
 ~~~~~~~~~~~
 
 .. figure:: /img/movie-viewer.png
    :align: center
 
-The :guilabel:`Data Viewer` is the window that presents the data
+The :guilabel:`Media Player` is the window that presents the data
 source that the user is working with.
 
 Adding a video or other data source to Datavyu is as easy as
-clicking on the :guilabel:`Add Data…` button in the Data Viewer
+clicking on the :guilabel:`Add Data…` button in the Media Player
 Controller. For a more
 detailed overview of adding data sources see:
 :ref:`add-data`.
@@ -40,16 +40,16 @@ Once you've added a data source, it's time to add columns, create
 observations, and write scripts. The :ref:`tutorials
 <guide-core-tutorials>` are there to guide you. 
 
-Data Viewer Controller
+Controller
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The :guilabel:`Data Viewer Controller` allows users to control the
+The :guilabel:`Controller` allows users to control the
 playback of their data source and create observations in the
-spreadsheet. Quite literally, it controls the :guilabel:`Data Viewer`,
+spreadsheet. Quite literally, it controls the :guilabel:`Media Player`,
 the window that contains the video data.
 
 .. figure:: /img/data-viewer-controller.png
-   :alt: Image of the Data Viewer Controller
+   :alt: Image of the Controller
    :align: center
 
 The keypad can be found on the left side of the controller. This section maps directly to the
@@ -60,7 +60,7 @@ create new cells and navigate within the data source. The
 :guilabel:`Add Data...` button enables you to :ref:`add a data source
 <add-data>`. 
 
-For more about the Data Viewer Controller, and a detailed description of
+For more about the Controller, and a detailed description of
 its functionality and features, see :doc:`/guide/controller`.
 
 .. toctree::

@@ -1,21 +1,21 @@
 ===============================
-Data Viewer Controller Overview
+Controller Overview
 ===============================
 
-The Data Viewer Controller enables users to manipulate the playback of
+The Controller enables users to manipulate the playback of
 their data source, and create new cells as they record their observations.
 
 .. image:: /img/controller-annotated.png
-   :alt: Image of the Data Viewer Controller indicating the track and keypad area
+   :alt: Image of the Controller indicating the track and keypad area
    :align: center
 
-The Data Viewer Controller has two main areas: the keypad on the left,
+The Controller has two main areas: the keypad on the left,
 which maps directly to your keyboard, and the :guilabel:`Timeslider` on
 the right, which represents the current playback position, and provides
 additional functionality to control and customize playback.
 
 The following sections describe the two areas in detail, and provide
-a useful reference for working with the Data Viewer Controller.
+a useful reference for working with the Controller.
 
 Keypad
 ------
@@ -32,14 +32,14 @@ Keypad
    The keys highlighted in pink are *playback controls*. The keys
    highlighted in brown are *coding-controls*.
 
-The Data Viewer Controller's keypad maps directly to the number pad
+The Controller's keypad maps directly to the number pad
 on your keyboard or external keypad and the on-screen representation
 helps users remember what key performs what function. When you press
 a key on the keypad, a visual indicator onscreen mirrors the
 keystrokes. Some keypads may change the ordering of certain keys: for
 instance, the top row might be ``clear``, ``/``, ``*``, ``-``, rather
 than ``clear``, ``*``, ``/``. Some keypads may have a ``Num Lock`` key
-rather than a clear button but the Data Viewer Controller takes different 
+rather than a clear button but the Controller takes different
 keyboards into account and simplifies the keys as much as possible. 
 Familiarize yourself with both the Datavyu controls and your 
 keypad to maximize coding efficiency.
@@ -133,7 +133,7 @@ Tracks
 
    The tracks walkthrough video
    is a good way to familiarize yourself with this area of the
-   Data Viewer Controller:
+   Controller:
 
 .. raw:: html
 
@@ -142,7 +142,7 @@ Tracks
    <source src="../_static/video/dvc-tracks-area.webm" type="video/webm">
    </video>
 
-The :guilabel:`Tracks` area of the Data Viewer Controller helps you
+The :guilabel:`Tracks` area of the Controller helps you
 visualize where you are within a data source's playback. You can
 control the scale using the slider bar in the top right: moving it to
 the right zooms in, allowing you to manipulate smaller time periods
@@ -152,7 +152,7 @@ the slider bar. The red :term:`playhead` shows the current playback
 position.
 
 .. figure:: /img/tracks-region-annotated.png
-   :alt: annotated image of the data viewer controller's tracks region
+   :alt: annotated image of the Controller's tracks region
    :align: center
 
 
@@ -160,7 +160,7 @@ You can choose to focus on a single region by moving the green region
 dividers. Datavyu will start playback from the leftmost bracket's position,
 and stop at the rightmost bracket.
 
-The :guilabel:`Tracks` area of the Data Viewer Controller also
+The :guilabel:`Tracks` area of the Controller also
 includes five buttons:
 
 - :guilabel:`Lock All`: locks the tracks to prevent the user from
@@ -203,7 +203,7 @@ high-resolution video files without challenge.
 To add a data source:
 
 #. Click the :guilabel:`Add Data…` button in the top left corner of the
-   Data Viewer Controller.
+   Controller.
 
 #. A file selection window will open. Select the data file you will be
    coding.

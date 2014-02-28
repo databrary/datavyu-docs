@@ -33,7 +33,7 @@ Using the spreadsheet menu to add cells to an existing variable (column) is simp
    appears with the current play head time as its osnet, and placeholders for any codes configured
    for the column. 
    
-#. Set the cell offset using the Data Viewer Controller. 
+#. Set the cell offset using the Controller.
 
 You can also add cells to neighboaring columns by selecting :guidelabel:`New Cell to Left` 
 or :guidelabel:`New Cell to Right`.
@@ -57,7 +57,7 @@ Adding cells to an existing variable (column) is simple:
       :align: center
 
 
-#. Set the cell :term:`offset` using the keypad on the Data Viewer Controller.
+#. Set the cell :term:`offset` using the keypad on the Controller.
 
 Add Cells from the Keypad
 ----------------------------

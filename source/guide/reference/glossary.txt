@@ -8,8 +8,8 @@ Glossary
 .. glossary::
    :sorted:
 
-   Data Viewer Controller
-      The Data Viewer Controller is a core Datavyu window that enables
+   Controller
+      The Controller is a core Datavyu window that enables
       you to control playback of data sources, and to record
       observations. See: :doc:`/guide/controller`
 
@@ -32,7 +32,7 @@ Glossary
 
    playhead
       The playhead indicates the current point of playback in the
-      :term:`timeslider` of the Data Viewer Controller.
+      :term:`timeslider` of the Controller.
 
    observation
       An instance of the :term:`column` that is being coded.

@@ -24,7 +24,7 @@ Editor's features:
 Open the Code Editor
 --------------------
 
-From the Data Viewer Controller, click on the :guilabel:`Spreadsheet`
+From the Controller, click on the :guilabel:`Spreadsheet`
 menu, and then select :guilabel:`Code Editor`.
 
 .. image:: /img/code-editor.*
