@@ -31,7 +31,7 @@ The :guilabel:`Media Player` is the window that presents the data
 source that the user is working with.
 
 Adding a video or other data source to Datavyu is as easy as
-clicking on the :guilabel:`Add Data…` button in the Media Player
+clicking on the :guilabel:`Add Data…` button in the
 Controller. For a more
 detailed overview of adding data sources see:
 :ref:`add-data`.
