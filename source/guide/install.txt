@@ -105,6 +105,12 @@ Windows
    download Quicktime for Windows from `Apple's website
    <http://www.apple.com/quicktime/download/>`_.
    
+.. note::
+      
+      If you are using Quicktime 7.7.5 or later, you will need to custom install 
+      Quicktime to include Java libraries in your version. Older versions of
+      Quicktime can be typically installed.
+   
 You can also use VLC for video playback. If you wish to use VLC, you
 must use `version 2.0.1 <http://download.videolan.org/pub/videolan/vlc/2.0.1/win32/vlc-2.0.1-win32.exe>`_,
 as Datavyu does not currently support later versions.
