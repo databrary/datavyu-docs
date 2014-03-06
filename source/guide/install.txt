@@ -65,7 +65,7 @@ supports the Quicktime plugin for video playback. If you are using Quicktime 7.7
 you will need to simply custom install Quicktime to include Java libraries in your version. The screenshot
 shows just how easy it is! Older versions of Quicktime can be typically installed.
 
-.. figure:: 
+.. figure:: /img/install-quicktime-special.png
    :align: center
 
 You may alternately
@@ -122,7 +122,7 @@ Windows
    :align: center
    
 You can also use VLC for video playback. If you wish to use VLC, you
-must use `version 2.0.1 <http://download.videolan.org/pub/videolan/vlc/2.0.1/win32/vlc-2.0.1-win32.exe>`_,
+must use `version 2.0.1 for Windows <http://download.videolan.org/pub/videolan/vlc/2.0.1/win32/vlc-2.0.1-win32.exe>`_,
 as Datavyu does not currently support later versions.
 
 .. _update-datavyu:

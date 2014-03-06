@@ -12,47 +12,47 @@ Add a column to create a new coding pass or a new set of codes.
 
 
 `Rename a Column </guide/tutorials/rename-a-column>`_
-----------------------
+-----------------------------------------------------
 Rename a column to better reflect your coding pass, to increase transparency, etc. 
 
    
 `Delete a Column </guide/tutorials/delete-column>`_
----------------------
+---------------------------------------------------
 Delete a column if the information is no longer needed.
 
   
 `Configure Datavyu Codes </guide/tutorials/configure-datavyu-codes>`_
-------------------------------
+---------------------------------------------------------------------
 Configure columns and codes to set up a spreadsheet for coding   
 
    
 `Add Cells </guide/tutorials/add-cells>`_
---------------
+-----------------------------------------
 Add cells while coding or annotating a video file. 
 
   
 `Delete a Cell </guide/tutorials/delete-a-cell>`_
-------------------
+-------------------------------------------------
 Delete a cell if the information is not needed.   
 
    
 `Export Data </guide/tutorials/export-data>`_
-----------------------------
+---------------------------------------------
 Export Data from Datavyu into a statistical package, into a text file, etc. 
 
    
 `Use Scripts to Automate Tasks </guide/tutorials/use-scripts-to-automate-tasks>`_
----------------------------------
+---------------------------------------------------------------------------------
 Use scripts to automate tasks such as inserting, deleting, and modifying cells. 
  
    
 `Code Multiple Data Sources </guide/tutorials/code-multiple-data-sources>`_
-----------------------------------------
+---------------------------------------------------------------------------
 Code multiple data sources at once e.g., two or more videos recorded at the same time.   
 
    
 `Convert File Formats </guide/tutorials/convert-file-format>`_
-------------------------
+--------------------------------------------------------------
 Convert file formats into an appropriate format for Datavyu.
 
 .. _guide-core-tutorials:

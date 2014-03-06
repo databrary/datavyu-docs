@@ -73,42 +73,42 @@ Tutorials
 #########
 
 `Add a New Column </guide/tutorials/add-a-new-column>`_
--------------------
+-------------------------------------------------------
 Add a column to create a new coding pass or a new set of codes.
 
 
 `Add Codes to a Column </guide/tutorials/add-codes-to-a-column>`_
--------------------
+-----------------------------------------------------------------
 Add codes to a column to prompt coders which behaviors to score.
 
 `Add Cells to a Column </guide/tutorials/add-cells-to-a-column>`_
--------------------
+-----------------------------------------------------------------
 Add cells to a column while coding or annotating a video file.
 
 `Check for Coding Errors </guide/tutorials/check-for-coding-errors>`_
--------------------
+---------------------------------------------------------------------
 Check for coding errors such as typos, impossible vlaues, unlikely values, etc.
 
 `Use Reliability Coding to Check Data Accuracy </guide/tutorials/use-reliability-coding-to-check-data-accuracy>`_
--------------------
+-----------------------------------------------------------------------------------------------------------------
 Check Inter-rater Reliability to Improve Data Accuracy 
 to determine whether more than one coder would score the data the same way.
 
 `Export Data Using Scripts </guide/tutorials/export-data-using-scripts>`_
--------------------
+-------------------------------------------------------------------------
 Use scripts to export data from Datavyu into a text file or a spreadsheet.
 for statistical analyses. 
 
 `Convert an OpenShapa Script to Datavyu </guide/tutorials/convert-openshapa-script-to-datavyu>`_
--------------------
+------------------------------------------------------------------------------------------------
 Convert an OpenSHAPA script to the Datavyu format to update an old file.
 
 `Perform Operations on Multiple Files </guide/tutorials/perform-operations-on-multiple-files>`_
--------------------
+-----------------------------------------------------------------------------------------------
 Batch operations on multiple files to do the same operation on more than one file.
 
 `Convert a MacShapa file to Datavyu </guide/tutorials/convert-macshapa-to-datavyu>`_
--------------------
+------------------------------------------------------------------------------------
 Convert MacSHAPA files to work in Datavyu so that you can use the new, supported software. 
 
 .. toctree::
