@@ -6,52 +6,52 @@ Datavyu Tutorials provide comprehensive guidance for common tasks you
 might wish to perform.
 
 
-:ref:`add_a_column`
--------------------
+`Add a Column </guide/tutorials/add-a-column>`_
+-----------------------------------------------
 Add a column to create a new coding pass or a new set of codes.
 
 
-:ref:`rename_a_column`
+`Rename a Column </guide/tutorials/rename-a-column>`_
 ----------------------
 Rename a column to better reflect your coding pass, to increase transparency, etc. 
 
    
-:ref:`delete_a_column`
+`Delete a Column </guide/tutorials/delete-column>`_
 ---------------------
 Delete a column if the information is no longer needed.
 
   
-:ref:`configure_columns_and_codes`
+`Configure Datavyu Codes </guide/tutorials/configure-datavyu-codes>`_
 ------------------------------
 Configure columns and codes to set up a spreadsheet for coding   
 
    
-:ref:`add_cells`
+`Add Cells </guide/tutorials/add-cells>`_
 --------------
 Add cells while coding or annotating a video file. 
 
   
-:ref:`delete_a_cell`
+`Delete a Cell </guide/tutorials/delete-a-cell>`_
 ------------------
 Delete a cell if the information is not needed.   
 
    
-:ref:`export_data_from_datavyu`
+`Export Data </guide/tutorials/export-data>`_
 ----------------------------
 Export Data from Datavyu into a statistical package, into a text file, etc. 
 
    
-:ref:`use_scripts_to_automate_tasks`
+`Use Scripts to Automate Tasks </guide/tutorials/use-scripts-to-automate-tasks>`_
 ---------------------------------
 Use scripts to automate tasks such as inserting, deleting, and modifying cells. 
  
    
-:ref:`code_multiple_data_sources_at_once`
+`Code Multiple Data Sources </guide/tutorials/code-multiple-data-sources>`_
 ----------------------------------------
 Code multiple data sources at once e.g., two or more videos recorded at the same time.   
 
    
-:ref:`convert_file_formats`
+`Convert File Formats </guide/tutorials/convert-file-format>`_
 ------------------------
 Convert file formats into an appropriate format for Datavyu.
 
