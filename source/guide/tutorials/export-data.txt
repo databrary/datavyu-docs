@@ -1,4 +1,4 @@
-.. _guide-export-data:
+.. export-data:
 
 ========================
 Export Data from Datavyu
