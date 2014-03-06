@@ -72,43 +72,43 @@ can go through the full tutorial from start to finish in
 Tutorials
 #########
 
-`Add a New Column <add-a-new-column.html>`_
--------------------------------------------
+`Add a New Column <tutorials/add-a-new-column.html>`_
+-----------------------------------------------------
 Add a column to create a new coding pass or a new set of codes.
 
 
-`Add Codes to a Column <add-codes-to-a-column.html>`_
------------------------------------------------------
+`Add Codes to a Column <tutorials/add-codes-to-a-column.html>`_
+---------------------------------------------------------------
 Add codes to a column to prompt coders which behaviors to score.
 
-`Add Cells to a Column <add-cells-to-a-column.html>`_
------------------------------------------------------
+`Add Cells to a Column <tutorials/add-cells-to-a-column.html>`_
+---------------------------------------------------------------
 Add cells to a column while coding or annotating a video file.
 
-`Check for Coding Errors <check-for-coding-errors.html>`_
----------------------------------------------------------
+`Check for Coding Errors <tutorials/check-for-coding-errors.html>`_
+-------------------------------------------------------------------
 Check for coding errors such as typos, impossible vlaues, unlikely values, etc.
 
-`Use Reliability Coding to Check Data Accuracy <use-reliability-coding-to-check-data-accuracy.html>`_
------------------------------------------------------------------------------------------------------
+`Use Reliability Coding to Check Data Accuracy <tutorials/use-reliability-coding-to-check-data-accuracy.html>`_
+---------------------------------------------------------------------------------------------------------------
 Check Inter-rater Reliability to Improve Data Accuracy 
 to determine whether more than one coder would score the data the same way.
 
-`Export Data Using Scripts <export-data-using-scripts.html>`_
--------------------------------------------------------------
+`Export Data Using Scripts <tutorials/export-data-using-scripts.html>`_
+-----------------------------------------------------------------------
 Use scripts to export data from Datavyu into a text file or a spreadsheet.
 for statistical analyses. 
 
-`Convert an OpenShapa Script to Datavyu <convert-openshapa-script-to-datavyu.html>`_
-------------------------------------------------------------------------------------
+`Convert an OpenShapa Script to Datavyu <tutorials/convert-openshapa-script-to-datavyu.html>`_
+----------------------------------------------------------------------------------------------
 Convert an OpenSHAPA script to the Datavyu format to update an old file.
 
-`Perform Operations on Multiple Files <perform-operations-on-multiple-files.html>`_
------------------------------------------------------------------------------------
+`Perform Operations on Multiple Files <tutorials/perform-operations-on-multiple-files.html>`_
+---------------------------------------------------------------------------------------------
 Batch operations on multiple files to do the same operation on more than one file.
 
-`Convert a MacShapa file to Datavyu <convert-macshapa-to-datavyu.html>`_
-------------------------------------------------------------------------
+`Convert a MacShapa file to Datavyu <tutorials/convert-macshapa-to-datavyu.html>`_
+----------------------------------------------------------------------------------
 Convert MacSHAPA files to work in Datavyu so that you can use the new, supported software. 
 
 .. toctree::
