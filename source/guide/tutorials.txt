@@ -60,13 +60,13 @@ Convert file formats into an appropriate format for Datavyu.
 .. toctree::
    :maxdepth: 1
    
-   add-a-column
-   rename-a-column
-   delete-column
-   configure-datavyu-codes
-   add-cells
-   delete-a-cell
-   export-data
-   use-scripts-to-automate-tasks
-   code-multiple-data-sources
-   convert-file-format
+   /guide/tutorials/add-a-column
+   /guide/tutorials/rename-a-column
+   /guide/tutorials/delete-column
+   /guide/tutorials/configure-datavyu-codes
+   /guide/tutorials/add-cells
+   /guide/tutorials/delete-a-cell
+   /guide/tutorials/export-data
+   /guide/tutorials/use-scripts-to-automate-tasks
+   /guide/tutorials/code-multiple-data-sources
+   /guide/tutorials/convert-file-format
