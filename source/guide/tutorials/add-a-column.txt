@@ -1,4 +1,4 @@
-.. _guide-add-a-column:
+.. _add-a-column:
 
 ============
 Add a Column

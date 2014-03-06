@@ -1,4 +1,4 @@
-.. _add-multiple-sources:
+.. _code-multiple-data-sources:
 
 ==================================
 Code Multiple Data Sources at Once

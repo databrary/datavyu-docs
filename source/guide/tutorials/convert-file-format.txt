@@ -1,5 +1,4 @@
-.. _convert-data-source-format:
-.. _convert-data-source-type:
+.. _convert-file-format:
 
 ====================
 Convert File Formats

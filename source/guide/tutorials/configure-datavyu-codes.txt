@@ -1,5 +1,4 @@
-.. _vocab-editor:
-.. _configure-columns:
+.. _configure-datavyu-codes:
 
 ===========================
 Configure Columns and Codes
