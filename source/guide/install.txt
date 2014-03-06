@@ -61,7 +61,14 @@ Mac OS X
    preferred location on your computer.
 
 Out of the box, Datavyu
-supports the Quicktime plugin for video playback. You may alternately
+supports the Quicktime plugin for video playback. If you are using Quicktime 7.7.5 or later, 
+you will need to simply custom install Quicktime to include Java libraries in your version. The screenshot
+shows just how easy it is! Older versions of Quicktime can be typically installed.
+
+.. figure:: 
+   :align: center
+
+You may alternately
 choose to use VLC for video playback, though this is not recommended. If
 you wish to use VLC, you *must* use `version 2.0.1 <http://download.videolan.org/pub/videolan/vlc/2.0.1/macosx/vlc-2.0.1.dmg>`_,
 as Datavyu does not currently support later versions.
@@ -107,9 +114,12 @@ Windows
    
 .. note::
       
-      If you are using Quicktime 7.7.5 or later, you will need to custom install 
-      Quicktime to include Java libraries in your version. Older versions of
-      Quicktime can be typically installed.
+      If you are using Quicktime 7.7.5 or later, you will need to simply custom 
+      install Quicktime to include Java libraries in your version. The screenshot
+      shows just how easy it is! Older versions of Quicktime can be typically installed.
+
+.. figure:: 
+   :align: center
    
 You can also use VLC for video playback. If you wish to use VLC, you
 must use `version 2.0.1 <http://download.videolan.org/pub/videolan/vlc/2.0.1/win32/vlc-2.0.1-win32.exe>`_,
