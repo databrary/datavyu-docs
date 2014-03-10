@@ -31,8 +31,8 @@ and .dts.
 Can I code sources that are not videos?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-No, Datavyu does not currently support non-video data sources. Support
-for other data sources is planned for a future release.
+Yes, we mostly support video data but other sources can be analyzed in 
+Datavyu as well. 
 
 Is there somewhere I can share or store my spreadsheets and videos?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -187,7 +187,7 @@ You will need to write new scripts for your Datavyu spreadsheets.
 Will my OpenSHAPA scripts run in Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sort of! You can easily convert an OpenSHAPA script to work in Datavyu
+Yes!u can easily convert an OpenSHAPA script to work in Datavyu
 by adding ``require 'Datavyu_API.rb'`` to the top of your OpenSHAPA
 script file and removing the OpenSHAPA API code that precedes the
 script. For more information see the
