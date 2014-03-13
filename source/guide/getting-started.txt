@@ -63,10 +63,6 @@ create new cells and navigate within the data source. The
 For more about the Controller, and a detailed description of
 its functionality and features, see :doc:`/guide/controller`.
 
-.. toctree::
-  :titlesonly:
-
-  /guide/controller
 
 Spreadsheet
 ~~~~~~~~~~~
