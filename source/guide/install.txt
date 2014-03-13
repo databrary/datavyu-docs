@@ -60,10 +60,12 @@ Mac OS X
    can drag this to your Applications folder, or some other
    preferred location on your computer.
 
-Out of the box, Datavyu
-supports the Quicktime plugin for video playback. If you are using Quicktime 7.7.5 or later, 
-you will need to simply custom install Quicktime to include Java libraries in your version. The screenshot
-shows just how easy it is! Older versions of Quicktime can be typically installed.
+.. note::
+      
+      Datavyu supports the Quicktime plugin for video playback.If you are using
+      Quicktime 7.7.5 or later, you will need to simply custom 
+      install Quicktime to include Java libraries in your version. The screenshot
+      shows just how easy it is! Older versions of Quicktime can be typically installed.
 
 .. figure:: /img/install-quicktime-special.png
    :align: center
