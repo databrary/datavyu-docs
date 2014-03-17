@@ -93,4 +93,5 @@ The :doc:`/guide/spreadsheet` document describes the
 .. toctree::
   :titlesonly:
 
+  /guide/controller
   /guide/spreadsheet
