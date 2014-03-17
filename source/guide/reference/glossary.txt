@@ -2,9 +2,6 @@
 Glossary
 ========
 
-.. items in the glossary are automatically alphabetized when the docs 
-   build
-
 .. glossary::
    :sorted:
 
