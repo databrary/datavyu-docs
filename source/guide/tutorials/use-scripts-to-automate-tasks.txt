@@ -1,5 +1,3 @@
-.. _use-scripts-to-automate-tasks:
-
 =============================
 Use Scripts to Automate Tasks
 =============================

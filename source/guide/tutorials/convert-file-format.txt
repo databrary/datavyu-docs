@@ -1,14 +1,8 @@
-.. _convert-file-format:
-
 ====================
 Convert File Formats
 ====================
 
-Datavyu currently supports video through QT
-and VLC. 
-
-.. TODO: I'm not sure that this is actually what the convert video
-   tool does.
+Datavyu currently supports video through QT and VLC.
 
 If your data source is not directly supported by Datavyu, you
 may be able to convert it to a readable format using Datavyu's Convert
