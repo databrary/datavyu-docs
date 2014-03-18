@@ -1,5 +1,3 @@
-.. _api-check-for-typos:
-
 =======================
 Check for Coding Errors
 =======================

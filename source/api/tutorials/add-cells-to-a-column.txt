@@ -1,5 +1,3 @@
-.. _api-add-cells:
-
 =====================
 Add Cells to a Column
 =====================

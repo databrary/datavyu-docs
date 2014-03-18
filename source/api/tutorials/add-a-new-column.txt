@@ -1,5 +1,3 @@
-.. _api-add-new-variable:
-
 ================
 Add a New Column
 ================

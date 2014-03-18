@@ -1,7 +1,3 @@
-.. _api-add-arguments:
-.. _api-add-code:
-.. _api-add-codes:
-
 =====================
 Add Codes to a Column
 =====================

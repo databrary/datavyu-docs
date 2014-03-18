@@ -1,5 +1,3 @@
-.. _macshapa-to-datavyu:
-
 =========================================
 Convert MacSHAPA Files to Work in Datavyu
 =========================================

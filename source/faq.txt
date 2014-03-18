@@ -16,8 +16,8 @@ Can I use Datavyu to analyze data?
 
 Datavyu is a data collection tool, not a statistical analysis tool. You
 can export data from Datavyu in a variety of forms depending on your
-analysis needs. See the :ref:`basic export <guide-export-data>` and
-:ref:`scripting export <api-export-data>` tutorials for more information.
+analysis needs. See the :ref:`basic export <guide/tutorials/export-data>` and
+:ref:`scripting export <api/tutorials/export-data-using-scripts>` tutorials for more information.
 
 In the future, Datavyu will include support for scripting using R.
 
@@ -63,7 +63,7 @@ In the future, Datavyu will also provide a Linux version.
 Do I need any additional software to run Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Datavyu requires Java, and either Quicktime or VLC. See:
+Datavyu requires Java, and either Quicktime or VLC. See
 :ref:`datavyu-requirements` for more details.
 
 What hardware do I need to code data sources in Datavyu?
@@ -80,7 +80,7 @@ Do I need to be connected to the internet when using Datavyu?
 
 No! Datavyu runs entirely on your computer. If you are connected to the
 internet, however, Datavyu will check to see if there is a new version
-of Datavyu that you can download. See: :ref:`update-datavyu` for more
+of Datavyu that you can download. See :ref:`update-datavyu` for more
 information.
 
 Support
@@ -160,7 +160,7 @@ What can I use scripts for?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can write scripts to import, manipulate, and export data. The
-:ref:`API tutorials <api-tutorials>` describe common tasks you can write
+:ref:`API tutorials <api/tutorials>` describe common tasks you can write
 scripts to accomplish.
 
 MacSHAPA and OpenSHAPA

@@ -1,5 +1,3 @@
-.. _api-batch:
-
 ==================================
 Batch Operations on Multiple Files
 ==================================
