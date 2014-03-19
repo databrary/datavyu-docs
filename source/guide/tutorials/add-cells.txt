@@ -8,7 +8,7 @@ that you are coding in that pass.
 
 This tutorial assumes that you have already configured your spreadsheet
 to include a column. If you have not already created a column in
-your spreadsheet, start with the :ref:`guide-add-a-column` tutorial.
+your spreadsheet, start with the :doc:`/guide/add-a-column` tutorial.
 
 There are three ways to add cells to a Datavyu spreadsheet: using the
 spreadsheet menu, using :guilabel:`Click to Create New Cell` in the body 
@@ -29,14 +29,14 @@ Add cells Using the Spreadsheet Menu
 
 Using the spreadsheet menu to add cells to an existing variable (column) is simple:
 
-#. Click on the :guidelabel:`Spreadsheet` tab and select :guidelabel:`New Cell`. A new cell
+#. Click on the :guilabel:`Spreadsheet` tab and select :guilabel:`New Cell`. A new cell
    appears with the current play head time as its osnet, and placeholders for any codes configured
    for the column. 
    
 #. Set the cell offset using the Controller.
 
-You can also add cells to neighboaring columns by selecting :guidelabel:`New Cell to Left` 
-or :guidelabel:`New Cell to Right`.
+You can also add cells to neighboaring columns by selecting :guilabel:`New Cell to Left` 
+or :guilabel:`New Cell to Right`.
 
 
 Add Cells Directly in the Body of the Spreadsheet
