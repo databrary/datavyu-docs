@@ -8,7 +8,7 @@ that you are coding in that pass.
 
 This tutorial assumes that you have already configured your spreadsheet
 to include a column. If you have not already created a column in
-your spreadsheet, start with the :doc:`/guide/add-a-column` tutorial.
+your spreadsheet, start with the :doc:`/guide/tutorials/add-a-column` tutorial.
 
 There are three ways to add cells to a Datavyu spreadsheet: using the
 spreadsheet menu, using :guilabel:`Click to Create New Cell` in the body 
