@@ -16,8 +16,8 @@ Can I use Datavyu to analyze data?
 
 Datavyu is a data collection tool, not a statistical analysis tool. You
 can export data from Datavyu in a variety of forms depending on your
-analysis needs. See the :ref:`basic export <guide/tutorials/export-data>` and
-:ref:`scripting export <api/tutorials/export-data-using-scripts>` tutorials for more information.
+analysis needs. See the :doc:`/guide/tutorials/export-data` and
+:doc:`/api/tutorials/export-data-using-scripts` tutorials for more information.
 
 In the future, Datavyu will include support for scripting using R.
 
@@ -158,8 +158,8 @@ be feasible.
 What can I use scripts for?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can write scripts to import, manipulate, and export data. The
-:ref:`API tutorials <http://www.datavyu.org/user-guide/api/tutorials.html>` describe common tasks you can write
+You can write scripts to import, manipulate, and export data. The :doc:`/api/tutorials`
+describe common tasks you can write
 scripts to accomplish.
 
 MacSHAPA and OpenSHAPA
@@ -169,7 +169,7 @@ I have existing MacSHAPA files - can I convert my them to Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yes! You can import a MacSHAPA file into Datavyu through a simple
-script. See: :ref:`<http://www.datavyu.org/user-guide/api/tutorials/convert-macshapa-to-datavyu.html>` for details.
+script. See :doc:`/api/tutorials/convert-macshapa-to-datavyu` for details.
 
 I have existing OpenSHAPA files - can I convert them to Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -190,4 +190,4 @@ Yes! You can easily convert an OpenSHAPA script to work in Datavyu
 by adding ``require 'Datavyu_API.rb'`` to the top of your OpenSHAPA
 script file and removing the OpenSHAPA API code that precedes the
 script. For more information see the
-:ref:`<http://www.datavyu.org/user-guide/api/tutorials/convert-openshapa-script-to-datavyu.html>` tutorial.
+:doc:`/api/tutorials/cpmvert-openshapa-script-to-datavyu` tutorial.
