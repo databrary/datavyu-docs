@@ -89,8 +89,8 @@ Support
 I've never coded video data before. How should I start?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The :doc:`best practices guide </best-practices>` is an excellent
-resource to help you start coding behavioral data from video.
+We are writing a Best Practices Guide to provide detailed tips and 
+advice to help you start coding behavioral data from video.
 
 Where can I learn to use Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -102,9 +102,8 @@ tutorials to guide you through common tasks.
 I'm not sure how to best code my data? Are there guidelines for coding?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The :doc:`best practices guide </best-practices>` provides
+The Best Practices Gudie will provide
 in-depth instructions and suggestions for coding your behavioral data.
-In particular, check out :ref:`coding-manual` and :ref:`first-steps`.
 
 How do I update Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -160,7 +159,7 @@ What can I use scripts for?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can write scripts to import, manipulate, and export data. The
-:ref:`API tutorials <api/tutorials>` describe common tasks you can write
+:ref:`API tutorials <http://www.datavyu.org/user-guide/api/tutorials.html>` describe common tasks you can write
 scripts to accomplish.
 
 MacSHAPA and OpenSHAPA
@@ -170,7 +169,7 @@ I have existing MacSHAPA files - can I convert my them to Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yes! You can import a MacSHAPA file into Datavyu through a simple
-script. See: :ref:`macshapa-to-datavyu` for details.
+script. See: :ref:`<http://www.datavyu.org/user-guide/api/tutorials/convert-macshapa-to-datavyu.html>` for details.
 
 I have existing OpenSHAPA files - can I convert them to Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -191,4 +190,4 @@ Yes! You can easily convert an OpenSHAPA script to work in Datavyu
 by adding ``require 'Datavyu_API.rb'`` to the top of your OpenSHAPA
 script file and removing the OpenSHAPA API code that precedes the
 script. For more information see the
-:ref:`api-convert-openshapa-to-datavyu` tutorial.
+:ref:`<http://www.datavyu.org/user-guide/api/tutorials/convert-openshapa-script-to-datavyu.html>` tutorial.
