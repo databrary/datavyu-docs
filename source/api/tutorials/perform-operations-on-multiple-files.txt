@@ -12,12 +12,10 @@ working with multiple Datavyu Spreadsheet files.
 This tutorial loads the spreadsheet files in a folder called
 ``datafiles`` that is located on the Desktop, accesses the "id",
 "trial" and "foot" columns, and then sets up a loop to export the
-data, following the process in :ref:`the API export tutorial
-<api-export-data>`.
+data, following the process in :doc:`/api/tutorials/export-data-using-scripts'.
 
 #. Create the output data file that you will be exporting the
-   spreadsheet data to (see :ref:`api-export-data` for an in-depth
-   explanation):
+   spreadsheet data to:
 
    .. code-block:: ruby
 
@@ -83,7 +81,7 @@ data, following the process in :ref:`the API export tutorial
 
 #. Set up a series of ``for`` loops  to iterate over
    each cell in the relevant columns, and then use an ``if`` to export
-   nested cells, following the steps in :ref:`api-export-data`:
+   nested cells, following the steps in :doc:`/api/tutorials/export-data-using-scripts`.
 
    .. code-block:: ruby
 
