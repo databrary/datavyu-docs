@@ -193,8 +193,8 @@ Add Data
 Datavyu currently supports video through QT and VLC.
 There are plans to develop plugins to support other data sources, such
 as audio, physiology, motion, and eye tracking data. To convert video file types, see:
-:ref:`convert-data-source-type`. If you are going to be working with
-multiple data sources see: :ref:`add-multiple-sources`.
+:doc:`/guide/tutorials/convert-file-format`. If you are going to be working with
+multiple data sources see: :doc:`/guide/tutorials/code-multiple-data-sources`.
 
 Providing you have adequate processing power and a
 sufficiently strong graphics card, you should be able to work with
