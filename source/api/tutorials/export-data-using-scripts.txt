@@ -34,7 +34,7 @@ common approaches, in order of increasing complexity:
   nested dump, but which also works if your cells do not nest.
 
 If you wish to export data from multiple files, refer to the 
-:doc:`/api/tutorials/export-data-using-scripts` tutorial for guidance on operations 
+:doc:`/api/tutorials/perform-perform-operations-on-multiple-files` tutorial for guidance on operations 
 that involve multiple files.
 
 .. Method 1: Direct Dump to CSV
