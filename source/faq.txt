@@ -14,7 +14,7 @@ behavioral data from video.
 Can I use Datavyu to analyze data?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Datavyu is a data collection tool, not a statistical analysis tool. You
+Datavyu is a data coding tool, not a statistical analysis tool. You
 can export data from Datavyu in a variety of forms depending on your
 analysis needs. See the :doc:`/guide/tutorials/export-data` and
 :doc:`/api/tutorials/export-data-using-scripts` tutorials for more information.
@@ -102,7 +102,7 @@ tutorials to guide you through common tasks.
 I'm not sure how to best code my data? Are there guidelines for coding?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Best Practices Gudie will provide
+The Best Practices Guide will provide
 in-depth instructions and suggestions for coding your behavioral data.
 
 How do I update Datavyu?
