@@ -190,4 +190,4 @@ Yes! You can easily convert an OpenSHAPA script to work in Datavyu
 by adding ``require 'Datavyu_API.rb'`` to the top of your OpenSHAPA
 script file and removing the OpenSHAPA API code that precedes the
 script. For more information see the
-:doc:`/api/tutorials/cpmvert-openshapa-script-to-datavyu` tutorial.
+:doc:`/api/tutorials/convert-openshapa-script-to-datavyu` tutorial.
