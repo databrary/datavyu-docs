@@ -1,7 +1,7 @@
 .. _api-reliability:
 
 ===============================================
-Use Reliability Coding to Improve Data Accuracy
+Check Inter-rater Reliability to Improve Data Accuracy
 ===============================================
 
 .. default-domain:: rb

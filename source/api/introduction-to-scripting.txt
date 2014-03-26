@@ -54,16 +54,15 @@ editing Ruby scripts:
 .. tip:: 
    
    Most text editors determine what kind of syntax highlighting to use
-   based on the file extension. If the Ruby script file does not have
-   the ``.rb`` extension, you might not see proper syntax
-   highlighting, so ensure that your Ruby script files end in ``.rb``.
+   based on the file extension. Please ensure that your Ruby script files
+   end with the ".rb" extension so you see syntax highlighting.
 
 General Principles
 ------------------
 
-Each cell that you create with the Datavyu API has three required
+Each cell that you create with the Datavyu API has three inherent
 :term:`codes <code>`: ``onset``, ``offset``, and ``ordinal``. Each
-cell also takes at least one user-specified code.
+cell also has at least one user-specified code.
 
 ``onset``, ``offset``, and ``ordinal`` are all :term:`Integers
 <integer>`, while the user-specified codes are :term:`Strings
@@ -73,9 +72,10 @@ cell also takes at least one user-specified code.
 beginning of the video**, starting from 0.  For
 instance, an ``onset`` time of 00:02:20 translates to 140000ms.
 
-Since codes are strings, you must convert any codes that you wish to
-perform calculations on to integers. This is easily done with Ruby
-using the `to_i <http://ruby-doc.org/core-2.0.0/String.html#method-i-to_i>`_ method.
+Since user-specified codes are strings, you must convert any codes that you wish to
+perform calculations on to a numeric type. This is easily done with Ruby
+using the `to_i <http://ruby-doc.org/core-2.0.0/String.html#method-i-to_i>`_ method for integers, 
+or the `to_f <http://ruby-doc.org/core-2.0.0/String.html#method-i-to_f>`_ method for floating point numbers.
 
 .. admonition:: Example 
 
@@ -121,13 +121,13 @@ Basic Script Format
 .. tip::
 
    Scripts are very sensitive! When programming, every quotation mark,
-   underscore, period, and slash serve a purpose - you must
+   underscore, period, and slash serve a purpose. You must
    use the correct syntax, or the script will not work. 
    
-   Code and column-names are also case sensitive: if you have a column
+   Code and column names are also case sensitive If you have a column
    in a spreadsheet called "trial", requesting "Trial" will not work.
 
-In order to work, all Datavyu API scripts must include the following
+All Datavyu API scripts must include the following
 line at the top:
 
 .. code-block:: ruby
@@ -154,10 +154,10 @@ In general, the rest of the script code goes between ``begin`` and
 .. tip::
 
    Anything that comes after a ``#`` character on a line in Ruby is a
-   "comment", which means it will not execute. Comments are useful for
-   explaining what the code is doing so that you remember when you look
-   at the script 6 months from now. The examples in this documentation
+   "comment", which means it will not execute any specific task. Comments are useful for
+   leaving notes that explain what the code is doing so that when you return to an old script,
+   you remember what you're looking at. The examples in this documentation
    use comments extensively.
 
-Now that you are well grounded in the Datavyu Ruby API mechanics,
+Now that you are grounded in the Datavyu Ruby API mechanics,
 consider the :doc:`/api/tutorials` or :doc:`/api/reference`.

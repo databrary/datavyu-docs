@@ -1,4 +1,4 @@
-.. _guide-export-data:
+.. export-data:
 
 ========================
 Export Data from Datavyu
@@ -6,18 +6,16 @@ Export Data from Datavyu
 
 Datavyu provides an integrated export tool for exporting Datavyu data.
 To export your data, select the :guilabel:`File` menu, and then
-select :guilabel:`Export File…`. This outputs data to a CSV file that
+select :guilabel:`Export File`. This outputs data to a CSV file that
 has one column for every code in the spreadsheet: :term:`ordinal`,
 :term:`onset`, and :term:`offset`, as well as user-configured codes.
 
 .. TODO: put an image of the sample output, alongside its download
 
-If this format does not work for the analyses you need to perform, you
-can use a script to export the data in your desired format. Datavyu
-supports Ruby and R scripting, which enable you to create a customized
-data export to suit your needs.
+If this format does not work for the analyses you need to perform, Datavyu supports 
+Ruby scripting, which you can use to create a script that exports the data in your desired format. 
 
-For a detailed guide to export dating using Ruby scripts, see:
+For a detailed guide to exporting data using Ruby scripts, see:
 :doc:`/api/tutorials/export-data-using-scripts` in the Datavyu Ruby API
 documentation.
 

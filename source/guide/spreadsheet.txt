@@ -31,15 +31,15 @@ point in time in the data source.
    :alt: Image of a Datavyu spreadsheet with 6 columns, and annotations labeling a column, cell, and codes within a cell
    :align: center
    
-   A typical Datavyu spreadsheet with six columns. Note the
+   A typical Datavyu spreadsheet with an example of six columns. Note the
    :guilabel:`plus` icon in the top right, which you use to add new
    :term:`columns <column>`.
 
 Datavyu automatically links the times coded in the spreadsheet to the
 current time in the data source. This allows coders to record
-the :term:`onset` and :term:`offset` times of events into
-the spreadsheet. Coders can also jump to the relevant time in the data source by
-selecting a cell in the spreadsheet.
+the :term:`onset` and :term:`offset` times of events in
+the spreadsheet. Coders can also jump to a relevant time in the data source by
+selecting a specific cell in the spreadsheet and pressing find (+in the keyboard).
 
 .. _columns:
 .. _column-types:
@@ -49,9 +49,8 @@ Columns
 -------
 
 Datavyu uses columns to group together related observations. In
-general, coders will code the data source column-by-column 
-Each column that a user adds occupies its own column in the
-spreadsheet.
+general, coders will code the data source column-by-column meaning 
+that they code one entire column before coding a new column.
 
 Using the :ref:`Code Editor <vocab-editor>`, you can configure
 columns to represent any number of observations.
@@ -59,29 +58,35 @@ columns to represent any number of observations.
 .. TODO: image with new columns showing multiple codes per cell
 
 Columns have :term:`codes <code>`, which represent the
-feature that you are studying. For instance, a code could be "Left
-hand touch", or "Hesitation", or "Focus". When a coder codes the data
-source, he or she might record the presence or absence of these
-codes. A column must have *at least* one code, but may
-have as many as desired. See: the :doc:`column configuration
+feature that you are observing. For instance, a code could be "Left
+hand touch", or "Smiling", or "Look left." When coding the data
+source, coders can record the presence or absence of these
+codes and/or potential values within them. Columns can have as many or as few codes as you want.
+If you want to score durations without scoring codes, you can leave the default code
+as is and ignore the <code01> prompt.
+
+
+Also note that column names are limited to the letters of the aphabet, numbers and hte underscore symbol
+(and numbers and underscores cannot be the first character of the name) to eliminate potential
+confusion in scripting and SPSS analyses. The :doc:`column configuration
 </guide/tutorials/configure-datavyu-codes>` tutorial provides
-instructions for configuring matrix columns.
+instructions for configuring columns.
 
 .. _hide-show-columns:
 
 Hide and Show Columns
 ~~~~~~~~~~~~~~~~~~~~~
 
-To hide a column, select the column by clicking on its name. The
-selected column will have a blue background. You can select multiple
-columns by ``Cmd`` -clicking (on Mac) or ``Ctrl`` -clicking (on
-Windows). Then, in the :guilabel:`Spreadsheet` menu, select
-:guilabel:`Hide Selected Columns`.
+To hide a column, select the column by clicking on its name at the top of
+the spreadsheet. Theselected column will have a blue background. 
+You can select multiple columns by ``Cmd`` -clicking (on Mac) or
+``Ctrl`` -clicking (on Windows). Then, in the
+:guilabel:`Spreadsheet` menu, select :guilabel:`Hide Selected Columns`.
 
 You can also control each column's visibility from the
 :guilabel:`Column List`, which you access from the
-:guilabel:`Spreadsheet` menu. The :guilabel:`Column List` lists all
-the columns in a spreadsheet, and includes a check box which you can
+:guilabel:`Spreadsheet` menu. The :guilabel:`Column List` shows all of
+the columns in the current spreadsheet, and includes a checkbox, which you can
 use to toggle its visibility.
 
 If you wish to show all columns you can do so with the :guilabel:`Show
@@ -92,8 +97,8 @@ All Columns` menu option from the :guilabel:`Spreadsheet` menu.
 Rearrange Columns
 ~~~~~~~~~~~~~~~~~
 
-To rearrange columns within the Spreadsheet, simply click the column's
-name and drag it to the desired location.
+To rearrange the order of columns within the spreadsheet, simply click the column's
+name and drag it left or right to the desired location.
 
 .. _cells:
 .. _cell-explanation:
@@ -101,26 +106,28 @@ name and drag it to the desired location.
 Cells
 -----
 
-Cells are at the core of Datavyu: each cell represents an observation
-recorded by the coder. 
+Each cell represents an observation
+scored by the coder. 
 
-Datavyu requires that each cell have three codes, in addition to any
-user-specified codes:
+Minimaly, Datavyu displays three values for each cell, but you can ignore
+one or all of these values and Datavyu will display the default.
 
-- :term:`onset`: the onset is the time in the video that the
-  observation begins. Since cells represent observations during a
-  period of time, they must have a starting point.
+- :term:`onset`: the time value displayed on the top left of the cell. 
+  If you don’t code this value, the cell will display the default value of 0:00:00:000. 
+  You can code a time value to mark the beginning of an event or to 
+  tag the approximate time of an event. 
 
-- :term:`offset`: the offset is the time in the video that the
-  observation ends. Since cells represent observations during a period
-  of time, they must have an end point.
+- :term:`offset`:the time value displayed on the top right of the cell. 
+  If you don’t code this value, the cell will display the default value 
+  of 0:00:00:000. You can code a time value to mark the end of an event 
+  or to tag the approximate time of an event. 
 
 - :term:`ordinal`: the cell ordinal indicates the position of the cell
-  within the column. The first cell (the one with the earliest onset)
+  within the column. The first cell (the one with the earliest onset or 
+  the first cell you code if you do not mark onsets)
   would be number 1, the second number 2, and so on. Ordinals are
-  automatically coded and updated as you code your data source: you
-  will never need to set the ordinal. Cell ordinals are useful for
-  scripting and analysis.
+  automatically coded and updated as you code your data source. You
+  will never need to set the ordinal. 
 
 The following image labels each component within a Datavyu cell.
 
@@ -131,16 +138,17 @@ The following image labels each component within a Datavyu cell.
 Spreadsheet Customization
 -------------------------
 
-Datavyu allows you to modify the spreadsheet to better suit your needs
+Datavyu allows you to modify the spreadsheet
 by including options that you can activate or deactivate, depending on
-your interests.
+your needs.
 
 Zoom
 ~~~~
 
 By default, the Datavyu spreadsheet uses one font size for the
 user-input codes in cells. You can increase this font size by choosing
-:guilabel:`Zoom` from the :guilabel:`Spreadsheet` menu.
+:guilabel:`Zoom` from the :guilabel:`Spreadsheet` menu. However, the font
+size for the onset and offset times do not change.
 
 You can also modify zoom using keyboard shortcuts:
 
@@ -154,11 +162,11 @@ You can also modify zoom using keyboard shortcuts:
 Temporal Alignment
 ~~~~~~~~~~~~~~~~~~
 
-Temporal alignment is an important concept in Datavyu. When temporal
+Temporal alignment is an important feature of Datavyu. When temporal
 alignment is active, Datavyu groups cells based on their onsets and
 offsets, visually representing the period of time each cell occupies.
 This Temporal Alignment video
-highlights the differences active and inactive temporal alignment:
+highlights the differences between active and inactive temporal alignment:
 
 .. raw:: html
 
@@ -168,22 +176,23 @@ highlights the differences active and inactive temporal alignment:
    </video>
 
 Temporal alignment allows you to visualize what occurred at what time,
-and to compare event sequence between columns. When coding, you should
+and to compare event sequences across columns. When coding, you should
 ensure that temporal alignment is active.
 
 .. figure:: /img/temporal-alignment-comparison.png
    :alt: comparison of two identical spreadsheets, one of which has temporal alignment active, and the other with temporal alignment disabled
    :align: center
 
-   At left: a spreadsheet with temporal alignment enabled; at right:
+   At left is a spreadsheet with temporal alignment enabled; at right is
    the same spreadsheet with temporal alignment disabled. Note that the
-   cells contain the same information, it is just their presentation
-   that changes. Note also that enabling temporal alignment makes it
-   easier to understand the sequence of events between different columns.
+   cells contain the same information, it is only their presentation
+   changes. Note also that enabling temporal alignment makes it
+   easier to code and alllows you to visualize the relative length of events 
+   and their relations across columns.
 
 Toggle Temporal Alignment
 `````````````````````````
 
-You can toggle temporal alignment using the ``cmd T`` / ``alt T``
-keyboard shortcut, or by selecting :guilabel:`Weak Temporal Alignment`
+You can toggle temporal alignment using the ``cmd T``
+keyboard shortcut, or by selecting :guilabel:`Temporal Alignment`
 from the :guilabel:`Spreadsheet` menu.

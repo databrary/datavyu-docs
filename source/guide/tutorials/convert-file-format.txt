@@ -1,26 +1,23 @@
-.. _convert-data-source-format:
-.. _convert-data-source-type:
+.. _convert-file-format:
 
 ====================
 Convert File Formats
 ====================
 
-Datavyu is designed to work with video, audio, physiology, motion, or
-eye tracking data. Datavyu currently supports video through QT
-and VLC. There are plans to develop plugins to support other
-data sources.
+Datavyu currently supports video through QT
+and VLC. 
 
 .. TODO: I'm not sure that this is actually what the convert video
    tool does.
 
-If your data source is of a type that Datavyu cannot play directly, you
+If your data source is not directly supported by Datavyu, you
 may be able to convert it to a readable format using Datavyu's Convert
 Videos tool.
 
 #. From the Spreadsheet, select the :guilabel:`Controller` menu,
    and then choose :guilabel:`Convert Videos`.
 
-#. Select a source video. This will be the video you are converting,
+#. Select a source video. This will be the video you are converting.
 
 #. Select a target video. This is the video that Datavyu will output
    or convert your source video into.
@@ -28,5 +25,5 @@ Videos tool.
 #. Select :guilabel:`Convert Video`, and your video will be converted.
 
 For help with
-data source conversion or other import issues, see: `Datavyu's Support
+data source conversion or other import issues, see `Datavyu's Support
 site <http://datavyu.org/support/>`_.

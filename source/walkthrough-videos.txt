@@ -28,7 +28,7 @@ Watch an Expert User Code
    </video>
 
 --------------------------------------------------------
-Introduction to the Data Viewer Controller's Tracks Area
+Introduction to the Controller's Tracks Area
 --------------------------------------------------------
 
 .. raw:: html

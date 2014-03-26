@@ -5,54 +5,48 @@ Introduction to APIs
 .. default-domain:: rb
 
 APIs, Application Program Interfaces, are collections of code that
-specify how software components communicate with each other. APIs are
-incredibly prevalent tools: when you log into a website using your
-Facebook or Google credentials, a web API helps that website
-communicate with Facebook or Google's servers. Similarly, when you
-use a piece of Windows software, its programmers likely used the
-Windows API to communicate with Windows itself and access drivers,
-printers, and the user interface.
+allow software components to communicate with each other. 
 
-The Datavyu API works somewhat differently: instead of helping two
-applications communicate, it helps users to perform tasks
-programmatically, altering their Datavyu spreadsheets
-using :term:`scripts <script>`.
+The Datavyu API lets users write :term:`scripts <script>` in a Ruby programming
+interface that can modify the contents of Datavyu spreadsheets.
 
-Suppose you had a ten minute video data source. Perhaps it showed a
-series of one-minute  repeated trials with a single participant.
-The first trial, then, would start at 00:00:00, the second
-at 00:01:00, and so on, up to the 10th trial at 00:09:00. You might
-want to create a "trial" column, where you would code each trial's
-metadata, with its :term:`onset` at the minute mark, and its offset
-just prior. Manually creating ten (largely blank) cells would be
-time-consuming, and not a particularly good use of a researcher's
-time. If you had fifty participants, and therefore fifty similar
-videos, it would be an even worse use of the researcher's time.
+Suppose you have a data set that contains fifty Datavyu files and videos. 
+After you analyze your data, you realize that you want to go back and code 
+a new pass for all of your files. Instead of manually creating a new column 
+in all fifty Datavyu files, you can write a script that will do it for you! 
+The script can include any and all desired codes within the column, save time, 
+and reduce the potential risk of error. 
 
-Computers are ideally suited for doing repetitive tasks quickly. The
-Datavyu API can enable a researcher to perform these kinds of tasks
-programmatically, so that creating sixty cells and setting their
-onsets becomes a matter of writing a few lines of code and running the
-script.
+Or suppose you want to change the name of a code. You can use a script to make 
+the changes across all the relevant files. 
 
-The Datavyu API provides ways to check a coder's work, create columns,
-export data, and update columns, cells, and codes, to name a few.
+Or perhaps you’d like a reliability coder to score 25% of each participant’s video. 
+You can use a script to create a “reliability column” and insert every fourth cell 
+(or a randomly selected 25% or any other metric) into that column.
+
+Or maybe you want to check each file for typos or impossible onset/offset times. 
+Use a script for data checking!
+
+Computers are ideally suited for doing repetitive tasks quickly and conistently. The
+Datavyu API enables a researcher to perform these kinds of tasks
+programmatically, so that doing a repetitive task becomes a matter 
+of writing a few lines of computer code and running the script.
+
 Writing scripts with the API is straightforward and accessible to even
 a novice programmer. The ability to use scripts to automate tasks greatly
-increases the ways that Datavyu can facilitate data collection and
-analysis, and is well worth traversing the initial learning curve.
+increases the ways that Datavyu can facilitate data coding and
+analysis, and is well worth overcoming the initial learning curve.
 
 Ruby and You
 ------------
 
-Ruby is a programming language that has become particularly popular over
-the last decade. For a
+For a
 good introduction to Ruby, consider going through the 
 `Ruby in Twenty Minutes <https://www.ruby-lang.org/en/documentation/quickstart/>`_
 tutorial, which provides a quick overview to working in Ruby.
 
-You do not need to be an experienced programmer – or even to really
-understand the ins and outs of Ruby – to be able to write scripts with
+You do not need to be an experienced programmer or even 
+understand the ins and outs of Ruby to be able to write scripts with
 the Datavyu API. Following the :doc:`API tutorials </api/tutorials>`
 is a good way to become familiar with scripting for Datavyu. With some
 practice, and you will likely be able to customize the sample scripts

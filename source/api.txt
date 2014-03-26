@@ -3,7 +3,7 @@ Ruby API
 ========
 
 The Datavyu scripting API provides a scriptable interface to Datavyu's
-spreadsheet, allowing you to manipulate your data, print in any format
+spreadsheet, allowing you to manipulate your data, export in any format
 you'd like, or check your data for errors.
 
 .. image:: /img/script-and-datavyu-api-landing.png
@@ -17,8 +17,7 @@ Getting Started with APIs and Scripting
 
 APIs, Application Program Interfaces, are collections of code that
 specify how software components communicate with each other. Datavyu's
-API is in the Ruby programming language, an object-oriented language
-that has become incredibly popular over the last decade. Ruby is
+API uses Ruby programming language, a popular object-oriented language. Ruby is
 reasonably easy to learn, and novice programmers can start writing
 scripts with minimal programming knowledge.
 
