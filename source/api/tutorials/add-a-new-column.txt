@@ -1,5 +1,3 @@
-.. _api-add-new-variable:
-
 ================
 Add a New Column
 ================
@@ -8,8 +6,8 @@ Add a New Column
 
 .. begin-content
 
-Much like adding :ref:`a cell <api-add-cells>` or :ref:`a code
-<api-add-codes>`, the Datavyu API allows you to create a completely
+Much like adding :doc:`/api/tutorials/add-cells-to-a-column` or :doc:`/api/tutorials/add-codes-to-a-column`, 
+the Datavyu API allows you to create a completely
 new column using the :meth:`createColumn()` method.
 :meth:`createColumn()` takes at least two parameters: the name of the
 new column must come first, while any subsequent parameters become the

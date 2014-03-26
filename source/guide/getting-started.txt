@@ -78,8 +78,8 @@ The :guilabel:`Datavyu spreadsheet` is where users record
    "MomObject", "BabyObject", "Notes", "BabyLocation", and
    "BabyObjectCount". Each column has numerous coded cells.
 
-By :ref:`configuring columns
-<configure-columns>`, coders can record observations and link them
+By :ref:`configuring columns <configure-columns>`, 
+coders can record observations and link them
 directly to timestamps in the data source. Each user-defined column is
 represented by a column in the spreadsheet, and observations within a column
 are sorted in chronological sequence. Looking horizontally across the spreadsheet
@@ -93,4 +93,5 @@ The :doc:`/guide/spreadsheet` document describes the
 .. toctree::
   :titlesonly:
 
+  /guide/controller
   /guide/spreadsheet

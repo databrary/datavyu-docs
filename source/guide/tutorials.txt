@@ -61,7 +61,7 @@ Convert file formats into an appropriate format for Datavyu.
    :maxdepth: 1
    
    /guide/tutorials/add-a-column
-   /guide/tutorials/rename-a-column
+   /guide/tutorials/rename-a-column.txt
    /guide/tutorials/delete-column
    /guide/tutorials/configure-datavyu-codes
    /guide/tutorials/add-cells

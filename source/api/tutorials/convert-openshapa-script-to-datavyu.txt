@@ -1,5 +1,3 @@
-.. _api-convert-openshapa-to-datavyu:
-
 =================================================
 Convert an OpenSHAPA Script to the Datavyu Format
 =================================================

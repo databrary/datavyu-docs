@@ -1,5 +1,3 @@
-.. _faq:
-
 ==========================
 Frequently Asked Questions
 ==========================
@@ -16,10 +14,10 @@ behavioral data from video.
 Can I use Datavyu to analyze data?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Datavyu is a data collection tool, not a statistical analysis tool. You
+Datavyu is a data coding tool, not a statistical analysis tool. You
 can export data from Datavyu in a variety of forms depending on your
-analysis needs. See the :ref:`basic export <guide-export-data>` and
-:ref:`scripting export <api-export-data>` tutorials for more information.
+analysis needs. See the :doc:`/guide/tutorials/export-data` and
+:doc:`/api/tutorials/export-data-using-scripts` tutorials for more information.
 
 In the future, Datavyu will include support for scripting using R.
 
@@ -65,7 +63,7 @@ In the future, Datavyu will also provide a Linux version.
 Do I need any additional software to run Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Datavyu requires Java, and either Quicktime or VLC. See:
+Datavyu requires Java, and either Quicktime or VLC. See
 :ref:`datavyu-requirements` for more details.
 
 What hardware do I need to code data sources in Datavyu?
@@ -82,7 +80,7 @@ Do I need to be connected to the internet when using Datavyu?
 
 No! Datavyu runs entirely on your computer. If you are connected to the
 internet, however, Datavyu will check to see if there is a new version
-of Datavyu that you can download. See: :ref:`update-datavyu` for more
+of Datavyu that you can download. See :ref:`update-datavyu` for more
 information.
 
 Support
@@ -91,8 +89,8 @@ Support
 I've never coded video data before. How should I start?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The :doc:`best practices guide </best-practices>` is an excellent
-resource to help you start coding behavioral data from video.
+We are writing a Best Practices Guide to provide detailed tips and 
+advice to help you start coding behavioral data from video.
 
 Where can I learn to use Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -104,9 +102,8 @@ tutorials to guide you through common tasks.
 I'm not sure how to best code my data? Are there guidelines for coding?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The :doc:`best practices guide </best-practices>` provides
+The Best Practices Guide will provide
 in-depth instructions and suggestions for coding your behavioral data.
-In particular, check out :ref:`coding-manual` and :ref:`first-steps`.
 
 How do I update Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -161,8 +158,8 @@ be feasible.
 What can I use scripts for?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can write scripts to import, manipulate, and export data. The
-:ref:`API tutorials <api-tutorials>` describe common tasks you can write
+You can write scripts to import, manipulate, and export data. The :doc:`/api/tutorials`
+describe common tasks you can write
 scripts to accomplish.
 
 MacSHAPA and OpenSHAPA
@@ -172,7 +169,7 @@ I have existing MacSHAPA files - can I convert my them to Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yes! You can import a MacSHAPA file into Datavyu through a simple
-script. See: :ref:`macshapa-to-datavyu` for details.
+script. See :doc:`/api/tutorials/convert-macshapa-to-datavyu` for details.
 
 I have existing OpenSHAPA files - can I convert them to Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -193,4 +190,4 @@ Yes! You can easily convert an OpenSHAPA script to work in Datavyu
 by adding ``require 'Datavyu_API.rb'`` to the top of your OpenSHAPA
 script file and removing the OpenSHAPA API code that precedes the
 script. For more information see the
-:ref:`api-convert-openshapa-to-datavyu` tutorial.
+:doc:`/api/tutorials/convert-openshapa-script-to-datavyu` tutorial.

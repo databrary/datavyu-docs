@@ -1,5 +1,3 @@
-.. _add-a-column:
-
 ============
 Add a Column
 ============

@@ -1,8 +1,3 @@
-.. Allison: headings are not the usual level because of include
-   for master tutorial - they should remain coded in this fashion
-
-.. _api-export-data:
-
 =======================================
 Use Scripts to Export Data from Datavyu
 =======================================
@@ -39,7 +34,7 @@ common approaches, in order of increasing complexity:
   nested dump, but which also works if your cells do not nest.
 
 If you wish to export data from multiple files, refer to the 
-:ref:`api-batch` tutorial for guidance on operations 
+:doc:`/api/tutorials/perform-perform-operations-on-multiple-files` tutorial for guidance on operations 
 that involve multiple files.
 
 .. Method 1: Direct Dump to CSV

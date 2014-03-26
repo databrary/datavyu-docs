@@ -1,5 +1,3 @@
-.. _rename-a-column:
-
 ===============
 Rename a Column
 ===============

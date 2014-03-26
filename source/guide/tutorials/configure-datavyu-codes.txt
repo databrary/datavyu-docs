@@ -1,5 +1,3 @@
-.. _configure-datavyu-codes:
-
 ===========================
 Configure Columns and Codes
 ===========================
