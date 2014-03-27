@@ -85,7 +85,7 @@ represented by a column in the spreadsheet, and observations within a column
 are sorted in chronological sequence. Looking horizontally across the spreadsheet
 columns shows what was happening at a given point in time in the data
 source. Looking vertically down a column shows the sequence in which
-the codes occurred.
+the observations occurred.
 
 The :doc:`/guide/spreadsheet` document describes the
 :guilabel:`spreadsheet` in more detail. 
