@@ -130,7 +130,7 @@ the :guilabel:`Help` menu from the menu bar when the spreadsheet window is selec
 and then selecting :guilabel:`Check for
 updates...`.  If a new version is available, it will direct you to the
 download page where you can download the latest release. Remember to replace your current
-application witht he latest version of Datavyu that you have just downloaded!
+application with the latest version of Datavyu that you have just downloaded!
 
 During the course of development, the Datavyu team releases several
 *pre-release* versions of the software prior to releasing official
