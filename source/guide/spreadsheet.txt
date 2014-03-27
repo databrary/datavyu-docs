@@ -5,7 +5,7 @@ Spreadsheet Overview
 
 The Datavyu Spreadsheet is where coders record :term:`observations
 <observation>`. The spreadsheet is the core of Datavyu. By
-:ref:`configuring columns <configure-columns>`, coders can record
+:doc:`/guide/tutorials/configure-datavyu-codes`, coders can record
 observations and link them directly to timestamps in the data source.
 
 For a brief introduction to some of the spreadsheet's components and
@@ -52,7 +52,7 @@ Datavyu uses columns to group together related observations. In
 general, coders will code the data source column-by-column meaning 
 that they code one entire column before coding a new column.
 
-Using the :ref:`Code Editor <vocab-editor>`, you can configure
+Using the Code Editor, you can configure
 columns to represent any number of observations.
 
 .. TODO: image with new columns showing multiple codes per cell
