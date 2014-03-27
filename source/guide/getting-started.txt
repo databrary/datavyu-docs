@@ -78,7 +78,7 @@ The :guilabel:`Datavyu spreadsheet` is where users record
    "MomObject", "BabyObject", "Notes", "BabyLocation", and
    "BabyObjectCount". Each column has numerous coded cells.
 
-By :ref:`configuring columns <configure-columns>`, 
+By :doc:`/guide/tutorials/configure-datavyu-codes`, 
 coders can record observations and link them
 directly to timestamps in the data source. Each user-defined column is
 represented by a column in the spreadsheet, and observations within a column
