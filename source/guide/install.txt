@@ -52,7 +52,7 @@ Datavyu supports video playback through Quicktime.
 
 You may alternately
 choose to use VLC for video playback, though this is not recommended. If
-you wish to use VLC, you *must* use `version 2.0.1 <http://download.videolan.org/pub/videolan/vlc/2.0.1/macosx/vlc-2.0.1.dmg>`_,
+you wish to use VLC, you *must* use version 2.0.1 `(OSX Download)<http://download.videolan.org/pub/videolan/vlc/2.0.1/macosx/vlc-2.0.1.dmg>`_, `(Windows Download)<http://download.videolan.org/pub/videolan/vlc/2.0.1/win32/vlc-2.0.1-win32.zip>`_,
 as Datavyu does not currently support later versions.
 
 
