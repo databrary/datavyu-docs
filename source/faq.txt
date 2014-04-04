@@ -49,6 +49,11 @@ No! Datavyu is completely free and open source. If you would like to
 contribute to the development of Datavyu, see: `the source on GitHub
 <https://github.com/databrary/datavyu>`_.
 
+What is Datavyu's citation?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Datavyu Team (2014). Datavyu: A Video Coding Tool. Databrary Project, New York University. URL http://datavyu.org.
+
+
 Technical Requirements
 ----------------------
 
