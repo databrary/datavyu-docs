@@ -94,8 +94,8 @@ Windows
 .. figure:: /img/windows-unzip.png
    :align: center
 
-2. Unzip the program by opening the ``datavyu-1.0`` folder and
-   double-clicking on ``datavyu-1.0``. A "Compressed (zipped) Folders
+2. Unzip the program by opening the ``datavyu`` folder and
+   double-clicking on ``datavyu``. A "Compressed (zipped) Folders
    Warning" will appear. Select :guilabel:`Extract all` to decompress
    the files.
 
