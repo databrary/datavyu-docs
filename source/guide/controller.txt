@@ -29,8 +29,8 @@ Keypad
    :align: right
    :figwidth: 300px
 
-   The keys highlighted in pink are *playback controls*. The keys
-   highlighted in brown are *coding-controls*.
+   The keys highlighted in green are *playback controls*. The keys
+   highlighted in blue are *coding-controls*.
 
 The Controller's keypad maps directly to the number pad
 on your keyboard or external keypad and the on-screen representation
