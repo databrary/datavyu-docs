@@ -197,7 +197,7 @@ You can toggle temporal alignment using the ``cmd T``
 keyboard shortcut, or by selecting :guilabel:`Temporal Alignment`
 from the :guilabel:`Spreadsheet` menu.
 
-Keyboard Shortcus
+Keyboard Shortcuts
 `````````````````````````
 
 We have provided a simple list of the major shortcuts used in the Datavyu Spreadsheet. 
