@@ -6,7 +6,7 @@ Add Codes to a Column
 
 .. begin-content
 
-Adding codes to a column is among the most straightforward 
+Adding codes to a column is a straightforward 
 scriptable tasks. The Datavyu API provides the :meth:`add_code()` method
 for adding codes. 
 
