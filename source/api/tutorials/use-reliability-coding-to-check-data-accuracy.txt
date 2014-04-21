@@ -34,7 +34,7 @@ Make a Reliability Column
 In general, when creating reliability columns, you create
 blank cells that correspond to the cells created during the first coding
 pass. This ensures that the two coders will have observed the same
-events in the data stream, and allows you to compare the two coding
+events in the data stream, and allows easy comparison of the two coding
 passes.
 
 The Datavyu Ruby API provides the :meth:`makeReliability` method
@@ -83,8 +83,7 @@ trial numbers.
 
    You do **not** have to write the variable back to the spreadsheet.
    :meth:`makeReliability` automatically writes its results to 
-   the spreadsheet. This is the only method in the Datavyu Ruby API that
-   automatically writes back to the spreadsheet.
+   the spreadsheet.
 
 Check Reliability
 ~~~~~~~~~~~~~~~~~
@@ -106,7 +105,8 @@ optional one:
    ``match_arg`` is particularly important: for
    :meth:`checkReliability` to know which cells to compare, it needs
    to have some parameter that is unique to each pair of corresponding
-   primary and reliability cells. 
+   primary and reliability cells. In many cases, the onset time of the cell can
+   be used to match primary and reliability cases.
 
 
 #. Create an object that holds the path that it should output to using
