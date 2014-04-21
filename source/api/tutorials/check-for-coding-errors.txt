@@ -6,12 +6,11 @@ Check for Coding Errors
 
 .. begin-content
 
-One of the most powerful uses for Datavyu scripts is checking for coding
-errors. Since Datavyu does not enforce any rules during coding, it is
-possible for coders to input an invalid code. A good example is
-inputting an "h", when only "j" or "k" are acceptable values. Using
-scripts, coders can double-check their work for errors and note them
-early on.
+Datavyu scripts have the ability to check for coding errors to make up
+for potential human error. Inputting invalid codes is a common coding 
+mistake. For example, a coder might accidentally input an "h", when only 
+"j" or "k" are acceptable values. Using scripts, coders can double-check  
+their work for errors and note them early on.
 
 Datavyu API provides the :meth:`checkValidCodes` method to check for
 coder errors. :meth:`checkValidCodes` requires at least three
