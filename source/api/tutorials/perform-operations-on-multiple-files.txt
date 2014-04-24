@@ -14,7 +14,7 @@ data, change or add columsn), then open the next spreadsheet, execute commands, 
 This tutorial loads the spreadsheet files in a folder called
 ``datafiles`` that is located on the Desktop, accesses the "id",
 "trial" and "foot" columns, and then sets up a loop to export the
-data, following the process in :doc:`/api/tutorials/export-data-using-scripts'.
+data, following the process in :doc:`/api/tutorials/export-data-using-scripts`.
 
 #. Create the output data file that you will be exporting the
    spreadsheet data to:
