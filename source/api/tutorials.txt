@@ -63,9 +63,7 @@ the "trial" in the parentheses is the argument passed to
 
 Now that you're familiar with the sample data and know how to acquire
 data from Datavyu, you're ready to start scripting. The following
-tutorials will guide you through common tasks. If you would prefer, you
-can go through the full tutorial from start to finish in
-:doc:`/api/tutorial`.
+tutorials will guide you through common tasks. 
 
 .. _api-tutorials:
 
