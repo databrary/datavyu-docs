@@ -59,7 +59,7 @@ that involve multiple files.
 .. TODO: actually include the instructions
 
 Method : Frame-by-Frame Export
-````````````````````
+`````````````````````````````````
 A frame-by-frame export prints a row for every video frame in the spreadsheet 
 and looks across every column and code and writes the values for that frame. 
 This method is particularly useful for free-form coding projects that contain 
@@ -89,7 +89,7 @@ folder under the “Favorites” folder.
 
 
 Method : Nested Export
-````````````````````
+````````````````````````
 .. image:: /img/sample-nested-data.png
    :align: right
 
