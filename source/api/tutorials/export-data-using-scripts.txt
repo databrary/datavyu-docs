@@ -74,8 +74,7 @@ Datavyu. Once the spreadsheet has loaded, select the Script menu and then select
 to your desktop called “framebyframe_export.csv” that contains all of the data from 
 the spreadsheet that can be opened in the statistical package of your choice. 
 
-.. figure:: /img/base-screenshot-MomBaby.png
-   :alt: Image of a filled-out Datavyu spreadsheet
+.. figure:: /img/frame-by-frame.png
    :align: center
 
 If you would like to export multiple files frame-by-frame, there is a script included 
