@@ -109,7 +109,7 @@ Coding Controls
 - :guilabel:`find` (``+``): moves the playhead to the onset time of
   the current cell, which is shown in the box to the right of the
   :guilabel:`find` button. Selecting a different cell will update this
-   time.
+  time.
 
 
 - :guilabel:`go back` (``-``): moves the playhead back by the amount
@@ -220,7 +220,7 @@ To add a data source:
    <playback-controls>` through videos, so it is important that you set the correct
    frame rate.
  
- #. If Datavyu cannot read your video's frame rate or if it reads the wrong frame rate. You 
+#. If Datavyu cannot read your video's frame rate or if it reads the wrong frame rate. You 
    can manually set the frame rate by double clicking on "Steps per second" and writing the correct
    frame rate. Please press "Enter" and Datavyu will use your new frame rate. 
 
