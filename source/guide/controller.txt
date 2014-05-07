@@ -219,6 +219,11 @@ To add a data source:
    Datavyu uses frame rate to accurately play and :ref:`jog
    <playback-controls>` through videos, so it is important that you set the correct
    frame rate.
+ 
+ #. If Datavyu cannot read your video's frame rate or if it reads the wrong frame rate. You 
+   can manually set the frame rate by double clicking on "Steps per second" and writing the correct
+   frame rate. Please press "Enter" and Datavyu will use your new frame rate. 
+
 
 .. seealso::
 
