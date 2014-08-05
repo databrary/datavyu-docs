@@ -62,7 +62,7 @@ Playback Controls
   :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
   in one second increments. Holding down :guilabel:`jog right` plays
   the source forward slowly.
-..Overflow  
+..Overflow- text in this one line is unaligned   
 
 - :guilabel:`shuttle left` (``4``): rewinds, initially at 1/32 of playback speed.
   Repeatedly pressing the :guilabel:`shuttle left` key increases the rewind
