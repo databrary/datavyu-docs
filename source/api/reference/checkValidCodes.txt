@@ -11,6 +11,8 @@ checkValidCodes()
 
    .. table-start
 
+..Overflow: table text overflow 
+
    .. list-table:: 
       :widths: 20, 40, 50
       :header-rows: 1
@@ -45,6 +47,7 @@ checkValidCodes()
       .. code-block:: ruby
 
          check_valid_codes("trial", "", "hand", ["l","r","b","n"], "turn", ["l","r"], "unit", ["1","2","3"])
+.. Overflow: text above cut off 
 
 .. seealso::
 
