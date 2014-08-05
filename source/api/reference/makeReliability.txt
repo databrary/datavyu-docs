@@ -12,6 +12,7 @@ makeReliability()
    from the origin column if desired.
 
    .. table-start
+.. Overflow: table text overflow 
 
    .. list-table:: 
       :widths: 20, 40, 50
