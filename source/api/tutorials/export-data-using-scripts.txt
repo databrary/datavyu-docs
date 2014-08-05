@@ -87,11 +87,17 @@ if you want to tailor the scripts for your own purposes (e.g., changing the outp
 input folder, or delimiter), you can find the script files in your Datavyu installation 
 folder under the “Favorites” folder.
 
+.. Overflow: extra blank page 
 
 Method : Nested Export
 ````````````````````````
+
+.. Overflow: missing title 
+
 .. image:: /img/sample-nested-data.png
    :align: right
+   
+.. Overflow: image cut off 
 
 A *nested export* exports data based on the nesting of :term:`cells
 <cell>`. This is most useful for spreadsheets whose cells group together.
@@ -250,7 +256,7 @@ single participant.
                      # You must include a newline indicated, "\n" so that the next cells' codes
                      # will be output on a new line, giving them their own row.
                      out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" + tcell.offset.to_s + "\t" + tcell.trial + "\t" + fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + fcell.offset.to_s + "\t" + fcell.side + "\n")
-
+.. Overflow: text on line above cut off 
                      # End the if clause, and the for loops, as well as the script
                   end
                end
