@@ -63,7 +63,7 @@ transfer_columns
                   #Transfer column(s) from one opf to another.
          #Set sourceFile and destinationFile to the full path. Leave blank to indicate currently open file
          #This will work for as many columns as you like.
-         
+.. Oveflow: text cut off          
          require 'Datavyu_API.rb'
          
          class RVariable
@@ -180,6 +180,7 @@ transfer_columns
          			end
          			setVariable(key.to_s,newvar)
          			puts "Wrote column : #{key.to_s} with #{newvar.cells.length} cells" if $debug
+.. Overflow: text cut off          	
          		end
          	rescue StandardError => e
          		puts "Failed trying to write column #{col}"
