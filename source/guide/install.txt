@@ -62,6 +62,12 @@ Install Datavyu
 Mac OS X
 ~~~~~~~~
 
+#. Before downloading Datavyu, please be sure that your security settings
+   allow the installation of non-Mac applications. To change this
+   permanently or temporarily go to System Preferences > Security & Privacy. 
+   On the General Tab click the little lock in the lower left corner to unlock 
+   the general preference pane. Then select "Anywhere" to allow Datavyu's installtion. 
+
 .. figure:: /img/install-mac.png
    :align: center
    :alt: Mac OS X unzip installation window
