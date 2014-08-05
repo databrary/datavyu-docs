@@ -205,4 +205,4 @@ We have provided a simple list of the major shortcuts used in the Datavyu Spread
 .. figure:: /img/keyboard-shortcuts.png
    :alt: Image of a keyboard shortcus
    :align: center
-
+.. Overflow: the title of the shortcut is not right on top of the table
