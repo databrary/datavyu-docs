@@ -60,10 +60,11 @@ transfer_columns
          
       .. code-block:: ruby
             
-                  #Transfer column(s) from one opf to another.
-         #Set sourceFile and destinationFile to the full path. Leave blank to indicate currently open file
-         #This will work for as many columns as you like.
-.. Overflow: text cut off          
+         # Transfer column(s) from one opf to another.
+         # Set sourceFile and destinationFile to the full path;
+         # Leave blank to indicate currently open file.
+         # This will work for as many columns as you like.
+         
          require 'Datavyu_API.rb'
          
          class RVariable
@@ -86,8 +87,8 @@ transfer_columns
          	# If varnames was specified as a hash, flatten it to an array
          	varnames.flatten!
          
-             $debug=true
-             
+         	$debug=true
+         
          	# Display args when debugging
          	if $debug
          		puts "="*20
@@ -179,8 +180,9 @@ transfer_columns
          				newvar.make_new_cell2(c)
          			end
          			setVariable(key.to_s,newvar)
-         			puts "Wrote column : #{key.to_s} with #{newvar.cells.length} cells" if $debug
-.. Overflow: text cut off          	
+         			if $debug
+         			    puts "Wrote column : #{key.to_s} with #{newvar.cells.length} cells"
+         			end
          		end
          	rescue StandardError => e
          		puts "Failed trying to write column #{col}"

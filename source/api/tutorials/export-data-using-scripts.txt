@@ -87,18 +87,14 @@ if you want to tailor the scripts for your own purposes (e.g., changing the outp
 input folder, or delimiter), you can find the script files in your Datavyu installation 
 folder under the “Favorites” folder.
 
-.. Overflow: extra blank page 
-
 Method : Nested Export
 ````````````````````````
 
-.. Overflow: missing title 
+.. OVERFLOW: missing title, image cut off
 
 .. image:: /img/sample-nested-data.png
    :align: right
    
-.. Overflow: image cut off 
-
 A *nested export* exports data based on the nesting of :term:`cells
 <cell>`. This is most useful for spreadsheets whose cells group together.
 For instance, the following spreadsheet example has three columns:
@@ -132,8 +128,8 @@ single participant.
       begin
       
          # Defines the location of the file that we're going to be outputting 
-      	# the spreadsheet data to - the file name is DataOutput.txt
-      	# and is located on the Desktop.
+         # the spreadsheet data to - the file name is DataOutput.txt
+         # and is located on the Desktop.
          out_file = File.expand_path("~/Desktop/DataOutput.txt")
          
          # Creates the file, and assigns write permissions so that the system
@@ -251,12 +247,13 @@ single participant.
             for tcell in trial.cells
                for fcell in foot.cells                  
                   if fcell.onset >= tcell.onset && fcell.offset <= tcell.offset
-
                      # Write the cells' codes to the output file, separated by tabs - the "\t"
                      # You must include a newline indicated, "\n" so that the next cells' codes
                      # will be output on a new line, giving them their own row.
-                     out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" + tcell.offset.to_s + "\t" + tcell.trial + "\t" + fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + fcell.offset.to_s + "\t" + fcell.side + "\n")
-.. Overflow: text on line above cut off 
+                     out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" +
+                         tcell.offset.to_s + "\t" + tcell.trial + "\t" + 
+                         fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + 
+                         fcell.offset.to_s + "\t" + fcell.side + "\n")
                      # End the if clause, and the for loops, as well as the script
                   end
                end

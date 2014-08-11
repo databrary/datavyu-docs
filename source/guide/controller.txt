@@ -25,13 +25,6 @@ Keypad
    You cannot use the keypad for inputting numbers into Datavyu: it will
    only perform the actions described here.
 
-.. figure:: /img/keypad-annotated.png
-   :align: right
-   :figwidth: 300px
-
-   The keys highlighted in green are *playback controls*. The keys
-   highlighted in blue are *coding-controls*.
-
 The Controller's keypad maps directly to the number pad
 on your keyboard or external keypad and the on-screen representation
 helps users remember what key performs what function. When you press
@@ -49,6 +42,15 @@ keypad to maximize coding efficiency.
 Playback Controls
 ~~~~~~~~~~~~~~~~~
 
+.. figure:: /img/keypad-annotated.png
+   :align: right
+   :figwidth: 300px
+
+   The keys highlighted in green are *playback controls*. The keys
+   highlighted in blue are *coding-controls*.
+
+.. OVERFLOW: figure too tall
+
 - :guilabel:`jog left` (``1``): moves the playhead back one frame. If the
   :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
   in one second increments. Holding down :guilabel:`jog left` plays
@@ -62,7 +64,6 @@ Playback Controls
   :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
   in one second increments. Holding down :guilabel:`jog right` plays
   the source forward slowly.
-..Overflow- text in this one line is unaligned   
 
 - :guilabel:`shuttle left` (``4``): rewinds, initially at 1/32 of playback speed.
   Repeatedly pressing the :guilabel:`shuttle left` key increases the rewind

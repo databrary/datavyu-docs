@@ -2,6 +2,8 @@
 makeReliability()
 =================
 
+.. OVERFLOW: table text overflow
+
 .. default-domain:: rb
 
 .. method:: makeReliability(relname, column_to_copy, multiple_to_keep, *codes_to_keep)
@@ -12,7 +14,6 @@ makeReliability()
    from the origin column if desired.
 
    .. table-start
-.. Overflow: table text overflow 
 
    .. list-table:: 
       :widths: 20, 40, 50

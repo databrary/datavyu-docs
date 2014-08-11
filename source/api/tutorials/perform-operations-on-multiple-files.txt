@@ -109,12 +109,13 @@ data, following the process in :doc:`/api/tutorials/export-data-using-scripts`.
             for tcell in trial.cells
                for fcell in foot.cells                  
                   if fcell.onset >= tcell.onset && fcell.offset <= tcell.offset
-
                      # Write the cells' codes to the output file, separated by tabs - the "\t"
                      # You must include a newline indicated, "\n" so that the next cells' codes
                      # will be output on a new line, giving them their own row.
-                     out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" + tcell.offset.to_s + "\t" + tcell.trial + "\t" + fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + fcell.offset.to_s + "\t" + fcell.side + "\n")
-.. Overflow: above line cut off 
+                     out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" + 
+                         tcell.offset.to_s + "\t" + tcell.trial + "\t" + 
+                         fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + 
+                         fcell.offset.to_s + "\t" + fcell.side + "\n")
                      # End the if clause, and the for loops, as well as the script
                   end
                end
@@ -156,9 +157,11 @@ data, following the process in :doc:`/api/tutorials/export-data-using-scripts`.
                         # Write the cells' codes to the output file, separated by tabs - the "\t"
                         # You must include a newline indicated, "\n" so that the next cells' codes
                         # will be output on a new line, giving them their own row.
-                        out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" + tcell.offset.to_s + "\t" + tcell.trial + "\t" + fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + fcell.offset.to_s + "\t" + fcell.side + "\n")
-.. Overflow: above line cut off 
-                           # End the if clause, and the for loops, as well as the script
+                        out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" + 
+                            tcell.offset.to_s + "\t" + tcell.trial + "\t" + 
+                            fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + 
+                            fcell.offset.to_s + "\t" + fcell.side + "\n")
+                        # End the if clause, and the for loops, as well as the script
                         end
                      end
                   end
