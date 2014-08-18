@@ -42,3 +42,4 @@ from first principles to advanced strategies.
    /api
    /faq
    /walkthrough-videos
+   /coding-example
