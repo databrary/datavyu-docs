@@ -22,6 +22,8 @@ transfer_columns
 
    .. table-start
 
+   .. tabularcolumns:: |l|L|L|
+
    .. list-table::
       :widths: 20, 40, 50
       :header-rows: 1

@@ -20,6 +20,8 @@ setColumn()
 
    .. table-start
 
+   .. tabularcolumns:: |l|L|L|
+
    .. list-table:: 
       :widths: 20, 40, 50
       :header-rows: 1
@@ -27,11 +29,11 @@ setColumn()
       * - Parameter
         - Type
         - Description
-      * - ``name`` (**optional**)
-        - String
+      * - ``name``
+        - String (**optional**)
         - Name of the *column* that you are inserting
-      * - ``column`` (**required**)
-        - :class:`RColumn` object
+      * - ``column``
+        - :class:`RColumn` object (**required**)
         - Ruby container of the column that you are inserting into the
           spreadsheet (modified output of :meth:`createNewColumn()` or
           :meth:`getColumn()`)

@@ -2,8 +2,6 @@
 checkValidCodes()
 =================
 
-.. OVERFLOW: table text overflow
-
 .. default-domain:: rb
 
 .. method:: checkValidCodes(column, dump_file, *arg_code_pairs)
@@ -12,6 +10,8 @@ checkValidCodes()
    valid codes for that column.
 
    .. table-start
+
+   .. tabularcolumns:: |l|L|L|
 
    .. list-table:: 
       :widths: 20, 40, 50
