@@ -42,15 +42,6 @@ keypad to maximize coding efficiency.
 Playback Controls
 ~~~~~~~~~~~~~~~~~
 
-.. figure:: /img/keypad-annotated.png
-   :align: right
-   :figwidth: 300px
-
-   The keys highlighted in green are *playback controls*. The keys
-   highlighted in blue are *coding-controls*.
-
-.. OVERFLOW: figure too tall
-
 - :guilabel:`jog left` (``1``): moves the playhead back one frame. If the
   :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
   in one second increments. Holding down :guilabel:`jog left` plays
@@ -93,6 +84,14 @@ In addition, ``shift`` :guilabel:`find` (``+``): jumps to the time of cell
 
    To undo the change, run the same command but with ``-bool true``
    rather than ``-bool false``.
+
+.. figure:: /img/keypad-annotated.png
+   :align: right
+   :figwidth: 300px
+
+   The keys highlighted in green are *playback controls*. The keys
+   highlighted in blue are *coding-controls*.
+
 
 .. _coding-controls:
 
