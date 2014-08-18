@@ -1,6 +1,6 @@
-==================
+==============
 Coding Example
-==================
+==============
 
 Please feel free to use the provided :download:`coding example </resources/DatavyuSample.zip>` and video to practice coding. 
 
