@@ -110,6 +110,12 @@ I'm not sure how to best code my data? Are there guidelines for coding?
 The Best Practices Guide will provide
 in-depth instructions and suggestions for coding your behavioral data.
 
+What is the best way to prevent data loss?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We suggest that users pull all of their spreadsheets to the desktop before coding them. 
+After coding, users can ship their spreadsheets back to their folders or hard drive. 
+
 How do I update Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
