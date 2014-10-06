@@ -45,6 +45,16 @@ selecting a specific cell in the spreadsheet and pressing find (+in the keyboard
 .. _column-types:
 .. _variable-types:
 
+Spreadsheet Tabs 
+----------------
+Datavyu allows users to open multiple spreadsheets at one time. When the program opens, 
+it opens a blank spreadsheet. This spreadsheet can be used to create a new file or it can be
+closed if you are working on pre-coded spreadsheets. Feel free to open as many spreadsheets as desired. 
+
+Users can work on multiple spreadsheets at one time. When finished with coding, please be sure to save each
+individual spreadsheet. 
+
+
 Columns
 -------
 
