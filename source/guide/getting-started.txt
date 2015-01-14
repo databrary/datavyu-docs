@@ -53,7 +53,7 @@ the window that contains the video data.
    :align: center
 
 The keypad can be found on the left side of the controller. This section maps directly to the
-number pad on your keyboard, or to an external number pad if you
+number pad on your keyboard, or to an external number pad if your
 keyboard does not have one and you've connected one to your computer. 
 These keys control playback, and also enable users to set the :term:`cell onset` and :term:`cell offset`,
 create new cells and navigate within the data source. The
@@ -74,11 +74,11 @@ The :guilabel:`Datavyu spreadsheet` is where users record
    :alt: Image of a filled-out Datavyu spreadsheet
    :align: center
    
-   This spreadsheet has seven columns: "MomSpeech", "InfantSpeech",
+   This spreadsheet has four columns: "MomSpeech", "InfantSpeech",
    "MomObject", "BabyObject". Each column has numerous coded cells.
 
-By :doc:`/guide/tutorials/configure-datavyu-codes`, 
-coders can record observations and link them
+Being able to :doc:`/guide/tutorials/configure-datavyu-codes` enables 
+coders to record observations and link them
 directly to timestamps in the data source. Each user-defined column is
 represented by a column in the spreadsheet, and observations within a column
 are sorted in chronological sequence. Looking horizontally across the spreadsheet
