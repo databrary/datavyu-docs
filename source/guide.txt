@@ -2,7 +2,7 @@
 Software Guide
 ==============
 
-Datavyu is a Java-based application that runs on Windows, Mac, and soon on Linux
+Datavyu is a Java-based application that runs on Windows, Mac, and on Linux
 operating systems. Its primary goal is to link behavioral researchers
 with their video and to provide a way for researchers 
 to record their observations, extract their data for
