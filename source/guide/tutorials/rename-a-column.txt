@@ -28,7 +28,7 @@ menu.
    variables have a blue background.
 
 #. Select the :guilabel:`Spreadsheet` menu, and then :guilabel:`Change
-   Variable Name`.The :guilabel:`New Variable Name`
+   Variable Name`. The :guilabel:`New Variable Name`
    window will open.
 
 #. Type in the new name for the column, and press Enter or click on
