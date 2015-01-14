@@ -10,7 +10,7 @@ will guide you through the process.
 
 #. Open the Datavyu spreadsheet.
 
-#. Click on the plus sign in the top left of the spreadsheet. The New
+#. Click on the plus sign in the top right of the spreadsheet. The New
    Column window will open.
 
    .. TODO: add an image of the New Column window, and spreadsheet
@@ -20,6 +20,5 @@ will guide you through the process.
 
 #. Select :guilabel:`OK`. The column will be added to the spreadsheet.
 
-You should now configure your column's codes. See:
-:doc:`/guide/tutorials/configure-datavyu-codes` for more
-information.
+You can also add a column when you :doc:`/guide/tutorials/configure-datavyu-codes` 
+through the code editor. 
