@@ -4,9 +4,9 @@ Spreadsheet Overview
 
 
 The Datavyu Spreadsheet is where coders record :term:`observations
-<observation>`. The spreadsheet is the core of Datavyu. By
-:doc:`/guide/tutorials/configure-datavyu-codes`, coders can record
-observations and link them directly to timestamps in the data source.
+<observation>`. The spreadsheet is the core of Datavyu. Coders can record
+observations and link them directly to timestamps in the data source when they 
+:doc:`/guide/tutorials/configure-datavyu-codes`.
 
 For a brief introduction to some of the spreadsheet's components and
 capabilities, watch the spreadsheet walkthrough video:
@@ -22,24 +22,21 @@ Each user-defined column has its own column in the spreadsheet.
 :term:`Cells <cell>` are column entries, boxes in the column, where
 coders record their observation data as :term:`codes <code>`. Cells
 follow each other in sequence: looking vertically down a column shows
-the sequence of observations for that column. If you have enabled
-:ref:`temporal-ordering`, Datavyu displays cells based on their
-:term:`onset` and :term:`offset` times, to show what occurred at that
-point in time in the data source.
+the sequence of observations for that column. 
 
 .. figure:: /img/spreadsheet-annotated.png
    :alt: Image of a Datavyu spreadsheet with 6 columns, and annotations labeling a column, cell, and codes within a cell
    :align: center
    
-   A typical Datavyu spreadsheet with an example of six columns. Note the
-   :guilabel:`plus` icon in the top right, which you use to add new
+   A typical Datavyu spreadsheet with an example of five columns and Temporal Alignment turned on.
+   Note the :guilabel:`plus` icon in the top right, which you use to add new
    :term:`columns <column>`.
 
 Datavyu automatically links the times coded in the spreadsheet to the
 current time in the data source. This allows coders to record
 the :term:`onset` and :term:`offset` times of events in
 the spreadsheet. Coders can also jump to a relevant time in the data source by
-selecting a specific cell in the spreadsheet and pressing find (+in the keyboard).
+selecting a specific cell in the spreadsheet and pressing find (+) on the Controller.
 
 .. _columns:
 .. _column-types:
@@ -76,8 +73,8 @@ If you want to score durations without scoring codes, you can leave the default 
 as is and ignore the <code01> prompt.
 
 
-Also note that column names are limited to the letters of the aphabet, numbers and hte underscore symbol
-(and numbers and underscores cannot be the first character of the name) to eliminate potential
+Also note that column names are limited to the letters of the aphabet, numbers and the underscore symbol
+(but numbers and underscores cannot be the first character of the name) to eliminate potential
 confusion in scripting and SPSS analyses. The :doc:`column configuration
 </guide/tutorials/configure-datavyu-codes>` tutorial provides
 instructions for configuring columns.
@@ -88,7 +85,7 @@ Hide and Show Columns
 ~~~~~~~~~~~~~~~~~~~~~
 
 To hide a column, select the column by clicking on its name at the top of
-the spreadsheet. Theselected column will have a blue background. 
+the spreadsheet. The selected column will have a blue background. 
 You can select multiple columns by ``Cmd`` -clicking (on Mac) or
 ``Ctrl`` -clicking (on Windows). Then, in the
 :guilabel:`Spreadsheet` menu, select :guilabel:`Hide Selected Columns`.
@@ -97,7 +94,7 @@ You can also control each column's visibility from the
 :guilabel:`Column List`, which you access from the
 :guilabel:`Spreadsheet` menu. The :guilabel:`Column List` shows all of
 the columns in the current spreadsheet, and includes a checkbox, which you can
-use to toggle its visibility.
+use to toggle column visibility.
 
 If you wish to show all columns you can do so with the :guilabel:`Show
 All Columns` menu option from the :guilabel:`Spreadsheet` menu.
@@ -119,10 +116,10 @@ Cells
 Each cell represents an observation
 scored by the coder. 
 
-Minimaly, Datavyu displays three values for each cell, but you can ignore
-one or all of these values and Datavyu will display the default.
+Minimally, Datavyu displays three values for each cell, but you can ignore
+one or all of these values.
 
-- :term:`onset`: the time value displayed on the top left of the cell. 
+- :term:`onset`: the first time value displayed on the top of the cell. 
   If you don’t code this value, the cell will display the default value of 0:00:00:000. 
   You can code a time value to mark the beginning of an event or to 
   tag the approximate time of an event. 
@@ -185,8 +182,8 @@ highlights the differences between active and inactive temporal alignment:
    <source src="../_static/video/temporal-alignment.webm" type="video/webm">
    </video>
 
-Temporal alignment allows you to visualize what occurred at what time,
-and to compare event sequences across columns. When coding, you should
+Temporal alignment allows you to visualize what occurred at what time
+so you can compare event sequences across columns. When coding, you should
 ensure that temporal alignment is active.
 
 .. figure:: /img/temporal-alignment-comparison.png
