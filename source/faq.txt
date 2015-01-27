@@ -63,8 +63,6 @@ Which operating system is Datavyu available for?
 Datavyu builds are available for both Windows and Mac OS X. You can
 download either version from `the Datavyu Downloads page <http://datavyu.org/download/>`_.
 
-In the future, Datavyu will also provide a Linux version.
-
 Do I need any additional software to run Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
