@@ -3,7 +3,7 @@ Use Scripts to Automate Tasks
 =============================
 
 Datavyu provides a full suite Ruby scripting API to help you focus more
-time on coding, and spend less time performing routine tasks.
+time on coding and spend less time performing routine tasks.
 
 The :doc:`Ruby API documentation </api>` guides you through writing
 scripts and provides context to help you become an adept
@@ -31,18 +31,17 @@ Before you can run a script, you must write one. Refer to the
    :guilabel:`Script` menu has two options: :guilabel:`Run script` and
    :guilabel:`Run recent script`.
 
-#. Select :guilabel:`Run Script` to choose a script that you have saved
-   on your hard drive. 
+#. Select :guilabel:`Run Script` to choose a script that you have saved. 
    
 #. A file selection window will open. Navigate to the correct folder and
    choose the script you wish to run. 
    
-#. The Datavyu **Scripting Console** will open and show you the progress
-   of the script, or display any errors that arise. If Datavyu reports a script error,
+#. The Datavyu **Scripting Console** will open and run your selected script and
+   display any errors that may arise. If Datavyu reports a script error,
    use the provided information to find it. 
 
-#. You can close the Scripting Console when a notification that the script
-   has been successfully run shows up. 
+#. You can close the Scripting Console when you receive a notification that the script
+   has run successfully. 
 
 Scripts that you have recently run will be listed in the :guilabel:`Run Recent
 Scripts` menu in the :guilabel:`Script` menu. This makes it easy
