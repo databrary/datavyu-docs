@@ -8,15 +8,11 @@ Check Inter-rater Reliability to Improve Data Accuracy
 
 Reliability coding verifies that the desired codes are observable and 
 that the coders are accurately interpreting events. With reliability coding, 
-two coders separately code the same data source. You can create a reliability column, 
-which the second coder can use to reccord his or her observations. After both coders have 
+two coders separately code the same data source. You can create a :term:`reliability
+column`, which the second coder can use to reccord his or her observations. After both coders have 
 coded the same column, they can compare their codes and determine their inter-rater 
 reliability. 
 
-To facilitate reliability coding, you can create a :term:`reliability
-column`, which the second coder will use to record their observations,
-and then compare the reliability column against the original coder's
-observations.
 
 .. note:: 
 
@@ -67,7 +63,7 @@ The following example uses the :download:`sample data
 </resources/Example-Template.opf>` to create a new
 reliability column called "rel.trial" from its "trial" column, skipping
 every other cell, and copying over the *onset* and *trialnum* codes
-so that the reliability coder will not have to recode :term:`onset` and
+so that the reliability coder doesn't' have to recode :term:`onset` and
 trial numbers.
 
 .. code-block:: ruby
