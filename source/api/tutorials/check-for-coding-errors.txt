@@ -10,7 +10,7 @@ Datavyu scripts have the ability to check for coding errors to make up
 for potential human error. Inputting invalid codes is a common coding 
 mistake. For example, a coder might accidentally input an "h", when only 
 "j" or "k" are acceptable values. Using scripts, coders can double-check  
-their work for errors and note them early on.
+their work for errors and fix them early on.
 
 Datavyu API provides the :meth:`checkValidCodes` method to check for
 coder errors. :meth:`checkValidCodes` requires at least three
@@ -70,10 +70,10 @@ In the example, we have:
   and that it should instead display in the console.
 
 - ``"direction", ["l", "r"]`` is the first key-value pair, which specifies
-  that the "direction" Datavyu [code] should only have the values "l" or "r".
+  that the "direction" Datavyu code should only have the values "l" or "r".
    
 - ``"target" , ["a", "b"]`` is the second key-value pair, which specifies
-  that the "target" Datavyu [code] should only have the values "a" or "b".
+  that the "target" Datavyu code should only have the values "a" or "b".
 
 .. end-basic
 
@@ -86,7 +86,7 @@ Advanced Format
 
 You can perform the same verification by first assigning the valid codes
 to objects. This makes it is easier for human readers to parse the
-script, and makes it easy to modify or update the valid code lists
+script, and makes it easy to modify or update 
 in the future.
 
 #. Set up the script
