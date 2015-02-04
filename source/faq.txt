@@ -19,8 +19,6 @@ can export data from Datavyu in a variety of forms depending on your
 analysis needs. See the :doc:`/guide/tutorials/export-data` and
 :doc:`/api/tutorials/export-data-using-scripts` tutorials for more information.
 
-In the future, Datavyu will include support for scripting using R.
-
 What video formats does Datavyu support?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -106,7 +104,7 @@ I'm not sure how to best code my data? Are there guidelines for coding?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Best Practices Guide will provide
-in-depth instructions and suggestions for coding your behavioral data.
+in-depth instructions and suggestions for coding your behavioral data. It is coming soon! 
 
 What is the best way to prevent data loss?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
