@@ -14,8 +14,8 @@ Most of the following tutorials use :download:`Example-Template.opf
 </resources/Example-Template.opf>` as their basic data file. 
 
 The example template contains two :term:`columns <column>`: "id",
-whose codes describe basic information such as subject number,
-test date, birth date, and condition, and "trial", which has two
+whose codes describe basic information such as *subject number*,
+*test date*, *birth date*, and *condition*, and "trial", which has two
 codes: *trialnum* and *outcome*.
 
 The example has one :term:`cell` in the "id" column, and no cells
@@ -50,7 +50,7 @@ spreadsheet and assigns it to an :class:`RColumn` object called ``trial``.
       trial = getColumn("trial")
    end
 
-The left side of the method call is the name of the Ruby object;
+The left side of the method is the name of the Ruby object;
 the "trial" in the parentheses is the argument passed to
 :meth:`getColumn` (the name of the Datavyu column).
 
