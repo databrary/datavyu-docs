@@ -97,8 +97,8 @@ A *nested export* exports data based on the nesting of :term:`cells
 <cell>`. This is most useful for spreadsheets whose cells group together.
 For instance, the following spreadsheet example has three columns:
 "id", "trial", and "foot". "id" is a participant ID, which might include
-codes that describe the participant's individual id code, their gender,
-age, etc. "trial" is a column that marks each trial that aoccurredd, and 
+codes that describe the participant's individual id code, gender,
+age, etc. "trial" is a column that marks each trial that occurred and 
 "foot" is a column representing observations recorded during each trial.
 
 The cells, then, group together with an "id" cell covering the length of
@@ -109,10 +109,8 @@ the time limits of each trial.
 To export data from this style of spreadsheet, we will use a series of
 :ref:`loops <loops>`, exporting a row of tab-separated values for each cell in
 the "foot" column. Each row will include the "id" and "trial" data that
-the "foot" cell nests beside. This spreadsheet follows [reference to best
-practices guide that talks about one file / participant], so there is
-only one "id" cell, since all of the data in that spreadsheet is for a
-single participant.
+the "foot" cell nests beside. This spreadsheet has only one "id" cell, 
+since all of the data in that spreadsheet is for a single participant.
 
 #. Set up the script, and then define where you are going to output the
    file to. You need to define the location of the file (in this case,
