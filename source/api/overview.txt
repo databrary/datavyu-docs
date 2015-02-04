@@ -37,8 +37,8 @@ you manipulate, modify, add, and delete data in the Datavyu
 spreadsheets.
 
 In order to work, many methods need additional information. For
-instance, :meth:`getColumn()`, which retrieves a column from a Datavyu
-spreadsheet so that you can modify or update it using your script,
+instance, :meth:`getColumn()`, retrieves a column from a Datavyu
+spreadsheet so that you can modify or update it using your script. But it
 needs you to tell it what column it should retrieve.
 Each method defines what information it can receive. These are called
 :term:`parameters <parameter>`. :meth:`getColumn()` has one parameter: ``name``,
