@@ -9,12 +9,12 @@ Add Cells to a Column
 Populating a Datavyu column with :term:`cells <cell>` is another
 common task that you can use scripts to automate.
 
-Suppose that you want to code behaviors within w-minute long blocks. 
+Suppose that you want to code behaviors within 1-minute long blocks. 
 Rather than have the coder manually insert each cell, you can write a script
-that will insert a "block"cell for every minute, with the :term:`onset` 
+that will insert a "block" cell every minute, with the :term:`onset` 
 set to the correct trial start time.
 
-#. Set up the script, and create the Datavyu column you will be working
+#. Set up the script and create the Datavyu column you will be working
    with into a Ruby variable. We'll call it ``block`` here, but you can
    call it whatever you want to:
 
@@ -42,8 +42,8 @@ set to the correct trial start time.
          end
    
       Essentially, this says, "let ``i`` = 0, <do stuff>, then, for
-      ``i`` = 1, <do stuff>. Then for ``i`` = 2, for ``i`` = 3, and for
-      ``i`` = 4. Once you've done i = 4, stop doing stuff." The ``0..4``
+      ``i`` = 1, <do stuff>. Then again for ``i`` = 2, for ``i`` = 3, and for
+      ``i`` = 4. Once i = 4, stop doing stuff." The ``0..4``
       represents "from 0 to 4, inclusive".
       
       If you wanted to do something ten times, your loop could read
@@ -71,7 +71,7 @@ set to the correct trial start time.
 
    #. Then, create the new cell using :meth:`make_new_cell()` and
       store the cell as a Ruby object. For simplicity, we'll call it
-      '``cell``:
+      ``cell``:
 
       .. code-block:: ruby
    
@@ -86,7 +86,7 @@ set to the correct trial start time.
                cell = block.make_new_cell()
 
    #. Set the onset of ``cell`` to the value of the ``time`` variable
-      using :meth:`change_code()`, and ``end`` the ``for`` loop:
+      using :meth:`change_code()`, and ``end`` the for loop:
 
       .. code-block:: ruby
    
