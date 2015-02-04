@@ -6,14 +6,14 @@ Add a New Column
 
 .. begin-content
 
-Much like adding :doc:`/api/tutorials/add-cells-to-a-column` or :doc:`/api/tutorials/add-codes-to-a-column`, 
+Much like :doc:`/api/tutorials/add-cells-to-a-column` or :doc:`/api/tutorials/add-codes-to-a-column`, 
 the Datavyu API allows you to create a completely
 new column using the :meth:`createColumn()` method.
 :meth:`createColumn()` takes at least two parameters: first, the name of the new column,
 followed by a list of the names of the new codes contained in the column.
 
 For example, suppose you wanted to add a column called "look" to your
-spreadsheet. "look" needs two codes: *direction* and
+spreadsheet. And you wanted "look" to contain two codes: *direction* and
 *target*.
 
 #. Set up the script, and create a new column with its two codes.
