@@ -8,7 +8,7 @@ If you have previously written scripts for use with OpenSHAPA, you
 can easily reuse them with Datavyu.
 
 Datavyu's Ruby API was designed to be compatible with the earlier
-scripting formats. To updatescripts from OpenSHAPA, you simply need to 
+scripting formats. To update scripts from OpenSHAPA, you simply need to 
 delete the OpenSHAPA API code at the beginning of the file and replace 
 it with the following line of code:
 
@@ -16,8 +16,5 @@ it with the following line of code:
 
    require 'Datavyu_API.rb'
 
-You will also need to delete the OpenSHAPA API code at the beginning
-of the file.
-
-And with that, you should be good to run your existing OpenSHAPA
+And with that, you should be able to run your existing OpenSHAPA
 scripts through Datavyu.
