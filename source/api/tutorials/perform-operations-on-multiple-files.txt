@@ -9,7 +9,7 @@ writing scripts that act on a single file: the interactions with
 columns, codes, and cells are the same. The scripting API includes 
 commands that can load and save Datavyu spreadsheets. After a spreadsheet 
 is loaded, the script can execute commands on the spreadsheet (e.g., export 
-data, change or add columsn), then open the next spreadsheet, execute commands, and so on. 
+data, change or add columns), then open the next spreadsheet, execute commands, and so on. 
 
 This tutorial loads the spreadsheet files in a folder called
 ``datafiles`` that is located on the Desktop, accesses the "id",
