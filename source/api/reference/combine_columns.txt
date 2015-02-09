@@ -6,11 +6,11 @@ combine_columns()
 
 .. method:: combine_columns(name, *columnNames)
 
-   Mixes two column together, creating a new column.
-   :meth:`create_mutually_exclusive` mixes the two source columns cells
+   Combines two column together, creating a new column.
+   :meth:`create_mutually_exclusive` combines the two source columns cells
    together so that the new column includes all of the arguments from
-   both source columns, as well as a new cell for each overlap and
-   mixture of the two columns' cells.
+   both source columns. It also includes a combination of the two columns' cells 
+   as well as a new cell for each overlap.
    
    .. table-start
    
