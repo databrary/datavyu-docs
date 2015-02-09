@@ -28,7 +28,7 @@ getColumn()
 
    .. admonition:: Returns
 
-      A Ruby object representation of the Datavyu column
+      A Ruby object representation of the Datavyu column.
 
    .. admonition:: Example
 
