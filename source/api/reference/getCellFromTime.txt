@@ -34,8 +34,9 @@ getCellFromTime()
    .. admonition:: Returns
    
       Returns the Ruby representation of the cell at the specified
-      point in time, or, if there is no cell at that point in time,
-      Nil.
+      point in time. If there is no cell at that point in time, Ruby 
+      does not return anything.
+      
 
    .. admonition:: Example
    
