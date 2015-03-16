@@ -1,0 +1,37 @@
+Export the Data in a Format Appropriate for Your Analyses
+---------------------------------------------------------
+
+From the beginning of the coding process, keep in mind the data you want to analyze and how you want your data formatted for analyses.
+Your coded data are what you will analyze.
+So, you should be sure that the way you code your data is compatible with the way that you will analyze it.
+Think about how you want your data to look when you export it from Datavyu to analyze it elsewhere (e.g., Excel, SPSS).
+
+Variable Types
+~~~~~~~~~~~~~~
+
+Although we recommend using alphabet letters as codes rather than numbers, most researchers prefer to analyze numeric data rather than strings.
+Although onset and offset times contain the information you need to understand timing relations, most researchers prefer to analyze durations rather than relative times.
+
+Datavyu’s Export File function will export the strings and raw onset/offset times from the spreadsheet.
+You can convert these data into numeric and durations in your analysis spreadsheet (with simple compute functions in Excel or SPSS, for example).
+But you can also export the data in these formats using Datavyu scripts.
+
+Spreadsheet Format
+~~~~~~~~~~~~~~~~~~
+
+Most researchers like to analyze their data in square spreadsheet formats.
+Many researchers organize the data with one row for the smallest unit of analysis (e.g., a trial, a look, a touch, a facial gesture) and many rows for each participant.
+Some researchers maintain one row per participant and organize tasks or trials across columns.
+Some researchers aggregate the data (e.g., by averaging over trials) prior to export to maintain one row per participant.
+
+Behavioral data have a naturally nested structure: Trials are nested within conditions; conditions in turn are nested within sessions and participants.
+Facial expressions are nested within interactions and interactions are nested in turn within particular situations within the session.
+Behavioral data are naturally interleaved: One event is ongoing while another event is starting or ending.
+
+Datavyu’s temporal alignment feature provides coders with immediate information about the nested and interleaved temporal structure of events.
+Thus, we recommend that coders delineate the structure of the session by coding cells to represent the larger and smaller nested units.
+However, the nested and interleaved structure of events cannot be exported automatically without the user specifying with a script how they would like to see the events formatted.
+Although Datavyu has an automatic Export File function, it will not repeat information down rows of data unless the data are arranged like that in the spreadsheet.
+There is no need to repeat participant ID or condition labels across every trial, however, because you can request this with a script for exporting the data.
+Moreover, Datavyu’s automatic Export File function will not carve overlapping and interleaved events into mutually exclusive categorical combinations (e.g., of talking, touching, and looking).
+You will need to do this with an export script.

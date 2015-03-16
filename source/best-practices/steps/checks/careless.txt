@@ -1,0 +1,19 @@
+Check for Careless Errors
+-------------------------
+
+Coders make two kinds of errors.
+One kind of error is a careless error such as a typo or its equivalent.
+The coder types a letter that is not a legal option; the coder forgets to mark an offset time; the coder mistakenly inserts an extra cell or numbers trials out of sequence.
+Coders are human and even the most diligent coder will inadvertently make careless errors.
+These kinds of errors are not serious and can be easily fixed if they are caught before the coder shuts the file and checks inter-rater reliability.
+
+Consistent use of codes is important for your analyses, but Datavyu will allow you to enter any value you choose.
+Thus, you need a way to check that your nomenclature is consistently applied within and across video files, that cells were inserted correctly, and that each cell has an appropriate onset and offset time.
+In Datavyu, you can do this by writing a script to check for careless errors.
+You should ensure that all of the codes are legal values (according to the coding manual).
+Check that all of the durations are within acceptable limits (typically negative values are impossible).
+Check that all of the coded values follow basic logic.
+If the child did not touch an object, then there can be no object code for that cell.
+If the child’s latency to cross the cliff was 0s, then the child could not have avoided going over the cliff or explored before going over the cliff (because a latency of 0 means there was no time to explore and avoidance reflects the total possible trial time).
+Thus, your error-checking script will identify typos, impossible relations, and out of range values.
+In Datavyu, ou can even determine the out of range values online based on just-coded files with a script using the R-interface.

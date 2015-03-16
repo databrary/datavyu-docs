@@ -1,0 +1,9 @@
+Test Your Plan
+--------------
+
+After coding representative video files from each cell of your research design, test your plan using scripts.
+Run scripts to ensure that you will catch careless errors before you export your data.
+Run scripts to ensure that your codes are reliable among multiple coders.
+And run scripts to verify that you can export your data in the format you need for analyses.
+If you cannot export your data using only the Export File function, you will need to use scripts to export your data from Datavyu in the format you want using the Ruby scripting language.
+Push a small amount of data (preliminary data if you prefer) all the way through to the analysis spreadsheet to assure yourself that your data are in the appropriate format for analyses.

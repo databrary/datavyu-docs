@@ -1,0 +1,46 @@
+Check Inter-Rater Reliability
+-----------------------------
+
+A second kind of error is an error in judgment.
+One coder thinks that the child touched an object but a second coder does not think that the child touched the object.
+One coder interprets the child’s facial expression as distress but the other coder sees it as neutral.
+If coders frequently cannot agree about the codes for the same section of video, your coding scheme lacks inter-rater reliability.
+Inter-rater reliability will be low if there is a problem with the coding criteria (criteria are ill defined; criteria do not map well onto the behaviors) or if the coders are not well trained, or both.
+So, before you commit yourself to a coding scheme, test inter-rater reliability.
+If it is too low, you may need to revise your coding scheme or retrain your coders.
+Disagreements among coders are inevitable, even those who are practiced and familiar with the coding scheme.
+The question is whether the inter-rater reliability is sufficiently high to warrant confidence in the coded data.
+
+How To Test Reliability Formally
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+What level of agreement is sufficient to consider a code to be reliable.
+The literature has no gold standard, but labs typically have their own gold standards.
+Generally, for categorical codes, you should use Kappas (which control for the base rate of the behaviors) rather than percent agreement.
+If you rely solely on percent agreement, then low frequency events will not be counted fairly.
+For example, if you are coding child affect as positive/negative and children rarely express negative affect (say, only 2-3 times per 100 trials), one coder could score positive for every trial without even looking at the video and you will have 97% agreement.
+The Kappa statistic takes low frequency events into account.
+For continuously scored behaviors, you can use the Kappa statistic to check inter-rater reliability frame by frame.
+For isolated events, you can use a Pearson correlation coefficient.
+You can estimate Kappas in Datavyu using scripts and the R interface, or you can estimate Kappas using statistical software after you export your data.
+Regardless, disagreements among coders are serious and must be reported in the write-up of the research.
+
+Rules of Thumb
+~~~~~~~~~~~~~~
+
+By definition, careless errors will lower inter-rater reliability.
+Therefore it is important to check for and eliminate careless errors before you test for inter-rater reliability.
+
+Coders will experience “drift,” meaning that their coding will change slightly as they become increasingly experienced at looking at the particular behaviors.
+Therefore it is important to check inter-rater reliability at every point in the study—on initial sessions, in the middle of the study, and on the final sessions.
+
+How much video should the reliability coder view to ensure inter-rater reliability.
+A good rule of thumb is 25%.
+But because every child is different, your reliability coder should score 25% of each child’s data, rather than 25% of the children.
+Which 25%.
+You can check inter-rater reliability at random intervals or regular intervals—whatever is most appropriate for sampling over the dataset.
+In some cases, particular trials or segments of video are especially important.
+In these cases, the reliability coder can score a larger percentage of the data—up to 100%.
+
+Spread your best eyes over the entire dataset.
+For a large amount of data where several people will split the job of coding a particular pass, have your most experienced and knowledgeable coder score reliability so that your “best pair of eyes” is looking at representative data over the entire dataset.

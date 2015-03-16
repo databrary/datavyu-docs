@@ -1,0 +1,21 @@
+Using Scripts in Datavyu
+------------------------
+
+One of the most powerful and flexible features of Datavyu is the scripting function.
+In Datavyu, a script is a program written in the Ruby programming language that identifies particular values of codes and durations, writes results to a csv text file, manipulates cells or columns within spreadsheets, performs operations on values within cells, imports data into the spreadsheets, and prints data for export.
+In Datavyu, you should use scripts to check that the spreadsheets are free of coding errors and that inter-rater reliability is acceptable.
+Datavyu has a push-button export function, but this is very rudimentary and will only create a text file that has the same information in the same order as the spreadsheet.
+
+Datavyu scripts are very powerful.
+You can use them to perform operations on a single spreadsheet linked with one video file or on hundreds of spreadsheets linked with hundreds of videos simultaneously.
+Thus, if you want to change the name of a code or add or delete a code, you don’t need to manually open every spreadsheet and perform the operation from Datavyu’s code editor.
+Instead, you can perform these operations over all the spreadsheets in a folder with one button click of a script.
+If you want to check your file for typos, you do not need to rely on eyeballing the spreadsheet.
+Instead, you can write a script to locate any typos.
+If you want to insert cells to check for inter-rater reliability, you do not need to insert each cell manually.
+Instead, you can write a script to insert all the necessary cells at pre-specified intervals or random intervals to prompt the reliability coder for onset or offset times and codes.
+
+More generally, whenever you need to perform an operation over many cells or many spreadsheet files (e.g., add new columns/passes, add new variables, change name of variables), use a script.
+The operation will be nearly instantaneous.Check that the spreadsheets are free of careless coding errors and that inter-rater reliability is acceptable.
+Test your initial plan on a small but representative subset of the video data (4-6 participants from each cell of your design).
+At this point, you can get an idea of whether your coders and codes are likely to be reliable and you can satisfy yourself that you can export your data in the format you need for statistical analyses.
