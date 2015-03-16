@@ -13,7 +13,7 @@ This makes the software very powerful and flexible, but it puts the responsibili
 For a beginner setting out to code behavioral data for the first time, or a more experienced coder who is new to Datavyu, figuring out where to start can be daunting.
 This guide will help you to get started and will provide a framework for thinking about coding behavioral data from video.
 
-If you have questions or comments about behavioral coding, please go to the `Datavyu Support Forum </support>`.
+If you have questions or comments about behavioral coding, please go to the `Datavyu Support Forum <http://datavyu.org/support>`.
 Other researchers may have run into the same problems, posted similar requests, or have offered similar suggestions for improving the coding process.
 Similarly, other researchers may benefit from hearing your questions and comments.
 

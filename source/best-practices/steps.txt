@@ -13,3 +13,19 @@ These four steps will help you to avoid wasting time.
 We urge you not to collect hours of video before verifying that you can see the behaviors of interest.
 Do not code hours of data before verifying that your coding scheme is reliable and that you can export the data in a format that works for your statistical and graphical analyses.
 Otherwise, you may spend valuable time collecting and coding data that you can’t use.
+
+.. figure:: /img/best-practices-steps.png
+   :alt: 4 steps of video coding
+   :align: center
+   
+   The process begins at Step 1 with a procedure for ensuring that your recordings capture the behaviors of interest; the process ends at Step 4 with an exported file of variables that can be used for statistical and graphical analyses.
+   Each step involves multiple iterations (denoted by the looping arrows).
+   Ideally, earlier steps are completed appropriately before implementing later steps.
+
+.. toctree::
+   :maxdepth: 1
+   
+   /best-practices/steps/recording
+   /best-practices/steps/codes
+   /best-practices/steps/checks
+   /best-practices/steps/workflow
