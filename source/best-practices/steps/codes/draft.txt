@@ -1,0 +1,30 @@
+Draft a Coding Manual
+---------------------
+
+Write your coding manual with a stranger in mind.
+When you revisit your manual years later, you will be a “stranger” to the coding criteria.
+When new coders open your manual, they will be strangers to the coding criteria.
+Write it for a stranger.
+Do not use acronyms or terms known only to members of your lab.
+Use plain English instead.
+If you plan to eventually share your videos on Databrary, you may also want to share your Datavyu files and coding manual.
+
+More detailed documentation is better.
+For example, if your document contains only information like “``o`` = object touch” and “``b`` = body touch,” your coders may not be reliable, the codes may not be replicable, and the researcher who writes up the study may not have sufficient detail about the coding rules.
+More detail will help.
+For example: “``o`` = object touch.
+This behavior includes only touching detached objects that the child could hold in one or both hands; at least one finger must be in contact with the object for at least 0.5 s.”
+And “``b`` = body touch.
+This behavior includes only touches with one or both hands to the other arm, legs, head/face/hair, and torso; at least one finger must be in contact with the body for at least 0.5 s.” It is acceptable to have several paragraphs to define a single code!
+
+As part of the definition of a code, you can specify the optimal speed of viewing for a particular coding pass or code.
+For example, some behaviors are easier to see by jogging frame by frame.
+Other behaviors are easier to see at 0.5x normal speed or at normal speed.
+Sections of video (conditions/trials) can usually be coded at 2x normal speed if they are well marked with a high-contrast prompt.
+
+Outline the coding passes in the manual.
+List which scripts to run and when to run them to insert cells, merge cells, export data, and so on.
+
+Consider your coding manual as a “living document.”
+Even if you do not revise the codes, you are likely to make changes to the coding manual by adding detail or fixing confusing language.
+Keep a record of who made the changes and what date they were implemented.

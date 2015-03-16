@@ -1,0 +1,23 @@
+Design the Coding Spreadsheet
+-----------------------------
+
+Design the spreadsheet to make coding and exporting efficient and straightforward.
+Think through each coding pass one by one.
+
+In Datavyu, each column represents a coding pass.
+Start with a column containing the participant information and a column (or multiple columns) to delineate sections of the session and conditions within studies and trials within conditions.
+If your study is highly structured with trials, then you can code the smallest experimental unit (the trial) at the same time as you code your primary outcome measure.
+Focus first on your most important outcome measures.
+Include variables in the pass that coders can see “for free” without having to shift their attention or think deeply (refer to “Minimize Pain, Maximize Gain” section above, “If you have already seen it, you may as well code it”).
+
+In Datavyu, each cell in a column can contain zero or multiple codes.
+A cell will contain zero codes when every cell represents the same type of event and you do not want additional information about each event (e.g., the onset time is when the left foot comes onto the floor and the offset time is when the left foot leaves the floor; or the onset time is when the eyes point at the target and the offset time is when the eyes leave the target).
+
+Because cells correspond to certain times, you may want to define onsets as the start of a behavior and offsets as the end of the behavior, but this is not obligatory.
+If you don’t want to analyze time in terms of durations of behaviors, you don’t have to stress over onsets and offsets.
+But if you do want to analyze durations of behaviors, creating criteria for onsets and offsets is important.
+
+Because each cell corresponds to a particular time (from the onset to offset), it usually makes sense for all of the codes within a cell to correspond to the behaviors within that time interval.
+However, this is not obligatory.
+Your cell can include information that occurred before the cell began or after the cell ended (e.g., cell onset = when mother selects a toy and cell offset = when mother offers the toy to the child; a variable within the cell reflects whether child accepted the toy, despite the fact that the acceptance or rejection occurred after the offset of the cell).
+Build the prompts for each code with the “minimize pain/maximize gain” rule in mind.

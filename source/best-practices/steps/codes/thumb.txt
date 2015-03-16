@@ -1,0 +1,59 @@
+Rule of Thumb: Minimize Pain, Maximize Gain
+-------------------------------------------
+
+Coding is a repetitive activity: Coders look for particular behaviors and score them over and over across different participants and sessions for hours at a time.
+So, minimize the requirements on coders’ attention and short-term memory.
+Design your codes so that coders’ visual attention is directed toward a coherent set of behaviors that occur at the same relative places in the video frame.
+For example, if the coder is scoring the person’s manual actions, they can easily attend to the objects touched at the same time.
+Indeed, they cannot determine whether a reach occurred without also noting the target of the reach.
+Do not ask coders to divide their attention between two regions of the screen simultaneously.
+It is very difficult to attend to a person’s face, for example, while simultaneously attending to the rest of the body; this would divide the coders’ attention.
+
+Do not over code.
+You can always go back and add detail (and Datavyu’s scripts will facilitate this process).
+So, start simple with the behaviors you are most interested in.
+Do not agonize over frame accuracy if you do not care about the exact durations of an event.
+Just code what you want to analyze.
+
+A related rule of thumb: If you have already seen it, you may as well code it.
+That is, if the coder already knows something of interest without doing additional work, looking at additional video frames, or giving the problem additional thought, then the coder may as well code that behavior.
+For example, if the coders are scoring grasping actions, they also know what object is being grasped without the coders having to think about it or look at any additional video frames; so they may as well code the target object.
+If the coders are scoring the first frame when a child starts to walk and the last frame in the walking bout, the coders know “for free” which foot the child used to begin walking and which foot the child used to end the bout.
+However, the coders do not know without additional coding the timing of the other steps within the walking bout.
+
+Reciprocally, do not design codes that require a mental struggle to decide whether something has occurred or not.
+The more a coder can’t decide whether a behavior occurred or which behavior occurred, the more tiring and grueling is the coding process, and the less likely you are to get good, clean data.
+
+Minimize “back-tracking” through the video.
+Coding is least taxing if the coders can move linearly through an entire video, stopping only to identify the frames to mark onsets and offsets and fill in variable codes within a cell.
+Thus, the coder might need to wiggle within a few frames to find the target frames, but you do not want your coders to have to backtrack through the same segments of video repeatedly; they should not need to view the same several seconds or minutes of video repeatedly to score variables.
+
+Reduce short-term memory load.
+Make the prompts for each code transparent and accessible.
+When possible, do not require your coders to remember the letters for codes (what you set in your coding manual).
+In Datavyu, you can reduce the memory load by prompting the codes in the code name (e.g., ``<touch_t_m_b_o>`` might prompt the coder to score whether the child touched a toy, the mother, self, or other object).
+You can also reduce coders’ memory load by turning codes into yes-no options (e.g., ``<toy-yn> <mother-yn> <body-yn> <other-yn>`` can be very quickly scored as ``y``, ``n``, ``n``, ``n`` by tabbing through the codes if the child touched a toy).
+Do not require coders to type 0-1 codes.
+No one can remember whether ``0 = yes`` and ``1 = no`` or the other way around (or ``0 = male`` and ``1 = female``, or ``0 = left`` and ``1 = right``).
+Use letters instead.
+Everyone can remember that ``y = yes`` and ``n = no`` (and ``m = male`` and ``f = female``, etc).
+
+Keep in mind that coding requires motor actions: Coders press keys over and over for hours.
+Thus, exploit the features of Datavyu that minimize strain on coders’ eyes, hands, and brains.
+In general, you want coders to move their hands as little as possible and their eyes as little as possible.
+Coders should avoid moving their eyes down to the keyboard and avoid moving their hands from place to place on the keyboard.
+Use letters that are accessible without moving the hand from a resting position.
+ An example hand position would be using the “home keys” because keyboards are designed to allow the greatest access from that position.
+Avoid using the mouse! Mousing requires coders to move hands and eyes a lot.
+Another good reason to avoid numerical codes is that in Datavyu, numbers must be typed using the number row at the top of the keyboard because the number pad is reserved for controlling the video and the spreadsheet.
+So to type a number, the coders have to move their hands to the top of the keyboard.
+
+Minimize keystrokes by making your codes single letters.
+You can reuse the same letters in Datavyu because each code stands alone (e.g., you can have 10 codes in a column that are all yes-no variables).
+Never ever use capital letters.
+This adds a needless extra key press.
+
+Set up the critical components of Datavyu (video images, Data Viewer Controller, spreadsheet) on your computer screen in the way that best fits your personal preference and minimizes the need to move your eyes and hands.
+
+You will likely appreciate the temporal alignment feature of Datavyu that allows coders to immediately see how one code is nested within another or aligns temporally with another.
+The alignment feature conserves coders’ motor and psychological energy by providing them with an immediate visualization of the data they are coding.

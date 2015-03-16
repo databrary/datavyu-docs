@@ -1,0 +1,64 @@
+Plan Coding Passes
+------------------
+
+Before Designing Your Codes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Before planning your formal coding criteria, get an overview of your videos.
+Watch a few representative segments of video (4-6 videos from each “cell” in your research design) in real time.
+Watching bits of video from several participants or sessions will save you from basing your coding scheme on behaviors that are not representative of your whole sample.
+
+In Datavyu, you can create a “comment” column where you can jot down your ideas as you watch the videos.
+Your off-the-cuff observations will be tagged to the approximate location of the event in the video that prompted your thoughts.
+You needn’t even pause the video to do this.
+
+When you feel that you’ve seen enough, start planning your formal coding scheme.
+You can refer back to your comments and the corresponding portion of video using the “find” key on the Data Viewer Controller.
+
+Start Simple
+~~~~~~~~~~~~
+
+Behavior is rich and complex, so it might be tempting to try to code everything at once.
+Don’t do it! Instead, start simple.
+In Datavyu, you can use columns to capture information about the participant(s) on the video and to delineate important sections of the session and to reflect your study design.
+You can also use columns to capture the behaviors of interest.
+
+Starting simple is especially important for researchers new to behavioral video coding and users new to Datavyu.
+Please start simple!
+
+Why Code in Passes?
+~~~~~~~~~~~~~~~~~~~
+
+Coding in passes (scoring one set of measures all the way through a video file) is faster, more efficient, and less tiring for coders than coding multiple passes simultaneously (e.g., watching a trial to score it for one set of measures then watching it again to score it for a second set of measures and so on).
+Coding in passes minimizes the need to watch the same short bits of video repeatedly to score multiple behaviors.
+In Datavyu, you can code your variables in any order that you like.
+However, if you adopt the recommended practice of coding in passes, you will code a set of measures all the way down one column in your spreadsheet before coding another column.
+Datavyu, however, will allow you to code across columns and to code the same segment of video repeatedly, and has shortcut keys to do so.
+
+You may wish to use your first coding pass to delineate important sections of the session.
+Perhaps the session begins with some introductory procedures (interview, questionnaire, set-up, etc.), is followed by the target procedure, and then concludes with clean-up procedures.
+Or perhaps your recording session involves 3 studies or one study with several conditions.
+In these cases, your first column might reflect the overall temporal structure of the session.
+
+For your first content-loaded coding pass, focus on the behavior(s) most important to your study question (e.g., did the baby say the correct word; did the baby go over the edge of the cliff).
+In other words, start with the dependent measure that is most important, direct, and quick to answer the primary question of your study (if you could pick only one dependent measure, this is the one to start with).
+Focusing your first coding pass on the primary outcome measure(s) ensures that you will not waste time coding a sea of variables that you might never analyze.
+You can code other, secondary behaviors in subsequent passes (e.g., where baby looked while naming the object).
+
+Passes can be nested and interleaved.
+So, conditions are nested within the participant, trials are nested within conditions, and outcome measures are nested within trials.
+In Datavyu, you do not need to repeat the more inclusive category for each nested category.
+Instead, you can tag each row of behavior with the larger inclusive categories when exporting the data using scripts in the script library.
+
+Natural behaviors are interleaved and overlapping.
+Some behaviors are ongoing while other behaviors are stopping and starting (while child is talking, child touches and then stops touching a toy).
+Datavyu does not require mutually exclusive codes (talk without touch, talk with touch, no talking without touch, no talking with touch).
+This is a good thing because three types of behaviors are too much for a coder to translate into mutually exclusive categories by themselves (talk without touch and without look, talk without touch and with look, talk with touch and without look, etc.).
+You can code behaviors in different passes to capture the interleaving and overlapping.
+This is much easier than trying to deal with all the combinations of possible events.
+Exporting interleaved codes can be challenging so you should be comfortable exporting simpler codes before tackling interleaved behaviors.
+After you are comfortable with exporting simple and nested codes, visit the script library to find scripts for carving interleaved behaviors into mutually exclusive categories for export.
+ 
+Consider inter-rater reliability as a separate coding pass for each of the coding passes scored by the primary coders.
+In Datavyu, you can do primary coding and reliability in the same spreadsheet by adding a column for each reliability pass.
+To ensure that the reliability coder does not inadvertently cheat, you can hide the column coded by the primary coder using the “hide column” feature.
