@@ -32,13 +32,8 @@ Datavyu requires Java 1.6 or
 higher. Many operating systems include Java by default, but if you
 have *not* installed Java, you will need to do so.
 
-If you are using a Mac that does not
-yet have Java installed, OS X will prompt you to install a Java IDE
-when you first try to open Datavyu, or you can `download it directly from
-Apple <http://support.apple.com/kb/dl1572>`_.
-
-On a Windows-based computer, you must also download Java. Go to
-`java.com <http://java.com/en/download/index.jsp>`_ to download the latest
+If you are using a Windows-based computer tjat dpes not yet have Java installed,
+you must download Java. Go to `java.com <http://java.com/en/download/index.jsp>`_ to download the latest
 version for your operating system.
 
 Datavyu supports video playback through Quicktime.
