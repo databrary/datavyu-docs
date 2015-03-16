@@ -75,10 +75,7 @@ Mac OS X
 #. Download the latest Datavyu release for Mac OS X from the Datavyu
    website's `Downloads Page <http://datavyu.org/download/>`_.
 
-#. If your computer has not already done so, unzip the archive file
-   (e.g. using Archive Utility). This will provide you with a folder
-   containing the Datavyu software and associated support documents. You
-   can drag this to your Applications folder, or some other
+#. You can drag this to your Applications folder, or some other
    preferred location on your computer.
 
 
