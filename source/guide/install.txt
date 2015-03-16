@@ -36,7 +36,7 @@ The newest Mac build now has a built in version of Java. It no longer matters
 what version of Java is on your computer because Datavyu will use the one that 
 it installs. 
 
-If you are using a Windows-based computer tjat dpes not yet have Java installed,
+If you are using a Windows-based computer that does not yet have Java installed,
 you must download Java. Go to `java.com <http://java.com/en/download/index.jsp>`_ to download the latest
 version for your operating system.
 
