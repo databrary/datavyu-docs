@@ -13,7 +13,7 @@ Getting Started with APIs and Scripting
 ---------------------------------------
 
 .. image:: /img/check-valid-codes.png
-   :align: right
+   :align: center
 
 APIs, Application Program Interfaces, are collections of code that
 specify how software components communicate with each other. Datavyu's

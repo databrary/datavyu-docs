@@ -28,6 +28,10 @@ external device.
 Software Requirements
 ~~~~~~~~~~~~~~~~~~~~~
 
+Datavyu currently does play videos on Yosemite on OS X. Yosemite no longer supports
+Java Quicktime and therefore Datavyu cannot play videos. We advise our users to be aware 
+of this issue before deciding to upgrade their computer. 
+
 Datavyu requires Java 1.6 or
 higher. Many operating systems include Java by default, but if you
 have *not* installed Java, you will need to do so.
@@ -52,7 +56,7 @@ Datavyu supports video playback through Quicktime.
 
 You may alternately
 choose to use VLC for video playback, though this is not recommended. If
-you wish to use VLC, you *must* use `version 2.0.1 <http://download.videolan.org/pub/videolan/vlc/2.0.1/macosx/vlc-2.0.1.dmg>`_,
+you wish to use VLC, you *must* use version 2.0.1: `OSX Download <http://download.videolan.org/pub/videolan/vlc/2.0.1/macosx/vlc-2.0.1.dmg>`_, `Windows Download <http://download.videolan.org/pub/videolan/vlc/2.0.1/win32/vlc-2.0.1-win32.zip>`_,
 as Datavyu does not currently support later versions.
 
 
@@ -61,6 +65,12 @@ Install Datavyu
 
 Mac OS X
 ~~~~~~~~
+
+#. Before downloading Datavyu, please be sure that your security settings
+   allow the installation of non-Mac applications. To change this
+   permanently or temporarily go to System Preferences > Security & Privacy. 
+   On the General Tab click the little lock in the lower left corner to unlock 
+   the general preference pane. Then select "Anywhere" to allow Datavyu's installtion. 
 
 .. figure:: /img/install-mac.png
    :align: center
@@ -94,8 +104,8 @@ Windows
 .. figure:: /img/windows-unzip.png
    :align: center
 
-2. Unzip the program by opening the ``datavyu-1.0`` folder and
-   double-clicking on ``datavyu-1.0``. A "Compressed (zipped) Folders
+2. Unzip the program by opening the ``datavyu`` folder and
+   double-clicking on ``datavyu``. A "Compressed (zipped) Folders
    Warning" will appear. Select :guilabel:`Extract all` to decompress
    the files.
 
@@ -130,7 +140,7 @@ the :guilabel:`Help` menu from the menu bar when the spreadsheet window is selec
 and then selecting :guilabel:`Check for
 updates...`.  If a new version is available, it will direct you to the
 download page where you can download the latest release. Remember to replace your current
-application witht he latest version of Datavyu that you have just downloaded!
+application with the latest version of Datavyu that you have just downloaded!
 
 During the course of development, the Datavyu team releases several
 *pre-release* versions of the software prior to releasing official

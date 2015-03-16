@@ -21,7 +21,7 @@ Editor's features:
 Open the Code Editor
 --------------------
 
-From the Controller, click on the :guilabel:`Spreadsheet`
+From the spreadsheet, click on the :guilabel:`Spreadsheet`
 menu, and then select :guilabel:`Code Editor`.
 
 .. image:: /img/code-editor.*
@@ -29,9 +29,8 @@ menu, and then select :guilabel:`Code Editor`.
    :align: center
    :width: 573px
 
-The Code Editor window will open, and list all existing
-columns. From here, you can add a new column, or edit
-existing columns.
+The Code Editor window will open and list all existing
+columns and codes. From here, you can add and edit columns and codes. 
 
 Add a Column
 ------------

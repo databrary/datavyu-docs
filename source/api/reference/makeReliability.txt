@@ -13,6 +13,8 @@ makeReliability()
 
    .. table-start
 
+   .. tabularcolumns:: |l|L|L|
+
    .. list-table:: 
       :widths: 20, 40, 50
       :header-rows: 1
@@ -29,13 +31,13 @@ makeReliability()
         - String
         - The name of the column that we want to create a reliability
           column *from* (i.e. the existing coded column).
-      * - ``multiple_to_keep`` (**optional**)
-        - Integer
+      * - ``multiple_to_keep``
+        - Integer (**optional**)
         - Number of cells to skip: a value of ``2`` includes *every other
           cell* in the new variable; ``1`` includes every cell, and ``0``
           creates a blank column with no cells
-      * - ``*codes_to_keep`` (**optional**)
-        - comma-separated strings
+      * - ``*codes_to_keep``
+        - comma-separated strings (**optional**)
         - Codes you want to copy from the original to new column.
           These are codes that the reliability coder will not have to
           code.

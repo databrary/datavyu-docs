@@ -6,35 +6,23 @@ Use Scripts to Export Data from Datavyu
 
 .. begin-content
 
-Automatic Export Methods
+Export Methods
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. TODO: include the instructions and/or explain that it will be
-   forthcoming. if not upcoming:
-   - remove heading
-   - add paragraph explaining that currently only manual export methods
-     but that automatic are under development
-
-Manual Export Methods
-~~~~~~~~~~~~~~~~~~~~~
-
-Datavyu supports numerous data export methods. This section covers four
-common approaches, in order of increasing complexity:
-
-- A straight dump to CSV file where cells correspond to the coded cells
-  in Datavyu. See :doc:`/guide/tutorials/export-data`.
+Datavyu supports numerous data export methods. The :doc:`/guide/tutorials/export-data` 
+section of the software guide tutorials demonstrates how to export data to a basic .csv 
+file using the *Export File* function. The Ruby scripting API offers users more
+flexibility in specifying different output file formats for exporting data. This section 
+covers two scripting approaches: 
 
 - A straight *frame-by-frame* dump detailing all observations 
   associated with each frame.
 
-- A *nested* dump, which loops through each column and nests cells
-  appropriately, 
-
-- A *nested dump with un-nested cells*, which is similar to the
-  nested dump, but which also works if your cells do not nest.
+- A *nested* export, which loops through each column and nests cells
+  appropriately. 
 
 If you wish to export data from multiple files, refer to the 
-:doc:`/api/tutorials/perform-perform-operations-on-multiple-files` tutorial for guidance on operations 
+:doc:`/api/tutorials/perform-operations-on-multiple-files` tutorial for guidance on operations 
 that involve multiple files.
 
 .. Method 1: Direct Dump to CSV
@@ -70,31 +58,59 @@ that involve multiple files.
 
 .. TODO: actually include the instructions
 
-Method : Nested dump
-````````````````````
-.. image:: /img/sample-nested-data.png
-   :align: right
+Method : Frame-by-Frame Export
+`````````````````````````````````
+A frame-by-frame export prints a row for every video frame in the spreadsheet 
+and looks across every column and code and writes the values for that frame. 
+This method is particularly useful for free-form coding projects that contain 
+multiple columns that do not nest in time. Using a frame-by-frame export makes 
+it easy to import your data into other software packages (e.g., Excel, SPSS, R).
 
-A *nested dump* exports data based on the nesting of :term:`cells
+Datavyu includes a script that performs frame-by-frame export on any file 
+automatically. By default, the script “Export Data by Frame” will appear in the 
+“favorites” folder in Datavyu. To test the script, open the sample spreadsheet in 
+Datavyu. Once the spreadsheet has loaded, select the Script menu and then select 
+“Favorites/Export Data by Frame.rb”. That’s it! The script will output a .csv file 
+to your desktop called “framebyframe_export.csv” that contains all of the data from 
+the spreadsheet that can be opened in the statistical package of your choice. 
+
+.. figure:: /img/frame-by-frame.png
+   :align: center
+
+If you would like to export multiple files frame-by-frame, there is a script included 
+for that as well (“Export Data by Frame – Multiple.rb”). Simply create a folder on your 
+desktop called “datavyu_files” and place the files you want to export in that folder. 
+Please note that the files should contain the same columns and codes to export correctly. 
+
+These scripts will work on a variety of files and may fit many users’ needs. However, 
+if you want to tailor the scripts for your own purposes (e.g., changing the output file, 
+input folder, or delimiter), you can find the script files in your Datavyu installation 
+folder under the “Favorites” folder.
+
+Method : Nested Export
+````````````````````````
+
+.. figure:: /img/sample-nested-data.png
+   :align: center
+   
+A *nested export* exports data based on the nesting of :term:`cells
 <cell>`. This is most useful for spreadsheets whose cells group together.
 For instance, the following spreadsheet example has three columns:
 "id", "trial", and "foot". "id" is a participant ID, which might include
-codes that describe the participant's individual id code, their gender,
-age, etc. "trial" is a column that delineates each trial the participant
-participated in, and "foot" is a column representing observations
-recorded during each trial.
+codes that describe the participant's individual id code, gender,
+age, etc. "trial" is a column that marks each trial that occurred and 
+"foot" is a column representing observations recorded during each trial.
 
 The cells, then, group together with an "id" cell covering the length of
-all trials. There are two trials in the example, and there are several
-"foot" cells that align within the time limits of each trial.
+all trials. There are two trials in the example that occur within the time 
+limits of the "id" cell and there are several"foot" cells that occur within 
+the time limits of each trial.
 
 To export data from this style of spreadsheet, we will use a series of
 :ref:`loops <loops>`, exporting a row of tab-separated values for each cell in
-the foot column. Each row will include the "id" and "trial" data that
-the foot cell nests beside. This spreadsheet follows [reference to best
-practices guide that talks about one file / participant], so there is
-only one "id" cell, since all of the data in that spreadsheet is for a
-single participant.
+the "foot" column. Each row will include the "id" and "trial" data that
+the "foot" cell nests beside. This spreadsheet has only one "id" cell, 
+since all of the data in that spreadsheet is for a single participant.
 
 #. Set up the script, and then define where you are going to output the
    file to. You need to define the location of the file (in this case,
@@ -108,8 +124,8 @@ single participant.
       begin
       
          # Defines the location of the file that we're going to be outputting 
-      	# the spreadsheet data to - the file name is DataOutput.txt
-      	# and is located on the Desktop.
+         # the spreadsheet data to - the file name is DataOutput.txt
+         # and is located on the Desktop.
          out_file = File.expand_path("~/Desktop/DataOutput.txt")
          
          # Creates the file, and assigns write permissions so that the system
@@ -227,12 +243,13 @@ single participant.
             for tcell in trial.cells
                for fcell in foot.cells                  
                   if fcell.onset >= tcell.onset && fcell.offset <= tcell.offset
-
                      # Write the cells' codes to the output file, separated by tabs - the "\t"
                      # You must include a newline indicated, "\n" so that the next cells' codes
                      # will be output on a new line, giving them their own row.
-                     out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" + tcell.offset.to_s + "\t" + tcell.trial + "\t" + fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + fcell.offset.to_s + "\t" + fcell.side + "\n")
-
+                     out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" +
+                         tcell.offset.to_s + "\t" + tcell.trial + "\t" + 
+                         fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + 
+                         fcell.offset.to_s + "\t" + fcell.side + "\n")
                      # End the if clause, and the for loops, as well as the script
                   end
                end

@@ -11,6 +11,8 @@ getColumn()
 
    .. table-start
 
+   .. tabularcolumns:: |l|L|L|
+
    .. list-table:: 
       :widths: 20, 40, 50
       :header-rows: 1
@@ -26,7 +28,7 @@ getColumn()
 
    .. admonition:: Returns
 
-      A Ruby object representation of the Datavyu column
+      A Ruby object representation of the Datavyu column.
 
    .. admonition:: Example
 

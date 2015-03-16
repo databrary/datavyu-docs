@@ -6,7 +6,7 @@ smoothColumn()
 
 .. method:: smoothColumn(colname, tol = 33)
 
-   Tweaks a variable's cells' onsets so that there is a maximum of
+   Tweaks cell onsets so that there is a maximum of
    ``tol`` milliseconds between each cell. If two cells are less than
    ``tol`` apart, it moves on to the next pair of cells; if there
    is a larger gap than ``tol``, the second cell's :term:`onset` is
@@ -14,6 +14,8 @@ smoothColumn()
    
    .. table-start
    
+   .. tabularcolumns:: |l|L|L|
+
    .. list-table::
       :widths: 20, 40, 50
       :header-rows: 1

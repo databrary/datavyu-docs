@@ -5,7 +5,7 @@ Introduction to Scripting
 .. default-domain:: rb
 
 This detailed guide describes how to write Ruby scripts to automate
-tasks in Datavyu, and to ensure reliable :term:`coding <code>`,
+tasks in Datavyu and to ensure reliable :term:`coding <code>`.
 
 :doc:`/api/overview` provides an overview of the :term:`methods
 <method>` and :term:`classes <class>` of the Datavyu API. For a more
@@ -124,7 +124,7 @@ Basic Script Format
    underscore, period, and slash serve a purpose. You must
    use the correct syntax, or the script will not work. 
    
-   Code and column names are also case sensitive If you have a column
+   Code and column names are also case sensitive. If you have a column
    in a spreadsheet called "trial", requesting "Trial" will not work.
 
 All Datavyu API scripts must include the following
@@ -154,7 +154,7 @@ In general, the rest of the script code goes between ``begin`` and
 .. tip::
 
    Anything that comes after a ``#`` character on a line in Ruby is a
-   "comment", which means it will not execute any specific task. Comments are useful for
+   comment, which means it will not execute any specific task. Comments are useful for
    leaving notes that explain what the code is doing so that when you return to an old script,
    you remember what you're looking at. The examples in this documentation
    use comments extensively.

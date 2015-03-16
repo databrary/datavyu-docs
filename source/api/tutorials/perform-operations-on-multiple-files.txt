@@ -6,13 +6,15 @@ Batch Operations on Multiple Files
 
 Writing scripts that act on multiple files is largely the same as
 writing scripts that act on a single file: the interactions with
-columns, codes, and cells is the same; the script simply has to manage
-working with multiple Datavyu Spreadsheet files.
+columns, codes, and cells are the same. The scripting API includes 
+commands that can load and save Datavyu spreadsheets. After a spreadsheet 
+is loaded, the script can execute commands on the spreadsheet (e.g., export 
+data, change or add columns), then open the next spreadsheet, execute commands, and so on. 
 
 This tutorial loads the spreadsheet files in a folder called
 ``datafiles`` that is located on the Desktop, accesses the "id",
 "trial" and "foot" columns, and then sets up a loop to export the
-data, following the process in :doc:`/api/tutorials/export-data-using-scripts'.
+data, following the process in :doc:`/api/tutorials/export-data-using-scripts`.
 
 #. Create the output data file that you will be exporting the
    spreadsheet data to:
@@ -107,12 +109,13 @@ data, following the process in :doc:`/api/tutorials/export-data-using-scripts'.
             for tcell in trial.cells
                for fcell in foot.cells                  
                   if fcell.onset >= tcell.onset && fcell.offset <= tcell.offset
-
                      # Write the cells' codes to the output file, separated by tabs - the "\t"
                      # You must include a newline indicated, "\n" so that the next cells' codes
                      # will be output on a new line, giving them their own row.
-                     out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" + tcell.offset.to_s + "\t" + tcell.trial + "\t" + fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + fcell.offset.to_s + "\t" + fcell.side + "\n")
-
+                     out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" + 
+                         tcell.offset.to_s + "\t" + tcell.trial + "\t" + 
+                         fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + 
+                         fcell.offset.to_s + "\t" + fcell.side + "\n")
                      # End the if clause, and the for loops, as well as the script
                   end
                end
@@ -154,9 +157,11 @@ data, following the process in :doc:`/api/tutorials/export-data-using-scripts'.
                         # Write the cells' codes to the output file, separated by tabs - the "\t"
                         # You must include a newline indicated, "\n" so that the next cells' codes
                         # will be output on a new line, giving them their own row.
-                        out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" + tcell.offset.to_s + "\t" + tcell.trial + "\t" + fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + fcell.offset.to_s + "\t" + fcell.side + "\n")
-
-                           # End the if clause, and the for loops, as well as the script
+                        out.write(idcell.idnum + "\t" + tcell.onset.to_s + "\t" + 
+                            tcell.offset.to_s + "\t" + tcell.trial + "\t" + 
+                            fcell.ordinal.to_s + "\t" + fcell.onset.to_s + "\t" + 
+                            fcell.offset.to_s + "\t" + fcell.side + "\n")
+                        # End the if clause, and the for loops, as well as the script
                         end
                      end
                   end

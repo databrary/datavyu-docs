@@ -10,7 +10,7 @@ allow software components to communicate with each other.
 The Datavyu API lets users write :term:`scripts <script>` in a Ruby programming
 interface that can modify the contents of Datavyu spreadsheets.
 
-Suppose you have a data set that contains fifty Datavyu files and videos. 
+Suppose you have a dataset that contains fifty Datavyu files and videos. 
 After you analyze your data, you realize that you want to go back and code 
 a new pass for all of your files. Instead of manually creating a new column 
 in all fifty Datavyu files, you can write a script that will do it for you! 
@@ -22,7 +22,7 @@ the changes across all the relevant files.
 
 Or perhaps you’d like a reliability coder to score 25% of each participant’s video. 
 You can use a script to create a “reliability column” and insert every fourth cell 
-(or a randomly selected 25% or any other metric) into that column.
+(or a randomly selected 25% or any other metric) for a specific column.
 
 Or maybe you want to check each file for typos or impossible onset/offset times. 
 Use a script for data checking!
@@ -49,7 +49,7 @@ You do not need to be an experienced programmer or even
 understand the ins and outs of Ruby to be able to write scripts with
 the Datavyu API. Following the :doc:`API tutorials </api/tutorials>`
 is a good way to become familiar with scripting for Datavyu. With some
-practice, and you will likely be able to customize the sample scripts
+practice, you will likely be able to customize the sample scripts
 for your own purposes. However, gaining a grounding in some
 programming concepts will make it easier to create your own scripts
 for your unique use cases and needs.

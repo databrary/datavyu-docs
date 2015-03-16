@@ -7,16 +7,14 @@ Convert an OpenSHAPA Script to the Datavyu Format
 If you have previously written scripts for use with OpenSHAPA, you
 can easily reuse them with Datavyu.
 
-Datavyu's Ruby API was designed to interoperate with the earlier
-formats, so you need simply add the following line of code to the
-beginning of your script:
+Datavyu's Ruby API was designed to be compatible with the earlier
+scripting formats. To update scripts from OpenSHAPA, you simply need to 
+delete the OpenSHAPA API code at the beginning of the file and replace 
+it with the following line of code:
 
 .. code-block:: ruby
 
    require 'Datavyu_API.rb'
 
-You will also need to delete the OpenSHAPA API code at the beginning
-of the file.
-
-And with that, you should be good to run your existing OpenSHAPA
+And with that, you should be able to run your existing OpenSHAPA
 scripts through Datavyu.

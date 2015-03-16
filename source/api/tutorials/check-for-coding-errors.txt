@@ -6,12 +6,11 @@ Check for Coding Errors
 
 .. begin-content
 
-One of the most powerful uses for Datavyu scripts is checking for coding
-errors. Since Datavyu does not enforce any rules during coding, it is
-possible for coders to input an invalid code. A good example is
-inputting an "h", when only "j" or "k" are acceptable values. Using
-scripts, coders can double-check their work for errors and note them
-early on.
+Datavyu scripts have the ability to check for coding errors to make up
+for potential human error. Inputting invalid codes is a common coding 
+mistake. For example, a coder might accidentally input an "h", when only 
+"j" or "k" are acceptable values. Using scripts, coders can double-check  
+their work for errors and fix them early on.
 
 Datavyu API provides the :meth:`checkValidCodes` method to check for
 coder errors. :meth:`checkValidCodes` requires at least three
@@ -22,7 +21,7 @@ Key-value pairs consist of a "key", the name of a Datavyu code, and a
 :meth:`checkValidCodes` then checks each code (key) against its list
 of valid values (the values).
 
-The following examples check the ``step`` column against its codes. You
+The following examples check the ``look`` column against its codes. You
 can download the sample data used in this tutorial from :download:`here
 </resources/SampleData-checkValidCodes.opf>`.
 
@@ -49,7 +48,7 @@ Basic Format
          # "codename", ["validcode1", "validcode2", etc], 
          # "code2", [ "validcode1", "validcode2", etc], ...
 
-         checkValidCodes("step", "", "foot", ["l", "r"], "ht", ["h", "t"], "direction", ["f","b"])
+         checkValidCodes("look", "", "direction", ["l", "r"], "target", ["a", "b"])
       end
 
    Breaking down the function call makes it easier to follow what is
@@ -62,23 +61,19 @@ In the example, we have:
 
 .. code-block:: ruby
 
-   checkValidCodes("step", "", "foot", ["l", "r"], "ht", ["h", "t"], "direction", ["f","b"])
+   checkValidCodes("look", "", "direction", ["l", "r"], "target", ["a", "b"])
 
-- ``"step"`` is the name of the variable to check, and 
+- ``"look"`` is the name of the variable to check. 
 
-- ``""`` is the location that we want to dump the output to. Using
+- ``""`` is the location that we want to export the output to. Using
   ``""`` indicates that we do not want to write the results to a file,
   and that it should instead display in the console.
 
-- ``"foot", ["l", "r"]`` is the first key-value pair, which specifies
-  that the "foot" Datavyu [code] should only have the values "l" or "r".
+- ``"direction", ["l", "r"]`` is the first key-value pair, which specifies
+  that the "direction" Datavyu code should only have the values "l" or "r".
    
-- ``"ht" , ["h", "t"]`` is the second key-value pair, which specifies
-  that the "ht" Datavyu [code] should only have the values "h" or "t".
-
-- ``"direction", ["f", "b"]`` is the third (and final) key-value pair,
-  which specifies that the "direction" Datavyu [code] should only have
-  the values "f" or "b".
+- ``"target" , ["a", "b"]`` is the second key-value pair, which specifies
+  that the "target" Datavyu code should only have the values "a" or "b".
 
 .. end-basic
 
@@ -91,7 +86,7 @@ Advanced Format
 
 You can perform the same verification by first assigning the valid codes
 to objects. This makes it is easier for human readers to parse the
-script, and makes it easy to modify or update the valid code lists
+script, and makes it easy to modify or update 
 in the future.
 
 #. Set up the script
@@ -109,9 +104,8 @@ in the future.
       begin
          # Store each of the valid code arrays into a object first
          # so that it is easier to read
-         footCodes = ["l", "r"]
-         htCodes = ["h", "t"]
-         directionCodes = ["f", "b"]
+         directionCodes = ["l", "r"]
+         targetCodes = ["a", "b"]
 
 #. Check for coding errors using :meth:`checkValidCodes`, replacing
    the lists with your newly-created objects, and end the script:
@@ -120,12 +114,11 @@ in the future.
 
       require 'Datavyu_API.rb'
       begin
-         footCodes = ["l", "r"]
-         htCodes = ["h", "t"]
-         directionCodes = ["f", "b"]
+         directionCodes = ["l", "r"]
+         targetCodes = ["h", "t"]
 
          # Check for typos, replacing the code arrays with your new variables:
-         checkValidCodes("step", "", "foot", footCodes, "ht", htCodes, "direction", directionCodes)
+         checkValidCodes("look", "", "direction", directionCodes, "target", targetCodes)
       end
 
 Check Code Validity and Output to a File
@@ -161,14 +154,13 @@ in the ``dumpFile`` parameter.
 
       require 'Datavyu_API.rb'
       begin
-         footCodes = ["l", "r"]
-         htCodes = ["h", "t"]
-         directionCodes = ["f", "b"]
+         directionCodes = ["l", "r"]
+         targetCodes = ["a", "b"]
 
          output = File.expand_path("~/Desktop/output.txt")
 
          # Check for errors, specifying the output variable as the dumpFile parameter 
-         checkValidCodes("step", output, "foot", footCodes, "ht", htCodes, "direction", directionCodes)
+         checkValidCodes("look", output, "direction", directionCodes, "target", targetCodes)
       end
 
 When the script ends, the output.txt file will be created on the
@@ -178,6 +170,6 @@ it should find one error, and the output should resemble:
 
    .. code-block:: sh
    
-      Code ERROR: Var: step   Ordinal: 2      Arg: foot     Val: rj
+      Code ERROR: Var: look   Ordinal: 2      Arg: direction     Val: rj
 
 .. end-content

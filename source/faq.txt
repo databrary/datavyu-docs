@@ -19,8 +19,6 @@ can export data from Datavyu in a variety of forms depending on your
 analysis needs. See the :doc:`/guide/tutorials/export-data` and
 :doc:`/api/tutorials/export-data-using-scripts` tutorials for more information.
 
-In the future, Datavyu will include support for scripting using R.
-
 What video formats does Datavyu support?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -49,6 +47,11 @@ No! Datavyu is completely free and open source. If you would like to
 contribute to the development of Datavyu, see: `the source on GitHub
 <https://github.com/databrary/datavyu>`_.
 
+What is Datavyu's citation?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Datavyu Team (2014). Datavyu: A Video Coding Tool. Databrary Project, New York University. URL http://datavyu.org.
+
+
 Technical Requirements
 ----------------------
 
@@ -57,8 +60,6 @@ Which operating system is Datavyu available for?
 
 Datavyu builds are available for both Windows and Mac OS X. You can
 download either version from `the Datavyu Downloads page <http://datavyu.org/download/>`_.
-
-In the future, Datavyu will also provide a Linux version.
 
 Do I need any additional software to run Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -103,7 +104,13 @@ I'm not sure how to best code my data? Are there guidelines for coding?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Best Practices Guide will provide
-in-depth instructions and suggestions for coding your behavioral data.
+in-depth instructions and suggestions for coding your behavioral data. It is coming soon! 
+
+What is the best way to prevent data loss?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We suggest that users pull all of their spreadsheets to the desktop before coding them. 
+After coding, users can ship their spreadsheets back to their folders or hard drive. 
 
 How do I update Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~

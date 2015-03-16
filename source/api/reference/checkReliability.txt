@@ -11,6 +11,8 @@ checkReliability()
 
    .. table-start
 
+   .. tabularcolumns:: |l|L|L|
+
    .. list-table:: 
       :widths: 20, 40, 50
       :header-rows: 1
@@ -33,8 +35,8 @@ checkReliability()
         - Amount of slack permitted, in milliseconds, between the two
           onset and offsets before it will be considered an error. Set to 0
           to tolerate no difference.
-      * - ``dump_file`` (**optional**)
-        - String path or Ruby File object
+      * - ``dump_file``
+        - String path or Ruby File object (**optional**)
         - The full string path to dump the reliability output to. This can
           be used for multi-file dumps or just to keep a log. You can also
           give it a Ruby File object if a file is already started.
