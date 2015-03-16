@@ -1,0 +1,17 @@
+====================================================================
+Step 1: Recordings—Verify That You Can See the Behaviors of Interest
+====================================================================
+
+Summary
+-------
+
+Record a few videos with your intended study procedure.
+Verify that your video recording arrangement allows your coders to see the critical behaviors of interest.
+If the behaviors are not visible, revise the camera views.
+Once verified, begin collecting data in earnest.
+
+.. toctree::
+  :titlesonly:
+
+  /best-practices/steps/recordings/see
+  /best-practices/steps/recordings/optimal

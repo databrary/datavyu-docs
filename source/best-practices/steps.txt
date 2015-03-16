@@ -25,7 +25,7 @@ Otherwise, you may spend valuable time collecting and coding data that you canâ€
 .. toctree::
    :maxdepth: 1
    
-   /best-practices/steps/recording
+   /best-practices/steps/recordings
    /best-practices/steps/codes
    /best-practices/steps/checks
    /best-practices/steps/workflow

@@ -1,0 +1,51 @@
+What It Means to “See” Behaviors of Interest
+--------------------------------------------
+
+Remember, the video camera is a filter.
+If the behaviors are not on camera, you cannot see them and you cannot code them; they might as well have never happened.
+Datavyu allows you to view your videos at various speeds.
+Exploit this feature to determine whether the behaviors of interest are adequately visible for coding.
+
+On Camera
+~~~~~~~~~
+
+Camera views make all the difference.
+With well-designed camera views, the behaviors of interest are visible and large on the video frame.
+It can be advantageous to collect data from multiple camera views: Different behaviors may be visible from different angles, and it is often helpful to have multiple perspectives on a single behavior.
+Datavyu can synchronize views from different video files or you can use commercial software to merge and synchronize your camera views onto a single video frame.
+Often, the critical behavior of interest is obscured on one camera view; multiple camera views ensures that you will always be able to see the behavior.
+
+Viewing Speed
+~~~~~~~~~~~~~
+
+Visibility varies depending on the viewing speed.
+For many behaviors, you will want to view the videos at speeds slower than real time.
+Datavyu provides easy, fingertip control over the viewing speed with the shuttle keys—allowing you to slow down, speed up, or pause the video with a tap of a finger.
+You can also view the videos frame by frame using fingertip control over the jog keys.
+
+Rules of Thumb
+~~~~~~~~~~~~~~
+
+Use HD video for a crisper, higher resolution image.
+But be aware of data storage requirements.
+Most people don’t need the highest setting on their camera, which results in huge, unmanageable files.
+Large files also require more powerful computers for playback.
+The “lowest” HD setting is a lot easier to store and for most purposes looks great.
+Thus, consider the trade-off between higher resolution videos and storage/processing requirements.
+Your camera lenses and apertures will also affect whether the image is blurry, distorted, dark, or over-exposed.
+
+In general, it is easier to code things you can see rather than things that you hear.
+
+Use visual cues, not sound cues to demarcate sections of video.
+You can only hear sound while playing the video in real time and it is difficult to determine when a sound begins or ends with frame precision.
+Use visual contrast, not sound, to demarcate important sections of your recording session (e.g., new conditions, new trials).
+Abrupt changes in contrast are easier to see than subtle visual changes, especially at faster than real-time speeds (and you are likely to want to fast forward to different sections of your video).
+Flipping the room lights on and off provides an easily implemented and visible demarcation of sections of the session.
+Holding a bright card in front of a camera (with condition name or trial number) provides another easily implemented and visible demarcation of sections of the session.
+
+Use multiple camera views to capture both small body parts/small movements and the whole body/scene.
+Small body parts, small movements, facial expressions, and eye movements are difficult to see when they are small in the video frame.
+
+Part of planning your recording arrangement involves thinking about your recording context.
+For example, white skin is difficult to see against a light background and dark skin is difficult to see against a dark background.
+So, create more visual contrast by making your background a bright or saturated color or dressing the child in a bright or saturated color (we use bright blue carpets and mats because infants’ hands and feet are clearly visible against them).
