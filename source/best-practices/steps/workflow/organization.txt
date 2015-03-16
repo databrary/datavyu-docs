@@ -1,0 +1,37 @@
+File Organization
+-----------------
+
+Keep your files well organized.
+You might want an overall study folder that contains smaller folders to hold paperwork, video files, Datavyu files, and so on.
+
+Establish a standard naming convention for each file type and stick to it.
+For example, ``Crawler10-01.mp4``, ``Crawler10-01.opf``, ``Crawler13-23.mp4``, ``Crawler13-23.opf``, ``Walker13-08.mp4``, and ``Walker13-08.opf`` might represent infants from crawling and walking groups at 10 and 13 months of age; the numbers after the dash might represent their participant IDs; the file extension denotes video and Datavyu spreadsheet files.
+Naming conventions will make your files easier to find by members of your lab and will make your data easier to share with other labs.
+
+If you keep video files in the same folder on the same path as they were when you originally opened them, Datavyu will automatically find them for you when you open the corresponding spreadsheet.
+Otherwise, you can link them to the spreadsheet manually.
+If you keep your Datavyu files in the same folder, you can easily run scripts over all of the files in the folder.
+You can backup your video files onto a hard drive or you can use Databrary as your video file backup prior to sharing with the larger community.
+
+Keep a formal record of who coded what passes on what video files and what date they did it.
+Do the same for reliability coding, and for whether discrepancies among coders were checked or discussed.
+You might also assign coding jobs using the same record-keeping system.
+
+Keep your coding manual up to date.
+If the codes change, make a note of who implemented the change and what date the change was implemented.
+This will help you if you need to go back to recode portions of video or if you need to distinguish changes in the code in your analyses.
+
+Template Spreadsheet
+~~~~~~~~~~~~~~~~~~~~
+
+Keep a template spreadsheet in your study folder.
+This spreadsheet has the latest version of the codes for each pass, but the columns are blank.
+When you are ready to code a new participant, duplicate the template and save it with the appropriate file name.
+You can keep the template up to date by making changes globally to all of the files in a folder using a script.
+
+File Storage
+~~~~~~~~~~~~
+
+Keep your data safe.
+Back up your video and Datavyu files.
+You can store your videos and Datavyu files on Databrary to ensure safe and secure storage and backup.

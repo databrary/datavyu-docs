@@ -2,3 +2,20 @@
 Step 4: Workflow—Establish a Workflow and Code Videos
 =====================================================
 
+Summary
+-------
+
+Now that you have a functioning coding scheme and manual, and have a plan for exporting and analyzing your data, you should establish a workflow and code videos in earnest.
+Use a template spreadsheet.
+Keep your video and Datavyu files and scripts organized into folders.
+Your primary coder should score a file and then check it for errors.
+The reliability coder goes next, scoring the file and checking it for errors.
+The two coders check their reliability and make decisions about disagreements.
+Then export the data into an analysis spreadsheet.
+
+.. toctree::
+  :titlesonly:
+
+  /best-practices/steps/workflow/organization
+  /best-practices/steps/workflow/coding
+  /best-practices/steps/workflow/share

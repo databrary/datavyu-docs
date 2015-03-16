@@ -1,0 +1,43 @@
+Coding Workflow
+---------------
+
+Create a workflow that suits the operation of your lab.
+In general, an efficient workflow minimizes errors and maximizes coder’s time on task.
+
+First Coder Code and Check Errors
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You will have a primary coder or set of coders for each pass.
+The primary coder will code the pass through the entire video file.
+When finished, before shutting the spreadsheet, the coder will run the check error script for that pass.
+The coder will correct all of the identified careless errors.
+Then the coder will note in your formal records that the pass is finished and ready for the reliability coder.
+
+Reliability Coder Code and Check Errors
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The reliability coder will code a subset of the video file (25% or so) for that pass.
+In Datavyu, the reliability coder scores data into a new column and the codes from the primary coder’s column are “hidden.” When finished, before shutting the spreadsheet, the reliability coder will run the check error script for that pass.
+The coder will correct all of the identified careless errors.
+Then the coder will note in the records that the reliability pass is finished.
+
+Check Inter-Rater Reliability
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Now the coders will check their inter-rater reliability.
+In Datavyu, to check inter-rater reliability, you will run a script that identifies times, codes, or trials where coders disagreed.
+The rate of disagreements must be reported in the published report of the study.
+Likely, the final analyses of inter-rater reliability for that pass will be conducted after all of the files are coded.
+However, checking inter-rater reliability intermittently ensures that none of the coders experience so much drift that the codes become unreliable.
+
+Typically, researchers analyze the data produced by the primary coder and do not analyze the reliability coder’s data beyond ensuring inter-rater reliability.
+However, known errors need not be entered into the primary data analyses conducted on the column of data produced by the primary coder.
+Instead, if the coders determine after discussing each disagreement that the error was committed by the primary coder, they could swap the codes between the primary and reliability coders (thereby retaining the same inter-rater reliability), noting the swap if desired.
+In this way, known errors are eliminated from the final analyses on the primary coder’s data.
+Note that if errors are eliminated in this way, you must keep a record of the original disagreement so that you do not inflate your reliability statistics.
+
+Export Data
+~~~~~~~~~~~
+
+In Datavyu, data can be exported incrementally after each file is coded (using the File Export function or a script), after an entire coding pass is completed across the entire set of video files (using a script to complete export in one button press), and/or after all of the coding passes are completed.
+Researchers may prefer to analyze one set of variables as they become available rather than waiting until the entire study is completely coded.

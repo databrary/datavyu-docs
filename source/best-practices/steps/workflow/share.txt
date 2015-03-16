@@ -1,0 +1,9 @@
+Share Your Data in Databrary
+----------------------------
+
+Video files and Datavyu files can be stored and shared with lab members and collaborators on Databrary as each session is collected.
+When the researcher is ready (typically, after a paper describing the study has been accepted for publication), the video files and Datavyu files and other metadata (coding manual, etc.) can be shared with authorized researchers in the Databrary developmental and learning science community.
+
+Turn all paper data into electronic files immediately after the session is completed.
+This will make it easier for you to track participant permissions, keep your files organized, and share your data.
+Do not share participant contact information on Databrary.
