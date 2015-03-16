@@ -47,7 +47,7 @@ Note that the notion of onset and offset is only a convention.
 In Datavyu, it is possible for the “onset” time to be later than the “offset” time, if for example, you want one time to represent the start of event A and the other time to represent the start of event B and sometimes B precedes A.
 In these cases, Datavyu will display the cell with a red line (don’t worry, the red line is only a tag; it does not mean that you made a mistake unless your code does not allow offset times to precede onset times).
 
-In Datavyu, :term:`script`s are routines written in the Ruby programming language that allow you to manipulate the data in your spreadsheet, add/delete codes from your spreadsheet, insert or delete cells in your spreadsheet, insert or delete columns in your spreadsheet, conduct analyses on your codes, import data into the spreadsheet, and export spreadsheet data in whatever format you desire.
+In Datavyu, :term:`scripts` are routines written in the Ruby programming language that allow you to manipulate the data in your spreadsheet, add/delete codes from your spreadsheet, insert or delete cells in your spreadsheet, insert or delete columns in your spreadsheet, conduct analyses on your codes, import data into the spreadsheet, and export spreadsheet data in whatever format you desire.
 Scripts can operate on a single spreadsheet or on all of the spreadsheets in a file (e.g., 100s of spreadsheets simultaneously).
 
 Coding Criteria and Types of Codes
@@ -66,7 +66,7 @@ With an implicit code for “negative affect,” coders use their own judgment t
 With an explicit code, coders must use explicit criteria such as whether the child’s brows were knit, lip was jutted, mouth was in a square shape, or crying/tears were expressed.
 
 ====  ====================================  ====================================
-      Implicit Coding Criteria              Explicit Coding Criteria
+Type  Implicit Coding Criteria              Explicit Coding Criteria
 ====  ====================================  ====================================
 Pros  Reflect individual differences in     Know how behavior was expressed in
       the manner of expressing the target   each instance and individual

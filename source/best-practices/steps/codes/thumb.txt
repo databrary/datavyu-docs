@@ -15,6 +15,8 @@ So, start simple with the behaviors you are most interested in.
 Do not agonize over frame accuracy if you do not care about the exact durations of an event.
 Just code what you want to analyze.
 
+.. _seen-it-code-it:
+
 A related rule of thumb: If you have already seen it, you may as well code it.
 That is, if the coder already knows something of interest without doing additional work, looking at additional video frames, or giving the problem additional thought, then the coder may as well code that behavior.
 For example, if the coders are scoring grasping actions, they also know what object is being grasped without the coders having to think about it or look at any additional video frames; so they may as well code the target object.

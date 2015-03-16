@@ -8,7 +8,7 @@ In Datavyu, each column represents a coding pass.
 Start with a column containing the participant information and a column (or multiple columns) to delineate sections of the session and conditions within studies and trials within conditions.
 If your study is highly structured with trials, then you can code the smallest experimental unit (the trial) at the same time as you code your primary outcome measure.
 Focus first on your most important outcome measures.
-Include variables in the pass that coders can see “for free” without having to shift their attention or think deeply (refer to “Minimize Pain, Maximize Gain” section above, “If you have already seen it, you may as well code it”).
+Include variables in the pass that coders can see “for free” without having to shift their attention or think deeply (refer to :ref:`Minimize Pain, Maximize Gain section, If you have already seen it, you may as well code it <seen-it-code-it>`).
 
 In Datavyu, each cell in a column can contain zero or multiple codes.
 A cell will contain zero codes when every cell represents the same type of event and you do not want additional information about each event (e.g., the onset time is when the left foot comes onto the floor and the offset time is when the left foot leaves the floor; or the onset time is when the eyes point at the target and the offset time is when the eyes leave the target).
