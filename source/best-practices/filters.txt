@@ -1,0 +1,28 @@
+Video Coding as a Series of Filters
+-----------------------------------
+
+Your video files are your raw material.
+Video can’t capture everything that happens in a session, but with a well-designed recording arrangement, video can capture the essential behaviors of interest.
+The data that you actually analyze (e.g., with statistics) are not the raw video files.
+Instead, the data that you analyze are derived from a smaller subset of information—categorical codes, durations computed from onset and offset times, straight transcripts of speech, informal comments, and so on.
+Therefore, it is important that your video recording arrangement allows your coders to see the behaviors of interest, that your codes reflect the information you intend to capture, and that the data are in a format that permits you to run the analyses you want to do.
+As Bakeman (2000) put it: “Occasionally investigators speak of videotapes as data, but this seems a misnomer.
+Videotapes…are raw material, not data.
+Data…are the product of measurement; videotapes are no more data than a hunk of marble is sculpture” (p. 144).
+
+Think of the video coding process as a series of filters.
+Your recording arrangement is the first filter.
+Your participants emit behavior.
+Although video captures much of the richness and complexity of behavior, your cameras cannot capture everything.
+Some of the behavior and some of the context pass through the initial filter and that is what you capture on video.
+But some of what the participants do and some of the physical and social context is immediately lost.
+Your video codes are the second filter.
+You will score only a small subset of behaviors visible and audible on video.
+The rest of the behaviors are unused and unexamined.
+What you choose to code, depends on your theoretical perspective.
+Your analyses are the third filter.
+Time-tagged video coding (as enabled by Datavyu) provides information about the timing relations among coded behaviors.
+However, most researchers analyze only the frequencies and durations of behaviors they code and the timing relations (the order of events; what happens first and last; time lags between events; etc.) are lost.
+
+Poor choices in terms of your video recording arrangement and coding scheme will taint the entire process.
+Good choices will highlight the questions you wish to address by focusing the camera, coding, and analysis filters on the behaviors of interest.

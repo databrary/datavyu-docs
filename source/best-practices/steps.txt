@@ -1,0 +1,15 @@
+4 Steps of Video Coding
+-----------------------
+
+Coding behavioral data is a multi-step, iterative process of planning, testing, revising, and refining.
+You should expect to revise many aspects of your coding plan as the data present you with new information and surprises.
+Even highly experienced coders should not expect to plan everything ahead of time because new tasks, procedures, populations, and research questions affect participants’ behaviors.
+Indeed, one of the great joys of coding behavior is that you will always discover new things.
+Thus, you will likely need to rethink your plan a few times.
+Fortunately, getting started and making revisions and additions are easy to do in Datavyu.
+
+The overall process involves four steps, which are described in detail below.
+These four steps will help you to avoid wasting time.
+We urge you not to collect hours of video before verifying that you can see the behaviors of interest.
+Do not code hours of data before verifying that your coding scheme is reliable and that you can export the data in a format that works for your statistical and graphical analyses.
+Otherwise, you may spend valuable time collecting and coding data that you can’t use.
