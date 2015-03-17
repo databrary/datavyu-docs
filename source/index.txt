@@ -40,7 +40,7 @@ from first principles to advanced strategies.
 
    /guide
    /api
-   /best-practices
    /faq
    /walkthrough-videos
    /coding-example
+   /best-practices
