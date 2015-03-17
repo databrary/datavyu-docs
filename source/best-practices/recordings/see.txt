@@ -27,7 +27,7 @@ Rules of Thumb
 ~~~~~~~~~~~~~~
 
 Use HD video for a crisper, higher resolution image.
-But be aware of data storage requirements.
+But, be aware of data storage requirements.
 Most people don’t need the highest setting on their camera, which results in huge, unmanageable files.
 Large files also require more powerful computers for playback.
 The “lowest” HD setting is a lot easier to store and for most purposes looks great.
