@@ -2,7 +2,11 @@ How To Determine Whether Your Recording Arrangement Is Optimal
 --------------------------------------------------------------
 
 After you’ve collected data from a few sessions, open the video files in Datavyu and view representative portions of the videos at various speeds, including real time, speeds faster and slower than real time (1x, 1/2x, 2x with the shuttle keys, and frame-by-frame using the jog keys), and while moving backward through the video at various speeds (-1/2x, -1x, -2x, jogging backward, etc).
-Are the critical behaviors on camera.
-Do the zoom and camera angle make it easy to see the behaviors of interest.
-Can you see the frame when a behavior of interest starts and the frame when it ends or is it too blurry.
+
+Are the critical behaviors on camera?
+
+Do the zoom and camera angle make it easy to see the behaviors of interest?
+
+Can you see the frame when a behavior of interest starts and the frame when it ends or is it too blurry?
+
 If you cannot see and hear the behaviors of interest, you will need to revise your recording arrangement or rethink your goals for coding.

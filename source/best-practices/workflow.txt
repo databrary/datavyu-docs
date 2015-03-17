@@ -2,8 +2,8 @@
 Step 4: Workflow—Establish a Workflow and Code Videos
 =====================================================
 
-Summary
--------
+Overview
+--------
 
 Now that you have a functioning coding scheme and manual, and have a plan for exporting and analyzing your data, you should establish a workflow and code videos in earnest.
 Use a template spreadsheet.

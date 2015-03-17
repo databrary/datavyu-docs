@@ -2,8 +2,8 @@
 Step 2: Codes—Design a Formal Coding Scheme
 ===========================================
 
-Summary
--------
+Overview
+--------
 
 To design a formal coding scheme, you will need to plan your coding passes, set up a template Datavyu spreadsheet, and draft a coding manual that defines your codes.
 Test your coding scheme on a few examples for each cell in your study design (e.g., each age and condition).

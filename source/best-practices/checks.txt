@@ -2,8 +2,8 @@
 Step 3: Checks—Check for Careless Errors, Inter-Rater Reliability, and Design the Format to Export Your Data
 ============================================================================================================
 
-Summary
--------
+Overview
+--------
 
 Check that the spreadsheets are free of careless coding errors and that inter-rater reliability is acceptable.
 Test your initial plan on a small but representative subset of the video data (4-6 participants from each cell of your design).
