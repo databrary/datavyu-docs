@@ -15,9 +15,9 @@ You may have beautifully coded and reliable data, but if you cannot export it in
 .. toctree::
   :titlesonly:
 
-  /best-practices/steps/codes/theory
-  /best-practices/steps/codes/plan
-  /best-practices/steps/codes/thumb
-  /best-practices/steps/codes/design
-  /best-practices/steps/codes/draft
-  /best-practices/steps/codes/test
+  /best-practices/codes/theory
+  /best-practices/codes/plan
+  /best-practices/codes/thumb
+  /best-practices/codes/design
+  /best-practices/codes/draft
+  /best-practices/codes/test

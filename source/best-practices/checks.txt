@@ -12,8 +12,8 @@ At this point, you can get an idea of whether your coders and codes are likely t
 .. toctree::
   :titlesonly:
 
-  /best-practices/steps/checks/script
-  /best-practices/steps/checks/careless
-  /best-practices/steps/checks/reliability
-  /best-practices/steps/checks/export
-  /best-practices/steps/checks/test
+  /best-practices/checks/script
+  /best-practices/checks/careless
+  /best-practices/checks/reliability
+  /best-practices/checks/export
+  /best-practices/checks/test

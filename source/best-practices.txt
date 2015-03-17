@@ -6,7 +6,7 @@ Best Practices for Coding Behavioral Data from Video
    :maxdepth: 1
 
    /best-practices/intro
-   /best-practices/steps/recordings
-   /best-practices/steps/codes
-   /best-practices/steps/checks
-   /best-practices/steps/workflow
+   /best-practices/recordings
+   /best-practices/codes
+   /best-practices/checks
+   /best-practices/workflow

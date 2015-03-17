@@ -18,5 +18,5 @@ While learning about best practices in behavioral coding, you may find it useful
 .. toctree:: 
    :maxdepth: 1
 
-   /best-practices/filters
-   /best-practices/steps
+   /best-practices/intro/filters
+   /best-practices/intro/steps

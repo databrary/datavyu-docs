@@ -16,6 +16,6 @@ Then export the data into an analysis spreadsheet.
 .. toctree::
   :titlesonly:
 
-  /best-practices/steps/workflow/organization
-  /best-practices/steps/workflow/coding
-  /best-practices/steps/workflow/share
+  /best-practices/workflow/organization
+  /best-practices/workflow/coding
+  /best-practices/workflow/share
