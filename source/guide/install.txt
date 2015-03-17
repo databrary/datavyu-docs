@@ -28,21 +28,16 @@ external device.
 Software Requirements
 ~~~~~~~~~~~~~~~~~~~~~
 
-Datavyu currently does play videos on Yosemite on OS X. Yosemite no longer supports
-Java Quicktime and therefore Datavyu cannot play videos. We advise our users to be aware 
-of this issue before deciding to upgrade their computer. 
-
 Datavyu requires Java 1.6 or
 higher. Many operating systems include Java by default, but if you
 have *not* installed Java, you will need to do so.
 
-If you are using a Mac that does not
-yet have Java installed, OS X will prompt you to install a Java IDE
-when you first try to open Datavyu, or you can `download it directly from
-Apple <http://support.apple.com/kb/dl1572>`_.
+The newest Mac build now has a built in version of Java. It no longer matters 
+what version of Java is on your computer because Datavyu will use the one that 
+it installs. 
 
-On a Windows-based computer, you must also download Java. Go to
-`java.com <http://java.com/en/download/index.jsp>`_ to download the latest
+If you are using a Windows-based computer that does not yet have Java installed,
+you must download Java. Go to `java.com <http://java.com/en/download/index.jsp>`_ to download the latest
 version for your operating system.
 
 Datavyu supports video playback through Quicktime.
@@ -79,10 +74,7 @@ Mac OS X
 #. Download the latest Datavyu release for Mac OS X from the Datavyu
    website's `Downloads Page <http://datavyu.org/download/>`_.
 
-#. If your computer has not already done so, unzip the archive file
-   (e.g. using Archive Utility). This will provide you with a folder
-   containing the Datavyu software and associated support documents. You
-   can drag this to your Applications folder, or some other
+#. You can drag this to your Applications folder, or some other
    preferred location on your computer.
 
 
