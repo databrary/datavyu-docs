@@ -21,11 +21,3 @@ Otherwise, you may spend valuable time collecting and coding data that you canâ€
    The process begins at Step 1 with a procedure for ensuring that your recordings capture the behaviors of interest; the process ends at Step 4 with an exported file of variables that can be used for statistical and graphical analyses.
    Each step involves multiple iterations (denoted by the looping arrows).
    Ideally, earlier steps are completed appropriately before implementing later steps.
-
-.. toctree::
-   :maxdepth: 1
-   
-   /best-practices/steps/recordings
-   /best-practices/steps/codes
-   /best-practices/steps/checks
-   /best-practices/steps/workflow

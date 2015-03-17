@@ -1,0 +1,22 @@
+Overview of Coding Process
+==========================
+
+Welcome to the Best Practices Guide. These guidelines are intended as general suggestions for how to code behavioral data from video.
+The guidelines will help you to make the most of Datavyu, but the general principles are applicable for coding with any software tool or even for coding with paper and pencil. 
+
+Datavyu is agnostic about what researchers code and how they code it.
+This makes the software very powerful and flexible, but it puts the responsibility of designing the spreadsheet and coding criteria on the user.
+For a beginner setting out to code behavioral data for the first time, or a more experienced coder who is new to Datavyu, figuring out where to start can be daunting.
+This guide will help you to get started and will provide a framework for thinking about coding behavioral data from video.
+
+If you have questions or comments about behavioral coding, please go to the `Datavyu Support Forum </support>`_.
+Other researchers may have run into the same problems, posted similar requests, or have offered similar suggestions for improving the coding process.
+Similarly, other researchers may benefit from hearing your questions and comments.
+
+While learning about best practices in behavioral coding, you may find it useful to reference the :doc:`Datavyu User Guide </guide>` to learn more about Datavyu features and various aspects of the Datavyu spreadsheet and video controller.
+
+.. toctree:: 
+   :maxdepth: 1
+
+   /best-practices/filters
+   /best-practices/steps
