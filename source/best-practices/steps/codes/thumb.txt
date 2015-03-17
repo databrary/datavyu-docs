@@ -45,7 +45,7 @@ Thus, exploit the features of Datavyu that minimize strain on coders’ eyes, ha
 In general, you want coders to move their hands as little as possible and their eyes as little as possible.
 Coders should avoid moving their eyes down to the keyboard and avoid moving their hands from place to place on the keyboard.
 Use letters that are accessible without moving the hand from a resting position.
- An example hand position would be using the “home keys” because keyboards are designed to allow the greatest access from that position.
+An example hand position would be using the “home keys” because keyboards are designed to allow the greatest access from that position.
 Avoid using the mouse! Mousing requires coders to move hands and eyes a lot.
 Another good reason to avoid numerical codes is that in Datavyu, numbers must be typed using the number row at the top of the keyboard because the number pad is reserved for controlling the video and the spreadsheet.
 So to type a number, the coders have to move their hands to the top of the keyboard.
