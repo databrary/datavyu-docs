@@ -13,7 +13,7 @@ Editor's features:
 
 .. raw:: html
 
-   <video controls width="100%" height="auto">
+   <video controls width="100%" height="auto" preload="none">
    <source src="../../_static/video/code-editor.mp4" type="video/mp4">
    <source src="../../_static/video/code-editor.webm" type="video/webm">
    </video>

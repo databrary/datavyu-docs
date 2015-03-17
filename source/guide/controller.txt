@@ -136,7 +136,7 @@ Tracks
 
 .. raw:: html
 
-   <video controls width="100%" height="auto">
+   <video controls width="100%" height="auto" preload="none">
    <source src="../_static/video/dvc-tracks-area.mp4" type="video/mp4">
    <source src="../_static/video/dvc-tracks-area.webm" type="video/webm">
    </video>
