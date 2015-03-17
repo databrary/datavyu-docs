@@ -16,4 +16,4 @@ Check that all of the coded values follow basic logic.
 If the child did not touch an object, then there can be no object code for that cell.
 If the child’s latency to cross the cliff was 0s, then the child could not have avoided going over the cliff or explored before going over the cliff (because a latency of 0 means there was no time to explore and avoidance reflects the total possible trial time).
 Thus, your error-checking script will identify typos, impossible relations, and out of range values.
-In Datavyu, ou can even determine the out of range values online based on just-coded files with a script using the R-interface.
+In Datavyu, you can even determine the out of range values online based on just-coded files with a script using the R-interface.
