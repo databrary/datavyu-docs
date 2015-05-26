@@ -189,9 +189,7 @@ Add Data
    :align: right
    :width: 300px
 
-Datavyu currently supports video through QT and VLC.
-There are plans to develop plugins to support other data sources, such
-as audio, physiology, motion, and eye tracking data. To convert video file types, see:
+Datavyu currently supports video through QT and VLC. To convert video file types, see:
 :doc:`/guide/tutorials/convert-file-format`. If you are going to be working with
 multiple data sources see: :doc:`/guide/tutorials/code-multiple-data-sources`.
 
