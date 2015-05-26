@@ -92,5 +92,5 @@ Implicit and explicit codes can refer to durations (involving onset and offset t
 
 Non-behavioral codes can also be scored in Datavyu.
 For example, you can type in or import information about participant demographics, the observational setting, various conditions and independent variables, and so on.
-Non-video data can be imported into Datavyu.
-You can import physiological data (e.g., ERP, NIRS, motion tracking, eye tracking coordinates, heart rate) into Datavyu and use it to identify interesting sections of video or you can use the video to identify interesting sections of other synchronized data streams.
+Non-video data can be imported into Datavyu if you use our code and Ruby API.
+You can import your own data into Datavyu and use it to identify interesting sections of video or you can use the video to identify interesting sections of other synchronized data streams.
