@@ -87,7 +87,7 @@ RColumn Class
             begin
                trial = getColumn("trial")
                trial.change_code_name("badCodeName", "awesomeCodeName")
-               setColumn("trial")
+               setColumn("trial", trial)
             end
    
    .. classmethod:: add_code(name)
