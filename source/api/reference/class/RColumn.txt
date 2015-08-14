@@ -78,7 +78,7 @@ RColumn Class
       .. admonition:: Example 
       
          The following example renames the "trial" column's
-         *badCodeName* code to *awesomeCodeName* and then writes the
+         *bad_code_name* code to *awesome_code_name* and then writes the
          changes back to the Datavyu spreadsheet:
          
          .. code-block:: ruby
@@ -86,7 +86,7 @@ RColumn Class
             require 'Datavyu_API.rb'
             begin
                trial = getColumn("trial")
-               trial.change_code_name("badCodeName", "awesomeCodeName")
+               trial.change_code_name("bad_code_name", "awesome_code_name")
                setColumn("trial", trial)
             end
    
