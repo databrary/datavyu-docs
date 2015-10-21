@@ -49,11 +49,6 @@ Datavyu supports video playback through Quicktime.
 .. figure:: /img/install-quicktime-special.png
    :align: center
 
-You may alternately
-choose to use VLC for video playback, though this is not recommended. If
-you wish to use VLC, you *must* use version 2.0.1: `OSX Download <http://download.videolan.org/pub/videolan/vlc/2.0.1/macosx/vlc-2.0.1.dmg>`_, `Windows Download <http://download.videolan.org/pub/videolan/vlc/2.0.1/win32/vlc-2.0.1-win32.zip>`_,
-as Datavyu does not currently support later versions.
-
 
 Install Datavyu
 ---------------
@@ -133,6 +128,10 @@ and then selecting :guilabel:`Check for
 updates...`.  If a new version is available, it will direct you to the
 download page where you can download the latest release. Remember to replace your current
 application with the latest version of Datavyu that you have just downloaded!
+
+.. important::
+
+   If you have found a workflow that works well for you, please do not update your Datavyu version. We suggest coding an entire study using the same Datavyu version. 
 
 During the course of development, the Datavyu team releases several
 *pre-release* versions of the software prior to releasing official

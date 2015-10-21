@@ -189,7 +189,11 @@ Add Data
    :align: right
    :width: 300px
 
-Datavyu currently supports video through QT and VLC. To convert video file types, see:
+.. important::
+
+   Do not use the VLC plugin because it is not fully implemented and tested. It has frame accuracy problems and therefore is not suggested. Please use Quicktime instead. If your videos do not play smoothly in Quicktime, please convert your videos if you would still like to use Datavyu. 
+
+Datavyu currently supports video through QT. To convert video file types, see:
 :doc:`/guide/tutorials/convert-file-format`. If you are going to be working with
 multiple data sources see: :doc:`/guide/tutorials/code-multiple-data-sources`.
 
