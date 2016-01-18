@@ -1,0 +1,39 @@
+=====================
+computeKappa()
+=====================
+
+.. default-domain:: rb
+
+.. method:: computeKappa(pri_col, rel_col, *codes)
+
+   Computes Cohen's kappa for a primary and reliability column.
+   Cells between the two columns are matched by their onset time.
+   Computes a contingency table and kappa score for each specified code.
+
+   .. table-start
+
+   .. tabularcolumns:: |l|L|L|
+
+   .. list-table::
+      :widths: 20, 40, 50
+      :header-rows: 1
+
+      * - Parameter
+        - Type
+        - Description
+      * - ``pri_col``
+        - String or :class:`RColumn` object
+        - Name (or column object) of primary coder's column.
+      * - ``rel_col``
+        - String or :class:`RColumn` object
+        - Name (or column object) of reliability coder's column.
+      * - ``*codes``
+        - List
+        - Names of codes to compute scores for.
+
+   .. table-end
+
+   .. admonition:: Returns
+
+      Hashes (associative arrays) for kappa values and :class:`CTable`, in that order.
+      Keys are names of the codes. Values are Numeric, and :class`Ctable`, respectively.
