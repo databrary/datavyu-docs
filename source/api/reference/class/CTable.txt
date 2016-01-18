@@ -1,0 +1,75 @@
+===========
+CTable Class
+===========
+
+.. default-domain:: rb
+
+.. class:: CTable
+
+   Represent a contingency table / confusion matrix for a single code.
+
+   .. classmethod:: add(pri_value, rel_value)
+
+      Increment the table value at the given combination by one.
+      See :method:computeKappa for automatically computing kappa scores
+      for columns when primary and reliability cells have matching onset times.
+
+      .. table-start
+
+      .. tabularcolumns:: |l|L|L|
+
+      .. list-table::
+         :widths: 20, 40, 50
+         :header-rows: 1
+
+         * - Parameter
+           - Type
+           - Description
+         * - ``pri_value``
+           - String
+           - Value for primary coder.
+         * - ``rel_value``
+           - String
+           - Value for reliability coder.
+
+      .. table-end
+
+      .. admonition:: Returns
+
+         None.
+
+   .. classmethod:: ef(idx)
+
+      Return the expected frequency of agreement by chance for the given index.
+
+      .. table-start
+      .. tabularcolumns:: |l|L|L|
+      .. list-table::
+         :widths: 20, 40, 50
+         :header-rows: 1
+
+         * - Parameter
+           - Type
+           - Description
+         * - ``idx``
+           - Integer
+           - Index of code (starting at zero).
+
+      .. table-end
+
+   .. classmethod:: efs()
+
+      Return the sum of the expected frequency of agreement by chance for all
+      indices in table.
+
+   .. classmethod:: kappa()
+
+      Compute kappa using table values.
+
+   .. classmethod:: total()
+
+      Return the sum of all elements in table.
+
+   .. classmethod:: to_s()
+
+      Return formateed string to display the table.
