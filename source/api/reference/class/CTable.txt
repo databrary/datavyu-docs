@@ -11,8 +11,7 @@ CTable Class
    .. classmethod:: add(pri_value, rel_value)
 
       Increment the table value at the given combination by one.
-      See :method:computeKappa for automatically computing kappa scores
-      for columns when primary and reliability cells have matching onset times.
+      See :meth:`computeKappa` for automatically computing kappa scores.
 
       .. table-start
 
