@@ -10,6 +10,7 @@ Classes and Class Methods
 
    /api/reference/class/RColumn
    /api/reference/class/RCell
+   /api/reference/class/CTable
 
 Freestanding Methods
 --------------------
@@ -21,8 +22,10 @@ Freestanding Methods
    /api/reference/checkReliability
    /api/reference/checkValidCodes
    /api/reference/combine_columns
+   /api/reference/computeKappa
    /api/reference/createNewColumn
    /api/reference/create_mutually_exclusive
+   /api/reference/deleteVariable
    /api/reference/getCellFromTime
    /api/reference/getColumn
    /api/reference/getColumnList
