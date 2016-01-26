@@ -68,3 +68,14 @@ Remove Codes
 
 To delete a code, select it by clicking on it, and then
 click on the :guilabel:`Delete` button in the top right.
+
+.. note::
+
+   The next video displays how to use the code editor to set up a spreadsheet from scratch. 
+
+.. raw:: html
+
+   <video controls width="100%" height="auto" preload="none">
+   <source src="../_static/video/set-up-draft-spreadsheet.mov" type="video/mov">
+
+
