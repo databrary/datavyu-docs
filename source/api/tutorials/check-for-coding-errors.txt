@@ -177,7 +177,7 @@ it should find one error, and the output should resemble:
 Video example of Checking for Errors 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Here is a video that displays one way to check for errors within a spreadsheet. s
+Here is a video that displays one way to check for errors within a spreadsheet. 
 
 .. raw:: html
 

@@ -143,3 +143,13 @@ optional one:
 
 .. end-content
 
+Video example of Checking for Reliability 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Here is a video that displays one way to check for intr-rater reliability for a single column in a spreadsheet. 
+
+.. raw:: html
+
+   <video controls width="100%" height="auto" preload="none">
+   <source src="../_static/video/check-reliability.mov" type="video/mov">
+
