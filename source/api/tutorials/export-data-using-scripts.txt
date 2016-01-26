@@ -263,6 +263,16 @@ since all of the data in that spreadsheet is for a single participant.
 
 .. end-content
 
+Video example of Running an Export Script 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This video displays a user running a script to export data in a specific way. This export script exports all of the columns of one spreadsheet into an excel file. Datavyu's built in export displays one excel cell for one cell on the spreadsheet. This script repeats all the participant information such as the id number, test date, birthdate, and sex, for all of the data making it more useful when you import into a statistical analysis program. 
+
+.. raw:: html
+
+   <video controls width="100%" height="auto" preload="none">
+   <source src="../_static/video/export-through-script-final.mov" type="video/mov">
+
 .. TODO: fill 'er in
 
 .. following section should be uncommented once it had content
