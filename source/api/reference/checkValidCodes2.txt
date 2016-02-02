@@ -42,7 +42,7 @@ checkValidCodes2()
 
    .. admonition:: Returns
 
-      Console and/or file input.
+      Nothing. Generated messages are output to console and/or file.
 
    .. admonition:: Example
 
