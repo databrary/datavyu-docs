@@ -6,6 +6,8 @@ checkValidCodes()
 
 .. method:: checkValidCodes(column, dump_file, *arg_code_pairs)
 
+   Alias(es): `check_valid_codes`
+   
    Checks that all coded values in Datavyu conform to a the list of
    valid codes for that column.
 
@@ -13,10 +15,10 @@ checkValidCodes()
 
    .. tabularcolumns:: |l|L|L|
 
-   .. list-table:: 
+   .. list-table::
       :widths: 20, 40, 50
       :header-rows: 1
-   
+
       * - Argument
         - Type
         - Description
@@ -46,7 +48,7 @@ checkValidCodes()
 
       .. code-block:: ruby
 
-         check_valid_codes("trial", "", "hand", ["l","r","b","n"], "turn", ["l","r"],
+         checkValidCodes("trial", "", "hand", ["l","r","b","n"], "turn", ["l","r"],
 	     "unit", ["1","2","3"])
 
 .. seealso::
