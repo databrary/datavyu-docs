@@ -1,0 +1,13 @@
+===================
+getDatavyuVersion()
+===================
+
+.. default-domain:: rb
+
+.. method:: getDatavyuVersion()
+
+   Return the current Datavyu version as a String (e.g. 'v:1.3.5')
+
+   .. admonition:: Returns
+
+      String.
