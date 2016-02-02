@@ -22,15 +22,15 @@ checkValidCodes2()
         - Type
         - Description
       * - ``data``
-        - String, RVariable or Hash
+        - String, RVariable, or Hash
         - When this parameter is a String or a column object from `getVariable()`, the function operates on codes within this column.
-        If the parameter is a Hash (associative array), the function ignores the arg_code_pairs arguments and uses data from this Hash.
-        The Hash must be structured as a nested mapping from columns (either as Strings or RVariables) to Hashes. These nested hashes
-        must be mappings from code names (as Strings) to valid code values (as either lists (Arrays) or patterns (Regexp)).
+          If the parameter is a Hash (associative array), the function ignores the arg_code_pairs arguments and uses data from this Hash.
+          The Hash must be structured as a nested mapping from columns (either as Strings or RVariables) to Hashes. These nested hashes
+          must be mappings from code names (as Strings) to valid code values (as either lists (Arrays) or patterns (Regexp)).
       * - ``dump_file``
         - String, or Ruby File object
-        - Path of the file to dump output to. Use "" to write to the
-          console. You can also specify a Ruby File object.
+        - Path of the file to dump output to. Use empty String (i.e. "") to write to the
+          console. You can also specify a Ruby File object (e.g. from `File.open()`).
       * - ``*arg_code_pairs``
         - Key-value pairs
         - List of code names and valid values, in the format
