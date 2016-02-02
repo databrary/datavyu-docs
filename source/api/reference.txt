@@ -22,6 +22,7 @@ Freestanding Methods
    /api/reference/checkDatavyuVersion
    /api/reference/checkReliability
    /api/reference/checkValidCodes
+   /api/reference/checkValidCodes2
    /api/reference/combine_columns
    /api/reference/computeKappa
    /api/reference/createNewColumn
