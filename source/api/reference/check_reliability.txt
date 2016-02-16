@@ -1,10 +1,10 @@
-==================
-checkReliability()
-==================
+===================
+check_reliability()
+===================
 
 .. default-domain:: rb
 
-.. method:: checkReliability(main_col, rel_col, match_arg, time_tolerance, dump_file)
+.. method:: check_reliability(main_col, rel_col, match_arg, time_tolerance, dump_file)
 
    Compares two Datavyu columns to check for reliability errors and
    accuracy.
@@ -13,10 +13,10 @@ checkReliability()
 
    .. tabularcolumns:: |l|L|L|
 
-   .. list-table:: 
+   .. list-table::
       :widths: 20, 40, 50
       :header-rows: 1
-   
+
       * - Parameter
         - Type
         - Description
@@ -27,7 +27,7 @@ checkReliability()
         - String **or** Ruby variable from :meth:`getColumn()`
         - The reliability column to compare to ``main_col``
       * - ``match_arg``
-        - String     
+        - String
         - The argument used to match the reliability cells to the primary
           cells. Must be a unique identifier between the cells.
       * - ``time_tolerance``
@@ -56,19 +56,19 @@ checkReliability()
 
       .. code-block:: ruby
 
-         checkReliability("trial", "rel_trial", "trialnum", 100)
+         check_reliability("trial", "rel_trial", "trialnum", 100)
 
-   .. admonition:: Example 
+   .. admonition:: Example
 
       The following example performs the same operation as the
       previous example, but also
       writes the output to ``~/Desktop/Relcheck.txt``,
       a text file.
-   
+
       .. code-block:: ruby
 
-         checkReliability("trial", "rel_trial", "trialnum", 100, "~/Desktop/Relcheck.txt")
+         check_reliability("trial", "rel_trial", "trialnum", 100, "~/Desktop/Relcheck.txt")
 
-.. seealso:: 
+.. seealso::
 
    :doc:`/api/tutorials/use-reliability-coding-to-check-data-accuracy`
