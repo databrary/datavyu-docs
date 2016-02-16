@@ -18,32 +18,32 @@ Freestanding Methods
 .. toctree::
    :titlesonly:
 
-   /api/reference/addCodesToColumn
-   /api/reference/checkDatavyuVersion
-   /api/reference/checkReliability
-   /api/reference/checkValidCodes
-   /api/reference/checkValidCodes2
+   /api/reference/add_codes_to_column
+   /api/reference/check_datavyu_version
+   /api/reference/check_reliability
+   /api/reference/check_valid_codes
+   /api/reference/check_valid_codes2
    /api/reference/combine_columns
-   /api/reference/computeKappa
-   /api/reference/createNewColumn
+   /api/reference/compute_kappa
    /api/reference/create_mutually_exclusive
-   /api/reference/deleteVariable
-   /api/reference/getCellFromTime
-   /api/reference/getColumn
-   /api/reference/getColumnList
-   /api/reference/getDatavyuVersion
+   /api/reference/create_new_column
+   /api/reference/delete_variable
+   /api/reference/get_cell_from_time
+   /api/reference/get_column
+   /api/reference/get_column_list
+   /api/reference/get_datavyu_version
    /api/reference/load_db
    /api/reference/load_macshapa_db
-   /api/reference/makeReliability
-   /api/reference/printCellCodes
+   /api/reference/make_reliability
+   /api/reference/print_cell_codes
    /api/reference/print_codes
    /api/reference/save_db
-   /api/reference/setColumn
-   /api/reference/smoothColumn
+   /api/reference/set_column
+   /api/reference/smooth_column
    /api/reference/transfer_columns
 
-.. /api/reference/printAllNested
-.. /api/reference/makeDurationBlockRel
+.. /api/reference/print_all_nested
+.. /api/reference/make_duration_block_rel
 
 .. seealso::
 
