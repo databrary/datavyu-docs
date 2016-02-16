@@ -6,15 +6,15 @@ Check Inter-rater Reliability to Improve Data Accuracy
 
 .. begin-content
 
-Reliability coding verifies that the desired codes are observable and 
-that the coders are accurately interpreting events. With reliability coding, 
+Reliability coding verifies that the desired codes are observable and
+that the coders are accurately interpreting events. With reliability coding,
 two coders separately code the same data source. You can create a :term:`reliability
-column`, which the second coder can use to reccord his or her observations. After both coders have 
-coded the same column, they can compare their codes and determine their inter-rater 
-reliability. 
+column`, which the second coder can use to reccord his or her observations. After both coders have
+coded the same column, they can compare their codes and determine their inter-rater
+reliability.
 
 
-.. note:: 
+.. note::
 
    While it may be tempting to have the reliability coder code the
    data source in a new spreadsheet, you should endeavor to keep all
@@ -22,7 +22,7 @@ reliability.
    facilitates analysis and ensures that like data are kept
    together. To prevent the reliability coder from seeing the original
    coding pass, you can :ref:`hide the original coded column
-   <hide-show-columns>`. 
+   <hide-show-columns>`.
 
    .. Link to best practices organization section when it exists.
 
@@ -39,18 +39,18 @@ The Datavyu Ruby API provides the :meth:`makeReliability` method
 for creating reliability variables. :meth:`makeReliability` has four
 parameters:
 
-.. include:: /api/reference/makeReliability.txt
+.. include:: /api/reference/make_reliability.txt
    :start-after: table-start
    :end-before: table-end
 
-.. tip:: 
+.. tip::
 
    Copying the :term:`onset` of the
-   original column to the new reliability column in the ``args_to_keep`` 
+   original column to the new reliability column in the ``args_to_keep``
    parameter makes it easier for the second coder to navigate to
    the correct locations in the data source, and to code the same
-   events as the original coder. 
-   
+   events as the original coder.
+
    When making a reliability column, you should also think about how you
    are going to compare the columns. :meth:`checkReliability`, which
    you use to check reliability. It requires that each pair of cells have a
@@ -74,13 +74,13 @@ trial numbers.
    end
 
 .. .. figure:: /img/makeReliability-definition-vs-use.png
-      
+
 .. .. [Caption describing mapping of function definition to its use]
 
 .. note::
 
    You do **not** have to write the variable back to the spreadsheet.
-   :meth:`makeReliability` automatically writes its results to 
+   :meth:`makeReliability` automatically writes its results to
    the spreadsheet.
 
 Check Reliability
@@ -94,11 +94,11 @@ returns the number of errors, and the percent agreement.
 :meth:`checkReliability()` has four required parameters, and one
 optional one:
 
-.. include:: /api/reference/checkReliability.txt
+.. include:: /api/reference/check_reliability.txt
    :start-after: table-start
    :end-before: table-end
 
-.. note:: 
+.. note::
 
    ``match_arg`` is particularly important: for
    :meth:`checkReliability` to know which cells to compare, it needs
@@ -108,8 +108,8 @@ optional one:
 
 
 #. Create an object that holds the path that it should output to using
-   Ruby's `File.expand_path 
-   <http://www.ruby-doc.org/core-1.9.3/File.html#method-c-expand_path>`_ 
+   Ruby's `File.expand_path
+   <http://www.ruby-doc.org/core-1.9.3/File.html#method-c-expand_path>`_
    method, which converts a relative path,
    like ``~/Desktop/file.txt`` to an absolute path name, which contains
    the root directory, and all sub-directories, like
@@ -123,7 +123,7 @@ optional one:
 
       require 'Datavyu_API.rb'
       begin
-      
+
          dump_file = File.expand_path("~/Desktop/relCheck.txt")
 
 #. Compare "trial" and "rel.trial" using :meth:`checkReliability`,
@@ -142,4 +142,3 @@ optional one:
       end
 
 .. end-content
-
