@@ -22,7 +22,7 @@ Glossary
    cell offset
       The end time of a cell. Each experiment should define how to
       define onsets in its :ref:`coding-manual`.
- 
+
    spreadsheet
       The core Datavyu window where coders record observations. See:
       :doc:`/guide/spreadsheet`
@@ -42,6 +42,20 @@ Glossary
       a "foot" code that would differentiate between left or right
       feet, and a "direction" code that indicated if the person
       was stepping forward or backward.
+
+   coding manual
+   coding-manual
+      Documentation for codes in a Datavyu spreadsheet. Should be written as if
+      instructing someone with no prior information about the spreadsheet or
+      project.
+
+   coding pass
+      A pass intended to fill in all fillable codes in a column. Coding passes
+      can be aided by previous passes so that work is not repeated.
+
+   comment
+      A code that consists of freeform text. Useful for recording unique
+      observations in the data.
 
    Integer
       A whole number. Integers are numbers that are not fractions,
@@ -67,48 +81,48 @@ Glossary
       frequency (rate) at which an imaging device produces unique
       consecutive images called frames. The three main frame rate
       standards are: 24p, 25p, and 30p.
-      
+
    region
       The area of the :term:`timeslider` that has been brought into
       focus using the timeslider's brackets.
 
-   API 
+   API
       An API (Application Programming Interface) enables disparate software
       components to interact with each other by specifying functions or
-      routines to perform tasks. Datavyu's API uses the 
+      routines to perform tasks. Datavyu's API uses the
       `Ruby <https://www.ruby-lang.org/en/>`_ programming language.
 
    reliability column
       A Datavyu column that is a copy of an original column
       used to ensure that the coded observations are accurate.
 
-   column 
+   column
       Datavyu columns are phenomena or events that observations are
       collected about. Columns are :term:`key-value pairs <key-value
       pair>` that associate a column name with a variety of
       :term:`codes <code>`. Columns can be general, such as "trial" or
       "ID", or can be specific, such as "step" or "hand".  Datavyu
       represents columns as a column in the :guilabel:`Spreadsheet`.
-   
+
    cell
       A cell is a graphical representation of an observation. Cells
-      are rectangles that stack in the columns of Datavyu's 
-      spreadsheet and contain the observation data that a coder 
+      are rectangles that stack in the columns of Datavyu's
+      spreadsheet and contain the observation data that a coder
       inputs when coding a data source.
-    
+
    class
       A pre-defined object type, that has associated attributes and
       methods. See: :doc:`/api/overview`.
 
    method
       A defined action that you can perform. Methods may accept
-      arguments in order to perform their specified tasks. 
+      arguments in order to perform their specified tasks.
       See: :doc:`/api/overview`.
-   
+
    standalone method
       A :term:`method` that does not belong to a specific
       :term:`class`. See: :doc:`/api/overview`.
-   
+
    script
       A program that performs a specific task.
 
