@@ -38,7 +38,7 @@ add_codes_to_column()
    .. admonition:: Example
 
       The following example adds "condition_abc", "response_xyz", and "score_123" to the "test"
-      column, and writes it back to the spreadsheet using :meth:`setColumn`.
+      column, and writes it back to the spreadsheet using :meth:`set_column`.
 
       .. code-block:: ruby
 
