@@ -1,10 +1,10 @@
-==================
-checkValidCodes2()
-==================
+====================
+check_valid_codes2()
+====================
 
 .. default-domain:: rb
 
-.. method:: checkValidCodes2(data, dump_file, *arg_code_pairs)
+.. method:: check_valid_codes2(data, dump_file, *arg_code_pairs)
 
    Advanced version of `checkValidCodes()`.
    Can check codes using patterns and can operate over multiple columns.
@@ -72,7 +72,7 @@ checkValidCodes2()
         }
 
         ## Body
-        checkValidCodes2(map, '~/Desktop/check.txt')
+        check_valid_codes2(map, '~/Desktop/check.txt')
 
 .. seealso::
 
