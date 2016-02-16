@@ -1,25 +1,25 @@
-==============
-smoothColumn()
-==============
+===============
+smooth_column()
+===============
 
 .. default-domain:: rb
 
-.. method:: smoothColumn(colname, tol = 33)
+.. method:: smooth_column(colname, tol = 33)
 
    Tweaks cell onsets so that there is a maximum of
    ``tol`` milliseconds between each cell. If two cells are less than
    ``tol`` apart, it moves on to the next pair of cells; if there
    is a larger gap than ``tol``, the second cell's :term:`onset` is
-   set to the first cell's :term:`offset`. 
-   
+   set to the first cell's :term:`offset`.
+
    .. table-start
-   
+
    .. tabularcolumns:: |l|L|L|
 
    .. list-table::
       :widths: 20, 40, 50
       :header-rows: 1
-      
+
       * - Parameter
         - Type
         - Description
@@ -33,22 +33,22 @@ smoothColumn()
           this is 33ms.
 
    .. table-end
-   
+
    .. admonition:: Returns
-   
-      Nothing. In addition, :meth:`smoothColumn` automatically writes its changes
+
+      Nothing. In addition, :meth:`smooth_column` automatically writes its changes
       back to the spreadsheet, so you do not need to write the changes
       using :meth:`setColumn`.
 
    .. admonition:: Example
-   
+
       The following example checks the "trial" column's cells to ensure
       that a maximum of 50ms between a cell's :term:`offset` and the
       subsequent cell's :term:`onset`.
-      
+
       .. code-block:: ruby
-      
+
          require 'Datavyu_API.rb'
          begin
-            smoothColumn("trial", 50)
+            smooth_column("trial", 50)
          end

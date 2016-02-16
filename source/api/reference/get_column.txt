@@ -1,22 +1,22 @@
-===========
-getColumn()
-===========
+============
+get_column()
+============
 
 .. default-domain:: rb
 
-.. method:: getColumn(name)
+.. method:: get_column(name)
 
    Retrieves a variable from the Datavyu spreadsheet and assigns it to a Ruby
-   object using :meth:`print_debug` 
+   object using :meth:`print_debug`
 
    .. table-start
 
    .. tabularcolumns:: |l|L|L|
 
-   .. list-table:: 
+   .. list-table::
       :widths: 20, 40, 50
       :header-rows: 1
-   
+
       * - Parameter
         - Type
         - Description
@@ -32,12 +32,12 @@ getColumn()
 
    .. admonition:: Example
 
-      The following example retrieves the Datavyu column "trial" and 
+      The following example retrieves the Datavyu column "trial" and
       assigns it to a Ruby variable called ``trial``.
 
       .. code-block:: ruby
 
          require 'Datavyu_API.rb'
          begin
-            trial = getColumn("trial")
+            trial = get_column("trial")
          end

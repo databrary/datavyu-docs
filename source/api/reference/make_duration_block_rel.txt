@@ -1,12 +1,12 @@
 :orphan:
 
-======================
-makeDurationBlockRel()
-======================
+=========================
+make_duration_block_rel()
+=========================
 
 .. default-domain:: rb
 
-.. method:: makeDurationBlockRel(relname, var_to_copy, binding, block_dur, skip_blocks)
+.. method:: make_duration_block_rel(relname, var_to_copy, binding, block_dur, skip_blocks)
 
    Makes a duration-based reliability column. This creates two columns,
    one containing a cell with a number for that block, and another
@@ -16,10 +16,10 @@ makeDurationBlockRel()
 
    .. tabularcolumns:: |l|L|L|
 
-   .. list-table:: 
+   .. list-table::
       :widths: 20, 40, 50
       :header-rows: 1
-   
+
       * - Parameter
         - Type
         - Description
@@ -58,4 +58,3 @@ makeDurationBlockRel()
       .. code-block:: ruby
 
          require 'Datavyu_API.rb'
-         

@@ -1,21 +1,21 @@
-================
-printCellCodes()
-================
+==================
+print_cell_codes()
+==================
 
 .. default-domain:: rb
 
-.. method:: printCellCodes(cell)
+.. method:: print_cell_codes(cell)
 
    Prints out the values for every code in a specified cell.
-   
+
    .. table-start
-   
+
    .. tabularcolumns:: |l|L|L|
 
    .. list-table::
       :widths: 20, 40, 50
       :header-rows: 1
-      
+
       * - Parameter
         - Type
         - Description
@@ -24,23 +24,23 @@ printCellCodes()
         - The cell whose codes you are printing out.
 
    .. table-end
-   
+
    .. admonition:: Returns
-   
-      An object listing all of the codes in a given cell. 
-      
+
+      An object listing all of the codes in a given cell.
+
    .. admonition:: Example
-   
+
       The following example uses ``puts`` to print out the codes for
-      the first cell in the "trial" column, accessed using 
-      :meth:`printCellCodes`.
-      
+      the first cell in the "trial" column, accessed using
+      :meth:`print_cell_codes`.
+
       .. code-block:: ruby
-      
+
          require 'Datavyu_API.rb'
          begin
             trial = getColumn("trial")
             cell = trial.cell[0]
-            
-            puts printCellCodes(cell)
+
+            puts print_cell_codes(cell)
          end

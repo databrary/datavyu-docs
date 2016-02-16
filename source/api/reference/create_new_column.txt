@@ -1,10 +1,10 @@
-=================
-createNewColumn()
-=================
+===================
+create_new_column()
+===================
 
 .. default-domain:: rb
 
-.. method:: createNewColumn(name, *codes)
+.. method:: create_new_column(name, *codes)
 
 
    Creates a new blank column with the specified name and codes.
@@ -13,10 +13,10 @@ createNewColumn()
 
    .. tabularcolumns:: |l|L|L|
 
-   .. list-table:: 
+   .. list-table::
       :widths: 20, 40, 50
       :header-rows: 1
-   
+
       * - Parameter
         - Type
         - Description
@@ -25,11 +25,11 @@ createNewColumn()
         - The name of the new column
       * - ``codes``
         - comma separated Strings
-        - Codes that the new column will contain. 
+        - Codes that the new column will contain.
 
-   .. note:: 
+   .. note::
 
-      :meth:`createNewColumn()` creates the onset, offset, and ordinal
+      :meth:`create_new_column()` creates the onset, offset, and ordinal
       codes by default. You do not need to specify them in the ``codes``.
 
    .. table-end
@@ -50,7 +50,7 @@ createNewColumn()
 
          require 'Datavyu_API.rb'
          begin
-            trial = createNewColumn("trial", "trialnum", "unit")
+            trial = create_new_column("trial", "trialnum", "unit")
             trial.make_new_cell()
             setColumn(trial)
          end

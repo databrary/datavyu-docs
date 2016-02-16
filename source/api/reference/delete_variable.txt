@@ -1,10 +1,10 @@
-================
-deleteVariable()
-================
+=================
+delete_variable()
+=================
 
 .. default-domain:: rb
 
-.. method:: deleteVariable(column)
+.. method:: delete_variable(column)
 
    Deletes a column from the spreadsheet.
 
@@ -39,5 +39,5 @@ deleteVariable()
 
          require 'Datavyu_API.rb'
          begin
-            deleteVariable('trials')
+            delete_variable('trials')
          end
