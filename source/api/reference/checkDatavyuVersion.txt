@@ -1,15 +1,15 @@
-=====================
-checkDatavyuVersion()
-=====================
+=======================
+check_datavyu_version()
+=======================
 
 .. default-domain:: rb
 
-.. method:: checkDatavyuVersion(minVersion, maxVersion)
+.. method:: check_datavyu_version(minVersion, maxVersion)
 
    Checks whether the current version of Datavyu meets the minimum and maximum requirements specified in the parameters.
 
    *Requires Datavyu 1.3.5 or greater.*
-   
+
    .. table-start
 
    .. tabularcolumns:: |l|L|L|
@@ -40,4 +40,4 @@ checkDatavyuVersion()
 
       .. code-block:: ruby
 
-         raise "This script will not work on the current version of Datavyu" if not checkDatavyuVersion('v:1.3.5')
+         raise "This script will not work on the current version of Datavyu" if not check_datavyu_version('v:1.3.5')
