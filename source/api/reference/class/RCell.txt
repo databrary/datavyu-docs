@@ -16,15 +16,15 @@ RCell Class
 
       .. tabularcolumns:: |l|L|L|
 
-      .. list-table:: 
+      .. list-table::
          :widths: 20, 40, 50
          :header-rows: 1
-   
+
          * - Parameter
            - Type
            - Description
          * - ``arg``
-           - String **or** Ruby column from :meth:`getColumn()`
+           - String **or** Ruby column from :meth:`get_column()`
            - Name of the code that you are updating.
          * - ``val``
            - String, Integer, etc.
@@ -40,7 +40,7 @@ RCell Class
 
          The following example sets the "trial" column's cell at
          position 0's :term:`onset` to 1000ms, and then writes the
-         change back to the spreadsheet using :meth:`setColumn()`.
+         change back to the spreadsheet using :meth:`set_column()`.
 
          .. code-block:: ruby
 
@@ -50,7 +50,7 @@ RCell Class
                trial.cells(0).change_code("onset", 1000)
                setColumn("trial", trial)
             end
-      
+
    .. classmethod:: is_within(outer_cell)
 
       Determines if a cell is temporally encased by the ``outer_cell``.
@@ -59,15 +59,15 @@ RCell Class
 
       .. tabularcolumns:: |l|L|L|
 
-      .. list-table:: 
+      .. list-table::
          :widths: 20, 40, 50
          :header-rows: 1
-   
+
          * - Parameter
            - Type
            - Description
          * - ``outer_cell``
-           - 
+           -
            - The cell that is going to be checked to see if it temporally
              encases the study cell.
 
@@ -78,14 +78,14 @@ RCell Class
          Boolean
 
       .. admonition:: Example
-   
+
          Compare the first cell of the "trial" and "id" columns to see
          if the first cell of "trial" is temporally enclosed by the
          first cell of "id". If it is, print out "Yes, it is temporally
          enclosed", otherwise, print "No, it is not temporally enclosed."
-      
+
          .. code-block:: ruby
-   
+
             require 'Datavyu_API.rb'
             begin
                trial = getColumn("trial")
@@ -96,16 +96,16 @@ RCell Class
                   puts "No, it is not temporally enclosed."
                end
             end
-   
+
    .. classmethod:: contains(inner_cell)
 
-      Determines if a cell temporally encases the ``innter_cell``.
+      Determines if a cell temporally encases the ``inner_cell``.
 
       .. table-start
 
       .. tabularcolumns:: |l|L|L|
 
-      .. list-table:: 
+      .. list-table::
          :widths: 20, 40, 50
          :header-rows: 1
 
@@ -113,7 +113,7 @@ RCell Class
            - Type
            - Description
          * - ``inner_cell``
-           - 
+           -
            - The cell that is going to be checked to see if it is
              temporally encased by the study cell.
 
@@ -129,7 +129,7 @@ RCell Class
          the first cell of "trial" is temporally enclosed by the first cell
          of "id". If it is, print out "Yes, it is temporally encloses the cell",
          otherwise, print "No, it is does not temporally enclose the cell."
-   
+
          .. code-block:: ruby
 
             require 'Datavyu_API.rb'
@@ -151,10 +151,10 @@ RCell Class
 
       .. tabularcolumns:: |l|L|L|
 
-      .. list-table:: 
+      .. list-table::
          :widths: 20, 40, 50
          :header-rows: 1
-   
+
          * - Parameter
            - Type
            - Description
@@ -181,4 +181,3 @@ RCell Class
                trial = getColumn("trial")
                print trial.cells[0].print_all()
             end
-         
