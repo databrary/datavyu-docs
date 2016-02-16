@@ -1,13 +1,13 @@
-==================
-addCodesToColumn()
-==================
+=====================
+add_codes_to_column()
+=====================
 
 .. default-domain:: rb
 
-.. method:: addCodesToColumn(column, *codes)
+.. method:: add_codes_to_column(column, *codes)
 
-   Alias(es): `add_codes_to_column`, `add_args_to_var`
-   
+   Alias(es): `addCodesToColumn`, `add_args_to_var`
+
    Add new codes to a column.
 
    .. table-start
@@ -44,6 +44,6 @@ addCodesToColumn()
 
          require 'Datavyu_API.rb'
          begin
-            test = addCodesToColumn("test", "condition_abc", "response_xyz", "score_123")
+            test = add_codes_to_column("test", "condition_abc", "response_xyz", "score_123")
             setColumn(test)
          end
