@@ -1,6 +1,6 @@
-=================
-checkValidCodes()
-=================
+===================
+check_valid_codes()
+===================
 
 .. default-domain:: rb
 
@@ -48,7 +48,7 @@ checkValidCodes()
 
       .. code-block:: ruby
 
-         checkValidCodes("trial", "", "hand", ["l","r","b","n"], "turn", ["l","r"],
+         check_valid_codes("trial", "", "hand", ["l","r","b","n"], "turn", ["l","r"],
 	     "unit", ["1","2","3"])
 
 .. seealso::
