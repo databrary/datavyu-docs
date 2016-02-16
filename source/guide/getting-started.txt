@@ -3,9 +3,9 @@ Getting Started
 ===============
 
 Datavyu is a powerful tool that enables behavioral researchers to code
-observations from their video for analysis. Designed by researchers for 
+observations from their video for analysis. Designed by researchers for
 researchers, Datavyu provides an intuitive interface for working with data
-sources and recording observations, and includes :doc:`an API </api>` 
+sources and recording observations, and includes :doc:`an API </api>`
 for more advanced data manipulation.
 
 The Datavyu Interface
@@ -22,7 +22,7 @@ a data source, a third window containing the data source will appear.
 The following sections describe each component of the Datavyu interface.
 
 Media Player
-~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 .. figure:: /img/movie-viewer.png
    :align: center
@@ -38,7 +38,7 @@ detailed overview of adding data sources see:
 
 Once you've added a data source, it's time to add columns, create
 observations, and write scripts. The :ref:`tutorials
-<guide-core-tutorials>` are there to guide you. 
+<guide-core-tutorials>` are there to guide you.
 
 Controller
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -54,11 +54,11 @@ the window that contains the video data.
 
 The keypad can be found on the left side of the controller. This section maps directly to the
 number pad on your keyboard, or to an external number pad if your
-keyboard does not have one and you've connected one to your computer. 
+keyboard does not have one and you've connected one to your computer.
 These keys control playback, and also enable users to set the :term:`cell onset` and :term:`cell offset`,
 create new cells and navigate within the data source. The
 :guilabel:`Add Data...` button enables you to :ref:`add a data source
-<add-data>`. 
+<add-data>`.
 
 For more about the Controller, and a detailed description of
 its functionality and features, see :doc:`/guide/controller`.
@@ -73,11 +73,11 @@ The :guilabel:`Datavyu spreadsheet` is where users record
 .. figure:: /img/base-screenshot-MomBaby.png
    :alt: Image of a filled-out Datavyu spreadsheet
    :align: center
-   
+
    This spreadsheet has four columns: "MomSpeech", "InfantSpeech",
    "MomObject", "BabyObject". Each column has numerous coded cells.
 
-Being able to :doc:`/guide/tutorials/configure-datavyu-codes` enables 
+Being able to :doc:`/guide/tutorials/configure-datavyu-codes` enables
 coders to record observations and link them
 directly to timestamps in the data source. Each user-defined column is
 represented by a column in the spreadsheet, and observations within a column
@@ -87,7 +87,7 @@ source. Looking vertically down a column shows the sequence in which
 the observations occurred.
 
 The :doc:`/guide/spreadsheet` document describes the
-:guilabel:`spreadsheet` in more detail. 
+:guilabel:`spreadsheet` in more detail.
 
 .. toctree::
   :titlesonly:

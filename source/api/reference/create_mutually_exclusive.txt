@@ -6,20 +6,20 @@ create_mutually_exclusive()
 
 .. method:: create_mutually_exclusive(name, col1name, col2name)
 
-    Combines two column together, creating a new column.
+   Combines two column together, creating a new column.
    :meth:`create_mutually_exclusive` combines the two source columns cells
    together so that the new column includes all of the arguments from
-   both source columns. It also includes a combination of the two columns' cells 
+   both source columns. It also includes a combination of the two columns' cells
    as well as a new cell for each overlap.
-   
+
    .. table-start
-   
+
    .. tabularcolumns:: |l|L|L|
 
    .. list-table::
       :widths: 20, 40, 50
       :header-rows: 1
-      
+
       * - Parameter
         - Type
         - Description
@@ -32,22 +32,22 @@ create_mutually_exclusive()
       * - ``col2name``
         - String
         - The name of the second source column to combine.
-   
+
    .. table-end
-   
+
    .. admonition:: Returns
-   
+
       The new Ruby representation of the column. You must write the
       changes back to the spreadsheet if you want to save them.
-   
+
    .. admonition:: Example
-   
+
       The following example creates a column called "test" from two
-      existing columns, "col1" and "col2", and then writes the 
+      existing columns, "col1" and "col2", and then writes the
       changes back to the spreadsheet using :meth:`setColumn`.
-   
+
       .. code-block:: ruby
-      
+
          require 'Datavyu_API.rb'
          begin
             test = create_mutually_exclusive("test", "col1", "col2")
