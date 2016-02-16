@@ -5,6 +5,15 @@ Glossary
 .. glossary::
    :sorted:
 
+   coding manual
+      Documentation for codes in a Datavyu spreadsheet. Should be written as if
+      instructing someone with no prior information about the spreadsheet or
+      project.
+
+   coding pass
+      A pass intended to fill in all fillable codes in a column. Coding passes
+      can be aided by previous passes so that work is not repeated.
+
    Controller
       The Controller is a core Datavyu window that enables
       you to control playback of data sources, and to record
@@ -16,12 +25,12 @@ Glossary
    onset
    cell onset
       The start time of a cell. Each experiment should define how to
-      define onsets in its :ref:`coding-manual`.
+      define onsets in its :term:`coding manual`.
 
    offset
    cell offset
       The end time of a cell. Each experiment should define how to
-      define onsets in its :ref:`coding-manual`.
+      define onsets in its :term:`coding manual`.
 
    spreadsheet
       The core Datavyu window where coders record observations. See:
@@ -42,16 +51,6 @@ Glossary
       a "foot" code that would differentiate between left or right
       feet, and a "direction" code that indicated if the person
       was stepping forward or backward.
-
-   coding manual
-   coding-manual
-      Documentation for codes in a Datavyu spreadsheet. Should be written as if
-      instructing someone with no prior information about the spreadsheet or
-      project.
-
-   coding pass
-      A pass intended to fill in all fillable codes in a column. Coding passes
-      can be aided by previous passes so that work is not repeated.
 
    comment
       A code that consists of freeform text. Useful for recording unique
