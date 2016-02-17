@@ -15,13 +15,11 @@ Glossary
 
    onset
    cell onset
-      The start time of a cell. Each experiment should define how to
-      define onsets in its :ref:`coding-manual`.
+      The start time of a cell.
 
    offset
    cell offset
-      The end time of a cell. Each experiment should define how to
-      define onsets in its :ref:`coding-manual`.
+      The end time of a cell.
  
    spreadsheet
       The core Datavyu window where coders record observations. See:

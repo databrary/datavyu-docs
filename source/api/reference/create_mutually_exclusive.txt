@@ -6,7 +6,7 @@ create_mutually_exclusive()
 
 .. method:: create_mutually_exclusive(name, col1name, col2name)
 
-    Combines two column together, creating a new column.
+   Combines two column together, creating a new column.
    :meth:`create_mutually_exclusive` combines the two source columns cells
    together so that the new column includes all of the arguments from
    both source columns. It also includes a combination of the two columns' cells 
