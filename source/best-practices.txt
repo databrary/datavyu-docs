@@ -2,6 +2,10 @@
 Best Practices for Coding Behavioral Data from Video
 ====================================================
 
+Watch a Presentation on Video Coding and Best Practices
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Databrary and Datavyu are hosting regional workshops around the U.S. to share research tools and resources to the science community. You can watch the regional workshop presentations and view the slides on `Databrary <https://nyu.databrary.org/volume/1/slot/10068/-?asset=28062/>`_.
+
 .. toctree:: 
    :maxdepth: 1
 
