@@ -28,3 +28,15 @@ List which scripts to run and when to run them to insert cells, merge cells, exp
 Consider your coding manual as a “living document.”
 Even if you do not revise the codes, you are likely to make changes to the coding manual by adding detail or fixing confusing language.
 Keep a record of who made the changes and what date they were implemented.
+
+Video Example
+~~~~~~~~~~~~~~
+
+This video displays one example of a Coding Manual that outlines the different codes for the pass called "trial." It contains detailed definitions for each code so future coders can easily pick up the coding pass. 
+
+.. raw:: html
+
+   <video controls width="100%" height="auto">
+   <source src="../../_static/video/trial-coding-manual-2.mp4" type="video/mp4">
+   </video>
+
