@@ -76,6 +76,7 @@ click on the :guilabel:`Delete` button in the top right.
 .. raw:: html
 
    <video controls width="100%" height="auto" preload="none">
-   <source src="../_static/video/set-up-draft-spreadsheet.mov" type="video/mov">
+   <source src="../../_static/video/set-up-draft-spreadsheet.mp4" type="video/mp4">
+   </video>
 
 

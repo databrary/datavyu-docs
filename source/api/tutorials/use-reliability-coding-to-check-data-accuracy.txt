@@ -150,6 +150,7 @@ This video displays one way to check for intr-rater reliability for a single col
 
 .. raw:: html
 
-   <video controls width="100%" height="auto" preload="none">
-   <source src="../_static/video/check-reliability.mov" type="video/mov">
+   <video controls width="100%" height="auto">
+   <source src="../../_static/video/check-reliability.mp4" type="video/mp4">
+   </video>
 

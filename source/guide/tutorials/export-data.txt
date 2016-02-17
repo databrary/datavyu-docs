@@ -12,8 +12,8 @@ has one column for every code in the spreadsheet: :term:`ordinal`,
 
 .. raw:: html
 
-   <video controls width="100%" height="auto" preload="none">
-   <source src="../_static/video/export-thru-menu.mov" type="video/mov">
+   <video controls width="100%" height="auto">
+   <source src="../../_static/video/export-thru-menu.mp4" type="video/mp4">
    </video>
 
 If this format does not work for the analyses you need to perform, Datavyu supports 
