@@ -32,7 +32,7 @@ Keep a record of who made the changes and what date they were implemented.
 Video Example
 ~~~~~~~~~~~~~~
 
-This video displays one example of a Coding Manual that outlines the different codes for the pass called "trial." It contains detailed definitions for each code so future coders can easily pick up the coding pass. 
+This video displays one example of a Coding Manual that outlines the different codes for the pass called "trial." It contains detailed definitions for each code so future coders can easily pick up the coding pass. It also contains pictures to accompany the written descriptions. 
 
 .. raw:: html
 
