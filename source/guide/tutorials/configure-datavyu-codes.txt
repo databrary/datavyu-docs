@@ -13,7 +13,7 @@ Editor's features:
 
 .. raw:: html
 
-   <video controls width="100%" height="auto" preload="none">
+   <video controls width="100%" height="auto">
    <source src="../../_static/video/code-editor.mp4" type="video/mp4">
    <source src="../../_static/video/code-editor.webm" type="video/webm">
    </video>
@@ -75,7 +75,7 @@ click on the :guilabel:`Delete` button in the top right.
 
 .. raw:: html
 
-   <video controls width="100%" height="auto" preload="none">
+   <video controls width="100%" height="auto">
    <source src="../../_static/video/set-up-draft-spreadsheet.mp4" type="video/mp4">
    </video>
 

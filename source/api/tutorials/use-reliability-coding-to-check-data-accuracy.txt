@@ -143,10 +143,10 @@ optional one:
 
 .. end-content
 
-Video example of Checking for Reliability 
+Video Example of Checking for Reliability 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This video displays one way to check for intr-rater reliability for a single column in a spreadsheet. 
+This video displays one way to check for inter-rater reliability for a single column in a spreadsheet. 
 
 .. raw:: html
 
