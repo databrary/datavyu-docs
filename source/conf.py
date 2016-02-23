@@ -97,7 +97,7 @@ pygments_style = 'sphinx'
 # html_theme = 'nature'
 
 html_theme = 'cyborg'
-html_theme_path = '.'
+html_theme_path = ['.']
 
 
 # Theme options are theme-specific and customize the look and feel of a theme
