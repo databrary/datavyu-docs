@@ -4,9 +4,9 @@ check_valid_codes()
 
 .. default-domain:: rb
 
-.. method:: checkValidCodes(column, dump_file, *arg_code_pairs)
+.. method:: check_valid_codes(column, dump_file, *arg_code_pairs)
 
-   Alias(es): `check_valid_codes`
+   Alias(es): `checkValidCodes`
 
    Checks that all coded values in Datavyu conform to a the list of
    valid codes for that column.

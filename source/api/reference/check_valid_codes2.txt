@@ -6,9 +6,10 @@ check_valid_codes2()
 
 .. method:: check_valid_codes2(data, dump_file, *arg_code_pairs)
 
-   Advanced version of `checkValidCodes()`.
+   Advanced version of `check_valid_codes()`, available in Datavyu version 1.3.5 and higher.
+
    Can check codes using patterns and can operate over multiple columns.
-   Backwards-compatible with `checkValidCodes()` so this function should be able to replace calls to `checkValidCodes()`.
+   Backwards-compatible with `check_valid_codes()` so this function should be able to replace calls to `check_valid_codes()`.
 
    .. table-start
 
