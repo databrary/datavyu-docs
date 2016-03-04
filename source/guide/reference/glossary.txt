@@ -24,6 +24,7 @@ Glossary
 
    onset
    cell onset
+<<<<<<< HEAD
       The start time of a cell. Each experiment should define how to
       define onsets in its :term:`coding manual`.
 
@@ -32,6 +33,14 @@ Glossary
       The end time of a cell. Each experiment should define how to
       define onsets in its :term:`coding manual`.
 
+=======
+      The start time of a cell.
+
+   offset
+   cell offset
+      The end time of a cell.
+ 
+>>>>>>> Vicky's-Branch
    spreadsheet
       The core Datavyu window where coders record observations. See:
       :doc:`/guide/spreadsheet`

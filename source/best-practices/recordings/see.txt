@@ -49,3 +49,16 @@ Small body parts, small movements, facial expressions, and eye movements are dif
 Part of planning your recording arrangement involves thinking about your recording context.
 For example, white skin is difficult to see against a light background and dark skin is difficult to see against a dark background.
 So, create more visual contrast by making your background a bright or saturated color or dressing the child in a bright or saturated color (we use bright blue carpets and mats because infants’ hands and feet are clearly visible against them).
+
+Video Example
+~~~~~~~~~~~~~~
+
+This video displays how easy it is to record videos that miss the behaviors of interest. The experimenter was interested in understanding how parents teach children to open containers. You can see by the video example that the single camera view is completely blocked by the parent. 
+
+.. raw:: html
+
+   <video controls width="100%" height="auto">
+   <source src="../../_static/video/bad-recording-combined.mp4" type="video/mp4">
+   </video>
+
+Revise or add more camera views until you can thoroughly see your behaviors of interest.

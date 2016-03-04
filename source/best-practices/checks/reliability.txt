@@ -44,3 +44,14 @@ In these cases, the reliability coder can score a larger percentage of the data�
 
 Spread your best eyes over the entire dataset.
 For a large amount of data where several people will split the job of coding a particular pass, have your most experienced and knowledgeable coder score reliability so that your “best pair of eyes” is looking at representative data over the entire dataset.
+
+Video Example
+~~~~~~~~~~~~~~~
+
+This video displays one way to check for inter-rater reliability for a single column in a spreadsheet. 
+
+.. raw:: html
+
+   <video controls width="100%" height="auto">
+   <source src="../../_static/video/check-reliability.mp4" type="video/mp4">
+   </video>
