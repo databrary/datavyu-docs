@@ -69,11 +69,7 @@ synchronize, and then select the :guilabel:`Lock All` button to lock
 their arrangement.
 
 Saving Between Datavyu Uses
-<<<<<<< HEAD
 -------------------------------
-=======
----------------------------
->>>>>>> Vicky's-Branch
 
 When working with multiple data sources, Datavyu saves the data source
 synchronization and bookmarks when you save the spreadsheet. This way,

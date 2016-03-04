@@ -141,9 +141,6 @@ optional one:
          checkReliability("trial", "rel.trial", "trialnum", 5, dump_file)
       end
 
-.. end-content
-<<<<<<< HEAD
-=======
 
 Video Example of Checking for Reliability 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -156,4 +153,4 @@ This video displays one way to check for inter-rater reliability for a single co
    <source src="../../_static/video/check-reliability.mp4" type="video/mp4">
    </video>
 
->>>>>>> Vicky's-Branch
+.. end-content

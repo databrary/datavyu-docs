@@ -22,11 +22,8 @@ a data source, a third window containing the data source will appear.
 The following sections describe each component of the Datavyu interface.
 
 Media Player
-<<<<<<< HEAD
 ~~~~~~~~~~~~~~~
-=======
-~~~~~~~~~~~~
->>>>>>> Vicky's-Branch
+
 
 .. figure:: /img/movie-viewer.png
    :align: center
