@@ -127,6 +127,8 @@ Basic Script Format
    Code and column names are also case sensitive. If you have a column
    in a spreadsheet called "trial", requesting "Trial" will not work.
 
+   All code names in Ruby must be lowercase. Codes with uppercases have special meanings. 
+
 All Datavyu API scripts must include the following
 line at the top:
 
