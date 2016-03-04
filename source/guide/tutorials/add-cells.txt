@@ -40,7 +40,7 @@ or :guilabel:`New Cell to Right`.
 
 
 Add Cells Directly in the Body of the Spreadsheet
-----------------------------------------------------
+-------------------------------------------------
 
 Adding cells to an existing column is simple:
 
@@ -60,7 +60,7 @@ Adding cells to an existing column is simple:
 #. Set the cell :term:`offset` using the keypad on the Controller.
 
 Add Cells from the Controller
---------------------------------
+-----------------------------
 
 
 Adding cells using the controller is even easier than doing so from
