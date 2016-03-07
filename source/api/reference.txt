@@ -48,3 +48,5 @@ Freestanding Methods
 .. seealso::
 
    :doc:`The Glossary </guide/reference/glossary>`
+
+   `Complete API documentation <http://databrary.github.io/datavyu-docs>`_
