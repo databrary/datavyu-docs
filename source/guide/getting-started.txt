@@ -22,7 +22,8 @@ a data source, a third window containing the data source will appear.
 The following sections describe each component of the Datavyu interface.
 
 Media Player
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+
 
 .. figure:: /img/movie-viewer.png
    :align: center
@@ -41,7 +42,7 @@ observations, and write scripts. The :ref:`tutorials
 <guide-core-tutorials>` are there to guide you.
 
 Controller
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
 
 The :guilabel:`Controller` allows users to control the
 playback of their data source and create observations in the

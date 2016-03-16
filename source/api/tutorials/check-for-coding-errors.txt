@@ -173,3 +173,15 @@ it should find one error, and the output should resemble:
       Code ERROR: Var: look   Ordinal: 2      Arg: direction     Val: rj
 
 .. end-content
+
+Video Example of Checking for Errors 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This video displays one way to check for errors (typos, impossible values, etc.) within a spreadsheet. 
+
+.. raw:: html
+
+   <video controls width="100%" height="auto">
+   <source src="../../_static/video/check-typo-script.mp4" type="video/mp4">
+   </video>
+

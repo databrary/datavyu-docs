@@ -10,6 +10,12 @@ has one column for every code in the spreadsheet: :term:`ordinal`,
 
 .. TODO: put an image of the sample output, alongside its download
 
+.. raw:: html
+
+   <video controls width="100%" height="auto">
+   <source src="../../_static/video/export-thru-menu.mp4" type="video/mp4">
+   </video>
+
 If this format does not work for the analyses you need to perform, Datavyu supports 
 Ruby scripting, which you can use to create a script that exports the data in your desired format. 
 
