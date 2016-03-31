@@ -41,7 +41,7 @@ Datavyu supports video playback through Quicktime.
 .. note::
 
       If you are using Quicktime 7.7.5 or later, you will need to simply custom install Quicktime to include Java libraries in your version. The screenshot shows just how easy it is! Older versions of Quicktime can be typically installed.
-      If you are on Windows 10, please download QuickTime version 7.7.6 `here <https://support.apple.com/kb/DL1822?locale=en_US>`. LAter versions of QuickTime will not work on Windows 10. 
+      If you are on Windows 10, please download QuickTime version 7.7.6 `here <https://support.apple.com/kb/DL1822?locale=en_US>`_. LAter versions of QuickTime will not work on Windows 10. 
 
 .. figure:: /img/install-quicktime-special.png
    :align: center
