@@ -1,0 +1,47 @@
+=====================
+add_codes_to_column()
+=====================
+
+.. default-domain:: rb
+
+.. method:: add_codes_to_column(column, *codes)
+
+   Add new codes to a column.
+
+   .. table-start
+
+   .. tabularcolumns:: |l|L|L|
+
+   .. list-table:: 
+      :widths: 20, 40, 50
+      :header-rows: 1
+   
+      * - Parameter
+        - Type
+        - Description
+      * - ``column``
+        - String or :class:`RColumn` object
+        - Name of the variable that you are adding arguments to.
+      * - ``*codes``
+        - List
+        - List of arguments to add to ``column``. Parameters with an
+          ``*`` indicate lists.
+
+   .. table-end
+
+   .. admonition:: Returns
+
+      Ruby representation of the column.
+
+   .. admonition:: Example
+
+      The following example adds "code1", "code2", and "code3" to the "test"
+      column, and writes it back to the spreadsheet using :meth:`setColumn`.
+
+      .. code-block:: ruby
+      
+         require 'Datavyu_API.rb'
+         begin
+            test = add_codes_to_column("test", "code1", "code2", "code3")
+            setColumn("test", test)
+         end

@@ -39,7 +39,7 @@ The Datavyu Ruby API provides the :meth:`makeReliability` method
 for creating reliability variables. :meth:`makeReliability` has four
 parameters:
 
-.. include:: /api/reference/make_reliability.txt
+.. include:: /api/reference/1.3.4/makeReliability.txt
    :start-after: table-start
    :end-before: table-end
 
@@ -94,7 +94,7 @@ returns the number of errors, and the percent agreement.
 :meth:`checkReliability()` has four required parameters, and one
 optional one:
 
-.. include:: /api/reference/check_reliability.txt
+.. include:: /api/reference/1.3.4/checkReliability.txt
    :start-after: table-start
    :end-before: table-end
 
@@ -142,10 +142,10 @@ optional one:
       end
 
 
-Video Example of Checking for Reliability 
+Video Example of Checking for Reliability
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This video displays one way to check for inter-rater reliability for a single column in a spreadsheet. 
+This video displays one way to check for inter-rater reliability for a single column in a spreadsheet.
 
 .. raw:: html
 

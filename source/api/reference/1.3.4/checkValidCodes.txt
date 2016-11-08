@@ -1,0 +1,54 @@
+=================
+checkValidCodes()
+=================
+
+.. default-domain:: rb
+
+.. method:: checkValidCodes(column, dump_file, *arg_code_pairs)
+
+   Checks that all coded values in Datavyu conform to a the list of
+   valid codes for that column.
+
+   .. table-start
+
+   .. tabularcolumns:: |l|L|L|
+
+   .. list-table:: 
+      :widths: 20, 40, 50
+      :header-rows: 1
+   
+      * - Argument
+        - Type
+        - Description
+      * - ``column``
+        - String
+        - The Datavyu column that to check
+      * - ``dump_file``
+        - String, or Ruby File object
+        - Full path of the file to dump output to. Use "" to write to the
+          console. You can also specify a Ruby File object.
+      * - ``*arg_code_pairs``
+        - Key-value pairs
+        - List of code names and valid values, in the format
+          "code_name", ["valid1", "valid2"],
+          "code_name2", ["valid3", "valid4"], etc.
+
+   .. table-end
+
+   .. admonition:: Returns
+
+      Console and/or file input.
+
+   .. admonition:: Example
+
+      The following example checks the validity of the codes for the "trial"
+      Datavyu column:
+
+      .. code-block:: ruby
+
+         check_valid_codes("trial", "", "hand", ["l","r","b","n"], "turn", ["l","r"],
+	     "unit", ["1","2","3"])
+
+.. seealso::
+
+   :doc:`/api/tutorials/check-for-coding-errors`

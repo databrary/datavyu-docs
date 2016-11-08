@@ -1,0 +1,69 @@
+=================
+makeReliability()
+=================
+
+.. default-domain:: rb
+
+.. method:: makeReliability(relname, column_to_copy, multiple_to_keep, *codes_to_keep)
+
+   Creates a :term:`reliability column` that is a copy of another
+   Datavyu column in the Database. :rb:meth:`makeReliability()` can
+   copy the cells (or a subsection of the cells) and retain codes
+   from the origin column if desired.
+
+   .. table-start
+
+   .. tabularcolumns:: |l|L|L|
+
+   .. list-table:: 
+      :widths: 20, 40, 50
+      :header-rows: 1
+   
+      * - Parameter
+        - Type
+        - Description
+      * - ``relname``
+        - String **or** Ruby column from :meth:`getColumn()`
+        - the name of the new reliability column you will create. 
+          The convention is to name it ``rel_columnName``, but you
+          can name it whatever you want to.
+      * - ``column_to_copy``
+        - String
+        - The name of the column that we want to create a reliability
+          column *from* (i.e. the existing coded column).
+      * - ``multiple_to_keep``
+        - Integer (**optional**)
+        - Number of cells to skip: a value of ``2`` includes *every other
+          cell* in the new variable; ``1`` includes every cell, and ``0``
+          creates a blank column with no cells
+      * - ``*codes_to_keep``
+        - comma-separated strings (**optional**)
+        - Codes you want to copy from the original to new column.
+          These are codes that the reliability coder will not have to
+          code.
+
+   .. table-end
+
+   .. admonition:: Returns
+
+      A Ruby object representation of the reliability column within
+      Datavyu.
+
+   .. admonition:: Example
+
+      The following example creates the reliability column "rel_trial"
+      from the primary column "trial", copying every second cell, and retaining the
+      "onset", "trialnum" and "unit" codes, and then writes the new
+      "rel_trial" column back to the spreadsheet.
+
+      .. code-block:: ruby
+         
+         require 'Datavyu_API.rb'
+         begin
+            rel_trial = makeReliability("rel_trial", "trial", 2, "onset", "trialnum", "unit")
+            setVariable("rel_trial", rel_trial)
+         end
+
+.. seealso::
+
+   - :doc:`/api/tutorials/use-reliability-coding-to-check-data-accuracy`

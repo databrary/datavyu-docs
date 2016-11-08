@@ -1,0 +1,43 @@
+================
+deleteVariable()
+================
+
+.. default-domain:: rb
+
+.. method:: deleteVariable(column)
+
+   Deletes a column from the spreadsheet.
+
+   Alias(es): delete_column
+
+   .. table-start
+
+   .. tabularcolumns:: |l|L|L|
+
+   .. list-table::
+      :widths: 20, 40, 50
+      :header-rows: 1
+
+      * - Parameter
+        - Type
+        - Description
+      * - ``column``
+        - String or :class:`RColumn` object
+        - Name of the variable that you are adding arguments to.
+
+   .. table-end
+
+   .. admonition:: Returns
+
+      Nothing.
+
+   .. admonition:: Example
+
+      The following example removes column 'trials' from the spreadsheet.
+
+      .. code-block:: ruby
+
+         require 'Datavyu_API.rb'
+         begin
+            deleteVariable('trials')
+         end

@@ -1,0 +1,36 @@
+:orphan:
+
+================
+printAllNested()
+================
+
+.. default-domain:: rb
+
+.. method:: printAllNested()
+
+   
+   
+   .. table-start
+   
+   .. tabularcolumns:: |l|L|L|
+
+   .. list-table::
+      :widths: 20, 40, 50
+      :header-rows: 1
+      
+      * - Parameter
+        - Type
+        - Description
+      * - ``file``
+        - String
+        - Path to the Datavyu spreadsheet file whose data you want to print
+
+   .. table-end
+   
+   .. admonition:: Returns
+   
+      [stuff it returns]
+
+   .. admonition:: Example
+   
+      [example]

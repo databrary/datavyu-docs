@@ -1,0 +1,206 @@
+================
+transfer_columns
+================
+
+.. default-domain:: rb
+
+.. method:: transfer_columns(db1, db2, remove, *varnames)
+
+   Transfers columns between spreadsheets. If ``db1`` or ``db2`` is set to the
+   empty string "", then that spreadsheet is spreadsheet open in the
+   GUI.
+
+   Thus, if you want to transfer a column into the GUI, set ``db2`` to "",
+   and specify the origin spreadsheet file as ``db1``. If you want to
+   transfer a column from the GUI into a file, set ``db1`` to "", and set
+   ``db2`` to that file's path.
+
+   .. warning:: 
+   
+      Setting ``remove`` to ``TRUE`` will **DELETE THE COLUMNS YOU ARE
+      TRANSFERRING FROM DB1**.
+
+   .. table-start
+
+   .. tabularcolumns:: |l|L|L|
+
+   .. list-table::
+      :widths: 20, 40, 50
+      :header-rows: 1
+      
+      * - Parameter
+        - Type
+        - Description
+      * - ``db1``
+        - String 
+        - The full path to save the first Datavyu file. Set to "" to use
+          the spreadsheet that's currently open.
+      * - ``db2``
+        - String
+        - The full path to save the second Datavyu file. Set to "" to
+          use the spreadsheet that's currently open.
+      * - ``remove``
+        - Boolean
+        - If ``TRUE``, Datavyu will delete the columns from ``db1`` as they
+          are copied to ``db2``. ``FALSE`` leaves the columns intact.
+      * - ``varnames``
+        - list of strings
+        - List of the names of the columns that you wish to copy from
+          ``db1`` to ``db1``. You must specify at least one column
+          name. 
+
+   .. table-end
+   
+   .. admonition:: Returns
+   
+      Nothing. Saves files in place or modifies the GUI.
+
+   .. admonition:: Example
+   
+      The following example transfers the column "idchange" from
+      test.opf to the GUI and leaves test.opf intact and unmodified.
+         
+      .. code-block:: ruby
+            
+         # Transfer column(s) from one opf to another.
+         # Set sourceFile and destinationFile to the full path;
+         # Leave blank to indicate currently open file.
+         # This will work for as many columns as you like.
+         
+         require 'Datavyu_API.rb'
+         
+         class RVariable
+         
+         	# Define a way to construct a new cell by cloning a given cell.
+         	# Not for general purpose use as vocabulary can become corrupt if used improperly
+         	def make_new_cell2(cell)
+         		c = RCell.new
+         		c.onset = cell.onset
+         		c.offset = cell.offset
+         		c.ordinal = cell.ordinal
+         		c.set_args(cell.argvals,@arglist)
+         		c.parent = @name
+         		@cells << c
+         		return c
+         	end
+         end
+         
+         def transferMyVariable(db1,db2,delete,*varnames)
+         	# If varnames was specified as a hash, flatten it to an array
+         	varnames.flatten!
+         
+         	$debug=true
+         
+         	# Display args when debugging
+         	if $debug
+         		puts "="*20
+         		puts "#{__method__} called with following args:"
+         		puts db1,db2,delete,varnames
+         		puts "="*20
+         	end
+         
+         	# Handle degenerate case of same source and destination
+         	if db1==db2
+         		puts "Warning: source and destination are identical.  No changes made."
+         		return nil
+         	end
+         
+         	# Set the source database, loading from file if necessary.
+         	# Raises file not found error and returns nil if source database does not exist.
+         	db1path = ""
+         	begin
+         		if db1!=""
+         			db1path = File.expand_path(db1)
+         			if !File.readable?(db1path)
+         				raise "Error! File not readable : #{db1}"
+         			end
+         			puts "Loading source database from file : #{db1path}" if $debug
+         			from_db,from_proj = loadDB(db1path)
+         		else
+         			from_db,from_proj = $db,$proj
+         		end
+         	rescue StandardError => e
+         		puts e.message
+         		puts e.backtrace
+         		return nil
+         	end
+         
+         	# Set the destination database, loading from file if necessary.
+         	# Raises file not found error and returns nil if destination database does not exist.
+         	db2path = ""
+         	begin
+         		if db2!=""
+         			db2path = File.expand_path(db2)
+         			if !File.writable?(db2path)
+         				raise "Error! File not writable : #{db2}"
+         			end
+         			puts "Loading destination database from file : #{db2path}" if $debug
+         			to_db,to_proj = loadDB(db2path)
+         			#$db,$proj = loadDB(db2path)
+         		else
+         			to_db,to_proj = $db,$proj
+         		end
+         	rescue StandardError => e
+         		puts e.message
+         		puts e.backtrace
+         		return nil
+         	end
+         
+         	# Set working database to source database to prepare for reading
+         	$db,$pj = from_db,from_proj
+         
+         	# Construct a hash to store columns and cells we are transferring
+         	puts "Fetching columns..." if $debug
+         	begin
+         		col_map = Hash.new
+         		cell_map = Hash.new
+         		for col in varnames
+         			c = getColumn(col.to_s)
+         			if c.nil?
+         				puts "Warning: column #{c} not found! Skipping..."
+         				next
+         			end
+         			col_map[col] = c
+         			cell_map[col] = c.cells
+         			puts "Read column : #{col.to_s}" if $debug
+         		end
+         	end
+         
+         	# Set working database to destination database to prepare for writing
+         	$db,$pj = to_db,to_proj
+         
+         	# Go through the hashmaps and reconstruct the columns
+         	begin
+         		for key in col_map.keys
+         			col = col_map[key]
+         			cells = cell_map[key]
+         			arglist = col.arglist
+         
+         			# Construct a new variable and add all associated cells
+         			newvar = createVariable(key.to_s,arglist)
+         			for c in cells
+         				newvar.make_new_cell2(c)
+         			end
+         			setVariable(key.to_s,newvar)
+         			if $debug
+         			    puts "Wrote column : #{key.to_s} with #{newvar.cells.length} cells"
+         			end
+         		end
+         	rescue StandardError => e
+         		puts "Failed trying to write column #{col}"
+         		puts e.message
+         		puts e.backtrace
+         		return nil
+         	end
+         
+         	# Finally, save the database to file if applicable
+         	saveDB(db2path) if db2path!=""
+         end
+         
+         begin
+            $debug=false
+            sourceFile="/Users/datavyutester/Desktop/FileName1.opf"
+            destinationFile="/Users/datavyutester/Desktop/FileName2.opf"
+            columnsToTransfer = ["reltrial"]
+            transferMyVariable(sourceFile, destinationFile, false, columnsToTransfer)
+         end

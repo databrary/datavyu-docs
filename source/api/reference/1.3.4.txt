@@ -1,0 +1,27 @@
+=============
+Version 1.3.4
+=============
+
+Classes and Class Methods
+-------------------------
+
+.. toctree::
+   :titlesonly:
+   :glob:
+
+   1.3.4/class/*
+
+Freestanding Methods
+--------------------
+
+.. toctree::
+   :titlesonly:
+   :glob:
+
+   1.3.4/*
+
+.. seealso::
+
+   :doc:`The Glossary </guide/reference/glossary>`
+
+   `Complete API documentation <http://databrary.github.io/datavyu-docs>`_

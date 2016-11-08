@@ -1,0 +1,67 @@
+===========
+setColumn()
+===========
+
+.. default-domain:: rb
+
+.. method:: setColumn(name, var)
+
+   :meth:`setColumn` writes columns to the spreadsheet: for columns
+   that already exist, :meth:`setColumn` replaces the data in the
+   spreadsheet with the version updated using the script. For
+   instance, if you were to retrieve the "trial" column from a
+   spreadsheet and then make some changes, you would use
+   :meth:`setColumn` to write those changes to the spreadsheet,
+   replacing the old data with your new data.
+
+   If the column does not already exist in the spreadsheet (for
+   instance, if you create a new column using :meth:`makeNewColumn`),
+   :meth:`setColumn` will instead create a new column in the spreadsheet.
+
+   .. table-start
+
+   .. tabularcolumns:: |l|L|L|
+
+   .. list-table:: 
+      :widths: 20, 40, 50
+      :header-rows: 1
+   
+      * - Parameter
+        - Type
+        - Description
+      * - ``name``
+        - String (**optional**)
+        - Name of the *column* that you are inserting
+      * - ``column``
+        - :class:`RColumn` object (**required**)
+        - Ruby container of the column that you are inserting into the
+          spreadsheet (modified output of :meth:`createNewColumn()` or
+          :meth:`getColumn()`)
+
+   .. important:: 
+
+      You must specify a value for the ``column`` parameter.  If you are
+      also passing a value for the ``name`` parameter, the order of
+      arguments **must** be ``name`` followed by ``column``.
+
+   .. table-end
+
+   .. admonition:: Returns
+
+      None
+
+   .. admonition:: Example
+
+      The following example retrieves the Datavyu column "trial" and 
+      assigns it to a Ruby variable called ``trial``. After some
+      modifications to the trial object, it writes those changes
+      back to the spreadsheet using :meth:`setColumn`.
+
+      .. code-block:: ruby
+
+         require 'Datavyu_API.rb'
+         begin
+            trial = getColumn("trial")
+            <some modifications to trial>
+            setColumn("trial", trial)
+         end

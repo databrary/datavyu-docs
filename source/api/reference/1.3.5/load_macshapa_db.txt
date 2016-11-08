@@ -1,0 +1,68 @@
+==================
+load_macshapa_db()
+==================
+
+.. default-domain:: rb
+
+.. method:: load_macshapa_db(filename, write_to_gui, *ignore_vars)
+
+   Opens an old, closed MacSHAPA spreadsheet file and loads it into
+   the current open spreadsheet.
+   
+   .. warning:: 
+   
+      :meth:`load_macshapa_db` only reads in matrix and string columns.
+      It does not yet support predicates, and queries are not imported.
+      In order to be compatible with Datavyu, all times will be
+      converted to milliseconds.
+   
+   .. table-start
+   
+   .. tabularcolumns:: |l|l|L|
+
+   .. list-table::
+      :widths: 20, 40, 50
+      :header-rows: 1
+      
+      * - Parameter
+        - Type
+        - Description
+      * - ``filename``
+        - String
+        - The full path to save the saved MacSHAPA file.
+      * - ``write_to_gui``
+        - Boolean
+        - If true, the MacSHAPA file is read into the spreadsheet that
+          is currently open in Datavyu's GUI. If false, the MacSHAPA
+          file is read into the Ruby interface.
+   
+   .. table-end
+   
+   .. admonition:: Returns
+   
+      ``$db``, the spreadsheet data and ``$pj``, the project data for
+      that file.
+
+   .. admonition:: Example
+   
+      The following example loads the ``test.opf`` MacSHAPA file and
+      into ruby variables called ``$db`` and ``$pj``.
+
+      .. code-block:: ruby
+
+         require 'Datavyu_API.rb'
+         begin
+            $db,$pj = load_db("~/Desktop/test.opf", FALSE)
+         end
+
+   .. admonition:: Example
+      
+      In this example, the ``test.opf`` MacSHAPA file is read into the
+      spreadsheet that is currently open in Datavyu's GUI.
+      
+      .. code-block:: ruby
+         
+         require 'Datavyu_API.rb'
+         begin
+            $db, $pj = load_db("~/Desktop/test.opf", TRUE)
+         end
