@@ -1,5 +1,5 @@
 ===================
-create_new_column()
+createColumn()
 ===================
 
 .. default-domain:: rb
