@@ -1,0 +1,50 @@
+=============
+delete_cell()
+=============
+
+.. default-domain:: rb
+
+.. method:: delete_cell(cell)
+
+   Removes the specified cell from its column and propagates the changes to the
+   spreadsheet.
+
+   .. table-start
+
+   .. tabularcolumns:: |l|L|L|
+
+   .. list-table::
+      :widths: 20, 40, 50
+      :header-rows: 1
+
+      * - Parameter
+        - Type
+        - Description
+      * - ``cell``
+        - RCell
+        - Ruby representation of the Datavyu cell to be deleted.
+
+   .. table-end
+
+   .. admonition:: Returns
+
+      Undefined.
+
+
+   .. admonition:: Example
+
+      Removes cells from the "trial" column with "condition" coded as "a".
+
+      .. code-block:: ruby
+
+        # First get the column from the database
+        trial = get_column("trial")
+
+        # Now loop through all of the cells in that column, checking if
+        # they are coded as a left hand.
+        for trial_cell in trial.cells
+           # Is hand coded as "l" for this cell?
+           if trial_cell.condition == 'a'
+              delete_cell(cell)
+           end
+        end
