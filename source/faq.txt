@@ -9,7 +9,7 @@ What is Datavyu used for?
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Datavyu is a video coding and data visualization tool for collecting
-behavioral data from video. 
+behavioral data from video.
 
 Can I use Datavyu to analyze data?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -24,17 +24,17 @@ What video formats does Datavyu support?
 
 Datavyu supports all video formats that Quicktime or VLC can play,
 including .mp4, .asf, .wmv, .avi, .flv, .mov, .mpf, .ogg, .mpg, .nsc, .wav,
-and .dts. Please test video playback on each of your computers in your work 
-environment by downloading datavyu, and playing video data you plan to code. 
+and .dts. Please test video playback on each of your computers in your work
+environment by downloading datavyu, and playing video data you plan to code.
 
-We highlight suggest using the Quicktime plugin because the VLC plugin has known 
-timing problems which could lead to inconsistent coding. 
+We highlight suggest using the Quicktime plugin because the VLC plugin has known
+timing problems which could lead to inconsistent coding.
 
 Can I code sources that are not videos?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Yes, we mostly support video data but other sources can be analyzed in 
-Datavyu as well. 
+Yes, we mostly support video data but other sources can be analyzed in
+Datavyu as well.
 
 Is there somewhere I can share or store my spreadsheets and videos?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -94,7 +94,7 @@ Support
 I've never coded video data before. How should I start?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We are writing a Best Practices Guide to provide detailed tips and 
+We are writing a Best Practices Guide to provide detailed tips and
 advice to help you start coding behavioral data from video.
 
 Where can I learn to use Datavyu?
@@ -108,13 +108,13 @@ I'm not sure how to best code my data? Are there guidelines for coding?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Best Practices Guide will provide
-in-depth instructions and suggestions for coding your behavioral data. It is coming soon! 
+in-depth instructions and suggestions for coding your behavioral data. It is coming soon!
 
 What is the best way to prevent data loss?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We suggest that users pull all of their spreadsheets to the desktop before coding them. 
-After coding, users can ship their spreadsheets back to their folders or hard drive. 
+We suggest that users pull all of their spreadsheets to the desktop before coding them.
+After coding, users can ship their spreadsheets back to their folders or hard drive.
 
 How do I update Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -134,8 +134,8 @@ I have found a bug in Datavyu! How can I report it?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you find a bug, you can post to `the Datavyu support forum
-<http://datavyu.org/support/>`_ or email Datavyu's QA Manager,
-`Vicky Foo <vjf210@nyu.edu>`_.
+<http://datavyu.org/support/>`_ or email the Datavyu team,
+`Datavyu Support <info@datavyu.org>`_.
 
 API Scripts
 -----------
@@ -157,7 +157,7 @@ The :doc:`Ruby API guide </api>` provides an in-depth
 introduction to scripting with Datavyu's Ruby API, tutorials that guide
 you through common scripting tasks and detailed method reference for
 each API component, to help you learn how these components work
-together. 
+together.
 
 If you're completely unfamiliar with programming, going through the Ruby
 language's `Learn Ruby in Twenty Minutes
