@@ -6,9 +6,10 @@ Datavyu Ruby API Reference
 
    reference/1.3.4
    reference/1.3.5
+   Full API Documentation <http://databrary.github.io/datavyu-docs/frames.html>
 
 .. seealso::
 
    :doc:`The Glossary </guide/reference/glossary>`
 
-   `Complete API documentation <http://databrary.github.io/datavyu-docs>`_
+   `Full API documentation <http://databrary.github.io/datavyu-docs/frames.html>`_
