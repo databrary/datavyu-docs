@@ -29,7 +29,7 @@ follow the :doc:`/api/introduction-to-scripting`.
 
 .. toctree::
    :maxdepth: 1
-   
+
    /api/introduction-to-apis
    /api/overview
    /api/introduction-to-scripting
@@ -51,3 +51,4 @@ its use.
 
    /api/tutorials
    /api/reference
+   Example Scripts <https://github.com/databrary/Datavyu-Example-Scripts>
