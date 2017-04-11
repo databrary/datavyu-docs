@@ -154,3 +154,18 @@ RColumn Class
       .. admonition:: Returns
 
          Nothing.
+
+      .. admonition:: Example
+
+         The following example removes the *unit* code from the "trial"
+         column and then writes the changes back to the spreadsheet
+         using :meth:`set_column()`.
+
+         .. code-block:: ruby
+
+            require 'Datavyu_API.rb'
+            begin
+               trial = get_column("trial")
+               trial.remove_code("unit")
+               set_column(trial)
+            end
