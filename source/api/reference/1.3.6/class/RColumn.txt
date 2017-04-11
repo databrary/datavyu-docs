@@ -47,7 +47,7 @@ RColumn Class
             trial = get_column("trial")
             newcell = trial.make_new_cell()
             newcell.change_code("onset", 1000)
-            setColumn("trial", trial)
+            set_column("trial", trial)
 
    .. classmethod:: change_code_name(old_name, new_name)
 
@@ -85,9 +85,9 @@ RColumn Class
 
             require 'Datavyu_API.rb'
             begin
-               trial = getColumn("trial")
+               trial = get_column("trial")
                trial.change_code_name("bad_code_name", "awesome_code_name")
-               setColumn("trial", trial)
+               set_column("trial", trial)
             end
 
    .. classmethod:: add_code(name)
@@ -119,15 +119,15 @@ RColumn Class
 
          The following example adds the *unit* code to the "trial"
          column and then writes the changes back to the spreadsheet
-         using :meth:`setColumn()`.
+         using :meth:`set_column()`.
 
          .. code-block:: ruby
 
             require 'Datavyu_API.rb'
             begin
-               trial = getColumn("trial")
+               trial = get_column("trial")
                trial.add_code("unit")
-               setColumn(trial)
+               set_column(trial)
             end
 
    .. classmethod:: remove_code(name)
