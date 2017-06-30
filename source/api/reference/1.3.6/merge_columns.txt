@@ -1,0 +1,48 @@
+===============
+merge_columns()
+===============
+
+.. default-domain:: rb
+
+.. method:: merge_columns(*column_names)
+
+  Combines multiple columns together and returns a new column containing
+  all the codes from the given columns (plus an ordinal number code for each column).
+
+  Behaves similar to `create_mutually_exclusive`, however, identical
+  results are not guaranteed.
+
+   .. table-start
+
+   .. tabularcolumns:: |l|L|L|
+
+   .. list-table::
+      :widths: 20, 40, 50
+      :header-rows: 1
+
+      * - Parameter
+        - Type
+        - Description
+      * - ``name``
+        - String
+        - The name of the new column you wish to create.
+      * - ``columns``
+        - List
+        - Columns to combine. List can contain either the names of the columns as Strings
+        or the RColumn object representing the column.
+
+   .. table-end
+
+   .. admonition:: Returns
+
+      New RColumn object on success. Nil value on failed merge.
+
+   .. admonition:: Example
+
+      The following example creates a column called "merged" from three source columns:
+      gesture_mom, gesture_child, gesture_dad.
+
+      .. code-block:: ruby
+
+         merged_column = merge_columns('merged', 'gesture_mom', 'gesture_child', 'gesture_dad')
+         set_column(merged_column) # save to spreadsheet.
