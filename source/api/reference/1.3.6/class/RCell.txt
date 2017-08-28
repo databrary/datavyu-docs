@@ -47,7 +47,7 @@ RCell Class
             require 'Datavyu_API.rb'
             begin
                trial = getColumn("trial")
-               trial.cells(0).change_code("onset", 1000)
+               trial.cells[0].change_code("onset", 1000)
                setColumn("trial", trial)
             end
 
