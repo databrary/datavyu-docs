@@ -3,3 +3,4 @@ build/
 *.rb
 /.idea
 /docs-datavyu.iml
+*.pyc
