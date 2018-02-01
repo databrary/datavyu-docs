@@ -5,7 +5,7 @@ Spreadsheet Overview
 
 The Datavyu Spreadsheet is where coders record :term:`observations
 <observation>`. The spreadsheet is the core of Datavyu. Coders can record
-observations and link them directly to timestamps in the data source when they 
+observations and link them directly to timestamps in the data source when they
 :doc:`/guide/tutorials/configure-datavyu-codes`.
 
 For a brief introduction to some of the spreadsheet's components and
@@ -22,12 +22,12 @@ Each user-defined column has its own column in the spreadsheet.
 :term:`Cells <cell>` are column entries, boxes in the column, where
 coders record their observation data as :term:`codes <code>`. Cells
 follow each other in sequence: looking vertically down a column shows
-the sequence of observations for that column. 
+the sequence of observations for that column.
 
 .. figure:: /img/spreadsheet-annotated.png
    :alt: Image of a Datavyu spreadsheet with 6 columns, and annotations labeling a column, cell, and codes within a cell
    :align: center
-   
+
    A typical Datavyu spreadsheet with an example of five columns and Temporal Alignment turned on.
    Note the :guilabel:`plus` icon in the top right, which you use to add new
    :term:`columns <column>`.
@@ -42,21 +42,21 @@ selecting a specific cell in the spreadsheet and pressing find (+) on the Contro
 .. _column-types:
 .. _variable-types:
 
-Spreadsheet Tabs 
+Spreadsheet Tabs
 ----------------
-Datavyu allows users to open multiple spreadsheets at one time. When the program opens, 
+Datavyu allows users to open multiple spreadsheets at one time. When the program opens,
 it opens a blank spreadsheet. This spreadsheet can be used to create a new file or it can be
-closed if you are working on pre-coded spreadsheets. Feel free to open as many spreadsheets as desired. 
+closed if you are working on pre-coded spreadsheets. Feel free to open as many spreadsheets as desired.
 
 Users can work on multiple spreadsheets at one time. When finished with coding, please be sure to save each
-individual spreadsheet. 
+individual spreadsheet.
 
 
 Columns
 -------
 
 Datavyu uses columns to group together related observations. In
-general, coders will code the data source column-by-column meaning 
+general, coders will code the data source column-by-column meaning
 that they code one entire column before coding a new column.
 
 Using the Code Editor, you can configure
@@ -85,7 +85,7 @@ Hide and Show Columns
 ~~~~~~~~~~~~~~~~~~~~~
 
 To hide a column, select the column by clicking on its name at the top of
-the spreadsheet. The selected column will have a blue background. 
+the spreadsheet. The selected column will have a blue background.
 You can select multiple columns by ``Cmd`` -clicking (on Mac) or
 ``Ctrl`` -clicking (on Windows). Then, in the
 :guilabel:`Spreadsheet` menu, select :guilabel:`Hide Selected Columns`.
@@ -114,27 +114,27 @@ Cells
 -----
 
 Each cell represents an observation
-scored by the coder. 
+scored by the coder.
 
 Minimally, Datavyu displays three values for each cell, but you can ignore
 one or all of these values.
 
-- :term:`onset`: the first time value displayed on the top of the cell. 
-  If you don’t code this value, the cell will display the default value of 0:00:00:000. 
-  You can code a time value to mark the beginning of an event or to 
-  tag the approximate time of an event. 
+- :term:`onset`: the first time value displayed on the top of the cell.
+  If you don’t code this value, the cell will display the default value of 0:00:00:000.
+  You can code a time value to mark the beginning of an event or to
+  tag the approximate time of an event.
 
-- :term:`offset`:the time value displayed on the top right of the cell. 
-  If you don’t code this value, the cell will display the default value 
-  of 0:00:00:000. You can code a time value to mark the end of an event 
-  or to tag the approximate time of an event. 
+- :term:`offset`:the time value displayed on the top right of the cell.
+  If you don’t code this value, the cell will display the default value
+  of 0:00:00:000. You can code a time value to mark the end of an event
+  or to tag the approximate time of an event.
 
 - :term:`ordinal`: the cell ordinal indicates the position of the cell
-  within the column. The first cell (the one with the earliest onset or 
+  within the column. The first cell (the one with the earliest onset or
   the first cell you code if you do not mark onsets)
   would be number 1, the second number 2, and so on. Ordinals are
   automatically coded and updated as you code your data source. You
-  will never need to set the ordinal. 
+  will never need to set the ordinal.
 
 The following image labels each component within a Datavyu cell.
 
@@ -194,7 +194,7 @@ ensure that temporal alignment is active.
    the same spreadsheet with temporal alignment disabled. Note that the
    cells contain the same information, it is only their presentation
    changes. Note also that enabling temporal alignment makes it
-   easier to code and alllows you to visualize the relative length of events 
+   easier to code and alllows you to visualize the relative length of events
    and their relations across columns.
 
 Toggle Temporal Alignment
@@ -207,9 +207,38 @@ from the :guilabel:`Spreadsheet` menu.
 Keyboard Shortcuts
 ``````````````````
 
-We have provided a simple list of the major shortcuts used in the Datavyu Spreadsheet. 
+We have provided a simple list of the major shortcuts used in the Datavyu Spreadsheet.
 
 .. figure:: /img/keyboard-shortcuts.png
    :alt: Image of a keyboard shortcus
    :align: center
 
++----------------------------+--------------+----------------+
+| Action                     | Mac          | PC             |
++============================+==============+================+
+| Temporal Alignment         | CMD T        | CTRL T         |
++----------------------------+--------------+----------------+
+| Snap to Region             | CTRL NUM+    | CTRL NUM+      |
++----------------------------+--------------+----------------+
+| Clear Snap to Region       | CTRL NUM-    | CTRL NUM-      |
++----------------------------+--------------+----------------+
+| Jump to Current Onset      | NUM+         | NUM+           |
++----------------------------+--------------+----------------+
+| Jump to Current Offset     | SHIFT NUM+   | SHIFT NUM+     |
++----------------------------+--------------+----------------+
+| New Cell to the Left       | CMD L        | CTRL L         |
++----------------------------+--------------+----------------+
+| New Cell to the Right      | CMD R        | CTRL R         |
++----------------------------+--------------+----------------+
+| New File                   | CMD N        | CTRL N         |
++----------------------------+--------------+----------------+
+| Open                       | CMD O        | CTRL O         |
++----------------------------+--------------+----------------+
+| Save                       | CMD S        | CTRL S         |
++----------------------------+--------------+----------------+
+| Save As                    | CMD SHIFT S  | CTRL SHIFT S   |
++----------------------------+--------------+----------------+
+| Quit Datavyu               | CMD Q        |                |
++----------------------------+--------------+----------------+
+| Hide Datavyu               | CMD H        |                |
++----------------------------+--------------+----------------+
