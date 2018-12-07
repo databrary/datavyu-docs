@@ -3,7 +3,7 @@
 
 # You can set these variables from the command line.
 SPHINXOPTS      =
-SPHINXBUILD     = python2 $(shell which sphinx-build)
+SPHINXBUILD     = $(shell which sphinx-build)
 PAPER           =
 BUILDDIR        = build
 PELICANBUILDDIR = ../www/datavyu/input/pages/user-guide
