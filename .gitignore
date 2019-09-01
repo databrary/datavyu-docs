@@ -6,3 +6,4 @@ build/
 *.pyc
 *.swp
 source/_static/yard
+.yardoc
