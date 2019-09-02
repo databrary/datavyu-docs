@@ -12,6 +12,11 @@ SOURCEDIR       = source
 #IMAGEDIRS can be a list of directories that contain SVG files, and are relative to the SOURCEDIR
 IMAGEDIRS     = img
 
+## YARD options
+# URL to API file
+API_FILE_LOC="https://raw.githubusercontent.com/databrary/datavyu/dev/src/main/resources/Datavyu_API.rb"
+DOCS_FOLDER="./docs"
+
 #SVG to PDF conversion
 #SVG2PDF	      = inkscape
 
@@ -48,6 +53,7 @@ help:
 	@echo "  pseudoxml  to make pseudoxml-XML files for display purposes"
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
+	@echo "	 yard       to make Ruby API documentation using yard"
 
 # Pattern rule for converting SVG to PDF:
 #%.pdf : %.svg
@@ -63,30 +69,35 @@ clean:
 	rm -rf $(BUILDDIR)/*
 #	rm $(PDFs)
 
+#TODO: Move this recipe to new makefile in docs folder?
 yard:
-	./yard_script.sh
+	@mkdir -p $(DOCS_FOLDER)
+	curl -fsSL --output "datavyu_api.rb" $(API_FILE_LOC)
+	yard --output-dir $(DOCS_FOLDER) "datavyu_api.rb"
+	@rm "datavyu_api.rb"
+	@echo "Ruby API documentation built to $(DOCS_FOLDER)."
 
-html: yard
+html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
-html-pelican: yard
+html-pelican:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(PELICANBUILDDIR)
 	@echo
 	@echo "Pelican build finished. The HTML pages are in $(PELICANBUILDDIR)."
 
-dirhtml: yard
+dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/dirhtml."
 
-singlehtml: yard
+singlehtml:
 	$(SPHINXBUILD) -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml
 	@echo
 	@echo "Build finished. The HTML page is in $(BUILDDIR)/singlehtml."
 
-pickle: yard
+pickle:
 	$(SPHINXBUILD) -b pickle $(ALLSPHINXOPTS) $(BUILDDIR)/pickle
 	@echo
 	@echo "Build finished; now you can process the pickle files."
