@@ -94,7 +94,7 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>Datavyu_API.rb</dd>
+    <dd>datavyu_api.rb</dd>
   </dl>
   
 </div>
@@ -399,7 +399,7 @@
 2757</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'Datavyu_API.rb', line 2755</span>
+      <pre class="code"><span class="info file"># File 'datavyu_api.rb', line 2755</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_mixer_controller'>mixer_controller</span>
   <span class='id identifier rubyid_video_controller'>video_controller</span><span class='period'>.</span><span class='id identifier rubyid_get_mixer_controller'>get_mixer_controller</span>
@@ -559,7 +559,7 @@
 2803</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'Datavyu_API.rb', line 2788</span>
+      <pre class="code"><span class="info file"># File 'datavyu_api.rb', line 2788</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_video'><span class='object_link'><a href="top-level-namespace.html#new_video-instance_method" title="#new_video (method)">new_video</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_filepath'>filepath</span><span class='comma'>,</span> <span class='id identifier rubyid_plugin'>plugin</span><span class='comma'>,</span> <span class='id identifier rubyid_onset'>onset</span><span class='op'>=</span><span class='int'>0</span><span class='comma'>,</span> <span class='id identifier rubyid_timeout'>timeout</span><span class='op'>=</span><span class='int'>5</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='id identifier rubyid_plugin_uuids'>plugin_uuids</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='id identifier rubyid_plugin'>plugin</span><span class='rparen'>)</span>
@@ -652,7 +652,7 @@
 2825</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'Datavyu_API.rb', line 2822</span>
+      <pre class="code"><span class="info file"># File 'datavyu_api.rb', line 2822</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_plugin_of'>plugin_of</span><span class='lparen'>(</span><span class='id identifier rubyid_video'>video</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_uuid'>uuid</span> <span class='op'>=</span> <span class='id identifier rubyid_plugin_uuid_of'>plugin_uuid_of</span><span class='lparen'>(</span><span class='id identifier rubyid_video'>video</span><span class='rparen'>)</span>
@@ -734,7 +734,7 @@
 2817</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'Datavyu_API.rb', line 2813</span>
+      <pre class="code"><span class="info file"># File 'datavyu_api.rb', line 2813</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_plugin_uuid_of'>plugin_uuid_of</span><span class='lparen'>(</span><span class='id identifier rubyid_video'>video</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_org'>org</span><span class='period'>.</span><span class='id identifier rubyid_datavyu'>datavyu</span><span class='period'>.</span><span class='id identifier rubyid_plugins'>plugins</span><span class='period'>.</span><span class='const'>PluginManager</span><span class='period'>.</span><span class='id identifier rubyid_get_instance'>get_instance</span>
@@ -798,7 +798,7 @@
 2747</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'Datavyu_API.rb', line 2742</span>
+      <pre class="code"><span class="info file"># File 'datavyu_api.rb', line 2742</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_plugin_uuids'>plugin_uuids</span>
   <span class='lbrace'>{</span>
@@ -905,7 +905,7 @@
 2779</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'Datavyu_API.rb', line 2768</span>
+      <pre class="code"><span class="info file"># File 'datavyu_api.rb', line 2768</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_set_video_onset'>set_video_onset</span><span class='lparen'>(</span><span class='id identifier rubyid_stream_id'>stream_id</span><span class='comma'>,</span> <span class='id identifier rubyid_onset'>onset</span><span class='comma'>,</span> <span class='id identifier rubyid_timeout'>timeout</span> <span class='op'>=</span> <span class='int'>5</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_success'>success</span> <span class='op'>=</span> <span class='kw'>false</span>
@@ -973,7 +973,7 @@
 2762</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'Datavyu_API.rb', line 2760</span>
+      <pre class="code"><span class="info file"># File 'datavyu_api.rb', line 2760</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_tracks_controller'>tracks_controller</span>
   <span class='id identifier rubyid_mixer_controller'>mixer_controller</span><span class='period'>.</span><span class='id identifier rubyid_get_tracks_editor_controller'>get_tracks_editor_controller</span>
@@ -1032,7 +1032,7 @@
 2752</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'Datavyu_API.rb', line 2750</span>
+      <pre class="code"><span class="info file"># File 'datavyu_api.rb', line 2750</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_video_controller'>video_controller</span>
   <span class='const'>Datavyu</span><span class='period'>.</span><span class='id identifier rubyid_get_video_controller'>get_video_controller</span>
@@ -1091,7 +1091,7 @@
 2808</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'Datavyu_API.rb', line 2806</span>
+      <pre class="code"><span class="info file"># File 'datavyu_api.rb', line 2806</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_videos'>videos</span>
   <span class='id identifier rubyid_video_controller'>video_controller</span><span class='period'>.</span><span class='id identifier rubyid_get_stream_viewers'>get_stream_viewers</span>
@@ -1106,7 +1106,7 @@
 </div>
 
       <div id="footer">
-  Generated on Sun Sep  1 17:38:35 2019 by
+  Generated on Thu Sep  5 15:15:03 2019 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.20 (ruby-2.6.3).
 </div>
