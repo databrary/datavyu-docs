@@ -3,7 +3,7 @@
 
 # You can set these variables from the command line.
 SPHINXOPTS      =
-SPHINXBUILD     = $(shell which sphinx-build)
+SPHINXBUILD     = python2 $(shell which sphinx-build)
 PAPER           =
 BUILDDIR        = build
 PELICANBUILDDIR = ../www/datavyu/input/pages/user-guide
@@ -11,6 +11,11 @@ SOURCEDIR       = source
 
 #IMAGEDIRS can be a list of directories that contain SVG files, and are relative to the SOURCEDIR
 IMAGEDIRS     = img
+
+## YARD options
+# URL to API file
+API_FILE_LOC="https://raw.githubusercontent.com/databrary/datavyu/dev/src/main/resources/Datavyu_API.rb"
+DOCS_FOLDER="./docs"
 
 #SVG to PDF conversion
 #SVG2PDF	      = inkscape
@@ -22,7 +27,7 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) sou
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
-.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext source
+.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext source yard
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -48,6 +53,7 @@ help:
 	@echo "  pseudoxml  to make pseudoxml-XML files for display purposes"
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
+	@echo "	 yard       to make Ruby API documentation using yard"
 
 # Pattern rule for converting SVG to PDF:
 #%.pdf : %.svg
@@ -63,12 +69,20 @@ clean:
 	rm -rf $(BUILDDIR)/*
 #	rm $(PDFs)
 
-html:
+#TODO: Move this recipe to new makefile in docs folder?
+yard:
+	@mkdir -p $(DOCS_FOLDER)
+	curl -fsSL --output "datavyu_api.rb" $(API_FILE_LOC)
+	yard --output-dir $(DOCS_FOLDER) "datavyu_api.rb"
+	@rm "datavyu_api.rb"
+	@echo "Ruby API documentation built to $(DOCS_FOLDER)."
+
+html: 
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
-html-pelican:
+html-pelican: 
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(PELICANBUILDDIR)
 	@echo
 	@echo "Pelican build finished. The HTML pages are in $(PELICANBUILDDIR)."
@@ -83,17 +97,17 @@ singlehtml:
 	@echo
 	@echo "Build finished. The HTML page is in $(BUILDDIR)/singlehtml."
 
-pickle:
+pickle: 
 	$(SPHINXBUILD) -b pickle $(ALLSPHINXOPTS) $(BUILDDIR)/pickle
 	@echo
 	@echo "Build finished; now you can process the pickle files."
 
-json:
+json: 
 	$(SPHINXBUILD) -b json $(ALLSPHINXOPTS) $(BUILDDIR)/json
 	@echo
 	@echo "Build finished; now you can process the JSON files."
 
-htmlhelp:
+htmlhelp: 
 	$(SPHINXBUILD) -b htmlhelp $(ALLSPHINXOPTS) $(BUILDDIR)/htmlhelp
 	@echo
 	@echo "Build finished; now you can run HTML Help Workshop with the" \
@@ -200,7 +214,3 @@ pseudoxml:
 	$(SPHINXBUILD) -b pseudoxml $(ALLSPHINXOPTS) $(BUILDDIR)/pseudoxml
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
-
-pages:
-	git checkout gh-pages
-

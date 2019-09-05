@@ -4,3 +4,6 @@ build/
 /.idea
 /docs-datavyu.iml
 *.pyc
+*.swp
+source/_static/yard
+.yardoc

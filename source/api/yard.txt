@@ -1,0 +1,6 @@
+=================================
+Datavyu Ruby API Reference (Full)
+=================================
+
+.. meta::
+   :http-equiv=refresh: 0; url=../_static/yard/index.html
