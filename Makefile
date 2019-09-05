@@ -3,7 +3,7 @@
 
 # You can set these variables from the command line.
 SPHINXOPTS      =
-SPHINXBUILD     = $(shell which sphinx-build)
+SPHINXBUILD     = python2 $(shell which sphinx-build)
 PAPER           =
 BUILDDIR        = build
 PELICANBUILDDIR = ../www/datavyu/input/pages/user-guide
@@ -77,12 +77,12 @@ yard:
 	@rm "datavyu_api.rb"
 	@echo "Ruby API documentation built to $(DOCS_FOLDER)."
 
-html:
+html: 
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
-html-pelican:
+html-pelican: 
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(PELICANBUILDDIR)
 	@echo
 	@echo "Pelican build finished. The HTML pages are in $(PELICANBUILDDIR)."
@@ -97,17 +97,17 @@ singlehtml:
 	@echo
 	@echo "Build finished. The HTML page is in $(BUILDDIR)/singlehtml."
 
-pickle:
+pickle: 
 	$(SPHINXBUILD) -b pickle $(ALLSPHINXOPTS) $(BUILDDIR)/pickle
 	@echo
 	@echo "Build finished; now you can process the pickle files."
 
-json:
+json: 
 	$(SPHINXBUILD) -b json $(ALLSPHINXOPTS) $(BUILDDIR)/json
 	@echo
 	@echo "Build finished; now you can process the JSON files."
 
-htmlhelp:
+htmlhelp: 
 	$(SPHINXBUILD) -b htmlhelp $(ALLSPHINXOPTS) $(BUILDDIR)/htmlhelp
 	@echo
 	@echo "Build finished; now you can run HTML Help Workshop with the" \
@@ -214,5 +214,3 @@ pseudoxml:
 	$(SPHINXBUILD) -b pseudoxml $(ALLSPHINXOPTS) $(BUILDDIR)/pseudoxml
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
-
-
