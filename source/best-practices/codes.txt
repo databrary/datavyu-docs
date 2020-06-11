@@ -10,7 +10,7 @@ Test your coding scheme on a few examples for each cell in your study design (e.
 As your draft criteria fail or new behaviors emerge, revise your coding scheme (remember that revisions are to be expected).
 Consider the types of analyses that you would like to run as you plan your codes and spreadsheet.
 Be sure that you can export your data in a suitable form for your analyses and that your coding scheme is not too detailed or too vague for your statistical and graphical analyses.
-You may have beautifully coded and reliable data, but if you cannot export it in a way that allows for analyses, you have nothing.test
+You may have beautifully coded and reliable data, but if you cannot export it in a way that allows for analyses, you have nothing.
 
 .. toctree::
   :titlesonly:
