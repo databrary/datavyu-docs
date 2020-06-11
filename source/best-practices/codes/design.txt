@@ -19,7 +19,7 @@ But if you do want to analyze durations of behaviors, creating criteria for onse
 
 Because each cell corresponds to a particular time (from the onset to offset), it usually makes sense for all of the codes within a cell to correspond to the behaviors within that time interval.
 However, this is not obligatory.
-Your cell can include information that occurred before the cell began or after the cell ended (e.g., cell onset = when mother selects a toy and cell offset = when mother offers the toy to the child; a variable within the cell reflects whether child accepted the toy, despite the fact that the acceptance or rejection occurred after the offset of the cell).
+Your cell can include information that occurred before the cell began or after the cell ended (e.g., cell onset = when mother selects a toy and cell offset = when mother offers the toy to the child; a variable within the cell reflects whether child accepted the toy, despite the fact that the acceptance or rejection occurred after the offset of the cell, etc.).
 Build the prompts for each code with the “minimize pain/maximize gain” rule in mind.
 
 Video Example
