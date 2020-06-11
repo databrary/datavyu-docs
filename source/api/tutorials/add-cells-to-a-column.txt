@@ -7,7 +7,7 @@ Add Cells to a Column
 .. begin-content
 
 Populating a Datavyu column with :term:`cells <cell>` is another
-common task that you can use scripts to automate.
+common task that you can automate with scripts.
 
 Suppose that you want to code behaviors within 1-minute long blocks. 
 Rather than have the coder manually insert each cell, you can write a script
