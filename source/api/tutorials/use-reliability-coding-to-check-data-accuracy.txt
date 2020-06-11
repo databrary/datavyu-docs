@@ -53,7 +53,7 @@ parameters:
 
    When making a reliability column, you should also think about how you
    are going to compare the columns. :meth:`checkReliability`, which
-   you use to check reliability. It requires that each pair of cells have a
+   you use to check reliability. It requires that each pair of cells has a
    unique identifier that link them together. For example,
    a trial number coded into each cell would match corresponding cells,
    even if only a subset of cells were included in the reliability
@@ -63,7 +63,7 @@ The following example uses the :download:`sample data
 </resources/Example-Template.opf>` to create a new
 reliability column called "rel.trial" from its "trial" column, skipping
 every other cell, and copying over the *onset* and *trialnum* codes
-so that the reliability coder doesn't' have to recode :term:`onset` and
+so that the reliability coder doesn't have to recode :term:`onset` and
 trial numbers.
 
 .. code-block:: ruby
@@ -117,7 +117,7 @@ optional one:
 
    The following commands create a variable called ``dump_file`` that
    holds the absolute path to a file on the Desktop called
-   ``relcheck.txt``.
+   ``relcheck.txt``:
 
    .. code-block:: ruby
 
