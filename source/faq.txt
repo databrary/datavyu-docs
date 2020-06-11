@@ -47,7 +47,7 @@ to help you get started.
 Do I have to pay for Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-No! Datavyu is a completely free and open source. If you would like to
+No! Datavyu is a completely free and open source program. If you would like to
 contribute to the development of Datavyu, see: `the source on GitHub
 <https://github.com/databrary/datavyu>`_.
 
