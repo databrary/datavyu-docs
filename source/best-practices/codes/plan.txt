@@ -40,20 +40,20 @@ Perhaps the session begins with some introductory procedures (interview, questio
 Or perhaps your recording session involves 3 studies or one study with several conditions.
 In these cases, your first column might reflect the overall temporal structure of the session.
 
-For your first content-loaded coding pass, focus on the behavior(s) most important to your study question (e.g., did the baby say the correct word; did the baby go over the edge of the cliff).
+For your first content-loaded coding pass, focus on the behavior(s) most important to your study question (e.g., did the baby say the correct word, did the baby go over the edge of the cliff, etc.).
 In other words, start with the dependent measure that is most important, direct, and quick to answer the primary question of your study (if you could pick only one dependent measure, this is the one to start with).
 Focusing your first coding pass on the primary outcome measure(s) ensures that you will not waste time coding a sea of variables that you might never analyze.
 You can code other, secondary behaviors in subsequent passes (e.g., where baby looked while naming the object).
 
 Passes can be nested and interleaved.
-So, conditions are nested within the participant, trials are nested within conditions, and outcome measures are nested within trials.
+Conditions are nested within the participant, trials are nested within conditions, and outcome measures are nested within trials.
 In Datavyu, you do not need to repeat the more inclusive category for each nested category.
 Instead, you can tag each row of behavior with the larger inclusive categories when exporting the data using scripts in the script library.
 
 Natural behaviors are interleaved and overlapping.
-Some behaviors are ongoing while other behaviors are stopping and starting (while child is talking, child touches and then stops touching a toy).
-Datavyu does not require mutually exclusive codes (talk without touch, talk with touch, no talking without touch, no talking with touch).
-This is a good thing because three types of behaviors are too much for a coder to translate into mutually exclusive categories by themselves (talk without touch and without look, talk without touch and with look, talk with touch and without look, etc.).
+Some behaviors are ongoing while other behaviors are stopping and starting (e.g. while child is talking, child touches and then stops touching a toy, etc.).
+Datavyu does not require mutually exclusive codes (e.g. talk without touch, talk with touch, no talking without touch, no talking with touch, etc.).
+This is a good thing because three types of behaviors are too much for a coder to translate into mutually exclusive categories by themselves (e.g. talk without touch and without look, talk without touch and with look, talk with touch and without look, etc.).
 You can code behaviors in different passes to capture the interleaving and overlapping.
 This is much easier than trying to deal with all the combinations of possible events.
 Exporting interleaved codes can be challenging so you should be comfortable exporting simpler codes before tackling interleaved behaviors.
