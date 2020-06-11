@@ -21,7 +21,7 @@ Keypad
 
 .. important::
 
-   You cannot use the number keypad for inputting numbers into Datavyu: it will
+   You cannot use the number keypad for inputting numbers into Datavyu. It will
    only perform the actions described here.
 
 The Controller's keypad maps directly to the number pad
