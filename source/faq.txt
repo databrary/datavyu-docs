@@ -25,7 +25,7 @@ What video formats does Datavyu support?
 Datavyu supports all video formats that Quicktime or VLC can play,
 including .mp4, .asf, .wmv, .avi, .flv, .mov, .mpf, .ogg, .mpg, .nsc, .wav,
 and .dts. Please test video playback on each of your computers in your work
-environment by downloading datavyu, and playing video data you plan to code.
+environment by downloading Datavyu, and playing video data you plan to code.
 
 We highlight suggest using the Quicktime plugin because the VLC plugin has known
 timing problems which could lead to inconsistent coding.
@@ -47,7 +47,7 @@ to help you get started.
 Do I have to pay for Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-No! Datavyu is completely free and open source. If you would like to
+No! Datavyu is a completely free and open source. If you would like to
 contribute to the development of Datavyu, see: `the source on GitHub
 <https://github.com/databrary/datavyu>`_.
 
