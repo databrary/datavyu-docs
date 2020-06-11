@@ -2,7 +2,7 @@
 Delete a Cell
 =============
 
-To delete a cell,
+To delete a cell:
 
 #. Open the Datavyu spreadsheet.
 
