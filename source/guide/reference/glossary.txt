@@ -54,11 +54,11 @@ Glossary
       A code that consists of freeform text. Useful for recording unique
       observations in the data.
 
-   Integer
+   integer
       A whole number. Integers are numbers that are not fractions,
       and thus, which have no numbers after a decimal point.
 
-   String
+   string
       In computing, a string is a linear sequence of characters. Strings
       can be random characters, words, or sentences.
 
