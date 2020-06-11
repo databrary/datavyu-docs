@@ -89,7 +89,7 @@ to objects. This makes it is easier for human readers to parse the
 script, and makes it easy to modify or update 
 in the future.
 
-#. Set up the script
+#. Set up the script:
 
    .. code-block:: ruby
 
@@ -138,7 +138,7 @@ in the ``dumpFile`` parameter.
 
    The following commands create a variable called ``output`` that
    holds the absolute path to a file on the Desktop called
-   ``output.txt``.
+   ``output.txt``:
 
    .. code-block:: ruby
 
