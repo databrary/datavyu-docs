@@ -16,7 +16,7 @@ A :term:`coding manual` describes and documents what coders should do (and what 
 It formalizes the coding decisions by defining what each code represents, and the criteria for coders’ decisions.
 This information is valuable for researchers who may analyze or revisit their data months or years after its collection, for setting conventions within and across labs, and for sharing and repurposing data.
 You likely want a separate coding manual for each study.
-You can use your existing manual as a template to set up a new coding manual.
+You can use an existing manual as a template to set up a new coding manual.
 
 A :term:`coding pass` reflects a complete scoring of a video file for one variable or set of variables.
 In Datavyu, a pass is generally a column of cells with codes.
@@ -76,8 +76,8 @@ Cons  Do not know how behavior was          Ignores individual differences in
       individual                            behavior
 ====  ====================================  ====================================
 
-Implicit and explicit codes can be equally reliable (in terms of inter-rater reliability and consistency of participants’ responses) and equally valid (meaning that the codes reflect the behaviors we intend to measure).
-The benefit of an explicit code is that you will know exactly what coders scored (baby stopped for at least 0.5s at the edge of the obstacle with feet or hands touching the obstacle, etc.).
+Implicit and explicit codes can be equally reliable (in terms of inter-rater reliability and consistency of participants’ responses) and equally valid (meaning that the codes reflect the behaviors you intend to measure).
+The benefit of an explicit code is that you will know exactly what coders scored (e.g. baby stopped for at least 0.5s at the edge of the obstacle with feet or hands touching the obstacle, etc.).
 
 In some cases, implicit codes are your best bet and can assure you that an explicit code was sufficiently exhaustive.
 For example, in a study asking whether infants defer to mothers’ advice about walking down slopes, we worried that mothers’ delivery of encouragement or discouragement might have been influenced by the severity of the slope of an incline; perhaps mothers did not encourage as enthusiastically on steep slopes as they did on shallow ones or did not discourage as enthusiastically on shallow slopes as they did on steep ones.
