@@ -5,7 +5,7 @@ A second kind of error is an error in judgment.
 One coder thinks that the child touched an object but a second coder does not think that the child touched the object.
 One coder interprets the child’s facial expression as distress but the other coder sees it as neutral.
 If coders frequently cannot agree about the codes for the same section of video, your coding scheme lacks inter-rater reliability.
-Inter-rater reliability will be low if there is a problem with the coding criteria (criteria are ill defined; criteria do not map well onto the behaviors) or if the coders are not well trained, or both.
+Inter-rater reliability will be low if there is a problem with the coding criteria (e.g. criteria are ill defined, criteria do not map well onto the behaviors, etc.) or if the coders are not well trained, or both.
 So, before you commit yourself to a coding scheme, test inter-rater reliability.
 If it is too low, you may need to revise your coding scheme or retrain your coders.
 Disagreements among coders are inevitable, even those who are practiced and familiar with the coding scheme.
@@ -31,13 +31,13 @@ Rules of Thumb
 By definition, careless errors will lower inter-rater reliability.
 Therefore it is important to check for and eliminate careless errors before you test for inter-rater reliability.
 
-Coders will experience “drift,” meaning that their coding will change slightly as they become increasingly experienced at looking at the particular behaviors.
-Therefore it is important to check inter-rater reliability at every point in the study—on initial sessions, in the middle of the study, and on the final sessions.
+Coders will experience “drift,” meaning that their coding will change slightly as they become increasingly experienced at looking at particular behaviors.
+Therefore, it is important to check inter-rater reliability at every point in the study—on initial sessions, in the middle of the study, and on the final sessions.
 
-How much video should the reliability coder view to ensure inter-rater reliability.
+How much video should the reliability coder view to ensure inter-rater reliability?
 A good rule of thumb is 25%.
-But because every child is different, your reliability coder should score 25% of each child’s data, rather than 25% of the children.
-Which 25%.
+But because every child is different, your reliability coder should score 25% of each child’s data, rather than 25% of the data.
+Which 25%?
 You can check inter-rater reliability at random intervals or regular intervals—whatever is most appropriate for sampling over the dataset.
 In some cases, particular trials or segments of video are especially important.
 In these cases, the reliability coder can score a larger percentage of the data—up to 100%.
