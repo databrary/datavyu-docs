@@ -86,7 +86,7 @@ or the `to_f <http://ruby-doc.org/core-2.0.0/String.html#method-i-to_f>`_ method
 
       var1 = "5"
   
-   If you print ``var``, you'd see that it is "5". Now,create a new
+   If you print ``var``, you'd see that it is "5". Create a new
    variable, ``var2`` from ``var1`` using ``to_i`` to convert the "5" to
    a ``5``.
   
@@ -122,7 +122,7 @@ Basic Script Format
 
    Scripts are very sensitive! When programming, every quotation mark,
    underscore, period, and slash serve a purpose. You must
-   use the correct syntax, or the script will not work. 
+   use the correct syntax or the script will not work. 
    
    Code and column names are also case sensitive. If you have a column
    in a spreadsheet called "trial", requesting "Trial" will not work.
@@ -157,7 +157,7 @@ In general, the rest of the script code goes between ``begin`` and
 
    Anything that comes after a ``#`` character on a line in Ruby is a
    comment, which means it will not execute any specific task. Comments are useful for
-   leaving notes that explain what the code is doing so that when you return to an old script,
+   leaving notes that explain what the code is doing so that when you return to an old script
    you remember what you're looking at. The examples in this documentation
    use comments extensively.
 
