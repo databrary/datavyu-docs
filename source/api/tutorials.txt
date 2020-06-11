@@ -18,7 +18,7 @@ whose codes describe basic information such as *subject number*,
 *test date*, *birth date*, and *condition*, and "trial", which has two
 codes: *trialnum* and *outcome*.
 
-The example has one :term:`cell` in the "id" column, and no cells
+The example has one :term:`cell` in the "id" column and no cells
 in the "trial" column. Most of the Datavyu tutorials use the example
 template as their basis, so if you want to follow along directly,
 you can download it, and then open it with Datavyu (using File >
@@ -35,7 +35,7 @@ Load Datavyu Columns
 
 To load columns, Datavyu provides the
 :meth:`getColumn()` method. :meth:`getColumn()` takes one
-argument: the name of the column in Datavyu, and returns the Ruby
+argument, the name of the column in Datavyu, and returns the Ruby
 representation of the column, which you can work with.
 
 The following script retrieves the "trial" column from the Datavyu
