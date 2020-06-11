@@ -23,7 +23,7 @@ Delete a column if the information is no longer needed.
   
 `Configure Datavyu Codes <tutorials/configure-datavyu-codes.html>`_
 -------------------------------------------------------------------
-Configure columns and codes to set up a spreadsheet for coding   
+Configure columns and codes to set up a spreadsheet for coding.   
 
    
 `Add Cells <tutorials/add-cells.html>`_
