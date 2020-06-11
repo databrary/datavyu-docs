@@ -13,7 +13,7 @@ Classes
 Object-oriented languages represent concepts, like
 Datavyu's columns or cells, for instance, as "objects". Objects come in
 different types, or "classes". For example, objects that represent numbers,
-strings (writen text), or Datavyu columns have different classes. 
+strings (written text), or Datavyu columns have different classes. 
 
 An object can have a variety of attributes depending on the data that pertains to the
 object. In Datavyu, a cell object's attributes would be its codes; a column
@@ -21,7 +21,7 @@ object's attributes might be its cells, its name, and its onset and offset times
 The class of an object defines what types of attributes a specific type of object will have. 
 
 Thinking about Datavyu specifically, the
-"column" class describes the Datavyu columns.  The "trial" object in the example spreadsheet
+"column" class describes the Datavyu columns. The "trial" object in the example spreadsheet
 would then be an instance of the "column" class. This is in fact how the
 Datavyu API works. The Datavyu API includes two classes to represent
 Datavyu concepts: :class:`RColumn` describes Datavyu's
@@ -44,7 +44,7 @@ Each method defines what information it can receive. These are called
 :term:`parameters <parameter>`. :meth:`getColumn()` has one parameter: ``name``,
 which is the name of the column that you wish to retrieve.
 
-So, parameters are the types of information that you can specify for a
+Parameters are the types of information that you can specify for a
 method, and are specified in the method's definition (you can view all
 of Datavyu's method definitions on the :doc:`API reference page
 </api/reference>`). 
@@ -78,7 +78,7 @@ Standalone Methods and Class Methods
 
 There are two different types of methods: standalone methods and
 :term:`class methods <class method>`. Class methods act directly upon
-an instance of a specific class. Standalone methods,
+an instance of a specific class. Standalone methods
 perform actions on their own.
 
 :meth:`getColumn()` is a standalone method that you use to retrieve
