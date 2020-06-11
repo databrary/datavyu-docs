@@ -24,7 +24,7 @@ This will help you if you need to go back to recode portions of video or if you 
 Template Spreadsheet
 ~~~~~~~~~~~~~~~~~~~~
 
-Keep a template spreadsheet in your study folder.
+Keep a template spreadsheet in your study folder on your computer.
 This spreadsheet has the latest version of the codes for each pass, but the columns are blank.
 When you are ready to code a new participant, duplicate the template and save it with the appropriate file name.
 You can keep the template up to date by making changes globally to all of the files in a folder using a script.
