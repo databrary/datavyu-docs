@@ -124,7 +124,7 @@ one or all of these values.
   You can code a time value to mark the beginning of an event or to
   tag the approximate time of an event.
 
-- :term:`offset`:the time value displayed on the top right of the cell.
+- :term:`offset`:  the time value displayed on the top right of the cell.
   If you don’t code this value, the cell will display the default value
   of 0:00:00:000. You can code a time value to mark the end of an event
   or to tag the approximate time of an event.
