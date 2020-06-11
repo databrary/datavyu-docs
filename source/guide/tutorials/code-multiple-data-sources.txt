@@ -13,7 +13,7 @@ Add Multiple Data Sources
 -------------------------
 
 To add multiple data sources, simply add a data source using the Data
-Viewer Controller's ':guilabel:`Add Data` button. You can add as many
+Viewer Controller's :guilabel:`Add Data` button. You can add as many
 data sources as you desire.
 
 .. figure:: /img/dvc-annotated-multiple-sources.png
