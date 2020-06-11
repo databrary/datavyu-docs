@@ -16,6 +16,6 @@ If you want to insert cells to check for inter-rater reliability, you do not nee
 Instead, you can write a script to insert all the necessary cells at pre-specified intervals or random intervals to prompt the reliability coder for onset or offset times and codes.
 
 More generally, whenever you need to perform an operation over many cells or many spreadsheet files (e.g., add new columns/passes, add new variables, change name of variables), use a script.
-The operation will be nearly instantaneous.Check that the spreadsheets are free of careless coding errors and that inter-rater reliability is acceptable.
+The operation will be nearly instantaneous. Check that the spreadsheets are free of careless coding errors and that inter-rater reliability is acceptable.
 Test your initial plan on a small but representative subset of the video data (4-6 participants from each cell of your design).
 At this point, you can get an idea of whether your coders and codes are likely to be reliable and you can satisfy yourself that you can export your data in the format you need for statistical analyses.
