@@ -1,9 +1,9 @@
 Test Your Plan
 --------------
 
-Test your coding scheme by coding representative portions of video for several participants (a few minutes from 4-6 participants per cell of your research design); it is best to test your coding plan on participants you did not use to design your coding plan.
+Test your coding scheme by coding representative portions of video for several participants (a few minutes from 4-6 participants per cell of your research design). It is best to test your coding plan on participants you did not use to design your coding plan.
 You are likely to find that you will need to revise your coding criteria or add/delete codes when you try out your scheme on new participants, a new age group, or for a new condition.
-This is normal: Behavior is rich and complex and happily, children do different things under different circumstances.
+This is normal: behavior is rich and complex and happily, and children do different things under different circumstances.
 However, if the coding feels unduly arduous and grueling, you should simplify the codes to minimize cost to coders’ attention.
 It is usually better to code in multiple passes than to code in one grueling, painful pass.
 In Datavyu, exploit the features of the software to make every keystroke count and to make every shift in coders’ gaze and attention worth their while.
