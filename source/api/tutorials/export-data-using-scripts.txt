@@ -98,12 +98,12 @@ A *nested export* exports data based on the nesting of :term:`cells
 For instance, the following spreadsheet example has three columns:
 "id", "trial", and "foot". "id" is a participant ID, which might include
 codes that describe the participant's individual id code, gender,
-age, etc. "trial" is a column that marks each trial that occurred and 
+age, etc., "trial" is a column that marks each trial that occurred and 
 "foot" is a column representing observations recorded during each trial.
 
 The cells, then, group together with an "id" cell covering the length of
 all trials. There are two trials in the example that occur within the time 
-limits of the "id" cell and there are several"foot" cells that occur within 
+limits of the "id" cell and there are several "foot" cells that occur within 
 the time limits of each trial.
 
 To export data from this style of spreadsheet, we will use a series of
@@ -152,7 +152,7 @@ since all of the data in that spreadsheet is for a single participant.
          foot = getColumn("foot")
 
 #. Set up a series of ``for`` loops that we will use to iterate over
-   each cell in the columns we're interested in.
+   each cell in the columns we're interested in:
 
    
    .. code-block:: ruby
@@ -190,7 +190,7 @@ since all of the data in that spreadsheet is for a single participant.
    that the ``fcell`` occurs during the length of the ``tcell``.
    
    If the clauses are met, write the cells' codes to the ``out`` file, 
-   separated by tabs.
+   separated by tabs:
    
    .. code-block:: ruby
    
@@ -266,7 +266,7 @@ since all of the data in that spreadsheet is for a single participant.
 Video Example of Running an Export Script 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This video displays a user running a script to export data in a specific way. This export script exports all of the columns of one spreadsheet into an excel file. Datavyu's built in export displays one excel cell as one cell on the spreadsheet. This specific script repeats all the participant information such as the id number, test date, birthdate, and sex, for all of the data making it more useful when you import into a statistical analysis program. 
+This video displays a user running a script to export data in a specific way. This export script exports all of the columns of one spreadsheet into an Excel file. Datavyu's built-in export displays one Excel cell as one cell on the spreadsheet. This specific script repeats all the participant information such as the id number, test date, birthdate, and sex, for all of the data making it more useful when you import into a statistical analysis program. 
 
 .. raw:: html
 
