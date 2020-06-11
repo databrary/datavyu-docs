@@ -14,8 +14,8 @@ Suppose you have a dataset that contains fifty Datavyu files and videos.
 After you analyze your data, you realize that you want to go back and code 
 a new pass for all of your files. Instead of manually creating a new column 
 in all fifty Datavyu files, you can write a script that will do it for you! 
-The script can include any and all desired codes within the column, save time, 
-and reduce the potential risk of error. 
+The script can include any and all desired codes within the column, and will 
+save time and reduce the potential risk of error.
 
 Or suppose you want to change the name of a code. You can use a script to make 
 the changes across all the relevant files. 
@@ -29,7 +29,7 @@ Use a script for data checking!
 
 Computers are ideally suited for doing repetitive tasks quickly and conistently. The
 Datavyu API enables a researcher to perform these kinds of tasks
-programmatically, so that doing a repetitive task becomes a matter 
+programmatically so that doing a repetitive task becomes a matter 
 of writing a few lines of computer code and running the script.
 
 Writing scripts with the API is straightforward and accessible to even
