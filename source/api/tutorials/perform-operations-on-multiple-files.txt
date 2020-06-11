@@ -83,7 +83,7 @@ data, following the process in :doc:`/api/tutorials/export-data-using-scripts`.
 
 #. Set up a series of ``for`` loops  to iterate over
    each cell in the relevant columns, and then use an ``if`` to export
-   nested cells, following the steps in :doc:`/api/tutorials/export-data-using-scripts`.
+   nested cells, following the steps in :doc:`/api/tutorials/export-data-using-scripts`:
 
    .. code-block:: ruby
 
@@ -124,7 +124,7 @@ data, following the process in :doc:`/api/tutorials/export-data-using-scripts`.
 
 #. Close the filename ``for`` loop  and ``if`` statement and print
    "FINISHED" when the script has finished exporting all the
-   spreadsheet files' data to the output file.
+   spreadsheet files' data to the output file:
 
    .. code-block:: ruby
 
