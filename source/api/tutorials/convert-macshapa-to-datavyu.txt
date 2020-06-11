@@ -4,7 +4,7 @@ Convert MacSHAPA Files to Work in Datavyu
 
 MacSHAPA users can convert their files to the new Datavyu format using a
 script. The following script converts a folder of MacSHAPA files to
-Datavyu files but be sure to edit your folders' names and locations to reflect the
+Datavyu files, but be sure to edit your folders' names and locations to reflect the
 location of your MacSHAPA files and Datavyu files.
 
 .. code-block:: rb
