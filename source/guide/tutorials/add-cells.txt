@@ -24,13 +24,13 @@ give you more options for how to insert cells and onset/offset times.
 .. TODO: this is not a great heading
 
 
-Add cells Using the Spreadsheet Menu
+Add Cells Using the Spreadsheet Menu
 ------------------------------------
 
 Using the spreadsheet menu to add cells to an existing column is simple:
 
 #. Click on the :guilabel:`Spreadsheet` menu and select :guilabel:`New Cell`. A new cell
-   appears with the current play head time as its osnet and placeholders for any codes configured
+   appears with the current play head time as its onset and placeholders for any codes configured
    for the column.
 
 #. Set the cell offset using the Controller.
