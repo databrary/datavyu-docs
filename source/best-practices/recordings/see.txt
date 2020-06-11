@@ -11,7 +11,7 @@ On Camera
 
 Camera views make all the difference.
 With well-designed camera views, the behaviors of interest are visible and large on the video frame.
-It can be advantageous to collect data from multiple camera views: Different behaviors may be visible from different angles, and it is often helpful to have multiple perspectives on a single behavior.
+It can be advantageous to collect data from multiple camera views: different behaviors may be visible from different angles, and it is often helpful to have multiple perspectives on a single behavior.
 Datavyu can synchronize views from different video files or you can use commercial software to merge and synchronize your camera views onto a single video frame.
 Often, the critical behavior of interest is obscured on one camera view; multiple camera views ensures that you will always be able to see the behavior.
 
