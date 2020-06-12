@@ -5,42 +5,49 @@ Walkthrough Videos
 We have produced several videos that help illustrate Datavyu's strengths
 and guide users through common tasks:
 
--------------------------------
-Introduction to the Code Editor
--------------------------------
+--------------------
+Tutorial Videos
+--------------------
+
+Datavyu Components & Playback
+~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="_static/video/code-editor.mp4" type="video/mp4">
-   <source src="_static/video/code-editor.webm" type="video/webm">
+   <source src="https://nyu.databrary.org/slot/45710/0,704610/asset/238623/download?inline=true" type="video/mp4">
    </video>
 
--------------------------
-Watch an Expert User Code
--------------------------
+Learn about Datavyu's media player and video controller. Discover the power of Datavyu's fingertip playback control. For more information see :doc:`/guide/getting-started` and :doc:`/guide/controller`.
+
+Time-Lock Events Codes to Video: Cells & Coding Spreadsheet
+~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="_static/video/coding-example.mp4" type="video/mp4">
-   <source src="_static/video/coding-example.webm" type="video/webm">
+   <source src="https://nyu.databrary.org/slot/45710/705566,1639961/asset/238625/download?inline=true" type="video/mp4">
    </video>
 
---------------------------------------------------------
-Introduction to the Controller's Tracks Area
---------------------------------------------------------
+Learn how Datavyu time-locks video events to the coding spreadsheet. Dive into how a coding column and a "cell" within a coding column work. See examples of time-locking events to video. For more information see :doc:`/guide/spreadsheet` and :doc:`/guide/tutorials/configure-datavyu-codes`.
+
+Time-Lock Events Codes to Video: Coding Timestamps
+~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="_static/video/dvc-tracks-area.mp4" type="video/mp4">
-   <source src="_static/video/dvc-tracks-area.webm" type="video/webm">
+   <source src="https://nyu.databrary.org/slot/45710/1640961,2576493/asset/238627/download?inline=true" type="video/mp4">
    </video>
+
+Learn how to use Datavyu’s fingertip control functions to time-lock video to the coding spreadsheet. Explore three ways of inserting timestamps with appropriate use cases. For more information see :doc:'/guide/tutorials/add-cells'.
 
 --------------------
-Edit the Spreadsheet
+Short Walkthrough Videos
 --------------------
+
+Modifying Columns & Font Size
+~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
@@ -49,9 +56,22 @@ Edit the Spreadsheet
    <source src="_static/video/edit-spreadsheet.webm" type="video/webm">
    </video>
 
-----------------------
-Temporal Alignment 101
-----------------------
+See how to create, rename, and move columns. Learn how to increase and decrease font size on cell codes by “zooming.”
+
+Modifying Codes with the Code Editor
+~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <video controls width="100%" height="auto">
+   <source src="_static/video/code-editor.mp4" type="video/mp4">
+   <source src="_static/video/code-editor.webm" type="video/webm">
+   </video>
+
+See how the Code Editor can be used to create new columns and codes, rename codes, and change code order.
+
+Spreadsheet Temporal Alignment
+~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
@@ -60,9 +80,10 @@ Temporal Alignment 101
    <source src="_static/video/temporal-alignment.webm" type="video/webm">
    </video>
 
-------------
-Run a Script
-------------
+Watch how cells can be viewed relative to their duration across columns using temporal alignment in the coding spreadsheet.
+
+Modifying Columns with a Script
+~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
@@ -70,3 +91,5 @@ Run a Script
    <source src="_static/video/run-a-script.mp4" type="video/mp4">
    <source src="_static/video/run-a-script.webm" type="video/webm">
    </video>
+
+See an example of how scripts can be used to modify coding spreadsheets. Learn about scrips with :doc:`Ruby API documentation </api>`
