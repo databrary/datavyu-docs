@@ -28,7 +28,7 @@ make_duration_block_rel()
         - The name of the reliability column you are creating
       * - ``var_to_copy``
         - RColumn object
-        - Name of the column which you are copying, i.e.the existing column
+        - Name of the column which you are copying, i.e. the existing column
           that you are creating a reliability column from.
       * - ``binding``
         - String
