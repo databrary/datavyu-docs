@@ -6,9 +6,8 @@ transfer_columns()
 
 .. method:: transfer_columns(db1, db2, remove, *varnames)
 
-   Transfers columns between spreadsheets. If ``db1`` or ``db2`` is set to the
-   empty string "", then that spreadsheet is spreadsheet open in the
-   GUI.
+   Transfers columns between spreadsheets. Replacing ``db1`` or ``db2`` with the
+   empty string "", will refer instead to the currently open spreadsheet in Datavyu.
 
    Thus, if you want to transfer a column into the GUI, set ``db2`` to '',
    and specify the origin spreadsheet file as ``db1``. If you want to
