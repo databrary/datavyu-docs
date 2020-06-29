@@ -67,7 +67,7 @@ In the example, we have:
 
 - ``""`` is the location that we want to export the output to. Using
   ``""`` indicates that we do not want to write the results to a file,
-  and that it should instead display in the console.
+  and that it should instead display in the Datavyu Scripting Console.
 
 - ``"direction", ["l", "r"]`` is the first key-value pair, which specifies
   that the "direction" Datavyu code should only have the values "l" or "r".
