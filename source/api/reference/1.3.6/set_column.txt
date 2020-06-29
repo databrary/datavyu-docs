@@ -6,7 +6,7 @@ set_column()
 
 .. method:: set_column(name, var)
 
-   :meth:`set_column` writes columns to the spreadsheet: for columns
+   :meth:`set_column` writes columns to the spreadsheet. For columns
    that already exist, :meth:`set_column` replaces the data in the
    spreadsheet with the version updated using the script. For
    instance, if you were to retrieve the "trial" column from a
