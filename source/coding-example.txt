@@ -2,6 +2,15 @@
 Coding Example
 ==============
 
-Please feel free to use the provided :download:`coding example </resources/DatavyuSample.zip>` and video to practice coding. 
+-------------------------
+Watch an Expert User Code
+-------------------------
 
+.. raw:: html
 
+   <video controls width="100%" height="auto">
+   <source src="_static/video/coding-example.mp4" type="video/mp4">
+   <source src="_static/video/coding-example.webm" type="video/webm">
+   </video>
+   
+Use the provided :download:`coding example </resources/DatavyuSample.zip>` and video to practice coding.
