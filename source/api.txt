@@ -43,7 +43,7 @@ and reference pages. Tutorials provide step-by-step instructions for
 accomplishing common tasks with Ruby scripts. The Reference
 documentation provides a detailed reference for every :term:`class`
 and :term:`method` included in the API. This can be useful if you are
-uncertain about how to use a specific method, or want an example of
+uncertain about how to use a specific method or want an example of
 its use.
 
 .. toctree::
