@@ -39,7 +39,7 @@ print_codes()
    
       The following example uses :meth:`print_codes()` to write the
       coded values for the cells in the "trial" variable to a file
-      called "trial_codes.txt", located on the Desktop.
+      called "trial_codes.txt", located on the computer Desktop.
 
       .. code-block:: ruby
 
