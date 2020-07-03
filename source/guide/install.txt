@@ -18,8 +18,8 @@ The hardware requirements listed below are the minimum needed for Datavyu. More 
 or a faster processor will improve Datavyu's performance, especially when
 working with higher-resolution data sources.
 
-- 1GB of RAM.
-- 1.2 GHz processor.
+- 4GB of RAM.
+- 2.3 GHz processor.
 
 You will also need enough disk space for your videos
 and a keypad, either as part of your keyboard, or as an
