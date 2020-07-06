@@ -89,7 +89,7 @@ Check for coding errors such as typos, impossible vlaues, unlikely values, etc.
 
 `Use Reliability Coding to Check Data Accuracy <tutorials/use-reliability-coding-to-check-data-accuracy.html>`_
 ---------------------------------------------------------------------------------------------------------------
-Check Inter-rater Reliability to Improve Data Accuracy 
+Check inter-rater reliability to improve data accuracy 
 to determine whether more than one coder would score the data the same way.
 
 `Export Data Using Scripts <tutorials/export-data-using-scripts.html>`_
