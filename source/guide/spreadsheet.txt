@@ -8,21 +8,12 @@ The Datavyu Spreadsheet is where coders record :term:`observations
 observations and link them directly to timestamps in the data source when they
 :doc:`/guide/tutorials/configure-datavyu-codes`.
 
-For a brief introduction to some of the spreadsheet's components and
-capabilities, watch the spreadsheet walkthrough video:
-
-.. raw:: html
-
-   <video controls width="100%" height="auto">
-   <source src="../_static/video/edit-spreadsheet.mp4" type="video/mp4">
-   <source src="../_static/video/edit-spreadsheet.webm" type="video/webm">
-   </video>
-
-Each user-defined column has its own column in the spreadsheet.
-:term:`Cells <cell>` are column entries, boxes in the column, where
-coders record their observation data as :term:`codes <code>`. Cells
-follow each other in sequence: looking vertically down a column shows
-the sequence of observations for that column.
+You can define what you want to code and you can have different coding
+:term: 'columns' to capture different behaviors, aspects of behavior, different people, etc. 
+Time on the spreadsheet runs from the top to the bottom. Each column you create has 
+:term: 'cells' within it for each event or observation you code. 
+For each column, you define your own coding prompts, and coders put :term: 'codes' 
+within each of the cells for each event or observation. 
 
 .. figure:: /img/spreadsheet-annotated.png
    :alt: Image of a Datavyu spreadsheet with 6 columns, and annotations labeling a column, cell, and codes within a cell
