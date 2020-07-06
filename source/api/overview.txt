@@ -10,10 +10,10 @@ oriented language.
 Classes
 -------
 
-Object-oriented languages represent concepts, like
-Datavyu's columns or cells, for instance, as "objects". Objects come in
-different types, or "classes". For example, objects that represent numbers,
-strings (written text), or Datavyu columns have different classes. 
+Object-oriented languages represent concepts—for example, Datavyu columns or 
+cells—as "objects". Objects come in different types or "classes". 
+For instance, different classes could be numbers, strings, integers, Datavyu columns, 
+or Datavyu cells. 
 
 An object can have a variety of attributes depending on the data that pertains to the
 object. In Datavyu, a cell object's attributes would be its codes; a column
