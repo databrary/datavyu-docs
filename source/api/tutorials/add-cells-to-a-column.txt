@@ -12,7 +12,8 @@ common task that you can automate with scripts.
 Suppose that you want to code behaviors within 1-minute long blocks. 
 Rather than have the coder manually insert each cell, you can write a script
 that will insert a "block" cell every minute, with the :term:`onset` 
-set to the correct trial start time.
+set to the correct trial start time. Let's learn how to insert five cells, 
+one for each minute of our five minute video: 
 
 #. Set up the script and create the Datavyu column you will be working
    with into a Ruby variable. We'll call it ``block`` here, but you can
