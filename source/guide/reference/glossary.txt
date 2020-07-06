@@ -24,11 +24,11 @@ Glossary
 
    onset
    cell onset
-      The start time of a cell.
+      The start time-stamp of a cell.
 
    offset
    cell offset
-      The end time of a cell.
+      The end time-stamp of a cell.
  
    spreadsheet
       The core Datavyu window where coders record observations. See:
@@ -39,7 +39,8 @@ Glossary
       :term:`timeslider` of the Controller.
 
    observation
-      An instance of the :term:`column` that is being coded.
+      An event that is being coded within a :term: 'column'. 
+      Linked to the video by a time-stamped :term: 'cell'. 
 
    code
       Datavyu codes are column components that researchers are observing.
@@ -56,7 +57,7 @@ Glossary
 
    integer
       A whole number. Integers are numbers that are not fractions,
-      and thus, which have no numbers after a decimal point.
+      and therefore do not have decimal points. 
 
    string
       In computing, a string is a linear sequence of characters. Strings
@@ -112,9 +113,9 @@ Glossary
       methods. See: :doc:`/api/overview`.
 
    method
-      A defined action that you can perform. Methods may accept
-      arguments in order to perform their specified tasks.
-      See: :doc:`/api/overview`.
+      A defined action that you can perform using Ruby :term: 'scripts'. 
+      Methods may accept :term: 'parameters' in order to perform their specified tasks. 
+      See: :doc: '/api/overview'.
 
    standalone method
       A :term:`method` that does not belong to a specific
@@ -134,9 +135,8 @@ Glossary
       Datavyu.
 
    parameter
-      The information that is methods use to perform their
-      tasks. Parameters can be required or optional.  See:
-      :doc:`/api/overview`.
+      User-specified information used to perform tasks within specific 
+      :term: 'methods' while writing Ruby scripts. 
 
    argument
       The information the user specifies to a method for a given
