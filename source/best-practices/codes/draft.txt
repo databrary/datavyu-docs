@@ -1,10 +1,9 @@
 Draft a Coding Manual
 ---------------------
 
-Write your coding manual with a stranger in mind.
-When you revisit your manual years later, you will be a “stranger” to the coding criteria.
-When new coders open your manual, they will be strangers to the coding criteria.
-Write it for a stranger.
+Write your coding manual with as much detail as possible, 
+so that a person who is unfamiliar with the project could correctly code the data. 
+Imagine you are reading your coding manual as a stranger. When you revisit your coding manual years later, you will be a "stranger" to the coding criteria.
 Do not use acronyms or terms known only to members of your lab.
 Use plain English instead.
 If you plan to eventually share your videos on Databrary, you may also want to share your Datavyu files and coding manual.
