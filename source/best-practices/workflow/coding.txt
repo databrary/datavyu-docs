@@ -9,7 +9,7 @@ First Coder Code and Check Errors
 
 You will have a primary coder or set of coders for each pass.
 The primary coder will code the pass through the entire video file.
-When finished, before shutting the spreadsheet, the coder will run the check error script for that pass.
+When finished, before closing the spreadsheet, the coder will run the check error script for that pass.
 The coder will correct all of the identified careless errors.
 Then the coder will note in your formal records that the pass is finished and ready for the reliability coder.
 
