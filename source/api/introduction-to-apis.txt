@@ -54,7 +54,7 @@ for your own purposes. However, gaining a grounding in some
 programming concepts will make it easier to create your own scripts
 for your unique use cases and needs.
 
-Consider :doc:`/api/overview` for an introduction to object oriented
+Consider :doc:`/api/overview` for an introduction to object-oriented
 programming, :term:`classes <class>`, and :term:`methods <method>`.
 Also, :doc:`/api/introduction-to-scripting` discusses the
 requirements you should keep in mind when you start writing scripts.
