@@ -47,7 +47,6 @@ Use multiple camera views to capture both small body parts/small movements and t
 Small body parts, small movements, facial expressions, and eye movements are difficult to see when they are small in the video frame.
 
 Part of planning your recording arrangement involves thinking about your recording context.
-For example, white skin is difficult to see against a light background and dark skin is difficult to see against a dark background.
 So, create more visual contrast by making your background a bright or saturated color or dressing the child in a bright or saturated color (we use bright blue carpets and mats because infants’ hands and feet are clearly visible against them).
 
 Video Example
