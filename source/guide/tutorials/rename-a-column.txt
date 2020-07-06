@@ -64,11 +64,3 @@ can also edit the names of your columns' and codes'.
 #. Double click on the name of the column whose name you want to
    change, and type a new column name. The spreadsheet will update
    automatically.
-
-.. seealso:: 
-
-   - :ref:`columns`
-
-   - :doc:`/guide/tutorials/add-a-column`
-
-   - :doc:`/guide/tutorials/delete-column`
