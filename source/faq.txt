@@ -94,8 +94,9 @@ Support
 I've never coded video data before. How should I start?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We are writing a Best Practices Guide to provide detailed tips and
-advice to help you start coding behavioral data from video.
+Please watch the :doc: '/walkthrough-videos' for using Datavyu, 
+and read the :doc: '/best-practices' for detailed tips and advice 
+to help you get started on coding behavioral data through video. 
 
 Where can I learn to use Datavyu?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -107,8 +108,8 @@ tutorials to guide you through common tasks.
 I'm not sure how to best code my data? Are there guidelines for coding?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Best Practices Guide will provide
-in-depth instructions and suggestions for coding your behavioral data. It is coming soon!
+The :doc: '/best-practices' provides in-depth instructions and 
+suggestions for coding your behavioral data. 
 
 What is the best way to prevent data loss?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
