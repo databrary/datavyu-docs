@@ -2,9 +2,9 @@
 computeKappa()
 ==============
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: computeKappa(pri_col, rel_col, *codes)
+.. function:: computeKappa(pri_col, rel_col, *codes)
 
    Computes Cohen's kappa for a primary and reliability column.
    Cells between the two columns are matched by their onset time.

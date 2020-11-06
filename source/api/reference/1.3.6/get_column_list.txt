@@ -2,9 +2,9 @@
 get_column_list()
 =================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: get_column_list()
+.. function:: get_column_list()
 
    Outputs a list of all the columns in the current spreadsheet.
 

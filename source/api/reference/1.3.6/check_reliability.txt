@@ -2,9 +2,9 @@
 check_reliability()
 ===================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: check_reliability(main_col, rel_col, match_arg, time_tolerance, dump_file)
+.. function:: check_reliability(main_col, rel_col, match_arg, time_tolerance, dump_file)
 
    Compares two Datavyu columns to check for reliability errors and
    accuracy.

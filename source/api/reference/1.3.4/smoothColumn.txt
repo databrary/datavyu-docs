@@ -2,9 +2,9 @@
 smoothColumn()
 ==============
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: smoothColumn(colname, tol = 33)
+.. function:: smoothColumn(colname, tol = 33)
 
    Tweaks cell onsets so that there is a maximum of
    ``tol`` milliseconds between each cell. If two cells are less than

@@ -2,9 +2,9 @@
 merge_columns()
 ===============
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: merge_columns(*column_names)
+.. function:: merge_columns(*column_names)
 
   Combines multiple columns together and returns a new column containing
   all the codes from the given columns (plus an ordinal number code for each column).
@@ -28,8 +28,8 @@ merge_columns()
         - The name of the new column you wish to create.
       * - ``columns``
         - List
-        - Columns to combine. List can contain either the names of the columns as Strings
-        or the RColumn object representing the column.
+        - Columns to combine. List can contain either the names of the columns as Strings or the RColumn object representing the column.
+
 
    .. table-end
 

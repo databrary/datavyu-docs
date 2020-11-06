@@ -2,7 +2,7 @@
 Introduction to APIs
 ====================
 
-.. default-domain:: rb
+.. default-domain:: py
 
 APIs, Application Program Interfaces, are collections of code that
 allow software components to communicate with each other. 

@@ -2,7 +2,7 @@
 Classes, Methods, and Parameters
 ================================
 
-.. default-domain:: rb
+.. default-domain:: py
 
 Ruby, the programming language that the Datavyu API uses, is an object-
 oriented language. 
@@ -20,8 +20,8 @@ object. In Datavyu, a cell object's attributes would be its codes; a column
 object's attributes might be its cells, its name, and its onset and offset times. 
 The class of an object defines what types of attributes a specific type of object will have. 
 
-Thinking about Datavyu specifically, the
-"column" class describes the Datavyu columns. The "trial" object in the example spreadsheet
+Thinking about Datavyu specifically, the "column" class describes the Datavyu 
+columns. The "trial" object in the example spreadsheet
 would then be an instance of the "column" class. This is in fact how the
 Datavyu API works. The Datavyu API includes two classes to represent
 Datavyu concepts: :class:`RColumn` describes Datavyu's
@@ -33,8 +33,7 @@ Methods and Their Parameters
 
 While classes describe objects and their attributes, :term:`methods <method>` define actions
 that you can perform on an object. The Datavyu API defines numerous methods to help
-you manipulate, modify, add, and delete data in the Datavyu
-spreadsheets.
+you manipulate, modify, add, and delete data in the Datavyu spreadsheets.
 
 In order to work, many methods need additional information. For
 instance, :meth:`getColumn()`, retrieves a column from a Datavyu
@@ -49,8 +48,8 @@ method, and are specified in the method's definition (you can view all
 of Datavyu's method definitions on the :doc:`API reference page
 </api/reference>`). 
 
-The information you actually provide when you use the method is called an
-"argument". Arguments are user-specified. For :meth:`getColumn()`, you
+The information you actually provide when you use the method is called an "argument". Arguments 
+are user-specified. For :meth:`getColumn()`, you
 might want to retrieve a column called "trial", so "trial" would be your
 argument for the ``name`` parameter. Again, parameters are part of the
 method's definition, while arguments are the information you provide

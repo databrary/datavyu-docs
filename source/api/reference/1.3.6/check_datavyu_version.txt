@@ -2,9 +2,9 @@
 check_datavyu_version()
 =======================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: check_datavyu_version(minVersion, maxVersion)
+.. function:: check_datavyu_version(minVersion, maxVersion)
 
    Checks whether the current version of Datavyu meets the minimum and maximum requirements specified in the parameters.
 

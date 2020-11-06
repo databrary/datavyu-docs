@@ -2,9 +2,9 @@
 checkValidCodes()
 =================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: checkValidCodes(column, dump_file, *arg_code_pairs)
+.. function:: checkValidCodes(column, dump_file, *arg_code_pairs)
 
    Checks that all coded values in Datavyu conform to a the list of
    valid codes for that column.

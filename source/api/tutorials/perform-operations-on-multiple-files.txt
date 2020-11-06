@@ -2,7 +2,7 @@
 Batch Operations on Multiple Files
 ==================================
 
-.. default-domain:: rb
+.. default-domain:: py
 
 Writing scripts that act on multiple files is largely the same as
 writing scripts that act on a single file: the interactions with

@@ -2,9 +2,9 @@
 save_db()
 =========
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: save_db(filename)
+.. function:: save_db(filename)
 
    Saves the current ``$db`` and ``$pj`` variables to a file. If the
    filename ends with ``.csv``, :meth:`save_db` saves the data as a

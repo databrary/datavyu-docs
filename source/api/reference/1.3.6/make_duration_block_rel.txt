@@ -4,9 +4,9 @@
 make_duration_block_rel()
 =========================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: make_duration_block_rel(relname, var_to_copy, binding, block_dur, skip_blocks)
+.. function:: make_duration_block_rel(relname, var_to_copy, binding, block_dur, skip_blocks)
 
    Makes a duration-based reliability column. This creates two columns,
    one containing a cell with a number for that block, and another

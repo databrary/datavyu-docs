@@ -2,7 +2,7 @@
 Check Inter-rater Reliability to Improve Data Accuracy
 ======================================================
 
-.. default-domain:: rb
+.. default-domain:: py
 
 .. begin-content
 

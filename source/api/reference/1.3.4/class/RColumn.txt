@@ -2,7 +2,7 @@
 RColumn Class
 =============
 
-.. default-domain:: rb
+.. default-domain:: py
 
 .. class:: RColumn
 

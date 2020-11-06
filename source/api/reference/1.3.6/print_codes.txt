@@ -2,9 +2,9 @@
 print_codes()
 =============
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: print_codes(cell, file, codes)
+.. function:: print_codes(cell, file, codes)
 
    Writes a cell's codes to a file, separated by tab (``\t``).
    

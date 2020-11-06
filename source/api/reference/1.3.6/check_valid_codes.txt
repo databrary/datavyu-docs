@@ -2,9 +2,9 @@
 check_valid_codes()
 ===================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: check_valid_codes(column, dump_file, *arg_code_pairs)
+.. function:: check_valid_codes(column, dump_file, *arg_code_pairs)
 
    Alias(es): `checkValidCodes`
 

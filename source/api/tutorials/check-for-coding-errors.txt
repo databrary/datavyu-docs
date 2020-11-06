@@ -2,7 +2,7 @@
 Check for Coding Errors
 =======================
 
-.. default-domain:: rb
+.. default-domain:: py
 
 .. begin-content
 

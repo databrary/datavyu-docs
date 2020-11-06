@@ -2,9 +2,9 @@
 add_codes_to_column()
 =====================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: add_codes_to_column(column, *codes)
+.. function:: add_codes_to_column(column, *codes)
 
    Alias(es): `addCodesToColumn`, `add_args_to_var`
 

@@ -2,9 +2,9 @@
 deleteVariable()
 ================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: deleteVariable(column)
+.. function:: deleteVariable(column)
 
    Deletes a column from the spreadsheet.
 

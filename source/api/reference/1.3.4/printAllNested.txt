@@ -4,9 +4,9 @@
 printAllNested()
 ================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: printAllNested()
+.. function:: printAllNested()
 
    
    

@@ -2,13 +2,12 @@
 create_mutually_exclusive()
 ===========================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: create_mutually_exclusive(name, col1name, col2name)
+.. function:: create_mutually_exclusive(name, col1name, col2name)
 
-    Combines two column together, creating a new column.
-   :meth:`create_mutually_exclusive` combines the two source columns cells
-   together so that the new column includes all of the arguments from
+   Combines two column together, creating a new column.:func:`create_mutually_exclusive` combines 
+   the two source columns cells together so that the new column includes all of the arguments from
    both source columns. It also includes a combination of the two columns' cells 
    as well as a new cell for each overlap.
    

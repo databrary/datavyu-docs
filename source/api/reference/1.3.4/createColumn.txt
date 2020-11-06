@@ -2,9 +2,9 @@
 createColumn()
 ==============
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: createColumn(name, *codes)
+.. function:: createColumn(name, *codes)
 
    Creates a new blank column with the specified name and codes.
 

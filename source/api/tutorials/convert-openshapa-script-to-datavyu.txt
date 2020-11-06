@@ -2,7 +2,7 @@
 Convert an OpenSHAPA Script to the Datavyu Format
 =================================================
 
-.. default-domain:: rb
+.. default-domain:: py
 
 If you have previously written scripts for use with OpenSHAPA, you
 can easily reuse them with Datavyu.

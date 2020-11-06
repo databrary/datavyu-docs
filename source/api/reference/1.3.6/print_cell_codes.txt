@@ -2,9 +2,9 @@
 print_cell_codes()
 ==================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: print_cell_codes(cell)
+.. function:: print_cell_codes(cell)
 
    Prints out the values for every code in a specified cell.
 

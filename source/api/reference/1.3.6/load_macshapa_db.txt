@@ -2,9 +2,9 @@
 load_macshapa_db()
 ==================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: load_macshapa_db(filename, write_to_gui, *ignore_vars)
+.. function:: load_macshapa_db(filename, write_to_gui, *ignore_vars)
 
    Opens an old, closed MacSHAPA spreadsheet file and loads it into
    the current open spreadsheet.

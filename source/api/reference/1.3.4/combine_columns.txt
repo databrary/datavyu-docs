@@ -2,9 +2,9 @@
 combine_columns()
 =================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: combine_columns(name, *columnNames)
+.. function:: combine_columns(name, *columnNames)
 
    Combines two column together, creating a new column.
    :meth:`create_mutually_exclusive` combines the two source columns cells

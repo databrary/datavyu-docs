@@ -2,7 +2,7 @@
 Add Codes to a Column
 =====================
 
-.. default-domain:: rb
+.. default-domain:: py
 
 .. begin-content
 

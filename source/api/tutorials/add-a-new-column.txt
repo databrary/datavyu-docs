@@ -2,7 +2,7 @@
 Add a New Column
 ================
 
-.. default-domain:: rb
+.. default-domain:: py
 
 .. begin-content
 

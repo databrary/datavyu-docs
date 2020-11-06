@@ -2,9 +2,9 @@
 check_valid_codes2()
 ====================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: check_valid_codes2(data, dump_file, *arg_code_pairs)
+.. function:: check_valid_codes2(data, dump_file, *arg_code_pairs)
 
    Advanced version of `check_valid_codes()`, available in Datavyu version 1.3.5 and higher.
 

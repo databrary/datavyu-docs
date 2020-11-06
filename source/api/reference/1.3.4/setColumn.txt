@@ -2,9 +2,9 @@
 setColumn()
 ===========
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: setColumn(name, var)
+.. function:: setColumn(name, var)
 
    :meth:`setColumn` writes columns to the spreadsheet: for columns
    that already exist, :meth:`setColumn` replaces the data in the

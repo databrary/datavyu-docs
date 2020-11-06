@@ -2,9 +2,9 @@
 getCellFromTime()
 =================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: getCellFromTime(col, time)
+.. function:: getCellFromTime(col, time)
 
    Identifies the cell that occurs at a given point in time for the
    specified column, and returns it.

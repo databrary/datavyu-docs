@@ -2,9 +2,9 @@
 transfer_columns
 ================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: transfer_columns(db1, db2, remove, *varnames)
+.. function:: transfer_columns(db1, db2, remove, *varnames)
 
    Transfers columns between spreadsheets. If ``db1`` or ``db2`` is set to the
    empty string "", then that spreadsheet is spreadsheet open in the

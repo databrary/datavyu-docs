@@ -2,9 +2,9 @@
 transfer_columns()
 ==================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: transfer_columns(db1, db2, remove, *varnames)
+.. function:: transfer_columns(db1, db2, remove, *varnames)
 
    Transfers columns between spreadsheets. Replacing ``db1`` or ``db2`` with the
    empty string "", will refer instead to the currently open spreadsheet in Datavyu.
@@ -60,9 +60,11 @@ transfer_columns()
       test.opf to the GUI and leaves test.opf intact and unmodified.
 
       .. code-block:: ruby
-         begin
-            sourceFile='/Users/datavyutester/Desktop/FileName1.opf'
-            destinationFile='/Users/datavyutester/Desktop/FileName2.opf'
-            columnsToTransfer = ['trial_rel', 'condition_rel']
-            transferMyVariable(sourceFile, destinationFile, false, columnsToTransfer)
-         end
+
+        require 'Datavyu_API.rb'
+        begin
+          sourceFile='/Users/datavyutester/Desktop/FileName1.opf'
+          destinationFile='/Users/datavyutester/Desktop/FileName2.opf'
+          columnsToTransfer = ['trial_rel', 'condition_rel']
+          transferMyVariable(sourceFile, destinationFile, false, columnsToTransfer)
+        end

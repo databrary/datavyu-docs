@@ -2,7 +2,7 @@
 Use Scripts to Export Data from Datavyu
 =======================================
 
-.. default-domain:: rb
+.. default-domain:: py
 
 .. begin-content
 

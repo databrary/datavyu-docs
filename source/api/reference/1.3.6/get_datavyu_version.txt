@@ -2,9 +2,9 @@
 get_datavyu_version()
 =====================
 
-.. default-domain:: rb
+.. default-
 
-.. method:: get_datavyu_version()
+.. function:: get_datavyu_version()
 
    Return the current Datavyu version as a String (e.g. 'v:1.3.5')
 

@@ -2,7 +2,7 @@
 API Tutorials
 =============
 
-.. default-domain:: rb
+.. default-domain:: py
 
 Before You Start
 ################

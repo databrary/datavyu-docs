@@ -2,9 +2,9 @@
 deleteCell()
 ============
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: deleteCell(cell)
+.. function:: deleteCell(cell)
 
    Removes the specified cell from its column and propagates the changes to the
    spreadsheet.

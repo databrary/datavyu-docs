@@ -2,9 +2,9 @@
 get_column()
 ============
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: get_column(name)
+.. function:: get_column(name)
 
    Retrieves a variable from the Datavyu spreadsheet and assigns it to a Ruby
    object using :meth:`print_debug`.

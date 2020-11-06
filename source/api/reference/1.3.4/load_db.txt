@@ -2,9 +2,9 @@
 load_db()
 =========
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: load_db(filename)
+.. function:: load_db(filename)
 
    Loads a spreadsheet's data directly from the file.
    

@@ -2,9 +2,9 @@
 add_codes_to_column()
 =====================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: add_codes_to_column(column, *codes)
+.. function:: add_codes_to_column(column, *codes)
 
    Add new codes to a column.
 

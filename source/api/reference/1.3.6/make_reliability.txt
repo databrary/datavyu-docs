@@ -2,12 +2,12 @@
 make_reliability()
 ==================
 
-.. default-domain:: rb
+.. default-domain:: py
 
-.. method:: make_reliability(relname, column_to_copy, multiple_to_keep, *codes_to_keep)
+.. function:: make_reliability(relname, column_to_copy, multiple_to_keep, *codes_to_keep)
 
    Creates a :term:`reliability column` that is a copy of another
-   Datavyu column in the Database. :rb:meth:`make_reliability()` can
+   Datavyu column in the Database. :func:`make_reliability()` can
    copy the cells (or a subsection of the cells) and retain codes
    from the origin column if desired.
 
