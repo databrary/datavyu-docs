@@ -14,3 +14,15 @@ Watch an Expert User Code
    </video>
    
 Use the provided :download:`coding example </resources/DatavyuSample.zip>` and video to practice coding.
+
+-------------------------
+Watch an Expert User Transcribe
+-------------------------
+
+.. raw:: html
+
+   <video controls width="100%" height="auto">
+   <source src="https://nyu.databrary.org/slot/45710/1640961,288269/asset/288269/download?inline=true" type="video/mp4">
+   </video>
+
+Watch a transcriber use Quick Key Mode to tag utterance timestamps and use Highlight and Focus to insert transcripts into those newly created cells.
