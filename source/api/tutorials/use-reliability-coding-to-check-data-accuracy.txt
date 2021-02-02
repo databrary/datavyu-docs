@@ -61,7 +61,7 @@ parameters:
 
 The following example uses the :download:`sample data
 </resources/Example-Template.opf>` to create a new
-reliability column called "rel.trial" from its "trial" column, skipping
+reliability column called "trial_rel" from its "trial" column, skipping
 every other cell, and copying over the *onset* and *trialnum* codes
 so that the reliability coder doesn't have to recode :term:`onset` and
 trial numbers.
@@ -70,7 +70,7 @@ trial numbers.
 
    require 'Datavyu_API.rb'
    begin
-      makeReliability("rel.trial", "trial", 2, "onset", "trialnum")
+      makeReliability("trial_rel", "trial", 2, "onset", "trialnum")
    end
 
 .. .. figure:: /img/makeReliability-definition-vs-use.png
@@ -126,7 +126,8 @@ optional one:
 
          dump_file = File.expand_path("~/Desktop/relCheck.txt")
 
-#. Compare "trial" and "rel.trial" using :meth:`checkReliability`,
+#. Compare "trial" and "rel_
+" using :meth:`checkReliability`,
    with a 5ms time tolerance, and output the results to the
    ``dump_file``:
 
@@ -136,9 +137,9 @@ optional one:
       begin
          dump_file = File.expand_path("~/Desktop/relcheck.txt")
 
-         # Compare the "trial" and "rel.trial" columns, using trialnumber as
+         # Compare the "trial" and "trial_rel" columns, using trialnumber as
          #  their matching code and dump the results to a file on the desktop.
-         checkReliability("trial", "rel.trial", "trialnum", 5, dump_file)
+         checkReliability("trial", "trial_rel", "trialnum", 5, dump_file)
       end
 
 
