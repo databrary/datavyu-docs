@@ -11,7 +11,7 @@ Jinja2==2.7.1
 Markdown==2.3.1
 MarkupSafe==0.18
 pelican==3.5.0
-Pygments==2.7.2
+Pygments==2.7.4
 python-dateutil==2.7.5
 pytz==2013.9
 requests==2.20.1
