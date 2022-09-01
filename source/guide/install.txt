@@ -14,34 +14,41 @@ Requirements
 Hardware Requirements
 ~~~~~~~~~~~~~~~~~~~~~
 
-The hardware requirements listed below are the minimum needed for Datavyu. More RAM
-or a faster processor will improve Datavyu's performance, especially when
-working with higher-resolution data sources.
+These hardware requirements are the minimum needed for Datavyu: 
 
 - 1GB of RAM.
 - 1.2 GHz processor.
+- At least 300 MB of disk space for Datavyu itself.
 
-You will also need enough disk space for your videos
-and a keypad, either as part of your keyboard, or as an
-external device.
+More RAM, a faster processor, or a better graphics card will improve Datavyu’s performance, especially when working with higher-resolution data sources (such as 4K or HD videos).
+
+You will also need enough disk space for your videos. We **highly recommend** that you
+use Datavyu on your **local storage device** instead of on an external one (i.e. a server)
+to minimize any lag or freezing issues. A keypad, either built in to your keyboard, or as an external device, will be needed to control Datavyu.
 
 Software Requirements
 ~~~~~~~~~~~~~~~~~~~~~
 
-Datavyu requires Java 1.6 or
-higher. Many operating systems include Java by default, but if you
-have *not* installed Java, you will need to do so.
+Datavyu requires Java 1.6 or higher. Many operating systems include Java by default, 
+but if you are unsure whether your computer has Java installed already, 
+click the link to install Java if one appears.
+The new installation will override older 
+versions of Java.
+Or, you may [install](https://www.java.com/en/download/manual.jsp) Java from scratch if you do not have it.
 
-The newest Mac build now has a built in version of Java. It no longer matters 
-what version of Java is on your computer because Datavyu will use the one that 
-it installs. 
-
-Datavyu supports video playback through Quicktime.
+Mac OS X 10.6 and below: Apple's Java comes pre-installed with your Mac OS.
+Mac OS X 10.7 (Lion) and above: Java is **not** pre-installed with your Mac OS. 
+To get the latest Java from Oracle, you will need Mac OS X 10.7.3 and above.
+Windows 10: Java is pre-installed, however, it may only include the use on browsers 
+and will require a manual installation to work with Datavyu
+Windows 7: Java is not pre-installed, and will require a manual installation from the website.
+ 
+Datavyu supports video playback through [Quicktime](https://support.apple.com/kb/DL837?locale=en_US). Alternatively, [VLC](https://www.videolan.org/vlc/index.html) will also work 
+as a video playback program for Datavyu.
 
 .. note::
 
-      If you are using Quicktime 7.7.5 or later, you will need to simply custom install Quicktime to include Java libraries in your version. The screenshot shows just how easy it is! Older versions of Quicktime can be typically installed.
-      If you are on Windows 10, please download QuickTime version 7.7.6 `here <https://support.apple.com/kb/DL1822?locale=en_US>`_. Later versions of QuickTime will not work on Windows 10. 
+      If you are using Quicktime 7.7.5 or later, you will need to click on “Custom” when prompted for “Typical” and “Custom” installation. Then simply click on “QuickTime for Java” when shown the product features, click on “Entire feature will be installed on local hard drive”, and then hit Next. The screenshots show how it will look! Older versions of Quicktime can be typically installed. If you are on Windows 10, please download QuickTime version 7.7.9 [here](https://support.apple.com/kb/DL837?locale=en_US).
 
 .. figure:: /img/install-quicktime-special.png
    :align: center
@@ -53,60 +60,52 @@ Install Datavyu
 Mac OS X
 ~~~~~~~~
 
-#. Before downloading Datavyu, please be sure that your security settings
-   allow the installation of non-Mac applications. To change this
-   permanently or temporarily go to System Preferences > Security & Privacy. 
-   On the General Tab click the little lock in the lower left corner to unlock 
-   the general preference pane. Then select "Anywhere" to allow Datavyu's installtion. 
+1. Download the latest Datavyu release for Mac OS X from the Datavyu website’s 
+   Downloads Page.
 
-.. figure:: /img/install-mac.png
-   :align: center
-   :alt: Mac OS X unzip installation window
+***insert mac-installer figure here***
 
-#. Download the latest Datavyu release for Mac OS X from the Datavyu
-   website's `Downloads Page <http://datavyu.org/download/>`_.
+2. Open the datavyu-1.X.X.dmg file, you can drag this to your Applications folder, 
+   or some other preferred location on your computer. Once it’s on your local computer, 
+   you can eject the .dmg file and delete it.
+3. If Datavyu opens with no trouble, you can now use the application as intended. 
 
-#. You can drag this to your Applications folder, or some other
-   preferred location on your computer.
+   If Datavyu does NOT open, follow the next step.
+4. Upon the first opening of Datavyu, depending on your security settings, Datavyu will 
+   not open until you allow it. To allow Datavyu to open on your computer, go to 
+   System Preferences > Privacy & Security > On the bottom of the window, click on 
+   “Allow Once” that’s on the right of a description of Datavyu. You should now be
+   able to open Datavyu.
 
 
 Windows 
 ~~~~~~~
 
-.. figure:: /img/windows-download.png
-   :align: center
 
-1. Download the latest Datavyu release for Windows from the Datavyu
-   website's `Downloads Page <http://datavyu.org/download/>`_. Unless
-   you've told Windows what to do with these types of files, a
-   :guilabel:`File Download` window will pop up, prompting you to either
-   Open the ``Datavyu-Windows-latest.zip`` file, or Save it. Either
-   option is fine - you'll merely need to navigate to the folder after
-   downloading if you choose to :guilabel:`Save` rather than choosing
-   :guilabel:`Open`.
+1. Download the latest Datavyu release for Windows from the Datavyu website’s [Downloads Page](https://datavyu.org/download.html).
+   Depending on your network browser, a *File Download* window might pop up, prompting 
+   you to select the destination to save it. Regardless of what happens, save the .exe file.
 
-.. figure:: /img/windows-unzip.png
-   :align: center
+2. Open up the Datavyu.exe file and a Windows security message may pop up. If there is a pop-up, 
+   hit “More info” and then click on “Run Anyway”.
 
-2. Unzip the program by opening the ``datavyu`` folder and
-   double-clicking on ``datavyu``. A "Compressed (zipped) Folders
-   Warning" will appear. Select :guilabel:`Extract all` to decompress
-   the files.
+***insert windows-installer-error here***
 
-.. figure:: /img/windows-copying-items-to-desktop.png
-   :align: center
+3. The Setup Wizard should now be on your screen. Follow the prompts and save the Datavyu 
+   file where you would like. 
 
-3. Windows will run the Extraction Wizard. Follow the prompts and 
-   extract the files. The Datavyu program is now available, but you
-   need to install a video plugin before you can start using video
-   with Datavyu.
+4. Once you have selected the file destination, the Installation will begin and you 
+   should see Datavyu on your desktop when it’s completed. If you do not see Datavyu on 
+   your desktop, navigate to the folder you have chosen to save it under (or by default, 
+   saved in the file path in the screenshot above), right click on “Datavyu.exe”, hover 
+   over “Send to”, and click on “Desktop (create shortcut)”.
 
-4. Install a video plugin. At present, Datavyu for Windows does not
-   include any video plugins. To use Datavyu, you **must** download
-   Quicktime for Windows. If you already use Apple's iTunes, you
-   likely already have Quicktime for Windows. Otherwise, you may
-   download Quicktime for Windows from `Apple's website
-   <http://www.apple.com/quicktime/download/>`_.
+5. Install a video plugin if you do not already have one. At present, Datavyu for Windows 
+   does not include any video plugins. To use Datavyu, you **must** download Quicktime for Windows. 
+   If you already use Apple’s iTunes, you likely already have Quicktime for Windows. Otherwise, 
+   you may download Quicktime for Windows from [Apple’s website](https://support.apple.com/kb/DL837?locale=en_US). Alternatively, you may [download 
+   VLC](https://www.videolan.org/vlc/index.html) as your video plugin. VLC has been tested to work on Datavyu with ***most*** Windows computers.
+ 
 
 
 .. _update-datavyu:
@@ -114,17 +113,19 @@ Windows
 Keep Datavyu Up-to-Date
 -----------------------
 
-Every time you start Datavyu while connected to the Internet, it
-checks to see if your version is the latest available. When a new
-version is released, Datavyu will prompt you to download the latest
-version.
+Every time you start Datavyu while connected to the Internet, it 
+checks to see if your version is the latest available. When a new 
+version is released, Datavyu will prompt you to download the latest version.
 
-You can also check if your Datavyu version is up to date by opening
-the :guilabel:`Help` menu from the menu bar when the spreadsheet window is selected, 
-and then selecting :guilabel:`Check for
-updates...`.  If a new version is available, it will direct you to the
-download page where you can download the latest release. Remember to replace your current
-application with the latest version of Datavyu that you have just downloaded!
+***insert datavyu-check-updates image***
+
+You can also check if your Datavyu version is up to date by opening the *Help*
+menu from the menu bar when the spreadsheet window is selected, and then selecting 
+*Check for updates....* If a new version is available, it will prompt you to 
+choose whether you’d want the newest update “Now”, “Later”, or “Never”. If you 
+click “Now”, it will direct you to the download page where you can download the 
+latest release. Remember to replace your current application with the latest version 
+of Datavyu that you have just downloaded!
 
 .. important::
 
