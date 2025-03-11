@@ -15,7 +15,7 @@ Datavyu Components & Playback
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="https://nyu.databrary.org/slot/45710/0,704610/asset/238623/download?inline=true" type="video/mp4">
+   <source src="https://api.databrary.org/volumes/686/folders/45710/files/238623/download-signed/eyJmaWxlX2lkIjoyMzg2MjMsImV4cGlyZXMiOjE3NDE3MDIyNzcuMDQ1MDQ2LCJmb2xkZXJfaWQiOiI0NTcxMCJ9:Z5hbRk0KrOCPjr-ake0o37BAifnz0UYHVv2a2Ml1gf4/?preview=true" type="video/mp4">
    </video>
 
 Learn about Datavyu's media player and video controller. Discover the power of Datavyu's fingertip playback control. For more information see :doc:`/guide/getting-started` and :doc:`/guide/controller`.
@@ -26,7 +26,7 @@ Time-Lock Events Codes to Video: Cells & Coding Spreadsheet
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="https://nyu.databrary.org/slot/45710/705566,1639961/asset/238625/download?inline=true" type="video/mp4">
+   <source src="https://api.databrary.org/volumes/686/folders/45710/files/238625/download-signed/eyJmaWxlX2lkIjoyMzg2MjUsImV4cGlyZXMiOjE3NDE3MDI0MzAuODk4NjYxLCJmb2xkZXJfaWQiOiI0NTcxMCJ9:9AJdfGtkHbkDpf_SYhxq_MxHUGeVc5P1Vo1D0Ao0zdw/?preview=true" type="video/mp4">
    </video>
 
 Learn how Datavyu time-locks video events to the coding spreadsheet. Dive into how a coding column and a "cell" within a coding column work. See examples of time-locking events to video. For more information see :doc:`/guide/spreadsheet` and :doc:`/guide/tutorials/configure-datavyu-codes`.
@@ -37,7 +37,7 @@ Time-Lock Events Codes to Video: Coding Timestamps
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="https://nyu.databrary.org/slot/45710/1640961,2576493/asset/238627/download?inline=true" type="video/mp4">
+   <source src="https://api.databrary.org/volumes/686/folders/45710/files/238627/download-signed/eyJmaWxlX2lkIjoyMzg2MjcsImV4cGlyZXMiOjE3NDE3MDI0ODQuNDA2Mjk5LCJmb2xkZXJfaWQiOiI0NTcxMCJ9:fVGrXqR9WURzjUb_2Nh8xseqV6mqIF6bBSbkx_XKO90/?preview=true" type="video/mp4">
    </video>
 
 Learn how to use Datavyu’s fingertip control functions to time-lock video to the coding spreadsheet. Explore three ways of inserting timestamps with appropriate use cases. For more information see :doc:'/guide/tutorials/add-cells'.
